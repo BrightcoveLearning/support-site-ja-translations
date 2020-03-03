@@ -1,0 +1,3219 @@
+<html lang="ja" dir="ltr" class=" js"><head>
+    <meta charset="utf-8"><script type="text/javascript" src="https://bam.nr-data.net/1/e78a80aa93?a=129613202&amp;v=1167.2a4546b&amp;to=YwBUZkcFVktUWhJQX1pKY0BcSxdRW10DQR5EDUY%3D&amp;rst=14971&amp;ref=https://support.brightcove.com/ja/brightcove-player-release-notes&amp;ap=2912&amp;be=4877&amp;fe=14862&amp;dc=14190&amp;perf=%7B%22timing%22:%7B%22of%22:1583240488619,%22n%22:0,%22f%22:0,%22dn%22:0,%22dne%22:0,%22c%22:0,%22ce%22:0,%22rq%22:0,%22rp%22:4847,%22rpe%22:4869,%22dl%22:4876,%22di%22:14190,%22ds%22:14190,%22de%22:14193,%22dc%22:14862,%22l%22:14862,%22le%22:14864%7D,%22navigation%22:%7B%7D%7D&amp;at=T0dXEA8fRUU%3D&amp;jsonp=NREUM.setToken"></script><script src="https://js-agent.newrelic.com/nr-1167.min.js"></script><script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script><script type="text/javascript" async="" src="//cdn.feedbackify.com/f.js"></script><script async="" src="https://fullstory.com/s/fs.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e78a80aa93",applicationID:"129613202"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e78a80aa93",applicationID:"129613202"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-2728311-17", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)">
+<meta name="MobileOptimized" content="width">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="https://support.brightcove.com/sites/default/files/favicon-64.png" type="image/png">
+<link rel="alternate" hreflang="en" href="https://support.brightcove.com/brightcove-player-release-notes">
+<link rel="canonical" href="https://support.brightcove.com/ja/brightcove-player-release-notes">
+<link rel="shortlink" href="https://support.brightcove.com/ja/node/18782">
+<link rel="revision" href="https://support.brightcove.com/brightcove-player-release-notes">
+
+    <title>Brightcove Player リリースノート| Brightcove 学習</title>
+    <link rel="stylesheet" media="all" href="https://support.brightcove.com/sites/default/files/css/css_82QNz3isZauK2z7uRssc53Bs_g5IxmONDHsLVxMTLtw.css?q23msc">
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.min.css">
+<link rel="stylesheet" media="all" href="https://support.brightcove.com/sites/default/files/css/css_ta7TGCgoUiRN-eGLyLEf4xmuIaBKIL7GD5KPf2fNREM.css?q23msc">
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+    <meta name="uri-translation" content="on">
+    <script>
+window['_fs_debug'] = false; window['_fs_host'] = 'fullstory.com';
+window['_fs_org'] = 'BX3Q1';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+g.consent=function(a){g("consent",!arguments.length||a)};
+g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+g.clearUserCookie=function(){};
+})(window,document,window['_fs_namespace'],'script','user');
+    </script>
+  <style type="text/css">html{_background:url(//about:blank) fixed;}.fby-on select {visibility:hidden!important;}.fby-on .fby-hide-iframe {visibility:hidden!important;}.fby-hide-embed embed {visibility:hidden!important;}.fby-hide-object object {visibility:hidden!important;}@media not screen {.fby-tab {display: none;}}#feedbackify *{box-sizing:content-box!important;-moz-box-sizing:content-box!important;-webkit-box-sizing:content-box!important;}#feedbackify input{box-sizing:border-box!important;-moz-box-sizing:border-box!important;-webkit-box-sizing:border-box!important;max-width:none!important;}#feedbackify *:before{content:none!important;}#feedbackify *:after{content:none!important;}#feedbackify ,#feedbackify div,#feedbackify span,#feedbackify textarea,#feedbackify input,#feedbackify table,#feedbackify tbody,#feedbackify tr,#feedbackify td,#feedbackify img,#feedbackify p,#feedbackify a{border:0!important;outline:none!important;width:auto;height:auto;text-align:left!important;text-indent:0!important;float:none!important;padding:0!important;margin:0!important;font:12px arial,helvetica,sans-serif!important;overflow:visible!important;color:#000!important;line-height:1.2!important;background:0 none!important;position:static!important;vertical-align:baseline!important;box-shadow:none!important;}#feedbackify table{border-collapse:collapse!important;border-spacing:0!important;max-width:inherit!important;width:auto!important;}#feedbackify td{word-break:normal!important;}#feedbackify {z-index:2147483646!important;position:static!important;top:0;left:0;}#feedbackify .fby-screen{z-index:2147483646!important;position:fixed!important;top:0;left:0;width:0;height:100%;_position:absolute!important;_top:expression(eval(document.body.scrollTop||document.documentElement.scrollTop))!important;_left:expression(eval(document.body.scrollLeft||document.documentElement.scrollLeft))!important;_width:0!important;_height:expression(document.documentElement.clientHeight||document.body.clientHeight+"px")!important;}#feedbackify .fby-mask{display:none!important;position:fixed!important;top:0;left:0;width:100%;height:100%;background-color:#000!important;opacity:0.2;filter:alpha(opacity=20);_position:absolute!important;_width:expression(document.documentElement.clientWidth||document.body.clientWidth+"px")!important;_height:expression(this.parentNode.style.height)!important;}#feedbackify .fby-show{display:block!important;visibility:visible!important;}#feedbackify .fby-hide{display:none!important;visibility:hidden!important;}</style><style type="text/css">#feedbackify .fby-tab{position:fixed!important;width:36px;height:100px;overflow:hidden!important;_position:absolute!important;}#feedbackify .fby-tab a{display:block!important;position:absolute!important;width:36px;height:100px;background-color:#000000!important;cursor:pointer!important;background:url(https://cdn.feedbackify.com/img/classic/tab.png)!important;_background:none!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/tab.png)!important;}#feedbackify .fby-tab-l{top:50%;left:0;margin-top:-50px!important;_top:expression((parseInt(this.parentNode.style.height)-this.clientHeight)/2+"px")!important;_margin-top:0!important;}#feedbackify .fby-tab-l a{margin-left:-5px!important;}#feedbackify .fby-tab-l a:hover{margin-left:-2px!important;}#feedbackify .fby-tab-r{top:50%;right:0px!important;margin-top:-50px!important;_top:expression((parseInt(this.parentNode.style.height)-this.clientHeight)/2+"px")!important;_left:expression((document.documentElement.clientWidth||document.body.clientWidth)-this.clientWidth+"px")!important;_margin-top:0!important;}#feedbackify .fby-tab-r a{margin-left:5px!important;}#feedbackify .fby-tab-r a:hover{margin-left:2px!important;}#feedbackify .fby-tab-t{top:0;margin-top:0px!important;}#feedbackify .fby-tab-b{top:auto;bottom:0!important;_top:expression(parseInt(this.parentNode.style.height)-this.clientHeight+"px")!important;}</style><style type="text/css">#feedbackify grammarly-ghost{display:none!important;}#feedbackify grammarly-btn{display:none!important;}#feedbackify #fby-form{z-index:2147483646!important;width:618px!important;position:absolute!important;}#feedbackify .fby-d-main{width:600px;height:50px;vertical-align:top!important;background-color:#FFFFFF!important;position:relative!important;}#feedbackify .fby-d{background:url(https://cdn.feedbackify.com/img/classic/dlg_shad_sprite.png)!important;_background:none!important;}#feedbackify .fby-d-h{height:9px;background:url(https://cdn.feedbackify.com/img/classic/dlg_shad_sprite_h.png)!important;_background:none!important;}#feedbackify .fby-d-h2{height:9px;background-color:#FFFFFF!important;}#feedbackify .fby-d-tl{background-position:-18px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_tl.png)!important;}#feedbackify .fby-d-t{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_t.png,sizingMethod=scale)!important;}#feedbackify .fby-d-tr{background-position:-36px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_tr.png)!important;}#feedbackify .fby-d-l{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_l.png,sizingMethod=scale)!important;}#feedbackify .fby-d-r{background-position:-9px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_r.png,sizingMethod=scale)!important;}#feedbackify .fby-d-bl{background-position:-54px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_bl.png)!important;}#feedbackify .fby-d-br{background-position:-72px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_br.png)!important;}#feedbackify .fby-d-b{background-position:0px -9px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_b.png,sizingMethod=scale)!important;}#feedbackify .fby-d-load{position:relative!important;}#feedbackify .fby-d-load img{position:absolute!important;left:8px;}#feedbackify .fby-d-load div{position:absolute!important;padding:4px 18px!important;font-size:16px!important;font-weight:bold!important;color:#333!important;}</style></head>
+  <body class="path-node page-node-type-release-notes has-glyphicons">
+    <a class="visually-hidden" focusable="" skip-link="" href="#main-content">
+      メインコンテンツへスキップ
+    </a>
+    
+      <div class="gt-block dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="" data-gt-block="">
+              <header class="navbar navbar-default container" id="navbar" role="banner">
+      <div class="gt-block navigation-secondary clearfix" data-gt-block="">
+          <div class="gt-block region region-navigation-secondary" data-gt-block="">
+    <section id="block-styles" class="block block-block-content block-block-contentfbb71e48-a6cd-4d2b-8239-43f18db69e60 clearfix">
+  
+    
+
+      
+            <div class="gt-block field field--name-field-body field--type-text-long field--label-hidden field--item" data-gt-block=""><link rel="stylesheet" media="all" href="https://learning-services-media.brightcove.com/doc-assets/css/drupal-fix.css"></div>
+      
+  </section>
+
+<nav role="navigation" aria-labelledby="block-secondarynavigation-menu" id="block-secondarynavigation">
+            
+  <h2 class="visually-hidden" id="block-secondarynavigation-menu" data-gt-block="">セカンダリナビゲーション</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="//support.brightcove.com/ja/contact-support" title="サポートリクエストを作成する" data-drupal-link-system-path="node/18632">サポートリクエスト</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://status.brightcove.com/">システムステータス</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://university.brightcove.com/">Brightcove 大学</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<section id="block-gtranslate" class="block block-gtranslate block-gtranslate-block clearfix">
+  
+    
+
+      
+<div class="gt-block gtranslate" data-gt-block="">
+<script type="text/javascript">/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;var lang=lang_pair.split('|')[1];var plang=location.pathname.split('/')[1];if(plang.length !=2 && plang != 'zh-CN' && plang != 'zh-TW')plang='en';if(lang == 'en')location.pathname=location.pathname.replace('/'+plang+'/', '/');else location.pathname='/'+lang+location.pathname.replace('/'+plang+'/', '/');}
+/* ]]> */
+</script><select onchange="doGTranslate(this);"><option value="">言語の選択</option><option value="en|en" style="font-weight:bold;background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -0px;padding-left:18px;">英語</option><option value="en|fr" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -160px;padding-left:18px;">フランス語</option><option value="en|de" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -176px;padding-left:18px;">ドイツ語</option><option value="en|ja" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -240px;padding-left:18px;">日本語</option><option value="en|ko" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -256px;padding-left:18px;">韓国語</option><option value="en|es" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -352px;padding-left:18px;">スペイン語</option></select>
+</div>
+<div class="gtranslate__credits" data-gt-block="">
+  本ドキュメントはGoogle翻訳によって機械翻訳したものとなります
+</div>
+
+  </section>
+
+
+  </div>
+
+      </div>
+      <div class="gt-block navbar-header col-md-3" data-gt-block="">
+                  <a class="logo" navbar-btn="" pull-left="" href="/ja/" title="ホーム" rel="home">
+            <img src="https://support.brightcove.com/themes/custom/bcdocs/images/brightcove.png" alt="ホーム">
+          </a>
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">トグルナビゲーション</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+                    <div class="gt-block navbar-collapse collapse" data-gt-block="">
+            <div class="gt-block region region-navigation-collapsible" data-gt-block="">
+    <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation">
+            <h2 class="sr-only" id="block-mainnavigation-menu" data-gt-block="">メインナビゲーション</h2>
+
+      
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="//support.brightcove.com/ja/brightcove-learning-home" title="ホームページ" data-drupal-link-system-path="node/18643">ホーム</a>
+                  </li>
+                                            <li class="expanded dropdown">
+        <a class="dropdown-toggle" href="" data-toggle="dropdown">
+          製品紹介
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a class="nturl" href="//support.brightcove.com/ja/video-cloud" data-drupal-link-system-path="node/18332">Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://gallery.support.brightcove.com/ja">Gallery</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="//support.brightcove.com/ja/brightcove-player" data-drupal-link-system-path="node/18283">Brightcove Player</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="//support.brightcove.com/ja/live" data-drupal-link-system-path="node/18642">Live</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="//support.brightcove.com/ja/social" data-drupal-link-system-path="node/18444">Social</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="//support.brightcove.com/ja/audience" data-drupal-link-system-path="node/18445">Audience</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://zencoder.support.brightcove.com/ja">Zencoder</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="//support.brightcove.com/ja/ssai" data-drupal-link-system-path="node/18650">SSAI</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://support.ottflow.com">OTT Flow</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a class="dropdown-toggle" href="" data-toggle="dropdown">
+          Links
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a class="nturl" href="//support.brightcove.com/ja/analytics-api" data-drupal-link-system-path="node/18370">Analytics API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="//support.brightcove.com/ja/audience-api" data-drupal-link-system-path="node/18371">Audience API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="//support.brightcove.com/ja/cms-api" data-drupal-link-system-path="node/18372">CMS API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="//support.brightcove.com/ja/cms-connectors-video-cloud" data-drupal-link-system-path="node/18662">Video Cloud 用 CMSコネクタ</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="//support.brightcove.com/ja/data-collection-api" data-drupal-link-system-path="node/18876">Data Collection API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="//support.brightcove.com/ja/delivery-system-api" data-drupal-link-system-path="node/18387">Delivery System API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="//support.brightcove.com/ja/developer-tools-and-concepts" data-drupal-link-system-path="node/18430">開発者ツールと概念</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="//support.brightcove.com/ja/native-player-sdks" data-drupal-link-system-path="node/18367">Device SDK</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="//support.brightcove.com/ja/dynamic-ingest-api" data-drupal-link-system-path="node/18373">Dynamic Ingest API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="//support.brightcove.com/ja/getting-started-brightcove-apis-0" data-drupal-link-system-path="node/18711">入門 - Brightcove API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="//support.brightcove.com/ja/page-experience-api" data-drupal-link-system-path="node/18616">In-Page Experience APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="//support.brightcove.com/ja/ingest-profiles-api" data-drupal-link-system-path="node/18374">Ingest Profiles API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="//support.brightcove.com/ja/live" data-drupal-link-system-path="node/18642">Live API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="//support.brightcove.com/ja/oauth-api" data-drupal-link-system-path="node/18376">OAuth API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="//support.brightcove.com/ja/platform-api-code-samples" data-drupal-link-system-path="node/18675">プラットフォームAPIコードサンプル</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="//support.brightcove.com/ja/playback-api" data-drupal-link-system-path="node/18380">Playback API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="//support.brightcove.com/ja/brightcove-player-code-samples" data-drupal-link-system-path="node/18630">プレーヤーコードサンプル</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="//support.brightcove.com/ja/brightcove-player-developer" data-drupal-link-system-path="node/18362">プレーヤー開発者</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="//support.brightcove.com/ja/player-management-api" data-drupal-link-system-path="node/18378">Player Management API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="//support.brightcove.com/ja/policy-api" data-drupal-link-system-path="node/18381">Policy API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="//support.brightcove.com/ja/release-notes" data-drupal-link-system-path="node/18687">リリースに関して</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a class="dropdown-toggle" href="" data-toggle="dropdown">
+          トレーニング
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a class="nturl" href="https://university.brightcove.com">オンラインコース</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="//support.brightcove.com/ja/register-training" data-drupal-link-system-path="node/18270">コース登録</a>
+                  </li>
+        </ul>
+  
+            </li>
+                              <li class="expanded">
+        <a class="nturl" href="//support.brightcove.com/ja/brightcove-support-documentation-announcements" title="の新機能を見る Brightcove オンライン
+マニュアル" data-drupal-link-system-path="node/18896">新着情報</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+        </div>
+          </header>
+  
+    <div class="gt-block full-width-headline" data-gt-block="">
+    <div class="gt-block container" data-gt-block="">
+      <div class="gt-block row" data-gt-block="">
+        <div class="gt-block col-sm-12" role="heading" data-gt-block="">
+            <div class="gt-block region region-header" data-gt-block="">
+          <section id="block-brightcoveheadlineblock" class="block block-bc-general block-bc-general-headline-block clearfix">
+  
+    
+
+      オンライン
+マニュアル
+  </section>
+
+
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      <div role="main" class="gt-block main-container container  js-quickedit-main-content" data-gt-block="">
+    <div class="gt-block row" data-gt-block="">
+
+                              <aside class="gt-block col-sm-3" role="complementary" data-gt-block="">
+              <div class="gt-block region region-sidebar-first" data-gt-block="">
+    <section class="bc-search-fixes-search-block-form block block-bc-search-fixes block-bc-search-fixes-search-block clearfix" data-drupal-selector="bc-search-fixes-search-block-form" id="block-brightcovesearchblock">
+  
+    
+
+      <form action="/ja/brightcove-player-release-notes" method="post" id="bc-search-fixes-search-block-form" accept-charset="UTF-8">
+  <div class="gt-block form-item js-form-item form-type-textfield js-form-type-textfield form-item-search js-form-item-search form-no-label form-group" data-gt-block="">
+      <label for="edit-search" class="control-label sr-only">サイト内検索</label>
+  
+  
+  <input data-drupal-selector="edit-search" class="form-text form-control" type="text" id="edit-search" name="search" value="" size="15" maxlength="128" placeholder="サイト内検索">
+
+  
+  
+  </div>
+<input autocomplete="off" data-drupal-selector="form-zvvvict0-pyfhaego1ugobwwzozqbwx75h0wfs8stre" type="hidden" name="form_build_id" value="form-zVvviCT0-PyFHaEgO1ugobwwzOZQBwx75h0WFS8stRE"><input data-drupal-selector="edit-bc-search-fixes-search-block-form" type="hidden" name="form_id" value="bc_search_fixes_search_block_form"><div data-drupal-selector="edit-actions" class="gt-block form-actions form-group js-form-wrapper form-wrapper" id="edit-actions" data-gt-block=""><button data-drupal-selector="edit-submit" class="button js-form-submit form-submit btn-primary btn icon-only" type="submit" id="edit-submit" name="op" value="Search"><span class="sr-only">サイト内検索</span><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button></div>
+
+</form>
+
+  </section>
+
+
+  </div>
+
+          </aside>
+              
+                  <section class="col-sm-9">
+
+                                      <div class="gt-block highlighted" data-gt-block="">  <div class="gt-block region region-highlighted" data-gt-block="">
+    <div data-drupal-messages-fallback="" class="hidden" data-gt-block=""></div>
+
+  </div>
+</div>
+                  
+                
+                
+                
+                          <a class="nturl" id="main-content"></a>
+            <div class="gt-block region region-content" data-gt-block="">
+        <h1 class="page-header"><span>Brightcove Player リリースに関して</span>
+</h1>
+
+  
+<div class="gt-block node node--type-release-notes node--view-mode-full bcdocs-four-rows clearfix" data-gt-block="">
+
+  
+
+  <div class="group-first-row" data-gt-block="">
+      </div>
+
+  <div class="gt-block group-second-row" data-gt-block="">
+  
+  <div class="gt-block field field--name-field-products field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">製品（複数可）</div>
+          <div class="gt-block field__items taxonomy__tags" data-gt-block="">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item" data-gt-block="">Video Cloud</div>
+          <div class="field--item" data-gt-block="">Gallery</div>
+          <div class="field--item" data-gt-block="">Brightcove Player</div>
+              </div>
+      </div>
+
+  <div class="gt-block field field--name-field-roles field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">役割</div>
+          <div class="gt-block field__items taxonomy__tags" data-gt-block="">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item" data-gt-block="">Studio ユーザー</div>
+          <div class="field--item" data-gt-block="">プレーヤー開発者</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="group-third-row taxonomy__tags" data-gt-block="">
+    
+</div>
+
+  <div class="gt-block group-fourth-row" data-gt-block="">
+  
+            <div class="gt-block field field--name-body field--type-text-with-summary field--label-hidden field--item" data-gt-block=""><aside class="gt-block bcls-aside bcls-aside--warning" data-gt-block=""><p data-gt-block="" class="gt-block gt-block"><strong style="color:#990000">注意：</strong> デフォルトでは、更新はすべてのプレイヤーに自動的に適用されます。 プレーヤーの自動更新を防止するには、手動更新（プレーヤーのロック）とする必要があります。 これを行うには <a class="nturl" href="//support.brightcove.com/ja/setting-player-update-mode-and-version">スタジオプレーヤーモジュール</a> または <a class="nturl" href="//support.brightcove.com/ja/opting-out-automatic-player-updates">Player Management API</a>.</p>
+                <p data-gt-block="">自動更新のオプトアウトは、更新プログラムによって作成された問題を解決している間に適用される一時的な方法です。 プレーヤーを現在のバージョンにアップデートしないと、新しい機能やバグ修正が欠けていて、古いバージョンのプレーヤーはサポートが中断されます。</p>
+            </aside>        <article class="bcls-article"><section id="currentrelease" class="section"><h2 data-gt-block="">バージョン6  -  v6.38.4</h2>
+
+            <p data-gt-block="">２０１７年１月３１日</p>
+
+            <ul><li>
+                特定の再生速度がユーザーによって設定されている場合のエンゲージメントのレポートに関する問題を解決しました
+              </li>
+              <li>
+                .
+                <strong>Video.js</strong>
+                7.7.4
+              </li>
+              <li>
+                との互換性の問題を修正 Brightcove Player v6.38.0およびIMA3プラグインv3.4.0
+              </li>
+              <li>
+                ネイティブのピクチャーインピクチャーボタンを無効にするためのプレーヤー構成パラメーターが追加されました。 ネイティブのピクチャーインピクチャーボタンを非表示にするには、
+                <code class="notranslate">"picture_in_picture_control": false</code>
+                Studio JSONエディターを使用したプレーヤー構成で。 これは、Picture-in-Pictureプラグインとは異なることに注意してください。
+              </li>
+              <li>
+                中国語（簡体字）-zh-Hans-および中国語（繁体字）-zh-Hant-翻訳された文字列の文字セットのサポートを追加
+              </li>
+              <li>
+                DRMの問題と、ヘッドフォンのプラグを抜くことによるエラーを修正しました
+              </li>
+            </ul><h2 data-gt-block="">バージョン5  -  5.28.1</h2>
+
+            <aside class="gt-block bcls-aside bcls-aside--information" data-gt-block=""><p data-gt-block="">
+                Brightcove Player バージョン5はサポートされなくなりました。 公開されたプレーヤーは引き続き機能し、無効化されませんが、
+                Brightcove ブラウザ、API、ビデオ形式、統合、およびプレーヤーの外部で発生する可能性のあるその他の変更との将来の互換性を保証することはできません。
+              </p>
+
+              <p data-gt-block="">
+                バージョン6の最新リリースにアップグレードすることをお勧めします。そうするのに支援が必要な場合は、お問い合わせください Brightcove サポート。
+              </p>
+            </aside><p data-gt-block="">２０１７年１１月２８日</p>
+
+            <ul><li>
+                許可する
+                <code class="notranslate">playsinline</code>
+                と
+                <code class="notranslate">muted</code>
+                プレーヤーレベルでのオプション
+              </li>
+              <li>
+                延長する
+                <strong>bc</strong>
+                埋め込みごとのプロパティを持つグローバル。 つまり、これにより、高度な/ページ内埋め込みを使用して、単一ページで複数の同時プレーヤーのサポートが向上します。 ただし、5.xプレーヤーと6.xプレーヤーを混在させると、状況によってはアイコンが表示されなくなる可能性があるため、お勧めしません。 詳細については、このトピックに関するドキュメントの形で提供されます。
+              </li>
+              <li>
+                の問題を修正しました。
+                <strong>ビッグプレイボタン</strong>
+                11でグラファイトスキンを使用しているプレイヤーに欠けていました
+              </li>
+              <li>
+                誤ったPES_packet_lengthヘッダーを持ついくつかのID3タグを解析する問題を修正しました
+              </li>
+            </ul></section><section class="section"><h2 id="Previous_releases" data-gt-block="" class="gt-block"><strong>以前のリリース</strong></h2>
+
+            <h2 data-gt-block="">バージョン6  -  v6.37.5</h2>
+
+            <p data-gt-block="">18 Dec 2019</p>
+
+            <ul><li>
+                .
+                <strong>Video.js</strong>
+                7.6.6
+              </li>
+            </ul><h2 data-gt-block="">バージョン6  -  v6.37.4</h2>
+
+            <p data-gt-block="">２０１７年１１月２８日</p>
+
+            <ul><li>Windows 11上のIE8.1でのDRM再生を修正</li>
+              <li>
+                SSAIプラグインの古いバージョンでの広告再生中のボリュームコントロールの色を修正
+              </li>
+            </ul><h2 data-gt-block="">バージョン6  -  v6.37.3</h2>
+
+            <p data-gt-block="">10月24 2019</p>
+
+            <ul><li>
+                属性が適切に認識されない回帰を修正
+                <code class="notranslate">loop</code>
+                
+                ,
+                
+                <code class="notranslate">muted</code>
+                と
+                <code class="notranslate">playsinline</code>
+              </li>
+            </ul><h2 data-gt-block="">バージョン6  -  v6.37.2</h2>
+
+            <p data-gt-block="">10月22 2019</p>
+
+            <ul><li>
+                .
+                <strong>httpストリーミング</strong>
+                1.11.1
+              </li>
+            </ul><h2 data-gt-block="">バージョン6  -  v6.37.1</h2>
+
+            <p data-gt-block="">10月9 2019</p>
+
+            <ul><li>Widevine HLS再生のサポートが追加されました</li>
+              <li>
+                更新しました
+                <strong>Video.js</strong>
+                7.6.5へ
+              </li>
+            </ul><h2 data-gt-block="">バージョン6  -  v6.36.6</h2>
+
+            <p data-gt-block="">10月1 2019</p>
+
+            <ul><li>
+                デフォルト以外のプリロード値のサポートのリグレッションを修正
+              </li>
+            </ul><h2 data-gt-block="">バージョン6  -  v6.36.5</h2>
+
+            <p data-gt-block="">２０１７年９月２９日</p>
+
+            <ul><li>
+                サポートの追加
+                <code class="notranslate">suppress_not_supported_error</code>
+                プレーヤーの設定で
+              </li>
+              <li>
+                バグ修正：プレーヤーを破棄すると10秒以内にエラーが記録される問題を修正
+              </li>
+              <li>
+                バグ修正：の命名を修正
+                <code class="notranslate">data-delivery-config-id</code>
+                属性を使用する
+              </li>
+              <li>
+                バグ修正：ギャップとst音に関連するいくつかの再生関連の問題を修正
+              </li>
+              <li>
+                バグ修正：ローカライズされたプレーヤーでエラーが発生する6.31.1のリグレッションを修正
+              </li>
+              <li>
+                バグ修正：ユーザーがフォーカスされている場合のキーボードショートカットを無効化
+                <code class="notranslate">contenteditable</code>
+                フィールド
+              </li>
+              <li>
+                バグ修正：RequireJS以外のAMDローダーの使用によるエラーを回避
+              </li>
+              <li>
+                バグ修正：テキスト入力要素をターゲットにするときにコンテキストメニューが表示されないようにする
+              </li>
+              <li>
+                更新しました
+                <strong>Video.js</strong>
+                7.6.5へ
+                <ul><li>
+                    このVideo.jsアップデートには、新しいPicture-in-Pictureボタンのサポートが含まれています。 これは同じ名前のプラグインとは異なり、一部のブラウザーで利用可能なネイティブPiPサポートを指します。
+                  </li>
+                  <li>
+                    このボタンは、ブラウザがWICG仕様を介してネイティブPiPをサポートしている場合にのみ表示されます。 現在、これにはSafariは含まれていません。
+                  </li>
+                  <li>
+                    プレーヤーが広告プラグインで構成されている場合、ボタンは表示されません。
+                  </li>
+                </ul></li>
+              <li>
+                更新版
+                <strong>httpストリーミング</strong>
+                1.10.6へ
+              </li>
+            </ul><h2 data-gt-block="">バージョン6  -  v6.35.2</h2>
+
+            <p data-gt-block="">２０１８年８月９日</p>
+
+            <ul><li>
+                ライブストリームの自動再生後、最初にDVRウィンドウにシークすると、プレーヤーが代わりにライブエッジをシークする問題を解決
+              </li>
+              <li>
+                Firefoxの問題を回避した
+                <code class="notranslate">oncontextmenu</code>
+                イベントトリガー
+                <code class="notranslate">click</code>
+                イベント
+              </li>
+            </ul><h2 data-gt-block="">バージョン6  -  v6.35.1</h2>
+
+            <p data-gt-block="">２０１７年６月２８日</p>
+
+            <ul><li>動的配信ルールのサポートを追加しました</li>
+              <li>
+                サポートの追加
+                <code class="notranslate">playback_rates</code>
+                プレーヤーの設定で
+              </li>
+              <li>
+                更新しました
+                <strong>Video.js HTTPストリーミング</strong>
+                1.10.3へ
+              </li>
+              <li>
+                更新しました
+                <strong>Video.js</strong>
+                7.5.5へ
+              </li>
+              <li>
+                再有効化されたホットキー。 観察された問題はVideo.js 7.5.5で修正する必要があります
+              </li>
+            </ul><h2 data-gt-block="">バージョン6  -  v6.34.3</h2>
+
+            <p data-gt-block="">２０１７年５月３１日</p>
+
+            <ul><li>
+                SSAI + HLSeを含むようにPlayback Authorization Serviceサポートを拡張しました。
+              </li>
+              <li>Video.js 7.5.4およびhttpストリーミング1.10.1に更新</li>
+              <li>
+                バグ修正：x-smallおよび小さなレスポンシブプレーヤーサイズでプログレスコントロールを非表示にしないでください。
+              </li>
+              <li>バグ修正：プラグインの順序が分析に影響を与えないようにする。</li>
+              <li>
+                バグ修正：リモートアセットをダウンロードできなかった場合、プレーヤーのビルドが正しく失敗する。
+              </li>
+              <li>
+                バグ修正：プラグインが設定されているが、見つからないかエラーがスローされた場合、エラーを記録します。
+              </li>
+              <li>
+                バグ修正：顧客のバグレポートにより、新しいホットキー機能を無効にします。 恒久的な修正が間もなく行われますが、できる限り早く不正行為を止めたいと考えました。 ご不便をおかけして申し訳ありません。
+              </li>
+            </ul><h2 data-gt-block="">バージョン6  -  v6.33.1</h2>
+
+            <p data-gt-block="">２０１８年４月１３日</p>
+
+            <ul><li>
+                顧客のバグレポートにより、新しいホットキー機能を無効にします。 恒久的な修正が間もなく行われますが、できる限り早く不正行為を止めたいと考えました。 ご不便おかけしてすみません。
+              </li>
+            </ul><h2 data-gt-block="">バージョン6  -  v6.33.0</h2>
+
+            <p data-gt-block="">２０１８年４月１３日</p>
+
+            <ul><li>
+                のサポートを追加しました Brightcove 再生認証サービス
+              </li>
+              <li>
+                追加されました
+                <code class="notranslate">volume_orientation</code>
+                ボリュームパネルの向きを制御するプレーヤー構成（デフォルトは
+                <strong>水平な</strong>
+                
+                )
+              
+              </li>
+              <li>
+                サポートする
+                <code class="notranslate">{PLAYER_CLASS}</code>
+                プレーヤ設定に焼き付けられたカスタムCSSファイル内のトークン
+              </li>
+              <li>
+                にアップグレードしました
+                <strong>Video.js</strong>
+                7.5と有効なデフォルトのホットキーサポート（
+                <strong>f</strong>
+                フルスクリーン用
+                <strong>m</strong>
+                ミュート用
+                <strong>k</strong>
+                と
+                <strong>スペース</strong>
+                遊び/一時停止用）
+              </li>
+              <li>
+                新しいを使う
+                <strong>Video.js</strong>
+                Live プレーヤーがレガシーDVRUXプラグインで構成されていない限りUI
+              </li>
+              <li>
+                バグ修正：モバイル/タッチデバイスでinactivityTimeoutが無視される問題を修正
+              </li>
+              <li>
+                バグ修正：トラックボタンメニューのラベルを強制的に小文字にするべきではない
+              </li>
+              <li>
+                バグ修正：フルスクリーンコントロールが無効になっている場合、フルスクリーンへのダブルクリックのサポートを無効にする
+              </li>
+              <li>
+                バグ修正：セグメントメタデータトラックでカスタムセグメントプロパティを公開
+              </li>
+              <li>
+                バグ修正：IE11 / Win7の短いビデオの再生問題を修正
+              </li>
+              <li>バグ修正：未知のID3フレームを無視する</li>
+              <li>
+                アップグレード
+                <strong>httpストリーミング</strong>
+                1.9.3へ
+              </li>
+              <li>
+                アップグレード
+                <strong>Video.js</strong>
+                7.5.3へ
+              </li>
+              <li>
+                アップグレード
+                <strong>videojs-playlist</strong>
+                4.3.1へ
+              </li>
+            </ul><h2 data-gt-block="">バージョン6  -  v6.31.1</h2>
+
+            <p data-gt-block="">２０１８年３月３０日</p>
+
+            <ul><li>
+                から関連動画を取得するためのサポートを追加しました Playback API
+              </li>
+              <li>
+                バグ修正：ID3が発生する問題を修正しました
+                <code class="notranslate">cuechange</code>
+                iOS 12でイベントが機能していませんでした
+              </li>
+              <li>
+                バグ修正：マウス時間ツールチップは、進行時間ツールチップ上に表示されるはずです
+              </li>
+              <li>
+                バグ修正：同じものを使う
+                <code class="notranslate">inBandMetadataTrackDispatchType</code>
+                それによってさらされている
+                <strong>mux.js</strong>
+              </li>
+              <li>
+                バグ修正：MediaSourceによって例外がスローされないようにする
+              </li>
+              <li>
+                バグ修正：iOS Chromeでネイティブキャプションを使用して、正しく機能するようにする
+              </li>
+            </ul><h2 data-gt-block="">バージョン6  -  v6.30.1</h2>
+
+            <p data-gt-block="">２０１８年２月１日</p>
+
+            <ul><li>
+                設定を使用して、広告ブロックの検出が決定されるまで、自動プレーヤーの初期化を遅らせることができます
+                <code class="notranslate">"wait_for_ad_block_detect": true</code>
+                。 現在、この高度な構成は、 Player Management API Studioでそれをサポートする短期計画はありません。
+              </li>
+              <li>
+                バグ修正：Internet Explorer 608 Windows 11で7のキャプションが乱れる可能性がある問題を解決
+              </li>
+              <li>
+                更新版
+                <code class="notranslate">videojs-playlist</code>
+                4.3.0へ
+              </li>
+              <li>
+                更新しました
+                <code class="notranslate">video.js</code>
+                7.4.3へ
+              </li>
+            </ul><h2 id="6.29.2" data-gt-block="">バージョン6  -  v6.29.2</h2>
+
+            <p data-gt-block="">２０１７年１月３１日</p>
+
+            <ul><li>
+                プレーヤをデフォルトでブラウザのサイズに対応させる
+                <span class="bcls-highlight">
+                  <strong><sup>1</sup></strong>
+                </span>
+              </li>
+              <li>バグ修正：HLS / DASHソースハンドラをきれいに処分する</li>
+              <li>
+                バグ修正：時折起こる問題を解決する Brightcove Player
+                落とした
+                <code class="notranslate">video_impression</code>
+                と
+                <code class="notranslate">video_view</code>
+                IMA3プラグインv3.xを使用している場合
+                <code class="notranslate">autoplay</code>
+                
+                on
+              
+              </li>
+              <li>
+                バグ修正：sendBeacon APIの使用をロールバックして、ビーコン障害の0.1％増加を元に戻します
+              </li>
+              <li>
+                更新先
+                <code class="notranslate">Video.js</code>
+                7.4.2
+                <span class="bcls-highlight">
+                  <strong><sup>2</sup></strong>
+                </span>
+              </li>
+              <li>
+                バグ修正：と併用した場合
+                <code class="notranslate">track</code>
+                タグ、
+                <code class="notranslate">default</code>
+                属性が正しく機能し、キャプションが自動的に開始されるようになりました。
+              </li>
+            </ul><p data-gt-block="" class="gt-block gt-block">
+              <span class="bcls-highlight">
+                <strong><sup>1</sup></strong>
+              </span>
+              このコンテキストでは、プレーヤーを「デフォルトでブラウザーのサイズに応答する」ようにすることは、プレーヤーを流動的にすることとは異なることに注意してください。 以下は、新機能を明確にする必要があります。
+            </p>
+
+            <ul><li>
+                明らかにするには：静的なプレイヤーは突然流体にならないでしょう！
+              </li>
+              <li>
+                このコンテキストで「レスポンシブ」を使用するということは、新しいVideo.jsレスポンシブオプションを Brightcove Player デフォルトでは（Video.jsではデフォルトでオフになっています）。 このオプションにより、
+                <code class="notranslate">vjs-layout-*</code>
+                プレーヤーのサイズが変更されるたびにデフォルトのブレークポイントセットに基づいてプレーヤーに適用されるクラス。 つまり、「応答性」は実際にはブラウザのビューポートのサイズではなく、埋め込みプレーヤーのサイズに基づいています。
+              </li>
+              <li>
+                この新しいVideo.jsオプションに基づいて、XNUMXつの小さなUI調整が行われました。 これらの調整が多くのユーザーに影響を与えることはないと予想されますが、完全を期すために、次のようにします。
+                <ul><li>キャプションの設定ダイアログ</li>
+                  <li>Social プラグインダイアログ</li>
+                </ul></li>
+              <li>
+                Studioから、またはVideo.jsの流動的なオプションを介してレスポンシブ埋め込みを行うユーザーは、新しい
+                <code class="notranslate">vjs-layout-*</code>
+                プレーヤーのサイズに基づいてプレーヤーUIのカスタマイズを改善するクラス。 また、静的なサイズの埋め込みを持つユーザーは引き続き
+                <code class="notranslate">vjs-layout-*</code>
+                クラスはプレーヤーに適用されますが、実行時にプレーヤーのサイズが変更されない限り変更されません。
+              </li>
+              <li>
+                幅の狭いプレーヤーの実装（425pxなど）では、コントロールバーの一部のボタンが非表示になる可能性があります。 レスポンシブ機能は失われますが、次のコードはボタンが非表示になるのを防ぎます。
+                <pre class="line-numbers notranslate">  <code class="language-javascript notranslate">&lt;script&gt;
+    videojs.getPlayer('myPlayerID').ready(function() {
+      var myPlayer = this;
+      myPlayer.responsive(false);
+    });
+  &lt;/script&gt;</code></pre>
+              </li>
+            </ul><p data-gt-block="" class="gt-block gt-block">
+              <span class="bcls-highlight">
+                <strong><sup>2</sup></strong>
+              </span>
+              Video.js v7.4.2には、ライブストリーミングの新しい機能が含まれています。
+              <strong>Live</strong>
+              テキストインジケータ。 スキンを最初から作成していて、
+              <code class="notranslate">skin: false</code>
+              属性には、次のCSSを含める必要があります。
+              <strong>Live</strong>
+              インジケータが表示されません。
+            </p>
+
+            <pre class="line-numbers notranslate">  <code class="language-css notranslate">.video-js:not(.vjs-live) .vjs-live-control,.video-js.vjs-liveui .vjs-live-control {
+    display: none;
+  }</code></pre>
+
+            <h2 data-gt-block="">バージョン6  -  v6.28.1</h2>
+
+            <p data-gt-block="">12 Dec 2018</p>
+
+            <ul><li>
+                追加
+                <code class="notranslate">useBandwidthFromLocalStorage</code>
+                レンディション選択の帯域幅測定値を維持するオプション
+              </li>
+              <li>
+                バグ修正：アナリティクスのメンテナンスと広告プラグインのサポートに関連する改善。
+              </li>
+              <li>バグ修正：プレイヤーに潜在的なXSS攻撃ベクトルを修正しました。</li>
+              <li>
+                バグ修正：統合によりコントロールバーが破棄された場合にエラーがスローされないようにする
+              </li>
+              <li>バグ修正：メニューの章名を変換しない</li>
+            </ul><h2 data-gt-block="">バージョン6  -  v6.27.0</h2>
+
+            <p data-gt-block="">２０１７年１１月２８日</p>
+
+            <ul><li>
+                バグ修正：コントロールにタブ移動すると、Lunaスキンでコントロールバーが上下に移動する
+              </li>
+              <li>
+                バグ修正：CTA-608パーサーで例外がスローされるため、プレーヤーがタイムアウトする
+              </li>
+              <li>Video.js 7.3.0にアップグレード</li>
+            </ul><h2 data-gt-block="">バージョン6  -  v6.26.0</h2>
+
+            <p data-gt-block="">２０１７年１１月２８日</p>
+
+            <ul><li>
+                設定を許可する
+                <strong>vtt.js</strong>
+                場所
+              </li>
+              <li>ダイナミックデリバリーマルチ期間コンテンツのサポートが追加されました</li>
+            </ul><h2 data-gt-block="">バージョン6  -  v6.25.3</h2>
+
+            <p data-gt-block="">２０１７年９月２９日</p>
+
+            <ul><li>リファラーをiframeオプションとして設定できるようにする</li>
+              <li>
+                ループ属性を使用しているときにセグメントロードに関する問題を修正しました。
+              </li>
+              <li>
+                コンテキストメニューがプレーヤーの外側にある問題を修正しました
+              </li>
+              <li>
+                誤って発生した進行イベントがタイムアウトエラーを防ぐ問題を修正
+              </li>
+              <li>
+                Flashを使用して、ライブウィンドウの外側にいる場合、プレーヤーがライブしようとしない問題を修正しました。
+              </li>
+              <li>
+                プレーヤーの初期化後に自動再生を無効にすることが尊重されない問題を修正しました
+              </li>
+              <li>iOSのAdBlock Proを正しく検出する問題を修正しました</li>
+              <li>
+                IEとEdgeで手動で品質を変更した後、再生が途切れる問題を修正しました
+              </li>
+              <li>
+                アップグレード
+                <strong>Video.js</strong>
+                7.2.4へ
+              </li>
+              <li>
+                利用可能な場合は、
+                <code class="notranslate">sendBeacon</code>
+                ウィンドウのアンロード時に保留中のメトリックを送信しようとする
+              </li>
+            </ul><h2 data-gt-block="">バージョン6  -  v6.24.1</h2>
+
+            <p data-gt-block="">２０１７年９月２９日</p>
+
+            <ul><li>100アイテムに対するデフォルトプレイリストのページあたりの制限が増加しました</li>
+              <li>
+                バグ修正：プレーヤーのコントロールバーが正しく表示されないAndroid Chromeの問題を修正
+              </li>
+              <li>
+                バグ修正：の問題を修正
+                <code class="notranslate">catalog.getLazySequence()</code>
+                複数のシーケンスで動作しないメソッド
+              </li>
+            </ul><h2 data-gt-block="">バージョン6  -  v6.23.0</h2>
+
+            <p data-gt-block="">２０１７年９月２９日</p>
+
+            <ul><li>
+                新機能：ループをiframeの構成、オプション、またはクエリパラメーターとして設定できるようにします
+              </li>
+              <li>
+                内部タイミングの問題が原因で、エンゲージメントが10秒間隔でドロップすることがある問題を修正しました
+              </li>
+              <li>
+                にアップグレードしました
+                <strong>Video.js</strong>
+                7.2.2
+              </li>
+            </ul><h2 data-gt-block="">バージョン6  -  v6.22.8</h2>
+
+            <p data-gt-block="">２０１７年８月１５日</p>
+
+            <ul><li>
+                v6.22.5で導入された、セグメント化されたストリームの再生時に再生機能が壊れる問題を修正
+              </li>
+            </ul><h2 data-gt-block="">バージョン6  -  6.22.7</h2>
+
+            <p data-gt-block="">２０１７年８月１５日</p>
+
+            <ul><li>
+                カタログのカスタムベースURLが正しく設定されていなかった問題を修正しました。 これにより、IP制限のあるコンテンツの再生に失敗しました
+              </li>
+              <li>
+                URLの長さを制限を超えてプッシュする場合、ビーコンで必須ではないパラメーターを送信しません
+              </li>
+            </ul><h2 data-gt-block="">バージョン6  -  6.22.5</h2>
+
+            <p data-gt-block="">２０１７年８月１５日</p>
+
+            <ul><li>
+                追加されました Playback API のサポート
+                <code class="notranslate">AD_CONFIG_NOT_FOUND</code>
+                エラー、プレイリストの制限/オフセットクエリパラメータ、および汎用
+                <code class="notranslate">get</code>
+                約束を返すことができる方法
+              </li>
+              <li>
+                文字列値を使用したサポート
+                <code class="notranslate">autoplay</code>
+                オプションとして、またはプレーヤー設定で渡された場合、 Brightcove Player ネイティブの自動再生をバイパスし、自動再生を試みる
+              </li>
+              <li>
+                にアップグレードしました
+                <strong>Video.js 7.1.0</strong>
+              </li>
+              <li>
+                コードリファクタリング：プレーヤーがVideo.js 7.1.0になったため、iOSのミュートトグルボタンに関連する冗長コードを削除
+              </li>
+              <li>
+                バグ修正：
+                <ul><li>
+                    プレーヤーの処分でメモリリークの可能性のある2つのソースを修正
+                  </li>
+                  <li>手動品質選択時にバッファをクリアする</li>
+                  <li>デマルチプレックスされたストリームの切断後に続行</li>
+                  <li>
+                    自動再生の結果、自動再生が成功しない場合、ライブコンテンツにビッグプレイボタンが表示されるようにします
+                  </li>
+                  <li>
+                    問題を修正します。
+                    <code class="notranslate">ad_config_id</code>
+                    SSAI情報源のために飛ばすことができた
+                  </li>
+                  <li>
+                    iOS 9でエラーをスローする可能性がある問題を修正します。 この問題は、プレリリースステータスから抜け出しませんでした
+                  </li>
+                </ul></li>
+            </ul><h2 data-gt-block="">バージョン6  -  6.21.0</h2>
+
+            <p data-gt-block="">２０１８年８月９日</p>
+
+            <ul><li>
+                IEで非ラテン608キャプション文字が正しく表示されない問題を修正しました
+              </li>
+              <li>fmp608セグメントの4キャプションのサポートが追加されました</li>
+            </ul><h2 data-gt-block="">バージョン6  -  6.20.0</h2>
+
+            <p data-gt-block="">２０１８年８月９日</p>
+
+            <ul><li>
+                複数のオーディオトラックがFlashで同時に再生される問題を修正しました
+              </li>
+              <li>
+                にアップグレード
+                <strong>Video.js 7.0.5</strong>
+                （Internet Explorer 9および10はサポートされなくなりました。詳細については、https：//support.brightcove.com/brightcove-player-system-requirementsを参照してください）
+              </li>
+            </ul><h2 data-gt-block="">バージョン6  -  6.19.2</h2>
+
+            <p data-gt-block="">２０１７年６月２８日</p>
+
+            <ul><li>
+                アップグレード
+                <strong>Video.js</strong>
+                バージョン6.10.3へ
+              </li>
+            </ul><h2 data-gt-block="">バージョン6  -  6.19.1</h2>
+
+            <p data-gt-block="">２０１７年６月２８日</p>
+
+            <ul><li>
+                レスポンシブ/流体プレイヤーのデフォルトサイジングを16に修正：9
+              </li>
+              <li>
+                構築時にカタログIDを適切にエンコードする Playback API URL
+              </li>
+              <li>HLSeフラッシュ再生での吃音問題を修正</li>
+            </ul></section><section class="bcls-section"><h2 id="Older_releases" data-gt-block="" class="gt-block"><strong>以前のリリース</strong></h2>
+
+            <h3 data-gt-block="">バージョン6  -  6.19.0</h3>
+
+            <p data-gt-block="">２０１７年５月３１日</p>
+
+            <ul><li>
+                を使用して再生される最初のビデオの開始時間を設定するためのサポートが追加されました
+                <code class="notranslate">data-start-time</code>
+                属性を使用する
+              </li>
+              <li>
+                いくつかのプロパティを公開しました
+                <code class="notranslate">mediainfo</code>
+                前のオブジェクト
+              </li>
+              <li>
+                より多くの検出をサポートするために更新されたプレイヤー情報モーダル
+                Brightcove プラグインおよび複数のページはめ込みプレーヤーの埋め込みに関する問題の修正
+              </li>
+              <li>
+                にアップグレードしました
+                <strong>videojs-errors</strong>
+                4.0.0
+              </li>
+            </ul><h3 data-gt-block="">バージョン6  -  6.18.4</h3>
+
+            <p data-gt-block="">２０１７年５月３１日</p>
+
+            <ul><li>
+                バグ修正：コントロールバーが最小化され、メニューボタンがフォーカスされている場合、Lunaのメニューを非表示にする
+              </li>
+              <li>
+                自動再生を待機してビ​​ッグ再生ボタンを非表示にし、自動再生を手動で処理するコードを調整するという古い動作（v6.17.5で削除）を復元
+              </li>
+            </ul><h3 data-gt-block="">バージョン6  -  6.18.3</h3>
+
+            <p data-gt-block="">２０１７年５月３１日</p>
+
+            <ul><li>
+                問題を解決しました
+                <code class="notranslate">bc()</code>
+                プラグインのゲッターが初期化プロセスを混乱させる可能性があるため。 使用することに注意してください
+                <code class="notranslate">bc()</code>
+                
+                or
+                
+                <code class="notranslate">videojs()</code>
+                ゲッターが推奨されていないため - 使用する
+                <code class="notranslate">videojs.getPlayer()</code>
+                代わりに！
+              </li>
+              <li>チャプターメニューの名前を大文字にすることがなくなりました</li>
+              <li>
+                再生ボタンにフォーカスするとモバイルでコントロールバーが表示されたままになる問題を修正しました
+              </li>
+              <li>
+                一時停止がHLS再生の再生要求を中断したときに、中断しないエラーメッセージを黙らせた
+              </li>
+              <li>
+                フルスクリーンコントロールが無効のときに調整された最後のメニュー位置
+              </li>
+              <li>iframe埋め込みの広告のフェイルオーバーを修正しました。</li>
+            </ul><h3 data-gt-block="">バージョン6  -  6.18.1</h3>
+
+            <p data-gt-block="">２０１８年４月１３日</p>
+
+            <ul><li>
+                カタログ検索および/または一連のクエリを介してプレーヤーのプレイリストを作成するサポートが追加されました
+              </li>
+              <li>
+                iframeプレーヤーのクエリウィンドウパラメーターをグローバルウィンドウオブジェクトにアタッチする方法を説明する構成を許可します。
+              </li>
+              <li>
+                サポート
+                <code class="notranslate">ad_failover</code>
+                クライアント側のIMA広告またはサーバー側のSSAI広告のいずれかを選択するためのプレーヤー構成
+              </li>
+              <li>
+                .
+                <strong>Video.js</strong>
+                6.8.0
+              </li>
+            </ul><h3 data-gt-block="">バージョン6  -  6.17.5</h3>
+
+            <p data-gt-block="">２０１８年３月３０日</p>
+
+            <ul><li>
+                元に戻しました：Chrome 66の自動再生ポリシーの変更により、自動再生を待機している間にBig Playボタンを非表示にしなくなりました。 Brightcove
+                今後数週間で、この動作をより完全に機能する方法で置き換える予定です。
+              </li>
+              <li>
+                以前はプロトコル相対URLを使用していたHTTPS URLを使用します。 これは、プロトコル相対URLがを使用して解釈される、一般的で公式にサポートされていないプラットフォームで見られたいくつかの問題に対処する可能性があります
+                <strong>ファイル：</strong>
+                プロトコル。
+              </li>
+            </ul><h3 data-gt-block="">バージョン6  -  6.17.3</h3>
+
+            <p data-gt-block="">２０１８年３月３０日</p>
+
+            <ul><li>
+                にアップグレード
+                <strong>Video.js</strong>
+                6.7.4へ
+              </li>
+              <li>
+                バグの修正
+                <ul><li>
+                    SSAIソースでプログレスコントロールが正しく動作しない原因となったVideo.jsのリグレッションを修正
+                  </li>
+                  <li>ライブストリームでのEXT-X-PROGRAM-DATE-TIMEの使用を修正</li>
+                  <li>
+                    少なくともXNUMX人の顧客プレーヤーで破損が発生した後、新しいCSSミニファイアーへの変更を元に戻します
+                  </li>
+                  <li>
+                    原因となる6.16.0のバグに対処する OnceUXプレーヤーがエラーをスローする
+                  </li>
+                  <li>
+                    技術者のIDでプレーヤーを取得するための回帰を修正
+                  </li>
+                </ul></li>
+            </ul><h3 data-gt-block="">バージョン6  -  6.16.5</h3>
+
+            <p data-gt-block="">２０１８年２月１日</p>
+
+            <ul><li>
+                バグの修正
+                <ul><li>
+                    少なくともXNUMX人の顧客プレーヤーで破損が発生した後、新しいCSSミニファイアーへの変更を元に戻します
+                  </li>
+                </ul></li>
+            </ul><h3 data-gt-block="">バージョン6  -  6.16.2</h3>
+
+            <p data-gt-block="">２０１８年２月１日</p>
+
+            <ul><li>
+                待機中に大きな再生ボタンを隠す
+                <code class="notranslate">autoplay</code>
+              </li>
+              <li>
+                videojs-playlist 4.2.0に更新し、追加する
+                <code class="notranslate">duringplaylistchange</code>
+                イベントと
+                <code class="notranslate">rest</code>
+                のオプション
+                <code class="notranslate">shuffle()</code>
+                方法
+              </li>
+              <li>
+                にアップグレード
+                <strong>Video.js</strong>
+                6.7.1
+              </li>
+              <li>
+                バグの修正
+                <ul><li>
+                    再び落ちる
+                    <code class="notranslate">player_name</code>
+                    iframeタイトルとして、カタログビデオ名をiframe名として設定します（利用可能な場合）
+                  </li>
+                  <li>
+                    特定の動画がエンゲージメントの最後の数秒を報告しない問題を修正します
+                  </li>
+                  <li>
+                    使用する場合、プレーヤーの準備ができる前に、IMAおよびFreeWheelプラグインを初期化します
+                  </li>
+                  <li>FlashベースのソースハンドラをDASHソースでスキップする</li>
+                  <li>
+                    ことを確認してください
+                    <code class="notranslate">autoplay</code>
+                    埋め込みコード、プレーヤー設定、またはクエリ文字列パラメーター（iframeの場合）のいずれからのものであっても、適切に尊重されます
+                  </li>
+                  <li>
+                    FlashおよびIn Page Experiencesを使用してXNUMX回クリックする必要がある問題を修正しました
+                  </li>
+                  <li>
+                    コントロールバーが最小化されているときにLunaの垂直方向のボリュームメニューを非表示にする
+                  </li>
+                  <li>
+                    初期選択前のブラウザメディアソースでサポートされていないブラックリストプレイリスト
+                  </li>
+                </ul></li>
+            </ul><h3 data-gt-block="">バージョン6  -  6.13.0</h3>
+
+            <p data-gt-block="">２０１７年１月３１日</p>
+
+            <ul><li>
+                使う
+                <strong>Flashls</strong>
+                FlashベースのHLS再生用
+              </li>
+              <li>
+                いくつかのプレーヤーのメタデータと設定を公開する
+                <code class="notranslate">bcinfo</code>
+                プレーヤーのプロパティ
+              </li>
+              <li>常に縮小されたVideojs CSSを使用する</li>
+              <li>プレイリストの表示/非表示は設定されたCSSの色を切り替えます</li>
+              <li>
+                更新先
+                <strong>Video.js</strong>
+                6.6.1
+              </li>
+            </ul><h3 data-gt-block="">バージョン6  -  6.12.1</h3>
+
+            <p data-gt-block="">２０１７年１月３１日</p>
+
+            <ul><li>
+                使う
+                <code class="notranslate">&lt;video-js&gt;</code>
+                iframeの要素を埋め込み、許可する
+                <code class="notranslate">&lt;video-js&gt;</code>
+                ページはめ込み埋め込みの要素
+
+                <ul><li>
+                    この新しい要素はVideo.js 6.5.0で導入され、次の場合に役立ちます
+                    <strong>ネイティブコントロールのフラッシュ</strong>
+                    ネイティブ
+                    <code class="notranslate">&lt;video&gt;</code>
+                    プレーヤーが完全にロードされる前に、要素コントロールが一時的に表示される可能性があります
+                  </li>
+                  <li>
+                    これはページ内埋め込みのオプトインであり、当面は提供される埋め込みコードは変更されていません
+                  </li>
+                </ul></li>
+              <li>
+                いくつかのプレーヤーのメタデータと設定を公開する
+                <code class="notranslate">bcinfo</code>
+                プレーヤーのプロパティ
+              </li>
+              <li>
+                6.6.0のVideo.js 6.4.0へのアップデートには以下が含まれます：
+                <ul><li>デバッグログのサポートが追加されました</li>
+                  <li>
+                    <code class="notranslate">playerresize</code>
+                    PlayerディメンションAPI呼び出しのイベント
+                  </li>
+                  <li>
+                    ロードスピナーを表示する前に遅延を追加する（CSS変更）
+                  </li>
+                  <li>
+                    <code class="notranslate">&lt;video-js&gt;</code>
+                    要素のサポート
+                  </li>
+                  <li>
+                    その改善
+                    <code class="notranslate">play()</code>
+                    非同期ソース設定をサポートするメソッド
+                  </li>
+                  <li>UXの改善を追求/スクラブする</li>
+                  <li>多くのメモリリークの修正</li>
+                </ul></li>
+              <li>
+                videojs-playlistを4.1.0にアップデートしてください：
+                <ul><li>
+                    このプレイリストAPIの更新は、すべてのプレイリストの実装に影響します
+                  </li>
+                  <li>
+                    新しいメソッドを追加します。
+                    <code class="notranslate">currentIndex()</code>
+                    
+                    ,
+                    
+                    <code class="notranslate">nextIndex()</code>
+                    
+                    ,
+                    
+                    <code class="notranslate">previousIndex()</code>
+                    
+                    ,
+                    
+                    <code class="notranslate">lastIndex()</code>
+                    
+                    ,
+                    
+                    <code class="notranslate">sort()</code>
+                    
+                    ,
+                    
+                    <code class="notranslate">reverse()</code>
+                    および
+                    <code class="notranslate">shuffle()</code>
+                  </li>
+                  <li>
+                    .
+                    <code class="notranslate">sort()</code>
+                    
+                    ,
+                    
+                    <code class="notranslate">reverse()</code>
+                    および
+                    <code class="notranslate">shuffle()</code>
+                    メソッドは、
+                    <code class="notranslate">playlistsorted</code>
+                    現在、プレイリストUIプラグインでサポートされていないイベント-デフォルトまたはレガシーのいずれか Brightcove
+                    今後数週間以内に更新をリリースする予定です
+                  </li>
+                </ul></li>
+            </ul><h3 data-gt-block="">バージョン6  -  6.10.2</h3>
+
+            <p data-gt-block="">２０１７年１１月２８日</p>
+
+            <ul><li>
+                プレイリストを含むプレビュープレーヤーが正しく表示されない問題を修正しました
+              </li>
+            </ul><h3 data-gt-block="">バージョン6  -  6.10.1</h3>
+
+            <p data-gt-block="">２０１７年１１月２８日</p>
+
+            <ul><li>
+                拡張された
+                <strong>bc</strong>
+                埋め込みごとのプロパティを持つグローバル。 つまり、これにより、高度な/ページ内埋め込みを使用して、単一ページで複数の同時プレーヤーのサポートが向上します。 ただし、5.xプレーヤーと6.xプレーヤーを混在させると、状況によってはアイコンが表示されなくなる可能性があるため、お勧めしません。 詳細については、このトピックに関するドキュメントの形で提供されます。
+              </li>
+              <li>
+                .
+                <strong>Video.js</strong>
+                6.4.0
+              </li>
+              <li>
+                .
+                <strong>videojs-playlist</strong>
+                4.0.2
+              </li>
+              <li>
+                StudioのプレイリストUIで構成されたプレーヤーが誤ってレンダリングされる問題を修正しました
+              </li>
+              <li>
+                正しくないID3タグを解析する問題を修正しました。
+                <code class="notranslate">PES_packet_length</code>
+                ヘッダ
+              </li>
+            </ul><h3 data-gt-block="">バージョン6  -  6.9.0</h3>
+
+            <p data-gt-block="">２０１７年１１月２８日</p>
+
+            <ul><li>IE11でのHLS再生にMSEを使用する</li>
+              <li>
+                CEA-608キャプションが間違ったCCチャネルに配置される問題を修正
+              </li>
+            </ul><h3 data-gt-block="">バージョン5  -  5.27.0</h3>
+
+            <p data-gt-block="">２０１７年１１月２８日</p>
+
+            <ul><li>IE11でのHLS再生にMSEを使用する</li>
+              <li>
+                CEA-608キャプションが間違ったCCチャネルに配置される問題を修正
+              </li>
+            </ul><h3 data-gt-block="">バージョン6  -  6.8.3</h3>
+
+            <p data-gt-block="">10月24 2017</p>
+
+            <ul><li>
+                小さなライブウィンドウのあるライブストリームでの再バッファリングとストールの削減。
+              </li>
+            </ul><h3 data-gt-block="">バージョン5  -  5.26.6</h3>
+
+            <p data-gt-block="">10月24 2017</p>
+
+            <ul><li>
+                小さなライブウィンドウのあるライブストリームでの再バッファリングとストールの削減。
+              </li>
+            </ul><h3 data-gt-block="">バージョン6  -  6.8.2</h3>
+
+            <p data-gt-block="">10月18 2017</p>
+
+            <ul><li>
+                複数のオーディオトラックが埋め込まれたストリームのオーディオの歪みを修正しました。
+              </li>
+              <li>
+                再生にFlashを使用する場合、多重化されていないオーディオおよびビデオHLSソースの優先順位を下げます。
+              </li>
+              <li>
+                更新されたVideo.js
+                <a class="nturl" href="https://github.com/videojs/video.js/blob/master/CHANGELOG.md">
+                  v6.3.3
+                </a>
+              </li>
+            </ul><h3 data-gt-block="">バージョン5  -  5.26.5</h3>
+
+            <p data-gt-block="">10月18 2017</p>
+
+            <ul><li>
+                複数のオーディオトラックが埋め込まれたストリームのオーディオの歪みを修正しました。
+              </li>
+              <li>
+                再生にFlashを使用する場合、多重化されていないオーディオおよびビデオHLSソースの優先順位を下げます。
+              </li>
+              <li>
+                更新されたVideo.js
+                <a class="nturl" href="https://github.com/videojs/video.js/blob/66c0cf5ac6da40c99827e3583f795386f4a54336/CHANGELOG.md#5204-2017-10-02">
+                  v5.20.4
+                </a>
+              </li>
+            </ul><h3 data-gt-block="">バージョン6  -  6.7.1</h3>
+
+            <p data-gt-block="">10月4 2017</p>
+
+            <ul><li>
+                DVRプラグインでストリームの先頭にスクラブする問題を修正しました。
+              </li>
+              <li>
+                コーデック情報が欠落しているためにオーディオのみに切り替えようとした場合のタイムアウトエラーが修正されました。
+              </li>
+              <li>
+                プレイリストプラグインでソースを切り替えるときにキャプションが表示されない問題を修正しました。
+              </li>
+              <li>
+                オーディオトラックを切り替える際に長い遅延が発生する問題を修正しました。
+              </li>
+              <li>
+                より良い自動再生動作をサポートするためにVideo.jsを6.2.8に更新してください。
+              </li>
+            </ul><h3 data-gt-block="">バージョン5  -  5.26.2</h3>
+
+            <p data-gt-block="">10月3 2017</p>
+
+            <ul><li>
+                iOS 11のGraphiteプレーヤーでコントロールが見つからない問題を修正
+              </li>
+              <li>
+                DVRプラグインでストリームの先頭にスクラブする問題を修正しました
+              </li>
+              <li>
+                コーデック情報が欠落しているためにオーディオのみに切り替えようとした場合のタイムアウトエラーを修正
+              </li>
+              <li>
+                プレイリストプラグインでソースを切り替えるとキャプションが表示されない問題を修正
+              </li>
+              <li>
+                オーディオトラックを切り替える際に長い遅延が発生する問題を修正しました
+              </li>
+            </ul><h3 data-gt-block="">バージョン6  -  6.7.0</h3>
+
+            <p data-gt-block="">２０１７年９月２９日</p>
+
+            <ul><li>
+                非推奨のRequireJSモジュールを追加し、
+                <code class="notranslate">require_js_anonymous</code>
+                それを制御するためにプレーヤーの設定。 見る
+                <a class="nturl" href="//support.brightcove.com/ja/requirejs-and-brightcove-player#Future_implementation">
+                  このドキュメント
+                </a>
+                詳しく知る
+              </li>
+              <li>
+                問題を解決しました
+                <strong>エラー</strong>
+                contrib-adsの再生中にプレーヤーでトリガーされたイベントは認識されません。
+              </li>
+            </ul><h3 data-gt-block="">バージョン5  -  5.26.0</h3>
+
+            <p data-gt-block="">２０１７年９月２９日</p>
+
+            <ul><li>
+                指定されたRequireJSモジュールを廃止し、
+                <code class="notranslate">require_js_anonymous</code>
+                それを制御するためにプレーヤーの設定。 詳細については、
+                <a class="nturl" href="//support.brightcove.com/ja/requirejs-and-brightcove-player#Future_implementation">
+                  このドキュメントを参照してください
+                </a>
+                
+                .
+              
+              </li>
+              <li>
+                問題を解決しました
+                <strong>エラー</strong>
+                contrib-adsの再生中にプレーヤーでトリガーされたイベントは認識されません。
+              </li>
+            </ul><h3 data-gt-block="">バージョン6  -  6.5.2</h3>
+
+            <p data-gt-block="">２０１７年８月１５日</p>
+
+            <ul><li>
+                オーディオのみのレンディションがモバイルで最初に選択された問題を修正しました
+              </li>
+              <li>
+                コンソールでの重複したプラグインの登録と廃止の警告に対処しました
+              </li>
+              <li>
+                クエリパラメータを介して追加された場合、自動再生がプレーヤーに適用されない問題を修正しました
+              </li>
+              <li>プレイヤー情報モーダルでのFreeWheelの固定表示</li>
+              <li>
+                IE11およびその他のFlashベースの環境でミュートされたクエリ文字列パラメーターを修正
+              </li>
+              <li>
+                プレイヤーのサイズ変更が正しく動作していなかったいくつかの問題を修正
+              </li>
+            </ul><h3 data-gt-block="">バージョン5  -  5.24.5</h3>
+
+            <p data-gt-block="">２０１７年８月１５日</p>
+
+            <ul><li>
+                オーディオのみのレンディションがモバイルで最初に選択された問題を修正しました
+              </li>
+              <li>
+                クエリパラメータを介して追加された場合、自動再生がプレーヤーに適用されない問題を修正しました
+              </li>
+              <li>プレイヤー情報モーダルでのFreeWheelの固定表示</li>
+            </ul><h3 data-gt-block="">バージョン6  -  6.5.0</h3>
+
+            <p data-gt-block="">２０１７年８月１５日</p>
+
+            <ul><li>プレイヤー情報モーダルにセッションIDとプレーヤーエレメントIDを追加する</li>
+              <li>
+                iOS 10.3でネイティブコントロールとカスタムコントロールの両方が表示される問題を修正
+              </li>
+              <li>
+                間欠的な問題を修正
+                <strong>addSourceBuffer</strong>
+                エラー
+              </li>
+              <li>
+                削除済み
+                <code class="notranslate">autoplay</code>
+                if iOS 10の場合
+                <code class="notranslate">playsinline</code>
+                
+                or
+                
+                <code class="notranslate">muted</code>
+                存在しない
+              </li>
+            </ul><h3 data-gt-block="">バージョン5  -  5.24.3</h3>
+
+            <p data-gt-block="">２０１７年８月１５日</p>
+
+            <ul><li>
+                iOS 10.3でネイティブコントロールとカスタムコントロールの両方が表示される問題を修正
+              </li>
+              <li>
+                間欠的な問題を修正
+                <strong>addSourceBufferエラーです。</strong>
+              </li>
+            </ul><h3 data-gt-block="">バージョン6  -  6.4.1</h3>
+
+            <p data-gt-block="">２０１８年８月９日</p>
+
+            <ul><li>
+                オーディオのみのHLSプレイリストが再生できなかった問題を修正
+              </li>
+              <li>可能であれば、メトリックにエラータイプを送信する</li>
+              <li>HLS再生におけるABRアルゴリズムの改良</li>
+              <li>
+                トリガー
+                <code class="notranslate">analytics_request</code>
+                メトリックを送信するときのプレーヤーのイベント
+              </li>
+              <li>
+                更新しました 
+                <strong>Video.js</strong>
+                v6.2.1へ
+              </li>
+            </ul><h3 data-gt-block="">バージョン5  -  5.24.1</h3>
+
+            <p data-gt-block="">２０１８年８月９日</p>
+
+            <ul><li>
+                オーディオのみのHLSプレイリストが再生できなかった問題を修正
+              </li>
+              <li>可能であれば、メトリックにエラータイプを送信する</li>
+              <li>HLS再生におけるABRアルゴリズムの改良</li>
+              <li>
+                削除に関する問題を修正しました
+                <code class="notranslate">autoplay</code>
+                いずれか
+                <code class="notranslate">playsinline</code>
+                
+                or
+                
+                <code class="notranslate">muted</code>
+                不足している
+              </li>
+              <li>
+                分離されたオーディオがビデオの最後でカットオフされる問題を修正しました
+              </li>
+              <li>
+                PESパケットがセグメント間で分割されると、ビデオとオーディオが非同期になる問題を修正しました
+              </li>
+            </ul><h3 data-gt-block="">バージョン6  -  6.3.2</h3>
+
+            <p data-gt-block="">２０１８年８月９日</p>
+
+            <h3 data-gt-block="">機能</h3>
+
+            <ul><li>
+                にアップグレードしました
+                <strong>Video.js 6</strong>
+              </li>
+              <li>
+                Video.js 6は、ミドルウェア、高度なプラグイン、アクセシビリティとUIの改善をサポートします。 詳細については、
+                <a class="nturl" href="//github.com/videojs/video.js/wiki/Video.js-6-Migration-Guide">
+                  移行ガイド
+                </a>
+                Video.jsウィキ
+              </li>
+              <li>Internet Explorer 8のサポートを削除</li>
+              <li>近代化され、黒鉛の皮膚を微調整</li>
+              <li>
+                更新しました
+                <strong>Video.js</strong>
+                6.2.1へ
+              </li>
+              <li>
+                更新しました
+                <strong>videojs-errors</strong>
+                3.0.2へ
+              </li>
+              <li>セッションIDとプレーヤーIDをエラーモーダルに追加する</li>
+              <li>
+                定義を許可する
+                <code class="notranslate">playlistVideoId</code>
+                クエリ文字列または
+                <code class="notranslate">data-playlist-video-id</code>
+                最初のプレイリストビデオをトリガーする属性
+              </li>
+              <li>
+                更新版
+                <strong>videojs-contrib-hls</strong>
+                v5.7.0へ
+              </li>
+            </ul><h3 data-gt-block="">バグの修正</h3>
+
+            <ul><li>
+                メディアキューポイントプロキシトラックが、プロキシされたトラックを誤って識別する可能性がある問題を修正しました
+              </li>
+              <li>
+                IMA3プラグインを使用している問題を解決しました
+                <strong>演奏</strong>
+                モードは、
+                <code class="notranslate">video_view</code>
+                プレロールの前に報告されるイベント
+                <code class="notranslate">ad_start</code>
+                イベント
+              </li>
+              <li>
+                初期化後にビデオ要素にデータ属性が設定されている場合、正しいプレーヤー値を分析に送信するようになりました
+              </li>
+              <li>問題のあるエラーコードをロールバックする</li>
+              <li>
+                プレイヤー識別情報が分析プラグインに渡されない問題を修正しました
+              </li>
+              <li>
+                追加の翻訳を追加しました Video Cloud リソースエラーとプレイヤー情報モード
+              </li>
+              <li>
+                プレーヤーは、
+                <strong>VIDEO_NOT_PLAYABLE</strong>
+                からのエラー Video Cloud プレーヤーのUIで
+              </li>
+              <li>
+                iOSでエラーが発生する問題を修正しました
+              </li>
+              <li>
+                分離されたオーディオがビデオの最後でカットオフされる問題を修正しました
+              </li>
+              <li>
+                PESパケットがセグメント間で分割されると、ビデオとオーディオが非同期になる問題を修正しました
+              </li>
+              <li>
+                分離されたオーディオでレンディションを切り替えた後、プレーヤーがフリーズする問題を修正しました
+              </li>
+            </ul><h3 data-gt-block="">バージョン5  -  5.23.2</h3>
+
+            <p data-gt-block="">２０１８年８月９日</p>
+
+            <ul><li>
+                プレイヤーはVIDEO_NOT_PLAYABLEのエラーを報告します
+                Video Cloud プレーヤーのUIで
+              </li>
+              <li>
+                分離されたオーディオがビデオの終わりでカットオフされる問題を修正しました。
+              </li>
+              <li>
+                PESパケットがセグメント間で分割されると、ビデオとオーディオが非同期になる問題を修正しました。
+              </li>
+              <li>
+                分離されたオーディオでレンディションを切り替えた後、プレーヤーがフリーズする問題を修正しました。
+              </li>
+              <li>
+                iOSでエラーが発生する問題を修正しました。
+              </li>
+              <li>
+                フォーカスしたときのボリュームコントロールのジッタリングの問題を修正しました。
+              </li>
+              <li>
+                再生が停止したときにプレーヤーを読み込んでいるスピナーが表示されない問題を修正しました。
+              </li>
+            </ul><h3 data-gt-block="">バージョン6  -  6.1.1</h3>
+
+            <p data-gt-block="">２０１７年５月３１日</p>
+
+            <ul><li>
+                プレイヤー識別情報が分析プラグインに渡されない問題を修正しました
+              </li>
+              <li>
+                追加の翻訳を追加しました Video Cloud リソースエラーとプレイヤー情報モード
+              </li>
+            </ul><h3 data-gt-block="">バージョン5  -  5.22.4</h3>
+
+            <p data-gt-block="">２０１７年６月２８日</p>
+
+            <ul><li>
+                プレイヤー識別情報が分析プラグインに渡されない問題を修正しました
+              </li>
+              <li>
+                プレーヤーの存在にもかかわらず、プレーヤーがミュートされていない問題を修正しました。
+                <code class="notranslate">muted</code>
+                クエリパラメータ
+              </li>
+              <li>
+                追加の翻訳を追加しました Video Cloud リソースエラーとプレイヤー情報モード
+              </li>
+              <li>rebuffering統計計算の修正</li>
+            </ul><h3 data-gt-block="">バージョン6  -  v6.1.0</h3>
+
+            <p data-gt-block="">２０１７年５月３１日</p>
+
+            <ul><li>エラーモーダルにセッションIDとプレーヤーIDを追加しました</li>
+              <li>
+                定義できる
+                <code class="notranslate">playlistVideoId</code>
+                クエリ文字列または
+                <code class="notranslate">data-playlist-video-id</code>
+                最初のプレイリストビデオをトリガーする属性
+              </li>
+              <li>
+                IMA3プラグインを使用している問題を解決しました
+                <code class="notranslate">onplay</code>
+                モードは、
+                <code class="notranslate">video_view</code>
+                プレロールの前に報告されるイベント
+                <code class="notranslate">ad_start</code>
+                イベント
+              </li>
+              <li>IE8のプレーヤーの不具合を修正</li>
+              <li>
+                初期化後にビデオ要素にデータ属性が設定されている場合、正しいプレーヤー値を分析に送信します
+              </li>
+              <li>問題のあるエラーコードをロールバックする</li>
+              <li>
+                更新版
+                <strong>videojs-contrib-hls</strong>
+                v5.5.3へ
+              </li>
+            </ul><h3 data-gt-block="">バージョン6  -  6.0.2</h3>
+
+            <p data-gt-block="">２０１８年４月１３日</p>
+
+            <ul><li>
+                メディアキューポイントプロキシトラックが、プロキシされたトラックを誤って識別する可能性がある問題を修正しました
+              </li>
+              <li>
+                更新しました
+                <strong>Video.js</strong>
+                6.0.1へ
+              </li>
+              <li>
+                更新しました
+                <strong>videojs-errors</strong>
+                1.3.1へ
+              </li>
+            </ul><h3 data-gt-block="">5.22.2</h3>
+
+            <p data-gt-block="">２０１７年６月２８日</p>
+
+            <ul><li>IE8のプレーヤーの不具合を修正</li>
+              <li>
+                初期化後にビデオ要素にデータ属性が設定されている場合、正しいプレーヤー値を分析に送信します
+              </li>
+              <li>
+                更新しました
+                <strong>videojs-contrib-hls</strong>
+                v5.5.3へ
+              </li>
+            </ul><h3 data-gt-block="">5.22.0</h3>
+
+            <p data-gt-block="">２０１７年５月３１日</p>
+
+            <ul><li>
+                新しいエラーコードが追加されました。
+                <a class="nturl" href="//support.brightcove.com/ja/display-error-messages-plugin#bccustomerrors">
+                  エラープラグインのカスタムエラーセクション
+                </a>
+                ドキュメント
+              </li>
+              <li>
+                定義する機能が追加されました
+                <code class="notranslate">playlistVideoId</code>
+                クエリ文字列または
+                <code class="notranslate">data-playlist-video-id</code>
+                最初のプレイリストビデオをトリガーする属性
+              </li>
+              <li>
+                FirefoxでHLSを使用して、最後までシークしたときに最初から再生が開始されることがあった問題を修正しました
+              </li>
+              <li>
+                ブラウザでサポートされている最新のHLSバージョンを優先するために、カタログ応答のソースの順序を修正しました
+              </li>
+              <li>
+                適切にヌルで終了しなかったTXXX ID3タグの処理を修正
+              </li>
+            </ul><h3 data-gt-block="">5.21.0</h3>
+
+            <p data-gt-block="">２０１８年４月１３日</p>
+
+            <ul><li>プレイリストの繰り返しサポートを追加しました</li>
+              <li>
+                追加されました
+                <code class="notranslate">overflow: hidden</code>
+                スクロールバーが表示されないようにするためのLunaおよびGraphite iframe CSS
+              </li>
+              <li>
+                メディアキューポイントプロキシトラックが、プロキシされたトラックを誤って識別する可能性がある問題を修正しました
+              </li>
+              <li>
+                iPhone、iOS 10、およびGraphiteでビデオが再生できない問題を修正しました。
+                <code class="notranslate">playsinline</code>
+              </li>
+              <li>
+                更新しました
+                <strong>Video.js</strong>
+                5.19.2へ
+              </li>
+              <li>
+                更新しました
+                <strong>videojs-errors</strong>
+                1.3.1へ
+              </li>
+            </ul><h3 data-gt-block="">5.20.1</h3>
+
+            <p data-gt-block="">２０１８年４月１３日</p>
+
+            <h4 data-gt-block="">今回のリリースで注目すべき機能は次のとおりです。</h4>
+
+            <h5 data-gt-block="">機能/アップデート</h5>
+
+            <ul><li>HLSでのマニフェスト内WebVTTのサポートの追加</li>
+              <li>HLSでの説明オーディオトラックのサポートの追加</li>
+              <li>
+                HLSでのライブストリームのフェイルオーバー動作の改善
+                <ul><li>
+                    プレーヤーは、タイムリーに更新されないプレイリストを検出し、可能な場合はバックアップソースへの切り替えを試みます。
+                  </li>
+                </ul></li>
+              <li>
+                追加されました
+                <code class="notranslate">id3CuePointsTrack</code>
+                と
+                <code class="notranslate">mediaCuePointsTrack</code>
+                メタデータトラックを取得するプレーヤーへ
+              </li>
+              <li>iOSオリエンテーションのバグを修正しました</li>
+              <li>
+                問題を修正した
+                <code class="notranslate">video_view</code>
+                IMAプラグインがインストールされていると報告されない
+                <code class="notranslate">ondemand</code>
+                モード
+              </li>
+              <li>
+                HLSのプレイ中にFirefoxでシークした後、プレーヤーがタイムアウトするバグを修正しました
+              </li>
+            </ul><h3 data-gt-block="">5.19.2</h3>
+
+            <p data-gt-block="">２０１８年３月３０日</p>
+
+            <h4 data-gt-block="">今回のリリースで注目すべき機能は次のとおりです。</h4>
+
+            <h5 data-gt-block="">機能/アップデート</h5>
+
+            <ul><li>
+                バグの修正
+                <code class="notranslate">addMediaInfo</code>
+                エラーログ
+              </li>
+              <li>
+                タイムアウトエラーが45秒ごとにループする状況を修正しました。
+              </li>
+            </ul><h3 data-gt-block="">5.19.1</h3>
+
+            <p data-gt-block="">２０１８年３月３０日</p>
+
+            <h4 data-gt-block="">今回のリリースで注目すべき機能は次のとおりです。</h4>
+
+            <h5 data-gt-block="">機能/アップデート</h5>
+
+            <ul><li>
+                追加
+                <code class="notranslate">video_complete</code>
+                報告し、いくつかのバグを修正する
+                <code class="notranslate">play_request</code>
+                最終的に
+                <code class="notranslate">video_engagement</code>
+                マルチソースプレーヤーでのレポート。
+              </li>
+              <li>
+                アップグレード
+                <strong>Video.js</strong>
+                5.18.4へ。
+              </li>
+            </ul><h5 data-gt-block="">バグの修正</h5>
+
+            <ul><li>
+                異常な負の開始時間の送信を抑制する悪い修正を削除しました。
+              </li>
+              <li>
+                一部のカスタムプレイリストの実装に関する問題を修正しました。
+                <code class="notranslate">video_view</code>
+                次の動画のためのビーコン。
+              </li>
+              <li>
+                フラッシュオーディオスキップの修正、サイレントオーディオフレームの挿入の修正、同じ開始時間のメタデータキューのマッピングの修正、非マスタープレイリストソースのタイムアウトの防止。
+              </li>
+              <li>
+                アナリティクスが負の開始時間を報告する原因となる問題を修正しました。
+              </li>
+              <li>
+                AndroidデバイスでのIMA3広告の再生中に広告コントロールが非表示にならない問題を修正しました。
+              </li>
+              <li>
+                プレイヤーがプレイリストによって切断されたグラファイトおよびレガシープレイリストのスタイリングの問題を修正しました。
+              </li>
+              <li>
+                iOSのプレイリスト内の広告と動画間でミュートトグルボタンが保持されるように修正が追加されました。
+              </li>
+              <li>
+                プレーヤーのエラー後にコントロールが無効になる問題を修正しました。
+              </li>
+              <li>
+                相対プロトコルソースURLの解決、長時間の一時停止後のライブ再生の再開、同期点決定の改善を修正しました。
+              </li>
+              <li>
+                新しいプレイリストプラグインが使用されている場合、古いプレイリストスタイルは含まれなくなりました。
+              </li>
+              <li>
+                エラープラグインオプションを検証して、プレーヤーの構成を間違えるのを防ぎます。
+              </li>
+            </ul><h3 data-gt-block="">5.18.1</h3>
+
+            <p data-gt-block="">２０１８年２月１日</p>
+
+            <h4 data-gt-block="">今回のリリースで注目すべき機能は次のとおりです。</h4>
+
+            <ul><li>
+                ブール値を受け入れる
+                <code class="notranslate">true</code>
+                エラー設定オプションとして
+              </li>
+              <li>
+                追加されました
+                <code class="notranslate">video_complete</code>
+                報告し、いくつかのバグを修正する
+                <code class="notranslate">play_request</code>
+                最終的に
+                <code class="notranslate">video_engagement</code>
+                マルチソースプレーヤーでのレポート
+              </li>
+              <li>
+                バグ修正：新しいプラグインを使用する場合は、古いプレイリストスタイルを含めないでください
+              </li>
+              <li>
+                修正されたバグ：ブラウザコンソールで報告される非推奨の警告の発生率を減らしました
+                <code class="notranslate">mediainfo</code>
+                プロパティ
+              </li>
+              <li>FairPlay HLSの再生に関する問題を修正</li>
+              <li>ほとんどのプラットフォームでDASHコンテンツがMP4より優先されるようになりました</li>
+              <li>
+                オーディオフレームの欠落または破損によって生じるセグメント間の予期しないギャップを埋めるために、HLS再生にインテリジェントな無音挿入を追加しました
+              </li>
+            </ul><h3 data-gt-block="">5.17.0</h3>
+
+            <p data-gt-block="">２０１８年２月１日</p>
+
+            <aside class="bcls-aside bcls-aside--information" data-gt-block="">
+              バックグラウンドタブでHLSをサポートするために、このリリースではIE10のHLSサポートを削除しています。 ほとんどの場合、再生はMP4にシームレスにフォールバックします。 IE0.5の使用率が10％を超えるプレーヤーには、この更新プログラムを配信していません。
+            </aside><h4 data-gt-block="">今回のリリースで注目すべき機能は次のとおりです。</h4>
+
+            <ul><li>背景タブの再生を有効にする</li>
+              <li>
+                IE8との非互換性と分析の潜在的なメモリリークを修正する
+              </li>
+              <li>プレーヤーのメモリーリークを修正しました。</li>
+              <li>ES3をサポートするHLSビルドプロセスを修正</li>
+              <li>
+                不正確な問題に対処する
+                <code class="notranslate">start_time_ms</code>
+                報告
+              </li>
+              <li>
+                更新先
+                <code class="notranslate">video.js</code>
+                5.16.0
+              </li>
+            </ul><h3 data-gt-block="">5.15.0</h3>
+
+            <p data-gt-block="">２０１７年１月３１日</p>
+
+            <h4 data-gt-block="">今回のリリースで注目すべき機能は次のとおりです。</h4>
+
+            <ul><li>
+                バグ修正：プレイリストで、プレイリストUIプラグインの検出に関する問題に対処
+              </li>
+              <li>
+                バグ修正：キャプション設定をビューポートサイズにより敏感にする
+              </li>
+              <li>
+                .
+                <strong>video.js</strong>
+                5.15.1
+              </li>
+              <li>
+                サポートされている場合、FairPlayソースが最初になるようにソースの順序を修正
+              </li>
+              <li>
+                サポートの追加
+                <code class="notranslate">ad_config_id</code>
+              </li>
+              <li>
+                その有効/無効のサポートを追加
+                <code class="notranslate">vjs-contextmenu</code>
+                イベント
+              </li>
+            </ul><h3 data-gt-block="">5.13.4</h3>
+
+            <p data-gt-block="">19 Dec 2016</p>
+
+            <h4 data-gt-block="">今回のリリースで注目すべき機能は次のとおりです。</h4>
+
+            <ul><li>
+                更新しました
+                <strong>video.js</strong>
+                5.14.1へ
+              </li>
+              <li>
+                更新しました
+                <strong>videojs-contrib-hls</strong>
+                4.0.2へ
+                <ul><li>
+                    SegmentLoaderの中心にあるアルゴリズムを可能な限り簡素化
+                    <ul><li>
+                        currentTimeをバリアント全体のセグメントに関連付けるために、同期点の概念を導入しました
+                      </li>
+                      <li>
+                        で入手可能な詳細情報：
+                        <a class="nturl" href="https://www.brightcove.com/en/blog/2016/10/improving-hls-playback">
+                          https://www.brightcove.com/en/blog/2016/10/improving-hls-playback
+                        </a>
+                      </li>
+                    </ul></li>
+                </ul></li>
+              <li>
+                更新しました
+                <strong>videojs-contrib-media-sources</strong>
+                4.1.2へ
+                <ul><li>
+                    適切に削除できるため、リモートTextTracksの使用を開始します
+                  </li>
+                  <li>
+                    cuesがnullの場合、ハンドルをキューから適切に削除する
+                  </li>
+                </ul></li>
+              <li>
+                更新しました
+                <strong>mux.js</strong>
+                3.0.3へ
+                <ul><li>
+                    フラグメントのbaseMediaDecodeTimeへの最初のフレームのcompositionTimestampの適用を停止します
+                  </li>
+                  <li>
+                    保留中のトラックで欠落しているオーディオデータを考慮して合体ストリームを修正
+                  </li>
+                </ul></li>
+              <li>
+                ネイティブHLSサポートに依存する代わりに、Android ChromeおよびMicrosoft EdgeでMSEベースのHLSを使用する
+              </li>
+              <li>
+                Androidで全画面で向きが変わるのを修正
+              </li>
+              <li>
+                調整した
+                <code class="notranslate">bc()</code>
+                エイリアス機能
+                <code class="notranslate">videojs()</code>
+                より密接に 彼らは今交換可能に使用することができます
+              </li>
+              <li>
+                FirefoxでBootstrapでiframeを使用すると、プレーヤーが機能しなかった問題を修正しました
+              </li>
+              <li>
+                サポートの追加
+                <code class="notranslate">crossorigin</code>
+                iframeプレーヤーの設定値またはクエリパラメータ
+              </li>
+              <li>
+                更新しました
+                <strong>videojs-errors</strong>
+                〜を引き起こす
+                <strong>PLAYER_ERR_TIMEOUT</strong>
+                Flash swfが応答しない場合
+              </li>
+            </ul><h3 data-gt-block="">5.11.4</h3>
+
+            <p data-gt-block="">10月25 2016</p>
+
+            <h4 data-gt-block="">今回のリリースで注目すべき機能は次のとおりです。</h4>
+
+            <ul><li>
+                更新版
+                <strong>videojs-contrib-hls</strong>
+                3.6.6へ
+
+                <ul><li>
+                    バリアントプレイリストでCODECS属性が指定された場合のIE11 / Windows7のエラーを修正
+                  </li>
+                  <li>
+                    修正する
+                    <code class="notranslate">ended</code>
+                    リプレイ後に発砲しないイベント
+                  </li>
+                  <li>
+                    iframeをトリミングしないようにする場合は、FLVタグをトリムするだけです
+                  </li>
+                  <li>オーディオトラックの変更に関するinitセグメントデータを追加する</li>
+                  <li>
+                    Safariの実装に従うためにID3の動作を正規化する
+                  </li>
+                  <li>0の初期帯域幅オプションを許可する</li>
+                  <li>
+                    Firefox 49で複数の代替オーディオトラックのサポートを追加
+                  </li>
+                  <li>各セグメントのビデオバッファにinitセグメントを追加する</li>
+                </ul></li>
+              <li>
+                .
+                <strong>video.js</strong>
+                5.12.5
+              </li>
+              <li>
+                更新しました
+                <strong>videojs-bc-analytics</strong>
+                2.4.1へ
+                <ul><li>
+                    再生開始時間の大きな値（正と負の両方）が報告されているいくつかのコーナーケースに対処する
+                  </li>
+                  <li>
+                    再バッファリング統計のレポートをさらに改良して、精度を向上させる
+                  </li>
+                </ul></li>
+              <li>
+                更新しました
+                <strong>videojs-bc-catalog</strong>
+                3.3.0へ
+                <ul><li>
+                    露出
+                    <code class="notranslate">transformVideoResponse</code>
+                  </li>
+                </ul></li>
+              <li>
+                iOS10のデフォルト処理の改善
+                <code class="notranslate">playsinline</code>
+                と
+                <code class="notranslate">fullscreenchange</code>
+              </li>
+            </ul><h3 data-gt-block="">5.10.5</h3>
+
+            <p data-gt-block="">10月7 2016</p>
+
+            <h4 data-gt-block="">今回のリリースで注目すべき機能は次のとおりです。</h4>
+
+            <ul><li>
+                iframe埋め込みを使用する場合のiOS 10でのインライン再生とミュートされた自動再生のサポートが追加されました
+                <ul><li>
+                    これらの機能のサポートは、iframeで有効にすることができます。
+                    <code class="notranslate">playsinline</code>
+                    および
+                    <code class="notranslate">muted</code>
+                    iframeソースURLのクエリパラメータ（自動再生は既にサポートされています）
+                  </li>
+                  <li>
+                    これらの機能は、適切なHTML属性（たとえば、
+                    <code class="notranslate">&lt;video playsinline muted autoplay&gt;</code>
+                    
+                    )
+                  
+                  </li>
+                </ul></li>
+              <li>
+                メイド Video Cloud キューポイントは、Safariに存在するネイティブキューのように動作します。 これは、キューポイントの現在の実装には影響しませんが、いくつかのエッジケースを解決します。
+              </li>
+              <li>
+                Internet ExplorerでFlashが無効になっているユーザー向けに、よりユーザーフレンドリーなメッセージを追加しました
+              </li>
+              <li>
+                空の広告応答でFreeWheel広告プラグインを使用すると、ビデオビューとエンゲージメントメトリックが送信されないという問題を解決しました
+              </li>
+              <li>
+                MacOS 10.10（ヨセミテ）のSafariでFairPlayの問題を修正しました。
+              </li>
+              <li>さまざまなマイナーな内部コードの改善</li>
+              <li>
+                videojs-contrib-hlsを3.6.0に更新しました
+                <ul><li>バージョン1 TFDTボックスを生成するためのサポートが追加されました</li>
+                  <li>fMP4サポートを追加</li>
+                  <li>
+                    プレーヤーがライブストリームの最初のセグメントを読み込むというバグを修正しました
+                  </li>
+                </ul></li>
+              <li>
+                videojs-bc-catalog to 3.2.4に更新されました
+                <ul><li>ヨセミテのFairPlayソースでプレイリストを修正</li>
+                </ul></li>
+              <li>
+                video.jsに更新された5.11.7
+                <ul><li>iOSでプレーヤーをダブルラップする際の問題を修正しました</li>
+                </ul></li>
+              <li>固定されたコントロールバーは隠れた後に再出現しません</li>
+              <li>
+                iPhoneでフルスクリーンを終了した後にiOS 10に表示されるネイティブおよびカスタムコントロールを修正しました
+              </li>
+              <li>
+                固定
+                <code class="notranslate">playsinline</code>
+                と
+                <code class="notranslate">muted</code>
+                ページはめ込み埋め込みの属性
+              </li>
+              <li>固定言語とプリロードクエリパラメータ</li>
+              <li>
+                の問題を修正しました。
+                <strong>閉じる</strong>
+                Graphiteスキンを使用しているときにボタンがモーダルに表示されていなかった
+              </li>
+              <li>
+                Graphiteスキンの使用時にカスタムコンテキストメニューが表示されない問題を修正
+              </li>
+              <li>
+                videojs-bc-catalog to 3.2.5に更新されました
+                <ul><li>
+                    いつFairPlay証明書を解決しませんでした
+                    <strong>叔父</strong>
+                    プラグインは利用できません
+                  </li>
+                </ul></li>
+            </ul><h3 data-gt-block="">5.9.1</h3>
+
+            <p data-gt-block="">２０１７年９月２９日</p>
+
+            <h4 data-gt-block="">今回のリリースで注目すべき機能は次のとおりです。</h4>
+
+            <ul><li>HLS FairPlayソースのサポートを追加</li>
+              <li>
+                Flashを無効にしている一部のIEブラウザのメッセージが改善されました
+              </li>
+              <li>マイナーコードの修正と改善</li>
+            </ul><h3 data-gt-block="">のバージョン1に更新 Brightcove Player：v1.14.32</h3>
+
+            <p data-gt-block="">２０１７年９月２９日</p>
+
+            <h4 data-gt-block="">今回のリリースで注目すべき機能は次のとおりです。</h4>
+
+            <ul><li>カタログはDASHソースにHTTPSの優先順位を付けるように指示する</li>
+              <li>プレーヤーのコンパイルの改善</li>
+            </ul><h3 data-gt-block="">5.8.1</h3>
+
+            <p data-gt-block="">２０１７年９月２９日</p>
+
+            <h4 data-gt-block="">今回のリリースで注目すべき機能は次のとおりです。</h4>
+
+            <ul><li>
+                問題を修正した
+                <code class="notranslate">bc.SKIN</code>
+                値が混乱の原因となっていた
+              </li>
+              <li>
+                更新しました
+                <strong>Video.js</strong>
+                5.11.6へ
+                <ul><li>イベントハンドラへの例外処理の追加</li>
+                  <li>
+                    固定ラッピングネイティブとエミュレート
+                    <code class="notranslate">MediaErrors</code>
+                  </li>
+                  <li>オーディオトラック間の固定切り替え</li>
+                  <li>オーディオボタンにタイトル属性を追加</li>
+                </ul></li>
+              <li>
+                更新しました
+                <strong>videojs-contrib-hls</strong>
+                3.5.3へ
+              </li>
+              <li>
+                更新しました
+                <strong>videojs-errors</strong>
+                1.0.5へ
+              </li>
+              <li>
+                更新しました
+                <strong>分析論</strong>
+                2.3.1へ
+                <ul><li>
+                    2秒のセグメントのHLSビデオでメトリック要求が失敗する問題を修正
+                  </li>
+                  <li>エンゲージメントイベントに帯域幅レポートを追加</li>
+                </ul></li>
+              <li>
+                Dockで説明が正しく表示されるようになりました（以前はタイトルが説明として使用されていました）
+              </li>
+            </ul><h3 data-gt-block="">5.7.1</h3>
+
+            <p data-gt-block="">２０１７年８月１５日</p>
+
+            <h4 data-gt-block="">今回のリリースで注目すべき機能は次のとおりです。</h4>
+
+            <ul><li>
+                右クリックの動作とコンテキストメニューの問題を修正しました
+              </li>
+              <li>
+                iOSで意図しないプリロードが発生する可能性がある問題を修正しました
+              </li>
+              <li>代替オーディオアイコンの問題を修正しました</li>
+            </ul><h3 data-gt-block="">5.6.2</h3>
+
+            <p data-gt-block="">２０１７年８月１５日</p>
+
+            <h4 data-gt-block="">今回のリリースで注目すべき機能は次のとおりです。</h4>
+
+            <ul><li>
+                v3.3.0からHLSをv3.1.0に更新しました：
+                <ul><li>
+                    IEのバグを修正
+                    <code class="notranslate">loadedmetadata</code>
+                    発砲していなかった
+                  </li>
+                  <li>
+                    プレイリストがXNUMXつしか残っていない場合、または利用可能な最も低いレンディションを使用している場合、セグメントリクエストがタイムアウトしなくなりました
+                  </li>
+                  <li>
+                    最初のセグメントが取得されるはずだったときに取得されないことがあったバグを修正しました
+                  </li>
+                  <li>
+                    ビデオまたはオーディオフレームが欠落しているために作成されたビデオ要素のバッファのギャップを探すアルゴリズムを追加しました。
+                  </li>
+                  <li>AES解読ロジックを自分のプロジェクトに移した</li>
+                </ul></li>
+              <li>
+                プレーヤーを処分する際にエラーが発生する問題を修正しました
+              </li>
+              <li>
+                IE11でコントロールの移行が早すぎる問題を修正しました
+              </li>
+              <li>マイナーなIE8互換の問題を修正</li>
+              <li>
+                追加されたa
+                <strong>プレーヤー情報</strong>
+                モーダル
+                <ul><li>
+                    古いものを置き換える
+                    <strong>デバッガ</strong>
+                    以前に存在した
+                  </li>
+                  <li>
+                    モーダルは、顧客サポートに役立つ情報を提供します。 右クリック（または、タッチイベントを発するデバイスでのロングタッチ）および選択によって呼び出すことができます。
+                    <strong>プレーヤー情報</strong>
+                    メニューから
+                  </li>
+                  <li>
+                    この種の後続のイベント（右クリック/ロングタッチ）は、デフォルトの動作（つまり、ネイティブコンテキストメニュー）をトリガーします。
+                  </li>
+                </ul></li>
+            </ul><h3 data-gt-block="">5.5.0</h3>
+
+            <p data-gt-block="">２０１８年８月９日</p>
+
+            <h4 data-gt-block="">今回のリリースで注目すべき機能は次のとおりです。</h4>
+
+            <ul><li>video.jsを5.10.7に更新しました</li>
+              <li>QoE分析の予備サポート</li>
+              <li>マウス操作を広告コントロールに修正</li>
+              <li>
+                すべてのブラウザが確実にキューポイントを起動できるように、キューポイントの長さは0.5秒になりました
+              </li>
+            </ul><h3 data-gt-block="">5.4.0</h3>
+
+            <p data-gt-block="">２０１７年６月２８日</p>
+
+            <ul><li>video.jsを5.10.5に更新しました</li>
+              <li>
+                デスクトップHLSを使用した手動レンディション選択の早期アクセスサポート
+              </li>
+              <li>無効なページはめ込みプレーヤーの埋め込みが正しく無効になりました</li>
+              <li>プレイヤーのコンパイルによるセキュリティ問題を修正しました。</li>
+              <li>
+                PLAYER_ERR_TIMEOUTを長時間実行している広告ブレークに対してトリガーしない
+              </li>
+              <li>
+                Flash再生技術の使用中に「ミュート」および「ループ」属性のサポートを追加
+              </li>
+            </ul><h3 data-gt-block="">5.3.4</h3>
+
+            <p data-gt-block="">２０１７年６月２８日</p>
+
+            <ul><li>videojsを5.10.4に更新しました</li>
+              <li>複数の代替オーディオトラックのサポート</li>
+              <li>
+                HLSフェッチャーの修正により、繰り返されるセグメントをフェッチするケースを削減
+              </li>
+              <li>
+                シークツーライブ機能を含むFlashライブストリーミングの修正
+              </li>
+              <li>
+                Flashフォールバックを使用してHLSを実行するときに、単一のデフォルトのオーディオトラックを公開する
+              </li>
+              <li>HLSの高品質な変更に関する問題を修正しました。</li>
+              <li>不良セグメント化されたHLSのフェッチ動作を強化する</li>
+              <li>HLSセグメント期間の計算に関する問題を修正しました。</li>
+              <li>サラウンドサウンドの問題を修正</li>
+              <li>
+                Graphiteスキンを使用するときのキーボードナビゲーションとコントロールバーの問題を修正
+              </li>
+              <li>FairPlayで暗号化されたHLSソースがあれば無視する</li>
+              <li>HbbTV MPEG-DASHソースがある場合は無視する</li>
+              <li>
+                レンディションの選択が、サーバーから既にロードされたプレイリストに切り替わらない問題を修正しました
+              </li>
+            </ul><h3 data-gt-block="">5.2.2</h3>
+
+            <p data-gt-block="">２０１７年５月３１日</p>
+
+            <ul><li>video.jsをv5.9.2に更新する</li>
+              <li>Windows 11上のIE10でHLSで断続的なエラーを修正しました。</li>
+              <li>
+                <a class="nturl" href="https://github.com/videojs/videojs-contrib-hls/tree/v2.1.1#hlsxhr">
+                  HLS XMLHttpRequestオプションを送信する前に設定するメソッドを追加します
+                </a>
+              </li>
+              <li>
+                iframeにネイティブコントロールが短時間表示される問題を修正
+              </li>
+              <li>
+                時間のツールチップがプレーヤー範囲内に含まれるようになりました
+              </li>
+              <li>Video.jsは動的スタイル要素を追加しなくなりました</li>
+              <li>
+                セグメントがキーフレームで始まらない場合、HLSコンテンツの再生が改善されました
+              </li>
+              <li>
+                大きな再生ボタンを所定の場所に移動したアニメーションを削除する
+              </li>
+              <li>
+                複数のルナページはめ込みが適切にスタイル設定されていることを確認してください
+              </li>
+            </ul><h3 data-gt-block="">5.1.14</h3>
+
+            <p data-gt-block="">２０１８年４月１３日</p>
+
+            <ul><li>video.js v5.9.0に更新してください。</li>
+              <li>
+                削除する
+                <strong>controls</strong>
+                ページはめ込みの属性がコントロールを無効にする
+              </li>
+              <li>
+                ミュートボタンを切り替えると、奇妙な音量動作が発生する問題を修正しました
+              </li>
+              <li>
+                設定の問題を修正しました。
+                <strong>皮膚</strong>
+                プロパティへ false まだいくつかのスタイルが含まれます
+              </li>
+              <li>
+                Graphiteスキンの一部のコントロールバー要素がキーボードでアクセスできない問題を修正しました
+              </li>
+              <li>
+                の問題を修正しました。
+                <strong>ビッグプレイボタン</strong>
+                ルナの皮膚にはキーボードでアクセスできませんでした
+              </li>
+              <li>ドイツ語の翻訳で大文字の誤りが修正されました</li>
+              <li>
+                チャプタービデオがプログレスバーにチャプターアイコンを表示しない問題を修正
+              </li>
+            </ul><h3 data-gt-block="">5.1.12</h3>
+
+            <p data-gt-block="">２０１８年３月３０日</p>
+
+            <ul><li>HTTPSページで再生する場合、HTTPS DASHソースを優先します。</li>
+              <li>video.js v5.8.3に更新してください。</li>
+              <li>
+                一部のプレーヤー構成のビデオの印象とビューの追跡を改善します。
+              </li>
+              <li>
+                ドックのフェードアウトアニメーションをコントロールバーと同期させます。
+              </li>
+              <li>
+                HLS：古いIEが既にバッファリングされたビデオセグメントを再ダウンロードする可能性がある問題を修正しました。
+              </li>
+              <li>
+                .
+                <code class="notranslate">bc()</code>
+                関数が次のようにビデオ要素のID文字列を受け入れるようになりました
+                <code class="notranslate">videojs()</code>
+                
+                .
+              
+              </li>
+              <li>
+                問題のビデオがフルスクリーンで正しく表示されない問題を修正しました。
+              </li>
+              <li>
+                Firefoxおよび一部のIEで進行状況バーが2ピクセルずれていた問題を修正しました。
+              </li>
+              <li>グラファイトスキンセレクタを修正してプレビューの破棄を止めました。</li>
+              <li>
+                ドックのフェードアウトアニメーションをコントロールバーと同期させました。
+              </li>
+              <li>
+                HLS：キャプションが文字化けする608解析の問題を修正しました。
+              </li>
+              <li>
+                HLS：キャプションに音符文字のサポートが追加されました。
+              </li>
+              <li>
+                HLS：Windows 11上のIE10でHLSコンテンツの再生に問題が発生することがある問題を修正しました。
+              </li>
+            </ul><h3 data-gt-block="">5.1.8</h3>
+
+            <p data-gt-block="">２０１８年２月１日</p>
+
+            <ul><li>
+                プレーヤースタイルルールの基本CSS特異性は、LunaスキンのXNUMXつのクラスレベルセレクターに削減されました。 これにより、デフォルトのスタイルルールのオーバーライドが容易になり、LunaのスタイルのカスタマイズがGraphiteスキンとより互換性を持つようになります。
+              </li>
+              <li>video.jsをv5.8.0に更新する</li>
+              <li>
+                Firefoxのiframeでプレーヤーを作成する際に、「表示」が最初に「なし」に設定されている問題を修正
+              </li>
+            </ul><h3 data-gt-block="">5.1.7</h3>
+
+            <p data-gt-block="">２０１８年２月１日</p>
+
+            <ul><li>
+                このリリースは、プレーヤーのプレビュー機能で発生していた問題を修正するために必要でした。 クライアントコードに変更はありませんでした。
+              </li>
+            </ul><h3 data-gt-block="">5.1.5</h3>
+
+            <p data-gt-block="">２０１８年２月１日</p>
+
+            <ul><li>
+                ドックの改良
+                <ul><li>フォントサイズの固定</li>
+                  <li>ドックにプレーヤーの説明を追加しました</li>
+                  <li>グラデーションの改善</li>
+                </ul></li>
+              <li>プレイリストピッカーの再生アイコンを修正しました</li>
+              <li>
+                iframe内のプレイリストピッカーの横にプレーヤーのサイズが固定されています
+              </li>
+              <li>iframeでのフルスクリーンプレーヤーのサイズ変更を修正</li>
+              <li>IE5を除くすべてのブラウザでES8シムを削除</li>
+              <li>IE8のユーザーエージェント検出の改善</li>
+              <li>IE8のスタイルの不具合を修正しました</li>
+              <li>キューポイントがプレイリストで正しく機能するようになりました</li>
+              <li>
+                Firefoxで 'display：none'を使用してiframe内でnullを返すgetComputedStyle（）の回避策
+              </li>
+              <li>グラファイトスキンを含むvjs-fontを含む</li>
+              <li>
+                videojs-contrib-hlsをv1.3.8に更新しました
+                <ul><li>
+                    MSEは存在するがmp4をサポートしていない場合は、FlashベースのHLSにフォールバックします
+                  </li>
+                  <li>
+                    最初のプレイリストがすぐに404の場合は、他の演奏を試してみてください
+                  </li>
+                  <li>
+                    Firefoxのupdateendイベント処理に関する問題を修正しました
+                  </li>
+                  <li>
+                    間違った値を報告する 'duration'の不具合を修正しました
+                  </li>
+                  <li>
+                    「終了」が常に一貫して発生するとは限らないバグを修正
+                  </li>
+                  <li>
+                    ライブストリームでバッファのどの部分がクリアされるかに注意してください
+                  </li>
+                </ul></li>
+            </ul><h3 data-gt-block="">5.0.9</h3>
+
+            <p data-gt-block="">２０１７年１月３１日</p>
+
+            <p data-gt-block="">
+              . Brightcove Player バージョン5は、HLS再生とユーザーカスタマイズの大幅な改善を含むメジャーアップデートです。
+            </p>
+
+            <p data-gt-block="">
+              ほとんどのユーザーは Brightcove Player 8月XNUMX日から自動的に更新されます。最新の機能とバグ修正を備えた最高のエンドユーザーエクスペリエンスを提供するために、ほとんどのお客様に自動更新をお勧めします。 プレーヤーを最新の状態に保つと、 Brightcove 必要なときに支援するサポート。
+            </p>
+
+            <p data-gt-block="">
+              次の表は、特定の機能と要件に基づいてこの更新が顧客にどのように影響するか、および自動更新を今のところオプトアウトする必要があるユーザーを示しています。
+            </p>
+
+            <table class="bcls-table"><thead><tr><th>
+                    現在のプレーヤーのバージョン/機能
+                    <br>
+                    あなたが使用している場合：
+                  </th>
+                  <th>推奨動作</th>
+                </tr></thead><tbody><tr><td>
+                    <p data-gt-block="">
+                      Brightcove Player 次の機能が有効になっているバージョン1.x：
+                    </p>
+
+                    <ul><li>広告（IMA3プラグイン経由）</li>
+                      <li>Social シェアリング</li>
+                      <li>カスタムエンドスクリーン</li>
+                      <li>Encrypted HLS</li>
+                      <li>ID3キューポイント</li>
+                      <li>Live HLS再生（DVRなし）</li>
+                      <li>プレイリスト</li>
+                      <li>オーバーレイ</li>
+                      <li>カスタムプラグイン</li>
+                      <li>HLS再生</li>
+                      <li>MP4再生</li>
+                    </ul></td>
+                  <td>
+                    <p data-gt-block="" class="gt-block gt-block">
+                      <strong>処置は必要ありません。</strong>
+                      2月から自動アップデート8、2016
+                    </p>
+
+                    <p data-gt-block="">手動でのアップデートが利用可能になりました。</p>
+                  </td>
+                </tr><tr><td>Brightcove Player バージョン2.xまたは5.x（プレリリース）</td>
+                  <td>
+                    <p data-gt-block="" class="gt-block gt-block">
+                      <strong>処置は必要ありません。</strong>
+                      2月から自動アップデート8、2016
+                    </p>
+                  </td>
+                </tr><tr><td>スマートプレーヤー（レガシー、Flashベースのプレーヤー）</td>
+                  <td>
+                    <p data-gt-block="" class="gt-block gt-block">
+                      <strong>処置は必要ありません。</strong>
+                      プレイヤーは自動的に更新されません。 スタジオにログインして、新しい Brightcove Player
+                    </p>
+                  </td>
+                </tr><tr><td>
+                    <p data-gt-block="">
+                      Brightcove Player 次の機能が有効になっているバージョン1.x：
+                    </p>
+
+                    <ul><li>フリーホイール広告</li>
+                      <li>DASH / DRMのサポート</li>
+                      <li>OnceUXとの統合</li>
+                      <li>DVRUX</li>
+                    </ul></td>
+                  <td>
+                    <p data-gt-block="" class="gt-block gt-block">
+                      <strong>必要なアクション：</strong>
+                      これらの機能は、バージョン5.0ではまだサポートされていません。
+                      <a class="nturl" href="//support.brightcove.com/ja/setting-player-update-mode-and-version">
+                        スタジオで手動更新モードを選択して、バージョンを選択してロックしてください
+                      </a>
+                      APIを介して
+                    </p>
+                  </td>
+                </tr><tr><td>
+                    Brightcove Player カスタムまたはサードパーティのプラグイン、CSS、またはスキンの変更を含むバージョン1.x
+                  </td>
+                  <td>
+                    <p data-gt-block="" class="gt-block gt-block">
+                      <strong>必要なアクション：</strong>
+                      バージョン5でカスタマイズをテストしてください。バージョン5にはXNUMXつのスキンが含まれています。
+                    </p>
+
+                    <ol><li>
+                        1.14.xのように見え、最大限の互換性のために設計されたグラファイト
+                      </li>
+                      <li>
+                        ルナ、更新されたルックアンドフィールを備えたデザインされたUI
+                      </li>
+                    </ol><p data-gt-block="" class="gt-block gt-block">
+                      デフォルトでは、新しいプレーヤーはLunaスキンを取得します。 自動更新されたプレーヤーはGraphiteを取得します。
+                      <a class="nturl" href="//support.brightcove.com/ja/customizing-player-appearance">
+                        StudioのPlayersモジュールでスキンを選択できます
+                      </a>
+                      
+                      .
+                    
+                    </p>
+                  </td>
+                </tr></tbody></table><h3 data-gt-block="">新機能</h3>
+
+            <p data-gt-block="" class="gt-block gt-block">
+              Brightcove Player バージョン5では、Flashを使用せずにHLSビデオを新たにサポートしています。 このリリースでは、Media Source Extensions API（MSE）をサポートするすべてのブラウザーで、 Brightcove Player HLSビデオを再生できます
+              <strong>フラッシュなし！</strong>
+              つまり、FlashはFirefox、Chrome、Safari、またはMicrosoft Edgeでは使用されません。 Flashは引き続き古いバージョンのIEで使用されますが、configで無効にすることができます。
+            </p>
+
+            <p data-gt-block="">MSE HLSには、いくつかの大きなメリットがあります。</p>
+
+            <ol><li>
+                動画は高速で読み込まれ、高解像度や高フレームレートでもスムーズに再生されます。
+                <strong>
+                  4Kや60FPSなどのビデオ - 控えめなハードウェア
+                </strong>
+              </li>
+              <li>
+                それはおよそ
+                <strong>-50％のCPU負荷</strong>
+                同じ動画をレンダリングするには、バッテリーが長持ちし、ノートパソコンのファンがオンになりませんmeaning ﾀ￯﾿ﾢ￯ﾾﾙ
+              </li>
+              <li>
+                Flashの使用を制限する省電力およびその他のブラウザー設定
+                <strong>もはやプレーヤーに何の影響も与えない</strong>
+                プレイヤーに関係なく﾿ㄲ￯ㅎタ￯ㅎルの大きさ
+              </li>
+            </ol><p data-gt-block="">このリリースのその他の機能は次のとおりです。</p>
+
+            <ol><li>
+                <strong>新しいスキン</strong>
+                -UXの重要な調査に基づいて、多くの変更を取り入れた新しいスキンを構築しました。 これらには、新しい中央の大きな再生ボタン、新しい色、新しいシークバーの動作、およびドックと呼ばれる新しいタイトルバーが含まれます。 ユーザビリティテストの参加者は、ホバリングで拡大し、特定の時間を探しやすくする新しいタイムラインを特に気に入っています。 Lunaと呼ばれるデフォルトの新しいスキンと、Graphiteと呼ばれる古い1.xスキンを選択できるようになりました。
+              </li>
+              <li>
+                <strong>ライブキャプションの初期サポート</strong>
+                -このリリースでは、多くの608/708キャプションエンコーディングシステムがサポートされるようになりました。 これには、一般的なポップオンおよびロールアップ方法と基本的なスタイル設定のサポートが含まれます
+              </li>
+              <li>
+                <strong>互換モード</strong>
+                すべての1.xおよびVideo.js 4.xプラグイン用。 （DASH / DRM、FreeWheel、および OnceUXプラグイン -  Q1中に続くアップデート）
+              </li>
+            </ol><p data-gt-block="" class="gt-block gt-block">
+              また、このバージョンでは、スキンモデルの簡素化やプラグインのAPIなど、カスタマイズのためのプログラミングモデルを改善するために多くの更新を行いました。 これらの変更により、最新のオープンソースリリースであるVideo.js 5、
+              <a class="nturl" href="https://blog.videojs.com/post/130143694631/video-js-5">
+                あなたはここで読むことができます
+              </a>
+              。 また、Video.jsと Brightcove Player リリース。
+            </p>
+
+            <h3 data-gt-block="">v1.14.30</h3>
+
+            <p data-gt-block="">11 Dec 2015</p>
+
+            <p data-gt-block="">このリリースで注目すべき変更点は次のとおりです。</p>
+
+            <ul><li>
+                ポスターまたはサムネイル画像の空の配列を返したカタログリクエストの修正。
+              </li>
+            </ul><h3 data-gt-block="">v1.14.29</h3>
+
+            <p data-gt-block="">10月30 2015</p>
+
+            <ul><li>
+                ポスター、キャプション、またはソースがnullまたは欠落しているカタログリクエストの修正。
+              </li>
+              <li>SafariでHTTPSテキストトラックの読み込みを修正しました。</li>
+              <li>
+                更新先
+                <a class="nturl" href="https://github.com/videojs/video.js/releases/tag/v4.12.15">
+                  video.js 4.12.15
+                </a>
+                
+                .
+              
+              </li>
+            </ul><h3 data-gt-block="">v1.14.26</h3>
+
+            <p data-gt-block="">２０１７年９月２９日</p>
+
+            <ul><li>
+                プレイリストピッカーをクリックするとすぐにビデオの再生を開始するオプションを追加します。
+              </li>
+              <li>
+                プレイリストのビデオピッカーフォントを他のプレーヤーと一致させる。
+              </li>
+              <li>
+                Facebookアプリの埋め込みWebビューでビデオを表示するiPhoneの問題を修正します。
+              </li>
+              <li>
+                使用に関する問題を修正しました。
+                <code class="notranslate">indexOf</code>
+                RTMPソースの動画を含むプレイリストが含まれています。
+              </li>
+              <li>video.js 4.12.14へのアップデート</li>
+            </ul><h3 data-gt-block="">v1.14.22</h3>
+
+            <p data-gt-block="">２０１７年８月１５日</p>
+
+            <ul><li>
+                へのサポート
+                <code class="notranslate">preload</code>
+                クエリパラメータを使用してiframe埋め込みの属性 追加
+                <code class="notranslate">preload=auto</code>
+                
+                ,
+                
+                <code class="notranslate">preload=metadata</code>
+                もしくは
+                <code class="notranslate">preload=none</code>
+                iframeプリロードの動作を制御します。 デフォルト値は
+                <code class="notranslate">auto</code>
+                
+                .
+              
+              </li>
+              <li>
+                へのサポート
+                <code class="notranslate">autoplay</code>
+                クエリパラメータを使用してiframe埋め込みの属性 追加
+                <code class="notranslate">autoplay=true</code>
+                それをサポートするプラットフォームで動画を自動再生する。 デフォルト値は
+                <code class="notranslate">false</code>
+                
+                .
+              
+              </li>
+              <li>
+                カタログAPIを使用するためのプリフライトOPTIONSリクエストの必要性を取り除きます。
+              </li>
+              <li>video.js 4.12.12に更新します。</li>
+              <li>
+                再生エラー率を改善するために、ストックブラウザを使用してAndroid OS 4.xでカスタムコントロールを使用しないでください。 Chrome for AndroidまたはAndroid 5.xを使用している視聴者には、引き続きカスタムコントロールが表示されます。
+              </li>
+              <li>
+                iframe埋め込みの言語クエリパラメーターが正しく解析されない問題を修正します。
+              </li>
+              <li>
+                ビデオに再生可能なソースがない場合にエラーが繰り返される問題を修正します。
+              </li>
+              <li>
+                自動再生HLSがライブポイントをシークできないことがある問題を修正します。
+              </li>
+            </ul><h3 data-gt-block="">v1.14.19</h3>
+
+            <p data-gt-block="">２０１８年８月９日</p>
+
+            <ul><li>
+                一部のHLSビデオで実際に表示されていた時間よりも長い時間が表示される問題を修正しました
+              </li>
+              <li>背景色がコントロールバーのメニューに適用されるようになりました</li>
+              <li>デスクトップ上のオーディオまたはビデオのみのエラーを修正しました。</li>
+              <li>
+                IE10以前のページはめ込み埋め込みのフルスクリーンボタンは、プレーヤーを直接読み込むウィンドウを開きます。 以前は、新しいウィンドウが埋め込みページをロードしていました
+              </li>
+            </ul><h3 data-gt-block="">v1.14.18</h3>
+
+            <p data-gt-block="">２０１８年８月９日</p>
+
+            <ul><li>
+                HLSビデオを探しているときに時々エラーが発生する問題を修正しました
+              </li>
+            </ul><h3 data-gt-block="">v1.14.17</h3>
+
+            <p data-gt-block="">２０１８年８月９日</p>
+
+            <ul><li>
+                現在ロードされているものと同じ数のアイテムで新しいプレイリストをロードできない問題を修正します
+              </li>
+              <li>HLSのビデオ期間の計算が改善されました</li>
+              <li>クランプはHLSのシーク可能な範囲を求めています</li>
+              <li>
+                プレーヤーがフルスクリーンモードで高品質のレンディションを選択しないという問題を修正します
+              </li>
+            </ul><h3 data-gt-block="">v1.14.16</h3>
+
+            <p data-gt-block="">２０１８年８月９日</p>
+
+            <ul><li>ライブHLSストリームでのシークの高速化</li>
+              <li>
+                ビデオが4：3アスペクト比で断続的に表示される問題を修正しました
+              </li>
+              <li>video.js 4.12.10へのアップデート</li>
+            </ul><h3 data-gt-block="">v1.14.15</h3>
+
+            <p data-gt-block="">２０１７年６月２８日</p>
+
+            <ul><li>改善されたmp4フォールバックソースの選択</li>
+              <li>古いAndroid搭載端末の基本再生機能の改善</li>
+            </ul><h3 data-gt-block="">v1.14.13</h3>
+
+            <p data-gt-block="">２０１７年６月２８日</p>
+
+            <ul><li>
+                追加されました
+                <a class="nturl" href="//html.spec.whatwg.org/multipage/embedded-content.html#dom-media-seekable">
+                  seekable（）
+                </a>
+                APIへ; デスクトップ上のHLSストリームの「ライブ」ポイントを見つけるには、次を使用できます。
+                <code class="notranslate">player.seekable().end(0)</code>
+                iOSと同じように。
+              </li>
+              <li>
+                ライブHLSストリームでシークした場合に再追加されないように、ID3ベースのキューポイントを修正しました
+              </li>
+              <li>
+                ID3 TXXXフレームを解析するときに、cue.textのヌルバイト文字列ターミネーターを削除します。
+              </li>
+            </ul><h3 data-gt-block="">v1.14.12</h3>
+
+            <p data-gt-block="">２０１７年６月２８日</p>
+
+            <ul><li>
+                帯域幅が予期せず低下した場合の品質レベルの切り替えを高速化
+              </li>
+              <li>
+                HLS品質レベルを切り替えるときに再生をライブポイントにリセットする可能性がある問題を修正
+              </li>
+              <li>
+                一部のHLSストリームが4：3アスペクト比で再生を開始する問題を修正
+              </li>
+            </ul><h3 data-gt-block="">v1.14.11</h3>
+
+            <p data-gt-block="">２０１７年５月３１日</p>
+
+            <ul><li>
+                文字列にHTMLを含むプレーヤープラグインスクリプトを適切にエスケープする
+              </li>
+              <li>
+                設定
+                <code class="notranslate">preload=none</code>
+                HLSで演奏する前にプリバッファリングを防止する
+              </li>
+              <li>
+                video.jsへの更新
+                <a class="nturl" href="//github.com/videojs/video.js/blob/69a4884880dc3baaacd91ea23194b46dd7b48f53/CHANGELOG.md#4127-2015-05-19">
+                  4.12.7
+                </a>
+              </li>
+              <li>
+                プリロードがオンの場合、再生前にコントロールの合計期間を更新します
+              </li>
+              <li>
+                自動再生がオンになっているがビデオがロードされていない場合、エラーメッセージを表示しない
+              </li>
+              <li>
+                不連続のあるデスクトップHLSでのシークと継続時間の計算を修正
+              </li>
+            </ul><h3 data-gt-block="">v1.14.8</h3>
+
+            <p data-gt-block="">２０１７年５月３１日</p>
+
+            <ul><li>
+                ページはめ込み埋め込みでフルスクリーンスタイルを誤ってオーバーライドする可能性を低くする
+              </li>
+              <li>フルスクリーンコントロールが無効のときにiOSでエラーを修正</li>
+              <li>
+                es8-shimを使用してIE5でカタログを使用する場合のページはめ込みの問題を修正する
+              </li>
+              <li>廃止予定のtext_tracksプロパティの使用を削除する</li>
+              <li>字幕やチャプターボタンのアイコンを追加する</li>
+              <li>
+                作る
+                <code class="notranslate">ended</code>
+                Flash techが使用されているときのイベントの発生をより確実に
+              </li>
+              <li>
+                コンテンツのアスペクト比に関連する多くのプレーヤーのサイズ設定の問題を修正
+              </li>
+              <li>ローディングスピナーを戻す</li>
+              <li>
+                IE8-10のフルスクリーンボタンのキーボードの起動を修正しました。
+              </li>
+              <li>
+                技術者の切り替え後にプレーヤーを処分するときのTypeErrorの修正
+              </li>
+              <li>HLSeのパフォーマンス向上</li>
+              <li> </li>
+            </ul><h3 data-gt-block="">v1.14.2</h3>
+
+            <p data-gt-block="">２０１８年４月１３日</p>
+
+            <ul><li>プレイリストAPIとUIのサポート</li>
+              <li>ライブHLSストリームによる再生開始時刻の修正</li>
+              <li>
+                異なるアスペクト比のポスター画像を使用する場合、ビデオの最初のフレームを非表示にします
+              </li>
+            </ul></section></article></div>
+      
+</div>
+
+</div>
+
+
+
+  </div>
+
+              </section>
+
+                </div>
+  </div>
+
+      <footer class="footer container" role="contentinfo">
+              <div class="gt-block row" data-gt-block="">
+            <div class="gt-block region region-footer-top-left col-md-9" style="margin-bottom: 1em;" data-gt-block="">
+    <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">Brightcove サポート</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="https://status.brightcove.com">システムステータス</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="//support.brightcove.com/ja/contact-support" data-drupal-link-system-path="node/18632">サポート - Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://support.brightcove.com/ja/en/contact/create">サポート - Zencoder</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-documentation-menu" id="block-documentation" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">オンライン
+マニュアル</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="//support.brightcove.com/ja/" data-drupal-link-system-path="<front>">ホーム</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">トレーニング</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="//support.brightcove.com/ja/online-training-courses" data-drupal-link-system-path="node/18286">オンラインコース</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="//support.brightcove.com/ja/register-training" data-drupal-link-system-path="node/18270">コー​​スに登録</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-brightcove-menu" id="block-brightcove" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">Brightcove</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="https://www.brightcove.com">Brightcove.com</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+            <div class="gt-block region region-footer-top-right col-md-3" data-gt-block="">
+    <section id="block-footerlegaltext" class="block block-block-content block-block-content4507d09c-a528-4947-b91d-36ec6671822b clearfix">
+  
+    
+
+      
+            <div class="gt-block field field--name-field-body field--type-text-long field--label-hidden field--item" data-gt-block=""><p data-gt-block="">Brightcove  Inc.（ナスダック：BCOV）は、様々なデバイス上で動画を配信および収益化するための強力なクラウドソリューションを提供するリーディングカンパニーです。</p>
+</div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+                    <div class="gt-block row" data-gt-block="">
+            <div class="gt-block region region-footer-bottom-left col-md-8" data-gt-block="">
+    <section id="block-footercopyrightlinewithlinks" class="block block-block-content block-block-content3a164ef9-02d8-42c4-bcc6-3ab435f670b3 clearfix">
+  
+    
+
+      <div class="gt-block block-content block-content--type-copyright-block-with-links block-content--view-mode-full ds-1col clearfix" data-gt-block="">
+
+  
+
+  
+            <div class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" data-gt-block="">2020</div>
+      
+            <div class="field field--name-field-copyright-text field--type-string-long field--label-hidden field--item" data-gt-block="">Brightcove Inc.すべての権利を保有します。</div>
+      
+      <div class="gt-block field field--name-field-legal-links field--type-link field--label-hidden field--items" data-gt-block="">
+              <div class="gt-block field--item" data-gt-block=""><a class="nturl" href="https://www.brightcove.com/en/privacy">プライバシー</a></div>
+              <div class="gt-block field--item" data-gt-block=""><a class="nturl" href="https://www.brightcove.com/en/terms-and-conditions">利用規約</a></div>
+          </div>
+  
+
+</div>
+
+
+  </section>
+
+
+  </div>
+
+            <div class="gt-block region region-footer-bottom-right col-md-4" data-gt-block="">
+    <section id="block-footersocialblock" class="block block-block-content block-block-content4fc23afd-8d37-420e-ab28-73b2ba24e836 clearfix">
+  
+    
+
+      
+      <div class="gt-block field field--name-field-social-icon field--type-entity-reference-revisions field--label-hidden field--items" data-gt-block="">
+              <div class="gt-block field--item" data-gt-block="">
+
+<a class="icon" icon__social--link="" href="https://www.linkedin.com/company/brightcove" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--linkedin">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--linkedin"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="gt-block field--item" data-gt-block="">
+
+<a class="icon" icon__social--link="" href="https://twitter.com/brightcove" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--twitter">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--twitter"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="gt-block field--item" data-gt-block="">
+
+<a class="icon" icon__social--link="" href="https://www.facebook.com/Brightcove" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--facebook">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--facebook"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="gt-block field--item" data-gt-block="" style="display:none;color:white">
+
+<a class="icon" icon__social--link="" href="https://plus.google.com/100830370440271567091" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--google-plus">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--google-plus"></use>
+  </svg>
+</a>
+
+</div>
+          </div>
+  
+
+
+  </section>
+
+<section id="block-scripts" class="block block-block-content block-block-content42e4bd63-d879-470d-a6de-d5e4529a01be clearfix">
+  
+    
+
+      
+            <div class="gt-block field field--name-field-body field--type-text-long field--label-hidden field--item" data-gt-block=""><script src="https://learning-services-media.brightcove.com/doc-assets/js/gtrans.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/js/support-feedback.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-support.js"></script>
+<script src="https://learning-services-media.brightcove.com/doc-assets/js/hide-google-plus.js"></script></div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+          </footer>
+  
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/18782","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click"},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"user":{"uid":0,"permissionsHash":"3b7fdb4927baca3ee2939edeb777485b3e2c2d36cf8c80e0d8f49c6dc5e2eeca"}}</script>
+<script src="https://support.brightcove.com/sites/default/files/js/js_8fmTAXGyuAUNVu11XoXJaeM8QBDFuAvX7ADwOnigrhc.js"></script><div id="feedbackify"><div id="fby-screen" class="fby-screen"><div id="fby-mask" class="fby-mask"></div><div id="fby-tab-14941" class="fby-tab fby-tab-r"><a href="" style="background-color:rgb(5, 155, 179)!important" aria-label="Feedback"></a></div></div></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+<script src="https://support.brightcove.com/sites/default/files/js/js_gyH3GlnTIe1SGK59o4rsE-heoS1g0ILCvQ3Of4jKRx8.js"></script><div id="surveyDiv" style="visibility:hidden"><iframe id="CSAT" src="https://learning-services-media.brightcove.com/doc-assets/general/surveylink.html" style="display:none;"></iframe></div>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e78a80aa93","applicationID":"129613202","transactionName":"YwBUZkcFVktUWhJQX1pKd1FBDVdWGkkHXlVrBldRXQE=","queueTime":0,"applicationTime":29,"atts":"T0dXEA8fRUU=","errorBeacon":"bam.nr-data.net","agent":""}</script><script data-cfasync="false" src="https://tdns5.gtranslate.net/tdn-bin/queue.js"></script><!-- Yandex.Metrika counter for GTranslate --><script data-cfasync="false">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter36618640 = new Ya.Metrika({ id:36618640, clickmap:false, trackLinks:true, accurateTrackBounce:true, ut:"noindex" }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript>&lt;div&gt;&lt;img src="https://mc.yandex.ru/watch/36618640?ut=noindex" style="position:absolute; left:-9999px;" alt="" /&gt;&lt;/div&gt;</noscript><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e78a80aa93","applicationID":"129613202","transactionName":"YwBUZkcFVktUWhJQX1pKY0BcSxdRW10DQR5EDUY=","queueTime":0,"applicationTime":2912,"atts":"T0dXEA8fRUU=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+<!-- delivered by GTranslate v4.8.8 in 75ms visit https://gtranslate.io --></body></html>
