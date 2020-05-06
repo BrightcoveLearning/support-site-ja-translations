@@ -1,0 +1,1399 @@
+<html lang="ja" dir="ltr" class=" js"><head>
+    <meta charset="utf-8"><script type="text/javascript" src="https://bam.nr-data.net/1/e78a80aa93?a=129613202&amp;v=1167.2a4546b&amp;to=YwBUZkcFVktUWhJQX1pKY0BcSxdRW10DQR5EDUY%3D&amp;rst=7517&amp;ref=https://support.brightcove.com/ja/social-sharing-plugin&amp;ap=1998&amp;be=2753&amp;fe=7184&amp;dc=4685&amp;perf=%7B%22timing%22:%7B%22of%22:1588779636794,%22n%22:0,%22f%22:0,%22dn%22:0,%22dne%22:0,%22c%22:0,%22ce%22:0,%22rq%22:2,%22rp%22:2059,%22rpe%22:2761,%22dl%22:2749,%22di%22:4686,%22ds%22:4686,%22de%22:4804,%22dc%22:7185,%22l%22:7185,%22le%22:7187%7D,%22navigation%22:%7B%7D%7D&amp;at=T0dXEA8fRUU%3D&amp;jsonp=NREUM.setToken"></script><script src="https://js-agent.newrelic.com/nr-1167.min.js"></script><script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script><script type="text/javascript" async="" src="//cdn.feedbackify.com/f.js"></script><script async="" src="https://fullstory.com/s/fs.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e78a80aa93",applicationID:"129613202"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e78a80aa93",applicationID:"129613202"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-2728311-17", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)">
+<meta name="MobileOptimized" content="width">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="https://support.brightcove.com/sites/default/files/favicon-64.png" type="image/png">
+<link rel="alternate" hreflang="en" href="https://support.brightcove.com/social-sharing-plugin">
+<link rel="canonical" href="https://support.brightcove.com/ja/social-sharing-plugin">
+<link rel="shortlink" href="https://support.brightcove.com/ja/node/18122">
+<link rel="revision" href="https://support.brightcove.com/social-sharing-plugin">
+
+    <title>Social |共有プラグイン| Brightcove 学習</title>
+    <link rel="stylesheet" media="all" href="https://support.brightcove.com/sites/default/files/css/css_d7PoQ20hWbRiei75VgExP_tm8C1ylIRfzB3zIYLc5Cw.css?q23msc">
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.min.css">
+<link rel="stylesheet" media="all" href="https://support.brightcove.com/sites/default/files/css/css_fr7ugR_m15spMT57voAomC2Aklj0ATM7MmH6hvb3pp4.css?q23msc">
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+    <meta name="uri-translation" content="on">
+    <script>
+window['_fs_debug'] = false; window['_fs_host'] = 'fullstory.com';
+window['_fs_org'] = 'BX3Q1';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+g.consent=function(a){g("consent",!arguments.length||a)};
+g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+g.clearUserCookie=function(){};
+})(window,document,window['_fs_namespace'],'script','user');
+    </script>
+  <style type="text/css">html{_background:url(//about:blank) fixed;}.fby-on select {visibility:hidden!important;}.fby-on .fby-hide-iframe {visibility:hidden!important;}.fby-hide-embed embed {visibility:hidden!important;}.fby-hide-object object {visibility:hidden!important;}@media not screen {.fby-tab {display: none;}}#feedbackify *{box-sizing:content-box!important;-moz-box-sizing:content-box!important;-webkit-box-sizing:content-box!important;}#feedbackify input{box-sizing:border-box!important;-moz-box-sizing:border-box!important;-webkit-box-sizing:border-box!important;max-width:none!important;}#feedbackify *:before{content:none!important;}#feedbackify *:after{content:none!important;}#feedbackify ,#feedbackify div,#feedbackify span,#feedbackify textarea,#feedbackify input,#feedbackify table,#feedbackify tbody,#feedbackify tr,#feedbackify td,#feedbackify img,#feedbackify p,#feedbackify a{border:0!important;outline:none!important;width:auto;height:auto;text-align:left!important;text-indent:0!important;float:none!important;padding:0!important;margin:0!important;font:12px arial,helvetica,sans-serif!important;overflow:visible!important;color:#000!important;line-height:1.2!important;background:0 none!important;position:static!important;vertical-align:baseline!important;box-shadow:none!important;}#feedbackify table{border-collapse:collapse!important;border-spacing:0!important;max-width:inherit!important;width:auto!important;}#feedbackify td{word-break:normal!important;}#feedbackify {z-index:2147483646!important;position:static!important;top:0;left:0;}#feedbackify .fby-screen{z-index:2147483646!important;position:fixed!important;top:0;left:0;width:0;height:100%;_position:absolute!important;_top:expression(eval(document.body.scrollTop||document.documentElement.scrollTop))!important;_left:expression(eval(document.body.scrollLeft||document.documentElement.scrollLeft))!important;_width:0!important;_height:expression(document.documentElement.clientHeight||document.body.clientHeight+"px")!important;}#feedbackify .fby-mask{display:none!important;position:fixed!important;top:0;left:0;width:100%;height:100%;background-color:#000!important;opacity:0.2;filter:alpha(opacity=20);_position:absolute!important;_width:expression(document.documentElement.clientWidth||document.body.clientWidth+"px")!important;_height:expression(this.parentNode.style.height)!important;}#feedbackify .fby-show{display:block!important;visibility:visible!important;}#feedbackify .fby-hide{display:none!important;visibility:hidden!important;}</style><style type="text/css">#feedbackify .fby-tab{position:fixed!important;width:36px;height:100px;overflow:hidden!important;_position:absolute!important;}#feedbackify .fby-tab a{display:block!important;position:absolute!important;width:36px;height:100px;background-color:#000000!important;cursor:pointer!important;background:url(https://cdn.feedbackify.com/img/classic/tab.png)!important;_background:none!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/tab.png)!important;}#feedbackify .fby-tab-l{top:50%;left:0;margin-top:-50px!important;_top:expression((parseInt(this.parentNode.style.height)-this.clientHeight)/2+"px")!important;_margin-top:0!important;}#feedbackify .fby-tab-l a{margin-left:-5px!important;}#feedbackify .fby-tab-l a:hover{margin-left:-2px!important;}#feedbackify .fby-tab-r{top:50%;right:0px!important;margin-top:-50px!important;_top:expression((parseInt(this.parentNode.style.height)-this.clientHeight)/2+"px")!important;_left:expression((document.documentElement.clientWidth||document.body.clientWidth)-this.clientWidth+"px")!important;_margin-top:0!important;}#feedbackify .fby-tab-r a{margin-left:5px!important;}#feedbackify .fby-tab-r a:hover{margin-left:2px!important;}#feedbackify .fby-tab-t{top:0;margin-top:0px!important;}#feedbackify .fby-tab-b{top:auto;bottom:0!important;_top:expression(parseInt(this.parentNode.style.height)-this.clientHeight+"px")!important;}</style><style type="text/css">#feedbackify grammarly-ghost{display:none!important;}#feedbackify grammarly-btn{display:none!important;}#feedbackify #fby-form{z-index:2147483646!important;width:618px!important;position:absolute!important;}#feedbackify .fby-d-main{width:600px;height:50px;vertical-align:top!important;background-color:#FFFFFF!important;position:relative!important;}#feedbackify .fby-d{background:url(https://cdn.feedbackify.com/img/classic/dlg_shad_sprite.png)!important;_background:none!important;}#feedbackify .fby-d-h{height:9px;background:url(https://cdn.feedbackify.com/img/classic/dlg_shad_sprite_h.png)!important;_background:none!important;}#feedbackify .fby-d-h2{height:9px;background-color:#FFFFFF!important;}#feedbackify .fby-d-tl{background-position:-18px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_tl.png)!important;}#feedbackify .fby-d-t{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_t.png,sizingMethod=scale)!important;}#feedbackify .fby-d-tr{background-position:-36px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_tr.png)!important;}#feedbackify .fby-d-l{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_l.png,sizingMethod=scale)!important;}#feedbackify .fby-d-r{background-position:-9px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_r.png,sizingMethod=scale)!important;}#feedbackify .fby-d-bl{background-position:-54px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_bl.png)!important;}#feedbackify .fby-d-br{background-position:-72px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_br.png)!important;}#feedbackify .fby-d-b{background-position:0px -9px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_b.png,sizingMethod=scale)!important;}#feedbackify .fby-d-load{position:relative!important;}#feedbackify .fby-d-load img{position:absolute!important;left:8px;}#feedbackify .fby-d-load div{position:absolute!important;padding:4px 18px!important;font-size:16px!important;font-weight:bold!important;color:#333!important;}</style></head>
+  <body class="path-node page-node-type-support-doc has-glyphicons">
+    <a class="visually-hidden" focusable="" skip-link="" href="#main-content/index.html">
+      メインコンテンツへスキップ
+    </a>
+    
+      <div class="gt-block dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="" data-gt-block="">
+              <header class="navbar navbar-default container" id="navbar" role="banner">
+      <div class="gt-block navigation-secondary clearfix" data-gt-block="">
+          <div class="gt-block region region-navigation-secondary" data-gt-block="">
+    <section id="block-styles" class="block block-block-content block-block-contentfbb71e48-a6cd-4d2b-8239-43f18db69e60 clearfix">
+  
+    
+
+      
+            <div class="gt-block field field--name-field-body field--type-text-long field--label-hidden field--item" data-gt-block=""><link rel="stylesheet" media="all" href="https://learning-services-media.brightcove.com/doc-assets/css/drupal-fix.css"></div>
+      
+  </section>
+
+<nav role="navigation" aria-labelledby="block-secondarynavigation-menu" id="block-secondarynavigation">
+            
+  <h2 class="visually-hidden" id="block-secondarynavigation-menu" data-gt-block="">セカンダリナビゲーション</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/contact-support/index.html" title="サポートリクエストを作成する" data-drupal-link-system-path="node/18632">サポートリクエスト</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://status.brightcove.com/">システムステータス</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://university.brightcove.com/">Brightcove 大学</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<section id="block-gtranslate" class="block block-gtranslate block-gtranslate-block clearfix">
+  
+    
+
+      
+<div class="gt-block gtranslate" data-gt-block="">
+<script type="text/javascript">/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;var lang=lang_pair.split('|')[1];var plang=location.pathname.split('/')[1];if(plang.length !=2 && plang != 'zh-CN' && plang != 'zh-TW')plang='en';if(lang == 'en')location.pathname=location.pathname.replace('/'+plang+'/', '/');else location.pathname='/'+lang+location.pathname.replace('/'+plang+'/', '/');}
+/* ]]> */
+</script><select onchange="doGTranslate(this);"><option value="">言語の選択</option><option value="en|en" style="font-weight:bold;background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -0px;padding-left:18px;">英語</option><option value="en|fr" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -160px;padding-left:18px;">フランス語</option><option value="en|de" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -176px;padding-left:18px;">ドイツ語</option><option value="en|ja" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -240px;padding-left:18px;">日本語</option><option value="en|ko" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -256px;padding-left:18px;">韓国語</option><option value="en|es" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -352px;padding-left:18px;">スペイン語</option></select>
+</div>
+<div class="gtranslate__credits" data-gt-block="">
+  本ドキュメントはGoogle翻訳によって機械翻訳したものとなります
+</div>
+
+  </section>
+
+
+  </div>
+
+      </div>
+      <div class="gt-block navbar-header col-md-3" data-gt-block="">
+                  <a class="logo" navbar-btn="" pull-left="" href="../ja/index.html" title="ホーム" rel="home">
+            <img src="https://support.brightcove.com/themes/custom/bcdocs/images/brightcove.png" alt="ホーム">
+          </a>
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">トグルナビゲーション</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+                    <div class="gt-block navbar-collapse collapse" data-gt-block="">
+            <div class="gt-block region region-navigation-collapsible" data-gt-block="">
+    <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation">
+            <h2 class="sr-only" id="block-mainnavigation-menu" data-gt-block="">メインナビゲーション</h2>
+
+      
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-learning-home/index.html" title="ホームページ" data-drupal-link-system-path="node/18643">ホーム</a>
+                  </li>
+                                            <li class="expanded dropdown">
+        <a class="dropdown-toggle" href="" data-toggle="dropdown">
+          製品紹介
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/video-cloud/index.html" data-drupal-link-system-path="node/18332">Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://gallery.support.brightcove.com">ギャラリー</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-player/index.html" data-drupal-link-system-path="node/18283">Brightcove Player</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/live/index.html" data-drupal-link-system-path="node/18642">Live</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/social/index.html" data-drupal-link-system-path="node/18444">Social</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/audience/index.html" data-drupal-link-system-path="node/18445">Audience</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://zencoder.support.brightcove.com">Zencoder</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/ssai/index.html" data-drupal-link-system-path="node/18650">SSAI</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://support.ottflow.com">OTT Flow</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a class="dropdown-toggle" href="" data-toggle="dropdown">
+          Links
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/analytics-api/index.html" data-drupal-link-system-path="node/18370">Analytics API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/audience-api/index.html" data-drupal-link-system-path="node/18371">Audience API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/cms-api/index.html" data-drupal-link-system-path="node/18372">CMS API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/cms-connectors-video-cloud/index.html" data-drupal-link-system-path="node/18662">CMSコネクタ用 Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/data-collection-api/index.html" data-drupal-link-system-path="node/18876">Data Collection API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/delivery-system-api/index.html" data-drupal-link-system-path="node/18387">Delivery System API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/developer-tools-and-concepts/index.html" data-drupal-link-system-path="node/18430">開発者ツールと概念</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/native-player-sdks/index.html" data-drupal-link-system-path="node/18367">Device SDK</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/dynamic-ingest-api/index.html" data-drupal-link-system-path="node/18373">Dynamic Ingest API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/getting-started-brightcove-apis-0/index.html" data-drupal-link-system-path="node/18711">入門 - Brightcove API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/page-experience-api/index.html" data-drupal-link-system-path="node/18616">In-Page Experience APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/ingest-profiles-api/index.html" data-drupal-link-system-path="node/18374">Ingest Profiles API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/live/index.html" data-drupal-link-system-path="node/18642">Live API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/oauth-api/index.html" data-drupal-link-system-path="node/18376">OAuth API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/platform-api-code-samples/index.html" data-drupal-link-system-path="node/18675">プラットフォームAPIコードサンプル</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/playback-api/index.html" data-drupal-link-system-path="node/18380">Playback API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-player-code-samples/index.html" data-drupal-link-system-path="node/18630">プレーヤーコードサンプル</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-player-developer/index.html" data-drupal-link-system-path="node/18362">プレーヤー開発者</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/player-management-api/index.html" data-drupal-link-system-path="node/18378">Player Management API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/policy-api/index.html" data-drupal-link-system-path="node/18381">Policy API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/release-notes/index.html" data-drupal-link-system-path="node/18687">リリースに関して</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a class="dropdown-toggle" href="" data-toggle="dropdown">
+          トレーニング（講習会）
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a class="nturl" href="https://university.brightcove.com">オンラインコース</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/register-training/index.html" data-drupal-link-system-path="node/18270">コース登録</a>
+                  </li>
+        </ul>
+  
+            </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-support-documentation-announcements/index.html" title="の新機能を見る Brightcove オンラインマニュアル" data-drupal-link-system-path="node/18896">新着情報</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+        </div>
+          </header>
+  
+    <div class="gt-block full-width-headline" data-gt-block="">
+    <div class="gt-block container" data-gt-block="">
+      <div class="gt-block row" data-gt-block="">
+        <div class="gt-block col-sm-12" role="heading" data-gt-block="">
+            <div class="gt-block region region-header" data-gt-block="">
+          <section id="block-brightcoveheadlineblock" class="block block-bc-general block-bc-general-headline-block clearfix">
+  
+    
+
+      オンラインマニュアル
+  </section>
+
+
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      <div role="main" class="gt-block main-container container  js-quickedit-main-content" data-gt-block="">
+    <div class="gt-block row" data-gt-block="">
+
+                              <aside class="gt-block col-sm-3" role="complementary" data-gt-block="">
+              <div class="gt-block region region-sidebar-first" data-gt-block="">
+    <section class="bc-search-fixes-search-block-form block block-bc-search-fixes block-bc-search-fixes-search-block clearfix" data-drupal-selector="bc-search-fixes-search-block-form" id="block-brightcovesearchblock">
+  
+    
+
+      <form action="/ja/social-sharing-plugin" method="post" id="bc-search-fixes-search-block-form" accept-charset="UTF-8">
+  <div class="gt-block form-item js-form-item form-type-textfield js-form-type-textfield form-item-search js-form-item-search form-no-label form-group" data-gt-block="">
+      <label for="edit-search" class="control-label sr-only">サイト内検索</label>
+  
+  
+  <input data-drupal-selector="edit-search" class="form-text form-control" type="text" id="edit-search" name="search" value="" size="15" maxlength="128" placeholder="サイト内検索">
+
+  
+  
+  </div>
+<input autocomplete="off" data-drupal-selector="form-g8knknekbhy-i19ep1w8-wk8qh2chp3if2qxaocaibe" type="hidden" name="form_build_id" value="form-g8KnknekBHy_I19Ep1W8-wk8qH2CHP3IF2QXaocaIBE"><input data-drupal-selector="edit-bc-search-fixes-search-block-form" type="hidden" name="form_id" value="bc_search_fixes_search_block_form"><div data-drupal-selector="edit-actions" class="gt-block form-actions form-group js-form-wrapper form-wrapper" id="edit-actions" data-gt-block=""><button data-drupal-selector="edit-submit" class="button js-form-submit form-submit btn-primary btn icon-only" type="submit" id="edit-submit" name="op" value="Search"><span class="sr-only">サイト内検索</span><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button></div>
+
+</form>
+
+  </section>
+
+<section id="block-inpagenavigationblock" class="hidden-xs block block-bc-ipnav block-bc-ipnav-block clearfix" style="width: 476px;">
+  
+      <h2 class="block-title" data-gt-block="">このページ</h2>
+    
+
+      <p><button id="vc" class="bcls-button__version" style="background-color:#dd712e;">Video Cloud Version</button><br><button id="bp" class="bcls-button__version">Brightcove Player Version</button><br><a style="font-size:smaller;" href="../versions-brightcove-player-documentation/index.html">(What's the difference?)</a></p><hr><div class="bc-ipnav-block" data-gt-block=""><ul><li><a href="#Example/index.html">例</a></li><li><a href="#Overview/index.html">概要</a></li><li><a href="#Configure_player/index.html">プレーヤーを設定する</a></li><li><a href="#Configure_player_with_options/index.html">オプションでプレーヤーを設定する</a></li><li><a href="#Properties/index.html">プロパティ</a></li><li><a href="#Getter_and_setter_configuration_methods/index.html">ゲッターとセッターの設定メソッド</a></li><li><a href="#SocialButton/index.html">Socialボタン</a></li><li><a href="#Generate_meta_tags/index.html">メタタグを生成する</a></li><li><a href="#Sharing_on_Facebook/index.html">Facebookでの共有</a></li><li><a href="#Sharing_on_Twitter/index.html">Twitterで共有する</a></li><li><a href="#Validate/index.html">有効にする</a></li><li><a href="#Customizing_sharing_URLs/index.html">共有URLのカスタマイズ</a></li><li><a href="#Custom_services/index.html">カスタムサービス</a></li><li><a href="#Known_issues/index.html">既知の問題点</a></li><li><a href="#Changelog/index.html">変更履歴</a></li><li><a href="#bc-ipnav-15/index.html">関連コンテンツ</a></li></ul></div>
+  </section>
+
+
+  </div>
+
+          </aside>
+              
+                  <section class="col-sm-9">
+
+                                      <div class="gt-block highlighted" data-gt-block="">  <div class="gt-block region region-highlighted" data-gt-block="">
+    <div data-drupal-messages-fallback="" class="hidden" data-gt-block=""></div>
+
+  </div>
+</div>
+                  
+                
+                
+                
+                          <a class="nturl" id="main-content"></a>
+            <div class="gt-block region region-content" data-gt-block="">
+        <h1 class="page-header"><span>Social 共有プラグイン</span>
+</h1>
+
+  
+<div class="gt-block node node--type-support-doc node--view-mode-full bcdocs-four-rows clearfix" data-gt-block="">
+
+  
+
+  <div class="group-first-row" data-gt-block="">
+      </div>
+
+  <div class="gt-block group-second-row" data-gt-block="">
+  
+  <div class="gt-block field field--name-field-products field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">製品（複数可）</div>
+          <div class="gt-block field__items taxonomy__tags" data-gt-block="">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item" data-gt-block="">Video Cloud</div>
+          <div class="field--item" data-gt-block="">Brightcove Player</div>
+              </div>
+      </div>
+
+  <div class="gt-block field field--name-field-roles field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">役割</div>
+          <div class="gt-block field__items taxonomy__tags" data-gt-block="">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item" data-gt-block="">プレーヤー開発者</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="gt-block group-third-row taxonomy__tags" data-gt-block="">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="gt-block field field--name-field-topics field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">トピック）</div>
+          <div class="gt-block field--items" data-gt-block="">
+              <div class="field--item" data-gt-block="">プラグイン</div>
+          <div class="field--item" data-gt-block="">Social 分担</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="gt-block group-fourth-row" data-gt-block="">
+  
+            <div class="gt-block field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item" data-gt-block=""><p data-gt-block="">このトピックでは、ソーシャルメディアプラグインを使用して、Facebook、Google+、Twitter、Tumblr、Pinterest、およびLinkedInを通じてビデオを共有できるようにする方法を学びます。</p>
+            <article class="bcls-article"><section class="bcls-section"><h2 id="Example" data-gt-block="">例</h2>
+
+<p data-gt-block="">あなたがウェブページを持っているとしましょう Brightcove それにプレーヤー。 今では、ユーザーがソーシャルメディアプラットフォーム間でビデオを共有できるようにしたいと考えています。 ソーシャルメディアプラグインを使用すると、タイトルと説明のドックにソーシャル共有アイコンが表示されます。</p>
+
+<aside class="bcls-aside bcls-aside--information" data-gt-block="">注：プレイヤーがタイトルと説明ドックを表示しないように設定されている場合、共有アイコンがプレーヤーコントロール領域に表示されます。</aside><figure class="bcls-figure"><img class="bcls-image" alt="Social メディアアイコン" src="http://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/social-media-plugin/social-media-icon.png"></figure><p data-gt-block="">このアイコンをクリックすると、ここに示すソーシャル共有画面が表示されます。</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="Social メディア共有インターフェイス" src="http://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/social-media-plugin/social-media-selection.png"></figure><p data-gt-block="">次の2つの理由から、プレーヤーの幅と高さを設定する必要があります：</p>
+
+<ol><li>幅や高さが設定されていない場合は、Twitterに渡す値がなくなり、Twitterカードが検証されなくなります。</li>
+	<li>上記のスクリーンショットに示すように、幅はソーシャルプラグインのインターフェースに対応するのに十分な幅が必要です。 また、インターフェースを自動的に動画の最後に表示することもできます <code class="notranslate notranslate">displayAfterVideo </code> プロパティ、以下に記載されています。</li>
+</ol><aside class="gt-block bcls-aside bcls-aside--tip" data-gt-block=""><p data-gt-block="">注：スタジオには、ソーシャルシェアをプレーヤーに追加するオプションがあり、多くの場合、必要に応じて十分です。 このドキュメントでは、ソーシャルメディアプラグインの使用に関するすべての側面について説明します。 次のスクリーンショットの写真はスタジオのUIです。</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="" src="http://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/social-media-plugin/social-media-studio.png"></figure></aside><p data-gt-block="" class="gt-block gt-block">ナビゲーションヘッダーの <a class="nturl" href="http://solutions.brightcove.com/bcls/brightcove-player/social-plugin/social-media.html">ぜひこちらから皆様もその幸せなお客様の輪に加わりましょう。</a> プラグインを使用し、ソーシャルメディアのメタタグを含むWebページの作業サンプル用です。</p>
+</section><section class="bcls-section"><h2 id="Overview" data-gt-block="">概要</h2>
+
+<p data-gt-block="">このドキュメントでは、既存のHTMLページのソーシャルメディア共有を有効にする手順について説明します。 Brightcove それにプレーヤー。 これは、あなたが Brightcove プレーヤーに適切な設定情報を渡し、HTMLページにプレーヤーを追加しました。</p>
+
+<p data-gt-block="">ソーシャルメディアプラグインを追加するには、次の手順を実行します。</p>
+
+<ol class="bcls-tasklist"><li>
+	<p data-gt-block="">プレーヤーを設定します。 これはあなたを更新します Brightcove ソーシャルメディアプラグインを使用するプレイヤー。 プレーヤーとのソーシャルシェアを含める方法は3つあります。</p>
+	<!-- <aside class="bcls-aside bcls-aside--information">
+			<ul>
+				<li>You will need the URL to the HTML page with your Brightcove player.</li>
+				<li>Review the available <a class=nturl href="#Properties">properties</a> to customize the social media plugin.</li>
+			</ul>
+		</aside> -->
+
+	<ul><li>
+		<p data-gt-block="" class="gt-block gt-block"><a class="nturl" href="#Configure_player/index.html">プレーヤーを設定する</a><br>
+		スタジオで <strong>Players の作成と管理</strong> モジュール、できます <a class="nturl" href="..//support.brightcove.com/ja/configuring-social-properties-player/index.html">のプロパティを設定する <strong>Social</strong> セクション</a>。 これは、さまざまなソーシャルメディアプラットフォームを選択するためのインタフェースを提供しますが、他の設定オプションは提供しません。</p>
+		</li>
+		<li>
+		<p data-gt-block="" class="gt-block gt-block"><a class="nturl" href="#Configure_player_with_options/index.html">オプションでプレーヤーを設定する</a><br>
+		スタジオで <strong>Players の作成と管理</strong> を使用しているモジュール <strong>プラグイン</strong> セクションには、設定オプションを提供するためのインタフェースがあります。</p>
+		</li>
+		<li>
+		<p data-gt-block="" class="gt-block gt-block"><a class="nturl" href="#Customizing_sharing_URLs/index.html">共有URLのカスタマイズ</a><br>
+		この実装はコードを使用してソーシャルプラグインを追加します。</p>
+		</li>
+	</ul></li>
+	<li>ソーシャルを追加 <a class="nturl" href="#Generate_meta_tags/index.html">METAタグ</a> あなたのプレーヤーのHTMLページに追加します。</li>
+	<li><a class="nturl" href="#Validate/index.html">有効にする</a> FaceBookとTwitterのHTMLページのメタタグ</li>
+</ol><p data-gt-block="">ブラウザで、HTMLページを開いて Brightcove あなたのビデオを共有するには、プレーヤーのソーシャル共有アイコンを使用します。</p>
+
+<p data-gt-block="" class="gt-block gt-block">また、ページコード内にソーシャルメディアプラグインを実装することもできますが、これはより高度なソリューションです。 この方法を使用してカスタム共有URLを含めることができます。 詳細については、 <a class="nturl" href="#Customizing_sharing_URLs/index.html">共有URLのカスタマイズ</a> の項目を検索します。</p>
+
+<aside class="gt-block bcls-aside bcls-aside--tip" data-gt-block=""><p data-gt-block="">ソーシャルプラットフォームに投稿するためのその他のオプションは次のとおりです。</p>
+
+<ul><li><a class="nturl" href="..//support.brightcove.com/ja/publishing-brightcove-players-facebook-instant-articles/index.html">公開する Brightcove Player Facebookインスタント記事で</a></li>
+	<li><a class="nturl" href="..//support.brightcove.com/ja/publishing-videos-social-media-platforms/index.html">ソーシャルメディアプラットフォームへ動画を公開する</a></li>
+</ul></aside></section><section class="bcls-section"><h2 id="Configure_player" data-gt-block="">プレーヤーを設定する</h2>
+
+<p data-gt-block="">ソーシャル共有プラグインを追加するには、次の手順を実行します。</p>
+
+<ol class="bcls-tasklist__restart"><li>Video Cloud Studioで <strong>プレイヤー</strong> モジュールをクリックし、新しいプレーヤーを作成するか、プラグインを追加するプレーヤーを探します。</li>
+	<li>プレーヤーのプロパティを開くには、プレーヤーのリンクを選択します。</li>
+	<li>次の項目を選択します： <strong>Social</strong> 左側のナビゲーションメニュー。</li>
+	<li>次に、のチェックボックスをオンにします。 <strong>共有を有効にする</strong>.</li>
+	<li>動画を共有するソーシャルメディアプラットフォームを選択してください。</li>
+	<li>プレーヤーを公開するには、 <strong>公開と埋め込み&gt;変更の公開</strong>.</li>
+	<li>開いているダイアログを閉じるには、を選択します。 <strong>閉じる</strong>.</li>
+</ol></section><section class="bcls-section"><h2 id="Configure_player_with_options" data-gt-block="">オプションでプレーヤーを設定する</h2>
+
+<p data-gt-block="" class="gt-block gt-block">より高度な設定には、 <a class="nturl" href="#Properties/index.html">プロパティ</a> プラグインを設定するためのオプションとして。 これを行うには、次の手順に従います。</p>
+
+<ol class="bcls-tasklist__restart"><li>Video Cloud Studioで <strong>プレイヤー</strong> モジュールをクリックし、新しいプレーヤーを作成するか、プラグインを追加するプレーヤーを探します。</li>
+	<li>プレーヤーのプロパティを開くには、プレーヤーのリンクを選択します。</li>
+	<li>次の項目を選択します： <strong>Social</strong> 左側のナビゲーションメニューでチェックボックスをオフにしてください。</li>
+	<li>次の項目を選択します： <strong>プラグイン</strong> 左側のナビゲーションメニュー。</li>
+	<li>次の選択 <strong>プラグイン</strong> XNUMXつのオプションから。
+	<figure class="bcls-figure"><img class="bcls-image" alt="プラグインを選択" src="http://learning-services-media.brightcove.com/doc-assets/general/players-plugin-options.png"></figure></li>
+	<li>から <strong>プラグインを追加する</strong> ドロップダウンメニューから選択 <strong>カスタムプラグイン</strong>.</li>
+	<li>　 <strong>プラグイン名</strong> 入力します <code class="notranslate">social</code>.</li>
+	<li>　 <strong>JavaScriptを</strong> URL、入力：
+	<pre class="notranslate language-json">		<code class="notranslate notranslate language-json">https<span class="token operator">:</span>//players.brightcove.net/videojs-social/<span class="token number">3</span>/videojs-social.min.js</code></pre>
+	</li>
+	<li>　 <strong>CSS</strong> URL、入力：
+	<pre class="notranslate language-json">		<code class="notranslate notranslate language-json">https<span class="token operator">:</span>//players.brightcove.net/videojs-social/<span class="token number">3</span>/videojs-social.css</code></pre>
+	</li>
+	<li>構成オプションを <strong>オプション（JSON）</strong> テキストボックス。 この例では、オプションによって次のことが行われます。
+	<ul><li>2-3：ビデオの名前と説明を設定します。</li>
+		<li>ライン4：ビデオプレーヤーとソーシャルシェアのメタタグを使用して、カスタムWebページのURLを定義します。</li>
+		<li>5-6：Twitterの場合、5の2番目のオフセットの後で、ユーザーはビデオを見ることができます。</li>
+		<li>
+		<p data-gt-block="">Lines 7-13：Facebook、Twitter、Tumblr、Pinterest、およびLinkedInのソーシャルシェアを有効にします。</p>
+		</li>
+	</ul><pre class="line-numbers notranslate language-json">	<code class=" notranslate notranslate language-json"><span class="token punctuation">{</span>
+		<span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Tiger"</span><span class="token punctuation">,</span>
+		<span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"Video of two tigers"</span><span class="token punctuation">,</span>
+		<span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"https://solutions.brightcove.com/bcls/brightcove-player/social-plugin/social-media.html"</span><span class="token punctuation">,</span>
+		<span class="token property">"deeplinking"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+		<span class="token property">"offset"</span><span class="token operator">:</span> <span class="token string">"00:00:05"</span><span class="token punctuation">,</span>
+		<span class="token property">"services"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+			<span class="token property">"facebook"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+			<span class="token property">"twitter"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+			<span class="token property">"tumblr"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+			<span class="token property">"pinterest"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+			<span class="token property">"linkedin"</span><span class="token operator">:</span> <span class="token boolean">true</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+	</li>
+	<!-- <li>Check to be sure your form appears similar to the following:
+		<figure class="bcls-figure"><img class="bcls-image" alt="" src="//learning-services-media.brightcove.com/doc-assets/player-development/player-customization/social-media-plugin/studio-configuration.png" /></figure>
+		</li> -->
+	<li>ナビゲーションヘッダーの <strong>保存</strong>.</li>
+	<li>プレーヤーを公開するには、 <strong>公開と埋め込み&gt;変更の公開</strong>.</li>
+	<li>開いているダイアログを閉じるには、 <strong>閉じる</strong>.</li>
+</ol></section><section class="bcls-section"><h2 id="Properties" data-gt-block="">プロパティ</h2>
+
+<p data-gt-block="" class="gt-block">一般的なプラグインの場合、 <code class="notranslate notranslate">options </code> オブジェクトは初期化をカスタマイズするためにプラグインにデータを渡すために使用されます。 この場合、このオブジェクトで次のプロパティを使用できます。</p>
+
+<h3 data-gt-block="">タイトル</h3>
+
+<ul><li>タイプ：文字列</li>
+	<li>これは、あなたのビデオが共有されているときに表示されるカスタムタイトルです。</li>
+</ul><h3 data-gt-block="">説明</h3>
+
+<ul><li>タイプ：文字列</li>
+	<li>これはそれをサポートする社会サービスによって使用されるカスタム説明です。</li>
+</ul><h3 data-gt-block="">URL</h3>
+
+<ul><li>タイプ：文字列</li>
+	<li>これはあなたのビデオとメタタグを共有するカスタムWebページを指すURLです。 参照してください <a class="nturl" href="#Generate_meta_tags/index.html">METAタグ</a> ソーシャルメディアメタデータをプレイヤーページに追加する方法の詳細については、セクションを参照してください。</li>
+</ul><h3 id="embedcode" data-gt-block="">埋め込みコード</h3>
+
+<ul><li>タイプ：文字列</li>
+	<li>これは Brightcove 動画を共有するプレーヤーのiframe埋め込みコード これにより、 <strong>埋め込みコード</strong> フィールドを共有ダイアログに配置します。
+	<figure class="bcls-figure"><img class="bcls-image" alt="Social メディア埋め込みコード" src="http://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/social-media-plugin/social-media-embedcode.png"></figure></li>
+	<li>このプロパティの値は、 <a class="nturl" href="#getembedcode/index.html">getEmbedCode（）</a> 方法。</li>
+</ul><h3 data-gt-block="">removeEmbed</h3>
+
+<ul><li>タイプ：ブール型</li>
+	<li>デフォルト： <code class="notranslate notranslate">false </code></li>
+	<li>に設定した場合 <code class="notranslate notranslate">true</code>iframe埋め込みコードを無効にします（隠す）</li>
+</ul><h3 data-gt-block="">displayAfterVideo</h3>
+
+<ul><li>タイプ：ブール型</li>
+	<li>デフォルト： <code class="notranslate notranslate">false </code></li>
+	<li>ソーシャルスクリーンが自動的に <code class="notranslate notranslate">ended </code> イベント</li>
+</ul><h3 data-gt-block="">逆リンク</h3>
+
+<ul><li>タイプ：ブール型</li>
+	<li>デフォルト： <code class="notranslate notranslate">false </code></li>
+	<li>
+	<p data-gt-block="" class="gt-block gt-block">共有ビデオのディープリンクを有効/無効にします。 この機能により、ユーザーは特定のオフセットからビデオを見ることができます。 詳細については、 <a class="nturl" href="..//support.brightcove.com/ja/deep-linking/index.html">ディープリンク</a> の資料をご参照ください。</p>
+
+	<aside class="bcls-aside bcls-aside--warning" data-gt-block="">注：ディープリンク機能は現在のところTwitterでのみ機能します。</aside></li>
+</ul><h3 data-gt-block="">オフセット</h3>
+
+<ul><li>タイプ：文字列</li>
+	<li>フォーマット： <code class="notranslate notranslate">00h00m00s </code></li>
+	<li>これは、 <code class="notranslate notranslate">deeplinking </code> ビデオの再生をいつ開始するかを定義します。 1分と5秒をオフセットするには、次のように書く： <code class="notranslate notranslate">00h01m05s </code></li>
+</ul><h3 data-gt-block="">サービス</h3>
+
+<p data-gt-block="">このオブジェクトにすべてのサービスプロパティを含めます。 サービスのサポートを有効または無効にするには、プロパティ値をに設定します。 true  or  false それらを削除する代わりに。</p>
+
+<ul><li><code class="notranslate notranslate">facebook </code>
+
+	<ul><li>タイプ：ブール型</li>
+		<li>デフォルト： <code class="notranslate notranslate">true </code></li>
+		<li>これにより、Facebookの共有アイコンが有効になります。</li>
+	</ul></li>
+	<li><code class="notranslate notranslate">twitter </code>
+	<ul><li>タイプ：ブール型</li>
+		<li>デフォルト： <code class="notranslate notranslate">true </code></li>
+		<li>これにより、Twitter共有アイコンが有効になります。</li>
+	</ul></li>
+	<li><code class="notranslate notranslate">tumblr </code>
+	<ul><li>タイプ：ブール型</li>
+		<li>デフォルト： <code class="notranslate notranslate">true </code></li>
+		<li>これにより、Tumblrの共有アイコンが有効になります。</li>
+	</ul></li>
+	<li><code class="notranslate notranslate">pinterest </code>
+	<ul><li>タイプ：ブール型</li>
+		<li>デフォルト： <code class="notranslate notranslate">true </code></li>
+		<li>これにより、Pinterest共有アイコンが有効になります。</li>
+	</ul></li>
+	<li><code class="notranslate notranslate">linkedin </code>
+	<ul><li>タイプ：ブール型</li>
+		<li>デフォルト： <code class="notranslate notranslate">true </code></li>
+		<li>これにより、LinkedInの共有アイコンが有効になります。</li>
+	</ul></li>
+</ul><h3 data-gt-block="">buttonParent</h3>
+
+<ul><li>タイプ：テキスト</li>
+	<li>デフォルト： <code class="notranslate notranslate">shelf </code></li>
+	<li>共有アイコンをどこに配置するかを決定します。 に設定されている場合 <strong>棚</strong>、デフォルトでは、共有アイコンがドックに表示されます。 値がに設定されている場合 <strong>コントロールバー</strong>共有アイコンがコントロールバーに表示されます。</li>
+</ul><p data-gt-block="">例：</p>
+
+<pre class="line-numbers notranslate language-json">	<code class="notranslate notranslate language-json"><span class="token punctuation">{</span>
+		<span class="token property">"services"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+			<span class="token property">"linkedin"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+			<span class="token property">"pinterest"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+			<span class="token property">"tumblr"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+			<span class="token property">"twitter"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+			<span class="token property">"facebook"</span><span class="token operator">:</span> <span class="token boolean">true</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span>
+		<span class="token property">"offset"</span><span class="token operator">:</span> <span class="token string">"00:00:05"</span><span class="token punctuation">,</span>
+		<span class="token property">"deeplinking"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+		<span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"https://solutions.brightcove.com/bcls/brightcove-player/social-plugin/social-media.html"</span><span class="token punctuation">,</span>
+		<span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"Video of two tigers"</span><span class="token punctuation">,</span>
+		<span class="token property"></span><span class="bcls-highlight"><span class="token property">"buttonParent"</span><span class="token operator">:</span> <span class="token string">"controlBar"</span><span class="token punctuation">,</span></span><span class="token punctuation"></span>
+		<span class="token property">"title"</span><span class="token operator">:</span> <span class="token string">"Tiger"</span>
+	<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</section><section class="bcls-section"><h2 id="Getter_and_setter_configuration_methods" data-gt-block="">ゲッターとセッターの設定メソッド</h2>
+
+<p data-gt-block="" class="gt-block gt-block">設定オプションの設定と取得には、いくつかの方法があります。 すべてのメソッドは、 <strong>Socialオーバーレイ</strong> コンポーネント。 <strong>videojs.ModalDialog</strong> クラス。 （このクラスに関する情報は、 <a class="nturl" href="..//support.brightcove.com/ja/implementing-modaldialog/index.html">ModalDialogの実装</a> 文書。）</p>
+
+<p data-gt-block="" class="gt-block gt-block">ソーシャルプラグインが初期化されると、 <strong>Socialオーバーレイ</strong> コンポーネントは <code class="notranslate notranslate">player.socialOverlay </code>。 getterメソッドとsetterメソッドを使用する一般的な形式は次のとおりです。</p>
+
+<pre class="notranslate language-javascript">	<code class="notranslate notranslate language-javascript">player<span class="token punctuation">.</span>socialOverlay<span class="token punctuation">.</span><span class="token function">methodName</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre>
+
+<h3 data-gt-block="">setDirectLink（string）</h3>
+
+<ul><li>使用法： <code class="notranslate notranslate">player.socialOverlay.setDirectLink(string) </code></li>
+	<li>目的：ソーシャルオーバーレイで使用されるURLを更新します。 値を空の文字列（ ''）に設定すると、要求に応じてURLが決定されます。</li>
+</ul><h3 data-gt-block="">getDirectLink（）</h3>
+
+<ul><li>使用法： <code class="notranslate notranslate">player.socialOverlay.getDirectLink() </code></li>
+	<li>目的：ソーシャルオーバーレイで使用されるURLを返します。</li>
+</ul><h3 data-gt-block="">setEmbedCode（string）</h3>
+
+<ul><li>使用法： <code class="notranslate notranslate">player.socialOverlay.setEmbedCode(string) </code></li>
+	<li>目的：ソーシャルオーバーレイで使用される埋め込みコードを更新します。</li>
+</ul><h3 data-gt-block="">getEmbedCode（）</h3>
+
+<ul><li>使用法： <code class="notranslate notranslate">player.socialOverlay.getEmbedCode() </code></li>
+	<li>目的：ソーシャルオーバーレイで使用される埋め込みコードを取得します。</li>
+</ul></section><section class="bcls-section"><h2 id="SocialButton" data-gt-block="">Socialボタン</h2>
+
+<p data-gt-block="" class="gt-block gt-block">ソーシャルプラグインが初期化されると、 <strong>Socialボタン</strong> コンポーネントは <code class="notranslate notranslate">player.socialButton </code>。 このコンポーネントは、 <strong>videojs.Button</strong> クラス。</p>
+</section><section class="bcls-section"><h2 id="Generate_meta_tags" data-gt-block="">メタタグを生成する</h2>
+
+<p data-gt-block="">あなたの更新後 Brightcove プレーヤーが前のセクションでソーシャル共有プラグインを使用する場合は、HTMLページにソーシャルメタタグを追加する準備が整いました。</p>
+
+<p data-gt-block="">これらのメタタグにより、ソーシャルシェアリングサイトで動画プレーヤーとサムネイルを投稿に埋め込むことができます。 以下のフォームは、 CMS API あなたの情報と一緒にあなたのビデオデータを取得します。 次に、特定のデータを含むソーシャルメタタグを生成します。</p>
+
+<p data-gt-block="">HTMLページにソーシャルメディアメタタグを追加するには Brightcove プレーヤー、次の手順を実行します。</p>
+
+<ol class="bcls-tasklist__restart"><li>アカウント、プレーヤー、ビデオ情報を下のフォームに入力して、 <strong>生成する Social タグ</strong> ボタン。</li>
+</ol><h4 data-gt-block="">データ入力</h4>
+
+<aside class="gt-block bcls-aside bcls-aside--information" data-gt-block="">ノート：
+<ul><li>すべてのフィールドは <strong>必須</strong>。 自分の値を入力して、ビデオとプレーヤーのメタタグを取得します。</li>
+	<li>このフォームは、1つのビデオプレーヤーのみのコードを生成します。 また、URLが変更される可能性があるため、メタタグを定期的に更新する必要があります。</li>
+	<li>ポリシーキーを取得する方法の詳細については、 <a class="nturl" href="..//support.brightcove.com/ja/policy-keys/index.html">ポリシーキー</a> の資料をご参照ください。</li>
+</ul></aside><div id="inputFields" class="gt-block input-fields" data-gt-block="">
+<fieldset><legend>口座情報 </legend>
+
+<div id="accountInfo" data-gt-block="" class="gt-block">
+<table><tbody><tr><td>サービスURL：</td>
+			<td>https://edge.api.brightcove.com/playback/v1</td>
+		</tr><tr><td><span class="video-cloud-only" style="display:inline;">Video Cloud</span><span class="player-only" style="display:none">Brightcove Player</span> アカウント（サイト運営者ID）：</td>
+			<td><!-- <input id="accountID" class="required papi-request" type="text" size="60" value="1486906377" required> --><input id="accountID" class="required papi-request" type="text" size="60" placeholder="あなたのアカウントID" required=""><!--Brightcove Learning Doc Samples--></td>
+		</tr><tr><td class="align-top no-wrap">ポリシーキー：</td>
+			<td><input id="policyKey" class="required papi-request" type="text" size="250" placeholder="あなたのポリシーキー" required=""><p data-gt-block=""> </p>
+			</td>
+		</tr></tbody></table></div>
+</fieldset><fieldset><legend>プレーヤー情報 </legend>
+
+<div id="playerInfo" data-gt-block="" class="gt-block">
+<table><tbody><tr><td>あなたのプレイヤーページのURL：</td>
+			<td><!-- <input id="pageURL" type="text" size="60" class="required papi-request" value="https://yourwebpage.com"  required /> --><input id="pageURL" type="text" size="60" class="required papi-request" placeholder="https://yourwebpage.com" required=""></td>
+		</tr><tr><td>Twitter @ウェブサイトのユーザー名：</td>
+			<td><!-- <input id="pageTwitter" type="text" size="60" class="required papi-request" value="@username"  required /> --><input id="pageTwitter" type="text" size="60" class="required papi-request" placeholder="@ユーザー名" required=""></td>
+		</tr><tr><td>プレーヤーID（Playersモジュールから）：</td>
+			<td><!-- <input id="playerID" class="required papi-request" size="60" value="default" required /> --><input id="playerID" class="required papi-request" size="60" placeholder="あなたのプレイヤーID" required=""></td>
+		</tr><tr><td>プレーヤーの幅：</td>
+			<td><input id="playerWidth" class="required papi-request" type="text" size="60" value="640px" required=""></td>
+		</tr><tr><td>プレーヤーの高さ：</td>
+			<td><input id="playerHeight" class="required papi-request" type="text" size="60" value="360px" required=""></td>
+		</tr></tbody></table></div>
+</fieldset><fieldset><legend>動画情報 </legend>
+
+<div id="videoInfo" data-gt-block="" class="gt-block">
+<table><tbody><tr><td>ビデオID（メディアモジュールから）：</td>
+			<td><!-- <input id="videoID" class="required papi-request" size="60" value="4779638563001" required /> --><input id="videoID" class="required papi-request" size="60" placeholder="あなたのビデオID" required=""></td>
+		</tr></tbody></table><p id="responseFrame" data-gt-block=""> </p>
+</div>
+
+<p data-gt-block="" class="gt-block gt-block"><span id="generateButton" class="bcls-button">生成する Social タグ</span></p>
+</fieldset></div>
+ 
+
+<ol class="bcls-tasklist"><li>押します： <strong>コードを選択</strong> ボタン。 次に、選択したコードをコピーして <code class="notranslate notranslate">&lt;head&gt; </code> あなたのHTMLプレーヤーページのセクション。</li>
+</ol><h4 data-gt-block="">生成された Social メタタグの共有</h4>
+<!-- <fieldset>
+	<legend>Generated Results</legend>
+	<div id="generatedResults"></div>
+	</fieldset> -->
+
+<div id="publishingCodeWrapper" data-gt-block="" class="gt-block">
+<fieldset><legend>メタデータコード </legend>
+
+<p data-gt-block="" class="gt-block gt-block"><span class="bcls-button" id="selectCode">コードを選択</span> それをあなたのページにコピー＆ペーストしてください。</p>
+
+<p data-gt-block="" class="gt-block"><textarea id="publishingCode" rows="15" cols="100"></textarea></p>
+</fieldset></div>
+ 
+
+<ol class="bcls-tasklist"><li>変更を保存します。 これで、あなたのプレーヤーとソーシャルメディア共有インターフェースを使用する準備が整いました。</li>
+</ol><aside class="gt-block bcls-aside bcls-aside--tip" data-gt-block="">あなたのHTMLプレーヤーページに安全なURL値を提供したい <code class="notranslate notranslate">&lt;meta property="og:video:secure_url" content=""/&gt; </code>（HTTPS）を使用しているFacebookユーザー用です。</aside><!-- script for the social meta tag generator form - calls playback api --><script src="https://solutions.brightcove.com/bcls/brightcove-player/social-plugin/social.js">
+<!--//--><![CDATA[// ><!--
+
+			
+//--><!]]>
+</script></section><section class="bcls-section"><h2 id="Sharing_on_Facebook" data-gt-block="">Facebookでの共有</h2>
+
+<p data-gt-block="" class="gt-block gt-block">現時点では、FacebookのネイティブプレーヤーだけがFacebookの壁に動画を再生します。 あなたのビデオを共有して、Facebookの壁で遊んでみたい場合は、 Brightcove Social。 詳細については、 <a class="nturl" href="..//support.brightcove.com/ja/getting-started-brightcove-social/index.html">Brightcove Social を使ってみよう</a> の資料をご参照ください。</p>
+
+<p data-gt-block="" class="gt-block gt-block">挽き目 Brightcove プレーヤーは壁にリンクを作成し、新しいブラウザのタブまたはウィンドウでビデオとプレーヤーを開きます。 ほとんどの人にとっては、この動作は問題ありません。 これを行うために、FacebookはあなたにOpen Graphを使ってビデオを定義させることができます（<strong>og</strong>）メタタグをHTMLページに挿入します。 使用方法の詳細については <strong>og</strong> Facebook用のタグは、 <a class="nturl" href="..//developers.facebook.com/docs/sharing/best-practices/index.html">ベストプラクティスの共有</a> の資料をご参照ください。</p>
+
+<div class="gt-block video-cloud-only" data-gt-block="" style="display:block;">
+<p data-gt-block="">プレーヤーとビデオへのリンクを共有するには、次の手順を実行します。</p>
+
+<ol class="bcls-tasklist__restart"><li>Playersモジュールで、 <strong>Social 分担</strong> セクションを選択し、 <strong>有り</strong> 共有を許可する。</li>
+	<li>変更を保存してプレーヤーを公開します。</li>
+	<li>あなたのプレーヤーとビデオでHTMLページを作成します。</li>
+	<li>あなたの <a class="nturl" href="#Generate_meta_tags/index.html">ソーシャルメタタグ</a> あなたのHTMLページのために、それらを次のように更新してください：
+	<ul><li>9-11：サイト名、ビデオのタイトル、ビデオのタイプを定義します。</li>
+		<li>ライン12：あなたの動画のURLを指します。 Brightcove プレイヤー。</li>
+		<li>
+		<p data-gt-block="">ライン13：ビデオのサムネイル画像を指します。</p>
+
+		<aside class="gt-block bcls-aside bcls-aside--information" data-gt-block="">メディアURLの有効期限が切れるので、次のいずれかを行うことをお勧めします。
+		<ul><li>自分のサーバー上のポスター画像をホストし、適切なメタタグ内のURLを使用します。</li>
+			<li>サーバ側のコードを実装して、 Playback API 適切なメタタグを毎日更新します。</li>
+		</ul>
+		メディアURLの使用の詳細については、 <a class="nturl" href="..//support.brightcove.com/ja/best-practices-cms-and-playback-apis#using_media_urls/index.html">ベストプラクティス：CMSおよびPlayback API</a> の資料をご参照ください。</aside></li>
+		<li>14-16：動画の説明とプレーヤーのサイズを入力します。</li>
+	</ul></li>
+</ol><pre class="line-numbers notranslate language-html" data-start="2" style="counter-reset: linenumber 1;">	<code class="notranslate notranslate language-html"><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>utf-8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>apple-mobile-web-app-capable<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>yes<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Social Media Plugin<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+			<span class="token comment"></span><span class="bcls-highlight"><span class="token comment">&lt;!-- Open Graph Sharing Metadata --&gt;</span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>og:site_name<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Brightcove<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>og:title<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Social Media Plugin<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>og:type<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>video<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>og:url<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://solutions.brightcove.com/bcls/brightcove-player/social-plugin/social-media.html<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>og:image<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://solutions.brightcove.com/bcls/assets/images/Tiger_poster.png<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>og:description<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Tiger<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>og:video:width<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>640<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>og:video:height<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>360<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span></span><span class="token tag"><span class="token punctuation"></span></span>
+			<span class="token comment">&lt;!-- Twitter: card/meta-tags --&gt;</span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:card<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>player<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:site<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>@username<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:title<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Tiger<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:description<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Tiger video<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:image<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://solutions.brightcove.com/bcls/assets/images/Tiger_poster.png<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:player<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://solutions.brightcove.com/bcls/brightcove-player/social-plugin/social-media.html<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:player:width<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>640<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:player:height<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>360<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:stream<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://solutions.brightcove.com/bcls/brightcove-player/social-plugin/social-media-twitter.html<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:player:stream:content_type<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>video/mp4<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style language-css">
+				<span class="token comment">/* player dimensions */</span>
+				<span class="token selector">iframe </span><span class="token punctuation">{</span>
+					<span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">640</span>px<span class="token punctuation">;</span>
+					<span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">360</span>px<span class="token punctuation">;</span>
+				<span class="token punctuation">}</span>
+			</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>iframe</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>https://players.brightcove.net/1752604059001/oVYJtofHRF_default/index.html?videoId=4172255216001<span class="token punctuation">'</span></span> <span class="token attr-name">allowfullscreen</span> <span class="token attr-name">webkitallowfullscreen</span> <span class="token attr-name">mozallowfullscreen</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>iframe</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</div>
+
+<div class="gt-block player-only" data-gt-block="" style="display:none">
+<p data-gt-block="">これを行うには、次の手順を実行します。</p>
+
+<ol class="bcls-tasklist__restart"><li>Playersモジュールで、 <strong>Social 分担</strong> セクションを選択し、 <strong>有り</strong> 共有を許可する。</li>
+	<li>変更を保存してプレーヤーを公開します。</li>
+	<li>あなたのプレーヤーとビデオでHTMLページを作成します。</li>
+	<li>あなたの <a class="nturl" href="#Generate_meta_tags/index.html">ソーシャルメタタグ</a> あなたのHTMLページのために、それらを次のように更新してください：
+	<ul><li>92-94：サイト名、ビデオのタイトル、ビデオのタイプを定義します。</li>
+		<li>Line 95：動画のURLを指します。</li>
+		<li>
+		<p data-gt-block="">ライン96：ビデオのサムネイル画像を指します。</p>
+
+		<aside class="gt-block bcls-aside bcls-aside--information" data-gt-block="">メディアURLの有効期限が切れるので、次のいずれかを行うことをお勧めします。
+		<ul><li>自分のサーバー上のポスター画像をホストし、適切なメタタグ内のURLを使用します。</li>
+			<li>サーバ側のコードを実装して、 Playback API 適切なメタタグを毎日更新します。</li>
+		</ul>
+		メディアURLの使用の詳細については、 <a class="nturl" href="..//support.brightcove.com/ja/best-practices-cms-and-playback-apis#using_media_urls/index.html">ベストプラクティス：CMSおよびPlayback API</a> の資料をご参照ください。</aside></li>
+		<li>97-99：動画の説明とプレーヤーのサイズを入力します。</li>
+	</ul></li>
+</ol><pre class="line-numbers notranslate language-html" data-start="85" style="counter-reset: linenumber 84;">	<code class="notranslate notranslate language-html"><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>utf-8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>apple-mobile-web-app-capable<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>yes<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Social Media Plugin - Share Smart Player<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+			<span class="token comment"></span><span class="bcls-highlight"><span class="token comment">&lt;!-- Open Graph Sharing Metadata --&gt;</span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>og:site_name<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Brightcove<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>og:title<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Social Media Plugin<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>og:type<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>video<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>og:url<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://solutions.brightcove.com/bcls/brightcove-player/social-plugin/social-media.html<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>og:image<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://solutions.brightcove.com/bcls/assets/images/Tiger_poster.png<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>og:description<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Modus 550<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>og:video:width<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>640<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>og:video:height<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>360<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span></span><span class="token tag"><span class="token punctuation"></span></span>
+			<span class="token comment">&lt;!-- Twitter: card/meta-tags --&gt;</span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:card<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>player<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:site<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>@username<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:title<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Tiger<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:description<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Tiger video<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:image<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://solutions.brightcove.com/bcls/assets/images/Tiger_poster.png<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:player<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://players.brightcove.net/3676484087001/f28fbfc5-9153-4c51-ac67-ec6bcad8a28e_default/index.html<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:player:width<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>640<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:player:height<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>360<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:stream<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://solutions.brightcove.com/bcls/brightcove-player/social-plugin/social-media-custom.html<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:player:stream:content_type<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>video/mp4<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>iframe</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">='</span><span class="token attr-value"><span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">640</span>px<span class="token punctuation">;</span><span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">360</span>px<span class="token punctuation">;</span></span><span class="token punctuation">'</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>https://players.brightcove.net/3676484087001/oVYJtofHRF_default/index.html<span class="token punctuation">'</span></span> <span class="token attr-name">allowfullscreen</span> <span class="token attr-name">webkitallowfullscreen</span> <span class="token attr-name">mozallowfullscreen</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>iframe</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+	<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code>
+	</pre>
+</div>
+
+<ol class="bcls-tasklist"><li>有効なメタタグがあることを忘れないでください。 <a class="nturl" href="#validate/index.html">検証</a> の項目を検索します。</li>
+</ol><p data-gt-block="">Facebookへの共有の詳細については、以下を参照してください。</p>
+
+<ul><li><a class="nturl" href="..//support.brightcove.com/ja/configuring-social-properties-player/index.html">設定 Social プレーヤーのプロパティ</a></li>
+</ul><!-- <aside class="bcls-aside bcls-aside--tip">Note: You do not need to use the <a class=nturl href="#properties">embedCode</a> property when sharing a Smart Player to Facebook. All you need are the Open Graph (og) meta tags as described above.</aside> --></section><section class="bcls-section"><h2 id="Sharing_on_Twitter" data-gt-block="">Twitterで共有する</h2>
+
+<p data-gt-block="">Twitterであなたのビデオを共有したい場合は、Twitterのメタタグを含める必要があります。</p>
+
+<p data-gt-block="">現在、特定の時点でビデオを開始するためにディープリンクを使用できる唯一のソーシャルサイトは、Twitterです。 この機能を使用しない場合は、次の例のように時間パラメータをプレーヤーのURLから離してください。</p>
+
+<p data-gt-block="" class="gt-block gt-block">ディープリンク機能を使用するには、クエリ文字列にtimeパラメータを追加する必要があります。 <a class="nturl" href="..//support.brightcove.com/ja/deep-linking/index.html">ディープリンク</a> の資料をご参照ください。</p>
+
+<div class="gt-block video-cloud-only" data-gt-block="" style="display:block;">
+<p data-gt-block=""> </p>
+
+<ol class="bcls-tasklist__restart"><li>Playersモジュールで、 <strong>Social 分担</strong> セクションを選択し、 <strong>有り</strong> 共有を許可する。</li>
+	<li>変更を保存してプレーヤーを公開します。</li>
+	<li>Once あなたはあなたの <a class="nturl" href="#Generate_meta_tags/index.html">ソーシャルメタタグ</a>次のように更新します。
+	<ul><li>64-67：Twitterのカードタイプを <code class="notranslate notranslate">player </code>、あなたのTwitterサイト、タイトルと説明。</li>
+		<li>
+		<p data-gt-block="">ライン68：ビデオのサムネイル画像を指します。</p>
+
+		<aside class="gt-block bcls-aside bcls-aside--information" data-gt-block="">メディアURLの有効期限が切れるので、次のいずれかを行うことをお勧めします。
+		<ul><li>自分のサーバー上のポスター画像をホストし、適切なメタタグ内のURLを使用します。</li>
+			<li>サーバ側のコードを実装して、 Playback API 適切なメタタグを毎日更新します。</li>
+		</ul>
+		メディアURLの使用の詳細については、 <a class="nturl" href="..//support.brightcove.com/ja/best-practices-cms-and-playback-apis#using_media_urls/index.html">ベストプラクティス：CMSおよびPlayback API</a> の資料をご参照ください。</aside></li>
+		<li>ライン69：あなたの Brightcove プレーヤー。 クエリパラメータは、 <code class="notranslate notranslate">videoId </code>、ビデオの15第2ポイントで自動的に再生を開始するようにプレーヤーに指示します。 これはTwitterでビデオに深くリンクする方法です。</li>
+		<li>70-71：プレーヤーの寸法を入力します。</li>
+		<li>ライン72：あなたのHTMLページのURLを指します。 Brightcove プレイヤー。</li>
+	</ul></li>
+</ol><pre class="line-numbers notranslate language-html" data-start="47" style="counter-reset: linenumber 46;">	<code class="notranslate notranslate language-html"><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>utf-8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>apple-mobile-web-app-capable<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>yes<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Social Media Plugin - Deep Linking with Twitter<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+			<span class="token comment">&lt;!-- Open Graph Sharing Metadata --&gt;</span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>og:site_name<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Brightcove<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>og:title<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Social Media Plugin<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>og:description<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Great Blue Heron<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>og:url<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://solutions.brightcove.com/bcls/brightcove-player/social-plugin/social-media-twitter.html<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>og:image<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://solutions.brightcove.com/bcls/assets/images/Great-Blue-Heron.png<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>og:type<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>video<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>og:video:width<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>640<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>og:video:height<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>360<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token comment"></span><span class="bcls-highlight"><span class="token comment">&lt;!-- Twitter: card/meta-tags --&gt;</span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:card<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>player<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:site<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>@username<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:title<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Social Media Plugin<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:description<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Great Blue Heron<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:image<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://solutions.brightcove.com/bcls/assets/images/Great-Blue-Heron.png<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:player<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://players.brightcove.net/1752604059001/2c7eac7c-181c-41d1-aae8-4a5107c05ee2_default/index.html?videoId=4172255216001#t=00h00m15s&amp;autoplay=true<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:player:width<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>640<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:player:height<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>360<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:stream<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://solutions.brightcove.com/bcls/brightcove-player/social-plugin/social-media-twitter.html<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:player:stream:content_type<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>video/mp4<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span></span><span class="token tag"><span class="token punctuation"></span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>iframe</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">='</span><span class="token attr-value"><span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">640</span>px<span class="token punctuation">;</span><span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">360</span>px<span class="token punctuation">;</span></span><span class="token punctuation">'</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>https://players.brightcove.net/1752604059001/oVYJtofHRF_default/index.html?videoId=4172255216001<span class="token punctuation">'</span></span> <span class="token attr-name">allowfullscreen</span> <span class="token attr-name">webkitallowfullscreen</span> <span class="token attr-name">mozallowfullscreen</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>iframe</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</div>
+
+<div class="gt-block player-only" data-gt-block="" style="display:none">
+<p data-gt-block=""> </p>
+
+<ol class="bcls-tasklist__restart"><li>Playersモジュールで、 <strong>Social 分担</strong> セクションを選択し、 <strong>有り</strong> 共有を許可する。</li>
+	<li>変更を保存してプレーヤーを公開します。</li>
+	<li>Once あなたはあなたの <a class="nturl" href="#Generate_meta_tags/index.html">ソーシャルメタタグ</a>次のように更新します。
+	<ul><li>139-142：Twitterのカードタイプを <code class="notranslate notranslate">player </code>、あなたのTwitterサイト、タイトルと説明。</li>
+		<li>
+		<p data-gt-block="">ライン143：ビデオのサムネイル画像を指します。</p>
+
+		<aside class="gt-block bcls-aside bcls-aside--information" data-gt-block="">メディアURLの有効期限が切れるので、次のいずれかを行うことをお勧めします。
+		<ul><li>自分のサーバー上のポスター画像をホストし、適切なメタタグ内のURLを使用します。</li>
+			<li>サーバ側のコードを実装して、 Playback API 適切なメタタグを毎日更新します。</li>
+		</ul>
+		メディアURLの使用の詳細については、 <a class="nturl" href="..//support.brightcove.com/ja/best-practices-cms-and-playback-apis#using_media_urls/index.html">ベストプラクティス：CMSおよびPlayback API</a> の資料をご参照ください。</aside></li>
+		<li>ライン144：あなたの Brightcove プレーヤー。 クエリパラメータは、 <code class="notranslate notranslate">videoId </code>、ビデオの15第2ポイントで自動的に再生を開始するようにプレーヤーに指示します。 これはTwitterでビデオに深くリンクする方法です。</li>
+		<li>145-146：プレーヤーの寸法を入力します。</li>
+		<li>ライン147：あなたのHTMLページのURLを指します。 Brightcove プレイヤー。</li>
+	</ul></li>
+</ol><pre class="line-numbers notranslate language-html" data-start="122" style="counter-reset: linenumber 121;">	<code class="notranslate notranslate language-html"><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>utf-8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>apple-mobile-web-app-capable<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>yes<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Social Media Plugin - Deep Linking with Twitter<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+		<span class="token comment">&lt;!-- Open Graph Sharing Metadata --&gt;</span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>og:site_name<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Brightcove<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>og:title<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Social Media Plugin<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>og:description<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Tiger video<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>og:url<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://solutions.brightcove.com/bcls/brightcove-player/social-plugin/social-media-perform.html<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>og:image<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://solutions.brightcove.com/bcls/assets/images/Tiger.jpg<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>og:type<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>video<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>og:video:width<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>640<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">property</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>og:video:height<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>360<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+		<span class="token comment"></span><span class="bcls-highlight"><span class="token comment">&lt;!-- Twitter: card/meta-tags --&gt;</span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:card<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>player<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:site<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>@username<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:title<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Social Media Plugin<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:description<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Tiger video<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:image<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://solutions.brightcove.com/bcls/assets/images/Tiger.jpg<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:player<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://players.brightcove.net/3676484087001/f28fbfc5-9153-4c51-ac67-ec6bcad8a28e_default/index.html?t=00h00m15s&amp;autoplay=true<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:player:width<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>640<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:player:height<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>360<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:stream<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>https://solutions.brightcove.com/bcls/brightcove-player/social-plugin/social-media-perform.html<span class="token punctuation">"</span></span><span class="token punctuation">/&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>twitter:player:stream:content_type<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>video/mp4<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span></span><span class="token tag"><span class="token punctuation"></span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>iframe</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">='</span><span class="token attr-value"><span class="token property">width</span><span class="token punctuation">:</span> <span class="token number">640</span>px<span class="token punctuation">;</span><span class="token property">height</span><span class="token punctuation">:</span> <span class="token number">360</span>px<span class="token punctuation">;</span></span><span class="token punctuation">'</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">'</span>https://players.brightcove.net/3676484087001/oVYJtofHRF_default/index.html<span class="token punctuation">'</span></span> <span class="token attr-name">allowfullscreen</span> <span class="token attr-name">webkitallowfullscreen</span> <span class="token attr-name">mozallowfullscreen</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>iframe</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</div>
+
+<ol class="bcls-tasklist"><li>有効なメタタグがあることを忘れないでください。 <a class="nturl" href="#validate/index.html">検証</a> の項目を検索します。</li>
+</ol><aside class="gt-block bcls-aside bcls-aside--information" data-gt-block="">使用する必要はありません <a class="nturl" href="#properties/index.html">埋め込みコード</a> プレイヤーをTwitterと共有するときのプロパティ。 あなたが必要とするのは、上記のようなTwitterのメタタグだけです。</aside><p data-gt-block="">Twitterメタタグの設定の詳細については、以下を参照してください。</p>
+
+<ul><li><a class="nturl" href="..//support.brightcove.com/ja/sharing-videos-twitter-player-cards/index.html">Twitterプレーヤーカードに動画を共有する</a></li>
+	<li><a class="nturl" href="https://dev.twitter.com/cards/types/player">Twitter開発者向けドキュメント</a></li>
+	<li><a class="nturl" href="https://github.com/twitterdev/cards-player-samples/blob/master/player/page.html">GitHubのTwitterカードの例</a></li>
+</ul></section><section class="bcls-section"><h2 id="Validate" data-gt-block="">有効にする</h2>
+
+<p data-gt-block="">Once あなたは自分のページにメタタグを含めるためのステップに従ったので、あなたはFacebookとTwitterの両方のためにページを検証することができます。 いずれかの検証プロセスでエラーが発生した場合は、必要に応じてプレーヤーの設定を更新してください。</p>
+
+<h3 data-gt-block="">Facebook</h3>
+
+<p data-gt-block="" class="gt-block gt-block">Facebookの場合は、 <a class="nturl" href="https://developers.facebook.com/tools/debug/">Facebookのデバッガ</a> メタタグを含むページにURLを貼り付けてクリックします <strong>デバッグ</strong> 検証します。</p>
+
+<h3 data-gt-block="">Twitter</h3>
+
+<p data-gt-block="" class="gt-block gt-block">Twitterの場合は、 <a class="nturl" href="https://cards-dev.twitter.com/validator">カードバリデーター</a>、メタタグが含まれているページにURLを貼り付けてクリックします <strong>プレビューカード</strong> 検証します。 検証の利点は、Twitterがあなたのウェブサイトの確認を依頼し、あなたが待機リストに入ってTwitterカードの承認を受けることです。</p>
+</section><section class="bcls-section"><h2 id="Customizing_sharing_URLs" data-gt-block="">共有URLのカスタマイズ</h2>
+
+<p data-gt-block="" class="gt-block gt-block">ソーシャルメディアプラグインのより高度な実装は、 <strong>ページはめ込みコード</strong> Playersモジュールから取得します。 これにより、ページコード内から設定オプションを渡すことができます。 これを行う理由の1つは、カスタムを提供することです <code class="notranslate notranslate">embedCode </code> あなたのページのものとは異なるプレイヤーを共有するための値。</p>
+
+<p data-gt-block="">カスタムコードを使用してプラグインを実装するには、次の手順を実行します。</p>
+
+<ol class="bcls-tasklist__restart"><li>Video Cloud Studioで <strong>プレイヤー</strong> モジュールをクリックし、新しいプレーヤーを作成するか、プラグインを追加するプレーヤーを探します。</li>
+	<li>プレーヤーのプロパティを開くには、プレーヤーのリンクを選択します。</li>
+	<li>次の項目を選択します： <strong>Social</strong> 左側のナビゲーションメニューでチェックボックスをオフにしてください。</li>
+	<li>次の項目を選択します： <strong>プラグイン</strong> 左側のナビゲーションメニュー。</li>
+	<li>次の項目を選択します： <strong>スタイルシート</strong> 選択 <strong>スタイルシートを追加する</strong> ボタン。
+	<figure class="bcls-figure"><img class="bcls-image" alt="Social メディアスタイルシート" src="http://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/social-media-plugin/studio-stylesheet.png"></figure></li>
+	<li>　 <strong>CSSのURL</strong>、 入る：
+	<pre class="notranslate language-json">		<code class="notranslate notranslate language-json">https<span class="token operator">:</span>//players.brightcove.net/videojs-social/<span class="token number">3</span>/videojs-social.css</code></pre>
+	</li>
+	<li>次の項目を選択します： <strong>スクリプト</strong> 選択 <strong>スクリプトを追加する</strong> ボタン。</li>
+	<li>　 <strong>JavaScriptのURL</strong>、 入る：
+	<pre class="notranslate language-json">		<code class="notranslate notranslate language-json">https<span class="token operator">:</span>//players.brightcove.net/videojs-social/<span class="token number">3</span>/videojs-social.min.js</code></pre>
+	</li>
+	<li>次の項目を選択します： <strong>保存</strong>.</li>
+	<li>変更をプレーヤーに公開します。</li>
+</ol><p data-gt-block="">プレイヤーにはソーシャルメディア共有機能のコードがすべて含まれていますが、プラグインを自動的に初期化して共有ボタンを作成することはありません。</p>
+
+<ol class="bcls-tasklist"><li>
+	<p data-gt-block="" class="gt-block gt-block">あなたが働いているプレイヤーを関連付けて、 <strong>高度な</strong> コードをHTMLページに追加します。 ブラウザでページを実行すると、共有ボタンがプレーヤーに表示されないことに注意してください。 いったんソーシャルプラグインが初期化されると、</p>
+	</li>
+</ol><div class="gt-block video-cloud-only" data-gt-block="" style="display:block;">
+<ol class="bcls-tasklist"><li>HTMLページコードに、次のようにJavaScriptコードを追加します。
+	<ul><li>Line 23-24：あなたのプレイヤーへの参照を取得します。</li>
+		<li>25-40：ソーシャル共有プラグインのオプションを設定します。 詳細については、 <a class="nturl" href="#properties/index.html">プロパティ</a> の項目を検索します。</li>
+		<li>行28：共有URLを設定します。</li>
+		<li>
+		<p data-gt-block="">Line 41：ソーシャルプラグインを特定のオプションで初期化します。</p>
+		</li>
+	</ul></li>
+</ol><pre class="line-numbers notranslate language-html">	<code class=" notranslate notranslate language-html"><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>utf-8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>apple-mobile-web-app-capable<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>yes<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Social Media Plugin<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+	
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>video-js</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>myPlayerID<span class="token punctuation">"</span></span>
+			<span class="token attr-name">data-video-id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>5977793284001<span class="token punctuation">"</span></span>
+			<span class="token attr-name">data-account</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>1752604059001<span class="token punctuation">"</span></span>
+			<span class="token attr-name">data-player</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>vQgKqFD0n<span class="token punctuation">"</span></span>
+			<span class="token attr-name">data-embed</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>default<span class="token punctuation">"</span></span>
+			<span class="token attr-name">data-application-id</span>
+			<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>video-js<span class="token punctuation">"</span></span>
+			<span class="token attr-name">controls</span>
+			<span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>720<span class="token punctuation">"</span></span>
+			<span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>405<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>video-js</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>//players.brightcove.net/1752604059001/vQgKqFD0n_default/index.min.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+	
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript">
+				videojs<span class="token punctuation">.</span><span class="token function">getPlayer</span><span class="token punctuation">(</span><span class="token string">'myPlayerID'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">ready</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+					<span class="token keyword">var</span> myPlayer <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">,</span>
+					options <span class="token operator">=</span> <span class="token punctuation">{</span>
+						<span class="token string">"title"</span><span class="token punctuation">:</span> <span class="token string">"Tiger"</span><span class="token punctuation">,</span>
+						<span class="token string">"description"</span><span class="token punctuation">:</span> <span class="token string">"Video of two tigers"</span><span class="token punctuation">,</span>
+						<span class="token string">"url"</span><span class="token punctuation">:</span> <span class="token string">"https://solutions.brightcove.com/bcls/brightcove-player/social-plugin/social-media.html"</span><span class="token punctuation">,</span>
+						<span class="token string">"embedCode"</span><span class="token punctuation">:</span> <span class="token string">"&lt;iframe src='http://bcove.me/niqx01er'&gt;"</span><span class="token punctuation">,</span>
+						<span class="token string">"deeplinking"</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+						<span class="token string">"offset"</span><span class="token punctuation">:</span> <span class="token string">"00:00:05"</span><span class="token punctuation">,</span>
+						<span class="token string">"services"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+							<span class="token string">"facebook"</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+							<span class="token string">"twitter"</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+							<span class="token string">"tumblr"</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+							<span class="token string">"pinterest"</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+							<span class="token string">"linkedin"</span><span class="token punctuation">:</span> <span class="token boolean">true</span>
+						<span class="token punctuation">}</span>
+					<span class="token punctuation">}</span><span class="token punctuation">;</span>
+					myPlayer<span class="token punctuation">.</span><span class="token function">social</span><span class="token punctuation">(</span>options<span class="token punctuation">)</span><span class="token punctuation">;</span>
+				<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+	
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</div>
+
+<div class="gt-block player-only" data-gt-block="" style="display:none">
+<ol class="bcls-tasklist"><li>HTMLページコードに、次のようにJavaScriptコードを追加します。
+	<ul><li>Line 147：プレイヤーへの参照を取得します。</li>
+		<li>149-164：ソーシャル共有プラグインのオプションを設定します。 詳細については、 <a class="nturl" href="#properties/index.html">プロパティ</a> の項目を検索します。</li>
+		<li>Line 153：Smart Playerを使用する共有URLを設定します。 このプロパティを使用して、共有URLを任意の Brightcove プレーヤーまたはスマートプレーヤー。</li>
+		<li>
+		<p data-gt-block="">Line 166：ソーシャルプラグインを特定のオプションで初期化します。</p>
+		</li>
+	</ul></li>
+</ol><pre class="line-numbers notranslate language-html" data-start="129" style="counter-reset: linenumber 128;">	<code class="notranslate notranslate language-html"><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>utf-8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>apple-mobile-web-app-capable<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>yes<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+			<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Social Media Plugin<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+	
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>video-js</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>myPlayerID<span class="token punctuation">"</span></span>
+			<span class="token attr-name">data-account</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>1752604059001<span class="token punctuation">"</span></span>
+			<span class="token attr-name">data-player</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>vQgKqFD0n<span class="token punctuation">"</span></span>
+			<span class="token attr-name">data-embed</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>default<span class="token punctuation">"</span></span>
+			<span class="token attr-name">data-application-id</span>
+			<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>video-js<span class="token punctuation">"</span></span>
+			<span class="token attr-name">controls</span>
+			<span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>720<span class="token punctuation">"</span></span>
+			<span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>405<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>video-js</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>//players.brightcove.net/1752604059001/vQgKqFD0n_default/index.min.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+	
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text/javascript<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript">
+				videojs<span class="token punctuation">.</span><span class="token function">getPlayer</span><span class="token punctuation">(</span><span class="token string">'myPlayerID'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">ready</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+					<span class="token keyword">var</span> myPlayer <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">,</span>
+					options <span class="token operator">=</span> <span class="token punctuation">{</span>
+						<span class="token string">"title"</span><span class="token punctuation">:</span> <span class="token string">"Tiger"</span><span class="token punctuation">,</span>
+						<span class="token string">"description"</span><span class="token punctuation">:</span> <span class="token string">"Video of two tigers"</span><span class="token punctuation">,</span>
+						<span class="token string">"url"</span><span class="token punctuation">:</span> <span class="token string">"https://solutions.brightcove.com/bcls/brightcove-player/social-plugin/social-media.html"</span><span class="token punctuation">,</span>
+						<span class="token string">"embedCode"</span><span class="token punctuation">:</span> <span class="token string">"&lt;iframe src='http://bcove.me/niqx01er'&gt;"</span><span class="token punctuation">,</span>
+						<span class="token string">"deeplinking"</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+						<span class="token string">"offset"</span><span class="token punctuation">:</span> <span class="token string">"00:00:05"</span><span class="token punctuation">,</span>
+						<span class="token string">"services"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
+							<span class="token string">"facebook"</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+							<span class="token string">"twitter"</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+							<span class="token string">"tumblr"</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+							<span class="token string">"pinterest"</span><span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+							<span class="token string">"linkedin"</span><span class="token punctuation">:</span> <span class="token boolean">true</span>
+						<span class="token punctuation">}</span>
+					<span class="token punctuation">}</span><span class="token punctuation">;</span>
+					myPlayer<span class="token punctuation">.</span><span class="token function">social</span><span class="token punctuation">(</span>options<span class="token punctuation">)</span><span class="token punctuation">;</span>
+				<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+	
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</div>
+
+<ol class="bcls-tasklist"><li>
+	<p data-gt-block="">プレーヤーにソーシャルシェアリングボタンが表示されます。 コントロールバーの共有アイコンを探します。</p>
+
+	<figure class="bcls-figure"><img class="bcls-image" alt="Social メディアアイコン" src="http://learning-services-media.brightcove.com/doc-assets/player-development/player-customization/social-media-plugin/social-player-icon.png"></figure></li>
+	<li>これで、プレイヤーページにソーシャルメタタグを追加する準備が整いました。 を参照してください <a class="nturl" href="#Generate_meta_tags/index.html">メタタグ</a> これらのタグを生成します。</li>
+</ol><aside class="gt-block bcls-aside bcls-aside--information" data-gt-block=""><p data-gt-block="">ソーシャルプラグインが初期化されるまでソーシャル共有ボタンはプレイヤーに表示されないため、プレイヤーがTwitterに直接埋め込まれているときにソーシャルボタンは表示されません。 共有ボタンを表示するには、次のいずれかの操作を行います：</p>
+
+<ul><li>埋め込みシナリオ用に設定された他のプレイヤーにあなたのメタ（og / twitter）タグを向ける。</li>
+	<li>ソーシャルプラグインが埋め込まれていることを検出すると、オプションなしでソーシャルプラグインを初期化する追加のスクリプトをインクルードします。</li>
+</ul></aside></section><section class="bcls-section"><h2 id="Custom_services" data-gt-block="">カスタムサービス</h2>
+
+<p data-gt-block="" class="gt-block">プラグインは6つの人気のあるソーシャルメディアプラットフォームをサポートしていますが、カスタムサービスを使用して他のサービスを追加することもできます。 これを行うには、 <code class="notranslate notranslate">options.customServices </code> オブジェクト。 このオブジェクトはカスタムサービスオブジェクトの配列です。 簡単な設定例が表示され、次に例の詳細が表示されます。</p>
+
+<p data-gt-block="">次の例では、3つのボタンを追加します。 XingとWhatsAppのための第1と第2のボタン。 WhatsAppボタンはモバイルにのみ表示されます。 これらの2つの例では、フォントAwesomeをアイコンに使用しています。これは、プレーヤーがすでにフォントを使用しているページにページ内埋め込みである場合に便利ですが、他のスタイリングを使用することもできます。 3つ目は、FacebookのフィードAPIを使用したFacebookの共有ボタンで、FacebookのアプリIDを属性に含めることができます。 これを使用するときは、通常のFacebookボタンを無効にすることをお勧めします。</p>
+
+<pre class="line-numbers notranslate language-javascript">	<code class="notranslate notranslate language-javascript"><span class="token punctuation">[</span><span class="token punctuation">{</span>
+		className<span class="token punctuation">:</span> <span class="token string">'fa fa-xing'</span><span class="token punctuation">,</span>
+		title<span class="token punctuation">:</span> <span class="token string">'Xing'</span><span class="token punctuation">,</span>
+		hrefTemplate<span class="token punctuation">:</span> <span class="token string">'https://www.xing.com/spi/shares/new?url={{url}}'</span><span class="token punctuation">,</span>
+		bgColor<span class="token punctuation">:</span> <span class="token string">'#026466'</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token punctuation">{</span>
+		className<span class="token punctuation">:</span> <span class="token string">'fa fa-whatsapp'</span><span class="token punctuation">,</span>
+		title<span class="token punctuation">:</span> <span class="token string">'WhatsApp'</span><span class="token punctuation">,</span>
+		hrefTemplate<span class="token punctuation">:</span> <span class="token string">'https://api.whatsapp.com/send?phone=&amp;text=title%20{{url}}'</span><span class="token punctuation">,</span>
+		bgColor<span class="token punctuation">:</span> <span class="token string">'#25d366'</span><span class="token punctuation">,</span>
+		mobileOnly<span class="token punctuation">:</span> <span class="token boolean">true</span>
+	<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token punctuation">{</span>
+		classSuffix<span class="token punctuation">:</span> <span class="token string">'facebook'</span><span class="token punctuation">,</span>
+		title<span class="token punctuation">:</span> <span class="token string">'Facebook'</span><span class="token punctuation">,</span>
+		hrefTemplate<span class="token punctuation">:</span> <span class="token string">'https://www.facebook.com/dialog/feed?app_id=123456789&amp;caption={{title}}&amp;display=page&amp;link={{url}}'</span>
+	<span class="token punctuation">}</span><span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 data-gt-block="">カスタムサービスオブジェクトのプロパティを次のように定義します。</h3>
+
+<h4 data-gt-block="">customService.title</h4>
+
+<ul><li>タイプ：文字列</li>
+	<li>共有先のタイトル。</li>
+</ul><h4 data-gt-block="">customService.className</h4>
+
+<ul><li>タイプ：文字列</li>
+	<li>ボタンに追加するクラスまたはスペースで区切られたクラスのリスト。</li>
+</ul><h4 data-gt-block="">customService.classSuffix</h4>
+
+<ul><li>タイプ：文字列</li>
+	<li>接尾辞が付いている <code class="notranslate notranslate">vjs-icon- </code> ボタンのクラスを生成します。 if <code class="notranslate notranslate">className </code> 指定されていません。 Video.jsフォントには追加のソーシャルデスティネーションアイコンが含まれていないため、標準のデスティネーションのいずれかを置き換える場合にのみ便利です。</li>
+</ul><h4 data-gt-block="">customService.hrefTemplate</h4>
+
+<ul><li>タイプ：文字列</li>
+	<li>共有URLを生成するためのスティッキングテンプレート。マクロを含む可能性があります。 <code class="notranslate notranslate">{{url}} </code>,  <code class="notranslate notranslate">{{poster}} </code>,  <code class="notranslate notranslate">{{title}} </code> や <code class="notranslate notranslate">{{description}} </code>。 の代わりに使用できる <code class="notranslate notranslate">customService.href </code> 関数を指定することはできません。たとえば、JSON文字列のオプションを Player Management API.</li>
+</ul><h4 data-gt-block="">customService.href</h4>
+
+<ul><li>タイプ：文字列</li>
+	<li>共有URLを生成する関数。 オブジェクトを取得して文字列を返す必要があります。 これが指定されていない限り、 <code class="notranslate notranslate">hrefTemplate </code>.</li>
+</ul><h4 data-gt-block="">customService.bgColor</h4>
+
+<ul><li>タイプ：文字列</li>
+	<li>背景色要素スタイルとして適用されるオプションのCSSカラー値。 ボタンがCSSでスタイルされている場合は必須ではありませんが、アイコンが既存のスタイルシートによってスタイルされている場合は便利です。</li>
+</ul><h4 data-gt-block="">customService.mobileOnly</h4>
+
+<ul><li>タイプ：ブール型</li>
+	<li>デフォルト： false</li>
+	<li>If  <code class="notranslate notranslate">true </code>ボタンはAndroidとiOSにのみ表示されます。</li>
+</ul></section><section class="bcls-section"><h2 id="Known_issues" data-gt-block="">既知の問題点</h2>
+
+<h4 data-gt-block="">画面に短い説明はありません</h4>
+
+<p data-gt-block="" class="gt-block gt-block">ビデオの <strong>短い説明</strong> ビデオの再生中に共有ボタンをクリックすると、が表示されます。 共有情報を含むエンド画面で、 <strong>短い説明</strong> 表示されません。 これは設計どおりです。</p>
+
+<h4 data-gt-block="">ボタンのキーボードナビゲーション -  OS X用Firefox</h4>
+
+<p data-gt-block="" class="gt-block gt-block">Firefox for OSXには、デフォルトのタブ動作があり、テキストボックスをタブで移動し、要素のみをリストします。 以来、 Social プラグインのボタンはリンク要素です。ボックスにチェックを入れない限りキーボードでナビゲートすることはできません <strong>すべてのコントロール</strong> 下 <strong>システム環境設定&gt;キーボード&gt;ショートカット</strong>.</p>
+</section><section class="bcls-section"><h2 id="Changelog" data-gt-block="">変更履歴</h2>
+
+<p data-gt-block="" class="gt-block gt-block">見ます <a class="nturl" href="..//support.brightcove.com/ja/social-sharing-plugin-changelog/index.html">変更履歴はこちら</a>.</p>
+</section></article></div>
+      
+</div>
+
+</div>
+
+
+<section class="views-element-container block block-views block-views-blockrelated-content-by-field-block-1 clearfix" id="block-views-block-related-content-by-field-block-1">
+  
+    
+
+      <div class="gt-block form-group" data-gt-block=""><div class="gt-block view view-related-content-by-field view-id-related_content_by_field view-display-id-block_1 js-view-dom-id-f43eb3f75bd9c725f1eba4530146717f18205e4ac33f9b9b6ff8f64dbb9f7b7d" data-gt-block="">
+  
+    
+      <div class="gt-block view-header" data-gt-block="">
+      <h2 data-gt-block="" id="bc-ipnav-15">関連コンテンツ</h2>
+    </div>
+      
+      <div class="gt-block view-content" data-gt-block="">
+      <div class="gt-block item-list" data-gt-block="">
+  
+  <ul>
+
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/getting-started-brightcove-social/index.html" hreflang="en">Brightcove Social を使ってみよう</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/configuring-social-properties-player/index.html" hreflang="en">設定 Social プレーヤーのプロパティ</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/overview-brightcove-player-plugins/index.html" hreflang="en">概要： Brightcove Player プラグイン</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/plugin-registry/index.html" hreflang="en">プラグインレジストリ</a></span></span></div></li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </section>
+
+
+  </div>
+
+              </section>
+
+                </div>
+  </div>
+
+      <footer class="footer container" role="contentinfo">
+              <div class="gt-block row" data-gt-block="">
+            <div class="gt-block region region-footer-top-left col-md-9" style="margin-bottom: 1em;" data-gt-block="">
+    <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">Brightcove サポート</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="https://status.brightcove.com">システムステータス</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/contact-support/index.html" data-drupal-link-system-path="node/18632">サポート - Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="../ja/en/contact/create/index.html">サポート - Zencoder</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-documentation-menu" id="block-documentation" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">オンラインマニュアル</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/index.html" data-drupal-link-system-path="<front>">ホーム</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">トレーニング（講習会）</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/online-training-courses/index.html" data-drupal-link-system-path="node/18286">オンラインコース</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/register-training/index.html" data-drupal-link-system-path="node/18270">コー​​スに登録</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-brightcove-menu" id="block-brightcove" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">Brightcove</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="https://www.brightcove.com">Brightcove.COM</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+            <div class="gt-block region region-footer-top-right col-md-3" data-gt-block="">
+    <section id="block-footerlegaltext" class="block block-block-content block-block-content4507d09c-a528-4947-b91d-36ec6671822b clearfix">
+  
+    
+
+      
+            <div class="gt-block field field--name-field-body field--type-text-long field--label-hidden field--item" data-gt-block=""><p data-gt-block="">Brightcove Inc.（ナスダック：BCOV）は、接続されたデバイス間でビデオを配信および収益化するための強力なクラウドソリューションを提供する世界有数のプロバイダです。</p>
+</div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+                    <div class="gt-block row" data-gt-block="">
+            <div class="gt-block region region-footer-bottom-left col-md-8" data-gt-block="">
+    <section id="block-footercopyrightlinewithlinks" class="block block-block-content block-block-content3a164ef9-02d8-42c4-bcc6-3ab435f670b3 clearfix">
+  
+    
+
+      <div class="gt-block block-content block-content--type-copyright-block-with-links block-content--view-mode-full ds-1col clearfix" data-gt-block="">
+
+  
+
+  
+            <div class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" data-gt-block="">2020</div>
+      
+            <div class="field field--name-field-copyright-text field--type-string-long field--label-hidden field--item" data-gt-block="">Brightcove Inc.すべての権利を保有します。</div>
+      
+      <div class="gt-block field field--name-field-legal-links field--type-link field--label-hidden field--items" data-gt-block="">
+              <div class="gt-block field--item" data-gt-block=""><a class="nturl" href="https://www.brightcove.com/en/privacy">プライバシーポリシー</a></div>
+              <div class="gt-block field--item" data-gt-block=""><a class="nturl" href="https://www.brightcove.com/en/terms-and-conditions">利用規約</a></div>
+          </div>
+  
+
+</div>
+
+
+  </section>
+
+
+  </div>
+
+            <div class="gt-block region region-footer-bottom-right col-md-4" data-gt-block="">
+    <section id="block-footersocialblock" class="block block-block-content block-block-content4fc23afd-8d37-420e-ab28-73b2ba24e836 clearfix">
+  
+    
+
+      
+      <div class="gt-block field field--name-field-social-icon field--type-entity-reference-revisions field--label-hidden field--items" data-gt-block="">
+              <div class="gt-block field--item" data-gt-block="">
+
+<a class="icon" icon__social--link="" href="https://www.linkedin.com/company/brightcove" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--linkedin">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--linkedin"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="gt-block field--item" data-gt-block="">
+
+<a class="icon" icon__social--link="" href="https://twitter.com/brightcove" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--twitter">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--twitter"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="gt-block field--item" data-gt-block="">
+
+<a class="icon" icon__social--link="" href="https://www.facebook.com/Brightcove" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--facebook">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--facebook"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="gt-block field--item" data-gt-block="" style="display:none;color:white">
+
+<a class="icon" icon__social--link="" href="https://plus.google.com/100830370440271567091" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--google-plus">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--google-plus"></use>
+  </svg>
+</a>
+
+</div>
+          </div>
+  
+
+
+  </section>
+
+<section id="block-scripts" class="block block-block-content block-block-content42e4bd63-d879-470d-a6de-d5e4529a01be clearfix">
+  
+    
+
+      
+            <div class="gt-block field field--name-field-body field--type-text-long field--label-hidden field--item" data-gt-block=""><script src="https://learning-services-media.brightcove.com/doc-assets/js/gtrans.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/js/support-feedback.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-support.js"></script>
+<script src="https://learning-services-media.brightcove.com/doc-assets/js/hide-google-plus.js"></script></div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+          </footer>
+  
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/18122","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click"},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"user":{"uid":0,"permissionsHash":"3b7fdb4927baca3ee2939edeb777485b3e2c2d36cf8c80e0d8f49c6dc5e2eeca"}}</script>
+<script src="https://support.brightcove.com/sites/default/files/js/js_8fmTAXGyuAUNVu11XoXJaeM8QBDFuAvX7ADwOnigrhc.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+<script src="https://support.brightcove.com/sites/default/files/js/js_L8Eb1bSFk-jGvnjMNZB7VvDJt-7nSbeXfaBlCzWjDbc.js"></script><div id="surveyDiv" style="visibility:hidden"><iframe id="CSAT" src="https://learning-services-media.brightcove.com/doc-assets/general/surveylink.html" style="display:none;"></iframe></div>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e78a80aa93","applicationID":"129613202","transactionName":"YwBUZkcFVktUWhJQX1pKd1FBDVdWGn0UTEBVCWpxWhZdZHNWFFRscgpEX3cRUVRRXBQUDkYAWFZQFmhUVFoDUV9YAVNAcwtKVXRaElBfWg==","queueTime":0,"applicationTime":247,"atts":"T0dXEA8fRUU=","errorBeacon":"bam.nr-data.net","agent":""}</script><script data-cfasync="false" src="https://tdns5.gtranslate.net/tdn-bin/queue.js"></script><!-- Yandex.Metrika counter for GTranslate --><script data-cfasync="false">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter36618640 = new Ya.Metrika({ id:36618640, clickmap:false, trackLinks:true, accurateTrackBounce:true, ut:"noindex" }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function (

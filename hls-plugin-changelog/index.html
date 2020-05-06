@@ -1,0 +1,1649 @@
+<html lang="ja" dir="ltr" class=" js"><head>
+    <meta charset="utf-8"><script type="text/javascript" src="https://bam.nr-data.net/1/e78a80aa93?a=129613202&amp;v=1167.2a4546b&amp;to=YwBUZkcFVktUWhJQX1pKY0BcSxdRW10DQR5EDUY%3D&amp;rst=8079&amp;ref=https://support.brightcove.com/ja/hls-plugin-changelog&amp;ap=2629&amp;be=4294&amp;fe=7689&amp;dc=6403&amp;perf=%7B%22timing%22:%7B%22of%22:1588779672810,%22n%22:0,%22f%22:0,%22dn%22:1,%22dne%22:3,%22c%22:3,%22s%22:10,%22ce%22:577,%22rq%22:579,%22rp%22:4005,%22rpe%22:4302,%22dl%22:4269,%22di%22:6403,%22ds%22:6403,%22de%22:6475,%22dc%22:7689,%22l%22:7689,%22le%22:7690%7D,%22navigation%22:%7B%7D%7D&amp;at=T0dXEA8fRUU%3D&amp;jsonp=NREUM.setToken"></script><script src="https://js-agent.newrelic.com/nr-1167.min.js"></script><script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script><script type="text/javascript" async="" src="//cdn.feedbackify.com/f.js"></script><script async="" src="https://fullstory.com/s/fs.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e78a80aa93",applicationID:"129613202"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e78a80aa93",applicationID:"129613202"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-2728311-17", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)">
+<meta name="MobileOptimized" content="width">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="https://support.brightcove.com/sites/default/files/favicon-64.png" type="image/png">
+<link rel="alternate" hreflang="en" href="https://support.brightcove.com/hls-plugin-changelog">
+<link rel="canonical" href="https://support.brightcove.com/ja/hls-plugin-changelog">
+<link rel="shortlink" href="https://support.brightcove.com/ja/node/18796">
+<link rel="revision" href="https://support.brightcove.com/hls-plugin-changelog">
+
+    <title>HLSプラグインの変更履歴 Brightcove 学習</title>
+    <link rel="stylesheet" media="all" href="https://support.brightcove.com/sites/default/files/css/css_82QNz3isZauK2z7uRssc53Bs_g5IxmONDHsLVxMTLtw.css?q23msc">
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.min.css">
+<link rel="stylesheet" media="all" href="https://support.brightcove.com/sites/default/files/css/css_ta7TGCgoUiRN-eGLyLEf4xmuIaBKIL7GD5KPf2fNREM.css?q23msc">
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+    <meta name="uri-translation" content="on">
+    <script>
+window['_fs_debug'] = false; window['_fs_host'] = 'fullstory.com';
+window['_fs_org'] = 'BX3Q1';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+g.consent=function(a){g("consent",!arguments.length||a)};
+g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+g.clearUserCookie=function(){};
+})(window,document,window['_fs_namespace'],'script','user');
+    </script>
+  <style type="text/css">html{_background:url(//about:blank) fixed;}.fby-on select {visibility:hidden!important;}.fby-on .fby-hide-iframe {visibility:hidden!important;}.fby-hide-embed embed {visibility:hidden!important;}.fby-hide-object object {visibility:hidden!important;}@media not screen {.fby-tab {display: none;}}#feedbackify *{box-sizing:content-box!important;-moz-box-sizing:content-box!important;-webkit-box-sizing:content-box!important;}#feedbackify input{box-sizing:border-box!important;-moz-box-sizing:border-box!important;-webkit-box-sizing:border-box!important;max-width:none!important;}#feedbackify *:before{content:none!important;}#feedbackify *:after{content:none!important;}#feedbackify ,#feedbackify div,#feedbackify span,#feedbackify textarea,#feedbackify input,#feedbackify table,#feedbackify tbody,#feedbackify tr,#feedbackify td,#feedbackify img,#feedbackify p,#feedbackify a{border:0!important;outline:none!important;width:auto;height:auto;text-align:left!important;text-indent:0!important;float:none!important;padding:0!important;margin:0!important;font:12px arial,helvetica,sans-serif!important;overflow:visible!important;color:#000!important;line-height:1.2!important;background:0 none!important;position:static!important;vertical-align:baseline!important;box-shadow:none!important;}#feedbackify table{border-collapse:collapse!important;border-spacing:0!important;max-width:inherit!important;width:auto!important;}#feedbackify td{word-break:normal!important;}#feedbackify {z-index:2147483646!important;position:static!important;top:0;left:0;}#feedbackify .fby-screen{z-index:2147483646!important;position:fixed!important;top:0;left:0;width:0;height:100%;_position:absolute!important;_top:expression(eval(document.body.scrollTop||document.documentElement.scrollTop))!important;_left:expression(eval(document.body.scrollLeft||document.documentElement.scrollLeft))!important;_width:0!important;_height:expression(document.documentElement.clientHeight||document.body.clientHeight+"px")!important;}#feedbackify .fby-mask{display:none!important;position:fixed!important;top:0;left:0;width:100%;height:100%;background-color:#000!important;opacity:0.2;filter:alpha(opacity=20);_position:absolute!important;_width:expression(document.documentElement.clientWidth||document.body.clientWidth+"px")!important;_height:expression(this.parentNode.style.height)!important;}#feedbackify .fby-show{display:block!important;visibility:visible!important;}#feedbackify .fby-hide{display:none!important;visibility:hidden!important;}</style><style type="text/css">#feedbackify .fby-tab{position:fixed!important;width:36px;height:100px;overflow:hidden!important;_position:absolute!important;}#feedbackify .fby-tab a{display:block!important;position:absolute!important;width:36px;height:100px;background-color:#000000!important;cursor:pointer!important;background:url(https://cdn.feedbackify.com/img/classic/tab.png)!important;_background:none!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/tab.png)!important;}#feedbackify .fby-tab-l{top:50%;left:0;margin-top:-50px!important;_top:expression((parseInt(this.parentNode.style.height)-this.clientHeight)/2+"px")!important;_margin-top:0!important;}#feedbackify .fby-tab-l a{margin-left:-5px!important;}#feedbackify .fby-tab-l a:hover{margin-left:-2px!important;}#feedbackify .fby-tab-r{top:50%;right:0px!important;margin-top:-50px!important;_top:expression((parseInt(this.parentNode.style.height)-this.clientHeight)/2+"px")!important;_left:expression((document.documentElement.clientWidth||document.body.clientWidth)-this.clientWidth+"px")!important;_margin-top:0!important;}#feedbackify .fby-tab-r a{margin-left:5px!important;}#feedbackify .fby-tab-r a:hover{margin-left:2px!important;}#feedbackify .fby-tab-t{top:0;margin-top:0px!important;}#feedbackify .fby-tab-b{top:auto;bottom:0!important;_top:expression(parseInt(this.parentNode.style.height)-this.clientHeight+"px")!important;}</style><style type="text/css">#feedbackify grammarly-ghost{display:none!important;}#feedbackify grammarly-btn{display:none!important;}#feedbackify #fby-form{z-index:2147483646!important;width:618px!important;position:absolute!important;}#feedbackify .fby-d-main{width:600px;height:50px;vertical-align:top!important;background-color:#FFFFFF!important;position:relative!important;}#feedbackify .fby-d{background:url(https://cdn.feedbackify.com/img/classic/dlg_shad_sprite.png)!important;_background:none!important;}#feedbackify .fby-d-h{height:9px;background:url(https://cdn.feedbackify.com/img/classic/dlg_shad_sprite_h.png)!important;_background:none!important;}#feedbackify .fby-d-h2{height:9px;background-color:#FFFFFF!important;}#feedbackify .fby-d-tl{background-position:-18px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_tl.png)!important;}#feedbackify .fby-d-t{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_t.png,sizingMethod=scale)!important;}#feedbackify .fby-d-tr{background-position:-36px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_tr.png)!important;}#feedbackify .fby-d-l{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_l.png,sizingMethod=scale)!important;}#feedbackify .fby-d-r{background-position:-9px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_r.png,sizingMethod=scale)!important;}#feedbackify .fby-d-bl{background-position:-54px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_bl.png)!important;}#feedbackify .fby-d-br{background-position:-72px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_br.png)!important;}#feedbackify .fby-d-b{background-position:0px -9px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_b.png,sizingMethod=scale)!important;}#feedbackify .fby-d-load{position:relative!important;}#feedbackify .fby-d-load img{position:absolute!important;left:8px;}#feedbackify .fby-d-load div{position:absolute!important;padding:4px 18px!important;font-size:16px!important;font-weight:bold!important;color:#333!important;}</style></head>
+  <body class="path-node page-node-type-release-notes has-glyphicons">
+    <a class="visually-hidden" focusable="" skip-link="" href="#main-content/index.html">
+      メインコンテンツへスキップ
+    </a>
+    
+      <div class="gt-block dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="" data-gt-block="">
+              <header class="navbar navbar-default container" id="navbar" role="banner">
+      <div class="gt-block navigation-secondary clearfix" data-gt-block="">
+          <div class="gt-block region region-navigation-secondary" data-gt-block="">
+    <section id="block-styles" class="block block-block-content block-block-contentfbb71e48-a6cd-4d2b-8239-43f18db69e60 clearfix">
+  
+    
+
+      
+            <div class="gt-block field field--name-field-body field--type-text-long field--label-hidden field--item" data-gt-block=""><link rel="stylesheet" media="all" href="https://learning-services-media.brightcove.com/doc-assets/css/drupal-fix.css"></div>
+      
+  </section>
+
+<nav role="navigation" aria-labelledby="block-secondarynavigation-menu" id="block-secondarynavigation">
+            
+  <h2 class="visually-hidden" id="block-secondarynavigation-menu" data-gt-block="">セカンダリナビゲーション</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/contact-support/index.html" title="サポートリクエストを作成する" data-drupal-link-system-path="node/18632">サポートリクエスト</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://status.brightcove.com/">システムステータス</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://university.brightcove.com/">Brightcove 大学</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<section id="block-gtranslate" class="block block-gtranslate block-gtranslate-block clearfix">
+  
+    
+
+      
+<div class="gt-block gtranslate" data-gt-block="">
+<script type="text/javascript">/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;var lang=lang_pair.split('|')[1];var plang=location.pathname.split('/')[1];if(plang.length !=2 && plang != 'zh-CN' && plang != 'zh-TW')plang='en';if(lang == 'en')location.pathname=location.pathname.replace('/'+plang+'/', '/');else location.pathname='/'+lang+location.pathname.replace('/'+plang+'/', '/');}
+/* ]]> */
+</script><select onchange="doGTranslate(this);"><option value="">言語の選択</option><option value="en|en" style="font-weight:bold;background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -0px;padding-left:18px;">英語</option><option value="en|fr" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -160px;padding-left:18px;">フランス語</option><option value="en|de" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -176px;padding-left:18px;">ドイツ語</option><option value="en|ja" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -240px;padding-left:18px;">日本語</option><option value="en|ko" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -256px;padding-left:18px;">韓国語</option><option value="en|es" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -352px;padding-left:18px;">スペイン語</option></select>
+</div>
+<div class="gtranslate__credits" data-gt-block="">
+  本ドキュメントはGoogle翻訳によって機械翻訳したものとなります
+</div>
+
+  </section>
+
+
+  </div>
+
+      </div>
+      <div class="gt-block navbar-header col-md-3" data-gt-block="">
+                  <a class="logo" navbar-btn="" pull-left="" href="../ja/index.html" title="ホーム" rel="home">
+            <img src="https://support.brightcove.com/themes/custom/bcdocs/images/brightcove.png" alt="ホーム">
+          </a>
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">トグルナビゲーション</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+                    <div class="gt-block navbar-collapse collapse" data-gt-block="">
+            <div class="gt-block region region-navigation-collapsible" data-gt-block="">
+    <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation">
+            <h2 class="sr-only" id="block-mainnavigation-menu" data-gt-block="">メインナビゲーション</h2>
+
+      
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-learning-home/index.html" title="ホームページ" data-drupal-link-system-path="node/18643">ホーム</a>
+                  </li>
+                                            <li class="expanded dropdown">
+        <a class="dropdown-toggle" href="" data-toggle="dropdown">
+          製品紹介
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/video-cloud/index.html" data-drupal-link-system-path="node/18332">Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://gallery.support.brightcove.com">ギャラリー</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-player/index.html" data-drupal-link-system-path="node/18283">Brightcove Player</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/live/index.html" data-drupal-link-system-path="node/18642">Live</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/social/index.html" data-drupal-link-system-path="node/18444">Social</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/audience/index.html" data-drupal-link-system-path="node/18445">Audience</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://zencoder.support.brightcove.com">Zencoder</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/ssai/index.html" data-drupal-link-system-path="node/18650">SSAI</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://support.ottflow.com">OTT Flow</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a class="dropdown-toggle" href="" data-toggle="dropdown">
+          Links
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/analytics-api/index.html" data-drupal-link-system-path="node/18370">Analytics API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/audience-api/index.html" data-drupal-link-system-path="node/18371">Audience API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/cms-api/index.html" data-drupal-link-system-path="node/18372">CMS API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/cms-connectors-video-cloud/index.html" data-drupal-link-system-path="node/18662">CMSコネクタ用 Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/data-collection-api/index.html" data-drupal-link-system-path="node/18876">Data Collection API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/delivery-system-api/index.html" data-drupal-link-system-path="node/18387">Delivery System API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/developer-tools-and-concepts/index.html" data-drupal-link-system-path="node/18430">開発者ツールと概念</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/native-player-sdks/index.html" data-drupal-link-system-path="node/18367">Device SDK</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/dynamic-ingest-api/index.html" data-drupal-link-system-path="node/18373">Dynamic Ingest API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/getting-started-brightcove-apis-0/index.html" data-drupal-link-system-path="node/18711">入門 - Brightcove API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/page-experience-api/index.html" data-drupal-link-system-path="node/18616">In-Page Experience APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/ingest-profiles-api/index.html" data-drupal-link-system-path="node/18374">Ingest Profiles API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/live/index.html" data-drupal-link-system-path="node/18642">Live API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/oauth-api/index.html" data-drupal-link-system-path="node/18376">OAuth API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/platform-api-code-samples/index.html" data-drupal-link-system-path="node/18675">プラットフォームAPIコードサンプル</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/playback-api/index.html" data-drupal-link-system-path="node/18380">Playback API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-player-code-samples/index.html" data-drupal-link-system-path="node/18630">プレーヤーコードサンプル</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-player-developer/index.html" data-drupal-link-system-path="node/18362">プレーヤー開発者</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/player-management-api/index.html" data-drupal-link-system-path="node/18378">Player Management API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/policy-api/index.html" data-drupal-link-system-path="node/18381">Policy API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/release-notes/index.html" data-drupal-link-system-path="node/18687">リリースに関して</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a class="dropdown-toggle" href="" data-toggle="dropdown">
+          トレーニング（講習会）
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a class="nturl" href="https://university.brightcove.com">オンラインコース</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/register-training/index.html" data-drupal-link-system-path="node/18270">コース登録</a>
+                  </li>
+        </ul>
+  
+            </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-support-documentation-announcements/index.html" title="の新機能を見る Brightcove オンラインマニュアル" data-drupal-link-system-path="node/18896">新着情報</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+        </div>
+          </header>
+  
+    <div class="gt-block full-width-headline" data-gt-block="">
+    <div class="gt-block container" data-gt-block="">
+      <div class="gt-block row" data-gt-block="">
+        <div class="gt-block col-sm-12" role="heading" data-gt-block="">
+            <div class="gt-block region region-header" data-gt-block="">
+          <section id="block-brightcoveheadlineblock" class="block block-bc-general block-bc-general-headline-block clearfix">
+  
+    
+
+      オンラインマニュアル
+  </section>
+
+
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      <div role="main" class="gt-block main-container container  js-quickedit-main-content" data-gt-block="">
+    <div class="gt-block row" data-gt-block="">
+
+                              <aside class="gt-block col-sm-3" role="complementary" data-gt-block="">
+              <div class="gt-block region region-sidebar-first" data-gt-block="">
+    <section class="bc-search-fixes-search-block-form block block-bc-search-fixes block-bc-search-fixes-search-block clearfix" data-drupal-selector="bc-search-fixes-search-block-form" id="block-brightcovesearchblock">
+  
+    
+
+      <form action="/ja/hls-plugin-changelog" method="post" id="bc-search-fixes-search-block-form" accept-charset="UTF-8">
+  <div class="gt-block form-item js-form-item form-type-textfield js-form-type-textfield form-item-search js-form-item-search form-no-label form-group" data-gt-block="">
+      <label for="edit-search" class="control-label sr-only">サイト内検索</label>
+  
+  
+  <input data-drupal-selector="edit-search" class="form-text form-control" type="text" id="edit-search" name="search" value="" size="15" maxlength="128" placeholder="サイト内検索">
+
+  
+  
+  </div>
+<input autocomplete="off" data-drupal-selector="form-dyclw8lutkdivmy1mtoojawupuzjfonu6z1nzbfjba0" type="hidden" name="form_build_id" value="form-DYcLW8LUtKDIVmY1MToOjAwUPuzjfONu6Z1NzBfJba0"><input data-drupal-selector="edit-bc-search-fixes-search-block-form" type="hidden" name="form_id" value="bc_search_fixes_search_block_form"><div data-drupal-selector="edit-actions" class="gt-block form-actions form-group js-form-wrapper form-wrapper" id="edit-actions" data-gt-block=""><button data-drupal-selector="edit-submit" class="button js-form-submit form-submit btn-primary btn icon-only" type="submit" id="edit-submit" name="op" value="Search"><span class="sr-only">サイト内検索</span><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button></div>
+
+</form>
+
+  </section>
+
+
+  </div>
+
+          </aside>
+              
+                  <section class="col-sm-9">
+
+                                      <div class="gt-block highlighted" data-gt-block="">  <div class="gt-block region region-highlighted" data-gt-block="">
+    <div data-drupal-messages-fallback="" class="hidden" data-gt-block=""></div>
+
+  </div>
+</div>
+                  
+                
+                
+                
+                          <a class="nturl" id="main-content"></a>
+            <div class="gt-block region region-content" data-gt-block="">
+        <h1 class="page-header"><span>HLSプラグインの変更履歴</span>
+</h1>
+
+  
+<div class="gt-block node node--type-release-notes node--view-mode-full bcdocs-four-rows clearfix" data-gt-block="">
+
+  
+
+  <div class="group-first-row" data-gt-block="">
+      </div>
+
+  <div class="gt-block group-second-row" data-gt-block="">
+  
+  <div class="gt-block field field--name-field-products field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">製品（複数可）</div>
+          <div class="gt-block field__items taxonomy__tags" data-gt-block="">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item" data-gt-block="">Brightcove Player</div>
+              </div>
+      </div>
+
+  <div class="gt-block field field--name-field-roles field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">役割</div>
+          <div class="gt-block field__items taxonomy__tags" data-gt-block="">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item" data-gt-block="">プレーヤー開発者</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="group-third-row taxonomy__tags" data-gt-block="">
+    
+</div>
+
+  <div class="gt-block group-fourth-row" data-gt-block="">
+  
+            <div class="gt-block field field--name-body field--type-text-with-summary field--label-hidden field--item" data-gt-block=""><p data-gt-block="">以下は、プラグインへの変更を追跡します。</p>
+<section class="bcls-section">
+<h2 id="Changelog" data-gt-block="">変更履歴</h2>
+
+<h4 data-gt-block="">11月14 2018</h4>
+
+<p data-gt-block="">v5.15.0</p>
+
+<ul>
+	<li>マニフェストおよびメディアリクエストのリダイレクトサポートを追加</li>
+</ul>
+
+<h4 data-gt-block="">月21 2018</h4>
+
+<p data-gt-block="">v5.14.1</p>
+
+<ul>
+	<li>ミニディストリビューションファイルの修正
+	<ul>
+		<li>更新しました <strong>webwackify</strong> 0.1.6へ</li>
+		<li>更新しました <strong>videojs-contrib-media-sources</strong> 4.7.2へ</li>
+	</ul>
+	</li>
+</ul>
+
+<h4 data-gt-block="">月15 2018</h4>
+
+<p data-gt-block="">v5.14.0</p>
+
+<ul>
+	<li>更新しました <strong>videojs-contrib-media-sources</strong> 4.7.1に <strong>webwackify</strong> 0.1.5へ</li>
+	<li>セグメントメタデータキュー（帯域幅/解像度/コーデック/バイト長）のより有用な情報</li>
+</ul>
+
+<h4 data-gt-block="">月7 2018</h4>
+
+<p data-gt-block="">v5.13.0</p>
+
+<ul>
+	<li>webworkバンドルをサポートするためにwebwackifyを使用する</li>
+	<li>修正する <code class="notranslate">tech.play()</code> Chromeで未解決の約束事のエラーを投げる</li>
+	<li>url-toolkitをバージョン2.1.3に更新する</li>
+	<li>jsDelivrリンクを追加</li>
+	<li>karmaの再接続設定をvideo.jsと一致するように更新する
+	<ul>
+		<li>カルマのbrowserDisconnectToleranceを3に上げる</li>
+	</ul>
+	</li>
+	<li>Add をクリックします。 <code class="notranslate">nvmrc</code> トラビスのクロムリファレンスを更新する
+	<ul>
+		<li>カルマ - クロムランチャーをバージョン2.2.0に更新</li>
+		<li>カルマをバージョン1.7.1にアップデートし、firefoxをtravis設定から削除する</li>
+		<li>トラvis上でnode_modulesキャッシュを有効にする</li>
+		<li>videojs-contrib-quality-levelsをバージョン2.0.4に更新する</li>
+		<li>イベントハンドリングメソッドを呼び出すことで、dispose時のイベントハンドラクリーンアップのテストを修正しました。</li>
+	</ul>
+	</li>
+</ul>
+
+<h4 data-gt-block="">11月6 2017</h4>
+
+<p data-gt-block="">v5.12.2</p>
+
+<ul>
+	<li>未使用の期待マニフェストJavaScriptファイルを削除する</li>
+	<li>関係のないメソッドを削除する <strong>PlaylistLoader</strong>
+	<ul>
+		<li>移動 <code class="notranslate">isLowestEnabledRendition</code> プレイリストモジュールへ</li>
+	</ul>
+	</li>
+	<li>更新版 <strong>貢献メディアソース</strong> 4.6.2へ
+	<ul>
+		<li>更新版 <strong>mux.js</strong> 4.3.2へ
+		<ul>
+			<li>フラッシュ <strong>足</strong> 十分なデータがある場合はパケット</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+</ul>
+
+<h4 data-gt-block="">10月24 2017</h4>
+
+<p data-gt-block="">v5.12.1</p>
+
+<ul>
+	<li>更新版 <strong>貢献メディアソース</strong> 4.6.1へ
+
+	<ul>
+		<li>更新版 <strong>mux.js</strong> 4.3.1へ
+
+		<ul>
+			<li>CEA-608ではグローバルではなくフィールドごとにアクティブなデータチャネルを設定する</li>
+			<li>キャプションが間違ったCCに配置される問題を修正しました</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+</ul>
+
+<h4 data-gt-block="">10月19 2017</h4>
+
+<p data-gt-block="">v5.12.0</p>
+
+<ul>
+	<li>Linuxを使う <code class="notranslate">lastSegmentDuration + 2 * targetDuration</code> 3セグメントの代わりに安全なライブポイント用
+
+	<ul>
+		<li>現在の目標時間内にバッファトリミングを取り除かないようにする</li>
+		<li>スタックプレイリストチェックのしきい値を上げる</li>
+	</ul>
+	</li>
+	<li>IE11 Win 8.1 +およびEdgeのレンディションスイッチでビデオの破損を修正
+	<ul>
+		<li><code class="notranslate">segment-time-mapping</code> イベント</li>
+		<li>更新版 <strong>貢献メディアソース</strong> 4.6.0へ</li>
+	</ul>
+	</li>
+	<li>ブラックリスト以上のユーザー有効プレイリストの優先順位付け
+	<ul>
+		<li>プレイリストセレクタで、互換性のない構成のために永久にブラックリストに登録されたプレイリストを選択できないようにする</li>
+		<li>プレイリストセレクタ内のプレイリストをフィルタリングするとき、使用可能なプレイリストがない場合（つまり、内部でブラックリストに登録されておらず、ユーザによって無効にされていない場合）、ブラックリスト状態に関係なくユーザによって無効にされていないプレイリストのリストを使用します。</li>
+		<li>不正なメディアスイッチからブラックリストに登録されたプレイリストは、後で再試行する必要がないため、常にブラックリストに登録されていることを確認してください。</li>
+		<li>表現apiは、互換性のないプレイリストと一時的にブラックリストされたプレイリストの両方ではなく、互換性のないプレイリストを除外するリストを返します。</li>
+	</ul>
+	</li>
+</ul>
+
+<h4 data-gt-block="">10月11 2017</h4>
+
+<p data-gt-block="">v5.11.1</p>
+
+<ul>
+	<li>videojs-contrib-media-sourcesを4.5.3に更新する
+	<ul>
+		<li>mux.jsを4.2.2に更新する
+		<ul>
+			<li>PMTの最初のオーディオトラックとビデオトラックを使用する</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li>修正します <code class="notranslate">InvalidStateError</code> IE11でのライブ再生用</li>
+</ul>
+
+<h4 data-gt-block="">20 9月2017</h4>
+
+<p data-gt-block="">v5.11.0</p>
+
+<ul>
+	<li>videojs-contrib-media-sourcesを4.5.2に更新する
+	<ul>
+		<li>video.js remoteTextTrackの自動クリーンアップがテキストトラックのクリーンアップをするようにする</li>
+	</ul>
+	</li>
+	<li>マスタマニフェストにコーデック情報が含まれていない場合、プローブでの互換性のないプレイリストをブラックリストに登録する</li>
+	<li>シークアブルウィンドウの前にシークできる時にシークできるスタートを探す</li>
+	<li>MediaGroups：さまざまなバグ修正とリファクタリング
+	<ul>
+		<li>オーディオ情報の変更をサポートするためのFirefox 48チェックを削除</li>
+		<li>オーディオトラックと断続的な非同期の間の遅延切り替えを修正</li>
+	</ul>
+	</li>
+</ul>
+
+<h4 data-gt-block="">8月28 2017</h4>
+
+<p data-gt-block="">v5.10.1</p>
+
+<ul>
+	<li>修正：オーディオ情報が変更されたときにFLVメタデータタグが追加されるようになりました</li>
+</ul>
+
+<h4 data-gt-block="">8月22 2017</h4>
+
+<p data-gt-block="">v5.10.0</p>
+
+<ul>
+	<li>実装されたCEA608：cc2-cc4、特殊/拡張文字、書式設定のサポート
+	<ul>
+		<li>4つのCCトラックすべてが利用可能になりました</li>
+		<li>マスターマニフェストにCLOSED-CAPTIONSが指定されている場合は、対応するCCテキストトラックに適切なラベルが付けられます。そうでない場合は、ラベルが付けられます。CC1  -  CC4</li>
+		<li>アンダーラインとイタリックがレンダリングされるようになりました</li>
+		<li>@squarebracketに特別感謝しています</li>
+	</ul>
+	</li>
+</ul>
+
+<h4 data-gt-block="">8月16 2017</h4>
+
+<p data-gt-block="">v5.9.0</p>
+
+<ul>
+	<li>起動時に利用可能な最も低いビットレートビデオレンディションを選択するオプションが追加されました</li>
+	<li>シーク後にセグメントローダーのローディングを常にアクティブにする</li>
+	<li>を待つ <code class="notranslate">canplay</code> 以前のテクノロジーからのイベント <code class="notranslate">PlaybackWatcher</code> 監視を開始する
+	<ul>
+		<li>固定の <code class="notranslate">InvalidStateError</code> Win10 IE11で</li>
+	</ul>
+	</li>
+	<li>早期終了時に2分のブラックリストに載ったプレイリストがキャッシュループを防止する
+	<ul>
+		<li>矛盾したネットワーク/キャッシングによるレンディションスイッチループの防止</li>
+		<li>発砲しないでください <strong>帯域幅の更新</strong> 早く中止するとき</li>
+	</ul>
+	</li>
+	<li>HLSによって追加されたテキストトラックが適切に処理されていることを確認しました</li>
+	<li>IE11 Win8.1での後方修正の修正</li>
+</ul>
+
+<h4 data-gt-block="">8月7 2017</h4>
+
+<p data-gt-block="">v5.8.3</p>
+
+<ul>
+	<li>固定字幕の問題</li>
+	<li>m3u8-parserがそうでない場合に、属性をplaylistオブジェクトに追加する
+	<ul>
+		<li>stream-infの属性が見つからない場合の警告ログの追加</li>
+	</ul>
+	</li>
+</ul>
+
+<h4 data-gt-block="">7月12 2017</h4>
+
+<p data-gt-block="">v5.8.2</p>
+
+<ul>
+	<li>mediaSourceが閉じているときのセグメントの固定処理</li>
+</ul>
+
+<h4 data-gt-block="">7月12 2017</h4>
+
+<p data-gt-block="">v5.8.1</p>
+
+<ul>
+	<li>修正済み：videojs-contrib-media-sourcesのオーディオのみのプレイリストv4.4.7</li>
+</ul>
+
+<h4 data-gt-block="">7月6 2017</h4>
+
+<p data-gt-block="">v5.8.0</p>
+
+<ul>
+	<li>ABRの改善
+	<ul>
+		<li>Androidデバイスでは、0.0625 MB /秒の開始帯域幅値を使用してください</li>
+		<li>一定量の順方向バッファがいっぱいになるまで、アップスイッチの品質を保証しないでください。 <code class="notranslate">BUFFER_LOW_WATER_LINE</code></li>
+		<li>動的に <code class="notranslate">BUFFER_LOW_WATER_LINE</code> や <code class="notranslate">GOAL_BUFFER_LENGTH</code> 0  - &gt; 30および30  - &gt; 60から再生の最初の30秒間それぞれ</li>
+		<li>帯域幅がXHRによって報告された場合、完了前にセグメント要求を中止する <code class="notranslate">progress</code> イベントは、ネットワーク条件が再バッファリングを引き起こさずに要求を完了するのに十分速くないことを示します</li>
+	</ul>
+	</li>
+</ul>
+
+<h4 data-gt-block="">6月27 2017</h4>
+
+<p data-gt-block="">v5.7.0</p>
+
+<ul>
+	<li>更新版 <strong>mux.js</strong> 4.1.5に <strong>videojs-contrib-media-sources</strong> 4.4.6へ
+
+	<ul>
+		<li>完了時にTS解析フロントエンドからのPESパケットのみをフラッシュする
+		<ul>
+			<li>Completeは、PES_packet_lengthがデータの長さと一致する任意の時間として定義される。または、ビデオパケット</li>
+			<li>ソースにオーディオPESパケットがセグメント間で分割されているときに、不完全なパケットがパイプラインで送信される問題を回避します</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li>HLS使用状況追跡イベントを追加する
+	<ul>
+		<li>使用状況トラッキングイベントは、特定のHLS機能、エンコード設定、またはAPIが検出されたときに発生します。 これらの使用イベントはREADMEにリストされていますが、メジャーバージョンの変更なしにいつでも変更されることがあります。</li>
+	</ul>
+	</li>
+	<li>デマルチプレクスされたオーディオとビデオのendOfStreamを修正</li>
+</ul>
+
+<h4 data-gt-block="">6月20 2017</h4>
+
+<p data-gt-block="">v5.6.0</p>
+
+<ul>
+	<li>メディアグループを切り替えるときにセグメントローダーをリセットしない
+	<ul>
+		<li>ローダが一時停止している場合でも、ローダ状態を中断時に準備する</li>
+	</ul>
+	</li>
+	<li>セグメントメタデータキューを作成できない場合のクラッシュを防止します。</li>
+	<li>許可する <code class="notranslate">overrideNative</code> プレーヤーレベルのオプションとして設定する</li>
+	<li>移動平均プレイリストセレクタを作成する
+	<ul>
+		<li>帯域幅の移動平均を計算し、それを使用してプレイリストを選択する標準プレイリストセレクタの変形を定義します。</li>
+	</ul>
+	</li>
+	<li>テクノロジーの帯域幅更新イベントをトリガーする</li>
+</ul>
+
+<h4 data-gt-block="">16月2017</h4>
+
+<p data-gt-block="">v5.5.3</p>
+
+<ul>
+	<li>更新しました <strong>mux.js</strong> 4.1.4に <strong>videojs-contrib-media-sources</strong> 4.4.5へ
+
+	<ul>
+		<li>tsプローブは最初にパケットを検索して正常に解析できます</li>
+		<li>発生する可能性のある問題を修正しました <code class="notranslate">updateend</code> 非常に特定の条件の下でFirefoxに追加または削除するために複数回発生するイベント</li>
+	</ul>
+	</li>
+	<li>空の応答を受け取ったときにエラーイベントをトリガーする</li>
+</ul>
+
+<h4 data-gt-block="">10月2017</h4>
+
+<p data-gt-block="">v5.5.2</p>
+
+<ul>
+	<li>すべてが正常に表示されると固定再生が停止する
+	<ul>
+		<li>未知のプレイヤー待ちの再生ウォッチャーチェックを追加</li>
+		<li>するな <code class="notranslate">unknownwaiting</code> ハイテクがネイティブの待機イベントを発生させたときにチェックする</li>
+		<li>バッファの最後に待機している現在の時刻を追跡しない</li>
+		<li>コー​​ル <code class="notranslate">techWaiting_</code> バッファの終わりでストールが検出されたとき</li>
+	</ul>
+	</li>
+</ul>
+
+<h4 data-gt-block="">4月2017</h4>
+
+<p data-gt-block="">v5.5.1</p>
+
+<ul>
+	<li>指定したものを使う <code class="notranslate">mediasequence</code> 0の代わりにVODの有効期限が切れた同期のために
+
+	<ol>
+		<li>中古 <code class="notranslate">synccontroller</code> 期限切れ</li>
+	</ol>
+	</li>
+	<li>修正：CODECからMIMEタイプへの変換で、すべての可能なシナリオが考慮されるようになりました</li>
+</ul>
+
+<h4 data-gt-block="">4月25 2017</h4>
+
+<p data-gt-block="">v5.5.0</p>
+
+<ul>
+	<li>更新版 <strong>mux.js</strong> 4.1.3に <strong>メディアソース</strong> 4.4.4へ</li>
+	<li>プレイリストがブラックリストに載っているか再試行されたときにイベントをトリガする</li>
+	<li>トリガー <code class="notranslate">blacklistplaylist</code> プレイリストがブラックリストに載っているとき</li>
+	<li>トリガー <code class="notranslate">retryplaylist</code> エラーが発生したプレイリストを読み込もうとすると</li>
+	<li>ブラックリスト期間を変更するオプションが追加されました</li>
+</ul>
+
+<h4 data-gt-block="">4月10 2017</h4>
+
+<p data-gt-block="">v5.4.1</p>
+
+<ul>
+	<li>更新しました <strong>貢献メディアソース</strong> 4.4.3へ</li>
+	<li>修正済み：メディアソースが準備されていないときのendOfStreamの呼び出しの例外</li>
+	<li>修正：fmp4再生のセグメント時間マッピング</li>
+	<li>If  <code class="notranslate">beforeRequest</code> ソースが変更されたときに再利用する
+	<ul>
+		<li>グローバルxhrの変更を許可する <code class="notranslate">beforeRequest</code> 実行時に</li>
+		<li>常に最新のものを使用する <code class="notranslate">beforeRequest</code> hlsオブジェクトの作成時に設定するのではなく</li>
+	</ul>
+	</li>
+</ul>
+
+<h4 data-gt-block="">4月3 2017</h4>
+
+<p data-gt-block="">v5.4.0</p>
+
+<ul>
+	<li>インマニフェストWebVTTのサポートを追加</li>
+	<li>修正済み：マイナーセグメントローダーが修正されました：es</li>
+	<li>修正済み：代替オーディオの質の高い変更を有効にする</li>
+	<li>追加された機能：更新を停止したライブプレイリストをブラックリストに登録する
+	<ul>
+		<li>決して最終的に利用可能な最終演奏をブラックリストに載せない</li>
+	</ul>
+	</li>
+	<li>SegmentLoaderのすべてのXHR処理コードと関連する状態をリファクタリングして、単一のmediaSegmentRequest関数</li>
+	<li>現在バッファにあるセグメントのキューを含むセグメントメタデータのTextTrackを追加しました。</li>
+	<li>HLSでの説明オーディオトラックのサポートの追加
+	<ul>
+		<li>説明オーディオトラックのサポートが追加されました（ <strong>public.accessibility.describes-video</strong>)</li>
+		<li>代替オーディオの種類を正しく設定するためのテストを追加</li>
+	</ul>
+	</li>
+</ul>
+
+<h4 data-gt-block="">月3 2017</h4>
+
+<p data-gt-block="">v5.3.3</p>
+
+<ul>
+	<li>更新しました <strong>videojs-contrib-media-sources</strong> v4.4.2と <strong>mux.js</strong> 4.1.1へ
+
+	<ul>
+		<li>オーディオがオフセットされたときに余分なフレームを挿入しないように固定された無音挿入機能</li>
+		<li>同じ開始時間を持つグループキューを考慮し、それらをまとめて同じendTimeに再マッピングするように固定メタデータのキューマッピング</li>
+		<li>Flashタグトリムターゲットにファジィ因子を追加</li>
+		<li>Feature Video.js 6の互換性</li>
+		<li>ミスアラインされたオーディオとビデオの固定フラッシュタグトリミング</li>
+		<li>元に戻す "ウェブワーカーでフラッシュの逆変換を元に戻す"</li>
+	</ul>
+	</li>
+	<li>マスター以外のプレイリストソースに対するセグメントリクエストをタイムアウトさせないように修正</li>
+</ul>
+
+<h4 data-gt-block="">2月22 2017</h4>
+
+<p data-gt-block="">v5.3.2</p>
+
+<ul>
+	<li>seek-to-liveとresync-on-a-poor-guessの動作の組み合わせによるバグを修正しました。</li>
+</ul>
+
+<h4 data-gt-block="">2月22 2017</h4>
+
+<p data-gt-block="">v5.3.1</p>
+
+<ul>
+	<li>ロックの更新 <strong>URLツールキット</strong> 相対URLをサポートする1.0.9へ</li>
+	<li>不十分な初期セグメント選択で再同期</li>
+	<li>長い一時停止後にライブ再生を再開することを修正</li>
+</ul>
+
+<h4 data-gt-block="">2月16 2017</h4>
+
+<p data-gt-block="">v5.3.0</p>
+
+<ul>
+	<li>すべてのFlashシークでセグメントローダーをリセットする
+	<ul>
+		<li>更新しました <strong>mux.js</strong> 4.1.0へ</li>
+		<li>更新しました <strong>videojs-contrib-media-sources</strong> 4.4.0へ</li>
+	</ul>
+	</li>
+	<li>の機能を再編 <code class="notranslate">SegmentLoader</code> トップダウンからの実行フローをよりよく追跡する</li>
+	<li>再生ウォッチャーのような設定可能なロギングのためにアドホックロギングを削除</li>
+	<li>isLowestEnabledRenditionは冗長なストリームで処理されました</li>
+	<li>労働者の名前をDecrypterWorkerに変更</li>
+</ul>
+
+<h4 data-gt-block="">2月9 2017</h4>
+
+<p data-gt-block="">v5.2.1</p>
+
+<ul>
+	<li>Akamaiスタイルの冗長HLSのサポート
+	<ul>
+		<li>安定した並べ替えと常に最初の最初の選択</li>
+	</ul>
+	</li>
+	<li>オーディオセグメントローダー向けのデクリプタメッセージの固定ルーティング</li>
+</ul>
+
+<h4 data-gt-block="">2月8 2017</h4>
+
+<p data-gt-block="">v5.2.0</p>
+
+<ul>
+	<li>更新された4.3.0の依存関係 <code class="notranslate">mediasources</code></li>
+	<li>READMEから削除されたHLSオブジェクトイベント</li>
+</ul>
+
+<h4 data-gt-block="">2月3 2017</h4>
+
+<p data-gt-block="">v5.1.1</p>
+
+<ul>
+	<li>後方互換性を維持しながらVideo.js 6の前方互換性を導入
+	<ul>
+		<li>getTechとヌルチェックのFlash Techを使用するためのスワップ</li>
+		<li>のみ <code class="notranslate">registerComponent</code> 古いVideo.jsのHLS</li>
+		<li>Linuxを使う <code class="notranslate">registerPlugin</code> それが存在する場合</li>
+		<li><code class="notranslate">addTrack</code> 相互互換性</li>
+	</ul>
+	</li>
+	<li>アンダーフローとライブ再同期のイベントを追加
+	<ul>
+		<li>QoS測定目的のために、再生ウォッチャーがどのくらいの頻度でアクティブになっているかを知ることは有益かもしれません。 プレーヤーがライブウィンドウの背面から落ちたとき、またはビデオバッファのギャップのために停止したときのための新しいイベントを追加します。</li>
+	</ul>
+	</li>
+</ul>
+
+<h4 data-gt-block="">月31 2017</h4>
+
+<p data-gt-block="">v5.1.0</p>
+
+<ul>
+	<li>更新しました <strong>videojs-contrib-media-sources</strong> v4.2.0へ
+
+	<ul>
+		<li>新しいセグメントを追加すると、オーディオSourceBufferにギャップが導入されるときに、無音を挿入するサポートが追加されました。</li>
+	</ul>
+	</li>
+	<li>削除します <strong>hls-audio-track.js</strong> このファイルはもはや使用されていなかったため</li>
+	<li>最新のすべてのブラウザ間でオンザフライでオーディオコーデックの切り替えを幅広くサポートしているため、オーディオコーデックをブラックリストに載せることをやめる</li>
+	<li>修正する <code class="notranslate">qualityLevels</code> ソース要素を持つビデオのセットアップ</li>
+	<li>エラーが早すぎます。 <code class="notranslate">overrideNative</code></li>
+</ul>
+
+<h4 data-gt-block="">月25 2017</h4>
+
+<p data-gt-block="">v5.0.0</p>
+
+<ul>
+	<li>最新版にunpkgを使用するように更新された問題テンプレート</li>
+	<li>所有者による変更から保護するための課題テンプレートJSBinのスナップショットを使用</li>
+	<li>可能な限り修正 <code class="notranslate">fillBuffer_</code> すべてを否定することによって競争条件 <code class="notranslate">fillBuffers_</code>
+	<ul>
+		<li>すべての呼び出しを <code class="notranslate">fillBuffer_</code> への呼び出し <code class="notranslate">monitorBuffer_</code></li>
+		<li>名前が変更されました <code class="notranslate">monitorBuffer_</code> 〜へ <code class="notranslate">monitorBufferTick_</code> これは500msバッファチェックタイマーループになります</li>
+		<li>メイド <code class="notranslate">monitorBuffer_</code> に即時タイマーをスケジュールする <code class="notranslate">monitorBufferTick_</code></li>
+	</ul>
+	</li>
+	<li>プレイリストの更新が削除された後でも到達可能な処理セグメントが可能になりました
+	<ul>
+		<li>プレイリスト更新時の処理セグメント参照の変更</li>
+		<li>保留中のセグメントで正しいセグメント参照がテストされました</li>
+		<li>非同期モニタバッファの変更によるリベース後の到達不能セグメントテストの修正</li>
+		<li>再生リストの更新されたメディアインデックスが、すべてのリクエスト（同期を含む）</li>
+	</ul>
+	</li>
+	<li>作成された進捗イベントのバブル
+	<ul>
+		<li>セグメント要求が進捗イベントをトリガーする場合（つまり、XHR2がサポートされている場合）、それらの技術をバブルアップします。 これにより、非常に遅い接続でもバッファリングが行われていることが明確になります。</li>
+	</ul>
+	</li>
+	<li>IE10でサポートされなくなったWebワーカーでの復号化の実行</li>
+	<li>固定の <code class="notranslate">mediaIndex</code> ライブストリーム中にプレイリストが更新されたときに一貫性を保つようにトラッキングする
+	<ul>
+		<li>固定の <code class="notranslate">mediaIndex</code> ライブストリーム中にプレイリストが更新されたときに一貫性を保つようにトラッキングする</li>
+		<li>のコードを削除 <code class="notranslate">SegmentLoader#handleUpdateEnd_</code> それは <code class="notranslate">mediaIndex</code></li>
+		<li>並べ替え <code class="notranslate">SegmentLoader#playlist</code> フォローしやすくする</li>
+		<li>両方の変更 <code class="notranslate">mediaIndexes</code> （SegmentLoaderとsegmentInfoの） <code class="notranslate">SegmentLoader#playlist</code></li>
+		<li>適切なテストを追加しました <code class="notranslate">mediaIndex</code> ライブプレイリストによるトラッキング</li>
+	</ul>
+	</li>
+</ul>
+
+<h4 data-gt-block="">月20 2017</h4>
+
+<p data-gt-block="">v4.1.1</p>
+
+<ul>
+	<li>ES3をサポートするようにm8u3-parserを修正しました。</li>
+</ul>
+
+<h4 data-gt-block="">月13 2017</h4>
+
+<p data-gt-block="">v4.1.0</p>
+
+<ul>
+	<li>更新しました <strong>m3u8-parser</strong> 2.0.0に <strong>videojs-contrib-media-sources</strong> 4.1.4へ</li>
+	<li>追加されました <a class="nturl" href="https://github.com/videojs/videojs-contrib-hls/pull/929">表現と品質レベル</a></li>
+</ul>
+
+<h4 data-gt-block="">23 Dec 2016</h4>
+
+<p data-gt-block="">v4.0.3</p>
+
+<ul>
+	<li>ライブでセグメントホップを修正</li>
+	<li>互換性のないプレイリストを除外すると、従来のAVCコーデックを現代の同等のものにマップする</li>
+	<li>更新版 <strong>video.js</strong> 5.15.1へ</li>
+</ul>
+
+<h4 data-gt-block="">11月29 2016</h4>
+
+<p data-gt-block="">v4.0.2</p>
+
+<ul>
+	<li>シーク時の過剰なセグメント負荷の修正
+	<ul>
+		<li>シークがプレイヤーに余りにも多くのセグメントをロードさせた</li>
+	</ul>
+	</li>
+</ul>
+
+<h4 data-gt-block="">11月23 2016</h4>
+
+<p data-gt-block="">v4.0.1</p>
+
+<ul>
+	<li>元に戻す <strong>aes-decrypterのアップグレード</strong> 可能であればHLSe復号化のためにwebcryptoを使用する
+
+	<ul>
+		<li>WebCryptoの微妙な暗号は、以前はJavaScriptのみの実装で働いていたセグメントの復号化に失敗していました</li>
+	</ul>
+	</li>
+</ul>
+
+<h4 data-gt-block="">11月21 2016</h4>
+
+<p data-gt-block="">v4.0.0</p>
+
+<ul>
+	<li>可能な限りSegmentLoaderの中心にアルゴリズムを簡略化
+	<ul>
+		<li>シンクポイントのコンセプトを導入して、currentTimeをバリアント間のセグメントに関連付ける</li>
+		<li>で入手可能な詳細情報： <a class="nturl" href="https://www.brightcove.com/en/blog/2016/10/improving-hls-playback">https://www.brightcove.com/en/blog/2016/10/improving-hls-playback</a></li>
+	</ul>
+	</li>
+	<li>更新しました <strong>videojs-contrib-media-sources</strong> 4.1.2へ
+	<ul>
+		<li>リモートTextTrackを適切に削除できるため、使用開始</li>
+		<li>キューがnullの場合、ハンドルが正しくキューからトラックを削除する</li>
+	</ul>
+	</li>
+	<li>更新しました <strong>mux.js</strong> 3.0.3へ
+	<ul>
+		<li>フラグメントのbaseMediaDecodeTimeに最初のフレームのcompositionTimestampを適用するのを停止しました</li>
+		<li>保留中のトラックに欠けているオーディオデータを処理するようにストリームを結合するよう修正</li>
+	</ul>
+	</li>
+</ul>
+
+<h4 data-gt-block="">11月17 2016</h4>
+
+<p data-gt-block="">v3.6.13</p>
+
+<ul>
+	<li>systemBandwidthの概念が追加されました。ダウンロードからフラッシュまたはネイティブメディアソースにデータを追加してデータを追加するまでの、システム全体の帯域幅（mb / s単位）の尺度を追加しました。
+	<ul>
+		<li>適応ビットレート選択は、システム全体のパフォーマンスに基づいて行われるようになりました</li>
+	</ul>
+	</li>
+</ul>
+
+<h4 data-gt-block="">11月14 2016</h4>
+
+<p data-gt-block="">v3.6.12</p>
+
+<ul>
+	<li>かわった <code class="notranslate">resolveUrl</code> JavaScriptのみを使用する</li>
+</ul>
+
+<h4 data-gt-block="">11月11 2016</h4>
+
+<p data-gt-block="">v3.6.11</p>
+
+<ul>
+	<li>reloadSourceOnErrorsプラグインが更新されました：ソースを設定しようとしませんif <code class="notranslate">getSource</code> 収益 <code class="notranslate">undefined</code>  or  <code class="notranslate">null</code></li>
+	<li><strong>resolve-url.js</strong> 相対URLを解決するために使用される基本要素とアンカー要素を含めるためにiframeを使用するようになりました</li>
+</ul>
+
+<h4 data-gt-block="">11月10 2016</h4>
+
+<p data-gt-block="">v3.6.10</p>
+
+<ul>
+	<li>reloadSourceOnErrorsプラグインが更新されました
+	<ul>
+		<li>エラー時にロードする新しいソースを提供するために使用できるgetSource関数を渡すオプション</li>
+		<li>エラー間のデフォルトの最小時間を数秒で変更する機能を追加</li>
+		<li>プラグインは複数回初期化されるとイベントバインディングをクリーンアップするようになりました</li>
+	</ul>
+	</li>
+	<li>固定の <code class="notranslate">trimBuffer</code> 正しいセグメントを比較し、実際のケースで正しくトリミングする</li>
+</ul>
+
+<h4 data-gt-block="">11月9 2016</h4>
+
+<p data-gt-block="">v3.6.9</p>
+
+<ul>
+	<li>エラーが発生した場合に自動的にソースをリロードするために使用できるプラグインを追加</li>
+	<li>最低品質レベルが現在使用中であるかどうかをチェックする際のエラーを修正しました。</li>
+</ul>
+
+<h4 data-gt-block="">11月9 2016</h4>
+
+<p data-gt-block="">v3.6.8</p>
+
+<ul>
+	<li>再生中にスリップした場合、ライブウィンドウに戻すためのギャップスキッパーが強化されました。 リネームされた <strong>GapSkipper</strong> 〜へ <strong>PlaybackWatcher</strong></li>
+</ul>
+
+<h4 data-gt-block="">11月3 2016</h4>
+
+<p data-gt-block="">v3.6.7</p>
+
+<ul>
+	<li>更新しました <strong>videojs-contrib-media-sources</strong> 4.0.5へ
+
+	<ul>
+		<li>ID3と608のキュー翻訳に関する問題を修正しました</li>
+	</ul>
+	</li>
+</ul>
+
+<h4 data-gt-block="">10月21 2016</h4>
+
+<p data-gt-block="">v3.6.6</p>
+
+<ul>
+	<li>Linuxを使う <code class="notranslate">setTimeout</code> 頼りにする代わりにギャップスキッパーで <code class="notranslate">timeupdate</code> イベント</li>
+	<li>更新しました <strong>videojs-contrib-media-sources</strong> 4.0.4へ
+	<ul>
+		<li>各セグメントのビデオバッファにinitセグメントを追加する</li>
+	</ul>
+	</li>
+</ul>
+
+<h4 data-gt-block="">10月18 2016</h4>
+
+<p data-gt-block="">v3.6.4</p>
+
+<ul>
+	<li>再生終了後に「終了」イベントが発生しないように修正しました。</li>
+	<li>videojs-contrib-media-sourcesを4.0.2に更新しました
+	<ul>
+		<li>Iフレームのトリミングを防ぎたいときは、FLVタグをトリムするだけです</li>
+		<li>Mux.jsを3.0.2に更新しました
+		<ul>
+			<li>フレーム終了後にh264Frameをnullに設定する</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+</ul>
+
+<h4 data-gt-block="">10月18 2016</h4>
+
+<p data-gt-block="">v3.6.3</p>
+
+<ul>
+	<li>videojs-contrib-media-sourcesを4.0.1に更新する
+	<ul>
+		<li>フラッシュフォールバックを修正</li>
+	</ul>
+	</li>
+</ul>
+
+<h4 data-gt-block="">10月17 2016</h4>
+
+<p data-gt-block="">v3.6.2</p>
+
+<ul>
+	<li>videojs-contrib-media-sourcesを4.0.0に更新する
+	<ul>
+		<li>オーディオトラックの変更に関するinitセグメントデータを追加する</li>
+		<li>Safariの実装に従うためにID3の動作を正規化する</li>
+	</ul>
+	</li>
+</ul>
+
+<h4 data-gt-block="">10月14 2016</h4>
+
+<p data-gt-block="">v3.6.1</p>
+
+<ul>
+	<li>0の初期帯域幅オプションを許可する</li>
+	<li>Firefox 49でMAATのサポートが追加されました</li>
+	<li>の廃止予定の警告を修正しました <strong>player.hls</strong></li>
+</ul>
+
+<h4 data-gt-block="">27 9月2016</h4>
+
+<p data-gt-block="">v3.6.0</p>
+
+<ul>
+	<li>Mux.jsを2.5.0に更新しました
+	<ul>
+		<li>バージョン1 TFDTボックスを生成するためのサポートが追加されました</li>
+		<li>TSインスペクタが追加されました</li>
+	</ul>
+	</li>
+	<li>より小さなdistファイルを作成するためにbundle-collapserが追加されました</li>
+	<li>fMP4サポートを追加</li>
+	<li>ライブストリームに最初のセグメントを読み込むバグを修正しました</li>
+</ul>
+
+<h4 data-gt-block="">8月24 2016</h4>
+
+<p data-gt-block="">v3.5.3</p>
+
+<ul>
+	<li>videojs-contrib-mediasourcesを3.1.5に更新しました
+	<ul>
+		<li>Mux.jsを2.4.2に更新しました
+		<ul>
+			<li>Chromiumで安定したキャプションパケットソートの修正</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+</ul>
+
+<h4 data-gt-block="">8月17 2016</h4>
+
+<p data-gt-block="">v3.5.2</p>
+
+<ul>
+	<li>ギャップスキッパーのアンダーフロー検出の変更により、スキップ可能なギャップのサイズに関する制限を削除</li>
+</ul>
+
+<h4 data-gt-block="">8月16 2016</h4>
+
+<p data-gt-block="">v3.5.1</p>
+
+<ul>
+	<li>フルスクリーンに出入りするときに再生が停止する問題を修正</li>
+</ul>
+
+<h4 data-gt-block="">8月15 2016</h4>
+
+<p data-gt-block="">v3.5.0</p>
+
+<ul>
+	<li>サポートの更新 <code class="notranslate">#ext-x-cue-out</code>,  <code class="notranslate">#ext-x-cue-in</code>および <code class="notranslate">#ext-x-cue-out-cont</code> 広告ブレークでカバーされる時間の範囲にまたがる単一のキューを作成する</li>
+	<li>videojs-media-sources 3.1.4に更新されました。 <code class="notranslate">FlashConstants</code> チャンク間隔ごとにより多くのデータをフラッシュにプッシュする</li>
+</ul>
+
+<h4 data-gt-block="">7月29 2016</h4>
+
+<p data-gt-block="">v3.4.0</p>
+
+<ul>
+	<li>サポートの追加 <code class="notranslate">#ext-x-cue-out</code>,  <code class="notranslate">#ext-x-cue-in</code>および <code class="notranslate">#ext-x-cue-out-cont</code> 特別なTextTrack経由で</li>
+	<li>Chromeでの動画のアンダーフロー動作によるギャップをスキップする機能を追加しました</li>
+</ul>
+
+<h4 data-gt-block="">7月25 2016</h4>
+
+<p data-gt-block="">v3.3.0</p>
+
+<ul>
+	<li>プレイリストが1つしか残っていない場合、または最下位のレンディションが利用可能な場合</li>
+	<li>最初のセグメントがフェッチされていないときにフェッチされないことがあったバグを修正しました</li>
+</ul>
+
+<h4 data-gt-block="">7月15 2016</h4>
+
+<p data-gt-block="">v3.2.0</p>
+
+<ul>
+	<li>ビデオ要素またはオーディオフレームの欠落のためにビデオ要素のバッファのギャップを探し出すアルゴリズムを追加しました。</li>
+	<li>AES解読ロジックを自分のプロジェクトに移した</li>
+</ul>
+
+<h4 data-gt-block="">6月9 2016</h4>
+
+<p data-gt-block="">v3.1.0</p>
+
+<ul>
+	<li>手動レンディション選択APIを追加 <code class="notranslate">representations()</code> 各インスタンスの関数 <code class="notranslate">HlsHandler</code> class</li>
+	<li>引き出し、m3u8解析機能をhttps://github.com/videojs/m3u8-parserの独自のプロジェクトに移動しました</li>
+</ul>
+
+<h4 data-gt-block="">6月2 2016</h4>
+
+<p data-gt-block="">v3.0.5</p>
+
+<ul>
+	<li>適応ビットレート選択アルゴリズムが以前にサーバーから既にフェッチされたメディアプレイリストに切り替わらないバグを修正</li>
+</ul>
+
+<h4 data-gt-block="">31月2016</h4>
+
+<p data-gt-block="">v3.0.4</p>
+
+<ul>
+	<li>複数の代替オーディオトラックのサポートが追加されました</li>
+	<li>新しいクラスSegmentLoaderには、すべてのバッファのメインテナンスとセグメントフェッチロジックが含まれています</li>
+	<li>新しいクラスSourceUpdaterは、SourceBuffer上の非同期操作の状態を追跡し、SoureBufferがビジー状態の場合、将来の実行のためにキュー操作を待ちます。</li>
+	<li>新しいクラスMasterPlaylistControllerは、操作をマスタープレイリストにカプセル化し、メディアプレイリストとセグメントローダーを調整します。</li>
+	<li>フェッチとバッファのメンテナンスに関連するバグ修正</li>
+</ul>
+
+<h4 data-gt-block="">月11 2016</h4>
+
+<p data-gt-block="">v2.0.1</p>
+
+<ul>
+	<li>SourceHandlerのES6バージョンの最初のリリース</li>
+	<li>すべての新しいlint / build / testの設定 <a class="nturl" href="https://github.com/videojs/generator-videojs-plugin">generator-videojs-plugin</a> プロジェクト</li>
+</ul>
+
+<h4 data-gt-block="">月4 2016</h4>
+
+<p id="toc_1" data-gt-block="">v1.13.1</p>
+
+<ul>
+	<li>TechからVideo.jsのSourceHandlerに変換された5.xとの互換性</li>
+	<li>Flashベースのフォールバックを備えたMedia Source Extensionsベースの再生エンジンを実装</li>
+	<li>Transmuxerを書き直し、独自のプロジェクトに移しました <a class="nturl" href="https://github.com/videojs/mux.js">mux.js</a></li>
+	<li>608 / 708キャプションのサポートが追加されました</li>
+</ul>
+
+<h4 data-gt-block="">7月29 2015</h4>
+
+<p id="toc_2" data-gt-block="">v0.17.6</p>
+
+<ul>
+	<li>ライブポイントでの自動再生。 ライブID3キュー挿入を修正しました。 （<a class="nturl" href="https://github.com/videojs/videojs-contrib-hls/pull/353">ビュー</a>)</li>
+</ul>
+
+<h4 data-gt-block="">7月14 2015</h4>
+
+<p id="toc_3" data-gt-block="">v0.17.5</p>
+
+<ul>
+	<li>メディアシーケンスがゼロから始まると仮定しないでください（<a class="nturl" href="https://github.com/videojs/videojs-contrib-hls/pull/346">ビュー</a>)</li>
+	<li>オーディオまたはビデオのみのストリームでエラーを修正する（<a class="nturl" href="https://github.com/videojs/videojs-contrib-hls/pull/348">ビュー</a>)</li>
+</ul>
+
+<h4 data-gt-block="">7月12 2015</h4>
+
+<p id="toc_4" data-gt-block="">v0.17.4</p>
+
+<ul>
+	<li>セグメント間のシークを修正します。 期間計算を改善する。 （<a class="nturl" href="https://github.com/videojs/videojs-contrib-hls/pull/339">ビュー</a>)</li>
+</ul>
+
+<h4 data-gt-block="">6月29 2015</h4>
+
+<p id="toc_5" data-gt-block="">v0.17.3</p>
+
+<ul>
+	<li>ビデオ期間の計算が改善されました。 （<a class="nturl" href="https://github.com/videojs/videojs-contrib-hls/pull/321">ビュー</a>)</li>
+	<li>クランプがシーク可能な範囲にシークする（<a class="nturl" href="https://github.com/videojs/videojs-contrib-hls/pull/327">ビュー</a>)</li>
+	<li>バリアントをフィルタリングするときにプレーヤーの寸法にgetComputedStyleを使用する（<a class="nturl" href="https://github.com/videojs/videojs-contrib-hls/pull/326">ビュー</a>)</li>
+	<li>SauceLabsで動作する機能テストを追加する（<a class="nturl" href="https://github.com/videojs/videojs-contrib-hls/pull/323">ビュー</a>)</li>
+</ul>
+
+<h4 data-gt-block="">6月15 2015</h4>
+
+<p id="toc_6" data-gt-block="">v0.17.2</p>
+
+<ul>
+	<li>ライブストリームでのシークの修正（<a class="nturl" href="https://github.com/videojs/videojs-contrib-hls/pull/308">ビュー</a>)</li>
+</ul>
+
+<h4 data-gt-block="">6月8 2015</h4>
+
+<p id="toc_7" data-gt-block="">v0.17.1</p>
+
+<ul>
+	<li>ライブビデオをプリロードしないでください（<a class="nturl" href="https://github.com/videojs/videojs-contrib-hls/pull/299">ビュー</a>)</li>
+</ul>
+
+<h4 data-gt-block="">6月5 2015</h4>
+
+<p id="toc_8" data-gt-block="">v0.17.0</p>
+
+<ul>
+	<li>ライブストリームをシーク可能に実装します。 ライブストリームのインバンドメタデータのタイミングを修正しました。 （<a class="nturl" href="https://github.com/videojs/videojs-contrib-hls/pull/295">ビュー</a>)</li>
+</ul>
+
+<h4 data-gt-block="">29月2015</h4>
+
+<p id="toc_9" data-gt-block="">v0.16.1</p>
+
+<ul>
+	<li>プレイリストをリフレッシュするときに不必要にライブポイントにリセットしないでください。 プレイリストローダーのタイムアウトをクリーンアップします。 （<a class="nturl" href="https://github.com/videojs/videojs-contrib-hls/pull/274">ビュー</a>)</li>
+	<li>最初のIDRのないセグメントが4に表示されないようにする：3は最初（<a class="nturl" href="https://github.com/videojs/videojs-contrib-hls/pull/272">ビュー</a>)</li>
+	<li>SPSがメタデータタグを挿入するのを待ちます。 （<a class="nturl" href="https://github.com/videojs/videojs-contrib-hls/pull/280">ビュー</a>)</li>
+	<li>プレイリスト内の空白を削除します。 （<a class="nturl" href="https://github.com/videojs/videojs-contrib-hls/pull/282">ビュー</a>)</li>
+	<li>NITでTSファイルの再生を許可する。 PCR PIDについて警告しないでください。 （<a class="nturl" href="https://github.com/videojs/videojs-contrib-hls/pull/284">ビュー</a>)</li>
+	<li>帯域幅が変更されたときに、より迅速な品質が切り替わります （<a class="nturl" href="https://github.com/videojs/videojs-contrib-hls/pull/285">ビュー</a>)</li>
+	<li>シーク後の一時的な反り表示を修正しました。 （<a class="nturl" href="https://github.com/videojs/videojs-contrib-hls/pull/290">ビュー</a>)</li>
+</ul>
+
+<h4 id="toc_10" data-gt-block="">v0.16.0</h4>
+
+<ul>
+	<li>サポートプリロード=なし</li>
+</ul>
+
+<h4 id="toc_11" data-gt-block="">v0.15.0</h4>
+
+<ul>
+	<li>すべてのID3フレームを公開し、188バイトよりも大きいタグを処理する</li>
+</ul>
+
+<h4 id="toc_12" data-gt-block="">v0.14.0</h4>
+
+<ul>
+	<li>HLSeのパフォーマンスの向上</li>
+</ul>
+
+<h4 id="toc_13" data-gt-block="">v0.13.0</h4>
+
+<ul>
+	<li>改善されたオーディオ/ビデオ同期</li>
+	<li>ライブ、HLSe、および不連続点の修正</li>
+	<li>内部メソッドの名前を変更して、意図した可視性を明確にする</li>
+</ul>
+
+<h4 id="toc_14" data-gt-block="">v0.12.0</h4>
+
+<ul>
+	<li>AES-128暗号化によるカスタムIVのサポート</li>
+</ul>
+
+<h4 id="toc_15" data-gt-block="">v0.11.0</h4>
+
+<ul>
+	<li>埋め込まれたID3タグは、インバンドメタデータトラックとして公開されます</li>
+</ul>
+
+<h4 id="toc_16" data-gt-block="">v0.10.0</h4>
+
+<ul>
+	<li>楽観的初期ビットレート選択</li>
+</ul>
+
+<h4 id="toc_17" data-gt-block="">v0.9.0</h4>
+
+<ul>
+	<li>セグメントレベルのAES-128暗号化をサポート</li>
+</ul>
+
+<h4 id="toc_18" data-gt-block="">v0.8.0</h4>
+
+<ul>
+	<li>EXT-X-DISCONTINUITYのサポート</li>
+</ul>
+
+<h4 id="toc_19" data-gt-block="">v0.7.0</h4>
+
+<ul>
+	<li>HLSプラグインを技術に変換する</li>
+</ul>
+
+<h4 id="toc_20" data-gt-block="">v0.6.0</h4>
+
+<ul>
+	<li>リファクタリングプレイリストの読み込み</li>
+	<li>カルマを介してテストを追加する</li>
+</ul>
+
+<h4 id="toc_21" data-gt-block="">v0.5.0</h4>
+
+<ul>
+	<li>Cookieベースのコンテンツ保護のサポート（ <code class="notranslate">withCredentials</code>)</li>
+</ul>
+
+<h4 id="toc_22" data-gt-block="">v0.4.0</h4>
+
+<ul>
+	<li>Live ストリームサポート</li>
+</ul>
+
+<h4 id="toc_23" data-gt-block="">v0.3.0</h4>
+
+<ul>
+	<li>高ビットレートストリームのパフォーマンスの修正</li>
+</ul>
+
+<h4 id="toc_24" data-gt-block="">v0.2.0</h4>
+
+<ul>
+	<li>基本再生と適応ビットレート選択</li>
+</ul>
+
+<h4 id="toc_25" data-gt-block="">v0.1.0</h4>
+
+<ul>
+	<li>初期リリース</li>
+</ul>
+</section>
+</div>
+      
+</div>
+
+</div>
+
+
+
+  </div>
+
+              </section>
+
+                </div>
+  </div>
+
+      <footer class="footer container" role="contentinfo">
+              <div class="gt-block row" data-gt-block="">
+            <div class="gt-block region region-footer-top-left col-md-9" style="margin-bottom: 1em;" data-gt-block="">
+    <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">Brightcove サポート</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="https://status.brightcove.com">システムステータス</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/contact-support/index.html" data-drupal-link-system-path="node/18632">サポート - Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="../ja/en/contact/create/index.html">サポート - Zencoder</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-documentation-menu" id="block-documentation" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">オンラインマニュアル</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/index.html" data-drupal-link-system-path="<front>">ホーム</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">トレーニング（講習会）</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/online-training-courses/index.html" data-drupal-link-system-path="node/18286">オンラインコース</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/register-training/index.html" data-drupal-link-system-path="node/18270">コー​​スに登録</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-brightcove-menu" id="block-brightcove" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">Brightcove</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="https://www.brightcove.com">Brightcove.COM</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+            <div class="gt-block region region-footer-top-right col-md-3" data-gt-block="">
+    <section id="block-footerlegaltext" class="block block-block-content block-block-content4507d09c-a528-4947-b91d-36ec6671822b clearfix">
+  
+    
+
+      
+            <div class="gt-block field field--name-field-body field--type-text-long field--label-hidden field--item" data-gt-block=""><p data-gt-block="">Brightcove Inc.（ナスダック：BCOV）は、接続されたデバイス間でビデオを配信および収益化するための強力なクラウドソリューションを提供する世界有数のプロバイダです。</p>
+</div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+                    <div class="gt-block row" data-gt-block="">
+            <div class="gt-block region region-footer-bottom-left col-md-8" data-gt-block="">
+    <section id="block-footercopyrightlinewithlinks" class="block block-block-content block-block-content3a164ef9-02d8-42c4-bcc6-3ab435f670b3 clearfix">
+  
+    
+
+      <div class="gt-block block-content block-content--type-copyright-block-with-links block-content--view-mode-full ds-1col clearfix" data-gt-block="">
+
+  
+
+  
+            <div class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" data-gt-block="">2020</div>
+      
+            <div class="field field--name-field-copyright-text field--type-string-long field--label-hidden field--item" data-gt-block="">Brightcove Inc.すべての権利を保有します。</div>
+      
+      <div class="gt-block field field--name-field-legal-links field--type-link field--label-hidden field--items" data-gt-block="">
+              <div class="gt-block field--item" data-gt-block=""><a class="nturl" href="https://www.brightcove.com/en/privacy">プライバシーポリシー</a></div>
+              <div class="gt-block field--item" data-gt-block=""><a class="nturl" href="https://www.brightcove.com/en/terms-and-conditions">利用規約</a></div>
+          </div>
+  
+
+</div>
+
+
+  </section>
+
+
+  </div>
+
+            <div class="gt-block region region-footer-bottom-right col-md-4" data-gt-block="">
+    <section id="block-footersocialblock" class="block block-block-content block-block-content4fc23afd-8d37-420e-ab28-73b2ba24e836 clearfix">
+  
+    
+
+      
+      <div class="gt-block field field--name-field-social-icon field--type-entity-reference-revisions field--label-hidden field--items" data-gt-block="">
+              <div class="gt-block field--item" data-gt-block="">
+
+<a class="icon" icon__social--link="" href="https://www.linkedin.com/company/brightcove" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--linkedin">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--linkedin"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="gt-block field--item" data-gt-block="">
+
+<a class="icon" icon__social--link="" href="https://twitter.com/brightcove" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--twitter">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--twitter"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="gt-block field--item" data-gt-block="">
+
+<a class="icon" icon__social--link="" href="https://www.facebook.com/Brightcove" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--facebook">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--facebook"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="gt-block field--item" data-gt-block="" style="display:none;color:white">
+
+<a class="icon" icon__social--link="" href="https://plus.google.com/100830370440271567091" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--google-plus">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--google-plus"></use>
+  </svg>
+</a>
+
+</div>
+          </div>
+  
+
+
+  </section>
+
+<section id="block-scripts" class="block block-block-content block-block-content42e4bd63-d879-470d-a6de-d5e4529a01be clearfix">
+  
+    
+
+      
+            <div class="gt-block field field--name-field-body field--type-text-long field--label-hidden field--item" data-gt-block=""><script src="https://learning-services-media.brightcove.com/doc-assets/js/gtrans.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/js/support-feedback.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-support.js"></script>
+<script src="https://learning-services-media.brightcove.com/doc-assets/js/hide-google-plus.js"></script></div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+          </footer>
+  
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/18796","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click"},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"user":{"uid":0,"permissionsHash":"3b7fdb4927baca3ee2939edeb777485b3e2c2d36cf8c80e0d8f49c6dc5e2eeca"}}</script>
+<script src="https://support.brightcove.com/sites/default/files/js/js_8fmTAXGyuAUNVu11XoXJaeM8QBDFuAvX7ADwOnigrhc.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+<script src="https://support.brightcove.com/sites/default/files/js/js_gyH3GlnTIe1SGK59o4rsE-heoS1g0ILCvQ3Of4jKRx8.js"></script><div id="surveyDiv" style="visibility:hidden"><iframe id="CSAT" src="https://learning-services-media.brightcove.com/doc-assets/general/surveylink.html" style="display:none;"></iframe></div>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e78a80aa93","applicationID":"129613202","transactionName":"YwBUZkcFVktUWhJQX1pKd1FBDVdWGkkHXlVrBldRXQE=","queueTime":0,"applicationTime":23,"atts":"T0dXEA8fRUU=","errorBeacon":"bam.nr-data.net","agent":""}</script><script data-cfasync="false" src="https://tdns5.gtranslate.net/tdn-bin/queue.js"></script><!-- Yandex.Metrika counter for GTranslate --><script data-cfasync="false">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter36618640 = new Ya.Metrika({ id:36618640, clickmap:false, trackLinks:true, accurateTrackBounce:true, ut:"noindex" }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript>&lt;div&gt;&lt;img src="https://mc.yandex.ru/watch/36618640?ut=noindex" style="position:absolute; left:-9999px;" alt="" /&gt;&lt;/div&gt;</noscript><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e78a80aa93","applicationID":"129613202","transactionName":"YwBUZkcFVktUWhJQX1pKY0BcSxdRW10DQR5EDUY=","

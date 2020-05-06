@@ -1,0 +1,837 @@
+<html lang="ja" dir="ltr" class=" js"><head>
+    <meta charset="utf-8"><script type="text/javascript" src="https://bam.nr-data.net/1/e78a80aa93?a=129613202&amp;v=1167.2a4546b&amp;to=YwBUZkcFVktUWhJQX1pKY0BcSxdRW10DQR5EDUY%3D&amp;rst=12268&amp;ref=https://support.brightcove.com/ja/identify-and-delete-low-performing-videos&amp;ap=1498&amp;be=2053&amp;fe=11873&amp;dc=10161&amp;perf=%7B%22timing%22:%7B%22of%22:1588779732467,%22n%22:0,%22f%22:0,%22dn%22:0,%22dne%22:0,%22c%22:0,%22ce%22:28,%22rq%22:29,%22rp%22:1637,%22rpe%22:2060,%22dl%22:2047,%22di%22:10161,%22ds%22:10161,%22de%22:10186,%22dc%22:11873,%22l%22:11873,%22le%22:11874%7D,%22navigation%22:%7B%7D%7D&amp;at=T0dXEA8fRUU%3D&amp;jsonp=NREUM.setToken"></script><script src="https://js-agent.newrelic.com/nr-1167.min.js"></script><script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script><script type="text/javascript" async="" src="//cdn.feedbackify.com/f.js"></script><script async="" src="https://fullstory.com/s/fs.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e78a80aa93",applicationID:"129613202"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e78a80aa93",applicationID:"129613202"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-2728311-17", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)">
+<meta name="MobileOptimized" content="width">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="https://support.brightcove.com/sites/default/files/favicon-64.png" type="image/png">
+<link rel="alternate" hreflang="en" href="https://support.brightcove.com/identify-and-delete-low-performing-videos">
+<link rel="canonical" href="https://support.brightcove.com/ja/identify-and-delete-low-performing-videos">
+<link rel="shortlink" href="https://support.brightcove.com/ja/node/18752">
+<link rel="revision" href="https://support.brightcove.com/identify-and-delete-low-performing-videos">
+
+    <title>パフォーマンスの低い動画を特定して削除する Brightcove 学習</title>
+    <link rel="stylesheet" media="all" href="https://support.brightcove.com/sites/default/files/css/css_d7PoQ20hWbRiei75VgExP_tm8C1ylIRfzB3zIYLc5Cw.css?q23msc">
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.min.css">
+<link rel="stylesheet" media="all" href="https://support.brightcove.com/sites/default/files/css/css_fr7ugR_m15spMT57voAomC2Aklj0ATM7MmH6hvb3pp4.css?q23msc">
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+    <meta name="uri-translation" content="on">
+    <script>
+window['_fs_debug'] = false; window['_fs_host'] = 'fullstory.com';
+window['_fs_org'] = 'BX3Q1';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+g.consent=function(a){g("consent",!arguments.length||a)};
+g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+g.clearUserCookie=function(){};
+})(window,document,window['_fs_namespace'],'script','user');
+    </script>
+  <style type="text/css">html{_background:url(//about:blank) fixed;}.fby-on select {visibility:hidden!important;}.fby-on .fby-hide-iframe {visibility:hidden!important;}.fby-hide-embed embed {visibility:hidden!important;}.fby-hide-object object {visibility:hidden!important;}@media not screen {.fby-tab {display: none;}}#feedbackify *{box-sizing:content-box!important;-moz-box-sizing:content-box!important;-webkit-box-sizing:content-box!important;}#feedbackify input{box-sizing:border-box!important;-moz-box-sizing:border-box!important;-webkit-box-sizing:border-box!important;max-width:none!important;}#feedbackify *:before{content:none!important;}#feedbackify *:after{content:none!important;}#feedbackify ,#feedbackify div,#feedbackify span,#feedbackify textarea,#feedbackify input,#feedbackify table,#feedbackify tbody,#feedbackify tr,#feedbackify td,#feedbackify img,#feedbackify p,#feedbackify a{border:0!important;outline:none!important;width:auto;height:auto;text-align:left!important;text-indent:0!important;float:none!important;padding:0!important;margin:0!important;font:12px arial,helvetica,sans-serif!important;overflow:visible!important;color:#000!important;line-height:1.2!important;background:0 none!important;position:static!important;vertical-align:baseline!important;box-shadow:none!important;}#feedbackify table{border-collapse:collapse!important;border-spacing:0!important;max-width:inherit!important;width:auto!important;}#feedbackify td{word-break:normal!important;}#feedbackify {z-index:2147483646!important;position:static!important;top:0;left:0;}#feedbackify .fby-screen{z-index:2147483646!important;position:fixed!important;top:0;left:0;width:0;height:100%;_position:absolute!important;_top:expression(eval(document.body.scrollTop||document.documentElement.scrollTop))!important;_left:expression(eval(document.body.scrollLeft||document.documentElement.scrollLeft))!important;_width:0!important;_height:expression(document.documentElement.clientHeight||document.body.clientHeight+"px")!important;}#feedbackify .fby-mask{display:none!important;position:fixed!important;top:0;left:0;width:100%;height:100%;background-color:#000!important;opacity:0.2;filter:alpha(opacity=20);_position:absolute!important;_width:expression(document.documentElement.clientWidth||document.body.clientWidth+"px")!important;_height:expression(this.parentNode.style.height)!important;}#feedbackify .fby-show{display:block!important;visibility:visible!important;}#feedbackify .fby-hide{display:none!important;visibility:hidden!important;}</style><style type="text/css">#feedbackify .fby-tab{position:fixed!important;width:36px;height:100px;overflow:hidden!important;_position:absolute!important;}#feedbackify .fby-tab a{display:block!important;position:absolute!important;width:36px;height:100px;background-color:#000000!important;cursor:pointer!important;background:url(https://cdn.feedbackify.com/img/classic/tab.png)!important;_background:none!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/tab.png)!important;}#feedbackify .fby-tab-l{top:50%;left:0;margin-top:-50px!important;_top:expression((parseInt(this.parentNode.style.height)-this.clientHeight)/2+"px")!important;_margin-top:0!important;}#feedbackify .fby-tab-l a{margin-left:-5px!important;}#feedbackify .fby-tab-l a:hover{margin-left:-2px!important;}#feedbackify .fby-tab-r{top:50%;right:0px!important;margin-top:-50px!important;_top:expression((parseInt(this.parentNode.style.height)-this.clientHeight)/2+"px")!important;_left:expression((document.documentElement.clientWidth||document.body.clientWidth)-this.clientWidth+"px")!important;_margin-top:0!important;}#feedbackify .fby-tab-r a{margin-left:5px!important;}#feedbackify .fby-tab-r a:hover{margin-left:2px!important;}#feedbackify .fby-tab-t{top:0;margin-top:0px!important;}#feedbackify .fby-tab-b{top:auto;bottom:0!important;_top:expression(parseInt(this.parentNode.style.height)-this.clientHeight+"px")!important;}</style><script type="application/ld+json">[{"@context":"http://schema.org","@type":"VideoObject","name":"Identify and Delete Low Performing Videos","description":"In this video you will learn how to identify and delete low performing content.","thumbnailUrl":"https://cf-images.us-east-1.prod.boltdns.net/v1/static/20318290001/bc251795-5e4d-4aca-85dc-4f32a393d208/362594fe-bda2-4258-a516-bea42f9e5a38/160x90/match/image.jpg","dateCreated":"2019-04-01T18:50:08.326Z","dateModified":"2019-04-03T15:03:31.778Z","uploadDate":"2019-04-01T18:50:08.326Z","duration":"P564.686S","contentUrl":"http://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/20318290001/bc251795-5e4d-4aca-85dc-4f32a393d208/59831dfc-9143-4b15-b2f2-901f4739fe53/main.mp4?akamai_token=exp=1591199988~acl=/media/v1/pmp4/static/clear/20318290001/bc251795-5e4d-4aca-85dc-4f32a393d208/59831dfc-9143-4b15-b2f2-901f4739fe53/main.mp4*~hmac=120c1c06c695d2b027abd552611eb7ae3088cca432bd158242210409d753900f","embedUrl":"https://ipx.bcove.me?url=https%3A%2F%2Fsupport.brightcove.com%2Fja%2Fidentify-and-delete-low-performing-videos%3FvideoId%3D6021341123001&accountId=20318290001&experienceId=5a73630f7afd7a00101bc1b5&videoId=6021341123001","keywords":""}]</script><style type="text/css">#feedbackify grammarly-ghost{display:none!important;}#feedbackify grammarly-btn{display:none!important;}#feedbackify #fby-form{z-index:2147483646!important;width:618px!important;position:absolute!important;}#feedbackify .fby-d-main{width:600px;height:50px;vertical-align:top!important;background-color:#FFFFFF!important;position:relative!important;}#feedbackify .fby-d{background:url(https://cdn.feedbackify.com/img/classic/dlg_shad_sprite.png)!important;_background:none!important;}#feedbackify .fby-d-h{height:9px;background:url(https://cdn.feedbackify.com/img/classic/dlg_shad_sprite_h.png)!important;_background:none!important;}#feedbackify .fby-d-h2{height:9px;background-color:#FFFFFF!important;}#feedbackify .fby-d-tl{background-position:-18px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_tl.png)!important;}#feedbackify .fby-d-t{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_t.png,sizingMethod=scale)!important;}#feedbackify .fby-d-tr{background-position:-36px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_tr.png)!important;}#feedbackify .fby-d-l{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_l.png,sizingMethod=scale)!important;}#feedbackify .fby-d-r{background-position:-9px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_r.png,sizingMethod=scale)!important;}#feedbackify .fby-d-bl{background-position:-54px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_bl.png)!important;}#feedbackify .fby-d-br{background-position:-72px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_br.png)!important;}#feedbackify .fby-d-b{background-position:0px -9px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_b.png,sizingMethod=scale)!important;}#feedbackify .fby-d-load{position:relative!important;}#feedbackify .fby-d-load img{position:absolute!important;left:8px;}#feedbackify .fby-d-load div{position:absolute!important;padding:4px 18px!important;font-size:16px!important;font-weight:bold!important;color:#333!important;}</style></head>
+  <body class="path-node page-node-type-support-doc has-glyphicons">
+    <a class="visually-hidden" focusable="" skip-link="" href="#main-content/index.html">
+      メインコンテンツへスキップ
+    </a>
+    
+      <div class="gt-block dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="" data-gt-block="">
+              <header class="navbar navbar-default container" id="navbar" role="banner">
+      <div class="gt-block navigation-secondary clearfix" data-gt-block="">
+          <div class="gt-block region region-navigation-secondary" data-gt-block="">
+    <section id="block-styles" class="block block-block-content block-block-contentfbb71e48-a6cd-4d2b-8239-43f18db69e60 clearfix">
+  
+    
+
+      
+            <div class="gt-block field field--name-field-body field--type-text-long field--label-hidden field--item" data-gt-block=""><link rel="stylesheet" media="all" href="https://learning-services-media.brightcove.com/doc-assets/css/drupal-fix.css"></div>
+      
+  </section>
+
+<nav role="navigation" aria-labelledby="block-secondarynavigation-menu" id="block-secondarynavigation">
+            
+  <h2 class="visually-hidden" id="block-secondarynavigation-menu" data-gt-block="">セカンダリナビゲーション</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/contact-support/index.html" title="サポートリクエストを作成する" data-drupal-link-system-path="node/18632">サポートリクエスト</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://status.brightcove.com/">システムステータス</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://university.brightcove.com/">Brightcove 大学</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<section id="block-gtranslate" class="block block-gtranslate block-gtranslate-block clearfix">
+  
+    
+
+      
+<div class="gt-block gtranslate" data-gt-block="">
+<script type="text/javascript">/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;var lang=lang_pair.split('|')[1];var plang=location.pathname.split('/')[1];if(plang.length !=2 && plang != 'zh-CN' && plang != 'zh-TW')plang='en';if(lang == 'en')location.pathname=location.pathname.replace('/'+plang+'/', '/');else location.pathname='/'+lang+location.pathname.replace('/'+plang+'/', '/');}
+/* ]]> */
+</script><select onchange="doGTranslate(this);"><option value="">言語の選択</option><option value="en|en" style="font-weight:bold;background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -0px;padding-left:18px;">英語</option><option value="en|fr" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -160px;padding-left:18px;">フランス語</option><option value="en|de" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -176px;padding-left:18px;">ドイツ語</option><option value="en|ja" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -240px;padding-left:18px;">日本語</option><option value="en|ko" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -256px;padding-left:18px;">韓国語</option><option value="en|es" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -352px;padding-left:18px;">スペイン語</option></select>
+</div>
+<div class="gtranslate__credits" data-gt-block="">
+  本ドキュメントはGoogle翻訳によって機械翻訳したものとなります
+</div>
+
+  </section>
+
+
+  </div>
+
+      </div>
+      <div class="gt-block navbar-header col-md-3" data-gt-block="">
+                  <a class="logo" navbar-btn="" pull-left="" href="../ja/index.html" title="ホーム" rel="home">
+            <img src="https://support.brightcove.com/themes/custom/bcdocs/images/brightcove.png" alt="ホーム">
+          </a>
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">トグルナビゲーション</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+                    <div class="gt-block navbar-collapse collapse" data-gt-block="">
+            <div class="gt-block region region-navigation-collapsible" data-gt-block="">
+    <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation">
+            <h2 class="sr-only" id="block-mainnavigation-menu" data-gt-block="">メインナビゲーション</h2>
+
+      
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-learning-home/index.html" title="ホームページ" data-drupal-link-system-path="node/18643">ホーム</a>
+                  </li>
+                                            <li class="expanded dropdown">
+        <a class="dropdown-toggle" href="" data-toggle="dropdown">
+          製品紹介
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/video-cloud/index.html" data-drupal-link-system-path="node/18332">Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://gallery.support.brightcove.com">ギャラリー</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-player/index.html" data-drupal-link-system-path="node/18283">Brightcove Player</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/live/index.html" data-drupal-link-system-path="node/18642">Live</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/social/index.html" data-drupal-link-system-path="node/18444">Social</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/audience/index.html" data-drupal-link-system-path="node/18445">Audience</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://zencoder.support.brightcove.com">Zencoder</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/ssai/index.html" data-drupal-link-system-path="node/18650">SSAI</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://support.ottflow.com">OTT Flow</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a class="dropdown-toggle" href="" data-toggle="dropdown">
+          Links
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/analytics-api/index.html" data-drupal-link-system-path="node/18370">Analytics API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/audience-api/index.html" data-drupal-link-system-path="node/18371">Audience API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/cms-api/index.html" data-drupal-link-system-path="node/18372">CMS API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/cms-connectors-video-cloud/index.html" data-drupal-link-system-path="node/18662">CMSコネクタ用 Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/data-collection-api/index.html" data-drupal-link-system-path="node/18876">Data Collection API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/delivery-system-api/index.html" data-drupal-link-system-path="node/18387">Delivery System API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/developer-tools-and-concepts/index.html" data-drupal-link-system-path="node/18430">開発者ツールと概念</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/native-player-sdks/index.html" data-drupal-link-system-path="node/18367">Device SDK</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/dynamic-ingest-api/index.html" data-drupal-link-system-path="node/18373">Dynamic Ingest API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/getting-started-brightcove-apis-0/index.html" data-drupal-link-system-path="node/18711">入門 - Brightcove API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/page-experience-api/index.html" data-drupal-link-system-path="node/18616">In-Page Experience APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/ingest-profiles-api/index.html" data-drupal-link-system-path="node/18374">Ingest Profiles API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/live/index.html" data-drupal-link-system-path="node/18642">Live API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/oauth-api/index.html" data-drupal-link-system-path="node/18376">OAuth API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/platform-api-code-samples/index.html" data-drupal-link-system-path="node/18675">プラットフォームAPIコードサンプル</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/playback-api/index.html" data-drupal-link-system-path="node/18380">Playback API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-player-code-samples/index.html" data-drupal-link-system-path="node/18630">プレーヤーコードサンプル</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-player-developer/index.html" data-drupal-link-system-path="node/18362">プレーヤー開発者</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/player-management-api/index.html" data-drupal-link-system-path="node/18378">Player Management API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/policy-api/index.html" data-drupal-link-system-path="node/18381">Policy API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/release-notes/index.html" data-drupal-link-system-path="node/18687">リリースに関して</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a class="dropdown-toggle" href="" data-toggle="dropdown">
+          トレーニング（講習会）
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a class="nturl" href="https://university.brightcove.com">オンラインコース</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/register-training/index.html" data-drupal-link-system-path="node/18270">コース登録</a>
+                  </li>
+        </ul>
+  
+            </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-support-documentation-announcements/index.html" title="の新機能を見る Brightcove オンラインマニュアル" data-drupal-link-system-path="node/18896">新着情報</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+        </div>
+          </header>
+  
+    <div class="gt-block full-width-headline" data-gt-block="">
+    <div class="gt-block container" data-gt-block="">
+      <div class="gt-block row" data-gt-block="">
+        <div class="gt-block col-sm-12" role="heading" data-gt-block="">
+            <div class="gt-block region region-header" data-gt-block="">
+          <section id="block-brightcoveheadlineblock" class="block block-bc-general block-bc-general-headline-block clearfix">
+  
+    
+
+      オンラインマニュアル
+  </section>
+
+
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      <div role="main" class="gt-block main-container container  js-quickedit-main-content" data-gt-block="">
+    <div class="gt-block row" data-gt-block="">
+
+                              <aside class="gt-block col-sm-3" role="complementary" data-gt-block="">
+              <div class="gt-block region region-sidebar-first" data-gt-block="">
+    <section class="bc-search-fixes-search-block-form block block-bc-search-fixes block-bc-search-fixes-search-block clearfix" data-drupal-selector="bc-search-fixes-search-block-form" id="block-brightcovesearchblock">
+  
+    
+
+      <form action="/ja/identify-and-delete-low-performing-videos" method="post" id="bc-search-fixes-search-block-form" accept-charset="UTF-8">
+  <div class="gt-block form-item js-form-item form-type-textfield js-form-type-textfield form-item-search js-form-item-search form-no-label form-group" data-gt-block="">
+      <label for="edit-search" class="control-label sr-only">サイト内検索</label>
+  
+  
+  <input data-drupal-selector="edit-search" class="form-text form-control" type="text" id="edit-search" name="search" value="" size="15" maxlength="128" placeholder="サイト内検索">
+
+  
+  
+  </div>
+<input autocomplete="off" data-drupal-selector="form-tmwl7by7t7xjcel-73rfug2i6o0encymfts0ygkjmno" type="hidden" name="form_build_id" value="form-tMwL7bY7t7xJCEL-73rFug2I6O0enCYmFts0yGKJMNo"><input data-drupal-selector="edit-bc-search-fixes-search-block-form" type="hidden" name="form_id" value="bc_search_fixes_search_block_form"><div data-drupal-selector="edit-actions" class="gt-block form-actions form-group js-form-wrapper form-wrapper" id="edit-actions" data-gt-block=""><button data-drupal-selector="edit-submit" class="button js-form-submit form-submit btn-primary btn icon-only" type="submit" id="edit-submit" name="op" value="Search"><span class="sr-only">サイト内検索</span><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button></div>
+
+</form>
+
+  </section>
+
+<section id="block-inpagenavigationblock" class="hidden-xs block block-bc-ipnav block-bc-ipnav-block clearfix" style="width: 476px;">
+  
+      <h2 class="block-title" data-gt-block="">このページ</h2>
+    
+
+      <div class="bc-ipnav-block" data-gt-block=""><ul><li><a href="#Introduction/index.html">概要</a></li><li><a href="#Export_all_videos_data/index.html">すべての動画データをエクスポートする</a></li><li><a href="#Create_custom_report/index.html">カスタムAnalyticsレポートを作成する</a></li><li><a href="#Import_the_all_videos_file/index.html">オールビデオファイルをインポートする</a></li><li><a href="#Import_Analytics_report/index.html">Analyticsレポートのインポート</a></li><li><a href="#Create_a_named_range/index.html">名前付き範囲を作成する</a></li><li><a href="#Add_column_for_no_views_determination/index.html">ビューを決定しないための列を追加</a></li><li><a href="#Determine_low-performing_videos_and_delete_them/index.html">再生回数のない動画を削除する</a></li><li><a href="#bc-ipnav-8/index.html">関連コンテンツ</a></li></ul></div>
+  </section>
+
+
+  </div>
+
+          </aside>
+              
+                  <section class="col-sm-9">
+
+                                      <div class="gt-block highlighted" data-gt-block="">  <div class="gt-block region region-highlighted" data-gt-block="">
+    <div data-drupal-messages-fallback="" class="hidden" data-gt-block=""></div>
+
+  </div>
+</div>
+                  
+                
+                
+                
+                          <a class="nturl" id="main-content"></a>
+            <div class="gt-block region region-content" data-gt-block="">
+        <h1 class="page-header"><span>パフォーマンスの低い動画を特定して削除する</span>
+</h1>
+
+  
+<div class="gt-block node node--type-support-doc node--view-mode-full bcdocs-four-rows clearfix" data-gt-block="">
+
+  
+
+  <div class="group-first-row" data-gt-block="">
+      </div>
+
+  <div class="gt-block group-second-row" data-gt-block="">
+  
+  <div class="gt-block field field--name-field-products field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">製品（複数可）</div>
+          <div class="gt-block field__items taxonomy__tags" data-gt-block="">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item" data-gt-block="">Video Cloud</div>
+              </div>
+      </div>
+
+  <div class="gt-block field field--name-field-roles field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">役割</div>
+          <div class="gt-block field__items taxonomy__tags" data-gt-block="">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item" data-gt-block="">Studioユーザー</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="gt-block group-third-row taxonomy__tags" data-gt-block="">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="gt-block field field--name-field-tasks field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">タスク</div>
+          <div class="gt-block field--items" data-gt-block="">
+              <div class="field--item" data-gt-block="">動画を管理する</div>
+              </div>
+      </div>
+
+  <div class="gt-block field field--name-field-topics field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">トピック）</div>
+          <div class="gt-block field--items" data-gt-block="">
+              <div class="field--item" data-gt-block="">アナリティクス</div>
+              </div>
+      </div>
+
+  <div class="gt-block field field--name-field-type field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">種類</div>
+              <div class="field--item" data-gt-block="">サポート文書</div>
+          </div>
+
+</div>
+
+  <div class="gt-block group-fourth-row" data-gt-block="">
+  
+            <div class="gt-block field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item" data-gt-block=""><p data-gt-block="">このトピックでは、Studioとスプレッドシートを使用してパフォーマンスの低いビデオを特定して削除する方法を学習します。</p><article class="bcls-article">
+<section class="bcls-section">
+<h2 id="Introduction" data-gt-block="">概要</h2>
+
+<div class="training-video-player-ipx" data-experience="5a73630f7afd7a00101bc1b5" data-video-ids="6021341123001" data-gt-block="" style="overflow: auto;"> <iframe allowfullscreen="" scrolling="no" style="width: 100%; border: none; transition: height 0.1s linear; display: block; height: 367.5px;"></iframe></div>
+<script src="https://players.brightcove.net/20318290001/experience_5a73630f7afd7a00101bc1b5/live.js">
+  </script>
+
+<p data-gt-block="">さまざまな理由から、ライブラリには表示されていないビデオがないことがおそらく最善の方法です。また、将来的には表示されなくなることも予想されます。 この文書では、これらの動画を特定してライブラリから削除する方法を説明します。 次の箇条書きは、プロセスの概要を示しています。 その後、詳細な手順が続きます。</p>
+
+<ul>
+	<li class="language-editable" data-gt-block="">Mediaモジュールを使用して、ライブラリ内のすべてのビデオに関する一連の情報を含むファイルをエクスポートします。</li>
+	<li class="language-editable" data-gt-block="">Analyticsモジュールを使用して、動画ID、タイトル、動画の表示回数、動画の再生回数を含むカスタムレポートを作成します。 レポートはカンマ区切り値（CSV）形式でエクスポートされ、ゼロではないビデオビューまたはインプレッション、あるいはその両方を含むビデオのみが一覧表示されます。</li>
+	<li class="language-editable" data-gt-block="">両方のCSVファイルをGoogleドキュメントのスプレッドシートにインポートします。</li>
+	<li class="language-editable" data-gt-block="">特定の行に詳細が表示されている動画に動画ビューがあるかどうかを判断する列を[すべての動画]スプレッドシートに追加します。 これは、オールビデオスプレッドシートのIDのAnalyticsレポートスプレッドシートのエントリと一致するエントリがあるかどうかを確認することで行われます。</li>
+	<li class="language-editable" data-gt-block="">再生されていない動画のIDをGoogle Docにコピーし、一括削除プロセスで使用する形式を操作します。</li>
+</ul>
+
+<aside class="bcls-aside bcls-aside--warning language-editable" data-gt-block="">動画を削除することは抜本的な操作であり、元に戻すことはできません。 安全のため、削除する前に必ずビデオのローカルコピーを持っていることを確認してください。</aside>
+</section>
+
+<section class="bcls-section">
+<h2 id="Export_all_videos_data" data-gt-block="">すべての動画データをエクスポートする</h2>
+
+<p data-gt-block="" class="gt-block gt-block">から <strong>언론방송</strong> モジュールあなたはあなたのライブラリーの中のすべてのメディアに関する報告を得ることができます。 これは後でスプレッドシートで使用されます。</p>
+
+<ol class="bcls-tasklist">
+	<li class="gt-block language-editable" data-gt-block="">スタジオに入る <strong>언론방송</strong> モジュールを開きます。</li>
+	<li class="gt-block language-editable" data-gt-block="">クリックします。 <strong>輸出</strong> ページ上部のボタンをクリックします。</li>
+	<li class="gt-block language-editable" data-gt-block="">開いたダイアログで、必ず <strong>リスト内のすべての動画</strong> 選択されています。</li>
+	<li class="gt-block language-editable" data-gt-block="">ストリーミングを停止する場合は上部の <strong>データのエクスポート</strong> ボタン。 このレポートは最大15,000本の動画の情報をエクスポートします。</li>
+	<li class="gt-block language-editable" data-gt-block="">レポートの作成が終わったら、 <strong>ダウンロードファイル</strong> ボタン。</li>
+	<li class="language-editable" data-gt-block="">ファイル名はアカウントIDに対応し、ファイルはCSV（カンマ区切り値）形式になっています。</li>
+	<li class="gt-block language-editable" data-gt-block="">ナビゲーションヘッダーの <strong>キャンセル</strong> ダイアログを閉じます。</li>
+</ol>
+</section>
+
+<section class="bcls-section">
+<h2 id="Create_custom_report" data-gt-block="">カスタムAnalyticsレポートを作成する</h2>
+
+<p data-gt-block="">ビュー付きの動画を含むAnalyticsレポートを作成するには、次の手順を実行します。</p>
+
+<ol class="bcls-tasklist">
+	<li class="gt-block language-editable" data-gt-block="">スタジオで、 <strong>ANALYTICS</strong> モジュールを開きます。</li>
+	<li class="gt-block language-editable" data-gt-block="">左側のメニューで、をクリックします <strong>カスタム</strong>.</li>
+	<li class="gt-block language-editable" data-gt-block="">使用 <strong>アカウントを含める</strong> レポートの目的のアカウントを選択するためのドロップダウン</li>
+	<li class="gt-block language-editable" data-gt-block="">選択する <strong>レポートの種類</strong> ようにするには <code class="notranslate language-editable">One-time</code>.</li>
+	<li class="gt-block language-editable" data-gt-block="">ドロップダウンリストから <strong>日付範囲</strong> カレンダーを使用したレポート用
+	<figure class="bcls-figure"><img class="bcls-image" alt="期間" src="http://learning-services-media.brightcove.com/doc-assets/player-development/getting-started/low-performing/date-range.png"></figure>
+	</li>
+	<li class="gt-block language-editable" data-gt-block="">　 <strong>データグループ</strong> 選ぶ <code class="notranslate language-editable">Video</code>.</li>
+	<li class="gt-block language-editable" data-gt-block="">　 <strong>データフィールド</strong> 3つのフィールドを選ぶ <code class="notranslate language-editable">Video Name</code>,  <code class="notranslate language-editable">Video Views</code> や <code class="notranslate language-editable">Video Impressions</code>:
+	
+	<figure class="bcls-figure"><img class="bcls-image" alt="データフィールド" src="http://learning-services-media.brightcove.com/doc-assets/player-development/getting-started/low-performing/data-fields.png"></figure>
+	</li>
+	<li class="gt-block language-editable" data-gt-block="">フィールドの下にはレポートのプレビューが表示されます。 ビデオIDは自動的にレポートに含まれます。
+	<figure class="bcls-figure"><img class="bcls-image" alt="レポートプレビュー" src="http://learning-services-media.brightcove.com/doc-assets/player-development/getting-started/low-performing/report-preview.png"></figure>
+	</li>
+	<li class="gt-block language-editable" data-gt-block="">を供給 <strong>レポート名</strong> またはデフォルトを受け入れます。</li>
+	<li class="gt-block language-editable" data-gt-block="">選択する <strong>フォーマット</strong> ようにするには <code class="notranslate language-editable">CSV</code>.</li>
+	<li class="language-editable" data-gt-block="">レポートの準備ができたら電子メールを受け取るかどうかを選択します。 アカウントに非常に多数のビデオが含まれていない限り、ほとんどの場合はレポートを待つことになります。</li>
+	<li class="gt-block language-editable" data-gt-block="">ストリーミングを停止する場合は上部の <strong>リクエストレポート</strong> ボタン。</li>
+	<li class="language-editable" data-gt-block="">しばらくすると、レポートがダウンロードされます。</li>
+</ol>
+</section>
+
+<section class="bcls-section">
+<h2 id="Import_the_all_videos_file" data-gt-block="">オールビデオファイルをインポートする</h2>
+
+<aside class="bcls-aside bcls-aside--information language-editable" data-gt-block="">この文書ではGoogle Docsを使います。機能はすべて無料で利用できるからです。 あなたがExcelユーザーであれば、それを使ってこのドキュメントに示されているすべてのスプレッドシートタスクを実行することができます。</aside>
+
+<p data-gt-block="">ドキュメントのこのセクションでは、Mediaモジュールから作成されたエクスポート済みのすべてのビデオレポートを開きます。</p>
+
+<ol class="bcls-tasklist">
+	<li class="language-editable" data-gt-block="">Googleドキュメントの空白のスプレッドシートを開きます。</li>
+	<li class="gt-block language-editable" data-gt-block="">次の項目を選択します： <strong>ファイル&gt;インポート&gt;アップロード</strong>次に、すべての動画CSVファイル（アカウントIDに基づいて名前が付けられています）を適切な場所にドラッグするか、参照して選択します。</li>
+	<li class="gt-block language-editable" data-gt-block="">上の <strong>インポートファイル</strong> ダイアログで、デフォルトを受け入れてクリック <strong>インポート日</strong>:
+	
+	<figure class="bcls-figure"><img class="bcls-image" alt="csvをインポート" src="http://learning-services-media.brightcove.com/doc-assets/player-development/getting-started/low-performing/import-csv.png"></figure>
+	</li>
+	<li class="gt-block language-editable" data-gt-block="">インポートしたデータは次のようになります。
+	<figure class="bcls-figure"><img class="bcls-image" alt="サンプルすべての動画をインポート" src="http://learning-services-media.brightcove.com/doc-assets/player-development/getting-started/low-performing/sample-import-all-videos.png"></figure>
+	</li>
+</ol>
+</section>
+
+<section class="bcls-section">
+<h2 id="Import_Analytics_report" data-gt-block="">Analyticsレポートのインポート</h2>
+
+<p data-gt-block="">作成したAnalyticsレポートを別のシート（同じスプレッドシートグループ内）にインポートします。</p>
+
+<ol class="bcls-tasklist">
+	<li class="gt-block language-editable" data-gt-block="">次の項目を選択します： <strong>ファイル&gt;インポート&gt;アップロード</strong>次に、AnalyticsレポートのCSVファイルを適切な場所にドラッグするか、参照して選択します。</li>
+	<li class="gt-block language-editable" data-gt-block="">上の <strong>インポートファイル</strong> ダイアログを変更してください。 <strong>インポート場所</strong> 〜へ <strong>新しいシートを挿入</strong>。 他のデフォルトを受け入れてクリック <strong>インポート日</strong>:
+	
+	<figure class="bcls-figure"><img class="bcls-image" alt="インポート分析" src="http://learning-services-media.brightcove.com/doc-assets/player-development/getting-started/low-performing/import-analytics.png"></figure>
+	</li>
+	<li class="gt-block language-editable" data-gt-block="">インポートしたデータは次のようになります。
+	<figure class="bcls-figure"><img class="bcls-image" alt="サンプルインポート" src="http://learning-services-media.brightcove.com/doc-assets/player-development/getting-started/low-performing/sample-import.png"></figure>
+	</li>
+	<li class="gt-block language-editable" data-gt-block="">スプレッドシートの下部に、2つのシートがリストされているのがわかります。
+	<figure class="bcls-figure"><img class="bcls-image" alt="2枚" src="http://learning-services-media.brightcove.com/doc-assets/player-development/getting-started/low-performing/two-sheets.png"></figure>
+	</li>
+</ol>
+</section>
+
+<section class="bcls-section">
+<h2 id="Create_a_named_range" data-gt-block="">名前付き範囲を作成する</h2>
+
+<p data-gt-block="">動画に再生回数があるかどうかを判断する列を追加します。 そのためには、AnalyticsレポートのID（ビューを含む動画）を参照する必要があります。 処理を簡単にするために、範囲を作成して名前を付けます。</p>
+
+<ol class="bcls-tasklist">
+	<li class="gt-block language-editable" data-gt-block="">Analyticsレポートシートにある間は、大文字をクリックしてください。 <strong>A</strong> 最初の列の上部にあります。</li>
+	<li class="gt-block language-editable" data-gt-block="">列のどこかを右クリックして選択 <strong>名前付き範囲を定義...</strong></li>
+	<li class="gt-block language-editable" data-gt-block="">スプレッドシートの右側にパネルが開きます。 のデフォルト名を変更 <code class="notranslate language-editable">NamedRange1</code> 〜へ <code class="notranslate language-editable">IDsWithViews</code>.</li>
+	<li class="gt-block language-editable" data-gt-block="">Enterキーを押すと、定義された範囲が表示されます。
+	<figure class="bcls-figure"><img class="bcls-image" alt="名前付き範囲" src="http://learning-services-media.brightcove.com/doc-assets/player-development/getting-started/low-performing/named-range.png"></figure>
+	</li>
+</ol>
+</section>
+
+<section class="bcls-section">
+<h2 id="Add_column_for_no_views_determination" data-gt-block="">ビューを決定しないための列を追加</h2>
+
+<p data-gt-block="" class="gt-block">これで列を追加して <code class="notranslate">VLOOKUP()</code> 特定のビデオに何らかのビューがあるかどうかを報告する機能。</p>
+
+<ol class="bcls-tasklist">
+	<li class="language-editable" data-gt-block="">自分のアカウントIDで名前が付けられているすべての動画シートに戻ります。</li>
+	<li class="gt-block language-editable" data-gt-block="">列をクリック <strong>B</strong>.</li>
+	<li class="gt-block language-editable" data-gt-block="">スプレッドシートのメニューから、 <strong>挿入&gt;左の列</strong>。 これにより、新しい空の列Bが作成されます。</li>
+	<li class="gt-block language-editable" data-gt-block="">セルをクリック <strong>B2</strong>.</li>
+	<li class="gt-block language-editable" data-gt-block="">入力します <code class="notranslate language-editable">=VLOOKUP(</code>。 これで関数の使用が始まります。</li>
+	<li class="gt-block language-editable" data-gt-block="">左括弧の直後にある <strong>A2</strong> 細胞。 そのセル位置が挿入されます。 これは関数が何を見るのかを定義します。</li>
+	<li class="gt-block language-editable" data-gt-block="">セルの後にコンマを入力してから、 <code class="notranslate language-editable">id</code>。 名前付き範囲を選択できることがわかり、それを選択します。
+	<figure class="bcls-figure"><img class="bcls-image" alt="名前付き範囲を選択" src="http://learning-services-media.brightcove.com/doc-assets/player-development/getting-started/low-performing/select-named-range.png"></figure>
+	これは、関数がA2内の値を探す場所を定義します。</li>
+	<li class="gt-block language-editable" data-gt-block="">名前付き範囲の後にコンマを入力してから、番号を入力します <code class="notranslate language-editable">1</code>。 これは返されるカラムインデックスを定義します。 あなたにとって、これはA2のIDが名前付き範囲で見つかった場合、そのIDがセルに配置されることを意味します。</li>
+	<li class="gt-block language-editable" data-gt-block="">番号1の後にコンマを入力してから、次のように入力します。 <code class="notranslate language-editable">FALSE</code>次に閉じ括弧を入力します。 このオプションは <code class="notranslate language-editable">VLOOKUP()</code> 列がソートされていて正確な値が見つからない場合は、最も近い値が返されます。 これを起こしたくないので、 <code class="notranslate language-editable">FALSE</code> 入力する正しい値です。</li>
+	<li class="gt-block language-editable" data-gt-block="">ここに示されているように、機能が正しく定義されていることを確認して、を押します。 <strong>入力します</strong>.
+	
+	<figure class="bcls-figure"><img class="bcls-image" alt="完全なvlookup" src="http://learning-services-media.brightcove.com/doc-assets/player-development/getting-started/low-performing/complete-vlookup.png"></figure>
+	セルB2はA2からのIDを表示するか、または <code class="notranslate language-editable">#N/A</code>.</li>
+	<li class="language-editable" data-gt-block="">セルB2をもう一度クリックして、強調表示されていることを確認します。</li>
+	<li class="gt-block language-editable" data-gt-block="">スプレッドシート全体に数式をコピーするには、強調表示されているセルの右下にある青い四角形（現在はB2）をダブルクリックします。
+	<figure class="bcls-figure"><img class="bcls-image" alt="青い四角" src="http://learning-services-media.brightcove.com/doc-assets/player-development/getting-started/low-performing/blue-square.png"></figure>
+	列Bでは、列AからIDが繰り返されているか、または <code class="notranslate language-editable">#N/A</code>。 IDが表示されている場合は、そのIDで表されている動画がAnalyticsレポートに見つかりました。 言い換えれば、それはビデオビューを持っています。 そしてあなたが推測することができるように、あなたが見れば <code class="notranslate language-editable">#N/A</code> 列AのIDで表される動画には再生回数がありません。</li>
+</ol>
+</section>
+
+<section class="bcls-section">
+<h2 id="Determine_low-performing_videos_and_delete_them" data-gt-block="">再生回数のない動画を削除する</h2>
+
+<p data-gt-block="">スプレッドシートを並べ替えて、再生回数のないすべての動画IDをグループ化します。 その後、それらのIDとフォーマットをコピーして、一括ビデオ削除を行います。</p>
+
+<ol class="bcls-tasklist">
+	<li class="gt-block language-editable" data-gt-block="">列Bを選択して、スプレッドシートのメニューから選択します。 <strong>データ&gt;シートを列B、Zでソート - &gt; A</strong>。 これにより、スプレッドシートの上部に表示されていないすべての動画がグループ化されます。 <code class="notranslate language-editable">#N/A</code> 細胞内で</li>
+	<li class="gt-block language-editable" data-gt-block="">続行する方法について2つの選択肢があります。 彼らです：
+	<ul>
+		<li class="gt-block language-editable" data-gt-block="">あなたが削除するビデオの数が少ない場合は、単にスタジオに入って手動で削除することができます <strong>MEDIA</strong> モジュールを開きます。</li>
+		<li class="language-editable" data-gt-block="">削除する動画が大量にある場合は、動画削除の負担を軽減するために、引き続き次の手順を実行することをお勧めします。</li>
+	</ul>
+	</li>
+	<li class="gt-block language-editable" data-gt-block="">削除したい動画の動画IDのみをハイライトしてコピーします。 動画がすべて削除される準備が整ったことを意味するため、IDや名前がない動画は含めないでください。
+	<figure class="bcls-figure"><img class="bcls-image" alt="コピーID" src="http://learning-services-media.brightcove.com/doc-assets/player-development/getting-started/low-performing/copy-ids.png"></figure>
+	</li>
+	<li class="language-editable" data-gt-block="">Google Doc文書を開きます。</li>
+	<li class="gt-block language-editable" data-gt-block="">ドキュメントメニューから、 <strong>編集&gt;フォーマットせずに貼り付ける</strong>。 列に動画IDが表示されるだけです。 ビデオを一括消去するには、それらのフォーマットである必要があります。 <strong>id：12345678 id：23456789 ...</strong>。 手動でリストを編集するのではなく、これらの手順を続けます。</li>
+	<li class="gt-block language-editable" data-gt-block="">次の項目を選択します： <strong>編集&gt;検索と置換...</strong></li>
+	<li class="gt-block language-editable" data-gt-block="">　 <strong>見つけます</strong> 値を入力 <code class="notranslate language-editable">\n</code>。 これはキャリッジリターンを表します。</li>
+	<li class="gt-block language-editable" data-gt-block="">　 <strong>と交換</strong> 値の後にスペースを入力してください <code class="notranslate language-editable">id:</code>。 の前のスペース <code class="notranslate language-editable">id:</code> 正しい書式設定には欠かせません。</li>
+	<li class="gt-block language-editable" data-gt-block="">チェック <strong>正規表現を使ったマッチング</strong> チェックボックスをオンにします。</li>
+	<li class="gt-block language-editable" data-gt-block="">ストリーミングを停止する場合は上部の <strong>すべて交換</strong> ボタンをクリックしてダイアログを閉じます。</li>
+	<li class="gt-block language-editable" data-gt-block="">動画IDのリストが次のようにフォーマットされていることを確認してください。
+	<pre class="line-numbers notranslate language-html">  <code class=" notranslate language-html">1754261702001 id:4082515861001 id:5185914204001 id:5324448023001
+  id:1754261492001 id:2180442442001 id:2535301903001 id:4713495235001
+  id:4874718207001 id:4997278349001 id:5686632029001 id:5998203290001
+  id:5998205402001 id:5998658922001 id:5998662608001 id:<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+	</li>
+	<li class="gt-block language-editable" data-gt-block="">フォーマットを完了するには、次のものを配置する必要があります。 <code class="notranslate language-editable">id:</code> 最初のビデオIDの前に。 その後、 <code class="notranslate language-editable">id:</code> 一致する実際のビデオIDがないリストの最後にあります。</li>
+	<li class="gt-block language-editable" data-gt-block="">正しくフォーマットされたビデオIDのリストをコピーします。
+	<pre class="line-numbers notranslate language-html">  <code class=" notranslate language-html">id:1754261702001 id:4082515861001 id:5185914204001 id:5324448023001
+  id:1754261492001 id:2180442442001 id:2535301903001 id:4713495235001
+  id:4874718207001 id:4997278349001 id:5686632029001 id:5998203290001
+  id:5998205402001 id:5998658922001 id:5998662608001<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+	</li>
+	<li class="gt-block language-editable" data-gt-block="">オープンスタジオ <strong>MEDIA</strong> モジュールを開きます。</li>
+	<li class="gt-block language-editable" data-gt-block="">検索ボックスに動画IDのリストを貼り付けます。
+	<figure class="bcls-figure"><img class="bcls-image" alt="メディアモジュール検索" src="http://learning-services-media.brightcove.com/doc-assets/player-development/getting-started/low-performing/media-module-search.png"></figure>
+
+	<aside class="bcls-aside bcls-aside--warning language-editable" data-gt-block="">削除するビデオの数が非常に多い場合は、一度にすべてのIDを取得するのではなく、複数のIDを取得することをお勧めします。 テストでは、100ビデオは一度に正常に機能しました。</aside>
+	</li>
+	<li class="gt-block language-editable" data-gt-block="">ニュース <strong>入力します</strong>.</li>
+	<li class="language-editable" data-gt-block="">これまでに選択したIDと一致するすべての動画が一覧表示されます。 削除する動画を個別に選択するか、[すべて選択]ボックスをオンにして動画を削除することができます。</li>
+</ol>
+</section>
+</article>
+</div>
+      
+</div>
+
+</div>
+
+
+<section class="views-element-container block block-views block-views-blockrelated-content-by-field-block-1 clearfix" id="block-views-block-related-content-by-field-block-1">
+  
+    
+
+      <div class="gt-block form-group" data-gt-block=""><div class="gt-block view view-related-content-by-field view-id-related_content_by_field view-display-id-block_1 js-view-dom-id-5e2bd201d831a770cd585f2f2f7bb8f29bb2fbd588cf98a12f62b9884b16aaa9" data-gt-block="">
+  
+    
+      <div class="gt-block view-header" data-gt-block="">
+      <h2 data-gt-block="" id="bc-ipnav-8">関連コンテンツ</h2>
+    </div>
+      
+      <div class="gt-block view-content" data-gt-block="">
+      <div class="gt-block item-list" data-gt-block="">
+  
+  <ul>
+
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/creating-custom-analytics-reports/index.html" hreflang="en">カスタム分析レポートの作成</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/analytics-report-reference/index.html" hreflang="en">Analyticsレポートリファレンス</a></span></span></div></li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </section>
+
+
+  </div>
+
+              </section>
+
+                </div>
+  </div>
+
+      <footer class="footer container" role="contentinfo">
+              <div class="gt-block row" data-gt-block="">
+            <div class="gt-block region region-footer-top-left col-md-9" style="margin-bottom: 1em;" data-gt-block="">
+    <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">Brightcove サポート</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="https://status.brightcove.com">システムステータス</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/contact-support/index.html" data-drupal-link-system-path="node/18632">サポート - Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="../ja/en/contact/create/index.html">サポート - Zencoder</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-documentation-menu" id="block-documentation" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">オンラインマニュアル</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/index.html" data-drupal-link-system-path="<front>">ホーム</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">トレーニング（講習会）</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/online-training-courses/index.html" data-drupal-link-system-path="node/18286">オンラインコース</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/register-training/index.html" data-drupal-link-system-path="node/18270">コー​​スに登録</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-brightcove-menu" id="block-brightcove" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">Brightcove</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="https://www.brightcove.com">Brightcove.COM</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+            <div class="gt-block region region-footer-top-right col-md-3" data-gt-block="">
+    <section id="block-footerlegaltext" class="block block-block-content block-block-content4507d09c-a528-4947-b91d-36ec6671822b clearfix">
+  
+    
+
+      
+            <div class="gt-block field field--name-field-body field--type-text-long field--label-hidden field--item" data-gt-block=""><p data-gt-block="">Brightcove Inc.（ナスダック：BCOV）は、接続されたデバイス間でビデオを配信および収益化するための強力なクラウドソリューションを提供する世界有数のプロバイダです。</p>
+</div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+                    <div class="gt-block row" data-gt-block="">
+            <div class="gt-block region region-footer-bottom-left col-md-8" data-gt-block="">
+    <section id="block-footercopyrightlinewithlinks" class="block block-block-content block-block-content3a164ef9-02d8-42c4-bcc6-3ab435f670b3 clearfix">
+  
+    
+
+      <div class="gt-block block-content block-content--type-copyright-block-with-links block-content--view-mode-full ds-1col clearfix" data-gt-block="">
+
+  
+
+  
+            <div class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" data-gt-block="">2020</div>
+      
+            <div class="field field--name-field-copyright-text field--type-string-long field--label-hidden field--item" data-gt-block="">Brightcove Inc.すべての権利を保有します。</div>
+      
+      <div class="gt-block field field--name-field-legal-links field--type-link field--label-hidden field--items" data-gt-block="">
+              <div class="gt-block field--item" data-gt-block=""><a class="nturl" href="https://www.brightcove.com/en/privacy">プライバシーポリシー</a></div>
+              <div class="gt-block field--item" data-gt-block=""><a class="nturl" href="https://www.brightcove.com/en/terms-and-conditions">利用規約</a></div>
+          </div>
+  
+
+</div>
+
+
+  </section>
+
+
+  </div>
+
+            <div class="gt-block region region-footer-bottom-right col-md-4" data-gt-block="">
+    <section id="block-footersocialblock" class="block block-block-content block-block-content4fc23afd-8d37-420e-ab28-73b2ba24e836 clearfix">
+  
+    
+
+      
+      <div class="gt-block field field--name-field-social-icon field--type-entity-reference-revisions field--label-hidden field--items" data-gt-block="">
+              <div class="gt-block field--item" data-gt-block="">
+
+<a class="icon" icon__social--link="" href="https://www.linkedin.com/company/brightcove" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--linkedin">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--linkedin"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="gt-block field--item" data-gt-block="">
+
+<a class="icon" icon__social--link="" href="https://twitter.com/brightcove" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--twitter">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--twitter"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="gt-block field--item" data-gt-block="">
+
+<a class="icon" icon__social--link="" href="https://www.facebook.com/Brightcove" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--facebook">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--facebook"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="gt-block field--item" data-gt-block="" style="display:none;color:white">
+
+<a class="icon" icon__social--link="" href="https://plus.google.com/100830370440271567091" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--google-plus">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--google-plus"></use>
+  </svg>
+</a>
+
+</div>
+          </div>
+  
+
+
+  </section>
+
+<section id="block-scripts" class="block block-block-content block-block-content42e4bd63-d879-470d-a6de-d5e4529a01be clearfix">
+  
+    
+
+      
+            <div class="gt-block field field--name-field-body field--type-text-long field--label-hidden field--item" data-gt-block=""><script src="https://learning-services-media.brightcove.com/doc-assets/js/gtrans.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/js/support-feedback.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-support.js"></script>
+<script src="https://learning-services-media.brightcove.com/doc-assets/js/hide-google-plus.js"></script></div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+          </footer>
+  
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/18752","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click"},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"user":{"uid":0,"permissionsHash":"3b7fdb4927baca3ee2939edeb777485b3e2c2d36cf8c80e0d8f49c6dc5e2eeca"}}</script>
+<script src="https://support.brightcove.com/sites/default/files/js/js_8fmTAXGyuAUNVu11XoXJaeM8QBDFuAvX7ADwOnigrhc.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+<script src="https://support.brightcove.com/sites/default/files/js/js_L8Eb1bSFk-jGvnjMNZB7VvDJt-7nSbeXfaBlCzWjDbc.js"></script><div id="surveyDiv" style="visibility:hidden"><iframe id="CSAT" src="https://learning-services-media.brightcove.com/doc-assets/general/surveylink.html" style="display:none;"></iframe></div>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e78a80aa93","applicationID":"129613202","transactionName":"YwBUZkcFVktUWhJQX1pKd1FBDVdWGkkHXlVrBldRXQE=","queueTime":0,"applicationTime":51,"atts":"T0dXEA8fRUU=","errorBeacon":"bam.nr-data.net","agent":""}</script><script data-cfasync="false" src="https://tdns5.gtranslate.net/tdn-bin/queue.js"></script><div id="feedbackify"><div id="fby-screen" class="fby-screen"><div id="fby-mask" class="fby-mask"></div><div id="fby-tab-14941" class="fby-tab fby-tab-r"><a href="" style="background-color:rgb(5, 155, 179)!important" aria-label="Feedback"></a></div></div></div><!-- Yandex.Metrika counter for GTranslate --><script data-cfasync="false">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter36618640 = new Ya.Metrika({ id:36618640, clickmap:false, trackLinks:true, accurateTrackBounce:true, ut:"noindex" }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", 

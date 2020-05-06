@@ -1,0 +1,707 @@
+<html lang="ja" dir="ltr" class=" js"><head><style type="text/css" id="bc-style-vjs" data-vjs-version="7.7.6">@charset "UTF-8";.video-js .vjs-big-play-button .vjs-icon-placeholder:before,.video-js .vjs-modal-dialog,.vjs-button>.vjs-icon-placeholder:before,.vjs-modal-dialog .vjs-modal-dialog-content{position:absolute;top:0;left:0;width:100%;height:100%}.video-js .vjs-big-play-button .vjs-icon-placeholder:before,.vjs-button>.vjs-icon-placeholder:before{text-align:center}@font-face{font-family:VideoJS;src:url(data:application/font-woff;charset=utf-8;base64,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) format("woff");font-weight:400;font-style:normal}.video-js .vjs-big-play-button .vjs-icon-placeholder:before,.video-js .vjs-play-control .vjs-icon-placeholder,.vjs-icon-play{font-family:VideoJS;font-weight:400;font-style:normal}.video-js .vjs-big-play-button .vjs-icon-placeholder:before,.video-js .vjs-play-control .vjs-icon-placeholder:before,.vjs-icon-play:before{content:"\f101"}.vjs-icon-play-circle{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-play-circle:before{content:"\f102"}.video-js .vjs-play-control.vjs-playing .vjs-icon-placeholder,.vjs-icon-pause{font-family:VideoJS;font-weight:400;font-style:normal}.video-js .vjs-play-control.vjs-playing .vjs-icon-placeholder:before,.vjs-icon-pause:before{content:"\f103"}.video-js .vjs-mute-control.vjs-vol-0 .vjs-icon-placeholder,.vjs-icon-volume-mute{font-family:VideoJS;font-weight:400;font-style:normal}.video-js .vjs-mute-control.vjs-vol-0 .vjs-icon-placeholder:before,.vjs-icon-volume-mute:before{content:"\f104"}.video-js .vjs-mute-control.vjs-vol-1 .vjs-icon-placeholder,.vjs-icon-volume-low{font-family:VideoJS;font-weight:400;font-style:normal}.video-js .vjs-mute-control.vjs-vol-1 .vjs-icon-placeholder:before,.vjs-icon-volume-low:before{content:"\f105"}.video-js .vjs-mute-control.vjs-vol-2 .vjs-icon-placeholder,.vjs-icon-volume-mid{font-family:VideoJS;font-weight:400;font-style:normal}.video-js .vjs-mute-control.vjs-vol-2 .vjs-icon-placeholder:before,.vjs-icon-volume-mid:before{content:"\f106"}.video-js .vjs-mute-control .vjs-icon-placeholder,.vjs-icon-volume-high{font-family:VideoJS;font-weight:400;font-style:normal}.video-js .vjs-mute-control .vjs-icon-placeholder:before,.vjs-icon-volume-high:before{content:"\f107"}.video-js .vjs-fullscreen-control .vjs-icon-placeholder,.vjs-icon-fullscreen-enter{font-family:VideoJS;font-weight:400;font-style:normal}.video-js .vjs-fullscreen-control .vjs-icon-placeholder:before,.vjs-icon-fullscreen-enter:before{content:"\f108"}.video-js.vjs-fullscreen .vjs-fullscreen-control .vjs-icon-placeholder,.vjs-icon-fullscreen-exit{font-family:VideoJS;font-weight:400;font-style:normal}.video-js.vjs-fullscreen .vjs-fullscreen-control .vjs-icon-placeholder:before,.vjs-icon-fullscreen-exit:before{content:"\f109"}.vjs-icon-square{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-square:before{content:"\f10a"}.vjs-icon-spinner{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-spinner:before{content:"\f10b"}.video-js .vjs-subs-caps-button .vjs-icon-placeholder,.video-js .vjs-subtitles-button .vjs-icon-placeholder,.video-js.video-js:lang(en-AU) .vjs-subs-caps-button .vjs-icon-placeholder,.video-js.video-js:lang(en-GB) .vjs-subs-caps-button .vjs-icon-placeholder,.video-js.video-js:lang(en-IE) .vjs-subs-caps-button .vjs-icon-placeholder,.video-js.video-js:lang(en-NZ) .vjs-subs-caps-button .vjs-icon-placeholder,.vjs-icon-subtitles{font-family:VideoJS;font-weight:400;font-style:normal}.video-js .vjs-subs-caps-button .vjs-icon-placeholder:before,.video-js .vjs-subtitles-button .vjs-icon-placeholder:before,.video-js.video-js:lang(en-AU) .vjs-subs-caps-button .vjs-icon-placeholder:before,.video-js.video-js:lang(en-GB) .vjs-subs-caps-button .vjs-icon-placeholder:before,.video-js.video-js:lang(en-IE) .vjs-subs-caps-button .vjs-icon-placeholder:before,.video-js.video-js:lang(en-NZ) .vjs-subs-caps-button .vjs-icon-placeholder:before,.vjs-icon-subtitles:before{content:"\f10c"}.video-js .vjs-captions-button .vjs-icon-placeholder,.video-js:lang(en) .vjs-subs-caps-button .vjs-icon-placeholder,.video-js:lang(fr-CA) .vjs-subs-caps-button .vjs-icon-placeholder,.vjs-icon-captions{font-family:VideoJS;font-weight:400;font-style:normal}.video-js .vjs-captions-button .vjs-icon-placeholder:before,.video-js:lang(en) .vjs-subs-caps-button .vjs-icon-placeholder:before,.video-js:lang(fr-CA) .vjs-subs-caps-button .vjs-icon-placeholder:before,.vjs-icon-captions:before{content:"\f10d"}.video-js .vjs-chapters-button .vjs-icon-placeholder,.vjs-icon-chapters{font-family:VideoJS;font-weight:400;font-style:normal}.video-js .vjs-chapters-button .vjs-icon-placeholder:before,.vjs-icon-chapters:before{content:"\f10e"}.vjs-icon-share{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-share:before{content:"\f10f"}.vjs-icon-cog{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-cog:before{content:"\f110"}.video-js .vjs-play-progress,.video-js .vjs-volume-level,.vjs-icon-circle,.vjs-seek-to-live-control .vjs-icon-placeholder{font-family:VideoJS;font-weight:400;font-style:normal}.video-js .vjs-play-progress:before,.video-js .vjs-volume-level:before,.vjs-icon-circle:before,.vjs-seek-to-live-control .vjs-icon-placeholder:before{content:"\f111"}.vjs-icon-circle-outline{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-circle-outline:before{content:"\f112"}.vjs-icon-circle-inner-circle{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-circle-inner-circle:before{content:"\f113"}.vjs-icon-hd{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-hd:before{content:"\f114"}.video-js .vjs-control.vjs-close-button .vjs-icon-placeholder,.vjs-icon-cancel{font-family:VideoJS;font-weight:400;font-style:normal}.video-js .vjs-control.vjs-close-button .vjs-icon-placeholder:before,.vjs-icon-cancel:before{content:"\f115"}.video-js .vjs-play-control.vjs-ended .vjs-icon-placeholder,.vjs-icon-replay{font-family:VideoJS;font-weight:400;font-style:normal}.video-js .vjs-play-control.vjs-ended .vjs-icon-placeholder:before,.vjs-icon-replay:before{content:"\f116"}.vjs-icon-facebook{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-facebook:before{content:"\f117"}.vjs-icon-gplus{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-gplus:before{content:"\f118"}.vjs-icon-linkedin{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-linkedin:before{content:"\f119"}.vjs-icon-twitter{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-twitter:before{content:"\f11a"}.vjs-icon-tumblr{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-tumblr:before{content:"\f11b"}.vjs-icon-pinterest{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-pinterest:before{content:"\f11c"}.video-js .vjs-descriptions-button .vjs-icon-placeholder,.vjs-icon-audio-description{font-family:VideoJS;font-weight:400;font-style:normal}.video-js .vjs-descriptions-button .vjs-icon-placeholder:before,.vjs-icon-audio-description:before{content:"\f11d"}.video-js .vjs-audio-button .vjs-icon-placeholder,.vjs-icon-audio{font-family:VideoJS;font-weight:400;font-style:normal}.video-js .vjs-audio-button .vjs-icon-placeholder:before,.vjs-icon-audio:before{content:"\f11e"}.vjs-icon-next-item{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-next-item:before{content:"\f11f"}.vjs-icon-previous-item{font-family:VideoJS;font-weight:400;font-style:normal}.vjs-icon-previous-item:before{content:"\f120"}.video-js .vjs-picture-in-picture-control .vjs-icon-placeholder,.vjs-icon-picture-in-picture-enter{font-family:VideoJS;font-weight:400;font-style:normal}.video-js .vjs-picture-in-picture-control .vjs-icon-placeholder:before,.vjs-icon-picture-in-picture-enter:before{content:"\f121"}.video-js.vjs-picture-in-picture .vjs-picture-in-picture-control .vjs-icon-placeholder,.vjs-icon-picture-in-picture-exit{font-family:VideoJS;font-weight:400;font-style:normal}.video-js.vjs-picture-in-picture .vjs-picture-in-picture-control .vjs-icon-placeholder:before,.vjs-icon-picture-in-picture-exit:before{content:"\f122"}.video-js{display:block;vertical-align:top;box-sizing:border-box;color:#fff;background-color:#000;position:relative;padding:0;font-size:10px;line-height:1;font-weight:400;font-style:normal;font-family:Arial,Helvetica,sans-serif;word-break:initial}.video-js:-moz-full-screen{position:absolute}.video-js:-webkit-full-screen{width:100%!important;height:100%!important}.video-js[tabindex="-1"]{outline:0}.video-js *,.video-js :after,.video-js :before{box-sizing:inherit}.video-js ul{font-family:inherit;font-size:inherit;line-height:inherit;list-style-position:outside;margin-left:0;margin-right:0;margin-top:0;margin-bottom:0}.video-js.vjs-16-9,.video-js.vjs-4-3,.video-js.vjs-fluid{width:100%;max-width:100%;height:0}.video-js.vjs-16-9{padding-top:56.25%}.video-js.vjs-4-3{padding-top:75%}.video-js.vjs-fill{width:100%;height:100%}.video-js .vjs-tech{position:absolute;top:0;left:0;width:100%;height:100%}body.vjs-full-window{padding:0;margin:0;height:100%}.vjs-full-window .video-js.vjs-fullscreen{position:fixed;overflow:hidden;z-index:1000;left:0;top:0;bottom:0;right:0}.video-js.vjs-fullscreen{width:100%!important;height:100%!important;padding-top:0!important}.video-js.vjs-fullscreen.vjs-user-inactive{cursor:none}.vjs-hidden{display:none!important}.vjs-disabled{opacity:.5;cursor:default}.video-js .vjs-offscreen{height:1px;left:-9999px;position:absolute;top:0;width:1px}.vjs-lock-showing{display:block!important;opacity:1;visibility:visible}.vjs-no-js{padding:20px;color:#fff;background-color:#000;font-size:18px;font-family:Arial,Helvetica,sans-serif;text-align:center;width:300px;height:150px;margin:0 auto}.vjs-no-js a,.vjs-no-js a:visited{color:#66a8cc}.video-js .vjs-big-play-button{font-size:3em;line-height:1.5em;height:1.63332em;width:3em;display:block;position:absolute;top:10px;left:10px;padding:0;cursor:pointer;opacity:1;border:.06666em solid #fff;background-color:#2b333f;background-color:rgba(43,51,63,.7);border-radius:.3em;transition:all .4s}.vjs-big-play-centered .vjs-big-play-button{top:50%;left:50%;margin-top:-.81666em;margin-left:-1.5em}.video-js .vjs-big-play-button:focus,.video-js:hover .vjs-big-play-button{border-color:#fff;background-color:#73859f;background-color:rgba(115,133,159,.5);transition:all 0s}.vjs-controls-disabled .vjs-big-play-button,.vjs-error .vjs-big-play-button,.vjs-has-started .vjs-big-play-button,.vjs-using-native-controls .vjs-big-play-button{display:none}.vjs-has-started.vjs-paused.vjs-show-big-play-button-on-pause .vjs-big-play-button{display:block}.video-js button{background:0 0;border:none;color:inherit;display:inline-block;font-size:inherit;line-height:inherit;text-transform:none;text-decoration:none;transition:none;-webkit-appearance:none;-moz-appearance:none;appearance:none}.vjs-control .vjs-button{width:100%;height:100%}.video-js .vjs-control.vjs-close-button{cursor:pointer;height:3em;position:absolute;right:0;top:.5em;z-index:2}.video-js .vjs-modal-dialog{background:rgba(0,0,0,.8);background:linear-gradient(180deg,rgba(0,0,0,.8),rgba(255,255,255,0));overflow:auto}.video-js .vjs-modal-dialog>*{box-sizing:border-box}.vjs-modal-dialog .vjs-modal-dialog-content{font-size:1.2em;line-height:1.5;padding:20px 24px;z-index:1}.vjs-menu-button{cursor:pointer}.vjs-menu-button.vjs-disabled{cursor:default}.vjs-workinghover .vjs-menu-button.vjs-disabled:hover .vjs-menu{display:none}.vjs-menu .vjs-menu-content{display:block;padding:0;margin:0;font-family:Arial,Helvetica,sans-serif;overflow:auto}.vjs-menu .vjs-menu-content>*{box-sizing:border-box}.vjs-scrubbing .vjs-control.vjs-menu-button:hover .vjs-menu{display:none}.vjs-menu li{list-style:none;margin:0;padding:.2em 0;line-height:1.4em;font-size:1.2em;text-align:center;text-transform:lowercase}.js-focus-visible .vjs-menu li.vjs-menu-item:hover,.vjs-menu li.vjs-menu-item:focus,.vjs-menu li.vjs-menu-item:hover{background-color:#73859f;background-color:rgba(115,133,159,.5)}.js-focus-visible .vjs-menu li.vjs-selected:hover,.vjs-menu li.vjs-selected,.vjs-menu li.vjs-selected:focus,.vjs-menu li.vjs-selected:hover{background-color:#fff;color:#2b333f}.vjs-menu li.vjs-menu-title{text-align:center;text-transform:uppercase;font-size:1em;line-height:2em;padding:0;margin:0 0 .3em 0;font-weight:700;cursor:default}.vjs-menu-button-popup .vjs-menu{display:none;position:absolute;bottom:0;width:10em;left:-3em;height:0;margin-bottom:1.5em;border-top-color:rgba(43,51,63,.7)}.vjs-menu-button-popup .vjs-menu .vjs-menu-content{background-color:#2b333f;background-color:rgba(43,51,63,.7);position:absolute;width:100%;bottom:1.5em;max-height:15em}.vjs-layout-tiny .vjs-menu-button-popup .vjs-menu .vjs-menu-content,.vjs-layout-x-small .vjs-menu-button-popup .vjs-menu .vjs-menu-content{max-height:5em}.vjs-layout-small .vjs-menu-button-popup .vjs-menu .vjs-menu-content{max-height:10em}.vjs-layout-medium .vjs-menu-button-popup .vjs-menu .vjs-menu-content{max-height:14em}.vjs-layout-huge .vjs-menu-button-popup .vjs-menu .vjs-menu-content,.vjs-layout-large .vjs-menu-button-popup .vjs-menu .vjs-menu-content,.vjs-layout-x-large .vjs-menu-button-popup .vjs-menu .vjs-menu-content{max-height:25em}.vjs-menu-button-popup .vjs-menu.vjs-lock-showing,.vjs-workinghover .vjs-menu-button-popup.vjs-hover .vjs-menu{display:block}.video-js .vjs-menu-button-inline{transition:all .4s;overflow:hidden}.video-js .vjs-menu-button-inline:before{width:2.222222222em}.video-js .vjs-menu-button-inline.vjs-slider-active,.video-js .vjs-menu-button-inline:focus,.video-js .vjs-menu-button-inline:hover,.video-js.vjs-no-flex .vjs-menu-button-inline{width:12em}.vjs-menu-button-inline .vjs-menu{opacity:0;height:100%;width:auto;position:absolute;left:4em;top:0;padding:0;margin:0;transition:all .4s}.vjs-menu-button-inline.vjs-slider-active .vjs-menu,.vjs-menu-button-inline:focus .vjs-menu,.vjs-menu-button-inline:hover .vjs-menu{display:block;opacity:1}.vjs-no-flex .vjs-menu-button-inline .vjs-menu{display:block;opacity:1;position:relative;width:auto}.vjs-no-flex .vjs-menu-button-inline.vjs-slider-active .vjs-menu,.vjs-no-flex .vjs-menu-button-inline:focus .vjs-menu,.vjs-no-flex .vjs-menu-button-inline:hover .vjs-menu{width:auto}.vjs-menu-button-inline .vjs-menu-content{width:auto;height:100%;margin:0;overflow:hidden}.video-js .vjs-control-bar{display:none;width:100%;position:absolute;bottom:0;left:0;right:0;height:3em;background-color:#2b333f;background-color:rgba(43,51,63,.7)}.vjs-has-started .vjs-control-bar{display:flex;visibility:visible;opacity:1;transition:visibility .1s,opacity .1s}.vjs-has-started.vjs-user-inactive.vjs-playing .vjs-control-bar{visibility:visible;opacity:0;transition:visibility 1s,opacity 1s}.vjs-controls-disabled .vjs-control-bar,.vjs-error .vjs-control-bar,.vjs-using-native-controls .vjs-control-bar{display:none!important}.vjs-audio.vjs-has-started.vjs-user-inactive.vjs-playing .vjs-control-bar{opacity:1;visibility:visible}.vjs-has-started.vjs-no-flex .vjs-control-bar{display:table}.video-js .vjs-control{position:relative;text-align:center;margin:0;padding:0;height:100%;width:4em;flex:none}.vjs-button>.vjs-icon-placeholder:before{font-size:1.8em;line-height:1.67}.video-js .vjs-control:focus,.video-js .vjs-control:focus:before,.video-js .vjs-control:hover:before{text-shadow:0 0 1em #fff}.video-js .vjs-control-text{border:0;clip:rect(0 0 0 0);height:1px;overflow:hidden;padding:0;position:absolute;width:1px}.vjs-no-flex .vjs-control{display:table-cell;vertical-align:middle}.video-js .vjs-custom-control-spacer{display:none}.video-js .vjs-progress-control{cursor:pointer;flex:auto;display:flex;align-items:center;min-width:4em;touch-action:none}.video-js .vjs-progress-control.disabled{cursor:default}.vjs-live .vjs-progress-control{display:none}.vjs-liveui .vjs-progress-control{display:flex;align-items:center}.vjs-no-flex .vjs-progress-control{width:auto}.video-js .vjs-progress-holder{flex:auto;transition:all .2s;height:.3em}.video-js .vjs-progress-control .vjs-progress-holder{margin:0 10px}.video-js .vjs-progress-control:hover .vjs-progress-holder{font-size:1.6666666667em}.video-js .vjs-progress-control:hover .vjs-progress-holder.disabled{font-size:1em}.video-js .vjs-progress-holder .vjs-load-progress,.video-js .vjs-progress-holder .vjs-load-progress div,.video-js .vjs-progress-holder .vjs-play-progress{position:absolute;display:block;height:100%;margin:0;padding:0;width:0}.video-js .vjs-play-progress{background-color:#fff}.video-js .vjs-play-progress:before{font-size:.9em;position:absolute;right:-.5em;top:-.3333333333em;z-index:1}.video-js .vjs-load-progress{background:rgba(115,133,159,.5)}.video-js .vjs-load-progress div{background:rgba(115,133,159,.75)}.video-js .vjs-time-tooltip{background-color:#fff;background-color:rgba(255,255,255,.8);border-radius:.3em;color:#000;float:right;font-family:Arial,Helvetica,sans-serif;font-size:1em;padding:6px 8px 8px 8px;pointer-events:none;position:absolute;top:-3.4em;visibility:hidden;z-index:1}.video-js .vjs-progress-holder:focus .vjs-time-tooltip{display:none}.video-js .vjs-progress-control:hover .vjs-progress-holder:focus .vjs-time-tooltip,.video-js .vjs-progress-control:hover .vjs-time-tooltip{display:block;font-size:.6em;visibility:visible}.video-js .vjs-progress-control.disabled:hover .vjs-time-tooltip{font-size:1em}.video-js .vjs-progress-control .vjs-mouse-display{display:none;position:absolute;width:1px;height:100%;background-color:#000;z-index:1}.vjs-no-flex .vjs-progress-control .vjs-mouse-display{z-index:0}.video-js .vjs-progress-control:hover .vjs-mouse-display{display:block}.video-js.vjs-user-inactive .vjs-progress-control .vjs-mouse-display{visibility:hidden;opacity:0;transition:visibility 1s,opacity 1s}.video-js.vjs-user-inactive.vjs-no-flex .vjs-progress-control .vjs-mouse-display{display:none}.vjs-mouse-display .vjs-time-tooltip{color:#fff;background-color:#000;background-color:rgba(0,0,0,.8)}.video-js .vjs-slider{position:relative;cursor:pointer;padding:0;margin:0 .45em 0 .45em;-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:#73859f;background-color:rgba(115,133,159,.5)}.video-js .vjs-slider.disabled{cursor:default}.video-js .vjs-slider:focus{text-shadow:0 0 1em #fff;box-shadow:0 0 1em #fff}.video-js .vjs-mute-control{cursor:pointer;flex:none}.video-js .vjs-volume-control{cursor:pointer;margin-right:1em;display:flex}.video-js .vjs-volume-control.vjs-volume-horizontal{width:5em}.video-js .vjs-volume-panel .vjs-volume-control{visibility:visible;opacity:0;width:1px;height:1px;margin-left:-1px}.video-js .vjs-volume-panel{transition:width 1s}.video-js .vjs-volume-panel .vjs-volume-control.vjs-slider-active,.video-js .vjs-volume-panel .vjs-volume-control:active,.video-js .vjs-volume-panel.vjs-hover .vjs-mute-control~.vjs-volume-control,.video-js .vjs-volume-panel.vjs-hover .vjs-volume-control,.video-js .vjs-volume-panel:active .vjs-volume-control,.video-js .vjs-volume-panel:focus .vjs-volume-control{visibility:visible;opacity:1;position:relative;transition:visibility .1s,opacity .1s,height .1s,width .1s,left 0s,top 0s}.video-js .vjs-volume-panel .vjs-volume-control.vjs-slider-active.vjs-volume-horizontal,.video-js .vjs-volume-panel .vjs-volume-control:active.vjs-volume-horizontal,.video-js .vjs-volume-panel.vjs-hover .vjs-mute-control~.vjs-volume-control.vjs-volume-horizontal,.video-js .vjs-volume-panel.vjs-hover .vjs-volume-control.vjs-volume-horizontal,.video-js .vjs-volume-panel:active .vjs-volume-control.vjs-volume-horizontal,.video-js .vjs-volume-panel:focus .vjs-volume-control.vjs-volume-horizontal{width:5em;height:3em;margin-right:0}.video-js .vjs-volume-panel .vjs-volume-control.vjs-slider-active.vjs-volume-vertical,.video-js .vjs-volume-panel .vjs-volume-control:active.vjs-volume-vertical,.video-js .vjs-volume-panel.vjs-hover .vjs-mute-control~.vjs-volume-control.vjs-volume-vertical,.video-js .vjs-volume-panel.vjs-hover .vjs-volume-control.vjs-volume-vertical,.video-js .vjs-volume-panel:active .vjs-volume-control.vjs-volume-vertical,.video-js .vjs-volume-panel:focus .vjs-volume-control.vjs-volume-vertical{left:-3.5em;transition:left 0s}.video-js .vjs-volume-panel.vjs-volume-panel-horizontal.vjs-hover,.video-js .vjs-volume-panel.vjs-volume-panel-horizontal.vjs-slider-active,.video-js .vjs-volume-panel.vjs-volume-panel-horizontal:active{width:10em;transition:width .1s}.video-js .vjs-volume-panel.vjs-volume-panel-horizontal.vjs-mute-toggle-only{width:4em}.video-js .vjs-volume-panel .vjs-volume-control.vjs-volume-vertical{height:8em;width:3em;left:-3000em;transition:visibility 1s,opacity 1s,height 1s 1s,width 1s 1s,left 1s 1s,top 1s 1s}.video-js .vjs-volume-panel .vjs-volume-control.vjs-volume-horizontal{transition:visibility 1s,opacity 1s,height 1s 1s,width 1s,left 1s 1s,top 1s 1s}.video-js.vjs-no-flex .vjs-volume-panel .vjs-volume-control.vjs-volume-horizontal{width:5em;height:3em;visibility:visible;opacity:1;position:relative;transition:none}.video-js.vjs-no-flex .vjs-volume-control.vjs-volume-vertical,.video-js.vjs-no-flex .vjs-volume-panel .vjs-volume-control.vjs-volume-vertical{position:absolute;bottom:3em;left:.5em}.video-js .vjs-volume-panel{display:flex}.video-js .vjs-volume-bar{margin:1.35em .45em}.vjs-volume-bar.vjs-slider-horizontal{width:5em;height:.3em}.vjs-volume-bar.vjs-slider-vertical{width:.3em;height:5em;margin:1.35em auto}.video-js .vjs-volume-level{position:absolute;bottom:0;left:0;background-color:#fff}.video-js .vjs-volume-level:before{position:absolute;font-size:.9em}.vjs-slider-vertical .vjs-volume-level{width:.3em}.vjs-slider-vertical .vjs-volume-level:before{top:-.5em;left:-.3em}.vjs-slider-horizontal .vjs-volume-level{height:.3em}.vjs-slider-horizontal .vjs-volume-level:before{top:-.3em;right:-.5em}.video-js .vjs-volume-panel.vjs-volume-panel-vertical{width:4em}.vjs-volume-bar.vjs-slider-vertical .vjs-volume-level{height:100%}.vjs-volume-bar.vjs-slider-horizontal .vjs-volume-level{width:100%}.video-js .vjs-volume-vertical{width:3em;height:8em;bottom:8em;background-color:#2b333f;background-color:rgba(43,51,63,.7)}.video-js .vjs-volume-horizontal .vjs-menu{left:-2em}.vjs-poster{display:inline-block;vertical-align:middle;background-repeat:no-repeat;background-position:50% 50%;background-size:contain;background-color:#000;cursor:pointer;margin:0;padding:0;position:absolute;top:0;right:0;bottom:0;left:0;height:100%}.vjs-has-started .vjs-poster{display:none}.vjs-audio.vjs-has-started .vjs-poster{display:block}.vjs-using-native-controls .vjs-poster{display:none}.video-js .vjs-live-control{display:flex;align-items:flex-start;flex:auto;font-size:1em;line-height:3em}.vjs-no-flex .vjs-live-control{display:table-cell;width:auto;text-align:left}.video-js.vjs-liveui .vjs-live-control,.video-js:not(.vjs-live) .vjs-live-control{display:none}.video-js .vjs-seek-to-live-control{cursor:pointer;flex:none;display:inline-flex;height:100%;padding-left:.5em;padding-right:.5em;font-size:1em;line-height:3em;width:auto;min-width:4em}.vjs-no-flex .vjs-seek-to-live-control{display:table-cell;width:auto;text-align:left}.video-js.vjs-live:not(.vjs-liveui) .vjs-seek-to-live-control,.video-js:not(.vjs-live) .vjs-seek-to-live-control{display:none}.vjs-seek-to-live-control.vjs-control.vjs-at-live-edge{cursor:auto}.vjs-seek-to-live-control .vjs-icon-placeholder{margin-right:.5em;color:#888}.vjs-seek-to-live-control.vjs-control.vjs-at-live-edge .vjs-icon-placeholder{color:red}.video-js .vjs-time-control{flex:none;font-size:1em;line-height:3em;min-width:2em;width:auto;padding-left:1em;padding-right:1em}.vjs-live .vjs-time-control{display:none}.video-js .vjs-current-time,.vjs-no-flex .vjs-current-time{display:none}.video-js .vjs-duration,.vjs-no-flex .vjs-duration{display:none}.vjs-time-divider{display:none;line-height:3em}.vjs-live .vjs-time-divider{display:none}.video-js .vjs-play-control{cursor:pointer}.video-js .vjs-play-control .vjs-icon-placeholder{flex:none}.vjs-text-track-display{position:absolute;bottom:3em;left:0;right:0;top:0;pointer-events:none}.video-js.vjs-user-inactive.vjs-playing .vjs-text-track-display{bottom:1em}.video-js .vjs-text-track{font-size:1.4em;text-align:center;margin-bottom:.1em}.vjs-subtitles{color:#fff}.vjs-captions{color:#fc6}.vjs-tt-cue{display:block}video::-webkit-media-text-track-display{transform:translateY(-3em)}.video-js.vjs-user-inactive.vjs-playing video::-webkit-media-text-track-display{transform:translateY(-1.5em)}.video-js .vjs-picture-in-picture-control{cursor:pointer;flex:none}.video-js .vjs-fullscreen-control{cursor:pointer;flex:none}.vjs-playback-rate .vjs-playback-rate-value,.vjs-playback-rate>.vjs-menu-button{position:absolute;top:0;left:0;width:100%;height:100%}.vjs-playback-rate .vjs-playback-rate-value{pointer-events:none;font-size:1.5em;line-height:2;text-align:center}.vjs-playback-rate .vjs-menu{width:4em;left:0}.vjs-error .vjs-error-display .vjs-modal-dialog-content{font-size:1.4em;text-align:center}.vjs-error .vjs-error-display:before{color:#fff;content:"X";font-family:Arial,Helvetica,sans-serif;font-size:4em;left:0;line-height:1;margin-top:-.5em;position:absolute;text-shadow:.05em .05em .1em #000;text-align:center;top:50%;vertical-align:middle;width:100%}.vjs-loading-spinner{display:none;position:absolute;top:50%;left:50%;margin:-25px 0 0 -25px;opacity:.85;text-align:left;border:6px solid rgba(43,51,63,.7);box-sizing:border-box;background-clip:padding-box;width:50px;height:50px;border-radius:25px;visibility:hidden}.vjs-seeking .vjs-loading-spinner,.vjs-waiting .vjs-loading-spinner{display:block;-webkit-animation:vjs-spinner-show 0s linear .3s forwards;animation:vjs-spinner-show 0s linear .3s forwards}.vjs-loading-spinner:after,.vjs-loading-spinner:before{content:"";position:absolute;margin:-6px;box-sizing:inherit;width:inherit;height:inherit;border-radius:inherit;opacity:1;border:inherit;border-color:transparent;border-top-color:#fff}.vjs-seeking .vjs-loading-spinner:after,.vjs-seeking .vjs-loading-spinner:before,.vjs-waiting .vjs-loading-spinner:after,.vjs-waiting .vjs-loading-spinner:before{-webkit-animation:vjs-spinner-spin 1.1s cubic-bezier(.6,.2,0,.8) infinite,vjs-spinner-fade 1.1s linear infinite;animation:vjs-spinner-spin 1.1s cubic-bezier(.6,.2,0,.8) infinite,vjs-spinner-fade 1.1s linear infinite}.vjs-seeking .vjs-loading-spinner:before,.vjs-waiting .vjs-loading-spinner:before{border-top-color:#fff}.vjs-seeking .vjs-loading-spinner:after,.vjs-waiting .vjs-loading-spinner:after{border-top-color:#fff;-webkit-animation-delay:.44s;animation-delay:.44s}@keyframes vjs-spinner-show{to{visibility:visible}}@-webkit-keyframes vjs-spinner-show{to{visibility:visible}}@keyframes vjs-spinner-spin{100%{transform:rotate(360deg)}}@-webkit-keyframes vjs-spinner-spin{100%{-webkit-transform:rotate(360deg)}}@keyframes vjs-spinner-fade{0%{border-top-color:#73859f}20%{border-top-color:#73859f}35%{border-top-color:#fff}60%{border-top-color:#73859f}100%{border-top-color:#73859f}}@-webkit-keyframes vjs-spinner-fade{0%{border-top-color:#73859f}20%{border-top-color:#73859f}35%{border-top-color:#fff}60%{border-top-color:#73859f}100%{border-top-color:#73859f}}.vjs-chapters-button .vjs-menu ul{width:24em}.video-js .vjs-subs-caps-button+.vjs-menu .vjs-captions-menu-item .vjs-menu-item-text .vjs-icon-placeholder{vertical-align:middle;display:inline-block;margin-bottom:-.1em}.video-js .vjs-subs-caps-button+.vjs-menu .vjs-captions-menu-item .vjs-menu-item-text .vjs-icon-placeholder:before{font-family:VideoJS;content:"";font-size:1.5em;line-height:inherit}.video-js .vjs-audio-button+.vjs-menu .vjs-main-desc-menu-item .vjs-menu-item-text .vjs-icon-placeholder{vertical-align:middle;display:inline-block;margin-bottom:-.1em}.video-js .vjs-audio-button+.vjs-menu .vjs-main-desc-menu-item .vjs-menu-item-text .vjs-icon-placeholder:before{font-family:VideoJS;content:" ";font-size:1.5em;line-height:inherit}.video-js:not(.vjs-fullscreen).vjs-layout-small .vjs-audio-button,.video-js:not(.vjs-fullscreen).vjs-layout-small .vjs-captions-button,.video-js:not(.vjs-fullscreen).vjs-layout-small .vjs-chapters-button,.video-js:not(.vjs-fullscreen).vjs-layout-small .vjs-current-time,.video-js:not(.vjs-fullscreen).vjs-layout-small .vjs-descriptions-button,.video-js:not(.vjs-fullscreen).vjs-layout-small .vjs-duration,.video-js:not(.vjs-fullscreen).vjs-layout-small .vjs-playback-rate,.video-js:not(.vjs-fullscreen).vjs-layout-small .vjs-remaining-time,.video-js:not(.vjs-fullscreen).vjs-layout-small .vjs-subtitles-button,.video-js:not(.vjs-fullscreen).vjs-layout-small .vjs-time-divider,.video-js:not(.vjs-fullscreen).vjs-layout-small .vjs-volume-control,.video-js:not(.vjs-fullscreen).vjs-layout-tiny .vjs-audio-button,.video-js:not(.vjs-fullscreen).vjs-layout-tiny .vjs-captions-button,.video-js:not(.vjs-fullscreen).vjs-layout-tiny .vjs-chapters-button,.video-js:not(.vjs-fullscreen).vjs-layout-tiny .vjs-current-time,.video-js:not(.vjs-fullscreen).vjs-layout-tiny .vjs-descriptions-button,.video-js:not(.vjs-fullscreen).vjs-layout-tiny .vjs-duration,.video-js:not(.vjs-fullscreen).vjs-layout-tiny .vjs-playback-rate,.video-js:not(.vjs-fullscreen).vjs-layout-tiny .vjs-remaining-time,.video-js:not(.vjs-fullscreen).vjs-layout-tiny .vjs-subtitles-button,.video-js:not(.vjs-fullscreen).vjs-layout-tiny .vjs-time-divider,.video-js:not(.vjs-fullscreen).vjs-layout-tiny .vjs-volume-control,.video-js:not(.vjs-fullscreen).vjs-layout-x-small .vjs-audio-button,.video-js:not(.vjs-fullscreen).vjs-layout-x-small .vjs-captions-button,.video-js:not(.vjs-fullscreen).vjs-layout-x-small .vjs-chapters-button,.video-js:not(.vjs-fullscreen).vjs-layout-x-small .vjs-current-time,.video-js:not(.vjs-fullscreen).vjs-layout-x-small .vjs-descriptions-button,.video-js:not(.vjs-fullscreen).vjs-layout-x-small .vjs-duration,.video-js:not(.vjs-fullscreen).vjs-layout-x-small .vjs-playback-rate,.video-js:not(.vjs-fullscreen).vjs-layout-x-small .vjs-remaining-time,.video-js:not(.vjs-fullscreen).vjs-layout-x-small .vjs-subtitles-button,.video-js:not(.vjs-fullscreen).vjs-layout-x-small .vjs-time-divider,.video-js:not(.vjs-fullscreen).vjs-layout-x-small .vjs-volume-control{display:none}.video-js:not(.vjs-fullscreen).vjs-layout-small .vjs-volume-panel.vjs-volume-panel-horizontal.vjs-slider-active,.video-js:not(.vjs-fullscreen).vjs-layout-small .vjs-volume-panel.vjs-volume-panel-horizontal:active,.video-js:not(.vjs-fullscreen).vjs-layout-small .vjs-volume-panel.vjs-volume-panel-horizontal:hover,.video-js:not(.vjs-fullscreen).vjs-layout-tiny .vjs-volume-panel.vjs-volume-panel-horizontal.vjs-slider-active,.video-js:not(.vjs-fullscreen).vjs-layout-tiny .vjs-volume-panel.vjs-volume-panel-horizontal:active,.video-js:not(.vjs-fullscreen).vjs-layout-tiny .vjs-volume-panel.vjs-volume-panel-horizontal:hover,.video-js:not(.vjs-fullscreen).vjs-layout-x-small .vjs-volume-panel.vjs-volume-panel-horizontal.vjs-slider-active,.video-js:not(.vjs-fullscreen).vjs-layout-x-small .vjs-volume-panel.vjs-volume-panel-horizontal:active,.video-js:not(.vjs-fullscreen).vjs-layout-x-small .vjs-volume-panel.vjs-volume-panel-horizontal:hover{width:auto;width:initial}.video-js:not(.vjs-fullscreen).vjs-layout-tiny .vjs-subs-caps-button,.video-js:not(.vjs-fullscreen).vjs-layout-x-small:not(.vjs-live) .vjs-subs-caps-button,.video-js:not(.vjs-fullscreen).vjs-layout-x-small:not(.vjs-liveui) .vjs-subs-caps-button{display:none}.video-js:not(.vjs-fullscreen).vjs-layout-tiny .vjs-custom-control-spacer,.video-js:not(.vjs-fullscreen).vjs-layout-x-small.vjs-liveui .vjs-custom-control-spacer{flex:auto;display:block}.video-js:not(.vjs-fullscreen).vjs-layout-tiny.vjs-no-flex .vjs-custom-control-spacer,.video-js:not(.vjs-fullscreen).vjs-layout-x-small.vjs-liveui.vjs-no-flex .vjs-custom-control-spacer{width:auto}.video-js:not(.vjs-fullscreen).vjs-layout-tiny .vjs-progress-control,.video-js:not(.vjs-fullscreen).vjs-layout-x-small.vjs-liveui .vjs-progress-control{display:none}.vjs-modal-dialog.vjs-text-track-settings{background-color:#2b333f;background-color:rgba(43,51,63,.75);color:#fff;height:70%}.vjs-text-track-settings .vjs-modal-dialog-content{display:table}.vjs-text-track-settings .vjs-track-settings-colors,.vjs-text-track-settings .vjs-track-settings-controls,.vjs-text-track-settings .vjs-track-settings-font{display:table-cell}.vjs-text-track-settings .vjs-track-settings-controls{text-align:right;vertical-align:bottom}@supports (display:grid){.vjs-text-track-settings .vjs-modal-dialog-content{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr;padding:20px 24px 0 24px}.vjs-track-settings-controls .vjs-default-button{margin-bottom:20px}.vjs-text-track-settings .vjs-track-settings-controls{grid-column:1/-1}.vjs-layout-small .vjs-text-track-settings .vjs-modal-dialog-content,.vjs-layout-tiny .vjs-text-track-settings .vjs-modal-dialog-content,.vjs-layout-x-small .vjs-text-track-settings .vjs-modal-dialog-content{grid-template-columns:1fr}}.vjs-track-setting>select{margin-right:1em;margin-bottom:.5em}.vjs-text-track-settings fieldset{margin:5px;padding:3px;border:none}.vjs-text-track-settings fieldset span{display:inline-block}.vjs-text-track-settings fieldset span>select{max-width:7.3em}.vjs-text-track-settings legend{color:#fff;margin:0 0 5px 0}.vjs-text-track-settings .vjs-label{position:absolute;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px);display:block;margin:0 0 5px 0;padding:0;border:0;height:1px;width:1px;overflow:hidden}.vjs-track-settings-controls button:active,.vjs-track-settings-controls button:focus{outline-style:solid;outline-width:medium;background-image:linear-gradient(0deg,#fff 88%,#73859f 100%)}.vjs-track-settings-controls button:hover{color:rgba(43,51,63,.75)}.vjs-track-settings-controls button{background-color:#fff;background-image:linear-gradient(-180deg,#fff 88%,#73859f 100%);color:#2b333f;cursor:pointer;border-radius:2px}.vjs-track-settings-controls .vjs-default-button{margin-right:1em}@media print{.video-js>:not(.vjs-tech):not(.vjs-poster){visibility:hidden}}.vjs-resize-manager{position:absolute;top:0;left:0;width:100%;height:100%;border:none;z-index:-1000}.js-focus-visible .video-js :focus:not(.focus-visible){outline:0;background:0 0}.video-js .vjs-menu :focus:not(:focus-visible),.video-js :focus:not(:focus-visible){outline:0;background:0 0}</style><style type="text/css" class="bc-style-rkgpS9K-default">.bc-player-rkgpS9K_default *,.bc-player-rkgpS9K_default :after,.bc-player-rkgpS9K_default :before{box-sizing:inherit;font-size:inherit;color:inherit;line-height:inherit}.bc-player-rkgpS9K_default{width:300px;height:150px;font-size:14px;overflow:hidden}.bc-player-rkgpS9K_default.vjs-fluid,.bc-player-rkgpS9K_default.vjs-fluid.vjs-16-9{padding-top:56.25%}.bc-player-rkgpS9K_default.vjs-fluid.vjs-4-3{padding-top:75%}.bc-player-rkgpS9K_default.vjs-fill{width:100%;height:100%}.bc-iframe,.bc-iframe body,.bc-player-rkgpS9K_default,.bc-player-rkgpS9K_default .vjs-poster{background-color:#151B17}.bc-iframe,.bc-iframe .bc-player-rkgpS9K_default,.bc-iframe body{margin:0;width:100%;height:100%;overflow:hidden}.bc-player-rkgpS9K_default.vjs-fullscreen,.bc-player-rkgpS9K_default.vjs-fullscreen .vjs-tech{width:100%!important;height:100%!important}.bc-player-rkgpS9K_default .vjs-track-setting select{color:#000;background-color:#fff}.bc-player-rkgpS9K_default .vjs-audio-button .vjs-menu-item,.bc-player-rkgpS9K_default .vjs-chapters-button .vjs-menu-item,.bc-player-rkgpS9K_default .vjs-descriptions-button .vjs-menu-item,.bc-player-rkgpS9K_default .vjs-subs-caps-button .vjs-menu-item{text-transform:none}.bc-player-rkgpS9K_default.vjs-waiting-for-autoplay .vjs-big-play-button{opacity:0}.bc-player-rkgpS9K_default .vjs-progress-control .vjs-mouse-display{z-index:2}/*! @name @brightcove/player-core @version 0.13.0 @license UNLICENSED */.vjs-modal-dialog.vjs-player-info-modal{background:rgba(0,0,0,.9);font-size:10px}.vjs-modal-dialog.vjs-player-info-modal .vjs-modal-dialog-content{overflow:auto}.vjs-modal-dialog.vjs-player-info-modal .vjs-pi-section{float:left;width:49%}.vjs-modal-dialog.vjs-player-info-modal .vjs-pi-section:nth-child(2n+1){float:right}.vjs-modal-dialog.vjs-player-info-modal .vjs-pi-section.vjs-pi-section--source{float:none;clear:both;width:auto}.vjs-modal-dialog.vjs-player-info-modal .vjs-pi-section.vjs-pi-section--source td:first-child{min-width:150px}.vjs-modal-dialog.vjs-player-info-modal table{border-collapse:collapse;margin-bottom:1em;width:100%}.vjs-modal-dialog.vjs-player-info-modal th{font-weight:400;text-align:left}.vjs-modal-dialog.vjs-player-info-modal td{border-bottom:1px solid rgba(255,255,255,.2);opacity:.5}.vjs-modal-dialog.vjs-player-info-modal tr:last-child td{border-bottom:0}.vjs-modal-dialog.vjs-player-info-modal tr:hover td{opacity:1}.vjs-error-display{color:#fff;display:none;font-family:Helvetica,Arial,sans serif;font-size:16px;line-height:1.428}.vjs-error .vjs-error-display{display:block;position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.5)}.vjs-error .vjs-error-display .vjs-modal-dialog-content{font-size:14px}.vjs-errors-dialog{text-align:left;border:1px #999 solid;overflow:hidden;position:absolute;top:2%;bottom:2%;left:5%;right:5%;padding-left:1%;padding-right:1%;background:rgba(24,24,24,.8);-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000, endColorstr=#CC000000)"}.vjs-errors-details{margin-top:15px}.vjs-errors-message{border:1px #999 solid;background-color:#2c2c2c;overflow:auto;margin-top:15px;padding:15px}.vjs-errors-ok-button-container{display:block;position:absolute;bottom:15px;left:15px;right:15px;text-align:center}.vjs-errors-ok-button{display:block;margin:0 auto;width:80px;height:36px;background-color:#000;border:1px #999 solid;border-radius:5px;color:#999;font-size:14px;cursor:pointer}.vjs-errors-ok-button:hover{border:1px #FFF solid;color:#CCC}.vjs-errors-content-container{overflow:auto;position:absolute;padding-bottom:15px;top:0;left:15px;right:15px;bottom:61px}.vjs-errors-headline{font-size:14px;font-weight:700;padding-right:3em}.vjs-errors-dialog .vjs-control.vjs-close-button{width:3em;height:3em;top:0}.vjs-errors-flashmessage{float:right;font-size:9px;font-style:italic}.vjs-xs.vjs-error-display{font-size:14px;background-color:#000}.vjs-xs.vjs-error-display .vjs-errors-details,.vjs-xs.vjs-error-display .vjs-errors-message{display:none}.vjs-xs .vjs-errors-content-container{top:0}.vjs-xs .vjs-errors-headline{font-size:16px;font-weight:700}.vjs-xs .vjs-errors-dialog{border:none;top:0;bottom:0;left:0;right:0}.vjs-xs.vjs-errors-flashmessage{display:none}@media (max-width:600px),(max-height:250px){.vjs-error-display{font-size:14px;background-color:#000}.vjs-error-display .vjs-errors-details,.vjs-error-display .vjs-errors-message{display:none}.vjs-error-display .vjs-errors-content-container{top:15px}.vjs-error-display .vjs-errors-headline{font-size:16px;font-weight:700}.vjs-error-display .vjs-errors-dialog{border:none;top:0;bottom:0;left:0;right:0}.vjs-errors-flashmessage{display:none}}.vjs-errors-ref-id{color:rgba(255,255,255,.5);font-size:.75em;margin:.5em 0 0}/*! @name videojs-contextmenu-ui @version 5.2.0 @license Apache-2.0 */.vjs-contextmenu-ui-menu{position:absolute}.vjs-contextmenu-ui-menu .vjs-menu-content{background-color:#2b333f;background-color:rgba(43,51,63,.7);border-radius:.3em;padding:.25em}.vjs-contextmenu-ui-menu .vjs-menu-item{border-radius:.3em;cursor:pointer;margin:0 0 1px;padding:.5em 1em;font-size:1em;line-height:1.2;text-transform:none}.vjs-contextmenu-ui-menu .vjs-menu-item:active,.vjs-contextmenu-ui-menu .vjs-menu-item:hover{background-color:rgba(0,0,0,.5);text-shadow:0 0 1em #fff}.bc-player-rkgpS9K_default .vjs-control-bar{background-color:rgba(0,0,0,.45);color:#fff}.bc-player-rkgpS9K_default .vjs-control{color:inherit}.bc-player-rkgpS9K_default .vjs-mouse-display:after,.bc-player-rkgpS9K_default .vjs-play-progress:after{border-radius:0}.bc-player-rkgpS9K_default .vjs-menu-button-inline:hover,.bc-player-rkgpS9K_default.vjs-no-flex .vjs-menu-button-inline{width:8.35em}.bc-player-rkgpS9K_default .vjs-control:focus:before,.bc-player-rkgpS9K_default .vjs-control:hover:before{text-shadow:0 0 1em #fff,0 0 1em #fff,0 0 1em #fff}.bc-player-rkgpS9K_default .vjs-spacer{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-box-flex:1 1 auto;-moz-box-flex:1 1 auto;-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto}.bc-player-rkgpS9K_default .vjs-time-control{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-box-flex:0 1 auto;-moz-box-flex:0 1 auto;-webkit-flex:0 1 auto;-ms-flex:0 1 auto;flex:0 1 auto;width:auto}.bc-player-rkgpS9K_default .vjs-time-control.vjs-time-divider{width:14px}.bc-player-rkgpS9K_default .vjs-time-control.vjs-time-divider div{width:100%;text-align:center}.bc-player-rkgpS9K_default .vjs-time-control.vjs-current-time{margin-left:1em}.bc-player-rkgpS9K_default .vjs-time-control .vjs-current-time-display,.bc-player-rkgpS9K_default .vjs-time-control .vjs-duration-display{width:100%}.bc-player-rkgpS9K_default .vjs-time-control .vjs-current-time-display{text-align:right}.bc-player-rkgpS9K_default .vjs-time-control .vjs-duration-display{text-align:left}.bc-player-rkgpS9K_default .vjs-remaining-time{display:none}.bc-player-rkgpS9K_default.vjs-no-flex .vjs-time-control.vjs-remaining-time{display:none}.bc-player-rkgpS9K_default.vjs-no-flex .vjs-time-control{display:table-cell;width:4em}.bc-player-rkgpS9K_default .vjs-play-progress,.bc-player-rkgpS9K_default .vjs-volume-level{background-color:#d52484}.bc-player-rkgpS9K_default.vjs-ad-playing .vjs-play-progress,.bc-player-rkgpS9K_default.vjs-ad-playing .vjs-volume-level{background-color:#ffe400}.bc-player-rkgpS9K_default .vjs-play-progress:before,.bc-player-rkgpS9K_default .vjs-volume-level:before{display:none}.bc-player-rkgpS9K_default .vjs-volume-level:after{display:none}.bc-player-rkgpS9K_default .vjs-progress-control{position:absolute;left:0;right:0;width:100%;height:1.5em;top:-1.5em}.bc-player-rkgpS9K_default .vjs-progress-control .vjs-load-progress,.bc-player-rkgpS9K_default .vjs-progress-control .vjs-play-progress,.bc-player-rkgpS9K_default .vjs-progress-control .vjs-progress-holder{height:100%}.bc-player-rkgpS9K_default .vjs-progress-control .vjs-progress-holder{margin:0}.bc-player-rkgpS9K_default .vjs-progress-control:hover{height:1.5em;top:-1.5em}.bc-player-rkgpS9K_default .vjs-control-bar:not(.vjs-focus-within){-webkit-transition:-webkit-transform .1s ease 0s;-moz-transition:-moz-transform .1s ease 0s;-ms-transition:-ms-transform .1s ease 0s;-o-transition:-o-transform .1s ease 0s;transition:transform .1s ease 0s}.bc-player-rkgpS9K_default.not-hover.vjs-has-started.vjs-paused.vjs-user-active .vjs-control-bar:not(.vjs-focus-within):not(.vjs-control-bar-visible),.bc-player-rkgpS9K_default.not-hover.vjs-has-started.vjs-paused.vjs-user-inactive .vjs-control-bar:not(.vjs-focus-within):not(.vjs-control-bar-visible),.bc-player-rkgpS9K_default.not-hover.vjs-has-started.vjs-playing.vjs-user-active .vjs-control-bar:not(.vjs-focus-within):not(.vjs-control-bar-visible),.bc-player-rkgpS9K_default.not-hover.vjs-has-started.vjs-playing.vjs-user-inactive .vjs-control-bar:not(.vjs-focus-within):not(.vjs-control-bar-visible),.bc-player-rkgpS9K_default.vjs-has-started.vjs-paused.vjs-ad-playing.vjs-user-inactive .vjs-control-bar,.bc-player-rkgpS9K_default.vjs-has-started.vjs-playing.vjs-user-inactive .vjs-control-bar:not(.vjs-focus-within):not(.vjs-control-bar-visible){visibility:visible;opacity:1;-webkit-backface-visibility:hidden;-webkit-transform:translateY(3em);-moz-transform:translateY(3em);-ms-transform:translateY(3em);-o-transform:translateY(3em);transform:translateY(3em);-webkit-transition:-webkit-transform 1s ease 0s;-moz-transition:-moz-transform 1s ease 0s;-ms-transition:-ms-transform 1s ease 0s;-o-transition:-o-transform 1s ease 0s;transition:transform 1s ease 0s}.bc-player-rkgpS9K_default.not-hover.vjs-has-started.vjs-paused.vjs-user-active .vjs-progress-control,.bc-player-rkgpS9K_default.not-hover.vjs-has-started.vjs-paused.vjs-user-inactive .vjs-progress-control,.bc-player-rkgpS9K_default.not-hover.vjs-has-started.vjs-playing.vjs-user-active .vjs-progress-control,.bc-player-rkgpS9K_default.not-hover.vjs-has-started.vjs-playing.vjs-user-inactive .vjs-progress-control,.bc-player-rkgpS9K_default.vjs-has-started.vjs-paused.vjs-ad-playing.vjs-user-inactive .vjs-progress-control,.bc-player-rkgpS9K_default.vjs-has-started.vjs-playing.vjs-user-inactive .vjs-progress-control{height:.3em;top:-.3em;pointer-events:none;-webkit-transition:height 1s,top 1s;-moz-transition:height 1s,top 1s;-ms-transition:height 1s,top 1s;-o-transition:height 1s,top 1s;transition:height 1s,top 1s}.bc-player-rkgpS9K_default.not-hover.vjs-has-started.vjs-paused.vjs-user-active.vjs-fullscreen .vjs-progress-control,.bc-player-rkgpS9K_default.not-hover.vjs-has-started.vjs-paused.vjs-user-inactive.vjs-fullscreen .vjs-progress-control,.bc-player-rkgpS9K_default.not-hover.vjs-has-started.vjs-playing.vjs-user-active.vjs-fullscreen .vjs-progress-control,.bc-player-rkgpS9K_default.not-hover.vjs-has-started.vjs-playing.vjs-user-inactive.vjs-fullscreen .vjs-progress-control,.bc-player-rkgpS9K_default.vjs-has-started.vjs-playing.vjs-user-inactive.vjs-fullscreen .vjs-progress-control{opacity:0;-webkit-transition:opacity 1s;-moz-transition:opacity 1s;-ms-transition:opacity 1s;-o-transition:opacity 1s;transition:opacity 1s}.bc-player-rkgpS9K_default.not-hover.vjs-has-started.vjs-paused.vjs-user-active .vjs-menu,.bc-player-rkgpS9K_default.not-hover.vjs-has-started.vjs-paused.vjs-user-active .vjs-volume-vertical,.bc-player-rkgpS9K_default.not-hover.vjs-has-started.vjs-paused.vjs-user-inactive .vjs-menu,.bc-player-rkgpS9K_default.not-hover.vjs-has-started.vjs-paused.vjs-user-inactive .vjs-volume-vertical,.bc-player-rkgpS9K_default.not-hover.vjs-has-started.vjs-playing.vjs-user-active .vjs-menu,.bc-player-rkgpS9K_default.not-hover.vjs-has-started.vjs-playing.vjs-user-active .vjs-volume-vertical,.bc-player-rkgpS9K_default.not-hover.vjs-has-started.vjs-playing.vjs-user-inactive .vjs-menu,.bc-player-rkgpS9K_default.not-hover.vjs-has-started.vjs-playing.vjs-user-inactive .vjs-volume-vertical,.bc-player-rkgpS9K_default.vjs-has-started.vjs-paused.vjs-ad-playing.vjs-user-inactive .vjs-menu,.bc-player-rkgpS9K_default.vjs-has-started.vjs-paused.vjs-ad-playing.vjs-user-inactive .vjs-volume-vertical,.bc-player-rkgpS9K_default.vjs-has-started.vjs-playing.vjs-user-inactive .vjs-menu,.bc-player-rkgpS9K_default.vjs-has-started.vjs-playing.vjs-user-inactive .vjs-volume-vertical{opacity:0;-webkit-transition:opacity 1s;-moz-transition:opacity 1s;-ms-transition:opacity 1s;-o-transition:opacity 1s;transition:opacity 1s}.bc-player-rkgpS9K_default.not-hover.vjs-has-started.vjs-paused.vjs-user-active .vjs-control-bar-visible .vjs-menu,.bc-player-rkgpS9K_default.not-hover.vjs-has-started.vjs-paused.vjs-user-inactive .vjs-control-bar-visible .vjs-menu,.bc-player-rkgpS9K_default.not-hover.vjs-has-started.vjs-playing.vjs-user-active .vjs-control-bar-visible .vjs-menu,.bc-player-rkgpS9K_default.not-hover.vjs-has-started.vjs-playing.vjs-user-inactive .vjs-control-bar-visible .vjs-menu,.bc-player-rkgpS9K_default.vjs-has-started.vjs-paused.vjs-ad-playing.vjs-user-inactive .vjs-control-bar-visible .vjs-menu-item,.bc-player-rkgpS9K_default.vjs-has-started.vjs-playing.vjs-user-inactive .vjs-control-bar-visible .vjs-menu{opacity:1}.bc-player-rkgpS9K_default.vjs-live .vjs-live-control{margin-left:1em}.bc-player-rkgpS9K_default.vjs-live .vjs-time-control.vjs-current-time,.bc-player-rkgpS9K_default.vjs-live .vjs-time-control.vjs-duration,.bc-player-rkgpS9K_default.vjs-live .vjs-time-control.vjs-time-divider{display:none}.bc-player-rkgpS9K_default .vjs-big-play-button{top:50%;left:50%;margin-left:-1em;margin-top:-1em;width:2em;height:2em;line-height:2em;border:none;border-radius:50%;font-size:3.5em;background-color:rgba(0,0,0,.45);color:#fff;-webkit-transition:border-color .4s,outline .4s,background-color .4s;-moz-transition:border-color .4s,outline .4s,background-color .4s;-ms-transition:border-color .4s,outline .4s,background-color .4s;-o-transition:border-color .4s,outline .4s,background-color .4s;transition:border-color .4s,outline .4s,background-color .4s}.bc-player-rkgpS9K_default .vjs-big-play-button:active,.bc-player-rkgpS9K_default .vjs-big-play-button:focus,.bc-player-rkgpS9K_default:active .vjs-big-play-button,.bc-player-rkgpS9K_default:hover .vjs-big-play-button{background-color:#d52484}.bc-player-rkgpS9K_default .vjs-menu-button-popup .vjs-menu{left:-3em}.bc-player-rkgpS9K_default .vjs-menu-button-popup .vjs-menu .vjs-menu-content{background-color:transparent;width:12em;left:-1.5em;padding-bottom:.5em}.bc-player-rkgpS9K_default .vjs-menu-button-popup .vjs-menu .vjs-menu-item,.bc-player-rkgpS9K_default .vjs-menu-button-popup .vjs-menu .vjs-menu-title{background-color:#151B17;margin:.3em 0;padding:.5em;border-radius:.3em}.bc-player-rkgpS9K_default .vjs-menu-button-popup .vjs-menu .vjs-menu-item.vjs-selected{background-color:#d52484}.bc-player-rkgpS9K_default .vjs-menu-button-popup .vjs-menu .vjs-menu-item:active,.bc-player-rkgpS9K_default .vjs-menu-button-popup .vjs-menu .vjs-menu-item:focus,.bc-player-rkgpS9K_default .vjs-menu-button-popup .vjs-menu .vjs-menu-item:hover{text-shadow:0 0 1em #fff,0 0 1em #fff,0 0 1em #fff;color:#fff}.bc-player-rkgpS9K_default.vjs-ad-playing .vjs-mouse-display,.bc-player-rkgpS9K_default.vjs-ad-playing .vjs-mouse-display:after{display:none}.bc-player-rkgpS9K_default.vjs-ad-playing.vjs-ad-playing .vjs-progress-control:after{pointer-events:auto;width:100%;height:100%;position:absolute;left:0;bottom:0;content:" ";user-select:none;-ms-user-select:none;-moz-user-select:none;-webkit-user-select:none}.bc-player-rkgpS9K_default.vjs-ad-playing .vjs-picture-in-picture-control{display:none}.bc-player-rkgpS9K_default.vjs-no-flex .vjs-spacer{display:table-cell}.bc-player-rkgpS9K_default.vjs-no-flex .vjs-time-control{display:table-cell;width:4em}.bc-player-rkgpS9K_default.vjs-no-flex .vjs-remaining-time{display:none}.vjs-mouse.bc-player-rkgpS9K_default .vjs-control-bar{font-size:10px}.vjs-mouse.bc-player-rkgpS9K_default .vjs-progress-control{height:.5em;top:-.5em}.vjs-mouse.bc-player-rkgpS9K_default .vjs-progress-control:hover{height:1.5em;top:-1.5em}.bc-player-rkgpS9K_default select{width:inherit}.bc-player-rkgpS9K_default.video-js:not(.vjs-fullscreen).vjs-layout-tiny .vjs-progress-control,.bc-player-rkgpS9K_default.video-js:not(.vjs-fullscreen).vjs-layout-x-small.vjs-liveui .vjs-progress-control{display:block}.vjs-control-bar .vjs-menu-popup-last-visible .vjs-menu{left:-7em}</style>
+    <meta charset="utf-8"><script type="text/javascript" src="https://bam.nr-data.net/1/e78a80aa93?a=129613202&amp;v=1167.2a4546b&amp;to=YwBUZkcFVktUWhJQX1pKY0BcSxdRW10DQR5EDUY%3D&amp;rst=10300&amp;ref=https://support.brightcove.com/ja/audio-content&amp;ap=3040&amp;be=4021&amp;fe=9659&amp;dc=7635&amp;perf=%7B%22timing%22:%7B%22of%22:1588779417053,%22n%22:0,%22f%22:0,%22dn%22:0,%22dne%22:0,%22c%22:0,%22ce%22:0,%22rq%22:2,%22rp%22:3976,%22rpe%22:4029,%22dl%22:4018,%22di%22:7635,%22ds%22:7635,%22de%22:7644,%22dc%22:9659,%22l%22:9659,%22le%22:9661%7D,%22navigation%22:%7B%7D%7D&amp;at=T0dXEA8fRUU%3D&amp;jsonp=NREUM.setToken"></script><script src="https://js-agent.newrelic.com/nr-1167.min.js"></script><script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script><script type="text/javascript" async="" src="//cdn.feedbackify.com/f.js"></script><script async="" src="https://fullstory.com/s/fs.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e78a80aa93",applicationID:"129613202"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-2728311-17", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)">
+<meta name="MobileOptimized" content="width">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="https://support.brightcove.com/sites/default/files/favicon-64.png" type="image/png">
+<link rel="alternate" hreflang="en" href="https://support.brightcove.com/audio-content">
+<link rel="canonical" href="https://support.brightcove.com/ja/audio-content">
+<link rel="shortlink" href="https://support.brightcove.com/ja/node/17951">
+<link rel="revision" href="https://support.brightcove.com/audio-content">
+
+    <title>オーディオコンテンツ| Brightcove 学習</title>
+    <link rel="stylesheet" media="all" href="https://support.brightcove.com/sites/default/files/css/css_d7PoQ20hWbRiei75VgExP_tm8C1ylIRfzB3zIYLc5Cw.css?q23msc">
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.min.css">
+<link rel="stylesheet" media="all" href="https://support.brightcove.com/sites/default/files/css/css_fr7ugR_m15spMT57voAomC2Aklj0ATM7MmH6hvb3pp4.css?q23msc">
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+    <meta name="uri-translation" content="on">
+    <script>
+window['_fs_debug'] = false; window['_fs_host'] = 'fullstory.com';
+window['_fs_org'] = 'BX3Q1';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+g.consent=function(a){g("consent",!arguments.length||a)};
+g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+g.clearUserCookie=function(){};
+})(window,document,window['_fs_namespace'],'script','user');
+    </script>
+  <style type="text/css">html{_background:url(//about:blank) fixed;}.fby-on select {visibility:hidden!important;}.fby-on .fby-hide-iframe {visibility:hidden!important;}.fby-hide-embed embed {visibility:hidden!important;}.fby-hide-object object {visibility:hidden!important;}@media not screen {.fby-tab {display: none;}}#feedbackify *{box-sizing:content-box!important;-moz-box-sizing:content-box!important;-webkit-box-sizing:content-box!important;}#feedbackify input{box-sizing:border-box!important;-moz-box-sizing:border-box!important;-webkit-box-sizing:border-box!important;max-width:none!important;}#feedbackify *:before{content:none!important;}#feedbackify *:after{content:none!important;}#feedbackify ,#feedbackify div,#feedbackify span,#feedbackify textarea,#feedbackify input,#feedbackify table,#feedbackify tbody,#feedbackify tr,#feedbackify td,#feedbackify img,#feedbackify p,#feedbackify a{border:0!important;outline:none!important;width:auto;height:auto;text-align:left!important;text-indent:0!important;float:none!important;padding:0!important;margin:0!important;font:12px arial,helvetica,sans-serif!important;overflow:visible!important;color:#000!important;line-height:1.2!important;background:0 none!important;position:static!important;vertical-align:baseline!important;box-shadow:none!important;}#feedbackify table{border-collapse:collapse!important;border-spacing:0!important;max-width:inherit!important;width:auto!important;}#feedbackify td{word-break:normal!important;}#feedbackify {z-index:2147483646!important;position:static!important;top:0;left:0;}#feedbackify .fby-screen{z-index:2147483646!important;position:fixed!important;top:0;left:0;width:0;height:100%;_position:absolute!important;_top:expression(eval(document.body.scrollTop||document.documentElement.scrollTop))!important;_left:expression(eval(document.body.scrollLeft||document.documentElement.scrollLeft))!important;_width:0!important;_height:expression(document.documentElement.clientHeight||document.body.clientHeight+"px")!important;}#feedbackify .fby-mask{display:none!important;position:fixed!important;top:0;left:0;width:100%;height:100%;background-color:#000!important;opacity:0.2;filter:alpha(opacity=20);_position:absolute!important;_width:expression(document.documentElement.clientWidth||document.body.clientWidth+"px")!important;_height:expression(this.parentNode.style.height)!important;}#feedbackify .fby-show{display:block!important;visibility:visible!important;}#feedbackify .fby-hide{display:none!important;visibility:hidden!important;}</style><style type="text/css">#feedbackify .fby-tab{position:fixed!important;width:36px;height:100px;overflow:hidden!important;_position:absolute!important;}#feedbackify .fby-tab a{display:block!important;position:absolute!important;width:36px;height:100px;background-color:#000000!important;cursor:pointer!important;background:url(https://cdn.feedbackify.com/img/classic/tab.png)!important;_background:none!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/tab.png)!important;}#feedbackify .fby-tab-l{top:50%;left:0;margin-top:-50px!important;_top:expression((parseInt(this.parentNode.style.height)-this.clientHeight)/2+"px")!important;_margin-top:0!important;}#feedbackify .fby-tab-l a{margin-left:-5px!important;}#feedbackify .fby-tab-l a:hover{margin-left:-2px!important;}#feedbackify .fby-tab-r{top:50%;right:0px!important;margin-top:-50px!important;_top:expression((parseInt(this.parentNode.style.height)-this.clientHeight)/2+"px")!important;_left:expression((document.documentElement.clientWidth||document.body.clientWidth)-this.clientWidth+"px")!important;_margin-top:0!important;}#feedbackify .fby-tab-r a{margin-left:5px!important;}#feedbackify .fby-tab-r a:hover{margin-left:2px!important;}#feedbackify .fby-tab-t{top:0;margin-top:0px!important;}#feedbackify .fby-tab-b{top:auto;bottom:0!important;_top:expression(parseInt(this.parentNode.style.height)-this.clientHeight+"px")!important;}</style><style type="text/css">#feedbackify grammarly-ghost{display:none!important;}#feedbackify grammarly-btn{display:none!important;}#feedbackify #fby-form{z-index:2147483646!important;width:618px!important;position:absolute!important;}#feedbackify .fby-d-main{width:600px;height:50px;vertical-align:top!important;background-color:#FFFFFF!important;position:relative!important;}#feedbackify .fby-d{background:url(https://cdn.feedbackify.com/img/classic/dlg_shad_sprite.png)!important;_background:none!important;}#feedbackify .fby-d-h{height:9px;background:url(https://cdn.feedbackify.com/img/classic/dlg_shad_sprite_h.png)!important;_background:none!important;}#feedbackify .fby-d-h2{height:9px;background-color:#FFFFFF!important;}#feedbackify .fby-d-tl{background-position:-18px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_tl.png)!important;}#feedbackify .fby-d-t{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_t.png,sizingMethod=scale)!important;}#feedbackify .fby-d-tr{background-position:-36px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_tr.png)!important;}#feedbackify .fby-d-l{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_l.png,sizingMethod=scale)!important;}#feedbackify .fby-d-r{background-position:-9px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_r.png,sizingMethod=scale)!important;}#feedbackify .fby-d-bl{background-position:-54px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_bl.png)!important;}#feedbackify .fby-d-br{background-position:-72px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_br.png)!important;}#feedbackify .fby-d-b{background-position:0px -9px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_b.png,sizingMethod=scale)!important;}#feedbackify .fby-d-load{position:relative!important;}#feedbackify .fby-d-load img{position:absolute!important;left:8px;}#feedbackify .fby-d-load div{position:absolute!important;padding:4px 18px!important;font-size:16px!important;font-weight:bold!important;color:#333!important;}</style></head>
+  <body class="path-node page-node-type-support-doc has-glyphicons">
+    <a class="visually-hidden" focusable="" skip-link="" href="#main-content/index.html">
+      メインコンテンツへスキップ
+    </a>
+    
+      <div class="gt-block dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="" data-gt-block="">
+              <header class="navbar navbar-default container" id="navbar" role="banner">
+      <div class="gt-block navigation-secondary clearfix" data-gt-block="">
+          <div class="gt-block region region-navigation-secondary" data-gt-block="">
+    <section id="block-styles" class="block block-block-content block-block-contentfbb71e48-a6cd-4d2b-8239-43f18db69e60 clearfix">
+  
+    
+
+      
+            <div class="gt-block field field--name-field-body field--type-text-long field--label-hidden field--item" data-gt-block=""><link rel="stylesheet" media="all" href="https://learning-services-media.brightcove.com/doc-assets/css/drupal-fix.css"></div>
+      
+  </section>
+
+<nav role="navigation" aria-labelledby="block-secondarynavigation-menu" id="block-secondarynavigation">
+            
+  <h2 class="visually-hidden" id="block-secondarynavigation-menu" data-gt-block="">セカンダリナビゲーション</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/contact-support/index.html" title="サポートリクエストを作成する" data-drupal-link-system-path="node/18632">サポートリクエスト</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://status.brightcove.com/">システムステータス</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://university.brightcove.com/">Brightcove 大学</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<section id="block-gtranslate" class="block block-gtranslate block-gtranslate-block clearfix">
+  
+    
+
+      
+<div class="gt-block gtranslate" data-gt-block="">
+<script type="text/javascript">/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;var lang=lang_pair.split('|')[1];var plang=location.pathname.split('/')[1];if(plang.length !=2 && plang != 'zh-CN' && plang != 'zh-TW')plang='en';if(lang == 'en')location.pathname=location.pathname.replace('/'+plang+'/', '/');else location.pathname='/'+lang+location.pathname.replace('/'+plang+'/', '/');}
+/* ]]> */
+</script><select onchange="doGTranslate(this);"><option value="">言語の選択</option><option value="en|en" style="font-weight:bold;background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -0px;padding-left:18px;">英語</option><option value="en|fr" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -160px;padding-left:18px;">フランス語</option><option value="en|de" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -176px;padding-left:18px;">ドイツ語</option><option value="en|ja" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -240px;padding-left:18px;">日本語</option><option value="en|ko" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -256px;padding-left:18px;">韓国語</option><option value="en|es" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -352px;padding-left:18px;">スペイン語</option></select>
+</div>
+<div class="gtranslate__credits" data-gt-block="">
+  本ドキュメントはGoogle翻訳によって機械翻訳したものとなります
+</div>
+
+  </section>
+
+
+  </div>
+
+      </div>
+      <div class="gt-block navbar-header col-md-3" data-gt-block="">
+                  <a class="logo" navbar-btn="" pull-left="" href="../ja/index.html" title="ホーム" rel="home">
+            <img src="https://support.brightcove.com/themes/custom/bcdocs/images/brightcove.png" alt="ホーム">
+          </a>
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">トグルナビゲーション</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+                    <div class="gt-block navbar-collapse collapse" data-gt-block="">
+            <div class="gt-block region region-navigation-collapsible" data-gt-block="">
+    <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation">
+            <h2 class="sr-only" id="block-mainnavigation-menu" data-gt-block="">メインナビゲーション</h2>
+
+      
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-learning-home/index.html" title="ホームページ" data-drupal-link-system-path="node/18643">ホーム</a>
+                  </li>
+                                            <li class="expanded dropdown">
+        <a class="dropdown-toggle" href="" data-toggle="dropdown">
+          製品紹介
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/video-cloud/index.html" data-drupal-link-system-path="node/18332">Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://gallery.support.brightcove.com">ギャラリー</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-player/index.html" data-drupal-link-system-path="node/18283">Brightcove Player</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/live/index.html" data-drupal-link-system-path="node/18642">Live</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/social/index.html" data-drupal-link-system-path="node/18444">Social</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/audience/index.html" data-drupal-link-system-path="node/18445">Audience</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://zencoder.support.brightcove.com">Zencoder</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/ssai/index.html" data-drupal-link-system-path="node/18650">SSAI</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://support.ottflow.com">OTT Flow</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a class="dropdown-toggle" href="" data-toggle="dropdown">
+          Links
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/analytics-api/index.html" data-drupal-link-system-path="node/18370">Analytics API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/audience-api/index.html" data-drupal-link-system-path="node/18371">Audience API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/cms-api/index.html" data-drupal-link-system-path="node/18372">CMS API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/cms-connectors-video-cloud/index.html" data-drupal-link-system-path="node/18662">CMSコネクタ用 Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/data-collection-api/index.html" data-drupal-link-system-path="node/18876">Data Collection API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/delivery-system-api/index.html" data-drupal-link-system-path="node/18387">Delivery System API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/developer-tools-and-concepts/index.html" data-drupal-link-system-path="node/18430">開発者ツールと概念</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/native-player-sdks/index.html" data-drupal-link-system-path="node/18367">Device SDK</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/dynamic-ingest-api/index.html" data-drupal-link-system-path="node/18373">Dynamic Ingest API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/getting-started-brightcove-apis-0/index.html" data-drupal-link-system-path="node/18711">入門 - Brightcove API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/page-experience-api/index.html" data-drupal-link-system-path="node/18616">In-Page Experience APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/ingest-profiles-api/index.html" data-drupal-link-system-path="node/18374">Ingest Profiles API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/live/index.html" data-drupal-link-system-path="node/18642">Live API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/oauth-api/index.html" data-drupal-link-system-path="node/18376">OAuth API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/platform-api-code-samples/index.html" data-drupal-link-system-path="node/18675">プラットフォームAPIコードサンプル</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/playback-api/index.html" data-drupal-link-system-path="node/18380">Playback API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-player-code-samples/index.html" data-drupal-link-system-path="node/18630">プレーヤーコードサンプル</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-player-developer/index.html" data-drupal-link-system-path="node/18362">プレーヤー開発者</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/player-management-api/index.html" data-drupal-link-system-path="node/18378">Player Management API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/policy-api/index.html" data-drupal-link-system-path="node/18381">Policy API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/release-notes/index.html" data-drupal-link-system-path="node/18687">リリースに関して</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a class="dropdown-toggle" href="" data-toggle="dropdown">
+          トレーニング（講習会）
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a class="nturl" href="https://university.brightcove.com">オンラインコース</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/register-training/index.html" data-drupal-link-system-path="node/18270">コース登録</a>
+                  </li>
+        </ul>
+  
+            </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-support-documentation-announcements/index.html" title="の新機能を見る Brightcove オンラインマニュアル" data-drupal-link-system-path="node/18896">新着情報</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+        </div>
+          </header>
+  
+    <div class="gt-block full-width-headline" data-gt-block="">
+    <div class="gt-block container" data-gt-block="">
+      <div class="gt-block row" data-gt-block="">
+        <div class="gt-block col-sm-12" role="heading" data-gt-block="">
+            <div class="gt-block region region-header" data-gt-block="">
+          <section id="block-brightcoveheadlineblock" class="block block-bc-general block-bc-general-headline-block clearfix">
+  
+    
+
+      オンラインマニュアル
+  </section>
+
+
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      <div role="main" class="gt-block main-container container  js-quickedit-main-content" data-gt-block="">
+    <div class="gt-block row" data-gt-block="">
+
+                              <aside class="gt-block col-sm-3" role="complementary" data-gt-block="">
+              <div class="gt-block region region-sidebar-first" data-gt-block="">
+    <section class="bc-search-fixes-search-block-form block block-bc-search-fixes block-bc-search-fixes-search-block clearfix" data-drupal-selector="bc-search-fixes-search-block-form" id="block-brightcovesearchblock">
+  
+    
+
+      <form action="/ja/audio-content" method="post" id="bc-search-fixes-search-block-form" accept-charset="UTF-8">
+  <div class="gt-block form-item js-form-item form-type-textfield js-form-type-textfield form-item-search js-form-item-search form-no-label form-group" data-gt-block="">
+      <label for="edit-search" class="control-label sr-only">サイト内検索</label>
+  
+  
+  <input data-drupal-selector="edit-search" class="form-text form-control" type="text" id="edit-search" name="search" value="" size="15" maxlength="128" placeholder="サイト内検索">
+
+  
+  
+  </div>
+<input autocomplete="off" data-drupal-selector="form-tmwl7by7t7xjcel-73rfug2i6o0encymfts0ygkjmno" type="hidden" name="form_build_id" value="form-tMwL7bY7t7xJCEL-73rFug2I6O0enCYmFts0yGKJMNo"><input data-drupal-selector="edit-bc-search-fixes-search-block-form" type="hidden" name="form_id" value="bc_search_fixes_search_block_form"><div data-drupal-selector="edit-actions" class="gt-block form-actions form-group js-form-wrapper form-wrapper" id="edit-actions" data-gt-block=""><button data-drupal-selector="edit-submit" class="button js-form-submit form-submit btn-primary btn icon-only" type="submit" id="edit-submit" name="op" value="Search"><span class="sr-only">サイト内検索</span><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button></div>
+
+</form>
+
+  </section>
+
+<section id="block-inpagenavigationblock" class="hidden-xs block block-bc-ipnav block-bc-ipnav-block clearfix" style="width: 476px;">
+  
+      <h2 class="block-title" data-gt-block="">このページ</h2>
+    
+
+      <div class="bc-ipnav-block" data-gt-block=""><ul><li><a href="#Ingestion/index.html">摂取</a></li><li><a href="#Renditions/index.html">レンディション</a></li><li><a href="#Poster_and_thumbnail/index.html">ポスターとサムネイル</a></li><li><a href="#Audio_player/index.html">オーディオプレイヤー</a></li><li><a href="#Sample_player/index.html">サンプルプレーヤー</a></li><li><a href="#bc-ipnav-5/index.html">関連コンテンツ</a></li></ul></div>
+  </section>
+
+
+  </div>
+
+          </aside>
+              
+                  <section class="col-sm-9">
+
+                                      <div class="gt-block highlighted" data-gt-block="">  <div class="gt-block region region-highlighted" data-gt-block="">
+    <div data-drupal-messages-fallback="" class="hidden" data-gt-block=""></div>
+
+  </div>
+</div>
+                  
+                
+                
+                
+                          <a class="nturl" id="main-content"></a>
+            <div class="gt-block region region-content" data-gt-block="">
+        <h1 class="page-header"><span>オーディオコンテンツ</span>
+</h1>
+
+  
+<div class="gt-block node node--type-support-doc node--view-mode-full bcdocs-four-rows clearfix" data-gt-block="">
+
+  
+
+  <div class="group-first-row" data-gt-block="">
+      </div>
+
+  <div class="gt-block group-second-row" data-gt-block="">
+  
+  <div class="gt-block field field--name-field-products field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">製品（複数可）</div>
+          <div class="gt-block field__items taxonomy__tags" data-gt-block="">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item" data-gt-block="">Video Cloud</div>
+              </div>
+      </div>
+
+  <div class="gt-block field field--name-field-roles field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">役割</div>
+          <div class="gt-block field__items taxonomy__tags" data-gt-block="">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item" data-gt-block="">API開発者</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="gt-block group-third-row taxonomy__tags" data-gt-block="">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="gt-block field field--name-field-tasks field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">タスク</div>
+          <div class="gt-block field--items" data-gt-block="">
+              <div class="field--item" data-gt-block="">動画/アセットを追加する</div>
+          <div class="field--item" data-gt-block="">動画を管理する</div>
+              </div>
+      </div>
+
+  <div class="gt-block field field--name-field-topics field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">トピック）</div>
+          <div class="gt-block field--items" data-gt-block="">
+              <div class="field--item" data-gt-block="">オーディオ</div>
+              </div>
+      </div>
+
+  <div class="gt-block field field--name-field-apis field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">API</div>
+          <div class="gt-block field--items" data-gt-block="">
+              <div class="field--item" data-gt-block="">CMS API</div>
+          <div class="field--item" data-gt-block="">Dynamic Ingest API</div>
+          <div class="field--item" data-gt-block="">Ingest Profiles API</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="gt-block group-fourth-row" data-gt-block="">
+  
+            <div class="gt-block field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item" data-gt-block=""><p data-gt-block="">ビデオコンテンツの場合と同様に、オーディオコンテンツを取り込み、管理、再生することができます。 このトピックでは、オーディオコンテンツを取り込み、そのコンテンツを再生する方法について説明します。</p>
+                <link rel="stylesheet" href="http://learning-services-media.brightcove.com/doc-assets/video-cloud-apis/general-information/audio-content/audio-content.css"><article class="bcls-article"><section class="bcls-section"><h2 id="Ingestion" data-gt-block="">摂取</h2>
+
+<p data-gt-block="" class="gt-block gt-block">あなたにオーディオファイルを追加するには Video Cloud アカウント、 <a class="nturl" href="..//support.brightcove.com/ja/overview-dynamic-ingest-api-legacy-ingest/index.html">Dynamic Ingest API</a> または <a class="nturl" href="..//support.brightcove.com/ja/uploading-videos-using-upload-module/index.html">アップロードモジュール</a>。 ソースファイルは、MP3、M4A、またはWAV形式にすることができます。 インジェストプロセスには2つの要求が必要です。</p>
+
+<ol><li>のリクエストを作成する CMS API アイテムを作成する Video Cloud カタログ</li>
+	<li>ファイルを取り込み、トランスコードするためのIngest APIへの取り込み要求</li>
+</ol><p data-gt-block="" class="gt-block gt-block">これらのリクエストの詳細は、 <a class="nturl" href="https://docs.brightcove.com/dynamic-ingest-api/v1/doc/index.html">Dynamic Ingest API 参照</a>.</p>
+
+<h3 data-gt-block="">プロフィールを取り込む</h3>
+
+<h4 data-gt-block="">Dynamic Delivery</h4>
+
+<p data-gt-block="">アカウントでダイナミック配信が有効になっている場合、オーディオ専用コンテンツのカスタムプロファイルは必要ありません。</p>
+
+<h4 data-gt-block="">レガシー摂取</h4>
+
+<p data-gt-block="" class="gt-block gt-block">アカウントで従来のインジェストシステムを使用している場合は、オーディオ専用のレンディションを作成するプロファイルを使用します。 あなたは <code class="notranslate">audio-only </code> プロファイルに含まれる <a class="nturl" href="..//support.brightcove.com/ja/standard-ingest-profiles-legacy-transcoding/index.html">標準プロファイル</a>、またはカスタムプロファイルを作成することができます。 <a class="nturl" href="..//support.brightcove.com/ja/managing-ingest-profiles/index.html">Studioアカウントの設定</a> または <a class="nturl" href="..//support.brightcove.com/ja/overview-ingest-profiles-api-legacy-ingest/index.html">Ingest Profiles API</a>.</p>
+</section><section class="bcls-section"><h2 id="Renditions" data-gt-block="">レンディション</h2>
+
+<p data-gt-block="" class="gt-block gt-block">で作成されたレンディション Video Cloud オーディオアイテムはMP4およびHLS形式で、オーディオトラックのみが含まれます。 アイテムは Brightcove Player 説明したようにビデオのように <a class="nturl" href="#Audio_Player/index.html">以下</a>.</p>
+
+<p class="gt-block gt-block BCL-aside" data-gt-block="">注：複数のプラットフォーム/ブラウザでの再生範囲を最大限にするには、オーディオファイルをMP4およびHLSレンディションにオーディオトラックのみでトランスコードすることをお勧めします。 <strong>MP3を出力フォーマットとして指定することはできません</strong>.</p>
+</section><section class="bcls-section"><h2 id="Poster_and_thumbnail" data-gt-block="">ポスターとサムネイル</h2>
+
+<p data-gt-block="">必要に応じて、オーディオファイルにポスターやサムネイル画像を追加することもできます。 ポスターは Brightcove 再生中にサムネイルが表示され、アイテムを追加するプレイリストに表示されます。</p>
+
+<p data-gt-block="" class="gt-block gt-block">オーディオアイテムに画像を追加するには、 <a class="nturl" href="..//support.brightcove.com/ja/uploading-poster-and-thumbnail-images/index.html">Studioでアイテム設定を編集する</a> または使用 <a class="nturl" href="..//support.brightcove.com/ja/images-and-dynamic-ingest-api/index.html">Dynamic Ingest API</a>.</p>
+</section><section class="bcls-section"><h2 id="Audio_player" data-gt-block="">オーディオプレイヤー</h2>
+
+<p data-gt-block="" class="gt-block gt-block">あなたのオーディオアイテムは、 <a class="nturl" href="..//support.brightcove.com/ja/overview-brightcove-player/index.html">Brightcove Player</a>。 再生中にビデオ画面が空白になるか、ポスター画像が表示されます。 <a class="nturl" href="#Poster_and_thumbnail/index.html">1つ追加</a>.</p>
+
+<p data-gt-block="" class="gt-block gt-block">あなたがビデオ画面なしでより少ないオーディオプレーヤーを使用したい場合は、その目的のためにプレーヤーを作成することができます。 お先にどうぞ <a class="nturl" href="..//support.brightcove.com/ja/getting-started-players-module/index.html">プレーヤーを作成する</a>,  <a class="nturl" href="..//support.brightcove.com/ja/setting-player-information-properties/index.html">サイズを設定する</a> 次のようにします。</p>
+
+<ul><li>固定サイズを使用する</li>
+	<li>カスタムアスペクト比を使用する</li>
+	<li>高さを80pxに設定します（幅は好きなようにすることができます）</li>
+</ul><figure><figcaption>オーディオプレーヤーのサイジング</figcaption><img alt="プレーヤーのサイジング" src="http://learning-services-media.brightcove.com/doc-assets/node/17951-audio-content/assets/player-sizing.png"></figure></section><section class="bcls-section"><h2 id="Sample_player" data-gt-block="">サンプルプレーヤー</h2>
+
+<p data-gt-block="" class="gt-block gt-block">以下は、サンプルオーディオプレーヤーです。 <a class="nturl" href="..//support.brightcove.com/ja/brightcove-player-sample-audio-player-simulated/index.html">このプレーヤーの作成手順</a>.</p>
+<video-js id="audioOnly" data-video-id="4841158458001" data-account="1752604059001" data-player="rkgpS9K" data-embed="default" class="video-js vjs-paused vjs-controls-enabled vjs-workinghover vjs-v7 vjs-user-active vjs-layout-medium bc-player-rkgpS9K_default bc-player-rkgpS9K_default-index-0 vjs-mouse vjs-player-info vjs-contextmenu vjs-contextmenu-ui vjs-errors" style="width: 480px; height: 80px;" tabindex="-1" lang="ja" role="region" aria-label="Video Player"><video tabindex="-1" style="width: 480px; height: 80px;" class="vjs-tech" data-embed="default" data-player="rkgpS9K" data-account="1752604059001" data-video-id="4841158458001" id="audioOnly_html5_api" preload="metadata" poster="https://httpsak-a.akamaihd.net/1752604059001/1752604059001_4841240746001_4841158458001-vs.jpg?pubId=1752604059001&amp;videoId=4841158458001" src="blob:https://support.brightcove.com/6c167684-f0c3-4582-8ebf-d1efcfb950b6"></video> <script src="https://vjs.zencdn.net/vttjs/0.12.5/vtt.global.min.js"></script><div class="vjs-poster" aria-disabled="false" style="background-image: url(&quot;https://httpsak-a.akamaihd.net/1752604059001/1752604059001_4841240746001_4841158458001-vs.jpg?pubId=1752604059001&amp;videoId=4841158458001&quot;);"></div><div class="vjs-text-track-display" aria-live="off" aria-atomic="true"><div style="position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; margin: 1.5%;"></div></div><div class="vjs-loading-spinner" dir="ltr"><span class="vjs-control-text">Video Player is loading.</span></div><button class="vjs-big-play-button" type="button" title="Play Audio" aria-disabled="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Play Audio</span></button><div class="vjs-control-bar" dir="ltr"><button class="vjs-play-control vjs-control vjs-button" type="button" title="Play" aria-disabled="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Play</span></button><div class="vjs-volume-panel vjs-control vjs-volume-panel-horizontal"><button class="vjs-mute-control vjs-control vjs-button" type="button" title="Mute" aria-disabled="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Mute</span></button><div class="vjs-volume-control vjs-control vjs-volume-horizontal"><div tabindex="0" class="vjs-volume-bar vjs-slider-bar vjs-slider vjs-slider-horizontal" role="slider" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" aria-label="Volume Level" aria-live="polite" aria-valuetext="100%"><div class="vjs-volume-level"><span class="vjs-control-text"></span></div></div></div></div><div class="vjs-current-time vjs-time-control vjs-control"><span class="vjs-control-text" role="presentation">Current Time&nbsp;</span><span class="vjs-current-time-display" aria-live="off" role="presentation"></span></div><div class="vjs-time-control vjs-time-divider" aria-hidden="true"><div><span>/</span></div></div><div class="vjs-duration vjs-time-control vjs-control"><span class="vjs-control-text" role="presentation">Duration&nbsp;</span><span class="vjs-duration-display" aria-live="off" role="presentation"></span></div><div class="vjs-progress-control vjs-control"><div tabindex="0" class="vjs-progress-holder vjs-slider vjs-slider-horizontal" role="slider" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" aria-label="Progress Bar"><div class="vjs-load-progress"><span class="vjs-control-text"><span>Loaded</span>: <span class="vjs-control-text-loaded-percentage">0%</span></span></div><div class="vjs-mouse-display"><div class="vjs-time-tooltip" aria-hidden="true"></div></div><div class="vjs-play-progress vjs-slider-bar" aria-hidden="true"><div class="vjs-time-tooltip" aria-hidden="true"></div></div></div></div><div class="vjs-live-control vjs-control vjs-hidden"><div class="vjs-live-display" aria-live="off"><span class="vjs-control-text">Stream Type&nbsp;</span>LIVE</div></div><button class="vjs-seek-to-live-control vjs-control vjs-at-live-edge" type="button" title="Seek to live, currently playing live" aria-disabled="true"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Seek to live, currently playing live</span><span class="vjs-seek-to-live-text" aria-hidden="true">LIVE</span></button><div class="vjs-remaining-time vjs-time-control vjs-control"><span class="vjs-control-text" role="presentation">Remaining Time&nbsp;</span><span aria-hidden="true">-</span><span class="vjs-remaining-time-display" aria-live="off" role="presentation"></span></div><div class="vjs-custom-control-spacer vjs-spacer ">&nbsp;</div><div class="vjs-playback-rate vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden"><div class="vjs-playback-rate-value">1x</div><button class="vjs-playback-rate vjs-menu-button vjs-menu-button-popup vjs-button" type="button" aria-disabled="false" title="Playback Rate" aria-haspopup="true" aria-expanded="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Playback Rate</span></button><div class="vjs-menu"><ul class="vjs-menu-content" role="menu"></ul></div></div><div class="vjs-chapters-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden"><button class="vjs-chapters-button vjs-menu-button vjs-menu-button-popup vjs-button" type="button" aria-disabled="false" title="Chapters" aria-haspopup="true" aria-expanded="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Chapters</span></button><div class="vjs-menu"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-title">Chapters</li></ul></div></div><div class="vjs-descriptions-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden"><button class="vjs-descriptions-button vjs-menu-button vjs-menu-button-popup vjs-button" type="button" aria-disabled="false" title="Descriptions" aria-haspopup="true" aria-expanded="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Descriptions</span></button><div class="vjs-menu"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item vjs-selected" role="menuitemradio" aria-disabled="false" tabindex="-1" aria-checked="true"><span class="vjs-menu-item-text">descriptions off</span><span class="vjs-control-text" aria-live="polite">, selected</span></li></ul></div></div><div class="vjs-subs-caps-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden"><button class="vjs-subs-caps-button vjs-menu-button vjs-menu-button-popup vjs-button" type="button" aria-disabled="false" title="Subtitles" aria-haspopup="true" aria-expanded="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Subtitles</span></button><div class="vjs-menu"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item vjs-texttrack-settings" role="menuitem" aria-disabled="false" tabindex="-1"><span class="vjs-menu-item-text">subtitles settings</span><span class="vjs-control-text" aria-live="polite">, opens subtitles settings dialog</span></li><li class="vjs-menu-item vjs-selected" role="menuitemradio" aria-disabled="false" tabindex="-1" aria-checked="true"><span class="vjs-menu-item-text">subtitles off</span><span class="vjs-control-text" aria-live="polite">, selected</span></li></ul></div></div><div class="vjs-audio-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden"><button class="vjs-audio-button vjs-menu-button vjs-menu-button-popup vjs-button" type="button" aria-disabled="false" title="Audio Track" aria-haspopup="true" aria-expanded="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Audio Track</span></button><div class="vjs-menu"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item vjs-selected vjs-main-menu-item" role="menuitemradio" aria-disabled="false" tabindex="-1" aria-checked="true"><span class="vjs-menu-item-text">default</span><span class="vjs-control-text" aria-live="polite">, selected</span></li></ul></div></div><button class="vjs-picture-in-picture-control vjs-control vjs-button" type="button" title="Picture-in-Picture" aria-disabled="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Picture-in-Picture</span></button></div><div class="vjs-error-display vjs-modal-dialog vjs-hidden " aria-describedby="audioOnly_component_428_description" aria-hidden="true" aria-label="Modal Window" role="dialog"><p class="vjs-modal-dialog-description vjs-control-text" id="audioOnly_component_428_description">This is a modal window.</p><div class="vjs-modal-dialog-content" role="document"></div></div><div class="vjs-modal-dialog vjs-hidden  vjs-text-track-settings" aria-describedby="audioOnly_component_433_description" aria-hidden="true" aria-label="Caption Settings Dialog" role="dialog"><p class="vjs-modal-dialog-description vjs-control-text" id="audioOnly_component_433_description">Beginning of dialog window. Escape will cancel and close the window.</p><div class="vjs-modal-dialog-content" role="document"><div class="vjs-track-settings-colors"><fieldset class="vjs-fg-color vjs-track-setting"><legend id="captions-text-legend-audioOnly_component_433">Text</legend><label id="captions-foreground-color-audioOnly_component_433" class="vjs-label">Color</label><select aria-labelledby="captions-text-legend-audioOnly_component_433 captions-foreground-color-audioOnly_component_433"><option id="captions-foreground-color-audioOnly_component_433-White" value="#FFF" aria-labelledby="captions-text-legend-audioOnly_component_433 captions-foreground-color-audioOnly_component_433 captions-foreground-color-audioOnly_component_433-White">White</option><option id="captions-foreground-color-audioOnly_component_433-Black" value="#000" aria-labelledby="captions-text-legend-audioOnly_component_433 captions-foreground-color-audioOnly_component_433 captions-foreground-color-audioOnly_component_433-Black">Black</option><option id="captions-foreground-color-audioOnly_component_433-Red" value="#F00" aria-labelledby="captions-text-legend-audioOnly_component_433 captions-foreground-color-audioOnly_component_433 captions-foreground-color-audioOnly_component_433-Red">Red</option><option id="captions-foreground-color-audioOnly_component_433-Green" value="#0F0" aria-labelledby="captions-text-legend-audioOnly_component_433 captions-foreground-color-audioOnly_component_433 captions-foreground-color-audioOnly_component_433-Green">Green</option><option id="captions-foreground-color-audioOnly_component_433-Blue" value="#00F" aria-labelledby="captions-text-legend-audioOnly_component_433 captions-foreground-color-audioOnly_component_433 captions-foreground-color-audioOnly_component_433-Blue">Blue</option><option id="captions-foreground-color-audioOnly_component_433-Yellow" value="#FF0" aria-labelledby="captions-text-legend-audioOnly_component_433 captions-foreground-color-audioOnly_component_433 captions-foreground-color-audioOnly_component_433-Yellow">Yellow</option><option id="captions-foreground-color-audioOnly_component_433-Magenta" value="#F0F" aria-labelledby="captions-text-legend-audioOnly_component_433 captions-foreground-color-audioOnly_component_433 captions-foreground-color-audioOnly_component_433-Magenta">Magenta</option><option id="captions-foreground-color-audioOnly_component_433-Cyan" value="#0FF" aria-labelledby="captions-text-legend-audioOnly_component_433 captions-foreground-color-audioOnly_component_433 captions-foreground-color-audioOnly_component_433-Cyan">Cyan</option></select><span class="vjs-text-opacity vjs-opacity"><label id="captions-foreground-opacity-audioOnly_component_433" class="vjs-label">Transparency</label><select aria-labelledby="captions-text-legend-audioOnly_component_433 captions-foreground-opacity-audioOnly_component_433"><option id="captions-foreground-opacity-audioOnly_component_433-Opaque" value="1" aria-labelledby="captions-text-legend-audioOnly_component_433 captions-foreground-opacity-audioOnly_component_433 captions-foreground-opacity-audioOnly_component_433-Opaque">Opaque</option><option id="captions-foreground-opacity-audioOnly_component_433-SemiTransparent" value="0.5" aria-labelledby="captions-text-legend-audioOnly_component_433 captions-foreground-opacity-audioOnly_component_433 captions-foreground-opacity-audioOnly_component_433-SemiTransparent">Semi-Transparent</option></select></span></fieldset><fieldset class="vjs-bg-color vjs-track-setting"><legend id="captions-background-audioOnly_component_433">Background</legend><label id="captions-background-color-audioOnly_component_433" class="vjs-label">Color</label><select aria-labelledby="captions-background-audioOnly_component_433 captions-background-color-audioOnly_component_433"><option id="captions-background-color-audioOnly_component_433-Black" value="#000" aria-labelledby="captions-background-audioOnly_component_433 captions-background-color-audioOnly_component_433 captions-background-color-audioOnly_component_433-Black">Black</option><option id="captions-background-color-audioOnly_component_433-White" value="#FFF" aria-labelledby="captions-background-audioOnly_component_433 captions-background-color-audioOnly_component_433 captions-background-color-audioOnly_component_433-White">White</option><option id="captions-background-color-audioOnly_component_433-Red" value="#F00" aria-labelledby="captions-background-audioOnly_component_433 captions-background-color-audioOnly_component_433 captions-background-color-audioOnly_component_433-Red">Red</option><option id="captions-background-color-audioOnly_component_433-Green" value="#0F0" aria-labelledby="captions-background-audioOnly_component_433 captions-background-color-audioOnly_component_433 captions-background-color-audioOnly_component_433-Green">Green</option><option id="captions-background-color-audioOnly_component_433-Blue" value="#00F" aria-labelledby="captions-background-audioOnly_component_433 captions-background-color-audioOnly_component_433 captions-background-color-audioOnly_component_433-Blue">Blue</option><option id="captions-background-color-audioOnly_component_433-Yellow" value="#FF0" aria-labelledby="captions-background-audioOnly_component_433 captions-background-color-audioOnly_component_433 captions-background-color-audioOnly_component_433-Yellow">Yellow</option><option id="captions-background-color-audioOnly_component_433-Magenta" value="#F0F" aria-labelledby="captions-background-audioOnly_component_433 captions-background-color-audioOnly_component_433 captions-background-color-audioOnly_component_433-Magenta">Magenta</option><option id="captions-background-color-audioOnly_component_433-Cyan" value="#0FF" aria-labelledby="captions-background-audioOnly_component_433 captions-background-color-audioOnly_component_433 captions-background-color-audioOnly_component_433-Cyan">Cyan</option></select><span class="vjs-bg-opacity vjs-opacity"><label id="captions-background-opacity-audioOnly_component_433" class="vjs-label">Transparency</label><select aria-labelledby="captions-background-audioOnly_component_433 captions-background-opacity-audioOnly_component_433"><option id="captions-background-opacity-audioOnly_component_433-Opaque" value="1" aria-labelledby="captions-background-audioOnly_component_433 captions-background-opacity-audioOnly_component_433 captions-background-opacity-audioOnly_component_433-Opaque">Opaque</option><option id="captions-background-opacity-audioOnly_component_433-SemiTransparent" value="0.5" aria-labelledby="captions-background-audioOnly_component_433 captions-background-opacity-audioOnly_component_433 captions-background-opacity-audioOnly_component_433-SemiTransparent">Semi-Transparent</option><option id="captions-background-opacity-audioOnly_component_433-Transparent" value="0" aria-labelledby="captions-background-audioOnly_component_433 captions-background-opacity-audioOnly_component_433 captions-background-opacity-audioOnly_component_433-Transparent">Transparent</option></select></span></fieldset><fieldset class="vjs-window-color vjs-track-setting"><legend id="captions-window-audioOnly_component_433">Window</legend><label id="captions-window-color-audioOnly_component_433" class="vjs-label">Color</label><select aria-labelledby="captions-window-audioOnly_component_433 captions-window-color-audioOnly_component_433"><option id="captions-window-color-audioOnly_component_433-Black" value="#000" aria-labelledby="captions-window-audioOnly_component_433 captions-window-color-audioOnly_component_433 captions-window-color-audioOnly_component_433-Black">Black</option><option id="captions-window-color-audioOnly_component_433-White" value="#FFF" aria-labelledby="captions-window-audioOnly_component_433 captions-window-color-audioOnly_component_433 captions-window-color-audioOnly_component_433-White">White</option><option id="captions-window-color-audioOnly_component_433-Red" value="#F00" aria-labelledby="captions-window-audioOnly_component_433 captions-window-color-audioOnly_component_433 captions-window-color-audioOnly_component_433-Red">Red</option><option id="captions-window-color-audioOnly_component_433-Green" value="#0F0" aria-labelledby="captions-window-audioOnly_component_433 captions-window-color-audioOnly_component_433 captions-window-color-audioOnly_component_433-Green">Green</option><option id="captions-window-color-audioOnly_component_433-Blue" value="#00F" aria-labelledby="captions-window-audioOnly_component_433 captions-window-color-audioOnly_component_433 captions-window-color-audioOnly_component_433-Blue">Blue</option><option id="captions-window-color-audioOnly_component_433-Yellow" value="#FF0" aria-labelledby="captions-window-audioOnly_component_433 captions-window-color-audioOnly_component_433 captions-window-color-audioOnly_component_433-Yellow">Yellow</option><option id="captions-window-color-audioOnly_component_433-Magenta" value="#F0F" aria-labelledby="captions-window-audioOnly_component_433 captions-window-color-audioOnly_component_433 captions-window-color-audioOnly_component_433-Magenta">Magenta</option><option id="captions-window-color-audioOnly_component_433-Cyan" value="#0FF" aria-labelledby="captions-window-audioOnly_component_433 captions-window-color-audioOnly_component_433 captions-window-color-audioOnly_component_433-Cyan">Cyan</option></select><span class="vjs-window-opacity vjs-opacity"><label id="captions-window-opacity-audioOnly_component_433" class="vjs-label">Transparency</label><select aria-labelledby="captions-window-audioOnly_component_433 captions-window-opacity-audioOnly_component_433"><option id="captions-window-opacity-audioOnly_component_433-Transparent" value="0" aria-labelledby="captions-window-audioOnly_component_433 captions-window-opacity-audioOnly_component_433 captions-window-opacity-audioOnly_component_433-Transparent">Transparent</option><option id="captions-window-opacity-audioOnly_component_433-SemiTransparent" value="0.5" aria-labelledby="captions-window-audioOnly_component_433 captions-window-opacity-audioOnly_component_433 captions-window-opacity-audioOnly_component_433-SemiTransparent">Semi-Transparent</option><option id="captions-window-opacity-audioOnly_component_433-Opaque" value="1" aria-labelledby="captions-window-audioOnly_component_433 captions-window-opacity-audioOnly_component_433 captions-window-opacity-audioOnly_component_433-Opaque">Opaque</option></select></span></fieldset></div><div class="vjs-track-settings-font"><fieldset class="vjs-font-percent vjs-track-setting"><legend id="captions-font-size-audioOnly_component_433" class="">Font Size</legend><select aria-labelledby="captions-font-size-audioOnly_component_433"><option id="captions-font-size-audioOnly_component_433-50" value="0.50" aria-labelledby="captions-font-size-audioOnly_component_433 captions-font-size-audioOnly_component_433-50">50%</option><option id="captions-font-size-audioOnly_component_433-75" value="0.75" aria-labelledby="captions-font-size-audioOnly_component_433 captions-font-size-audioOnly_component_433-75">75%</option><option id="captions-font-size-audioOnly_component_433-100" value="1.00" aria-labelledby="captions-font-size-audioOnly_component_433 captions-font-size-audioOnly_component_433-100">100%</option><option id="captions-font-size-audioOnly_component_433-125" value="1.25" aria-labelledby="captions-font-size-audioOnly_component_433 captions-font-size-audioOnly_component_433-125">125%</option><option id="captions-font-size-audioOnly_component_433-150" value="1.50" aria-labelledby="captions-font-size-audioOnly_component_433 captions-font-size-audioOnly_component_433-150">150%</option><option id="captions-font-size-audioOnly_component_433-175" value="1.75" aria-labelledby="captions-font-size-audioOnly_component_433 captions-font-size-audioOnly_component_433-175">175%</option><option id="captions-font-size-audioOnly_component_433-200" value="2.00" aria-labelledby="captions-font-size-audioOnly_component_433 captions-font-size-audioOnly_component_433-200">200%</option><option id="captions-font-size-audioOnly_component_433-300" value="3.00" aria-labelledby="captions-font-size-audioOnly_component_433 captions-font-size-audioOnly_component_433-300">300%</option><option id="captions-font-size-audioOnly_component_433-400" value="4.00" aria-labelledby="captions-font-size-audioOnly_component_433 captions-font-size-audioOnly_component_433-400">400%</option></select></fieldset><fieldset class="vjs-edge-style vjs-track-setting"><legend id="audioOnly_component_433" class="">Text Edge Style</legend><select aria-labelledby="audioOnly_component_433"><option id="audioOnly_component_433-None" value="none" aria-labelledby="audioOnly_component_433 audioOnly_component_433-None">None</option><option id="audioOnly_component_433-Raised" value="raised" aria-labelledby="audioOnly_component_433 audioOnly_component_433-Raised">Raised</option><option id="audioOnly_component_433-Depressed" value="depressed" aria-labelledby="audioOnly_component_433 audioOnly_component_433-Depressed">Depressed</option><option id="audioOnly_component_433-Uniform" value="uniform" aria-labelledby="audioOnly_component_433 audioOnly_component_433-Uniform">Uniform</option><option id="audioOnly_component_433-Dropshadow" value="dropshadow" aria-labelledby="audioOnly_component_433 audioOnly_component_433-Dropshadow">Dropshadow</option></select></fieldset><fieldset class="vjs-font-family vjs-track-setting"><legend id="captions-font-family-audioOnly_component_433" class="">Font Family</legend><select aria-labelledby="captions-font-family-audioOnly_component_433"><option id="captions-font-family-audioOnly_component_433-ProportionalSansSerif" value="proportionalSansSerif" aria-labelledby="captions-font-family-audioOnly_component_433 captions-font-family-audioOnly_component_433-ProportionalSansSerif">Proportional Sans-Serif</option><option id="captions-font-family-audioOnly_component_433-MonospaceSansSerif" value="monospaceSansSerif" aria-labelledby="captions-font-family-audioOnly_component_433 captions-font-family-audioOnly_component_433-MonospaceSansSerif">Monospace Sans-Serif</option><option id="captions-font-family-audioOnly_component_433-ProportionalSerif" value="proportionalSerif" aria-labelledby="captions-font-family-audioOnly_component_433 captions-font-family-audioOnly_component_433-ProportionalSerif">Proportional Serif</option><option id="captions-font-family-audioOnly_component_433-MonospaceSerif" value="monospaceSerif" aria-labelledby="captions-font-family-audioOnly_component_433 captions-font-family-audioOnly_component_433-MonospaceSerif">Monospace Serif</option><option id="captions-font-family-audioOnly_component_433-Casual" value="casual" aria-labelledby="captions-font-family-audioOnly_component_433 captions-font-family-audioOnly_component_433-Casual">Casual</option><option id="captions-font-family-audioOnly_component_433-Script" value="script" aria-labelledby="captions-font-family-audioOnly_component_433 captions-font-family-audioOnly_component_433-Script">Script</option><option id="captions-font-family-audioOnly_component_433-SmallCaps" value="small-caps" aria-labelledby="captions-font-family-audioOnly_component_433 captions-font-family-audioOnly_component_433-SmallCaps">Small Caps</option></select></fieldset></div><div class="vjs-track-settings-controls"><button type="button" class="vjs-default-button" title="restore all settings to the default values">Reset<span class="vjs-control-text"> restore all settings to the default values</span></button><button type="button" class="vjs-done-button">Done</button></div></div><button class="vjs-close-button vjs-control vjs-button" type="button" aria-disabled="false" title="Close Modal Dialog"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Close Modal Dialog</span></button><p class="vjs-control-text">End of dialog window.</p></div><div class="vjs-player-info-modal vjs-modal-dialog vjs-hidden " aria-describedby="audioOnly_component_656_description" aria-hidden="true" aria-label="Player Information Dialog" role="dialog"><button class="vjs-close-button vjs-control vjs-button" type="button" aria-disabled="false" title="Close Modal Dialog"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Close Modal Dialog</span></button><p class="vjs-modal-dialog-description vjs-control-text" id="audioOnly_component_656_description">This is a modal window. This modal can be closed by pressing the Escape key or activating the close button.</p><div class="vjs-modal-dialog-content" role="document"></div></div></video-js><script src="//players.brightcove.net/1752604059001/rkgpS9K_default/index.min.js">
+<!--//--><![CDATA[// ><!--
+
+    
+//--><!]]>
+</script></section><script>
+<!--//--><![CDATA[// ><!--
+
+videojs.getPlayer('audioOnly').ready(function() {
+  var myPlayer = this;
+  myPlayer.getChild('bigPlayButton').controlText('Play Audio');
+});
+//--><!]]>
+</script></article></div>
+      
+</div>
+
+</div>
+
+
+<section class="views-element-container block block-views block-views-blockrelated-content-block-1 clearfix" id="block-views-block-related-content-block-1">
+  
+    
+
+      <div class="gt-block form-group" data-gt-block=""><div class="gt-block view view-related-content view-id-related_content view-display-id-block_1 js-view-dom-id-7b0c3700e9568cb3ea8acaaf05fd74378d8d5e5bac681a71a6cfe89404113ff3" data-gt-block="">
+  
+    
+      <div class="gt-block view-header" data-gt-block="">
+      <h2 data-gt-block="" id="bc-ipnav-5">関連コンテンツ</h2>
+    </div>
+      
+      <div class="gt-block view-content" data-gt-block="">
+      <div class="gt-block item-list" data-gt-block="">
+  
+  <ul>
+
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/archiving-masters/index.html" hreflang="en">アーカイブマスター</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/ingesting-content-drm/index.html" hreflang="en">DRMでコンテンツを取り込む</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/rendition-settings-and-video-quality/index.html" hreflang="en">レンディション設定とビデオ品質</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/cae-fast-publish/index.html" hreflang="en">CAE Fast Publish</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/implementing-multiple-audio-tracks-using-apis/index.html" hreflang="en">APIを使用した複数のオーディオトラックの実装</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/images-and-dynamic-ingest-api/index.html" hreflang="en">画像と Dynamic Ingest API</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/dynamic-ingest-api-sample-add-scheduled-videos-dynamic-delivery/index.html" hreflang="en">Dynamic Ingest API サンプル：スケジュールされた動画の追加（ダイナミック配信）</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/context-aware-encoding/index.html" hreflang="en">コンテキスト認識エンコーディング</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/media-sharing-cms-api/index.html" hreflang="en">メディアとの共有 CMS API</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/conditional-output/index.html" hreflang="en">条件付き出力</a></span></span></div></li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </section>
+
+
+  </div>
+
+              </section>
+
+                </div>
+  </div>
+
+      <footer class="footer container" role="contentinfo">
+              <div class="gt-block row" data-gt-block="">
+            <div class="gt-block region region-footer-top-left col-md-9" style="margin-bottom: 1em;" data-gt-block="">
+    <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">Brightcove サポート</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="https://status.brightcove.com">システムステータス</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/contact-support/index.html" data-drupal-link-system-path="node/18632">サポート - Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="../ja/en/contact/create/index.html">サポート - Zencoder</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-documentation-menu" id="block-documentation" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">オンラインマニュアル</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/index.html" data-drupal-link-system-path="<front>">ホーム</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">トレーニング（講習会）</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/online-training-courses/index.html" data-drupal-link-system-path="node/18286">オンラインコース</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/register-training/index.html" data-drupal-link-system-path="node/18270">コー​​スに登録</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-brightcove-menu" id="block-brightcove" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">Brightcove</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="https://www.brightcove.com">Brightcove.COM</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+            <div class="gt-block region region-footer-top-right col-md-3" data-gt-block="">
+    <section id="block-footerlegaltext" class="block block-block-content block-block-content4507d09c-a528-4947-b91d-36ec6671822b clearfix">
+  
+    
+
+      
+            <div class="gt-block field field--name-field-body field--type-text-long field--label-hidden field--item" data-gt-block=""><p data-gt-block="">Brightcove Inc.（ナスダック：BCOV）は、接続されたデバイス間でビデオを配信および収益化するための強力なクラウドソリューションを提供する世界有数のプロバイダです。</p>
+</div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+                    <div class="gt-block row" data-gt-block="">
+            <div class="gt-block region region-footer-bottom-left col-md-8" data-gt-block="">
+    <section id="block-footercopyrightlinewithlinks" class="block block-block-content block-block-content3a164ef9-02d8-42c4-bcc6-3ab435f670b3 clearfix">
+  
+    
+
+      <div class="gt-block block-content block-content--type-copyright-block-with-links block-content--view-mode-full ds-1col clearfix" data-gt-block="">
+
+  
+
+  
+            <div class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" data-gt-block="">2020</div>
+      
+            <div class="field field--name-field-copyright-text field--type-string-long field--label-hidden field--item" data-gt-block="">Brightcove Inc.すべての権利を保有します。</div>
+      
+      <div class="gt-block field field--name-field-legal-links field--type-link field--label-hidden field--items" data-gt-block="">
+              <div class="gt-block field--item" data-gt-block=""><a class="nturl" href="https://www.brightcove.com/en/privacy">プライバシーポリシー</a></div>
+              <div class="gt-block field--item" data-gt-block=""><a class="nturl" href="https://www.brightcove.com/en/terms-and-conditions">利用規約</a></div>
+          </div>
+  
+
+</div>
+
+
+  </section>
+
+
+  </div>
+
+            <div class="gt-block region region-footer-bottom-right col-md-4" data-gt-block="">
+    <section id="block-footersocialblock" class="block block-block-content block-block-content4fc23afd-8d37-420e-ab28-73b2ba24e836 clearfix">
+  
+    
+
+      
+      <div class="gt-block field field--name-field-social-icon field--type-entity-reference-revisions field--label-hidden field--items" data-gt-block="">
+              <div class="gt-block field--item" data-gt-block="">
+
+<a class="icon" icon__social--link="" href="https://www.linkedin.com/company/brightcove" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--linkedin">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--linkedin"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="gt-block field--item" data-gt-block="">
+
+<a class="icon" icon__social--link="" href="https://twitter.com/brightcove" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--twitter">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--twitter"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="gt-block field--item" data-gt-block="">
+
+<a class="icon" icon__social--link="" href="https://www.facebook.com/Brightcove" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--facebook">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--facebook"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="gt-block field--item" data-gt-block="" style="display:none;color:white">
+
+<a class="icon" icon__social--link="" href="https://plus.google.com/100830370440271567091" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--google-plus">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--google-plus"></use>
+  </svg>
+</a>
+
+</div>
+          </div>
+  
+
+
+  </section>
+
+<section id="block-scripts" class="block block-block-content block-block-content42e4bd63-d879-470d-a6de-d5e4529a01be clearfix">
+  
+    
+
+      
+            <div class="gt-block field field--name-field-body field--type-text-long field--label-hidden field--item" data-gt-block=""><script src="https://learning-services-media.brightcove.com/doc-assets/js/gtrans.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/js/support-feedback.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-support.js"></script>
+<script src="https://learning-services-media.brightcove.com/doc-assets/js/hide-google-plus.js"></script></div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+          </footer>
+  
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/17951","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click"},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"user":{"uid":0,"permissionsHash":"3b7fdb4927baca3ee2939edeb777485b3e2c2d36cf8c80e0d8f49c6dc5e2eeca"}}</script>
+<script src="https://support.brightcove.com/sites/default/files/js/js_8fmTAXGyuAUNVu11XoXJaeM8QBDFuAvX7ADwOnigrhc.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+<script src="https://support.brightcove.com/sites/default/files/js/js_L8Eb1bSFk-jGvnjMNZB7VvDJt-7nSbeXfaBlCzWjDbc.js"></script><div id="surveyDiv" style="visibility:hidden"><iframe id="CSAT" src="https://learning-services-media.brightcove.com/doc-assets/general/surveylink.html" style="display:none;"></iframe></div>
+
+  <script data-cfasync="false" src="https://tdns5.gtranslate.net/tdn-bin/queue.js"></script><div id="feedbackify"><div id="fby-screen" class="fby-screen"><div id="fby-mask" class="fby-mask"></div><div id="fby-tab-14941" class="fby-tab fby-tab-r"><a href="" style="background-color:rgb(5, 155, 179)!important" aria-label="Feedback"></a></div></div></div><!-- Yandex.Metrika counter for GTranslate --><script data-cfasync="false">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter36618640 = new Ya.Metrika({ id:36618640, clickmap:false, trackLinks:true, accurateTrackBounce:true, ut:"noindex" }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s

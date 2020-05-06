@@ -1,0 +1,1378 @@
+<html lang="ja" dir="ltr" class=" js"><head>
+    <meta charset="utf-8"><script type="text/javascript" src="https://bam.nr-data.net/1/e78a80aa93?a=129613202&amp;v=1167.2a4546b&amp;to=YwBUZkcFVktUWhJQX1pKY0BcSxdRW10DQR5EDUY%3D&amp;rst=11011&amp;ref=https://support.brightcove.com/ja/overview-data-collection-api-v2&amp;ap=1704&amp;be=3342&amp;fe=10614&amp;dc=7563&amp;perf=%7B%22timing%22:%7B%22of%22:1588779761179,%22n%22:0,%22f%22:0,%22dn%22:18,%22dne%22:265,%22c%22:265,%22s%22:310,%22ce%22:1362,%22rq%22:1198,%22rp%22:2950,%22rpe%22:3350,%22dl%22:3300,%22di%22:7563,%22ds%22:7563,%22de%22:7679,%22dc%22:10614,%22l%22:10614,%22le%22:10616%7D,%22navigation%22:%7B%7D%7D&amp;at=T0dXEA8fRUU%3D&amp;jsonp=NREUM.setToken"></script><script src="https://js-agent.newrelic.com/nr-1167.min.js"></script><script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script><script type="text/javascript" async="" src="//cdn.feedbackify.com/f.js"></script><script async="" src="https://fullstory.com/s/fs.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e78a80aa93",applicationID:"129613202"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e78a80aa93",applicationID:"129613202"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-2728311-17", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)">
+<meta name="MobileOptimized" content="width">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="https://support.brightcove.com/sites/default/files/favicon-64.png" type="image/png">
+<link rel="alternate" hreflang="en" href="https://support.brightcove.com/overview-data-collection-api-v2">
+<link rel="canonical" href="https://support.brightcove.com/ja/overview-data-collection-api-v2">
+<link rel="shortlink" href="https://support.brightcove.com/ja/node/18243">
+<link rel="revision" href="https://support.brightcove.com/overview-data-collection-api-v2">
+
+    <title>概要： Data Collection API v2 | Brightcove 学習</title>
+    <link rel="stylesheet" media="all" href="https://support.brightcove.com/sites/default/files/css/css_d7PoQ20hWbRiei75VgExP_tm8C1ylIRfzB3zIYLc5Cw.css?q23msc">
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.min.css">
+<link rel="stylesheet" media="all" href="https://support.brightcove.com/sites/default/files/css/css_fr7ugR_m15spMT57voAomC2Aklj0ATM7MmH6hvb3pp4.css?q23msc">
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+    <meta name="uri-translation" content="on">
+    <script>
+window['_fs_debug'] = false; window['_fs_host'] = 'fullstory.com';
+window['_fs_org'] = 'BX3Q1';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+g.consent=function(a){g("consent",!arguments.length||a)};
+g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+g.clearUserCookie=function(){};
+})(window,document,window['_fs_namespace'],'script','user');
+    </script>
+  <style type="text/css">html{_background:url(//about:blank) fixed;}.fby-on select {visibility:hidden!important;}.fby-on .fby-hide-iframe {visibility:hidden!important;}.fby-hide-embed embed {visibility:hidden!important;}.fby-hide-object object {visibility:hidden!important;}@media not screen {.fby-tab {display: none;}}#feedbackify *{box-sizing:content-box!important;-moz-box-sizing:content-box!important;-webkit-box-sizing:content-box!important;}#feedbackify input{box-sizing:border-box!important;-moz-box-sizing:border-box!important;-webkit-box-sizing:border-box!important;max-width:none!important;}#feedbackify *:before{content:none!important;}#feedbackify *:after{content:none!important;}#feedbackify ,#feedbackify div,#feedbackify span,#feedbackify textarea,#feedbackify input,#feedbackify table,#feedbackify tbody,#feedbackify tr,#feedbackify td,#feedbackify img,#feedbackify p,#feedbackify a{border:0!important;outline:none!important;width:auto;height:auto;text-align:left!important;text-indent:0!important;float:none!important;padding:0!important;margin:0!important;font:12px arial,helvetica,sans-serif!important;overflow:visible!important;color:#000!important;line-height:1.2!important;background:0 none!important;position:static!important;vertical-align:baseline!important;box-shadow:none!important;}#feedbackify table{border-collapse:collapse!important;border-spacing:0!important;max-width:inherit!important;width:auto!important;}#feedbackify td{word-break:normal!important;}#feedbackify {z-index:2147483646!important;position:static!important;top:0;left:0;}#feedbackify .fby-screen{z-index:2147483646!important;position:fixed!important;top:0;left:0;width:0;height:100%;_position:absolute!important;_top:expression(eval(document.body.scrollTop||document.documentElement.scrollTop))!important;_left:expression(eval(document.body.scrollLeft||document.documentElement.scrollLeft))!important;_width:0!important;_height:expression(document.documentElement.clientHeight||document.body.clientHeight+"px")!important;}#feedbackify .fby-mask{display:none!important;position:fixed!important;top:0;left:0;width:100%;height:100%;background-color:#000!important;opacity:0.2;filter:alpha(opacity=20);_position:absolute!important;_width:expression(document.documentElement.clientWidth||document.body.clientWidth+"px")!important;_height:expression(this.parentNode.style.height)!important;}#feedbackify .fby-show{display:block!important;visibility:visible!important;}#feedbackify .fby-hide{display:none!important;visibility:hidden!important;}</style><style type="text/css">#feedbackify .fby-tab{position:fixed!important;width:36px;height:100px;overflow:hidden!important;_position:absolute!important;}#feedbackify .fby-tab a{display:block!important;position:absolute!important;width:36px;height:100px;background-color:#000000!important;cursor:pointer!important;background:url(https://cdn.feedbackify.com/img/classic/tab.png)!important;_background:none!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/tab.png)!important;}#feedbackify .fby-tab-l{top:50%;left:0;margin-top:-50px!important;_top:expression((parseInt(this.parentNode.style.height)-this.clientHeight)/2+"px")!important;_margin-top:0!important;}#feedbackify .fby-tab-l a{margin-left:-5px!important;}#feedbackify .fby-tab-l a:hover{margin-left:-2px!important;}#feedbackify .fby-tab-r{top:50%;right:0px!important;margin-top:-50px!important;_top:expression((parseInt(this.parentNode.style.height)-this.clientHeight)/2+"px")!important;_left:expression((document.documentElement.clientWidth||document.body.clientWidth)-this.clientWidth+"px")!important;_margin-top:0!important;}#feedbackify .fby-tab-r a{margin-left:5px!important;}#feedbackify .fby-tab-r a:hover{margin-left:2px!important;}#feedbackify .fby-tab-t{top:0;margin-top:0px!important;}#feedbackify .fby-tab-b{top:auto;bottom:0!important;_top:expression(parseInt(this.parentNode.style.height)-this.clientHeight+"px")!important;}</style><style type="text/css">#feedbackify grammarly-ghost{display:none!important;}#feedbackify grammarly-btn{display:none!important;}#feedbackify #fby-form{z-index:2147483646!important;width:618px!important;position:absolute!important;}#feedbackify .fby-d-main{width:600px;height:50px;vertical-align:top!important;background-color:#FFFFFF!important;position:relative!important;}#feedbackify .fby-d{background:url(https://cdn.feedbackify.com/img/classic/dlg_shad_sprite.png)!important;_background:none!important;}#feedbackify .fby-d-h{height:9px;background:url(https://cdn.feedbackify.com/img/classic/dlg_shad_sprite_h.png)!important;_background:none!important;}#feedbackify .fby-d-h2{height:9px;background-color:#FFFFFF!important;}#feedbackify .fby-d-tl{background-position:-18px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_tl.png)!important;}#feedbackify .fby-d-t{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_t.png,sizingMethod=scale)!important;}#feedbackify .fby-d-tr{background-position:-36px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_tr.png)!important;}#feedbackify .fby-d-l{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_l.png,sizingMethod=scale)!important;}#feedbackify .fby-d-r{background-position:-9px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_r.png,sizingMethod=scale)!important;}#feedbackify .fby-d-bl{background-position:-54px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_bl.png)!important;}#feedbackify .fby-d-br{background-position:-72px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_br.png)!important;}#feedbackify .fby-d-b{background-position:0px -9px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_b.png,sizingMethod=scale)!important;}#feedbackify .fby-d-load{position:relative!important;}#feedbackify .fby-d-load img{position:absolute!important;left:8px;}#feedbackify .fby-d-load div{position:absolute!important;padding:4px 18px!important;font-size:16px!important;font-weight:bold!important;color:#333!important;}</style></head>
+  <body class="path-node page-node-type-support-doc has-glyphicons">
+    <a class="visually-hidden" focusable="" skip-link="" href="#main-content/index.html">
+      メインコンテンツへスキップ
+    </a>
+    
+      <div class="gt-block dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="" data-gt-block="">
+              <header class="navbar navbar-default container" id="navbar" role="banner">
+      <div class="gt-block navigation-secondary clearfix" data-gt-block="">
+          <div class="gt-block region region-navigation-secondary" data-gt-block="">
+    <section id="block-styles" class="block block-block-content block-block-contentfbb71e48-a6cd-4d2b-8239-43f18db69e60 clearfix">
+  
+    
+
+      
+            <div class="gt-block field field--name-field-body field--type-text-long field--label-hidden field--item" data-gt-block=""><link rel="stylesheet" media="all" href="https://learning-services-media.brightcove.com/doc-assets/css/drupal-fix.css"></div>
+      
+  </section>
+
+<nav role="navigation" aria-labelledby="block-secondarynavigation-menu" id="block-secondarynavigation">
+            
+  <h2 class="visually-hidden" id="block-secondarynavigation-menu" data-gt-block="">セカンダリナビゲーション</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/contact-support/index.html" title="サポートリクエストを作成する" data-drupal-link-system-path="node/18632">サポートリクエスト</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://status.brightcove.com/">システムステータス</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://university.brightcove.com/">Brightcove 大学</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<section id="block-gtranslate" class="block block-gtranslate block-gtranslate-block clearfix">
+  
+    
+
+      
+<div class="gt-block gtranslate" data-gt-block="">
+<script type="text/javascript">/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;var lang=lang_pair.split('|')[1];var plang=location.pathname.split('/')[1];if(plang.length !=2 && plang != 'zh-CN' && plang != 'zh-TW')plang='en';if(lang == 'en')location.pathname=location.pathname.replace('/'+plang+'/', '/');else location.pathname='/'+lang+location.pathname.replace('/'+plang+'/', '/');}
+/* ]]> */
+</script><select onchange="doGTranslate(this);"><option value="">言語の選択</option><option value="en|en" style="font-weight:bold;background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -0px;padding-left:18px;">英語</option><option value="en|fr" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -160px;padding-left:18px;">フランス語</option><option value="en|de" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -176px;padding-left:18px;">ドイツ語</option><option value="en|ja" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -240px;padding-left:18px;">日本語</option><option value="en|ko" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -256px;padding-left:18px;">韓国語</option><option value="en|es" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -352px;padding-left:18px;">スペイン語</option></select>
+</div>
+<div class="gtranslate__credits" data-gt-block="">
+  本ドキュメントはGoogle翻訳によって機械翻訳したものとなります
+</div>
+
+  </section>
+
+
+  </div>
+
+      </div>
+      <div class="gt-block navbar-header col-md-3" data-gt-block="">
+                  <a class="logo" navbar-btn="" pull-left="" href="../ja/index.html" title="ホーム" rel="home">
+            <img src="https://support.brightcove.com/themes/custom/bcdocs/images/brightcove.png" alt="ホーム">
+          </a>
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">トグルナビゲーション</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+                    <div class="gt-block navbar-collapse collapse" data-gt-block="">
+            <div class="gt-block region region-navigation-collapsible" data-gt-block="">
+    <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation">
+            <h2 class="sr-only" id="block-mainnavigation-menu" data-gt-block="">メインナビゲーション</h2>
+
+      
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-learning-home/index.html" title="ホームページ" data-drupal-link-system-path="node/18643">ホーム</a>
+                  </li>
+                                            <li class="expanded dropdown">
+        <a class="dropdown-toggle" href="" data-toggle="dropdown">
+          製品紹介
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/video-cloud/index.html" data-drupal-link-system-path="node/18332">Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://gallery.support.brightcove.com">ギャラリー</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-player/index.html" data-drupal-link-system-path="node/18283">Brightcove Player</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/live/index.html" data-drupal-link-system-path="node/18642">Live</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/social/index.html" data-drupal-link-system-path="node/18444">Social</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/audience/index.html" data-drupal-link-system-path="node/18445">Audience</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://zencoder.support.brightcove.com">Zencoder</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/ssai/index.html" data-drupal-link-system-path="node/18650">SSAI</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://support.ottflow.com">OTT Flow</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a class="dropdown-toggle" href="" data-toggle="dropdown">
+          Links
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/analytics-api/index.html" data-drupal-link-system-path="node/18370">Analytics API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/audience-api/index.html" data-drupal-link-system-path="node/18371">Audience API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/cms-api/index.html" data-drupal-link-system-path="node/18372">CMS API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/cms-connectors-video-cloud/index.html" data-drupal-link-system-path="node/18662">CMSコネクタ用 Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/data-collection-api/index.html" data-drupal-link-system-path="node/18876">Data Collection API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/delivery-system-api/index.html" data-drupal-link-system-path="node/18387">Delivery System API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/developer-tools-and-concepts/index.html" data-drupal-link-system-path="node/18430">開発者ツールと概念</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/native-player-sdks/index.html" data-drupal-link-system-path="node/18367">Device SDK</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/dynamic-ingest-api/index.html" data-drupal-link-system-path="node/18373">Dynamic Ingest API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/getting-started-brightcove-apis-0/index.html" data-drupal-link-system-path="node/18711">入門 - Brightcove API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/page-experience-api/index.html" data-drupal-link-system-path="node/18616">In-Page Experience APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/ingest-profiles-api/index.html" data-drupal-link-system-path="node/18374">Ingest Profiles API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/live/index.html" data-drupal-link-system-path="node/18642">Live API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/oauth-api/index.html" data-drupal-link-system-path="node/18376">OAuth API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/platform-api-code-samples/index.html" data-drupal-link-system-path="node/18675">プラットフォームAPIコードサンプル</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/playback-api/index.html" data-drupal-link-system-path="node/18380">Playback API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-player-code-samples/index.html" data-drupal-link-system-path="node/18630">プレーヤーコードサンプル</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-player-developer/index.html" data-drupal-link-system-path="node/18362">プレーヤー開発者</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/player-management-api/index.html" data-drupal-link-system-path="node/18378">Player Management API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/policy-api/index.html" data-drupal-link-system-path="node/18381">Policy API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/release-notes/index.html" data-drupal-link-system-path="node/18687">リリースに関して</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a class="dropdown-toggle" href="" data-toggle="dropdown">
+          トレーニング（講習会）
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a class="nturl" href="https://university.brightcove.com">オンラインコース</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/register-training/index.html" data-drupal-link-system-path="node/18270">コース登録</a>
+                  </li>
+        </ul>
+  
+            </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-support-documentation-announcements/index.html" title="の新機能を見る Brightcove オンラインマニュアル" data-drupal-link-system-path="node/18896">新着情報</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+        </div>
+          </header>
+  
+    <div class="gt-block full-width-headline" data-gt-block="">
+    <div class="gt-block container" data-gt-block="">
+      <div class="gt-block row" data-gt-block="">
+        <div class="gt-block col-sm-12" role="heading" data-gt-block="">
+            <div class="gt-block region region-header" data-gt-block="">
+          <section id="block-brightcoveheadlineblock" class="block block-bc-general block-bc-general-headline-block clearfix">
+  
+    
+
+      オンラインマニュアル
+  </section>
+
+
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      <div role="main" class="gt-block main-container container  js-quickedit-main-content" data-gt-block="">
+    <div class="gt-block row" data-gt-block="">
+
+                              <aside class="gt-block col-sm-3" role="complementary" data-gt-block="">
+              <div class="gt-block region region-sidebar-first" data-gt-block="">
+    <section class="bc-search-fixes-search-block-form block block-bc-search-fixes block-bc-search-fixes-search-block clearfix" data-drupal-selector="bc-search-fixes-search-block-form" id="block-brightcovesearchblock">
+  
+    
+
+      <form action="/ja/overview-data-collection-api-v2" method="post" id="bc-search-fixes-search-block-form" accept-charset="UTF-8">
+  <div class="gt-block form-item js-form-item form-type-textfield js-form-type-textfield form-item-search js-form-item-search form-no-label form-group" data-gt-block="">
+      <label for="edit-search" class="control-label sr-only">サイト内検索</label>
+  
+  
+  <input data-drupal-selector="edit-search" class="form-text form-control" type="text" id="edit-search" name="search" value="" size="15" maxlength="128" placeholder="サイト内検索">
+
+  
+  
+  </div>
+<input autocomplete="off" data-drupal-selector="form-tblobu45xrgbacpqajun4clxgjpxmz6lfu2qjsodfus" type="hidden" name="form_build_id" value="form-tBloBu45XrGBAcPQajUN4ClXgjPXMz6lfu2QJsODFus"><input data-drupal-selector="edit-bc-search-fixes-search-block-form" type="hidden" name="form_id" value="bc_search_fixes_search_block_form"><div data-drupal-selector="edit-actions" class="gt-block form-actions form-group js-form-wrapper form-wrapper" id="edit-actions" data-gt-block=""><button data-drupal-selector="edit-submit" class="button js-form-submit form-submit btn-primary btn icon-only" type="submit" id="edit-submit" name="op" value="Search"><span class="sr-only">サイト内検索</span><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button></div>
+
+</form>
+
+  </section>
+
+<section id="block-inpagenavigationblock" class="hidden-xs block block-bc-ipnav block-bc-ipnav-block clearfix" style="width: 476px;">
+  
+      <h2 class="block-title" data-gt-block="">このページ</h2>
+    
+
+      <p><button id="vc" class="bcls-button__version" style="background-color:#dd712e;">Video Cloud Version</button><br><button id="bp" class="bcls-button__version">Brightcove Player Version</button><br><a style="font-size:smaller;" href="../versions-brightcove-player-documentation/index.html">(What's the difference?)</a></p><hr><div class="bc-ipnav-block" data-gt-block=""><ul><li><a href="#introduction/index.html">概要</a></li><li><a href="#responseTypes/index.html">応答タイプ</a></li><li><a href="#minimal/index.html">最小データ</a></li><li><a href="#bestPractices/index.html">ベストプラクティス</a></li><li><a href="#junk-data/index.html">ジャンクデータ</a></li><li><a href="#encoding/index.html">URIエンコーディング</a></li><li><a href="#video-cloud-events/index.html">イベント
+</a></li><li><a href="#all-event-parameters/index.html">すべてのイベントのパラメータ</a></li><li><a href="#parameters_for_specific_events/index.html">特定のイベントのパラメータ</a></li><li><a href="#bc-ipnav-9/index.html">関連コンテンツ</a></li></ul></div>
+  </section>
+
+
+  </div>
+
+          </aside>
+              
+                  <section class="col-sm-9">
+
+                                      <div class="gt-block highlighted" data-gt-block="">  <div class="gt-block region region-highlighted" data-gt-block="">
+    <div data-drupal-messages-fallback="" class="hidden" data-gt-block=""></div>
+
+  </div>
+</div>
+                  
+                
+                
+                
+                          <a class="nturl" id="main-content"></a>
+            <div class="gt-block region region-content" data-gt-block="">
+        <h1 class="page-header"><span>概要： Data Collection API  v2</span>
+</h1>
+
+  
+<div class="gt-block node node--type-support-doc node--view-mode-full bcdocs-four-rows clearfix" data-gt-block="">
+
+  
+
+  <div class="group-first-row" data-gt-block="">
+      </div>
+
+  <div class="gt-block group-second-row" data-gt-block="">
+  
+  <div class="gt-block field field--name-field-products field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">製品（複数可）</div>
+          <div class="gt-block field__items taxonomy__tags" data-gt-block="">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item" data-gt-block="">Video Cloud</div>
+              </div>
+      </div>
+
+  <div class="gt-block field field--name-field-roles field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">役割</div>
+          <div class="gt-block field__items taxonomy__tags" data-gt-block="">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item" data-gt-block="">API開発者</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="gt-block group-third-row taxonomy__tags" data-gt-block="">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="gt-block field field--name-field-topics field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">トピック）</div>
+          <div class="gt-block field--items" data-gt-block="">
+              <div class="field--item" data-gt-block="">アナリティクス</div>
+          <div class="field--item" data-gt-block="">APIの概要</div>
+              </div>
+      </div>
+
+  <div class="gt-block field field--name-field-apis field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">API</div>
+          <div class="gt-block field--items" data-gt-block="">
+              <div class="field--item" data-gt-block="">Analytics API</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="gt-block group-fourth-row" data-gt-block="">
+  
+            <div class="gt-block field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item" data-gt-block=""><p data-gt-block="">このトピックでは、Analyticsの概要を説明します Data Collection API v2を使用すると、イベントを Video Cloud 分析データは、 Brightcove イベントを直接追跡することはできません。 このトピックでは、主にv1からv2バージョンへの変更について説明します。</p>
+                    <div class="gt-block text-warning video-cloud-only" data-gt-block="" style="display:block;">
+                    <p data-gt-block="" class="gt-block gt-block"><strong> </strong> このAPIを使用して、 Brightcove PlayerAndroidやiOS SDKプレーヤーの場合は既に自動的に行われているため、重複したデータを追加することになります。</p>
+                    </div>
+                <style media="screen" type="text/css">
+<!--/*--><![CDATA[/* ><!--*/
+div.group-fourth-row, div.group-fourth-row th, div.group-fourth-row td {
+	background-color: #ffffff;
+}
+
+/*--><!]]>*/
+</style><p class="player-only" data-gt-block="" style="display:none">この機能は Video Cloud 顧客のみ。</p>
+
+<article class="bcls-article video-cloud-only" style="display:block;"><section class="bcls-section video-cloud-only" style="display:block;"><h2 id="introduction" data-gt-block="">概要</h2>
+
+<p data-gt-block="" class="gt-block gt-block">アナリティクスデータは自動的に Brightcove PlayerNative Player SDKによって提供されるものも含めて、 あなたがいる場合 <strong>Studio上ではサポートされていません。</strong> 使用して Brightcove Player 配達する Video Cloud データをデータコレクタに送信するために使用しているプレーヤーを計測する必要があります。</p>
+
+<p data-gt-block="" class="gt-block gt-block">Data Collection API v2は現在の標準です。 v1バージョンは廃止予定です。 v1実装をお持ちの場合は、 <a class="nturl" href="#changesFromV1/index.html">v1からの変更点</a> 以下のセクションをご覧ください。</p>
+
+<p data-gt-block="" class="gt-block gt-block">この概要と <a class="nturl" href="https://docs.brightcove.com/data-collection-api/v2/doc/index.html">APIリファレンス</a>、これも見てください <a class="nturl" href="..//support.brightcove.com/ja/data-collection-api-sample/index.html">サンプル実装</a>.</p>
+
+<p data-gt-block="">アナリティクス Data Collection API リアルタイムの分析イベントのエンドポイントです。 イベントデータが送信されます Brightcove HTTP要求を介して提出された一連のパラメータを介して、</p>
+
+<pre class="line-numbers notranslate language-http" style="white-space:pre-wrap;padding-top:1em;padding-bottom:1em;"><code class=" notranslate notranslate language-http"><span class="token header-name keyword">http:</span>//metrics.brightcove.com/v2/tracker?event=video_view&amp;amp;domain=videocloud&amp;account=123&amp;video=789
+<span aria-hidden="true" class="line-numbers-rows"><span style="height: 22px;"></span></span><span class="line-numbers-sizer" style="display: block;">
+</span></code>
+</pre>
+
+<p data-gt-block="" class="gt-block gt-block">これらのパラメータは、 <strong>実際</strong> イベントが発生したときのシステムの状態について 上記の例では、 <code class="notranslate notranslate">video_view</code> 動画のイベントが発生しました <code class="notranslate notranslate">789</code> アカウント用 <code class="notranslate notranslate">123</code> （または：ユーザーがアカウントを監視し始めた <code class="notranslate notranslate">123</code>のビデオ <code class="notranslate notranslate">789</code>。 見る <a class="nturl" href="#video-cloud-events/index.html">以下</a> 追跡されている現在の分析イベントの説明を参照してください）。</p>
+
+<h3 id="dimensions" data-gt-block="">寸法</h3>
+
+<p data-gt-block="">ディメンションは、イベントが発生したときのシステムの状態に関する定性的な事実です。 たとえば、要求が次の場合：</p>
+
+<pre class="line-numbers notranslate" style="white-space:pre-wrap;padding-top:1em;padding-bottom:1em;"><code class="language-http notranslate notranslate">http://metrics.brightcove.com/tracker
+?event=video_view&amp;session=581136_2018-07-03T18:34:46.214Z
+&amp;domain=videocloud&amp;account=123
+&amp;video=789
+</code>
+</pre>
+
+<p data-gt-block="" class="gt-block">ビデオID（ <code class="notranslate notranslate">789</code>）とアカウントID（ <code class="notranslate notranslate">123</code>）、および要求自体から集められたデバイスおよび位置情報は、すべて <code class="notranslate notranslate">video_view</code> イベント。 Analyticsシステムでは、 <code class="notranslate notranslate">video_view</code> この要求が行われたときにこれらのディメンションとともにイベントが発生しました。</p>
+
+<h3 id="event-and-domain-parameters" data-gt-block="">イベントとドメインのパラメータ</h3>
+
+<p data-gt-block="" class="gt-block">挽き目 <code class="notranslate notranslate">event</code> パラメータは、どのイベントが発生したかを示します。 ザ <code class="notranslate notranslate">domain</code> パラメータはイベントの名前空間を提供します。 ザ <code class="notranslate notranslate">event</code>,  <code class="notranslate notranslate">domain</code>および <code class="notranslate notranslate">session</code> 必要なパラメータです（値は <code class="notranslate notranslate">domain</code> 常に <code class="notranslate notranslate">videocloud</code>).</p>
+
+<h3 id="additional-parameters" data-gt-block="">追加パラメータ</h3>
+
+<p class="video-cloud-only" data-gt-block="" style="display:block;">アナリティクスシステムがイベントを正常に分析できるように、特定のパラメータをイベントに含める必要があります</p>
+
+<aside class="gt-block bcls-aside bcls-aside--warning" data-gt-block="">あなたがすべき <strong>Studio上ではサポートされていません。</strong> 送信 <code class="notranslate notranslate">player</code> （プレイヤーID）または <code class="notranslate notranslate">player_name</code> 非営利目的のための情報Brightcove 選手。 代わりに、 <code class="notranslate notranslate">destination</code> ビデオが視聴された場所を追跡するパラメータ。</aside></section><section class="bcls-section video-cloud-only" style="display:block;"><h2 id="responseTypes" data-gt-block="">応答タイプ</h2>
+
+<p data-gt-block="">分析データ収集API要求への応答には、HTTP応答コードと人間が判読可能なメッセージが含まれます。</p>
+
+<table class="bcls-table" style="background-color:#ffffff;"><thead class="bcls-table__head"><tr><th>HTTPステータスコード</th>
+			<th>説明</th>
+			<th>例</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><code class="notranslate notranslate">200</code></td>
+			<td>要求はコレクタによって正常に受信され、永続化されました。</td>
+			<td>（1x1ピクセル透過GIF画像を返します）</td>
+		</tr><tr><td><code class="notranslate notranslate">400</code></td>
+			<td>クライアントから送信された要求に、必要なパラメータがありません。 <code class="notranslate notranslate">domain</code>,  <code class="notranslate notranslate">account</code>  or  <code class="notranslate notranslate">event</code>。 （ドメイン固有のパラメータがない場合、このステータスは返されません）。</td>
+			<td><code class="notranslate notranslate">"Invalid 'event' parameter"</code></td>
+		</tr><tr><td><code class="notranslate notranslate">50x</code></td>
+			<td>これはサーバー側の問題を示すエラーコードです。 あなたのイベントは、アナリティクスシステムによって正常に記録されている場合とされていない場合があります。</td>
+			<td><code class="notranslate notranslate">"Server-side failure, please retry."</code></td>
+		</tr></tbody></table></section><section class="bcls-section"><h2 id="minimal" data-gt-block="">最小データ</h2>
+
+<p data-gt-block="" class="gt-block gt-block">最低でも、 <code class="notranslate notranslate">session</code> IDと <code class="notranslate notranslate">video_view</code> セッション中に再生されたすべてのビデオのイベント。 ザ <code class="notranslate notranslate">video_view</code> 送信する必要があります <em>After</em> プレロール広告はすべて完了します。</p>
+
+<h3 data-gt-block="" class="gt-block"><code class="notranslate notranslate">session</code></h3>
+
+<p data-gt-block="" class="gt-block gt-block">これがセッション識別子です。 ザ <code class="notranslate notranslate">session</code> 基本的に、ページやアプリビューの1つのビューです。そのビューには、その中にプレイヤーが存在する限りです。 この値は、セッションの持続時間の間一定でなければならず、 <strong>すべてのイベントに送信されます</strong>。 これは、グローバル一意識別子（GUID）に可能な限り近いものでなければなりません。 衝突が発生した場合、2つのセッションを解体できない場合、2つのセッションが無効として破棄される可能性があります。</p>
+
+<p data-gt-block="" class="gt-block gt-block">JavaScriptでGUIDを作成するためのさまざまなスキームがあります。 1つの例は <a class="nturl" href="https://github.com/dustinpoissant/GUIDJS">このGitHubリポジトリ</a>。 サードパーティ製のスクリプトは、 Brightcove.</p>
+
+<aside class="bcls-aside bcls-aside--warning" data-gt-block="">アナリティクスのシステムは、あなたが提供したものだけを返すことができます。完全なデータを送信しないと、データが不足します Video Cloud 分析。</aside></section><section class="bcls-section video-cloud-only" style="display:block;"><h2 id="bestPractices" data-gt-block="">ベストプラクティス</h2>
+
+<p data-gt-block="">正しいデータをコレクタに送信していることを確認するには、一般にデータを展開する前にデータ収集スクリプトをテストする必要があります。 我々はお勧めします：</p>
+
+<ol><li>あなたのプレーヤー用のデータ収集スクリプトを作成します。</li>
+	<li>制御された環境で少なくとも1日はテストしてください。</li>
+	<li>アナリティクスモジュールを使用してアナリティクスデータを確認するか、 Analytics API 収集されたものがあなたの期待と一致するようにします。</li>
+</ol><h3 data-gt-block="">要求を送信する -  CORSの問題を回避する</h3>
+
+<aside class="gt-block bcls-aside bcls-aside--tip" data-gt-block=""><p data-gt-block="" class="gt-block">「送信」するのに最適な方法は、 Data Collection API リクエストのURLを <code class="notranslate notranslate">src</code> 新しい画像の値（ <code class="notranslate notranslate">img</code>）要素を作成し、その要素をページに挿入します。</p>
+
+<p data-gt-block="" class="gt-block gt-block">同じ方法を使用する必要があります。 <code class="notranslate notranslate">XMLHttpRequest</code> 避けるために <a class="nturl" href="..//support.brightcove.com/ja/concepts-cors/index.html">CORS</a> 問題。</p>
+
+<p data-gt-block="" class="gt-block gt-block">実装例については、 <a class="nturl" href="..//support.brightcove.com/ja/data-collection-api-sample/index.html">データ収集サンプル</a>.</p>
+</aside></section><section class="bcls-section video-cloud-only" style="display:block;"><h2 id="junk-data" data-gt-block="">ジャンクデータ</h2>
+
+<p data-gt-block="" class="gt-block gt-block"><strong>一般に、コレクタに送信されるデータは、Analyticsシステムによって真実として記録されます。</strong> イベントに不適切または間違った情報が含まれていると、アナリティクスシステムはデータを正しく解釈しません。</p>
+
+<p data-gt-block="">たとえば、誤ってタイムスタンプをビデオIDとして送信した場合、分析データは全体的な要約に影響するように歪んでしまいます。</p>
+
+<aside class="bcls-aside bcls-aside--tip" data-gt-block="">データの送信を開始する前に、慎重に生成しているURLを調べてください。</aside></section><section class="bcls-section video-cloud-only" style="display:block;"><h2 id="encoding" data-gt-block="">URIエンコーディング</h2>
+
+<p data-gt-block="" class="gt-block gt-block">あなたに送る文字列 Data Collection API スペースや特殊文字を含む可能性があります <strong>URIでエンコードする必要があります</strong> 要求が成功するために。 JavaScriptを使用してリクエストを送信する場合は、 <code class="language-javascript notranslate notranslate">encodeURI()</code> リクエスト文字列をエンコードします。 例えば：</p>
+
+<pre class="line-numbers notranslate"><code class="language-javascript notranslate notranslate">urlStr += "&amp;video=" + currentVideo.id + "&amp;video_name=" + encodeURI(currentVideo.video_name);
+</code>
+</pre>
+</section><section class="bcls-section video-cloud-only" style="display:block;"><h2 id="video-cloud-events" data-gt-block="">イベント
+</h2>
+
+<p data-gt-block="">以下のイベントは、Analyticsシステムによって処理されます。</p>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th><code class="notranslate notranslate">event</code></th>
+			<th>意図/意味</th>
+			<th>例</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><code class="notranslate notranslate">player_load</code></td>
+			<td>プレーヤーセッションはエンドユーザーによって開始されました。 これは分析セッションの開始を示し、他のイベントの前に送信する必要があります。</td>
+			<td>
+			<pre class="line-numbers notranslate" style="white-space:pre-wrap;padding-top:1em;padding-bottom:1em;"><code class="language-http notranslate notranslate">http://metrics.brightcove.com/tracker
+?event=player_load
+&amp;session=581136_2018-07-03T18:34:46.214Z
+&amp;destination=http%3A-%2F%2Fsup-port.brightcove.com%2F
+&amp;source=http%3A-%2F%2Fwww.google.com
+%2Furl%3Fsa%3D-t%26rct%3Dj%26q%3D%26esrc%3Ds%26source
+%253A-%252F%252Fsupport.brightcove.com%252F%26ei%3D
+OdxWZSGdJ-pL7WJaEeUJVlnw%26bvm%3Dbv.51156542%2Cd.dmg
+&amp;domain=videocloud
+&amp;account=1749339200
+&amp;time=1377191644796
+</code>
+</pre>
+			</td>
+		</tr><tr><td><code class="notranslate notranslate">error</code></td>
+			<td>再生に支障をきたす重大なエラーが発生したときに送信されます。</td>
+			<td>
+			<pre class="line-numbers notranslate" style="white-space:pre-wrap;padding-top:1em;padding-bottom:1em;"><code class="language-http notranslate notranslate">http://metrics.brightcove.com/tracker
+?event=error
+&amp;error_code=MEDIA_ERR_SRC_NOT_SUPPORTED
+&amp;session=581136_2018-07-03T18:34:46.214Z
+&amp;destination=http%3A-%2F%2Fsup-port.brightcove.com%2F
+&amp;source=http%3A-%2F%2Fwww.google.com
+%3Dhttp%253A-%252F%252Fsupport.brightcove.com
+%26usgWZSGdJ-pL7WJaEeUJVlnw%26bvm%3Dbv.51156542%2Cd.dmg
+&amp;domain=videocloud
+&amp;account=1749339200
+&amp;time=1377191644796
+</code>
+</pre>
+			</td>
+		</tr><tr><td><code class="notranslate notranslate">catalog_request</code></td>
+			<td>ビデオクリップカタログapiへのリクエストが行われたときに送信されます。</td>
+			<td>
+			<pre class="line-numbers notranslate" style="white-space:pre-wrap;padding-top:1em;padding-bottom:1em;"><code class="language-http notranslate notranslate">http://metrics.brightcove.com/tracker
+?event=catalog_request
+&amp;session=581136_2018-07-03T18:34:46.214Z
+&amp;catalog_url=https%3A%2F%2Fedge.api.brightcove.com%2Fplayback
+&amp;destination=http%3A-%2F%2Fsup-port.brightcove.com%2F
+&amp;source=http%3A-%2F%2Fwww.google.com
+%3Dhttp%253A-%252F%252Fsupport.brightcove.com
+WZSGdJ-pL7WJaEeUJVlnw%26bvm%3Dbv.51156542%2Cd.dmg
+&amp;domain=videocloud&amp;account=1749339200
+&amp;time=1377191644796
+</code>
+</pre>
+			</td>
+		</tr><tr><td><code class="notranslate notranslate">catalog_response</code></td>
+			<td>前の <code class="notranslate notranslate">catalog_request</code> が受信される。</td>
+			<td>
+			<pre class="line-numbers notranslate" style="white-space:pre-wrap;padding-top:1em;padding-bottom:1em;"><code class="language-http notranslate notranslate">http://metrics.brightcove.com/tracker
+?event=catalog_response
+&amp;session=581136_2018-07-03T18:34:46.
+&amp;catalog_url=https%3A%2F%2Fedge.api.brightcove.com%2Fp2F23823423800
+&amp;response_time_ms=243
+&amp;destination=http%3A-%2F%2Fsup-port.brightcove.com%2F
+&amp;source=http%3A-%2F%2Fwww.google.com
+53A-%252F%252Fsupport.brightcove.com%252F%2Tzn-oCgCQ
+AFQjCNJaEeUJVlnw%26bvm%3Dbv.51156542%2Cd.dmg
+&amp;domain=videocloud
+&amp;account=1749339200
+&amp;time=1377191644796
+</code>
+</pre>
+			</td>
+		</tr><tr><td><code class="notranslate notranslate">play_request</code></td>
+			<td>ユーザーが明示的に再生ボタンをクリックするか、プラットフォームが自動再生シナリオで再生をトリガーするときに自動的に再生が開始されたときに送信されます。</td>
+			<td>
+			<pre class="line-numbers notranslate" style="white-space:pre-wrap;padding-top:1em;padding-bottom:1em;"><code class="language-http notranslate notranslate">http://metrics.brightcove.com/tracker
+?event=play_request
+&amp;session=581136_2018-07-03T18:34:46.214Z
+&amp;destination=http%3A-%2F%2Fsup-port.brightcove.com%2F
+&amp;source=http%3A-%2F%2Fwww.google.com
+%3Dhttp%253A-%252F%252Fsupport.brightcove.com%252F%2
+dJ-pL7WJaEeUJVlnw%26bvm%3Dbv.51156542%2Cd.dmg
+&amp;domain=videocloud
+&amp;account=1749339200
+&amp;time=1377191644796
+</code>
+</pre>
+			</td>
+		</tr><tr><td><code class="notranslate notranslate">ad_mode_begin</code></td>
+			<td>コントロールが再生プラットフォームによって広告代理店に引き渡されたときに送信されます。</td>
+			<td>
+			<pre class="line-numbers notranslate" style="white-space:pre-wrap;padding-top:1em;padding-bottom:1em;"><code class="language-http notranslate notranslate">http://metrics.brightcove.com/tracker
+?event=ad_mode_begin
+&amp;session=581136_2018-07-03T18:34:46.214Z
+&amp;destination=http%3A-%2F%2Fsup-port.brightcove.com%2F
+&amp;source=http%3A-%2F%2Fwww.google.com
+%3Dhttp%253A-%252F%252Fsupport.brightcove.com%252
+%26usg%3DAFQjCNEtLod%3Dbv.51156542%2Cd.dmg
+&amp;domain=videocloud
+&amp;account=1749339200
+&amp;time=1377191644796
+</code>
+</pre>
+			</td>
+		</tr><tr><td><code class="notranslate notranslate">ad_mode_complete</code></td>
+			<td>コントロールが再生プラットフォームによって広告代理店に引き渡されたときに送信されます。</td>
+			<td>
+			<pre class="line-numbers notranslate" style="white-space:pre-wrap;padding-top:1em;padding-bottom:1em;"><code class="language-http notranslate notranslate">http://metrics.brightcove.com/tracker
+?event=ad_mode_complete
+&amp;session=581136_2018-07-03T18:34:46.214Z
+&amp;destination=http%3A-%2F%2Fsup-port.brightcove.com%2F
+&amp;source=http%3A-%2F%2Fwww.google.com
+%3Dhttp%253A-%252F%252Fsupport.brightcove.com%252F%2
+WZSGdJ-pL7WJaEeUJVlnw%26bvm%3Dbv.51156542%2Cd.dmg
+&amp;domain=videocloud
+&amp;account=1749339200
+&amp;time=1377191644796
+</code>
+</pre>
+			</td>
+		</tr><tr><td><code class="notranslate notranslate">video_impression</code></td>
+			<td>プレーヤーに追加されたビデオのメタデータは読み込みが完了し、プレイヤーは自動再生またはユーザー操作のいずれかを介してビューイベントをトリガーする準備が整いました。</td>
+			<td>
+			<pre class="line-numbers notranslate" style="white-space:pre-wrap;padding-top:1em;padding-bottom:1em;"><code class="language-http notranslate notranslate">http://metrics.brightcove.com/tracker
+?event=video_impression
+&amp;session=581136_2018-07-03T18:34:46.214Z
+&amp;destination=http%3A%2F%2Fwww.current-times.com%2F
+&amp;time=1377191644801
+&amp;source=http%3A%2F%2Fwww.google.com
+%252-F%26ei%3DoEYWUtCgEIXq9ATznoCgCQ
+%26usg%3DAFQjCNEtLod-Odx6bvm%3Dbv.5115-6542%2Cd.dmg
+&amp;video=2621468623001
+&amp;video_name=Democratic-Rivals%20Target%20Bill
+&amp;domain=videocloud
+&amp;account=1749339200
+</code>
+</pre>
+			</td>
+		</tr><tr><td><code class="notranslate notranslate">video_view</code></td>
+			<td>動画の再生が開始されました（読み込んだ後に自動再生するか、ユーザーが操作したため）。
+			<p class="BCL-aside" data-gt-block="">注：動画にプレロール広告がある場合は、広告が完了した後に送信する必要があります。</p>
+			</td>
+			<td>
+			<pre class="line-numbers notranslate" style="white-space:pre-wrap;padding-top:1em;padding-bottom:1em;"><code class="language-http notranslate notranslate">http://metrics.brightcove.com/tracker
+?event=video_view
+&amp;session=581136_2018-07-03T18:34:46.214Z
+&amp;destination=http%3A%2F%2Fwww.current-times.com%2F
+&amp;video=2621468623001
+&amp;video_name=Debate-2
+&amp;video_duration=189
+&amp;time=1377191666432
+&amp;source=http%3A%2F%2Fwww.google.com%2Furl%
+%252F%26ei%3DoEYWUtCgEIXq9ATznoCgCQ%26us-g
+%3DAFQjCNEtv.51156542%2Cd.dmg
+&amp;domain=videocloud
+&amp;account=1749339200
+</code>
+</pre>
+			</td>
+		</tr><tr><td><a class="nturl" href="#video_engagement-events/index.html"><code class="notranslate notranslate">video_engagement</code> </a></td>
+			<td>ユーザーは、ビデオのタイムラインの秒の範囲を見ました。 このイベントは、ビデオエンゲージメントを追跡するためのハートビートであり、ユーザーのやりとりや動画の長さによっては、再生中に何度も送信される可能性があります。 ザ Brightcove 再生が中断されなければ、プレーヤーインストゥルメンテーションは10秒ごとにこのイベントを送信します。 <strong>20秒を超える範囲を記述するイベントは、アナリティクスシステムによって破棄されます。</strong></td>
+			<td>
+			<pre class="line-numbers notranslate" style="white-space:pre-wrap;padding-top:1em;padding-bottom:1em;"><code class="language-http notranslate notranslate">http://metrics.brightcove.com/tracker
+?event=video_engagement
+&amp;session=581136_2018-07-03T18:34:46.214Z
+&amp;destination=http%3A%2F%2Fwww.current-times.com%2F
+&amp;video=2621468623001
+&amp;video_name=Debate-2
+&amp;video_duration=189
+&amp;time=1377191676589
+&amp;range=0..9
+&amp;source=http%3A%2F%2Fwww.google.com
+%2Furl%3Fsa%3Dt-%26rct%3Dj%26q%3D%26esrc%3Ds
+%26source%3Dweb%26cd%3D1%26ved%3D0CDYQFjAA
+%26url%3Dhttp%253A%252F%252Fwww.current-times.com
+%252F%26ei%3DoEYWUtC-gEIXq9ATznoCgCQ
+%26usg%3DAFQjCNEtLodOdxWZSGdJpL7WJ.51156542%2Cd.dmg
+&amp;domain=videocloud
+&amp;account=1749339200
+</code>
+</pre>
+			</td>
+		</tr></tbody></table></section><section class="bcls-section video-cloud-only" style="display:block;"><h2 id="all-event-parameters" data-gt-block="">すべてのイベントのパラメータ</h2>
+
+<p data-gt-block="">これらのイベントのパラメータには、イベントが発生したときのシステムの現在の状態に関連する情報が含まれていて、可能な限り具体的でなければなりません。 このセクションでは、すべてのイベントで送信できるパラメータについて詳しく説明します。次のセクションでは、特定のイベントのパラメータを示します。</p>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th style="width:16em;">フィールド</th>
+			<th>種類</th>
+			<th>説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><code class="notranslate notranslate">account</code></td>
+			<td>文字列</td>
+			<td>
+			<p data-gt-block="">アカウントID</p>
+			</td>
+		</tr><tr><td><code class="notranslate notranslate">domain</code></td>
+			<td>文字列</td>
+			<td>
+			<p data-gt-block="" class="gt-block">常に等しい <code class="notranslate notranslate">videocloud</code></p>
+
+			<p class="gt-block type-size" data-gt-block="">許容値： <code class="notranslate notranslate">"videocloud"</code></p>
+			</td>
+		</tr><tr><td><code class="notranslate notranslate">session</code></td>
+			<td>文字列</td>
+			<td>可能な限り普遍的なユニークなセッションIDです。 <a class="nturl" href="#minimal/index.html">最小データ</a> 詳細は上記のセクションを参照してください</td>
+		</tr><tr><td><code class="notranslate notranslate">device_os</code> <span class="label label-optional" style="float:right;">任意</span></td>
+			<td>文字列</td>
+			<td>
+			<p data-gt-block="" class="gt-block gt-block">ユーザエージェントが信頼できない場合（デバイスのOSとデバイスタイプの両方が含まれていないか、または送信された値がここに示す値のリストにない場合は無視されます）、イベントを発生させたデバイスのOSを指定します。 <strong>通常含まれていない</strong>)</p>
+
+			<p class="gt-block type-size" data-gt-block="">許容値： <code class="notranslate notranslate">"android"</code>,  <code class="notranslate notranslate">"bada"</code>,  <code class="notranslate notranslate">"ios"</code>,  <code class="notranslate notranslate">"linux"</code>,  <code class="notranslate notranslate">"mac"</code>,  <code class="notranslate notranslate">"tv"</code>,  <code class="notranslate notranslate">"os_x"</code>,  <code class="notranslate notranslate">"rim"</code>,  <code class="notranslate notranslate">"sybian"</code>,  <code class="notranslate notranslate">"windows"</code>,  <code class="notranslate notranslate">"other"</code></p>
+			</td>
+		</tr><tr><td><code class="notranslate notranslate">device_os_version</code> <span class="label label-optional" style="float:right;">任意</span></td>
+			<td>文字列</td>
+			<td>
+			<p data-gt-block="">デバイスによって使用されているosのバージョン。 指定されていない場合は、トラッキング要求のユーザーエージェント文字列を解析して計算されます</p>
+			</td>
+		</tr><tr><td><code class="notranslate notranslate">device_type</code> <span class="label label-optional" style="float:right;">任意</span></td>
+			<td>文字列</td>
+			<td>
+			<p data-gt-block="" class="gt-block gt-block">ユーザエージェントが信頼できない場合（デバイスosとデバイスタイプの両方が含まれていないか、またはサブミットされた値がここに示す値のリストにない場合は無視されます）、イベントを発生させたデバイスのタイプを指定します。 <strong>通常含まれていない</strong>)</p>
+
+			<p class="gt-block type-size" data-gt-block="">許容値： <code class="notranslate notranslate">"direct"</code>,  <code class="notranslate notranslate">"mobile"</code>,  <code class="notranslate notranslate">"tablet"</code>,  <code class="notranslate notranslate">"tv"</code>,  <code class="notranslate notranslate">"desktop"</code>,  <code class="notranslate notranslate">"other"</code></p>
+			</td>
+		</tr><tr><td><code class="notranslate notranslate">event</code></td>
+			<td>文字列</td>
+			<td>
+			<p data-gt-block="">イベントタイプ</p>
+
+			<p class="gt-block type-size" data-gt-block="">許容値： <code class="notranslate notranslate">"player_load"</code>,  <code class="notranslate notranslate">"catalog_request"</code>,  <code class="notranslate notranslate">"catalog_response"</code>,  <code class="notranslate notranslate">"play_request"</code>,  <code class="notranslate notranslate">"ad_mode_begin"</code>,  <code class="notranslate notranslate">"ad_mode_complete"</code>,  <code class="notranslate notranslate">"video_impression"</code>,  <code class="notranslate notranslate">"video_view"</code>,  <code class="notranslate notranslate">"video_engagement"</code>,  <code class="notranslate notranslate">"error"</code></p>
+			</td>
+		</tr><tr><td><code class="notranslate notranslate">destination</code> <span class="label label-optional" style="float:right;">任意</span></td>
+			<td>文字列</td>
+			<td>
+			<p data-gt-block="">イベントを発生させたURI</p>
+			</td>
+		</tr><tr><td><code class="notranslate notranslate">source</code> <span class="label label-optional" style="float:right;">任意</span></td>
+			<td>文字列</td>
+			<td>
+			<p data-gt-block="" class="gt-block">エンドユーザーを <code class="notranslate notranslate">destination</code> URI</p>
+			</td>
+		</tr><tr><td><code class="notranslate notranslate">time</code> <span class="label label-optional" style="float:right;">任意</span></td>
+			<td>数</td>
+			<td>
+			<p data-gt-block="">エポックタイム（ミリ秒）でのイベントのタイムスタンプ</p>
+			</td>
+		</tr><tr><td><code class="notranslate notranslate">country</code> <span class="label label-optional" style="float:right;">任意</span></td>
+			<td>文字列</td>
+			<td>
+			<p data-gt-block="" class="gt-block gt-block">ISO-3166（alpha 2）領域cISO-3166（alpha 2）地域コード（システムがIPアドレスからの地理情報を検出できない場合のオーバーライド） <strong>通常含まれていない</strong></p>
+			</td>
+		</tr><tr><td><code class="notranslate notranslate">country_name</code> <span class="label label-optional" style="float:right;">任意</span></td>
+			<td>文字列</td>
+			<td>
+			<p data-gt-block="" class="gt-block gt-block">人が判読可能な国名（システムがIPアドレスからの地理情報を検出できない場合のオーバーライド） <strong>通常含まれていない</strong></p>
+			</td>
+		</tr><tr><td><code class="notranslate notranslate">region</code> <span class="label label-optional" style="float:right;">任意</span></td>
+			<td>文字列</td>
+			<td>
+			<p data-gt-block="" class="gt-block gt-block">ISO-3166（アルファベット2）地域コード（システムがIPアドレスからの地理情報を検出できない場合のオーバーライド） <strong>通常含まれていない</strong></p>
+			</td>
+		</tr><tr><td><code class="notranslate notranslate">region_name</code> <span class="label label-optional" style="float:right;">任意</span></td>
+			<td>文字列</td>
+			<td>
+			<p data-gt-block="" class="gt-block gt-block">人間が読み取り可能な地域名（システムがIPアドレスからの地理情報を検出できない場合のオーバーライド） <strong>通常含まれていない</strong></p>
+			</td>
+		</tr><tr><td><code class="notranslate notranslate">city</code> <span class="label label-optional" style="float:right;">任意</span></td>
+			<td>文字列</td>
+			<td>
+			<p data-gt-block="" class="gt-block gt-block">市の名前 <strong>通常含まれていない</strong></p>
+			</td>
+		</tr><tr id="userData"><td><code class="notranslate notranslate">user</code> <span class="label label-optional" style="float:right;">任意</span></td>
+			<td>文字列</td>
+			<td>
+			<p data-gt-block="" class="gt-block gt-block">一意のユーザー識別子 - 提供されていないか空白の場合、 Video Cloud のフォールバック方法を使用します。 <code class="notranslate notranslate">Source IP address + the User-Agent</code> 一意の識別子としての文字列。 <strong>注意してください Brightcove この情報はユニークユーザーの計算にのみ使用されます。 APIまたはAnalyticsモジュールを使用してユーザーデータ自体を取得することはできません</strong></p>
+			</td>
+		</tr></tbody></table><h3 id="user" data-gt-block="">ユーザパラメータ</h3>
+
+<ul><li>プレーヤー/クライアントアプリケーションが一意のビューアを追跡したい場合、ユーザーの一意のIDをユーザーパラメータとしてコレクタに送信する必要があります。</li>
+	<li>もし <code class="notranslate notranslate">user</code> が指定されていないか空白の場合は、 <code class="notranslate notranslate">Source IP address + the User-Agent String</code> 一意の識別子として使用します。</li>
+	<li>userパラメータの値は決してログ/データベースに格納されず、ハッシュ（SHA-256を使用）のみが格納されます。</li>
+	<li>コレクターはクッキーを設定しません。</li>
+</ul><h4 id="uniqueuser" data-gt-block="">ユニークユーザー</h4>
+
+<p data-gt-block="" class="gt-block">あなたが使用することができます Brightcove Playerのプラグイン機能を使用して、報告されたアナリティクスに一意のビデオビューアデータを追加します。 これを行うには、 <code class="notranslate notranslate">settings</code> 分析機能の対象です。</p>
+
+<p data-gt-block="" class="gt-block gt-block">もちろん、ユニークなユーザーIDの取得方法はアプリケーションによって異なりますが、このコードでは、ログインURLがキャプチャされていることを前提としています。 <strong>http://exampledomain.com/users/912389123</strong>。 この一意のURLはプラグインに渡されます。</p>
+
+<p data-gt-block="">以下のプラグインのコードは以下のタスクを実行します：</p>
+
+<ul><li>標準構文を使用して Brightcove Player プラグイン名が次のように定義されたプラグイン <code class="notranslate notranslate">uniqueUserForAnalyticsPlugin</code>。 プラグインはまた、 <code class="notranslate notranslate">options</code> オブジェクトには、プラグインに渡されるデータが含まれます。</li>
+	<li>挽き目 <code class="notranslate notranslate">myPlayer</code> 変数にはプレーヤーへの参照が割り当てられます。 同様に、2つの他の変数が作成されます。</li>
+	<li>挽き目 <code class="notranslate notranslate">userPath</code> 変数には、プラグインに渡されたパスが割り当てられます。 <code class="notranslate notranslate">options</code> オブジェクト。</li>
+	<li>挽き目 <code class="notranslate notranslate">uniqueViewer</code> 変数には、解析されたバージョンの <code class="notranslate notranslate">userPath</code>、変数にはユーザーIDの数字だけが割り当てられます。</li>
+	<li>アナリティクスプラグインのユーザープロパティが追加されました <code class="notranslate notranslate">settings</code> オブジェクト。</li>
+</ul><pre class="line-numbers notranslate"><code class="language-javascript notranslate notranslate">videojs.registerPlugin('uniqueUserForAnalyticsPlugin', function(options) {
+var myPlayer = this,
+userPath = '',
+uniqueViewer = '';
+//Assign uniqueViewer a value according to your app and business rules
+//In this example, parsing the path passed to the plugin in the options object
+userPath = options.path;
+uniqueViewer = userPath.substring( userPath.lastIndexOf('/') + 1 );
+//Assign a user variable to Analytic's settings object
+myPlayer.bcAnalytics.client.user(USER) = uniqueViewer;
+});
+</code>
+</pre>
+
+<p data-gt-block="">このコードは、アプリケーションのロジックに合わせて変更し、インターネットでアクセス可能なURLに保存する必要があります。</p>
+
+<p data-gt-block="" class="gt-block gt-block">スタジオからは、 <strong>プラグイン</strong> 図のように、プラグインをプレーヤーにロードします。</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="Studioプラグインセクション" src="http://learning-services-media.brightcove.com/doc-assets/video-cloud-apis/analytics-api/data-collection/data-collection-api-overview/unique-user-plugin-studio.png"><figcaption class="bcls-caption--image">Studioプラグインセクション</figcaption></figure><p data-gt-block="">後続するJSONではなく、ユーザーデータを含む文字列をプラグインに渡します。 もちろん、一意のユーザーIDを抽出するために、プラグインコードを更新する必要があります。</p>
+
+<pre class="line-numbers notranslate"><code class="language-json notranslate">{
+"path": "http://exampledomain.com/users/912389123"
+}
+</code>
+</pre>
+
+<p data-gt-block="" class="gt-block gt-block">プラグイン開発の詳細については、 <a class="nturl" href="..//support.brightcove.com/ja/step-step-plugin-development/index.html">ステップバイステップ：プラグイン開発</a> の資料をご参照ください。</p>
+
+<h3 id="device_type-and-device_os-parameters" data-gt-block="" class="gt-block"><code class="notranslate notranslate">device_type</code>,  <code class="notranslate notranslate">device_os</code>,  <code class="notranslate notranslate">device_os_version</code>,  <code class="notranslate notranslate">device_manufacturer</code>および <code class="notranslate notranslate">browser_type</code> パラメータ</h3>
+
+<p data-gt-block="" class="gt-block gt-block">デフォルトでは、AnalyticsシステムはUser-AgentヘッダーからデバイスタイプとOS情報を検出しようとします。 もし <strong>どちらも</strong> <code class="notranslate notranslate">device_type</code> や <code class="notranslate notranslate">device_os</code> User-Agentヘッダーからの情報は無視されます <code class="notranslate notranslate">device_type</code> や <code class="notranslate notranslate">device_os</code>.  <strong>ほとんどの場合、デバイス、OS、およびブラウザ情報を送信する必要はありません</strong>  - このオーバーライドは、User-Agentが信頼できない場合、または使用できない場合にのみ使用する必要があります。</p>
+
+<p data-gt-block="" class="gt-block">Analyticsシステムが記録します <code class="notranslate notranslate">other</code> 要求にデバイスパラメータオーバーライドの認識されない値が含まれている場合</p>
+
+<h3 id="geographic-data-parameters" data-gt-block="">地理データ</h3>
+
+<p data-gt-block="" class="gt-block gt-block">デフォルトでは、アナリティクスシステムはリモートIPアドレスから地理情報を検出しようとします。 この動作は、渡すことでオーバーライドできます。 <code class="notranslate notranslate">country</code>,  <code class="notranslate notranslate">country_name</code>,  <code class="notranslate notranslate">region</code>,  <code class="notranslate notranslate">region_name</code>,  <code class="notranslate notranslate">city</code> や <code class="notranslate notranslate">dma</code> パラメーター。 <strong>ほとんどの場合、これらのパラメータは必須ではありません</strong>  - このオーバーライドは、リモートIPアドレスが信頼できない場合、または使用できない場合にのみ使用する必要があります。</p>
+
+<p data-gt-block="" class="gt-block">Analyticsシステムが記録します <code class="notranslate notranslate">ZZ</code>  or  <code class="notranslate notranslate">unknown</code> 要求に、上書きのための認識されない値が含まれている場合。</p>
+
+<h3 id="destination-and-source-parameters" data-gt-block="">宛先とソースのパラメータ</h3>
+
+<p data-gt-block="" class="gt-block">挽き目 <code class="notranslate notranslate">destination</code> や <code class="notranslate notranslate">source</code> パラメータは、イベントを発生させたURIを提供します（ <code class="notranslate notranslate">destination</code>）とそこにユーザーを送ったURI（ <code class="notranslate notranslate">source</code>).</p>
+
+<p data-gt-block="" class="gt-block">挽き目 <code class="notranslate notranslate">source</code> パラメータは、トラフィックソース情報を決定するために使用されます。 もし <code class="notranslate notranslate">source</code> が指定されていない場合、アナリティクスシステムはイベントを直接トラフィックによって開始されたものとして扱います。</p>
+
+<p data-gt-block="" class="gt-block">挽き目 <code class="notranslate notranslate">destination</code> パラメータは、トラフィックの宛先情報、つまりビデオが監視されている場所を特定するために使用されます。 URIに権限が含まれていない場合、APIは <code class="notranslate notranslate">destination_domain</code>  <code class="notranslate notranslate">destination_path</code> URIのパスとして記録されます。</p>
+
+<p data-gt-block="" class="gt-block">ウェブ再生中、動画が再生されているページのアドレスバーにあるURLは <code class="notranslate notranslate">destination</code>、 そしてその <code class="notranslate notranslate">source</code> リファラー（ <code class="notranslate notranslate">top.document.referrer</code>).</p>
+
+<p data-gt-block="">たとえば、「ライブストリーミングのワイヤキャスト」を検索すると Brightcove サポートサイトで検索結果に表示される動画を見る：</p>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th>パラメーター</th>
+			<th>値</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><code class="notranslate notranslate">source</code></td>
+			<td>
+			<pre class="line-numbers notranslate" style="white-space:pre-wrap;padding-top:1em;padding-bottom:1em;"><code class="language-http notranslate notranslate">https://support.brightcove.com/en/video-cloud/search/live%20streaming%20wirecast
+</code>
+</pre>
+			</td>
+		</tr><tr><td><code class="notranslate notranslate">destination</code></td>
+			<td>
+			<pre class="line-numbers notranslate" style="white-space:pre-wrap;padding-top:1em;padding-bottom:1em;"><code class="language-http notranslate notranslate">https://support.brightcove.com/en/video-cloud/training-videos/live-streaming-wirecast
+</code>
+</pre>
+			</td>
+		</tr></tbody></table><p data-gt-block="" class="gt-block">URLがない場合（たとえば、ネイティブ再生の場合のように）、両方 <code class="notranslate notranslate">destination</code> や <code class="notranslate notranslate">source</code> 動画がどこで再生されているか、どのようにそこに到達したのかを識別する有効なURIでなければなりません。</p>
+
+<p data-gt-block="" class="gt-block gt-block">コーヒーの粉の形状を球体と捉えたとしたら、XNUMXミクロン以上の粒子ひとつに対して、XNUMXミクロン以下の粒子はどれくらい存在するでしょうか？
+ <code class="notranslate notranslate">destination</code> 　 <a class="nturl" href="http://en.wikipedia.org/wiki/URI_scheme#Generic_syntax">有効なURI</a>:</p>
+
+<pre class="notranslate"><code class="notranslate notranslate">&lt;scheme name&gt; : &lt;hierarchical part&gt; [ ? &lt;query&gt; ] [ # &lt;fragment&gt; ]
+ex. https://www.example.com/foo/bar/baz
+--------------/----------/
+|             |
+authority        path
+---/    -------------------------/
+|                |
+scheme       hierarchical part
+</code>
+</pre>
+
+<p data-gt-block="">Analyticsシステムでは次のように処理されます。</p>
+
+<p data-gt-block="" class="gt-block gt-block">URIに <strong>権威</strong>APIレスポンスは、その権限を <code class="notranslate notranslate">destination_domain</code> また、 <code class="notranslate notranslate">destination_path</code>。 URIに権限が含まれていない場合、APIは <code class="notranslate notranslate">destination_domain</code>  <code class="notranslate notranslate">destination_path</code> URIのパスとして記録されます。 A <code class="notranslate notranslate">destination</code> スキームのない任意の値と同様に、階層部分のないスキーム（例えばスキーム）は無効と見なされます。</p>
+</section><section class="bcls-section"><h2 id="parameters_for_specific_events" data-gt-block="">特定のイベントのパラメータ</h2>
+
+<h3 id="errorEvent" data-gt-block="">エラーイベントパラメータ</h3>
+
+<p data-gt-block="" class="gt-block">次のパラメータは、 <code class="notranslate notranslate">error</code> イベント。</p>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th style="width: 30%">フィールド</th>
+			<th style="width: 10%">種類</th>
+			<th style="width: 70%">説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><code class="notranslate notranslate">error_code</code> <span class="label label-optional" style="float:right;">任意</span></td>
+			<td>数</td>
+			<td>
+			<p data-gt-block="">イベントに関連付けられたプラットフォーム固有のエラーコード</p>
+			</td>
+		</tr></tbody></table><h3 id="catalog_requestEvent" data-gt-block="">catalog_requestイベントパラメータ</h3>
+
+<p data-gt-block="" class="gt-block">次のパラメータは、 <code class="notranslate notranslate">catalog_request</code> イベント。</p>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th style="width: 30%">フィールド</th>
+			<th style="width: 10%">種類</th>
+			<th style="width: 70%">説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><code class="notranslate notranslate">catalog_url</code> <span class="label label-optional" style="float:right;">任意</span></td>
+			<td>文字列</td>
+			<td>
+			<p data-gt-block="">catalog_requestイベントに関連付けられた宛先URL</p>
+			</td>
+		</tr></tbody></table><h3 id="catalog_responseEvent" data-gt-block="">catalog_responseイベントパラメータ</h3>
+
+<p data-gt-block="" class="gt-block">次のパラメータは、 <code class="notranslate notranslate">catalog_response</code> イベント。</p>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th style="width: 30%">フィールド</th>
+			<th style="width: 10%">種類</th>
+			<th style="width: 70%">説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><code class="notranslate notranslate">catalog_url</code> <span class="label label-optional" style="float:right;">任意</span></td>
+			<td>文字列</td>
+			<td>
+			<p data-gt-block="">この応答を開始したcatalog_requestイベントに関連付けられている宛先URL</p>
+			</td>
+		</tr><tr><td><code class="notranslate notranslate">response_time_ms</code> <span class="label label-optional" style="float:right;">任意</span></td>
+			<td>数</td>
+			<td>
+			<p data-gt-block="">catalog_requestイベントとcatalog_responseイベントの間の時間（ミリ秒単位）。</p>
+			</td>
+		</tr></tbody></table><h3 id="video_impressionEvent" data-gt-block="">video_impressionイベントパラメータ</h3>
+
+<p data-gt-block="" class="gt-block">次のパラメータは、 <code class="notranslate notranslate">video_impression</code> イベント。</p>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th style="width: 30%">フィールド</th>
+			<th style="width: 10%">種類</th>
+			<th style="width: 70%">説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><code class="notranslate notranslate">video</code> <span class="label label-optional" style="float:right;"> 任意</span></td>
+			<td>文字列</td>
+			<td>
+			<p data-gt-block="">ビデオID</p>
+			</td>
+		</tr><tr><td><code class="notranslate notranslate">video_name</code> <span class="label label-optional" style="float:right;">任意</span></td>
+			<td>文字列</td>
+			<td>
+			<p data-gt-block="">ビデオ名</p>
+			</td>
+		</tr></tbody></table><h3 id="video_viewEvent" data-gt-block="">video_viewイベントパラメータ</h3>
+
+<p data-gt-block="" class="gt-block">次のパラメータは、 <code class="notranslate notranslate">video_view</code> イベント。</p>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th style="width: 30%">フィールド</th>
+			<th style="width: 10%">種類</th>
+			<th style="width: 70%">説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><code class="notranslate notranslate">video</code> <span class="label label-optional" style="float:right;">任意</span></td>
+			<td>文字列</td>
+			<td>
+			<p data-gt-block="">ビデオID</p>
+			</td>
+		</tr><tr><td><code class="notranslate notranslate">video_name</code> <span class="label label-optional" style="float:right;">任意</span></td>
+			<td>文字列</td>
+			<td>
+			<p data-gt-block="">ビデオ名</p>
+			</td>
+		</tr><tr><td><code class="notranslate notranslate">start_time_ms</code> <span class="label label-optional" style="float:right;">任意</span></td>
+			<td>文字列</td>
+			<td>
+			<p data-gt-block="" class="gt-block">再生の開始からレンダリングされるビデオの最初のフレームまでの時間（ミリ秒単位）。 これは経験によって異なる場合があります。たとえば、プレロール広告が設定されていない場合、この測定は <code class="notranslate notranslate">play_request</code> や <code class="notranslate notranslate">video_view</code> イベント。 プリロール広告がある場合は、 <code class="notranslate notranslate">ad_mode_begin</code> や <code class="notranslate notranslate">ad_mode_complete</code> 含まれてはならない</p>
+			</td>
+		</tr></tbody></table><h3 id="engagementEventParams" data-gt-block="">video_engagementイベントパラメータ</h3>
+
+<p data-gt-block="" class="gt-block">次のパラメータは、 <code class="notranslate notranslate">video_engagement</code> イベント。</p>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th style="width: 30%">フィールド</th>
+			<th style="width: 10%">種類</th>
+			<th style="width: 70%">説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><code class="notranslate notranslate">video</code> <span class="label label-optional" style="float:right;">任意</span></td>
+			<td>文字列</td>
+			<td>
+			<p data-gt-block="">ビデオID</p>
+			</td>
+		</tr><tr><td><code class="notranslate notranslate">video_name</code> <span class="label label-optional" style="float:right;">任意</span></td>
+			<td>文字列</td>
+			<td>
+			<p data-gt-block="">ビデオ名</p>
+			</td>
+		</tr><tr><td><code class="notranslate notranslate">range</code> <span class="label label-optional" style="float:right;">任意</span></td>
+			<td>文字列</td>
+			<td>
+			<p data-gt-block="" class="gt-block">視聴された動画の範囲 <code class="notranslate notranslate">video_engagement</code> 形式のイベント <code class="notranslate notranslate">StartSecond..EndSecond</code> （StartSecondとEndSecondの値は整数でなければなりません[整数]） - 範囲は、イベントによってカバーされている期間中、視聴アクティビティがなかったことを示すエンゲージメントイベントから除外することができます。 （例えば、再バッファリング動作のみがある場合）</p>
+			</td>
+		</tr><tr><td><code class="notranslate notranslate">rendition_url</code> <span class="label label-optional" style="float:right;">任意</span></td>
+			<td>文字列</td>
+			<td>
+			<p data-gt-block="">最近選択された演奏へのURL。 たとえば、HLSストリームの場合、これは最も最近選択されたバリアントへのURLになります</p>
+			</td>
+		</tr><tr><td><code class="notranslate notranslate">rendition_indicated_bps</code> <span class="label label-optional" style="float:right;">任意</span></td>
+			<td>文字列</td>
+			<td>
+			<p data-gt-block="">最後に選択された演奏のビットレート（ビット/秒）</p>
+			</td>
+		</tr><tr><td><code class="notranslate notranslate">rendition_mime_type</code> <span class="label label-optional" style="float:right;">任意</span></td>
+			<td>文字列</td>
+			<td>
+			<p data-gt-block="">最後に選択した演奏のMIMEタイプ</p>
+			</td>
+		</tr><tr><td><code class="notranslate notranslate">rendition_height</code> <span class="label label-optional" style="float:right;">任意</span></td>
+			<td>文字列</td>
+			<td>
+			<p data-gt-block="">ビデオレンディションのエンコードされた高さ（ピクセル単位）</p>
+			</td>
+		</tr><tr><td><code class="notranslate notranslate">rendition_width</code> <span class="label label-optional" style="float:right;">任意</span></td>
+			<td>文字列</td>
+			<td>
+			<p data-gt-block="">ビデオレンディションのエンコードされた幅（ピクセル単位）</p>
+			</td>
+		</tr><tr><td><code class="notranslate notranslate">rebuffering_seconds</code> <span class="label label-optional" style="float:right;">任意</span></td>
+			<td>文字列</td>
+			<td>
+			<p data-gt-block="">エンゲージメント期間中に要求されなかった遅延のためにユーザーがビデオの再生を待っていた秒数。</p>
+			</td>
+		</tr><tr><td><code class="notranslate notranslate">rebuffering_count</code> <span class="label label-optional" style="float:right;">任意</span></td>
+			<td>文字列</td>
+			<td>
+			<p data-gt-block="">示されたエンゲージメント期間の間エンハンス中の再バッファリングにより再生が停止された回数</p>
+			</td>
+		</tr><tr><td><code class="notranslate notranslate">forward_buffer_seconds</code> <span class="label label-optional" style="float:right;">任意</span></td>
+			<td>文字列</td>
+			<td>
+			<p data-gt-block="">現在フォワードバッファに存在するビデオの秒数</p>
+			</td>
+		</tr><tr><td><code class="notranslate notranslate">measured_bps</code> <span class="label label-optional" style="float:right;">任意</span></td>
+			<td>文字列</td>
+			<td>
+			<p data-gt-block="">直前にダウンロードしたセグメントに含まれるビット数とそのセグメントをダウンロードする時間の割合（ビット/秒）</p>
+			</td>
+		</tr><tr><td><code class="notranslate notranslate">player_width</code> <span class="label label-optional" style="float:right;">任意</span></td>
+			<td>文字列</td>
+			<td>
+			<p data-gt-block="">エンゲージメント範囲の終了時の現在のプレーヤーのピクセル幅</p>
+			</td>
+		</tr><tr><td><code class="notranslate notranslate">player_height</code> <span class="label label-optional" style="float:right;">任意</span></td>
+			<td>文字列</td>
+			<td>
+			<p data-gt-block="">エンゲージメント範囲の終了時のプレーヤーの現在のピクセルの高さ</p>
+			</td>
+		</tr><tr><td><code class="notranslate notranslate">dropped_frames</code> <span class="label label-optional" style="float:right;">任意</span></td>
+			<td>文字列</td>
+			<td>
+			<p data-gt-block="">落ちたフレーム</p>
+			</td>
+		</tr><tr><td><code class="notranslate notranslate">video_duration</code> <span class="label label-optional" style="float:right;">任意</span></td>
+			<td>数</td>
+			<td>
+			<p data-gt-block="">動画の再生時間（秒）</p>
+			</td>
+		</tr><tr><td><code class="notranslate notranslate">video_seconds_viewed</code> <span class="label label-optional" style="float:right;">任意</span></td>
+			<td>数</td>
+			<td>
+			<p data-gt-block="" class="gt-block">最後の更新以降の監視秒数 <code class="notranslate notranslate">video_engagement</code> イベント</p>
+			</td>
+		</tr></tbody></table><p data-gt-block="" class="gt-block gt-block">挽き目 <code class="notranslate notranslate">video_engagement</code> イベントは、ビデオの再生中にビデオエンゲージメントを追跡する手段であり、再生中に何度も送信される可能性があります。 （再生が中断されない場合、Flash / HTML5プレーヤー計測器はこのイベントを10秒ごとに送信します）。 <strong>現在、20秒以上の範囲を記述するイベントは、アナリティクスシステムによって破棄されるため、これらのイベントをより頻繁に送信する必要があります。</strong></p>
+
+<p data-gt-block="" class="gt-block">次の2つの形式があります。 <code class="notranslate notranslate">video_engagement</code> イベントが発生する可能性があります（簡潔にするため、他のパラメータは省略しています）。</p>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th>例</th>
+			<th>意味</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td>
+			<pre class="line-numbers notranslate" style="white-space:pre-wrap;padding-top:1em;padding-bottom:1em;"><code class="language-http notranslate notranslate">event=video_engagement&amp;video=123&amp;video_duration=75&amp;range=0..9
+</code>
+</pre>
+			</td>
+			<td>動画 <code class="notranslate notranslate">123</code> 75秒の再生時間（0秒から9秒までの再生秒数）。</td>
+		</tr><tr><td><code class="notranslate notranslate">event=video_engagement&amp;video=123&amp;video_seconds_viewed=10</code></td>
+			<td>10秒の動画 <code class="notranslate notranslate">123</code> 見た。</td>
+		</tr></tbody></table><p data-gt-block="" class="gt-block gt-block">どちらのバージョンも表示秒数を追跡していますが、 <code class="notranslate notranslate">video_duration</code> や <code class="notranslate notranslate">range</code> 追加のエンゲージメントデータを計算するために必要な情報も含まれています <strong>好ましい方法</strong> 送信する <code class="notranslate notranslate">video_engagement</code> Analyticsシステムへのイベントデータ。 ライブストリームの場合、または再生中にビデオのタイムラインが絶えず変化している場合、または信頼性が低い場合は、 <code class="notranslate notranslate">video_seconds_viewed</code> 利用可能な唯一のデータになります。 VODの場合は、 <code class="notranslate">duration</code> 利用できない、 <code class="notranslate notranslate">video_engagement</code> イベントに含める必要があります <code class="notranslate notranslate">video_duration</code> や <code class="notranslate notranslate">range</code>.</p>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th>パラメーター</th>
+			<th>派生エンゲージメトリック（API）</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><code class="notranslate notranslate">video_duration</code>,  <code class="notranslate notranslate">range</code></td>
+			<td><code class="notranslate notranslate">video_seconds_viewed</code>,  <code class="notranslate notranslate">video_percent_viewed</code>,  <code class="notranslate notranslate">engagement_score</code>; 係合曲線データ</td>
+		</tr><tr><td><code class="notranslate notranslate">video_seconds_viewed</code></td>
+			<td><code class="notranslate notranslate">video_seconds_viewed</code></td>
+		</tr></tbody></table><p data-gt-block="" class="gt-block">3つのパラメータ（ <code class="notranslate notranslate">video_duration</code>,  <code class="notranslate notranslate">range</code> や <code class="notranslate notranslate">video_seconds_viewed</code>）と一緒に送信されます <code class="notranslate notranslate">video_engagement</code> アナリティクスのシステムでは、 <code class="notranslate notranslate">video_duration</code>+  <code class="notranslate notranslate">range</code> パラメーター。</p>
+
+<h3 id="changesFromV1" data-gt-block="">V2の変更点</h3>
+
+<p data-gt-block="">このセクションでは、v1を使用しているユーザーのデータコレクタのv2からv1への変更の概要を示します。</p>
+
+<h3 data-gt-block="">トラッカーのベースURL</h3>
+
+<pre class="notranslate"><code class="notranslate notranslate">http(s)://metrics.brightcove.com/v2
+</code>
+</pre>
+
+<h3 data-gt-block="">すべてのイベントでサポートされる追加フィールド：</h3>
+
+<p data-gt-block="" class="gt-block gt-block"><strong>device_os_version</strong>：デバイスで使用されているOSのバージョン。 指定されていない場合は、トラッキング要求のユーザーエージェント文字列を解析して計算されます。</p>
+
+<p data-gt-block="" class="gt-block gt-block"><strong>platform_version</strong>：指定されたプラットフォームの新しいリリースがイベントの送信に使用されていることを示すために使用されます。</p>
+
+<h3 data-gt-block="">V2の新しいイベント</h3>
+
+<p data-gt-block="" class="gt-block gt-block"><strong>catalog_request</strong>：videocloud catalog apiへのリクエストが行われたときに送信されます - このイベントは内部使用のためであり、Analyticsモジュール内で、または経由で公開されていないことに注意してください。 Analytics API.</p>
+
+<ul><li><strong>catalog_url</strong>：関連するリンク先URL <code class="notranslate notranslate">catalog_request</code> event  - このイベントは内部使用のためのものであり、Analyticsモジュールまたはその外部からは公開されません。 Analytics API..</li>
+</ul><p data-gt-block="" class="gt-block gt-block"><strong>catalog_response</strong>：以前の <code class="notranslate notranslate">catalog_request</code> 受信 - このイベントは社内での使用を目的としており、Analyticsモジュール内または Analytics API.</p>
+
+<ul><li><strong>catalog_url</strong>：関連するリンク先URL <code class="notranslate notranslate">catalog_request</code> このレスポンスを開始したイベント - このイベントは内部使用のためのものであり、Analyticsモジュール内または Analytics API..</li>
+	<li><strong>response_time_ms</strong>：時間間隔（ミリ秒） <code class="notranslate notranslate">catalog_request</code> イベントと <code class="notranslate notranslate">catalog_response</code> event  - このイベントは内部使用のためのものであり、Analyticsモジュールまたはその外部からは公開されません。 Analytics API..</li>
+</ul><p data-gt-block="" class="gt-block gt-block"><strong>play_request</strong>：ユーザーが明示的に再生ボタンをクリックすることによって再生が開始されたときに送信されるか、またはプラットフォームが自動再生シナリオで再生をトリガーするときに自動的に送信されます。</p>
+
+<p data-gt-block="" class="gt-block gt-block"><strong>ad_mode_begin</strong>：[置換 <code class="notranslate notranslate">ad_start</code>]コントロールが再生プラットフォームによって広告代理店に渡されたときに送信されます。</p>
+
+<p data-gt-block="" class="gt-block gt-block"><strong>ad_mode_complete</strong>：[置換 <code class="notranslate notranslate">ad_end</code>]コントロールが広告代理店から再生プラットフォームに戻されたときに送信されます。</p>
+
+<p data-gt-block="" class="gt-block gt-block"><strong>エラー</strong>：再生に支障をきたす重大なエラーが発生したときに送信されます。</p>
+
+<ul><li><strong>エラーコード</strong>：イベントに関連付けられたプラットフォーム固有のエラーコード。</li>
+</ul><h3 data-gt-block="">V2の更新されたイベント</h3>
+
+<p data-gt-block="" class="gt-block gt-block"><strong>video_view</strong>：新しいレイテンシ測定値を含む</p>
+
+<ul><li><strong>load_time_ms</strong>：ビデオのデータ読み込み開始から再生可能になるまでの時間（ミリ秒）。</li>
+	<li><strong>start_time_ms</strong>：再生の開始からレンダリングされるビデオの最初のフレームまでの時間（ミリ秒）。 これは経験によって異なる場合があります。たとえば、プレロール広告が設定されていない場合、この測定は 'play_request'と <code class="notranslate notranslate">video_view</code> イベント。 プリロール広告がある場合は、 <code class="notranslate notranslate">ad_mode_begin</code> や <code class="notranslate notranslate">ad_mode_complete</code> 含まれてはいけません。</li>
+</ul><p data-gt-block="" class="gt-block gt-block"><strong>video_engagement</strong>：追加の演奏選択、ビットレート測定、およびバッファリング情報が含まれます。 ビデオエンゲージメントへの微妙な変更は、エンゲージメント期間中に視聴が発生しなくても定期的に送信する必要があるという点でも行われました。 この変更は、ユーザが再生を待つ原因となる遅延およびカウントの再バッファリングを追跡することを可能にすることである。</p>
+
+<ul><li><strong>範囲</strong>：範囲パラメータは現在オプションです。エンゲージメントイベントの範囲を省略して、イベントの対象期間中に視聴アクティビティがないことを示すことができます。 （例えば、再バッファリング動作のみがある場合）</li>
+	<li><strong>rendition_url</strong>：最も最近選択された演奏へのURL。 たとえば、HLSストリームの場合、これは最近選択されたバリアントへのURLになります。</li>
+	<li><strong>rendition_indicated_bps</strong>：最も最近選択された演奏のビットレート（ビット/秒）。</li>
+	<li><strong>rendition_mime_type</strong>：最も最近選択されたレンディションのMIMEタイプ。</li>
+	<li><strong>rendition_height</strong>：ビデオレンディションのエンコードされた高さ（ピクセル単位）</li>
+	<li><strong>レンディション幅</strong>：ビデオレンディションの符号化された幅（ピクセル単位）</li>
+	<li><strong>rebuffering_seconds</strong>：エンゲージメント期間中に要求されなかった遅延のためにユーザーがビデオの再生を待っていた秒数。</li>
+	<li><strong>rebuffering_count</strong>：表現されたエンゲージメント期間中に再バッファリングにより再生が停止した回数。</li>
+	<li><strong>forward_buffer_seconds</strong>：現在フォワードバッファに存在するビデオの秒数。</li>
+	<li><strong>measured_bps</strong>：最後にダウンロードしたセグメントに含まれるビット数とそのセグメントをダウンロードする時間の割合（ビット/秒）。</li>
+	<li><strong>player_width</strong> エンゲージメント範囲の終わりにあるプレーヤーの現在のピクセル幅。</li>
+	<li><strong>player_height</strong> エンゲージメント範囲の終了時のプレーヤーの現在のピクセルの高さ。</li>
+	<li><strong>落ちたフレーム</strong>：このエンゲージメント期間中にビデオ再生からドロップされたフレームの数</li>
+</ul></section></article></div>
+      
+</div>
+
+</div>
+
+
+<section class="views-element-container block block-views block-views-blockrelated-content-by-field-block-1 clearfix" id="block-views-block-related-content-by-field-block-1">
+  
+    
+
+      <div class="gt-block form-group" data-gt-block=""><div class="gt-block view view-related-content-by-field view-id-related_content_by_field view-display-id-block_1 js-view-dom-id-4c95eda02738809790d819554671107adc84ec91623dac8b87c8bb497b852496" data-gt-block="">
+  
+    
+      <div class="gt-block view-header" data-gt-block="">
+      <h2 data-gt-block="" id="bc-ipnav-9">関連コンテンツ</h2>
+    </div>
+      
+      <div class="gt-block view-content" data-gt-block="">
+      <div class="gt-block item-list" data-gt-block="">
+  
+  <ul>
+
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/data-collection-api-sample/index.html" hreflang="en">Data Collection API サンプル</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/overview-analytics-api-v1/index.html" hreflang="en">概要： Analytics API  v1</a></span></span></div></li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </section>
+
+
+  </div>
+
+              </section>
+
+                </div>
+  </div>
+
+      <footer class="footer container" role="contentinfo">
+              <div class="gt-block row" data-gt-block="">
+            <div class="gt-block region region-footer-top-left col-md-9" style="margin-bottom: 1em;" data-gt-block="">
+    <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">Brightcove サポート</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="https://status.brightcove.com">システムステータス</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/contact-support/index.html" data-drupal-link-system-path="node/18632">サポート - Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="../ja/en/contact/create/index.html">サポート - Zencoder</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-documentation-menu" id="block-documentation" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">オンラインマニュアル</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/index.html" data-drupal-link-system-path="<front>">ホーム</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">トレーニング（講習会）</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/online-training-courses/index.html" data-drupal-link-system-path="node/18286">オンラインコース</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/register-training/index.html" data-drupal-link-system-path="node/18270">コー​​スに登録</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-brightcove-menu" id="block-brightcove" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">Brightcove</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="https://www.brightcove.com">Brightcove.COM</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+            <div class="gt-block region region-footer-top-right col-md-3" data-gt-block="">
+    <section id="block-footerlegaltext" class="block block-block-content block-block-content4507d09c-a528-4947-b91d-36ec6671822b clearfix">
+  
+    
+
+      
+            <div class="gt-block field field--name-field-body field--type-text-long field--label-hidden field--item" data-gt-block=""><p data-gt-block="">Brightcove Inc.（ナスダック：BCOV）は、接続されたデバイス間でビデオを配信および収益化するための強力なクラウドソリューションを提供する世界有数のプロバイダです。</p>
+</div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+                    <div class="gt-block row" data-gt-block="">
+            <div class="gt-block region region-footer-bottom-left col-md-8" data-gt-block="">
+    <section id="block-footercopyrightlinewithlinks" class="block block-block-content block-block-content3a164ef9-02d8-42c4-bcc6-3ab435f670b3 clearfix">
+  
+    
+
+      <div class="gt-block block-content block-content--type-copyright-block-with-links block-content--view-mode-full ds-1col clearfix" data-gt-block="">
+
+  
+
+  
+            <div class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" data-gt-block="">2020</div>
+      
+            <div class="field field--name-field-copyright-text field--type-string-long field--label-hidden field--item" data-gt-block="">Brightcove Inc.すべての権利を保有します。</div>
+      
+      <div class="gt-block field field--name-field-legal-links field--type-link field--label-hidden field--items" data-gt-block="">
+              <div class="gt-block field--item" data-gt-block=""><a class="nturl" href="https://www.brightcove.com/en/privacy">プライバシーポリシー</a></div>
+              <div class="gt-block field--item" data-gt-block=""><a class="nturl" href="https://www.brightcove.com/en/terms-and-conditions">利用規約</a></div>
+          </div>
+  
+
+</div>
+
+
+  </section>
+
+
+  </div>
+
+            <div class="gt-block region region-footer-bottom-right col-md-4" data-gt-block="">
+    <section id="block-footersocialblock" class="block block-block-content block-block-content4fc23afd-8d37-420e-ab28-73b2ba24e836 clearfix">
+  
+    
+
+      
+      <div class="gt-block field field--name-field-social-icon field--type-entity-reference-revisions field--label-hidden field--items" data-gt-block="">
+              <div class="gt-block field--item" data-gt-block="">
+
+<a class="icon" icon__social--link="" href="https://www.linkedin.com/company/brightcove" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--linkedin">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--linkedin"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="gt-block field--item" data-gt-block="">
+
+<a class="icon" icon__social--link="" href="https://twitter.com/brightcove" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--twitter">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--twitter"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="gt-block field--item" data-gt-block="">
+
+<a class="icon" icon__social--link="" href="https://www.facebook.com/Brightcove" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--facebook">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--facebook"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="gt-block field--item" data-gt-block="" style="display:none;color:white">
+
+<a class="icon" icon__social--link="" href="https://plus.google.com/100830370440271567091" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--google-plus">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--google-plus"></use>
+  </svg>
+</a>
+
+</div>
+          </div>
+  
+
+
+  </section>
+
+<section id="block-scripts" class="block block-block-content block-block-content42e4bd63-d879-470d-a6de-d5e4529a01be clearfix">
+  
+    
+
+      
+            <div class="gt-block field field--name-field-body field--type-text-long field--label-hidden field--item" data-gt-block=""><script src="https://learning-services-media.brightcove.com/doc-assets/js/gtrans.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/js/support-feedback.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-support.js"></script>
+<script src="https://learning-services-media.brightcove.com/doc-assets/js/hide-google-plus.js"></script></div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+          </footer>
+  
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/18243","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click"},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"user":{"uid":0,"permissionsHash":"3b7fdb4927baca3ee2939edeb777485b3e2c2d36cf8c80e0d8f49c6dc5e2eeca"}}</script>
+<script src="https://support.brightcove.com/sites/default/files/js/js_8fmTAXGyuAUNVu11XoXJaeM8QBDFuAvX7ADwOnigrhc.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+<script src="https://support.brightcove.com/sites/default/files/js/js_L8Eb1bSFk-jGvnjMNZB7VvDJt-7nSbeXfaBlCzWjDbc.js"></script><div id="surveyDiv" style="visibility:hidden"><iframe id="CSAT" src="https://learning-services-media.brightcove.com/doc-assets/general/surveylink.html" style="display:none;"></iframe></div>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e78a80aa93","applicationID":"129613202","transactionName":"YwBUZkcFVktUWhJQX1pKd1FBDVdWGkkHXlVrBldRXQE=","queueTime":0,"applicationTime":21,"atts":"T0dXEA8fRUU=","errorBeacon":"bam.nr-data.net","agent":""}</script><script data-cfasync="false" src="https://tdns5.gtranslate.net/tdn-bin/queue.js"></script><!-- Yandex.Metrika counter for GTranslate --><script data-cfasync="false">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter36618640 = new Ya.Metrika({ id:36618640, clickmap:false, trackLinks:true, accurateTrackBounce:true, ut:"noindex" }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript>&lt;div&gt;&lt;img src="https://mc.yandex.ru/watch/36618640?ut=noindex" style="position:absolute; left:-9999px;" alt="" /&gt;&lt;/div&gt;</

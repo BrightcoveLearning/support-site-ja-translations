@@ -1,0 +1,1013 @@
+<html lang="ja" dir="ltr" class=" js"><head>
+    <meta charset="utf-8"><script type="text/javascript" src="https://bam.nr-data.net/1/e78a80aa93?a=129613202&amp;v=1167.2a4546b&amp;to=YwBUZkcFVktUWhJQX1pKY0BcSxdRW10DQR5EDUY%3D&amp;rst=13898&amp;ref=https://support.brightcove.com/ja/video-cloud-glossary&amp;ap=1891&amp;be=2329&amp;fe=13599&amp;dc=10746&amp;perf=%7B%22timing%22:%7B%22of%22:1588779730048,%22n%22:0,%22f%22:0,%22dn%22:0,%22dne%22:0,%22c%22:0,%22ce%22:0,%22rq%22:1,%22rp%22:1947,%22rpe%22:2336,%22dl%22:2326,%22di%22:10746,%22ds%22:10746,%22de%22:10753,%22dc%22:13600,%22l%22:13600,%22le%22:13602%7D,%22navigation%22:%7B%7D%7D&amp;at=T0dXEA8fRUU%3D&amp;jsonp=NREUM.setToken"></script><script src="https://js-agent.newrelic.com/nr-1167.min.js"></script><script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script><script type="text/javascript" async="" src="//cdn.feedbackify.com/f.js"></script><script async="" src="https://fullstory.com/s/fs.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e78a80aa93",applicationID:"129613202"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-2728311-17", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)">
+<meta name="MobileOptimized" content="width">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="https://support.brightcove.com/sites/default/files/favicon-64.png" type="image/png">
+<link rel="alternate" hreflang="en" href="https://support.brightcove.com/video-cloud-glossary">
+<link rel="canonical" href="https://support.brightcove.com/ja/video-cloud-glossary">
+<link rel="shortlink" href="https://support.brightcove.com/ja/node/11003">
+<link rel="revision" href="https://support.brightcove.com/video-cloud-glossary">
+
+    <title>Video Cloud |用語集| Brightcove 学習</title>
+    <link rel="stylesheet" media="all" href="https://support.brightcove.com/sites/default/files/css/css_d7PoQ20hWbRiei75VgExP_tm8C1ylIRfzB3zIYLc5Cw.css?q23msc">
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.min.css">
+<link rel="stylesheet" media="all" href="https://support.brightcove.com/sites/default/files/css/css_fr7ugR_m15spMT57voAomC2Aklj0ATM7MmH6hvb3pp4.css?q23msc">
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+    <meta name="uri-translation" content="on">
+    <script>
+window['_fs_debug'] = false; window['_fs_host'] = 'fullstory.com';
+window['_fs_org'] = 'BX3Q1';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+g.consent=function(a){g("consent",!arguments.length||a)};
+g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+g.clearUserCookie=function(){};
+})(window,document,window['_fs_namespace'],'script','user');
+    </script>
+  <style type="text/css">html{_background:url(//about:blank) fixed;}.fby-on select {visibility:hidden!important;}.fby-on .fby-hide-iframe {visibility:hidden!important;}.fby-hide-embed embed {visibility:hidden!important;}.fby-hide-object object {visibility:hidden!important;}@media not screen {.fby-tab {display: none;}}#feedbackify *{box-sizing:content-box!important;-moz-box-sizing:content-box!important;-webkit-box-sizing:content-box!important;}#feedbackify input{box-sizing:border-box!important;-moz-box-sizing:border-box!important;-webkit-box-sizing:border-box!important;max-width:none!important;}#feedbackify *:before{content:none!important;}#feedbackify *:after{content:none!important;}#feedbackify ,#feedbackify div,#feedbackify span,#feedbackify textarea,#feedbackify input,#feedbackify table,#feedbackify tbody,#feedbackify tr,#feedbackify td,#feedbackify img,#feedbackify p,#feedbackify a{border:0!important;outline:none!important;width:auto;height:auto;text-align:left!important;text-indent:0!important;float:none!important;padding:0!important;margin:0!important;font:12px arial,helvetica,sans-serif!important;overflow:visible!important;color:#000!important;line-height:1.2!important;background:0 none!important;position:static!important;vertical-align:baseline!important;box-shadow:none!important;}#feedbackify table{border-collapse:collapse!important;border-spacing:0!important;max-width:inherit!important;width:auto!important;}#feedbackify td{word-break:normal!important;}#feedbackify {z-index:2147483646!important;position:static!important;top:0;left:0;}#feedbackify .fby-screen{z-index:2147483646!important;position:fixed!important;top:0;left:0;width:0;height:100%;_position:absolute!important;_top:expression(eval(document.body.scrollTop||document.documentElement.scrollTop))!important;_left:expression(eval(document.body.scrollLeft||document.documentElement.scrollLeft))!important;_width:0!important;_height:expression(document.documentElement.clientHeight||document.body.clientHeight+"px")!important;}#feedbackify .fby-mask{display:none!important;position:fixed!important;top:0;left:0;width:100%;height:100%;background-color:#000!important;opacity:0.2;filter:alpha(opacity=20);_position:absolute!important;_width:expression(document.documentElement.clientWidth||document.body.clientWidth+"px")!important;_height:expression(this.parentNode.style.height)!important;}#feedbackify .fby-show{display:block!important;visibility:visible!important;}#feedbackify .fby-hide{display:none!important;visibility:hidden!important;}</style><style type="text/css">#feedbackify .fby-tab{position:fixed!important;width:36px;height:100px;overflow:hidden!important;_position:absolute!important;}#feedbackify .fby-tab a{display:block!important;position:absolute!important;width:36px;height:100px;background-color:#000000!important;cursor:pointer!important;background:url(https://cdn.feedbackify.com/img/classic/tab.png)!important;_background:none!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/tab.png)!important;}#feedbackify .fby-tab-l{top:50%;left:0;margin-top:-50px!important;_top:expression((parseInt(this.parentNode.style.height)-this.clientHeight)/2+"px")!important;_margin-top:0!important;}#feedbackify .fby-tab-l a{margin-left:-5px!important;}#feedbackify .fby-tab-l a:hover{margin-left:-2px!important;}#feedbackify .fby-tab-r{top:50%;right:0px!important;margin-top:-50px!important;_top:expression((parseInt(this.parentNode.style.height)-this.clientHeight)/2+"px")!important;_left:expression((document.documentElement.clientWidth||document.body.clientWidth)-this.clientWidth+"px")!important;_margin-top:0!important;}#feedbackify .fby-tab-r a{margin-left:5px!important;}#feedbackify .fby-tab-r a:hover{margin-left:2px!important;}#feedbackify .fby-tab-t{top:0;margin-top:0px!important;}#feedbackify .fby-tab-b{top:auto;bottom:0!important;_top:expression(parseInt(this.parentNode.style.height)-this.clientHeight+"px")!important;}</style><style type="text/css">#feedbackify grammarly-ghost{display:none!important;}#feedbackify grammarly-btn{display:none!important;}#feedbackify #fby-form{z-index:2147483646!important;width:618px!important;position:absolute!important;}#feedbackify .fby-d-main{width:600px;height:50px;vertical-align:top!important;background-color:#FFFFFF!important;position:relative!important;}#feedbackify .fby-d{background:url(https://cdn.feedbackify.com/img/classic/dlg_shad_sprite.png)!important;_background:none!important;}#feedbackify .fby-d-h{height:9px;background:url(https://cdn.feedbackify.com/img/classic/dlg_shad_sprite_h.png)!important;_background:none!important;}#feedbackify .fby-d-h2{height:9px;background-color:#FFFFFF!important;}#feedbackify .fby-d-tl{background-position:-18px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_tl.png)!important;}#feedbackify .fby-d-t{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_t.png,sizingMethod=scale)!important;}#feedbackify .fby-d-tr{background-position:-36px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_tr.png)!important;}#feedbackify .fby-d-l{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_l.png,sizingMethod=scale)!important;}#feedbackify .fby-d-r{background-position:-9px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_r.png,sizingMethod=scale)!important;}#feedbackify .fby-d-bl{background-position:-54px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_bl.png)!important;}#feedbackify .fby-d-br{background-position:-72px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_br.png)!important;}#feedbackify .fby-d-b{background-position:0px -9px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_b.png,sizingMethod=scale)!important;}#feedbackify .fby-d-load{position:relative!important;}#feedbackify .fby-d-load img{position:absolute!important;left:8px;}#feedbackify .fby-d-load div{position:absolute!important;padding:4px 18px!important;font-size:16px!important;font-weight:bold!important;color:#333!important;}</style></head>
+  <body class="path-node page-node-type-support-doc has-glyphicons">
+    <a class="visually-hidden" focusable="" skip-link="" href="#main-content/index.html">
+      メインコンテンツへスキップ
+    </a>
+    
+      <div class="gt-block dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="" data-gt-block="">
+              <header class="navbar navbar-default container" id="navbar" role="banner">
+      <div class="gt-block navigation-secondary clearfix" data-gt-block="">
+          <div class="gt-block region region-navigation-secondary" data-gt-block="">
+    <section id="block-styles" class="block block-block-content block-block-contentfbb71e48-a6cd-4d2b-8239-43f18db69e60 clearfix">
+  
+    
+
+      
+            <div class="gt-block field field--name-field-body field--type-text-long field--label-hidden field--item" data-gt-block=""><link rel="stylesheet" media="all" href="https://learning-services-media.brightcove.com/doc-assets/css/drupal-fix.css"></div>
+      
+  </section>
+
+<nav role="navigation" aria-labelledby="block-secondarynavigation-menu" id="block-secondarynavigation">
+            
+  <h2 class="visually-hidden" id="block-secondarynavigation-menu" data-gt-block="">セカンダリナビゲーション</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/contact-support/index.html" title="サポートリクエストを作成する" data-drupal-link-system-path="node/18632">サポートリクエスト</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://status.brightcove.com/">システムステータス</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://university.brightcove.com/">Brightcove 大学</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<section id="block-gtranslate" class="block block-gtranslate block-gtranslate-block clearfix">
+  
+    
+
+      
+<div class="gt-block gtranslate" data-gt-block="">
+<script type="text/javascript">/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;var lang=lang_pair.split('|')[1];var plang=location.pathname.split('/')[1];if(plang.length !=2 && plang != 'zh-CN' && plang != 'zh-TW')plang='en';if(lang == 'en')location.pathname=location.pathname.replace('/'+plang+'/', '/');else location.pathname='/'+lang+location.pathname.replace('/'+plang+'/', '/');}
+/* ]]> */
+</script><select onchange="doGTranslate(this);"><option value="">言語の選択</option><option value="en|en" style="font-weight:bold;background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -0px;padding-left:18px;">英語</option><option value="en|fr" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -160px;padding-left:18px;">フランス語</option><option value="en|de" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -176px;padding-left:18px;">ドイツ語</option><option value="en|ja" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -240px;padding-left:18px;">日本語</option><option value="en|ko" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -256px;padding-left:18px;">韓国語</option><option value="en|es" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -352px;padding-left:18px;">スペイン語</option></select>
+</div>
+<div class="gtranslate__credits" data-gt-block="">
+  本ドキュメントはGoogle翻訳によって機械翻訳したものとなります
+</div>
+
+  </section>
+
+
+  </div>
+
+      </div>
+      <div class="gt-block navbar-header col-md-3" data-gt-block="">
+                  <a class="logo" navbar-btn="" pull-left="" href="../ja/index.html" title="ホーム" rel="home">
+            <img src="https://support.brightcove.com/themes/custom/bcdocs/images/brightcove.png" alt="ホーム">
+          </a>
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">トグルナビゲーション</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+                    <div class="gt-block navbar-collapse collapse" data-gt-block="">
+            <div class="gt-block region region-navigation-collapsible" data-gt-block="">
+    <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation">
+            <h2 class="sr-only" id="block-mainnavigation-menu" data-gt-block="">メインナビゲーション</h2>
+
+      
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-learning-home/index.html" title="ホームページ" data-drupal-link-system-path="node/18643">ホーム</a>
+                  </li>
+                                            <li class="expanded dropdown">
+        <a class="dropdown-toggle" href="" data-toggle="dropdown">
+          製品紹介
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/video-cloud/index.html" data-drupal-link-system-path="node/18332">Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://gallery.support.brightcove.com">ギャラリー</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-player/index.html" data-drupal-link-system-path="node/18283">Brightcove Player</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/live/index.html" data-drupal-link-system-path="node/18642">Live</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/social/index.html" data-drupal-link-system-path="node/18444">Social</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/audience/index.html" data-drupal-link-system-path="node/18445">Audience</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://zencoder.support.brightcove.com">Zencoder</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/ssai/index.html" data-drupal-link-system-path="node/18650">SSAI</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://support.ottflow.com">OTT Flow</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a class="dropdown-toggle" href="" data-toggle="dropdown">
+          Links
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/analytics-api/index.html" data-drupal-link-system-path="node/18370">Analytics API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/audience-api/index.html" data-drupal-link-system-path="node/18371">Audience API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/cms-api/index.html" data-drupal-link-system-path="node/18372">CMS API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/cms-connectors-video-cloud/index.html" data-drupal-link-system-path="node/18662">CMSコネクタ用 Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/data-collection-api/index.html" data-drupal-link-system-path="node/18876">Data Collection API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/delivery-system-api/index.html" data-drupal-link-system-path="node/18387">Delivery System API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/developer-tools-and-concepts/index.html" data-drupal-link-system-path="node/18430">開発者ツールと概念</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/native-player-sdks/index.html" data-drupal-link-system-path="node/18367">Device SDK</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/dynamic-ingest-api/index.html" data-drupal-link-system-path="node/18373">Dynamic Ingest API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/getting-started-brightcove-apis-0/index.html" data-drupal-link-system-path="node/18711">入門 - Brightcove API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/page-experience-api/index.html" data-drupal-link-system-path="node/18616">In-Page Experience APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/ingest-profiles-api/index.html" data-drupal-link-system-path="node/18374">Ingest Profiles API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/live/index.html" data-drupal-link-system-path="node/18642">Live API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/oauth-api/index.html" data-drupal-link-system-path="node/18376">OAuth API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/platform-api-code-samples/index.html" data-drupal-link-system-path="node/18675">プラットフォームAPIコードサンプル</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/playback-api/index.html" data-drupal-link-system-path="node/18380">Playback API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-player-code-samples/index.html" data-drupal-link-system-path="node/18630">プレーヤーコードサンプル</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-player-developer/index.html" data-drupal-link-system-path="node/18362">プレーヤー開発者</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/player-management-api/index.html" data-drupal-link-system-path="node/18378">Player Management API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/policy-api/index.html" data-drupal-link-system-path="node/18381">Policy API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/release-notes/index.html" data-drupal-link-system-path="node/18687">リリースに関して</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a class="dropdown-toggle" href="" data-toggle="dropdown">
+          トレーニング（講習会）
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a class="nturl" href="https://university.brightcove.com">オンラインコース</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/register-training/index.html" data-drupal-link-system-path="node/18270">コース登録</a>
+                  </li>
+        </ul>
+  
+            </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-support-documentation-announcements/index.html" title="の新機能を見る Brightcove オンラインマニュアル" data-drupal-link-system-path="node/18896">新着情報</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+        </div>
+          </header>
+  
+    <div class="gt-block full-width-headline" data-gt-block="">
+    <div class="gt-block container" data-gt-block="">
+      <div class="gt-block row" data-gt-block="">
+        <div class="gt-block col-sm-12" role="heading" data-gt-block="">
+            <div class="gt-block region region-header" data-gt-block="">
+          <section id="block-brightcoveheadlineblock" class="block block-bc-general block-bc-general-headline-block clearfix">
+  
+    
+
+      オンラインマニュアル
+  </section>
+
+
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      <div role="main" class="gt-block main-container container  js-quickedit-main-content" data-gt-block="">
+    <div class="gt-block row" data-gt-block="">
+
+                              <aside class="gt-block col-sm-3" role="complementary" data-gt-block="">
+              <div class="gt-block region region-sidebar-first" data-gt-block="">
+    <section class="bc-search-fixes-search-block-form block block-bc-search-fixes block-bc-search-fixes-search-block clearfix" data-drupal-selector="bc-search-fixes-search-block-form" id="block-brightcovesearchblock">
+  
+    
+
+      <form action="/ja/video-cloud-glossary" method="post" id="bc-search-fixes-search-block-form" accept-charset="UTF-8">
+  <div class="gt-block form-item js-form-item form-type-textfield js-form-type-textfield form-item-search js-form-item-search form-no-label form-group" data-gt-block="">
+      <label for="edit-search" class="control-label sr-only">サイト内検索</label>
+  
+  
+  <input data-drupal-selector="edit-search" class="form-text form-control" type="text" id="edit-search" name="search" value="" size="15" maxlength="128" placeholder="サイト内検索">
+
+  
+  
+  </div>
+<input autocomplete="off" data-drupal-selector="form-jhkzpzmuserdfff-vwewb2sdfnlbqd6joamhpywj0wc" type="hidden" name="form_build_id" value="form-jHkZpZmUSERDFFf_vWewb2SdFnlBqd6joAMhPyWJ0Wc"><input data-drupal-selector="edit-bc-search-fixes-search-block-form" type="hidden" name="form_id" value="bc_search_fixes_search_block_form"><div data-drupal-selector="edit-actions" class="gt-block form-actions form-group js-form-wrapper form-wrapper" id="edit-actions" data-gt-block=""><button data-drupal-selector="edit-submit" class="button js-form-submit form-submit btn-primary btn icon-only" type="submit" id="edit-submit" name="op" value="Search"><span class="sr-only">サイト内検索</span><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button></div>
+
+</form>
+
+  </section>
+
+<section id="block-inpagenavigationblock" class="hidden-xs block block-bc-ipnav block-bc-ipnav-block clearfix" style="width: 476px;">
+  
+      <h2 class="block-title" data-gt-block="">このページ</h2>
+    
+
+      <div class="bc-ipnav-block" data-gt-block=""><ul><li><a href="#bc-ipnav-0/index.html">関連コンテンツ</a></li></ul></div>
+  </section>
+
+
+  </div>
+
+          </aside>
+              
+                  <section class="col-sm-9">
+
+                                      <div class="gt-block highlighted" data-gt-block="">  <div class="gt-block region region-highlighted" data-gt-block="">
+    <div data-drupal-messages-fallback="" class="hidden" data-gt-block=""></div>
+
+  </div>
+</div>
+                  
+                
+                
+                
+                          <a class="nturl" id="main-content"></a>
+            <div class="gt-block region region-content" data-gt-block="">
+        <h1 class="page-header"><span>Video Cloud 用語解説</span>
+</h1>
+
+  
+<div class="gt-block node node--type-support-doc node--view-mode-full bcdocs-four-rows clearfix" data-gt-block="">
+
+  
+
+  <div class="group-first-row" data-gt-block="">
+      </div>
+
+  <div class="gt-block group-second-row" data-gt-block="">
+  
+  <div class="gt-block field field--name-field-products field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">製品（複数可）</div>
+          <div class="gt-block field__items taxonomy__tags" data-gt-block="">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item" data-gt-block="">Video Cloud</div>
+              </div>
+      </div>
+
+  <div class="gt-block field field--name-field-roles field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">役割</div>
+          <div class="gt-block field__items taxonomy__tags" data-gt-block="">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item" data-gt-block="">Studioユーザー</div>
+          <div class="field--item" data-gt-block="">プレーヤー開発者</div>
+          <div class="field--item" data-gt-block="">API開発者</div>
+          <div class="field--item" data-gt-block="">デバイスSDK開発者</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="gt-block group-third-row taxonomy__tags" data-gt-block="">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="gt-block field field--name-field-topics field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">トピック）</div>
+          <div class="gt-block field--items" data-gt-block="">
+              <div class="field--item" data-gt-block="">一般的な情報</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="gt-block group-fourth-row" data-gt-block="">
+  
+            <div class="gt-block field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item" data-gt-block=""><p data-gt-block="" class="gt-block gt-block"><a class="nturl" name="Top" href=""></a>重要な用語のガイド Video Cloud インターネットビデオ。</p><p data-gt-block="" class="gt-block"><a class="nturl" href="#A/index.html"><strong>A</strong></a>  |  <a class="nturl" href="#B/index.html"><strong>B</strong></a>  |  <a class="nturl" href="#C/index.html"><strong>C</strong></a>  |  <a class="nturl" href="#D/index.html"><strong>D</strong></a>  |  <a class="nturl" href="#E/index.html"><strong>E</strong></a>  |  <a class="nturl" href="#F/index.html"><strong>F</strong></a>  |  <a class="nturl" href="#G/index.html"><strong>G</strong></a>  |  <a class="nturl" href="#H/index.html"><strong>H</strong></a>  |  <a class="nturl" href="#I/index.html"><strong>I</strong></a>  |  <a class="nturl" href="#J/index.html"><strong>J</strong></a>  |  <a class="nturl" href="#K/index.html"><strong>K</strong></a>  |  <a class="nturl" href="#L/index.html"><strong>L</strong></a>  |  <a class="nturl" href="#M/index.html"><strong>M</strong></a>  |  <a class="nturl" href="#N/index.html"><strong>N</strong></a>  |  <a class="nturl" href="#O/index.html"><strong>O</strong></a>  |  <a class="nturl" href="#P/index.html"><strong>P</strong></a>  |  <a class="nturl" href="#Q/index.html"><strong>Q</strong></a>  |  <a class="nturl" href="#R/index.html"><strong>R</strong></a>  |  <a class="nturl" href="#S/index.html"><strong>S</strong></a>  |  <a class="nturl" href="#T/index.html"><strong>T</strong></a>  |  <a class="nturl" href="#U/index.html"><strong>U</strong></a>  |  <a class="nturl" href="#V/index.html"><strong>V</strong></a>  |  <a class="nturl" href="#W/index.html"><strong>W</strong></a>  |  <a class="nturl" href="#X/index.html"><strong>X</strong></a>  |  <a class="nturl" href="#Y/index.html"><strong>Y</strong></a>  |  <a class="nturl" href="#Z/index.html"><strong>Z</strong></a></p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="A" name="A" href=""></a> <a class="nturl" id="AccessToken" name="AccessToken" href=""></a>アクセストークン</h4>
+
+<p data-gt-block="">REST APIへのアクセスを許可する一時的なOAuth2トークン CMS API,  Analytics APIおよび Dynamic Ingest API.</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="Affiliate" name="Affiliate" href=""></a>アフィリエイト</h4>
+
+<p data-gt-block="">シンジケートするWebパブリッシャー Video Cloud プレーヤー。</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="Ad%20Request" name="Ad%20Request" href=""></a>広告リクエスト</h4>
+
+<p data-gt-block="">aからの要求（呼び出し） Video Cloud プレーヤーを広告サーバーに追加します 広告リクエストはHTTP呼び出しであり、広告サーバーがコンテキストの適切な広告をターゲットにするのに役立つ情報を渡すキーと値のペアが含まれています。 すべての広告リクエストで広告が返されるわけではありません。</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="aapi" name="aapi" href=""></a>Analytics API</h4>
+
+<p data-gt-block="">挽き目 Analytics API 次の情報をプログラムで取得できます。 Video Cloud アカウントと動画。</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="AppleHLS" name="AppleHLS" href=""></a>Apple HLS</h4>
+
+<p data-gt-block="" class="gt-block gt-block">Apple HTTP Live ストリーミング、オンデマンドでビデオを配信するためにAppleによって実装されたプロトコル。 Apple HLSは、ビデオを一連の小さなファイルのダウンロードに分割し、各ダウンロードはHTTPを使用してビデオの1つの短いチャンクをロードします。 Apple HTTP Live ストリーミングは関係ありません <a class="nturl" href="#livevideo/index.html">ライブストリーミングビデオ</a>.</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="aspect" name="aspect" href=""></a>アスペクト比</h4>
+
+<p data-gt-block="">ビデオのフレームの幅と高さの比。 4：標準システムの場合は3、HDTVの場合は16：9</p>
+
+<p data-gt-block="" class="gt-block gt-block"><a class="nturl" href="#Top/index.html">[上]</a></p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="B" name="B" href=""></a><a class="nturl" id="bandwidth" name="bandwidth" href=""></a>帯域幅</h4>
+
+<p data-gt-block="">オーディオまたはビデオ機器の一部がエンコードまたはデコードできる信号周波数の範囲。 ビデオはオーディオよりも高い周波数を使用するため、より広い帯域幅が必要です。</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="Blog" name="Blog" href=""></a>ブログ</h4>
+
+<p data-gt-block="">定期的な寄稿からなるWebベースの出版物。多くの場合は年代順に逆順になっています。</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="bcplayer" name="bcplayer" href=""></a>Brightcove Player</h4>
+
+<p data-gt-block="">挽き目 Brightcove Player 迅速な読み込み、高品質の適応型ビットレートHLSビデオをデスクトップおよびモバイルプラットフォームで提供し、お気に入りの広告および分析システムと統合する高性能なクロスプラットフォームのHTML5ファーストビデオプレーヤーです。</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="bcplayerapi" name="bcplayerapi" href=""></a>Brightcove Player API</h4>
+
+<p data-gt-block="">挽き目 Brightcove Player APIは、プログラムの外観と動作をプログラム的に制御するために使用できます。 Brightcove Player.</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="Broadband%20video%20channel" name="Broadband%20video%20channel" href=""></a>ブロードバンドビデオチャンネル</h4>
+
+<p data-gt-block="">インターネットを通じて配信される関連ビデオの集まり。</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="Bumper" name="Bumper" href=""></a>バンパー</h4>
+
+<p data-gt-block="">フルビデオのビデオの前またはプレーヤーが読み込まれる前に表示される短いビデオクリップ。</p>
+
+<p data-gt-block="" class="gt-block gt-block"><a class="nturl" href="#Top/index.html">[上]</a></p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="C" name="C" href=""></a><a class="nturl" id="cmsapi" name="cmsapi" href=""></a>CMS API</h4>
+
+<p data-gt-block="">挽き目 CMS API ビデオメタデータへのキャッシュされていない読み取りおよび書き込みアクセスを提供します。</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="Codec" name="Codec" href=""></a>コー​​デック</h4>
+
+<p data-gt-block="" class="gt-block gt-block">アナログビデオまたはオーディオをデジタル形式でキャプチャするために使用されるアルゴリズム。 と比べて <a class="nturl" href="#container/index.html"><em>コンテナ</em></a>.</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="container" name="container" href=""></a><a class="nturl" id="Container" name="Container" href=""></a>コンテナ</h4>
+
+<p data-gt-block="">ビデオコンテナは、ビデオのメタデータがビデオおよびオーディオデータとともにどのように格納されるかを定義するフォーマットです。 データのコーディングまたは圧縮を定義するものではありません。 たとえば、MP4はH.264ファイルのコンテナです。</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="CDN" name="CDN" href=""></a>コンテンツ配信ネットワーク（CDN）</h4>
+
+<p data-gt-block="">エンドユーザーにコンテンツ（特に大きなメディアコンテンツ）を透過的に配信するネットワークサーバーを提供するサービス。 2つの有名なCDNはAkamaiとLimelightです。</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="contenttargeting" name="contenttargeting" href=""></a>コンテンツターゲティング</h4>
+
+<p data-gt-block="">コンテンツターゲットは、その訪問者について知られている情報に基づいて異なるコンテンツを異なる訪問者に表示するために使用されるプロセスです。</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="CSS" name="CSS" href=""></a>CSS</h4>
+
+<p data-gt-block="">Cascading Style Sheetsは、HTMLページのデザインを制御するための標準的なメカニズムです。 CSSはスタイルに使用されます Brightcove Players.</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="Cue%20points" name="Cue%20points" href=""></a>キューポイント</h4>
+
+<p data-gt-block="">ミッドロール広告リクエストやクローズドキャプションなど、外部イベントをトリガーするために使用できるビデオ内の特定のポイントに挿入された目に見えないマーカー。 メディアモジュールを使用してキューポイントを設定できます。</p>
+
+<p data-gt-block="" class="gt-block gt-block"><a class="nturl" href="#Top/index.html">[上]</a></p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="D" name="D" href=""></a><a class="nturl" id="dash" name="dash" href=""></a>DASH（MPEG-DASH）</h4>
+
+<p data-gt-block="" class="gt-block gt-block">HTTP（MPEG-DASHとも呼ばれる）を介した動的適応型ストリーミングは、従来のHTTP Webサーバーから配信されるインターネット上のメディアコンテンツの高品質なストリーミングを可能にする適応型ビットレートストリーミング技術です。 に似ている <a class="nturl" href="#AppleHLS/index.html">AppleのHTTP Live ストリーミング（HLS）</a> MPEG-DASHは、コンテンツを一連の小さなHTTPベースのファイルセグメントに分割することによって機能します。</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="domainRestriction" name="domainRestriction" href=""></a>ドメイン制限</h4>
+
+<p data-gt-block="">指定されたドメイン以外のプレーヤーが機能しなくなるコンテンツセキュリティの基本的な形式。</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="DRM%20encoded" name="DRM%20encoded" href=""></a>DRM</h4>
+
+<p data-gt-block="">デジタル著作権管理は、メディアファイルを暗号化してパッケージ化し、ポリシーキーに基づいてのみ解読できるようにする方法です。</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="Dynamic%20delivery" name="Dynamic%20delivery" href=""></a>動的配送</h4>
+
+<p data-gt-block="" class="gt-block gt-block">見る <a class="nturl" href="#mbr/index.html">マルチビットレートストリーミング</a>.</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="diapi" name="diapi" href=""></a>Dynamic Ingest API</h4>
+
+<p data-gt-block="">ダイナミックインジェスト（DI）APIを使用して、 Video Cloud ビデオアセットを取得してレンダリングを作成します。 ザ Dynamic Ingest API キャプション、チャプター、またはサブタイトル用のサムネイルとポスター画像またはWebVTTファイルを取り込むためにも使用できます。</p>
+
+<p data-gt-block="" class="gt-block gt-block"><a class="nturl" href="#Top/index.html">[上]</a></p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="E" name="E" href=""></a><a class="nturl" id="Encoding" name="Encoding" href=""></a>エンコーディング</h4>
+
+<p data-gt-block="">ビデオとオーディオのデータをプレーヤーで再生できるストリームに変換する。</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="encryption" name="encryption" href=""></a>暗号化</h4>
+
+<p data-gt-block="">許可された関係者だけがビデオを見ることができるようにビデオをエンコードするプロセス。</p>
+
+<p data-gt-block="" class="gt-block gt-block"><a class="nturl" href="#Top/index.html">[上]</a></p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="F" name="F" href=""></a><a class="nturl" id="framerate" name="framerate" href=""></a>フレームレート</h4>
+
+<p data-gt-block="">ビデオクリップが表示される1秒あたりのフレーム数。</p>
+
+<p data-gt-block="" class="gt-block gt-block"><a class="nturl" href="#Top/index.html">[上]</a></p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="G" name="G" href=""></a><a class="nturl" id="Geo-filtering" name="Geo-filtering" href=""></a>ジオフィルタリング</h4>
+
+<p data-gt-block="">権利所有の理由から、ビデオの地理的制限を課す。</p>
+
+<p data-gt-block="" class="gt-block gt-block"><a class="nturl" href="#Top/index.html">[上]</a></p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="H" name="H" href=""></a><a class="nturl" id="H.264" name="H.264" href=""></a>H.264形式</h4>
+
+<p data-gt-block="">MPEG-4 AVC（Advanced Video Coding）とも呼ばれます。 インターネットを介してビデオを配信するために使用されるファイル形式。 オンラインビデオ配信には、H.264形式が推奨されます。 H.264ファイルは通常、MP4コンテナを使用し、.mp4ファイル拡張子を持ちます。 従来のフォーマットよりも大幅に圧縮率が向上します。</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="hls" name="hls" href=""></a>HLS</h4>
+
+<p data-gt-block="">HTTP Live ストリーミング -  Appleが作成したビデオフォーマットで、ビデオをクライアント側のストリームである短いセグメントで利用できるようにします。</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="HTML" name="HTML" href=""></a>HTML</h4>
+
+<p data-gt-block="">（ハイパーテキストマークアップ言語）ウェブブラウザに表示されるハイパーテキストやその他の情報を含むウェブページの作成用に設計されたマークアップ言語。</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="HTML5" name="HTML5" href=""></a><a class="nturl" id="html5" name="html5" href=""></a>HTML5</h4>
+
+<p data-gt-block="">HTML5は、ワールドワイドウェブのコンテンツを構造化しプレゼンテーションするために使用されるインターネットのコア技術マークアップ言語です。 HTML5はWorld Wide Web Consortium（W3C）のHTML標準の5番目の改訂版です。</p>
+
+<p data-gt-block="" class="gt-block gt-block"><a class="nturl" href="#Top/index.html">[上]</a></p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="I" name="I" href=""></a><a class="nturl" id="ingest" name="ingest" href=""></a>インジェストプロファイル</h4>
+
+<p data-gt-block="">インジェストプロファイルには、アップロードモジュールを使用して動画をアップロードするときに使用されるトランスコード設定や、 Dynamic Ingest API.</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="ingestapi" name="ingestapi" href=""></a>Ingest Profiles API</h4>
+
+<p data-gt-block="">挽き目 Ingest Profiles API 自分用の取り込みプロファイルを作成、取得、更新、削除できます。 Video Cloud アカウント。 インジェストプロファイルは、ビデオを追加するときに作成されるレンディションを定義します。 Video Cloud.</p>
+
+<p data-gt-block="" class="gt-block gt-block"><a class="nturl" href="#Top/index.html">[上]</a></p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="J" name="J" href=""></a><a class="nturl" id="JavaScript" name="JavaScript" href=""></a>JavaScriptを</h4>
+
+<p data-gt-block="">Webサイトでの使用が最もよく知られているスクリプト言語ですが、他のアプリケーションに埋め込まれたオブジェクトへのスクリプティングアクセスを可能にするためにも使用されます。</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="JPEG" name="JPEG" href=""></a>JPEG（Joint Photographic Experts Group）</h4>
+
+<p data-gt-block="">デジタル画像に使用される一般的に使用される非可逆圧縮の標準的な方法。 JPEGは、 Brightcove サムネイル、ビデオ静止画、および背景画像用のサービスです。</p>
+
+<p data-gt-block="" class="gt-block gt-block"><a class="nturl" href="#Top/index.html">[上]</a></p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="K" name="K" href=""></a><a class="nturl" id="Key/Value%20pairs" name="Key/Value%20pairs" href=""></a>キーと値のペア</h4>
+
+<p data-gt-block="">プレーヤーが広告リクエストを送信すると、広告のコンテキストに関する広告サーバーの情報を提供し、広告のターゲット設定を改善する1つ以上のキーと値のペア（category = sportsなど）が含まれます。</p>
+
+<p data-gt-block="" class="gt-block gt-block"><a class="nturl" href="#Top/index.html">[上]</a></p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="L" name="L" href=""></a><a class="nturl" id="letterbox" name="letterbox" href=""></a>レターボックス</h4>
+
+<p data-gt-block="">画像の上下にスペース（通常は黒いバー）を残して、異なるアスペクト比の画面にワイドスクリーンビデオを表示する方法。</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="Logo" name="Logo" href=""></a>ロゴ</h4>
+
+<p data-gt-block="">会社のブランドを象徴的に表す独自のグラフィック。</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="Logo%20overlay" name="Logo%20overlay" href=""></a>ロゴオーバーレイ</h4>
+
+<p data-gt-block="">ビデオ再生ウィンドウに表示される小さな透明な画像。 また、デジタルオンスクリーングラフィック（DOG）、バグ、またはウォーターマークと呼ばれることもあります。</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="Loop" name="Loop" href=""></a>ループ/ループ</h4>
+
+<p data-gt-block="">プレイリスト内のビデオが完成し、プレイリストが最初に再生を開始すると、</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="livevideo" name="livevideo" href=""></a><a class="nturl" id="Live%20streaming" name="Live%20streaming" href=""></a><a class="nturl" id="live%20streaming" name="live%20streaming" href=""></a>Live ストリーミングビデオ</h4>
+
+<p data-gt-block="" class="gt-block gt-block">ストリーミングのためにエンコードされたファイルを配信するのではなく、キャプチャされエンコードされたストリームを直接プッシュすることによって、イベントのビデオをストリーミングするためのプロトコル。 <a class="nturl" href="#VOD/index.html">VOD</a>.</p>
+
+<p data-gt-block="" class="gt-block gt-block"><a class="nturl" href="#Top/index.html">[上]</a></p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="M" name="M" href=""></a><a class="nturl" id="Media%20Library" name="Media%20Library" href=""></a>メディアライブラリー</h4>
+
+<p data-gt-block="">あなたのビデオ、プレイリスト、その他の資産のコレクション Video Cloud アカウント。</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="Metadata" name="Metadata" href=""></a>メタデータ</h4>
+
+<p data-gt-block="">メタデータとは、動画の定義で提供する説明、タグ、ジャンル、その他の関連情報のことです。</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="MPAA%20film%20rating%20system" name="MPAA%20film%20rating%20system" href=""></a>MPAAフィルム評価システム</h4>
+
+<p data-gt-block="">アメリカ映画協会によって制定されたシステムで、コンテンツに基づいて映画を評価します。 MPAA格付けシステム（G、PG、Rなど）は、攻撃的なコンテンツを分類するための最も認知されたシステムですが、MPAAには個々の格付けごとに商標があるため、通常映画業界での使用に限定されています。</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="mbr" name="mbr" href=""></a><a class="nturl" id="Multi-bitrate%20streaming" name="Multi-bitrate%20streaming" href=""></a>マルチビットレートストリーミング</h4>
+
+<p data-gt-block="" class="gt-block gt-block">複数のバージョンをサポートする機能、または <a class="nturl" href="#rendition/index.html"><em>レンディション</em></a>1つのビデオに対応し、視聴者のブラウザのサイズと帯域幅に最も適したレンディションを配信することができます。 以前はこれを「動的配信」と呼んでいました。</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="Muxing%20and%20demuxing" name="Muxing%20and%20demuxing" href=""></a>多重化と逆多重化</h4>
+
+<p data-gt-block="" class="gt-block gt-block">さまざまなストリームへのオーディオストリームとビデオストリームの書き込みと読み出し <a class="nturl" href="#container/index.html"><em> コンテナ</em></a> フォーマット。</p>
+
+<p data-gt-block="" class="gt-block gt-block"><a class="nturl" href="#Top/index.html">[上]</a></p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="N" name="N" href=""></a><a class="nturl" id="playersdk" name="playersdk" href=""></a>ネイティブプレーヤーSDK</h4>
+
+<p data-gt-block="">挽き目 Brightcove ネイティブプレーヤーSDKは、iOSとAndroid用のビデオ対応アプリを構築するために必要なツールを提供します。</p>
+
+<p data-gt-block="" class="gt-block gt-block"><a class="nturl" href="#Top/index.html">[上]</a></p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="O" name="O" href=""></a><a class="nturl" id="oauth" name="oauth" href=""></a>OAuth</h4>
+
+<p data-gt-block="">OAuthは認可のためのオープンスタンダードです。 OAuthは、クライアントアプリケーションに、リソース所有者に代わってサーバーリソースに「安全な委任アクセス」を提供します。</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="oauthapi" name="oauthapi" href=""></a>OAuth API</h4>
+
+<p data-gt-block="">挽き目 OAuth API 認可トークンを取得してアクセスできるRESTful APIです Brightcove他のREST API</p>
+
+<p data-gt-block="" class="gt-block gt-block"><a class="nturl" href="#Top/index.html">[上]</a></p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="P" name="P" href=""></a><a class="nturl" id="Playback" name="Playback" href=""></a>Playback</h4>
+
+<p data-gt-block="">のビデオメディアの再生 Video Cloud プレイヤー。</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="playbackapi" name="playbackapi" href=""></a>Playback API</h4>
+
+<p data-gt-block="">挽き目 Playback API 実行時にモバイルアプリまたはビデオポータルのビデオおよびプレイリストデータにアクセスするために使用できます。</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="playermgmtapi" name="playermgmtapi" href=""></a>Player Management API</h4>
+
+<p data-gt-block="">挽き目 Player Management API 次の目的に使用できます。</p>
+
+<ul>
+	<li>プレーヤーを作成する</li>
+	<li>プレーヤーの設定を表示する</li>
+	<li>プレーヤーの設定を変更する</li>
+	<li>パブリッシャーに関連付けられたすべてのプレイヤーを一覧表示する</li>
+	<li>プレイヤーを公開して消費者が利用できるようにする</li>
+</ul>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="Player%20publishing%20code" name="Player%20publishing%20code" href=""></a>プレーヤー公開コード</h4>
+
+<p data-gt-block="">埋め込みに使用されたコード "スニペット" Brightcove Player ウェブページで</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="playlist" name="playlist" href=""></a>プレイリスト</h4>
+
+<p data-gt-block="">特定の順序で一緒にグループ化され、 Video Cloud プレイヤー。</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="playlistapi" name="playlistapi" href=""></a>プレイリストAPI</h4>
+
+<p data-gt-block="">Playlist APIは、JavaScriptを使用してプレイリストをプログラムで制御するために使用されます。</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="policyapi" name="policyapi" href=""></a>Policy API</h4>
+
+<p data-gt-block="" class="gt-block gt-block">挽き目 Policy API ポリシーキーにアクセスするために使用できるポリシーキーを作成または取得するために使用されます。 <a class="nturl" href="#playbackapi/index.html">Playback API</a>。 ポリシーキーは、 Brightcove プレーヤー。</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="posterimage" name="posterimage" href=""></a>ポスターイメージ</h4>
+
+<p data-gt-block="">ビデオ再生の前または後にビデオプレーヤーの再生領域に表示される静止画像。</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="px" name="px" href=""></a>px</h4>
+
+<p data-gt-block="" class="gt-block gt-block">使用されるピクセルの略語 <a class="nturl" href="#CSS/index.html">CSSの。</a></p>
+
+<p data-gt-block="" class="gt-block gt-block"><a class="nturl" href="#Top/index.html">[上]</a></p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="Q" name="Q" href=""></a><a class="nturl" id="rendition" name="rendition" href=""></a><a class="nturl" id="R" name="R" href=""></a><a class="nturl" id="Rendition" name="Rendition" href=""></a>演出</h4>
+
+<p data-gt-block="">マルチビットレートストリーミングを使用する場合は、ビットレートとサイズがそれぞれ異なる複数のバージョンの同じビデオを作成できます。 これらのバージョンはそれぞれ、レンディションと呼ばれます。 Video Cloud マルチビットレートストリーミングは、プレイヤーの寸法と視聴者の接続速度に基づいて最適なレンディションを選択します。</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="Reference%20ID" name="Reference%20ID" href=""></a>参照ID</h4>
+
+<p data-gt-block="">サイト運営者によって動画または再生リストに割り当てられた一意のID。 参照ID（ref id）は、動画IDまたは再生リストIDとは異なります。これらのIDは、 Video Cloud。 参照IDは、 Video Cloud パブリッシャのコンテンツ管理システムなどの他のサービスを提供します。</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="RSS%20feed" name="RSS%20feed" href=""></a>RSSフィード</h4>
+
+<p data-gt-block="">Really Simple Syndicationは、Webサイト、ブログ、またはインターネットTVチャンネルのコンテンツの更新をユーザーに通知する一般的な技術です。</p>
+
+<p data-gt-block="" class="gt-block gt-block"><a class="nturl" href="#Top/index.html">[上]</a></p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="S" name="S" href=""></a><a class="nturl" id="Search%20engine" name="Search%20engine" href=""></a>検索エンジン</h4>
+
+<p data-gt-block="">Googleなどのプログラムで、ウェブ上の情報を見つけるのに役立ちます。</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="Social%20network%20website" name="Social%20network%20website" href=""></a>Social ネットワークウェブサイト</h4>
+
+<p data-gt-block="">FacebookやTwitterなどのWebサイト。視聴者のメンバーにメッセージ、メディア、その他の情報を互いに共有する機能を提供します。</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="streaming" name="streaming" href=""></a>ストリーミング</h4>
+
+<p data-gt-block="">ネットワークおよびインターネット上での使用を目的とした低ビットレートのエンコード形式。 ストリーミングは、ユーザーの接続速度に合わせて、エンコードされたビットレートの小さなセグメントでビデオを配信するので、リモートビューアは、ビデオファイル全体を最初にダウンロードすることなく、最小限の停止でオーディオまたはビデオを再生できます。</p>
+
+<p data-gt-block="" class="gt-block gt-block"><a class="nturl" href="#Top/index.html">[上]</a></p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="T" name="T" href=""></a><a class="nturl" id="Tags" name="Tags" href=""></a>タグ</h4>
+
+<p data-gt-block="">コンテンツを整理するための個々のキーワードまたはフレーズ。 Brightcove サイト運営者が動画を整理したり分類したり、プレイリストを作成するためのタグとしての使用をサポートしています。</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="Thumbnail" name="Thumbnail" href=""></a>サムネイル</h4>
+
+<p data-gt-block="">プレーヤー、Webサイト、ビデオ検索エンジンの動画のリスティングに使用されている動画に関連付けられた小さな画像。</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="token" name="token" href=""></a>トークンベースの認証</h4>
+
+<p data-gt-block="">トークンベースの認証システムでは、ユーザー名とパスワードを入力せずに、ユーザー名とパスワードを必要とせずに特定のリソースをフェッチできるトークンを取得できます。 Once それらのトークンが取得された場合、ユーザは、所定の期間、特定のリソースへのアクセスを提供するトークンをリソースに提供することができる。</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="TV%20Parental%20Guidelines" name="TV%20Parental%20Guidelines" href=""></a>テレビの保護者のガイドライン</h4>
+
+<p data-gt-block="">米国連邦通信委員会（FCC）によって制定されたコンテンツレーティングシステムは、コンテンツの年齢の妥当性に基づいてテレビ番組を分類する。</p>
+
+<p data-gt-block="" class="gt-block gt-block"><a class="nturl" href="#Top/index.html">[上]</a></p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="U" name="U" href=""></a><a class="nturl" id="URL" name="URL" href=""></a>URL</h4>
+
+<p data-gt-block="">URL（Uniform Resource Locator）は、インターネット上のリソースとその場所（たとえば、http：//www.brightcove.com）を識別する方法です。</p>
+
+<p data-gt-block="" class="gt-block gt-block"><a class="nturl" href="#Top/index.html">[上]</a></p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="V" name="V" href=""></a><a class="nturl" id="vbr" name="vbr" href=""></a>可変ビットレート</h4>
+
+<p data-gt-block="">入力データの各単位を異なるサイズに圧縮する圧縮方式。 例えば、MPEG-2ビデオの場合、「より簡単な」シーケンス（動きのないシーケンス）は非常に小さいサイズに圧縮できますが、「ハード」シーケンス（動きの多いシーケンスやシーンのカット）は、サイズ。</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="Video" name="Video" href=""></a>動画</h4>
+
+<p data-gt-block="">再生する単一のビデオタイトル Video Cloud プレーヤー。 ビデオはビデオファイルに基づいています。これは、多くのサポートされているビデオファイル形式の1つとして開始できますが、H.264ファイルまたはFLVファイルにトランスコードされています（まだそれらの形式のいずれかになっていない場合）。 さらに、ビデオには以下のようなメタデータを含めることができます。</p>
+
+<ul>
+	<li>名</li>
+	<li>簡単な説明</li>
+	<li>長い説明</li>
+	<li>タグ</li>
+	<li>ビデオ静止画像</li>
+	<li>ポスター画像</li>
+	<li>バンパー</li>
+	<li>ロゴオーバーレイ</li>
+</ul>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="Video%20Cloud%20Studio" name="Video%20Cloud%20Studio" href=""></a>Video Cloud Studio</h4>
+
+<p data-gt-block="">インターネットアプリケーションにアクセスして制御する Video Cloud サービス。 Studioには、さまざまなタスクを完了するための一連のモジュールが含まれています。</p>
+
+<ul>
+	<li><strong>アップロード</strong> - あなたにビデオをアップロードする Video Cloud アカウント</li>
+	<li><strong>언론방송</strong> - ビデオのプロパティを設定し、フォルダを使用してビデオを整理し、ビデオを公開する</li>
+	<li><strong>Players の作成と管理</strong> - プレーヤーを作成してスタイルを設定し、プレーヤーのための公開コードを生成する</li>
+	<li><strong>アナリティクス</strong> - ビデオとプレーヤーのパフォーマンスに関する分析を表示する</li>
+	<li><strong>Live</strong> - ライブイベントの作成とストリーミング</li>
+	<li><strong>ギャラリー</strong> - ビデオコンテンツ用のビデオポータルを作成する</li>
+	<li><strong>Audience</strong> - ビデオ分析を Video Cloud マーケティングオートメーションプラットフォーム</li>
+	<li><strong>Social</strong> -  YouTube、Facebook、Twitterに動画を配信する</li>
+</ul>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="Videoeditingtools" name="Videoeditingtools" href=""></a>ビデオ編集ツール</h4>
+
+<p data-gt-block="">パーソナルコンピュータでビデオファイルを編集するためのソフトウェアアプリケーション。</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="Videoposter" name="Videoposter" href=""></a>ビデオポスター画像</h4>
+
+<p data-gt-block="">ビデオ再生の前または後にビデオプレーヤーの再生領域に表示される静止画像。</p>
+
+<h4 id="VOD" data-gt-block="" class="gt-block"><a class="nturl" id="VOD" name="VOD" href=""></a>VOD </h4>
+
+<p data-gt-block="" class="gt-block gt-block">ビデオオンデマンド。 ストリーミングまたはプログレッシブダウンロードを介して、必要に応じて、配信されたビデオファイルの再生を可能にするプロトコル。 とは対照的に <a class="nturl" href="#livevideo/index.html"><em>ライブストリーミングビデオ</em></a>.</p>
+
+<h4 data-gt-block="" class="gt-block"><a class="nturl" id="W" name="W" href=""></a><a class="nturl" id="webvtt" name="webvtt" href=""></a>WebVTT</h4>
+
+<p data-gt-block="">Webビデオテキストトラックフォーマット。 WebVTTファイルは、ビデオコンテンツのキャプションまたはサブタイトル、およびテキストビデオ記述、コンテンツナビゲーションの章、さらに一般的にオーディオまたはビデオコンテンツと時間的に整合した任意の形式のメタデータを提供します。 Brightcove PlayerWebVTT形式のキャプションを使用します。</p>
+
+<p data-gt-block="" class="gt-block gt-block"><a class="nturl" id="X" name="X" href=""></a><a class="nturl" id="Y" name="Y" href=""></a><a class="nturl" id="Z" name="Z" href=""></a><a class="nturl" href="#Top/index.html">[上]</a></p>
+</div>
+      
+</div>
+
+</div>
+
+
+<section class="views-element-container block block-views block-views-blockrelated-content-by-field-block-1 clearfix" id="block-views-block-related-content-by-field-block-1">
+  
+    
+
+      <div class="gt-block form-group" data-gt-block=""><div class="gt-block view view-related-content-by-field view-id-related_content_by_field view-display-id-block_1 js-view-dom-id-6591c5bc333cc5b880b26cd7eb9bfba7e8dadbdaeffabd63f0b427523a519c54" data-gt-block="">
+  
+    
+      <div class="gt-block view-header" data-gt-block="">
+      <h2 data-gt-block="" id="bc-ipnav-0">関連コンテンツ</h2>
+    </div>
+      
+      <div class="gt-block view-content" data-gt-block="">
+      <div class="gt-block item-list" data-gt-block="">
+  
+  <ul>
+
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/analytics-module-ui-glossary/index.html" hreflang="en">AnalyticsモジュールのUI用語集</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/analytics-api-glossary/index.html" hreflang="en">Analytics API 用語解説</a></span></span></div></li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </section>
+
+
+  </div>
+
+              </section>
+
+                </div>
+  </div>
+
+      <footer class="footer container" role="contentinfo">
+              <div class="gt-block row" data-gt-block="">
+            <div class="gt-block region region-footer-top-left col-md-9" style="margin-bottom: 1em;" data-gt-block="">
+    <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">Brightcove サポート</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="https://status.brightcove.com">システムステータス</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/contact-support/index.html" data-drupal-link-system-path="node/18632">サポート - Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="../ja/en/contact/create/index.html">サポート - Zencoder</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-documentation-menu" id="block-documentation" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">オンラインマニュアル</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/index.html" data-drupal-link-system-path="<front>">ホーム</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">トレーニング（講習会）</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/online-training-courses/index.html" data-drupal-link-system-path="node/18286">オンラインコース</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/register-training/index.html" data-drupal-link-system-path="node/18270">コー​​スに登録</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-brightcove-menu" id="block-brightcove" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">Brightcove</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="https://www.brightcove.com">Brightcove.COM</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+            <div class="gt-block region region-footer-top-right col-md-3" data-gt-block="">
+    <section id="block-footerlegaltext" class="block block-block-content block-block-content4507d09c-a528-4947-b91d-36ec6671822b clearfix">
+  
+    
+
+      
+            <div class="gt-block field field--name-field-body field--type-text-long field--label-hidden field--item" data-gt-block=""><p data-gt-block="">Brightcove Inc.（ナスダック：BCOV）は、接続されたデバイス間でビデオを配信および収益化するための強力なクラウドソリューションを提供する世界有数のプロバイダです。</p>
+</div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+                    <div class="gt-block row" data-gt-block="">
+            <div class="gt-block region region-footer-bottom-left col-md-8" data-gt-block="">
+    <section id="block-footercopyrightlinewithlinks" class="block block-block-content block-block-content3a164ef9-02d8-42c4-bcc6-3ab435f670b3 clearfix">
+  
+    
+
+      <div class="gt-block block-content block-content--type-copyright-block-with-links block-content--view-mode-full ds-1col clearfix" data-gt-block="">
+
+  
+
+  
+            <div class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" data-gt-block="">2020</div>
+      
+            <div class="field field--name-field-copyright-text field--type-string-long field--label-hidden field--item" data-gt-block="">Brightcove Inc.すべての権利を保有します。</div>
+      
+      <div class="gt-block field field--name-field-legal-links field--type-link field--label-hidden field--items" data-gt-block="">
+              <div class="gt-block field--item" data-gt-block=""><a class="nturl" href="https://www.brightcove.com/en/privacy">プライバシーポリシー</a></div>
+              <div class="gt-block field--item" data-gt-block=""><a class="nturl" href="https://www.brightcove.com/en/terms-and-conditions">利用規約</a></div>
+          </div>
+  
+
+</div>
+
+
+  </section>
+
+
+  </div>
+
+            <div class="gt-block region region-footer-bottom-right col-md-4" data-gt-block="">
+    <section id="block-footersocialblock" class="block block-block-content block-block-content4fc23afd-8d37-420e-ab28-73b2ba24e836 clearfix">
+  
+    
+
+      
+      <div class="gt-block field field--name-field-social-icon field--type-entity-reference-revisions field--label-hidden field--items" data-gt-block="">
+              <div class="gt-block field--item" data-gt-block="">
+
+<a class="icon" icon__social--link="" href="https://www.linkedin.com/company/brightcove" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--linkedin">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--linkedin"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="gt-block field--item" data-gt-block="">
+
+<a class="icon" icon__social--link="" href="https://twitter.com/brightcove" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--twitter">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--twitter"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="gt-block field--item" data-gt-block="">
+
+<a class="icon" icon__social--link="" href="https://www.facebook.com/Brightcove" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--facebook">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--facebook"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="gt-block field--item" data-gt-block="" style="display:none;color:white">
+
+<a class="icon" icon__social--link="" href="https://plus.google.com/100830370440271567091" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--google-plus">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--google-plus"></use>
+  </svg>
+</a>
+
+</div>
+          </div>
+  
+
+
+  </section>
+
+<section id="block-scripts" class="block block-block-content block-block-content42e4bd63-d879-470d-a6de-d5e4529a01be clearfix">
+  
+    
+
+      
+            <div class="gt-block field field--name-field-body field--type-text-long field--label-hidden field--item" data-gt-block=""><script src="https://learning-services-media.brightcove.com/doc-assets/js/gtrans.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/js/support-feedback.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-support.js"></script>
+<script src="https://learning-services-media.brightcove.com/doc-assets/js/hide-google-plus.js"></script></div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+          </footer>
+  
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/11003","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click"},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"user":{"uid":0,"permissionsHash":"3b7fdb4927baca3ee2939edeb777485b3e2c2d36cf8c80e0d8f49c6dc5e2eeca"}}</script>
+<script src="https://support.brightcove.com/sites/default/files/js/js_8fmTAXGyuAUNVu11XoXJaeM8QBDFuAvX7ADwOnigrhc.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><div id="feedbackify"><div id="fby-screen" class="fby-screen"><div id="fby-mask" class="fby-mask"></div><div id="fby-tab-14941" class="fby-tab fby-tab-r"><a href="" style="background-color:rgb(5, 155, 179)!important" aria-label="Feedback"></a></div></div></div>
+<script src="https://support.brightcove.com/sites/default/files/js/js_L8Eb1bSFk-jGvnjMNZB7VvDJt-7nSbeXfaBlCzWjDbc.js"></script><div id="surveyDiv" style="visibility:hidden"><iframe id="CSAT" src="https://learning-services-media.brightcove.com/doc-assets/general/surveylink.html" style="display:none;"></iframe></div>
+
+  <script data-cfasync="false" src="https://tdns5.gtranslate.net/tdn-bin/queue.js"></script><!-- Yandex.Metrika counter for GTranslate --><script data-cfasync="false">(function (d, w, c) { (w[c] = w[c] || [])

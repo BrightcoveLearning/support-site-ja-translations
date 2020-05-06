@@ -1,0 +1,1029 @@
+<html lang="ja" dir="ltr" class=" js"><head>
+    <meta charset="utf-8"><script type="text/javascript" src="https://bam.nr-data.net/1/e78a80aa93?a=129613202&amp;v=1167.2a4546b&amp;to=YwBUZkcFVktUWhJQX1pKY0BcSxdRW10DQR5EDUY%3D&amp;rst=14736&amp;ref=https://support.brightcove.com/ja/creating-and-managing-live-events-using-live-module&amp;ap=1956&amp;be=2759&amp;fe=14471&amp;dc=12357&amp;perf=%7B%22timing%22:%7B%22of%22:1588779212389,%22n%22:0,%22f%22:0,%22dn%22:3,%22dne%22:5,%22c%22:6,%22s%22:17,%22ce%22:191,%22rq%22:191,%22rp%22:2575,%22rpe%22:2745,%22dl%22:2746,%22di%22:12357,%22ds%22:12357,%22de%22:12366,%22dc%22:14471,%22l%22:14471,%22le%22:14473%7D,%22navigation%22:%7B%7D%7D&amp;at=T0dXEA8fRUU%3D&amp;jsonp=NREUM.setToken"></script><script src="https://js-agent.newrelic.com/nr-1167.min.js"></script><script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script><script type="text/javascript" async="" src="//cdn.feedbackify.com/f.js"></script><script async="" src="https://fullstory.com/s/fs.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e78a80aa93",applicationID:"129613202"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e78a80aa93",applicationID:"129613202"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-2728311-17", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)">
+<meta name="MobileOptimized" content="width">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="https://support.brightcove.com/sites/default/files/favicon-64.png" type="image/png">
+<link rel="alternate" hreflang="en" href="https://support.brightcove.com/creating-and-managing-live-events-using-live-module">
+<link rel="canonical" href="https://support.brightcove.com/ja/creating-and-managing-live-events-using-live-module">
+<link rel="shortlink" href="https://support.brightcove.com/ja/node/18470">
+<link rel="revision" href="https://support.brightcove.com/creating-and-managing-live-events-using-live-module">
+
+    <title>作成と管理 Live イベントを使用して Live モジュール| Brightcove 学習</title>
+    <link rel="stylesheet" media="all" href="https://support.brightcove.com/sites/default/files/css/css_d7PoQ20hWbRiei75VgExP_tm8C1ylIRfzB3zIYLc5Cw.css?q23msc">
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.min.css">
+<link rel="stylesheet" media="all" href="https://support.brightcove.com/sites/default/files/css/css_fr7ugR_m15spMT57voAomC2Aklj0ATM7MmH6hvb3pp4.css?q23msc">
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+    <meta name="uri-translation" content="on">
+    <script>
+window['_fs_debug'] = false; window['_fs_host'] = 'fullstory.com';
+window['_fs_org'] = 'BX3Q1';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+g.consent=function(a){g("consent",!arguments.length||a)};
+g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+g.clearUserCookie=function(){};
+})(window,document,window['_fs_namespace'],'script','user');
+    </script>
+  <style type="text/css">html{_background:url(//about:blank) fixed;}.fby-on select {visibility:hidden!important;}.fby-on .fby-hide-iframe {visibility:hidden!important;}.fby-hide-embed embed {visibility:hidden!important;}.fby-hide-object object {visibility:hidden!important;}@media not screen {.fby-tab {display: none;}}#feedbackify *{box-sizing:content-box!important;-moz-box-sizing:content-box!important;-webkit-box-sizing:content-box!important;}#feedbackify input{box-sizing:border-box!important;-moz-box-sizing:border-box!important;-webkit-box-sizing:border-box!important;max-width:none!important;}#feedbackify *:before{content:none!important;}#feedbackify *:after{content:none!important;}#feedbackify ,#feedbackify div,#feedbackify span,#feedbackify textarea,#feedbackify input,#feedbackify table,#feedbackify tbody,#feedbackify tr,#feedbackify td,#feedbackify img,#feedbackify p,#feedbackify a{border:0!important;outline:none!important;width:auto;height:auto;text-align:left!important;text-indent:0!important;float:none!important;padding:0!important;margin:0!important;font:12px arial,helvetica,sans-serif!important;overflow:visible!important;color:#000!important;line-height:1.2!important;background:0 none!important;position:static!important;vertical-align:baseline!important;box-shadow:none!important;}#feedbackify table{border-collapse:collapse!important;border-spacing:0!important;max-width:inherit!important;width:auto!important;}#feedbackify td{word-break:normal!important;}#feedbackify {z-index:2147483646!important;position:static!important;top:0;left:0;}#feedbackify .fby-screen{z-index:2147483646!important;position:fixed!important;top:0;left:0;width:0;height:100%;_position:absolute!important;_top:expression(eval(document.body.scrollTop||document.documentElement.scrollTop))!important;_left:expression(eval(document.body.scrollLeft||document.documentElement.scrollLeft))!important;_width:0!important;_height:expression(document.documentElement.clientHeight||document.body.clientHeight+"px")!important;}#feedbackify .fby-mask{display:none!important;position:fixed!important;top:0;left:0;width:100%;height:100%;background-color:#000!important;opacity:0.2;filter:alpha(opacity=20);_position:absolute!important;_width:expression(document.documentElement.clientWidth||document.body.clientWidth+"px")!important;_height:expression(this.parentNode.style.height)!important;}#feedbackify .fby-show{display:block!important;visibility:visible!important;}#feedbackify .fby-hide{display:none!important;visibility:hidden!important;}</style><style type="text/css">#feedbackify .fby-tab{position:fixed!important;width:36px;height:100px;overflow:hidden!important;_position:absolute!important;}#feedbackify .fby-tab a{display:block!important;position:absolute!important;width:36px;height:100px;background-color:#000000!important;cursor:pointer!important;background:url(https://cdn.feedbackify.com/img/classic/tab.png)!important;_background:none!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/tab.png)!important;}#feedbackify .fby-tab-l{top:50%;left:0;margin-top:-50px!important;_top:expression((parseInt(this.parentNode.style.height)-this.clientHeight)/2+"px")!important;_margin-top:0!important;}#feedbackify .fby-tab-l a{margin-left:-5px!important;}#feedbackify .fby-tab-l a:hover{margin-left:-2px!important;}#feedbackify .fby-tab-r{top:50%;right:0px!important;margin-top:-50px!important;_top:expression((parseInt(this.parentNode.style.height)-this.clientHeight)/2+"px")!important;_left:expression((document.documentElement.clientWidth||document.body.clientWidth)-this.clientWidth+"px")!important;_margin-top:0!important;}#feedbackify .fby-tab-r a{margin-left:5px!important;}#feedbackify .fby-tab-r a:hover{margin-left:2px!important;}#feedbackify .fby-tab-t{top:0;margin-top:0px!important;}#feedbackify .fby-tab-b{top:auto;bottom:0!important;_top:expression(parseInt(this.parentNode.style.height)-this.clientHeight+"px")!important;}</style><script type="application/ld+json">[{"@context":"http://schema.org","@type":"VideoObject","name":"Using the Live Module with Telestream Wirecast","description":"Learn how to use the Live module  and Telestream Wirecast to stream a live event to desktop and mobile devices.","thumbnailUrl":"https://cf-images.us-east-1.prod.boltdns.net/v1/static/20318290001/69363613-d102-4386-8af2-e5ccb9bc86ec/cf29cef1-a6da-4ee8-9f01-e0c41d24456e/160x90/match/image.jpg","dateCreated":"2013-05-23T12:25:22.000Z","dateModified":"2020-03-13T17:39:26.379Z","uploadDate":"2013-05-23T12:25:22.000Z","duration":"P428.533S","contentUrl":"http://bcbolt446c5271-a.akamaihd.net/media/v1/pmp4/static/clear/20318290001/69363613-d102-4386-8af2-e5ccb9bc86ec/high.mp4?akamai_token=exp=1591199385~acl=/media/v1/pmp4/static/clear/20318290001/69363613-d102-4386-8af2-e5ccb9bc86ec/high.mp4*~hmac=2bfb8b19c94d7a8dd2f650dd2bee5fc5e9262f737973b728391baa6e368c3e3c","embedUrl":"https://ipx.bcove.me?url=https%3A%2F%2Fsupport.brightcove.com%2Fja%2Fcreating-and-managing-live-events-using-live-module%3FvideoId%3D2403492012001&accountId=20318290001&experienceId=5a73630f7afd7a00101bc1b5&videoId=2403492012001","keywords":"bolt,hapyak_sentiment,new studio"}]</script><style type="text/css">#feedbackify grammarly-ghost{display:none!important;}#feedbackify grammarly-btn{display:none!important;}#feedbackify #fby-form{z-index:2147483646!important;width:618px!important;position:absolute!important;}#feedbackify .fby-d-main{width:600px;height:50px;vertical-align:top!important;background-color:#FFFFFF!important;position:relative!important;}#feedbackify .fby-d{background:url(https://cdn.feedbackify.com/img/classic/dlg_shad_sprite.png)!important;_background:none!important;}#feedbackify .fby-d-h{height:9px;background:url(https://cdn.feedbackify.com/img/classic/dlg_shad_sprite_h.png)!important;_background:none!important;}#feedbackify .fby-d-h2{height:9px;background-color:#FFFFFF!important;}#feedbackify .fby-d-tl{background-position:-18px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_tl.png)!important;}#feedbackify .fby-d-t{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_t.png,sizingMethod=scale)!important;}#feedbackify .fby-d-tr{background-position:-36px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_tr.png)!important;}#feedbackify .fby-d-l{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_l.png,sizingMethod=scale)!important;}#feedbackify .fby-d-r{background-position:-9px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_r.png,sizingMethod=scale)!important;}#feedbackify .fby-d-bl{background-position:-54px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_bl.png)!important;}#feedbackify .fby-d-br{background-position:-72px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_br.png)!important;}#feedbackify .fby-d-b{background-position:0px -9px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_b.png,sizingMethod=scale)!important;}#feedbackify .fby-d-load{position:relative!important;}#feedbackify .fby-d-load img{position:absolute!important;left:8px;}#feedbackify .fby-d-load div{position:absolute!important;padding:4px 18px!important;font-size:16px!important;font-weight:bold!important;color:#333!important;}</style></head>
+  <body class="path-node page-node-type-support-doc has-glyphicons">
+    <a class="visually-hidden" focusable="" skip-link="" href="#main-content/index.html">
+      メインコンテンツへスキップ
+    </a>
+    
+      <div class="gt-block dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="" data-gt-block="">
+              <header class="navbar navbar-default container" id="navbar" role="banner">
+      <div class="gt-block navigation-secondary clearfix" data-gt-block="">
+          <div class="gt-block region region-navigation-secondary" data-gt-block="">
+    <section id="block-styles" class="block block-block-content block-block-contentfbb71e48-a6cd-4d2b-8239-43f18db69e60 clearfix">
+  
+    
+
+      
+            <div class="gt-block field field--name-field-body field--type-text-long field--label-hidden field--item" data-gt-block=""><link rel="stylesheet" media="all" href="https://learning-services-media.brightcove.com/doc-assets/css/drupal-fix.css"></div>
+      
+  </section>
+
+<nav role="navigation" aria-labelledby="block-secondarynavigation-menu" id="block-secondarynavigation">
+            
+  <h2 class="visually-hidden" id="block-secondarynavigation-menu" data-gt-block="">セカンダリナビゲーション</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/contact-support/index.html" title="サポートリクエストを作成する" data-drupal-link-system-path="node/18632">サポートリクエスト</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://status.brightcove.com/">システムステータス</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://university.brightcove.com/">Brightcove 大学</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<section id="block-gtranslate" class="block block-gtranslate block-gtranslate-block clearfix">
+  
+    
+
+      
+<div class="gt-block gtranslate" data-gt-block="">
+<script type="text/javascript">/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;var lang=lang_pair.split('|')[1];var plang=location.pathname.split('/')[1];if(plang.length !=2 && plang != 'zh-CN' && plang != 'zh-TW')plang='en';if(lang == 'en')location.pathname=location.pathname.replace('/'+plang+'/', '/');else location.pathname='/'+lang+location.pathname.replace('/'+plang+'/', '/');}
+/* ]]> */
+</script><select onchange="doGTranslate(this);"><option value="">言語の選択</option><option value="en|en" style="font-weight:bold;background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -0px;padding-left:18px;">英語</option><option value="en|fr" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -160px;padding-left:18px;">フランス語</option><option value="en|de" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -176px;padding-left:18px;">ドイツ語</option><option value="en|ja" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -240px;padding-left:18px;">日本語</option><option value="en|ko" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -256px;padding-left:18px;">韓国語</option><option value="en|es" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -352px;padding-left:18px;">スペイン語</option></select>
+</div>
+<div class="gtranslate__credits" data-gt-block="">
+  本ドキュメントはGoogle翻訳によって機械翻訳したものとなります
+</div>
+
+  </section>
+
+
+  </div>
+
+      </div>
+      <div class="gt-block navbar-header col-md-3" data-gt-block="">
+                  <a class="logo" navbar-btn="" pull-left="" href="../ja/index.html" title="ホーム" rel="home">
+            <img src="https://support.brightcove.com/themes/custom/bcdocs/images/brightcove.png" alt="ホーム">
+          </a>
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">トグルナビゲーション</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+                    <div class="gt-block navbar-collapse collapse" data-gt-block="">
+            <div class="gt-block region region-navigation-collapsible" data-gt-block="">
+    <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation">
+            <h2 class="sr-only" id="block-mainnavigation-menu" data-gt-block="">メインナビゲーション</h2>
+
+      
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-learning-home/index.html" title="ホームページ" data-drupal-link-system-path="node/18643">ホーム</a>
+                  </li>
+                                            <li class="expanded dropdown">
+        <a class="dropdown-toggle" href="" data-toggle="dropdown">
+          製品紹介
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/video-cloud/index.html" data-drupal-link-system-path="node/18332">Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://gallery.support.brightcove.com">ギャラリー</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-player/index.html" data-drupal-link-system-path="node/18283">Brightcove Player</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/live/index.html" data-drupal-link-system-path="node/18642">Live</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/social/index.html" data-drupal-link-system-path="node/18444">Social</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/audience/index.html" data-drupal-link-system-path="node/18445">Audience</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://zencoder.support.brightcove.com">Zencoder</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/ssai/index.html" data-drupal-link-system-path="node/18650">SSAI</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://support.ottflow.com">OTT Flow</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a class="dropdown-toggle" href="" data-toggle="dropdown">
+          Links
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/analytics-api/index.html" data-drupal-link-system-path="node/18370">Analytics API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/audience-api/index.html" data-drupal-link-system-path="node/18371">Audience API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/cms-api/index.html" data-drupal-link-system-path="node/18372">CMS API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/cms-connectors-video-cloud/index.html" data-drupal-link-system-path="node/18662">CMSコネクタ用 Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/data-collection-api/index.html" data-drupal-link-system-path="node/18876">Data Collection API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/delivery-system-api/index.html" data-drupal-link-system-path="node/18387">Delivery System API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/developer-tools-and-concepts/index.html" data-drupal-link-system-path="node/18430">開発者ツールと概念</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/native-player-sdks/index.html" data-drupal-link-system-path="node/18367">Device SDK</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/dynamic-ingest-api/index.html" data-drupal-link-system-path="node/18373">Dynamic Ingest API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/getting-started-brightcove-apis-0/index.html" data-drupal-link-system-path="node/18711">入門 - Brightcove API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/page-experience-api/index.html" data-drupal-link-system-path="node/18616">In-Page Experience APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/ingest-profiles-api/index.html" data-drupal-link-system-path="node/18374">Ingest Profiles API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/live/index.html" data-drupal-link-system-path="node/18642">Live API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/oauth-api/index.html" data-drupal-link-system-path="node/18376">OAuth API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/platform-api-code-samples/index.html" data-drupal-link-system-path="node/18675">プラットフォームAPIコードサンプル</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/playback-api/index.html" data-drupal-link-system-path="node/18380">Playback API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-player-code-samples/index.html" data-drupal-link-system-path="node/18630">プレーヤーコードサンプル</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-player-developer/index.html" data-drupal-link-system-path="node/18362">プレーヤー開発者</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/player-management-api/index.html" data-drupal-link-system-path="node/18378">Player Management API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/policy-api/index.html" data-drupal-link-system-path="node/18381">Policy API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/release-notes/index.html" data-drupal-link-system-path="node/18687">リリースに関して</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a class="dropdown-toggle" href="" data-toggle="dropdown">
+          トレーニング（講習会）
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a class="nturl" href="https://university.brightcove.com">オンラインコース</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/register-training/index.html" data-drupal-link-system-path="node/18270">コース登録</a>
+                  </li>
+        </ul>
+  
+            </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-support-documentation-announcements/index.html" title="の新機能を見る Brightcove オンラインマニュアル" data-drupal-link-system-path="node/18896">新着情報</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+        </div>
+          </header>
+  
+    <div class="gt-block full-width-headline" data-gt-block="">
+    <div class="gt-block container" data-gt-block="">
+      <div class="gt-block row" data-gt-block="">
+        <div class="gt-block col-sm-12" role="heading" data-gt-block="">
+            <div class="gt-block region region-header" data-gt-block="">
+          <section id="block-brightcoveheadlineblock" class="block block-bc-general block-bc-general-headline-block clearfix">
+  
+    
+
+      オンラインマニュアル
+  </section>
+
+
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      <div role="main" class="gt-block main-container container  js-quickedit-main-content" data-gt-block="">
+    <div class="gt-block row" data-gt-block="">
+
+                              <aside class="gt-block col-sm-3" role="complementary" data-gt-block="">
+              <div class="gt-block region region-sidebar-first" data-gt-block="">
+    <section class="bc-search-fixes-search-block-form block block-bc-search-fixes block-bc-search-fixes-search-block clearfix" data-drupal-selector="bc-search-fixes-search-block-form" id="block-brightcovesearchblock">
+  
+    
+
+      <form action="/ja/creating-and-managing-live-events-using-live-module" method="post" id="bc-search-fixes-search-block-form" accept-charset="UTF-8">
+  <div class="gt-block form-item js-form-item form-type-textfield js-form-type-textfield form-item-search js-form-item-search form-no-label form-group" data-gt-block="">
+      <label for="edit-search" class="control-label sr-only">サイト内検索</label>
+  
+  
+  <input data-drupal-selector="edit-search" class="form-text form-control" type="text" id="edit-search" name="search" value="" size="15" maxlength="128" placeholder="サイト内検索">
+
+  
+  
+  </div>
+<input autocomplete="off" data-drupal-selector="form-tblobu45xrgbacpqajun4clxgjpxmz6lfu2qjsodfus" type="hidden" name="form_build_id" value="form-tBloBu45XrGBAcPQajUN4ClXgjPXMz6lfu2QJsODFus"><input data-drupal-selector="edit-bc-search-fixes-search-block-form" type="hidden" name="form_id" value="bc_search_fixes_search_block_form"><div data-drupal-selector="edit-actions" class="gt-block form-actions form-group js-form-wrapper form-wrapper" id="edit-actions" data-gt-block=""><button data-drupal-selector="edit-submit" class="button js-form-submit form-submit btn-primary btn icon-only" type="submit" id="edit-submit" name="op" value="Search"><span class="sr-only">サイト内検索</span><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button></div>
+
+</form>
+
+  </section>
+
+<section id="block-inpagenavigationblock" class="hidden-xs block block-bc-ipnav block-bc-ipnav-block clearfix" style="width: 476px;">
+  
+      <h2 class="block-title" data-gt-block="">このページ</h2>
+    
+
+      <div class="bc-ipnav-block" data-gt-block=""><ul><li><a href="#introduction/index.html">概要</a></li><li><a href="#prerequisites/index.html">必須条件</a></li><li><a href="#limitations/index.html">制限事項</a></li><li><a href="#manage/index.html">ライブイベントの管理</a></li><li><a href="#create/index.html">新しいイベントを作成する</a></li><li><a href="#advanced/index.html">詳細オプションの設定</a></li><li><a href="#intro_recurring/index.html">定期的なイベントの概要</a></li><li><a href="#work_recurring/index.html">定期的なイベントの設定</a></li><li><a href="#controlroom/index.html">コントロールルームからのライブイベント情報の確認</a></li><li><a href="#monitor/index.html">イベントをモニターする</a></li><li><a href="#duplicate/index.html">イベントの複製</a></li><li><a href="#publish/index.html">ライブイベントの埋め込みコードの作成</a></li><li><a href="#social/index.html">ソーシャルメディアへの接続</a></li><li><a href="#clip/index.html">クリップの作成</a></li><li><a href="#ad/index.html">広告をリクエストする</a></li><li><a href="#captions/index.html">キャプション</a></li><li><a href="#trouble/index.html">ライブストリームの問題のトラブルシューティング</a></li><li><a href="#bc-ipnav-17/index.html">関連コンテンツ</a></li></ul></div>
+  </section>
+
+
+  </div>
+
+          </aside>
+              
+                  <section class="col-sm-9">
+
+                                      <div class="gt-block highlighted" data-gt-block="">  <div class="gt-block region region-highlighted" data-gt-block="">
+    <div data-drupal-messages-fallback="" class="hidden" data-gt-block=""></div>
+
+  </div>
+</div>
+                  
+                
+                
+                
+                          <a class="nturl" id="main-content"></a>
+            <div class="gt-block region region-content" data-gt-block="">
+        <h1 class="page-header"><span>Liveモジュールを使用したライブイベントの作成と管理</span>
+</h1>
+
+  
+<div class="gt-block node node--type-support-doc node--view-mode-full bcdocs-four-rows clearfix" data-gt-block="">
+
+  
+
+  <div class="group-first-row" data-gt-block="">
+      </div>
+
+  <div class="gt-block group-second-row" data-gt-block="">
+  
+  <div class="gt-block field field--name-field-products field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">製品（複数可）</div>
+          <div class="gt-block field__items taxonomy__tags" data-gt-block="">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item" data-gt-block="">Video Cloud</div>
+          <div class="field--item" data-gt-block="">Live</div>
+              </div>
+      </div>
+
+  <div class="gt-block field field--name-field-roles field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">役割</div>
+          <div class="gt-block field__items taxonomy__tags" data-gt-block="">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item" data-gt-block="">Studioユーザー</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="gt-block group-third-row taxonomy__tags" data-gt-block="">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="gt-block field field--name-field-topics field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">トピック）</div>
+          <div class="gt-block field--items" data-gt-block="">
+              <div class="field--item" data-gt-block="">Live モジュール</div>
+          <div class="field--item" data-gt-block="">Live ストリーミング</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="gt-block group-fourth-row" data-gt-block="">
+  
+            <div class="gt-block field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item" data-gt-block=""><p data-gt-block="">このトピックでは、ライブイベントを作成および管理する方法について説明します。Liveモジュールを開きます。</p><div class="training-video-player-ipx" data-experience="5a73630f7afd7a00101bc1b5" data-video-ids="2403492012001" data-gt-block="" style="overflow: auto;"> <iframe allowfullscreen="" scrolling="no" style="width: 100%; border: none; transition: height 0.1s linear; display: block; height: 367.5px;"></iframe></div>
+<script src="https://players.brightcove.net/20318290001/experience_5a73630f7afd7a00101bc1b5/live.js"></script><section class="bcls-section"><h2 id="introduction" data-gt-block="">概要</h2>
+
+<p data-gt-block="">Liveモジュールを利用すると、デスクトップデバイスとモバイルデバイスの両方でライブイベントを配信することができます。イベント情報を Liveモジュールに入力後、現場のエンコーダーに接続するための一連のエンコーダー設定が提供されます。すべてのトランスコーディングはクラウド上で行われるため、ハードウェアのトランスコーダーは必要ありません。</p>
+
+<p data-gt-block="">Liveの購入条件に応じて、イベント、チャンネル、またはその両方を作成することができます。 通常、イベントは短い１回限りのもの、または定期的なイベントをストリーミングするために作成されます。 チャンネルは通常、２４時間ライブイベントを配信するときに使用します。</p>
+
+<p class="BCL-aside" data-gt-block="">注: ライブストリーミングのサポートは Video Cloud Pro と Enterprise の購入者のみが利用できます。</p>
+</section><section class="bcls-section"><h2 id="prerequisites" data-gt-block="">必須条件</h2>
+
+<p data-gt-block="">ライブイベントを配信するためには、以下の機材が必要になります。</p>
+
+<ul><li class="language-editable" data-gt-block="">Liveモジュールへのアクセス権限があるVideo Cloud Proまたは Enterpriseアカウント</li>
+	<li class="language-editable" data-gt-block="">イベントを配信するためのカメラ</li>
+	<li class="gt-block notranslate language-editable" data-gt-block="">エンコーディングソフトウェアが必要です <a class="nturl" href="https://www.telestream.net/wirecast/overview.htm" data-no-instant="">Telestream Wirecast</a> もしくは <a class="nturl" href="https://obsproject.com" data-no-instant="">オープンブロードキャスターソフトウェア</a></li>
+</ul></section><section class="bcls-section"><h2 id="limitations" data-gt-block="">制限事項</h2>
+
+<ul><li class="language-editable" data-gt-block="">MediaモジュールでDVR付きのライブストリームを作成するためには、まず新しいリモートアセットを作成してから、ライブストリームのURLの最後にplaylist_dvr.m３u８の拡張子があるプレイリストをリモートアセットに加える必要があります。</li>
+	<li class="language-editable" data-gt-block="">現在、SSAIを使用したライブスト​​リームは、 Liveモジュールから配信することができません。公開したい場合、Mediaモジュールから配信する必要があります。</li>
+	<li class="language-editable" data-gt-block="">ライブブロードキャストは20-30秒の遅延があります。</li>
+	<li class="language-editable" data-gt-block="">ストリーミングは、イベント開始後30分以内に開始する必要があります（デフォルトレベルのアカウント設定）</li>
+	<li class="language-editable" data-gt-block="">Internet Explorerを使用している場合、10以降のバージョンが必要です。</li>
+	<li class="language-editable" data-gt-block="">Live  DVRを使用したスト​​リームは、Brightcove Player SDKで使用することができません。DVRのプレイバックURLをリモートアセットに追加してから、SDKでそのリモートアセットURLを使用する必要があります。</li>
+</ul></section><section class="bcls-section"><h2 id="manage" data-gt-block="">ライブイベントの管理</h2>
+
+<p data-gt-block="" class="gt-block gt-block notranslate">Liveモジュールにアクセスするためには、Video Cloudスタジオにログインし、ナビゲーションヘッダー内の<strong>Live</strong>をクリックします。ログインすると、Video Cloudアカウント名がページの右上の隅に表示されます。複数のアカウントをお持ちの場合は、アカウントを変えるためのプルダウンメニューを使用して、ご使用を希望するアカウントを選択してください。選択したアカウントでLiveが有効になっていない場合、「機能が有効になっていません」というメッセージが表示されます。「イベントの管理」ページでは、3つのメインタブが表示されます。</p>
+
+<ul><li class="gt-block notranslate language-editable" data-gt-block=""><strong>ライブ</strong>  - 進行中のライブイベントを一覧表示する</li>
+	<li class="gt-block language-editable" data-gt-block=""><strong>スタンバイ</strong> - <a class="nturl" href="#intro_recurring/index.html">定期的なイベント</a> (スタンバイモードになっている定期的なイベントを一覧表示する)</li>
+	<li class="gt-block notranslate language-editable" data-gt-block=""><strong>完了</strong>  - 完了したイベントを一覧表示する</li>
+</ul><div data-gt-block="" class="gt-block"><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node18470-homepage.png"></div>
+
+<p data-gt-block="">注：ライブチャンネルを作成する機能は、Liveの購入条件次第です。</p>
+
+<p data-gt-block="" class="gt-block gt-block notranslate"><strong>表示</strong>  ドロップダウンを使用して、<strong>完了</strong>のタブで表示されるイベントをフィルタリングすることができます。</p>
+
+<p data-gt-block="">ページでは、関連する情報を含んだライブイベントのリストが表示されます。</p>
+
+<ul><li class="gt-block language-editable" data-gt-block="">ジョブステータス - ライブストリームのステータス
+	<ul><li class="gt-block language-editable" data-gt-block=""><strong>処理中</strong> - ストリーム中です</li>
+		<li class="gt-block notranslate language-editable" data-gt-block=""><strong>処理エラー</strong>  -  ライブストリーム中にエラーが発生しました</li>
+		<li class="gt-block notranslate language-editable" data-gt-block=""><strong>スタンバイ</strong>   - アクティブにできるストリーム（スタティクエントリポイントのみ）</li>
+		<li class="gt-block notranslate language-editable" data-gt-block=""><strong>停止</strong>  - ライブストリームを停止し、VODを作成しています</li>
+		<li class="gt-block notranslate language-editable" data-gt-block=""><strong>完了</strong>  - ライブストリームが完了しました</li>
+		<li class="gt-block notranslate language-editable" data-gt-block=""><strong>キャンセル中</strong>  - ライブストリームは停止しており、保留中のVOD出力は処理されません</li>
+		<li class="gt-block language-editable" data-gt-block=""><strong>キャンセル</strong>  - ライブストリームがキャンセルされました</li>
+		<li class="gt-block notranslate language-editable" data-gt-block=""><strong>切断</strong>   - エンコーダとの接続が切断されました</li>
+		<li class="gt-block notranslate language-editable" data-gt-block=""><strong>無効化</strong>   - 定期的なイベントは非アクティブ状態です</li>
+		<li class="gt-block notranslate language-editable" data-gt-block=""><strong>非アクティブ状態</strong>   - 定期的なイベントは有効になっていますが、ストリームは開始していません</li>
+		<li class="gt-block notranslate language-editable" data-gt-block=""><strong>待機中</strong>   -  RTMPストリームの待機中（エンコーダの開始待ちです）</li>
+		<li class="gt-block notranslate language-editable" data-gt-block=""><strong>失敗</strong>   - システムエラーの結果としてジョブが停止しました</li>
+		<li class="gt-block notranslate language-editable" data-gt-block=""><strong>放棄</strong>  - エンコーダが接続されないままイベントが終了しました</li>
+	</ul></li>
+	<li class="language-editable" data-gt-block="">完了日時</li>
+	<li class="language-editable" data-gt-block="">イベント名とID</li>
+	<li class="language-editable" data-gt-block="">合計視聴回数</li>
+	<li class="language-editable" data-gt-block="">継続時間</li>
+	<li class="language-editable" data-gt-block="">作成日時（定期的な予定の場合のみ）</li>
+</ul><p data-gt-block="" class="gt-block gt-block notranslate">ライブイベントビデオのプロパティを確認するためには、イベント名をクリックして<a class="nturl" href="#controlroom/index.html" data-no-instant="">調整室</a>を開いて下さい。</p>
+</section><section class="bcls-section"><h2 id="create" data-gt-block="">新しいイベントを作成する</h2>
+
+<p data-gt-block="" class="gt-block gt-block notranslate">Liveモジュールを使用してライブイベントを作成およびストリーミングするための完全なステップバイステップガイドについては  <a class="nturl" href="..//support.brightcove.com/ja/ja/step-step-using-live-module-telestream-wirecast/index.html" data-no-instant="">ステップバイステップ： LiveモジュールでのTelestream Wirecastの使用</a>をご参照ください。</p>
+
+<p data-gt-block="">新しいイベントを作成するには、以下の手順を実行します。</p>
+
+<ol class="bcls-tasklist"><li class="gt-block notranslate language-editable" data-gt-block="">「イベントの管理」ページで<strong>イベントの作成</strong>をクリックします。ライブイベントを作成する、またはライブチャンネルページが開きます。イベントとチャンネルを作成するときのプロパティは同じです。このドキュメントのスクリーンショットは、イベントの作成についてです。
+
+	<div data-gt-block="" class="gt-block" name="021b6a881d1fac8f6954cd3110367d24"><div style="position:relative;"><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node18470-new-event.png" data-gt-src-hash="http://support.brightcove.com/accc2b92748de30ceadc213dc2357423" data-gt-content="https://img.brightcove.com/node18470-new-event.png" name="accc2b92748de30ceadc213dc2357423"></div></div></li>
+	<li class="gt-block language-editable" data-gt-block="">イベントの詳細を入力してください：
+	<ul><li class="gt-block notranslate language-editable" data-gt-block=""><strong>イベント名を入力します。</strong>   - イベントの名前。 動画が動画アセットとして保存されている場合、この名前はMediaモジュールで表示されます（最大２５５文字）</li>
+		<li class="gt-block language-editable" data-gt-block=""><strong>短い説明</strong> - イベントの説明（最大250文字）</li>
+		<li class="gt-block notranslate language-editable" data-gt-block=""><strong>タグ</strong>   - イベントに関連付けるためのタグ。動画が動画アセットとして保存されている場合、タグは動画に割り当てられます（最大１２８文字および１２００タグ）</li>
+		<li class="gt-block notranslate language-editable" data-gt-block=""><strong>参照ID</strong>   - 固有のイベントに対する参照ID。（最大１５０文字）</li>
+	</ul></li>
+	<li class="language-editable" data-gt-block="">アカウントで必須なカスタムフィールドを表示します。カスタムフィールドを入力します。</li>
+	<li class="gt-block notranslate language-editable" data-gt-block="">設定の<strong>ソーシャルメディアにストリーミングする</strong>を<strong>許可する</strong>に変更することで、イベントをソーシャルメディアプラットフォームへのストリーミングすることを可能にします。<a class="nturl" href="#social/index.html" data-no-instant="">イベントがストリーミングを開始</a> または <a class="nturl" href="..//support.brightcove.com/ja/ja/publishing-live-event-facebook/index.html" data-no-instant="">Socialモジュール</a>で可能です。</li>
+	<li class="gt-block notranslate language-editable" data-gt-block="">ドロップダウンリストから <strong>ライブトランスコードプロファイル</strong>を選択します。トランスコードプロファイルは、作成されるライブイベントのレンディションの品質と数を決定します。<strong>プロファイルの管理</strong>リンクをクリックすると、別のタブでトランスコードプロファイルエディタが開きます。トランスコードプロファイルエディタにアクセスするためには、アカウント管理者である必要があります。<strong>レンディション</strong>のリンクをクリックして、選択したトランスコードプロファイルを使用して作成されるレンディションを確認することができます。
+	<aside class="gt-block bcls-aside bcls-aside--information language-editable" data-gt-block="" name="b06e954b6cff487216aee0884015b1ea">3つのTierのビットレートと請求のレベルの詳細は以下の通りです。
+	<ul><li class="language-editable" data-gt-block="">Tier１は最大５５００Kbpsを許可し、１x時間で課金します</li>
+		<li class="language-editable" data-gt-block="">Tier２は最大１００００Kbpsを許可し、１.５x時間で課金します</li>
+		<li class="language-editable" data-gt-block="">Tier３は最大２００００Kbpsを許可し、２.０x時間で課金します</li></ul></aside><p data-gt-block="" class="gt-block">注：ライブトランコードプロフィール作成に関する情報 は、<a class="nturl" href="..//support.brightcove.com/ja/ja/ja/creating-custom-live-ingest-profiles/index.html" data-no-instant="">カスタムライブトランスコードプロファイルを作成する</a></p>をご参照ください。</li>
+	<li class="gt-block notranslate language-editable" data-gt-block=""><strong>完了後、イベントを動画アセットに変換</strong> をクリックし、ライブの動画のVOD版をVideo Cloud アカウントに保存します。このオプションを選択すると、選択した <strong>ライブトランスコードプロファイル</strong>から最高品質なレンディションがVOD動画のソースとして使用されます。レンディションを作成するときに、アカウントのデフォルトのインジェストプロファイルが使用されます。 <strong>ライブイベントが終了するとすぐにVODバージョンは利用できないことにご注意ください。動画はトランスコードプロセスが完了すると利用可能になります。</strong>
+	<p data-gt-block="">注：この機能は、定期的なイベントを使用する場合はご利用できません。</p></li>
+	<li class="gt-block notranslate language-editable" data-gt-block=""><strong>詳細オプション</strong>をクリックし、 <a class="nturl" href="#advanced/index.html" data-no-instant="">詳細オプションを設定する</a></li>
+	<li class="gt-block notranslate language-editable" data-gt-block=""><strong>イベントの作成</strong> ライブイベントを開始します。<strong>ストリーミングエンドポイント（RTMP URL）</strong>やエンコーダーで使用される<strong>ストリーム名</strong>を含んだライブイベントの詳細が<a class="nturl" href="#controlroom/index.html" data-no-instant="">調整室ページ</a>で表示されます。
+	<p data-gt-block="">注：ストリームを処理するのに約１分かかります。</p>
+
+	<p data-gt-block="">注：デフォルトでは、新しいイベントが作成されてから３０分以内にエンコーダーを開始する必要があります。</p></li>
+</ol><p data-gt-block="" class="gt-block gt-block notranslate">ストリーミングを停止する場合は、<strong>ストリーミングを停止</strong>  ボタンを押してイベントを終了します。</p>
+
+<p data-gt-block="">注：ライブストリームが完了したら、エンコーダが停止していることを確認してください。エンコーダとBrightcoveを接続したままにすると、たとえデータが送信されていなくても、予期しない接続料金が発生する可能性があります。</p>
+</section><section class="bcls-section"><h2 id="advanced" data-gt-block="">詳細オプションの設定</h2>
+
+<p data-gt-block="" class="gt-block notranslate gt-block notranslate">新しいイベントを作成するときに、詳細オプションを設定することができます。詳細なオプションを設定するには <strong>詳細オプション</strong>をイベントの作成時にクリックします。</p>
+
+<div data-gt-block="" class="gt-block"><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node18470-advanced-options.png"></div>
+
+<p data-gt-block="">以下のオプションを設定できます。</p>
+
+<p class="BCL-aside" data-gt-block="">注：VODクリップの場合、通知は送信されません。</p>
+
+<p class="BCL-aside" data-gt-block="">注：カスタムマイズしたエッジCDNホスト名をご希望の場合は、Brightcoveサポートにお問い合わせください。</p>
+
+<ul><li class="gt-block notranslate language-editable" data-gt-block=""><strong>再接続時間</strong>   - エンコーダが切断されている場合、これはライブストリームを利用可能にする時間です。 この設定は、新しいイベントが作成されたときにエンコーダーをどれだけ早く開始する必要があるかどうかには影響しません。</li>
+	<li class="gt-block notranslate language-editable" data-gt-block=""><strong>サーバーサイド広告挿入（SSAI）を有効にする</strong>   - サーバーサイドの広告挿入を有効にします。広告は <a class="nturl" href="..//support.brightcove.com/ja/ja/configuring-server-side-ad-settings/index.html" data-no-instant="">サーバーサイドの広告設定</a>として設定されます。 Liveモジュールでのサーバーサイド広告を設定する方法については、<a class="nturl" href="..//support.brightcove.com/ja/ja/implementing-server-side-ads-live-module/index.html" data-no-instant="">Liveモジュールでのサーバーサイド広告の設定</a>をご参照ください。
+	<ul><li class="gt-block language-editable" data-gt-block="" name="d9ef35788f6e569512ebeee1b5e0eb1c"><strong>フィルスレート</strong>   - フィルスレートを選択します。ライブストリーミングにギャップがあり、動的に配信される広告が挿入できない場合、フィルスレートを表示します。フィルスレートの作成については、<a class="nturl" href="..//support.brightcove.com/ja/ja/managing-live-settings/index.html" data-no-instant="">ライブ設定</a>で可能です</li>
+		<li class="gt-block language-editable" data-gt-block="" name="3b1e7b9b4c190d0df178184031767f2a"><strong>広告オーディオ</strong>   - チェックすると、設定に基づいて広告の音声レベルを調整します。 広告の音量がコンテンツより大幅に大きくならないようにするための方法として使用できます。</li></ul></li>
+	<li class="gt-block notranslate language-editable" data-gt-block=""><strong>クラウドDVRを作成する</strong>  -  DVR機能を有効にします。 イベントがBrightcove Player ６.３３.０より前のバージョンを使用して公開されている場合 <a class="nturl" href="..//support.brightcove.com/ja/ja/live-dvrux-plugin/index.html" data-no-instant="">Live  DVRUXプラグイン</a>が必要になります。コンテンツは、イベント終了後７日間利用できます。
+	<ul><li class="gt-block language-editable" data-gt-block="" name="eec04ccda51d54af4e8eb428e33a5468"><strong>DVRウィンドウ</strong>   - ライブDVRマニフェストに保持する時間（秒単位）。</li></ul></li>
+	<li class="gt-block notranslate language-editable" data-gt-block=""><strong>入力フォーマット</strong>  - エンコーダからの入力フォーマットがLive モジュールに送信されます。この機能により、字幕、オーディオトラックでのnowやnow-nextのようなより使い易いライブストリーム内の追加のメタデータや標準の配信レベルでの標準化されたデジタル体験を可能にします。以下の入力フォーマットを使用することができます。
+	<ul><li class="gt-block language-editable" data-gt-block="" name="5be4b9c637e386fde82e197e64ccfe9a"><strong>RTMP（デフォルト）</strong></li>
+		<li class="gt-block language-editable" data-gt-block="" name="63a70836862b3ec9ddd84977954a6da2"><strong>リアルタイム転送プロトコル（RTP）</strong></li>
+		<li class="gt-block language-editable" data-gt-block="" name="2f41dd720031300b6a7ff9b87b4a77e2"><strong>セキュアリライアブルトランスポート（SRT）</strong></li></ul></li>
+	<li class="gt-block notranslate language-editable" data-gt-block=""><strong>RTMPのクレデンシャル</strong>   - ストリーミングエンドポイントを確保するために使用するRTMPクレデンシャルを選択します。このオプションは、入力フォーマットがRTMPで、少なくとも1つのRTMPクレデンシャルが<a class="nturl" href="..//support.brightcove.com/ja/ja/managing-live-settings/index.html" data-no-instant="">Live設定</a>の一部として作成された場合にのみ表示されます。</li>
+	<li class="gt-block notranslate language-editable" data-gt-block=""><strong>RTMP IPホワイトリスト</strong>   -   RTMPエンドポイントへの接続を許可されている複数のIPアドレスのセットを入力します。 これはRTMPエンドポイントに接続できるユーザーを制御します。 このオプションは、入力フォーマットがRTMPの場合にのみ表示されます。</li>
+	<li class="gt-block notranslate language-editable" data-gt-block=""><strong>CIDRホワイトリスト</strong> - RTPまたはSRTエンドポイントへの接続が許可されている複数のIPアドレスを入力します。 これは、RTPまたはSRTエンドポイントに接続できるユーザーを制御します。 このオプションは、入力フォーマットがRTPまたはSRTの場合にのみ表示されます。</li>
+	<li class="gt-block notranslate language-editable" data-gt-block=""><strong>地域</strong> - Amazon Webサービス（AWS）リージョン。 待ち時間を短縮するために、エンコーダが配置されている場所に最も近い地域を選択する必要があります。 <strong>デフォルトでは、この地域はオレゴン（米国西部）に設定されています。これは、他の大陸からストリーミングしている場合には悪影響が出ます</strong>
+以下の地域でご利用することができます。以下の地域がサポートされています。
+	<ul><li class="language-editable" data-gt-block="">オレゴン（アメリカ西部）（デフォルト）</li>
+		<li class="language-editable" data-gt-block="">バージニア州（米国東部）</li>
+		<li class="language-editable" data-gt-block="">東京（アジア太平洋）</li>
+		<li class="language-editable" data-gt-block="">シンガポール（アジア太平洋）</li>
+		<li class="language-editable" data-gt-block="">シドニー（アジア太平洋）</li>
+		<li class="language-editable" data-gt-block="">ムンバイ（アジア太平洋）</li>
+		<li class="language-editable" data-gt-block="">フランクフルト（EU）</li>
+		<li class="language-editable" data-gt-block="">アイルランド（EU）</li></ul></li>
+	<li class="gt-block language-editable" data-gt-block=""><strong>コンテンツの暗号化</strong>  - ライブストリームに適用する暗号化のタイプを選択します。
+	<ul><li class="gt-block language-editable" data-gt-block=""><strong>なし</strong>  - 暗号化は適用されません</li>
+		<li class="gt-block notranslate language-editable" data-gt-block=""><strong>AES-１２８</strong>   -  AES-１２８暗号化を使用してストリームを保護します。 このオプションが選択されている場合は、 <strong>暗号化キー</strong> を入力する必要があります。キーは３２の16進数でなければなりません。 最良の結果を得るには、<code class="notranslate  language-editable">128-bit</code>    <code class="notranslate  language-editable">Hex</code>を選択して<a class="nturl" href="https://www.allkeysgenerator.com/Random/Security-Encryption-Key-Generator.aspx" data-no-instant="">キージェネレーター</a>をご利用ください。
+		<p data-gt-block="">&gt;注：暗号化されたライブストリームからクリップを作成することはできません。</p></li>
+		<li class="gt-block notranslate language-editable" data-gt-block=""><strong>デジタル著作権管理（DRM）</strong>  -デジタル著作権管理テクノロジを使用したプレミアムコンテンツストリームの保護。 詳細については、 <a class="nturl" href="node/18944/index.html" target="_top" data-no-instant="">Live  DRM</a>  の資料をご参照ください。
+		<ul><li>HLS + <a class="nturl" href="https://developer.apple.com/streaming/fps/" data-no-instant="">FairPlay</a></li>
+			<li>HLS（fMPXNUMX）+ Widevine Modular</li></ul><p class="BCL-aside" data-gt-block="">注：DRMを使用するためには、最初にライブアカウントでDRMを有効にする必要があります。DRM対応イベントを配信するには、DRM対応プレーヤーv６.３７.１以降を使用する必要があります。</p></li>
+	</ul></li>
+	<li class="gt-block notranslate language-editable" data-gt-block=""><strong>ストリームステータス通知を有効にする</strong>  - チェックすると、 <strong>通知URL</strong>通知URLの入力が要求されます。  ジョブの状態が変更された時にhttpリクエストが <strong>通知URL</strong>に送信されます。これにより、ジョブ状態の変化に応じてサーバーを更新するために利用できます。
+API通知の使用方法の詳細については、 <a class="nturl" href="..//support.brightcove.com/ja/ja/live-api-notifications/index.html" data-no-instant="">Live API  通知</a>をご参照ください。</li>
+	<li class="gt-block notranslate language-editable" data-gt-block=""><strong>+複数のCDN設定を追加</strong>  - 追加するCDNの<strong>ラベル</strong>や<strong>URL</strong>を入力します。これは、メインCDNに動画のセグメントを求めることができるようにするためのCDNのホワイトリストです。お客様がサブCDNを正しく設定する必要があります。</li>
+	<li class="gt-block notranslate language-editable" data-gt-block=""><strong>スタティックエントリポイント（SEP）を使用して、定期的なイベントとして作成します。</strong>   - 単一のライブストリームを作成し、必要に応じてアクティブ化/非アクティブ化することができます。 詳細については、 <a class="nturl" href="#intro_recurring/index.html" data-no-instant="">定期的なイベントの概要</a>をご参照ください。</li>
+</ul><p data-gt-block="" class="gt-block gt-block notranslate"><strong>設定の編集</strong>をクリックして、ライブストリームの作成に使用されるAPIリクエストを表示/編集します。APIリクエストを編集する場合は注意が必要です。</p>
+</section><section class="bcls-section"><h2 id="intro_recurring" data-gt-block="">定期的なイベントの概要</h2>
+
+<p data-gt-block="" class="gt-block gt-block notranslate"><strong>スタティックエントリポイント（SEP）を使用して、定期的なイベントとして作成</strong>  のオプションを選択することで同じエントリポイントのURLとプレイバックURLを保持したまま有効化および無効化することができる長期間実行可能なライブストリームを使用することができます。定期的なイベントを使用する場合、ストリーミングエンドポイントのURLと動画IDは変更されません。</p>
+
+<p class="gt-block gt-block notranslate BCL-aside" data-gt-block="">定期的なイベントを作成すると、Mediaモジュールでそのイベント用の動画が自動的に作成されることに注意してください。 イベントが使用される度に必要になるため、<strong>この動画を削除しないでください</strong> </p>
+
+<h3 data-gt-block="">制限事項</h3>
+
+<p data-gt-block="">定期的なイベントを処理する場合、以下の制限が適用されます。</p>
+
+<ul><li class="gt-block notranslate language-editable" data-gt-block=""><strong>完了後、イベントを動画アセットに変換</strong>  オプションは利用できません。別の方法としては、クリッピングを使用して、すべてのライブイベントをVODとしてアーカイブすることです。クリップは、ストリームの次回のアクティブ化まで、または７日間のいずれかまでに作成できます。 ストリームが再度アクティブになると、以前のセッションはサーバーから削除され、クリップできなくなります。</li>
+	<li class="language-editable" data-gt-block="">ジョブ設定は変更できません。定期的なイベントを作成した設定のままです。</li>
+	<li class="language-editable" data-gt-block="">ストリームを有効にすると、イベントが利用可能になるまで60秒かかることがあります。 一部のエンコーダには再接続（Wirecast、Elementalなど）が組み込まれているため、エンコーダはエントリポイントが利用可能になるとすぐに再接続します。</li>
+	<li class="gt-block notranslate language-editable" data-gt-block=""><strong>再接続時間</strong>  エンコーダの切断時の定期的なイベントにも適用されます。 もし <strong>再接続時間</strong>  に達すると、定期的なイベントは非アクティブ状態になります。ジョブが完了した時にストリームを無効化すること、また、切断された時の待ち時間に適切な時間枠で<strong>再接続時間</strong>（この待機期間中に入力時間コストが発生するため）を設定することをお勧めします。</li>
+	<li class="language-editable" data-gt-block="">定期的なイベントを無効にする前に、エンコーダを停止する必要があります。 アカウントには、一定の定期的なイベントが割り当てられます。 制限に達すると、定期的なイベントのXNUMXつを停止してから新しいイベントを作成する必要があります。 定期的イベントの最大数に達して別のイベントを作成しようとすると、エラーが発生します。</li>
+</ul></section><section class="bcls-section"><h2 id="work_recurring" data-gt-block="">定期的なイベントの設定</h2>
+
+<p data-gt-block="" class="gt-block gt-block notranslate">定期的なイベントを作成するには、 <strong>スタティックエントリポイント（SEP）を使用して、定期的なイベントとして作成</strong>を選択し、<strong>イベントの作成</strong>をクリックします。</p>
+
+<div data-gt-block="" class="gt-block"><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node18470-recurring-event-selected.png"></div>
+
+<p data-gt-block="" class="gt-block gt-block notranslate">定期的イベントが作成されると、そのイベントは「イベントの管理」ページの<strong>スタンバイ</strong>タブに表示されます。</p>
+
+<div data-gt-block="" class="gt-block"><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node18470-standby-tab.png"></div>
+
+<p data-gt-block="">定期的なイベントのステータスは、以下のいずれかになります。</p>
+
+<ul><li class="gt-block notranslate language-editable" data-gt-block=""><strong>非アクティブ</strong>  - 定期的なイベントが作成され、ストリーミングが開始されていない</li>
+	<li class="gt-block notranslate language-editable" data-gt-block=""><strong>待機中</strong>  - 定期的なイベントがアクティブになり、ストリーム入力を待っています。</li>
+	<li class="gt-block notranslate language-editable" data-gt-block=""><strong>ストリーミング</strong>  - 定期的なイベントが進行中</li>
+	<li class="gt-block notranslate language-editable" data-gt-block=""><strong>切断</strong>  - 定期的なイベントは停止中です。</li>
+	<li class="gt-block notranslate language-editable" data-gt-block=""><strong>無効化</strong>  - 定期的なイベントが無効になっている</li>
+	<li class="gt-block notranslate language-editable" data-gt-block=""><strong>アーカイブ</strong>   - 定期的なイベントがアーカイブされています</li>
+</ul><h3 data-gt-block="">定期的なイベントのアクティブ化</h3>
+
+<p data-gt-block="">定期的なイベントを有効にすると、ジョブをストリーミングで利用できるようになります。 定期的イベントは、エンコーダが開始される前にアクティブ化する必要があります。 定期的なイベントを有効にするには：</p>
+
+<ol class="bcls-tasklist"><li class="gt-block notranslate language-editable" data-gt-block=""><strong>スタンバイ</strong>タブをクリックします。</li>
+	<li class="language-editable" data-gt-block="">イベント名をクリックして、コントロールルームでイベントを開きます。</li>
+	<li class="gt-block notranslate language-editable" data-gt-block=""><strong>アクティブ化</strong>をクリックします</li>
+	<li class="language-editable" data-gt-block="">エンコーダを起動します</li>
+</ol><p data-gt-block="" class="gt-block gt-block notranslate">定期的なイベントがアクティブになると、<strong>スタンバイ</strong>タブから <strong>ライブ</strong>タブへ移動します</p>
+
+<h3 data-gt-block="">定期的なイベントの無効化</h3>
+
+<p data-gt-block="">定期的なイベントを無効にすると、ストリーミングのジョブを無効にします。イベントが終了したら、定期的なイベントを無効化する必要があります。 定期的なイベントを無効にするには：</p>
+
+<ol class="bcls-tasklist"><li class="gt-block notranslate language-editable" data-gt-block=""><strong>ライブ</strong>タブをクリックします。</li>
+	<li class="language-editable" data-gt-block="">イベント名をクリックして、コントロールルームでイベントを開きます。</li>
+	<li class="gt-block notranslate language-editable" data-gt-block=""><strong>無効化</strong>をクリックします</li>
+	<li class="language-editable" data-gt-block="">エンコーダーを停止します。</li>
+</ol><h3 data-gt-block="">定期的なイベントのアーカイブ</h3>
+
+<p data-gt-block="" class="gt-block gt-block notranslate">定期的なイベントをアーカイブすると、ジョブは永続的に非アクティブ化され、ストリーミングを有効にすることはできません。 最終的にイベントは削除されます。 ストリーミングが開始されたイベントのみをアーカイブできます。 定期的なイベントが作成され、ストリーミングが開始されなかった場合、<strong>アーカイブ</strong>  ボタンではなく、<strong>キャンセル</strong>  ボタンが表示されます。</p>
+
+<p data-gt-block="">定期的なイベントをアーカイブするには：</p>
+
+<ol class="bcls-tasklist"><li class="gt-block notranslate language-editable" data-gt-block=""><strong>スタンバイ</strong>タブをクリックします。</li>
+	<li class="language-editable" data-gt-block="">イベントをクリックして選択します。</li>
+	<li class="gt-block notranslate language-editable" data-gt-block=""><strong>アーカイブ</strong>をクリックします。</li>
+</ol></section><section class="bcls-section"><h2 id="controlroom" data-gt-block="">コントロールルームからのライブイベント情報の確認</h2>
+
+<p data-gt-block="" class="gt-block gt-block notranslate">コントロールルームページは、ライブイベントに関する情報を確認するために使用できます。新しいライブイベントを作成してストリーミングが始まると、コントロールルームページが開き、イベント情報が表示されます。イベントのプレビューがプレビュープレイヤーに表示されます。[管理]画面でイベントをクリックしたときにも[コントロールルーム]ページが表示されます。ストリーム中にプレビュープレーヤーの下の<strong>モニター</strong>  タブの <a class="nturl" href="#monitor/index.html" data-no-instant="">モニター情報を確認</a> をクリックしてください。</p>
+
+<div data-gt-block="" class="gt-block"><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node18470-control-room.png"></div>
+
+<p data-gt-block="" class="gt-block gt-block notranslate">コントロールルームページの <strong>イベント情報</strong> タブは以下のセクションに分かれています。</p>
+
+<ul><li class="gt-block language-editable" data-gt-block=""><a class="nturl" href="#eventstatus/index.html">イベントステータス</a></li>
+	<li class="gt-block language-editable" data-gt-block=""><a class="nturl" href="#eventinfo/index.html">イベント情報</a></li>
+	<li class="gt-block language-editable" data-gt-block=""><a class="nturl" href="#clips/index.html">クリップ</a></li>
+	<li class="gt-block language-editable" data-gt-block=""><a class="nturl" href="#renditions/index.html">レンディション</a></li>
+	<li class="gt-block notranslate language-editable" data-gt-block=""><a class="nturl" href="#rtmp/index.html" data-no-instant="">RTMP</a></li>
+	<li class="gt-block language-editable" data-gt-block=""><a class="nturl" href="#social_event/index.html">Social イベント</a></li>
+</ul><p data-gt-block="" class="gt-block gt-block notranslate">ストリーム中にストリーミングを停止する場合はプレビュープレーヤーの下のタブの<strong>モニター</strong>で<a class="nturl" href="#monitor/index.html" data-no-instant="">モニター情報を確認</a>をクリックしてください。</p>
+
+<div data-gt-block="" class="gt-block">
+<h3 id="eventstatus" data-gt-block="">イベントステータス</h3>
+
+<p data-gt-block="">[イベントステータス]セクションは、イベントの進行中にのみ表示されます。 以下の情報が表示されます。</p>
+
+<ul><li class="gt-block language-editable" data-gt-block=""><strong>ジョブのステータス</strong>  - 現在のジョブステータス
+
+	<ul><li class="gt-block language-editable" data-gt-block=""><strong>ストリーミング</strong> - ストリーム中です</li>
+		<li class="gt-block notranslate language-editable" data-gt-block=""><strong>処理エラー</strong>  -  ライブストリーム中にエラーが発生しました</li>
+		<li class="gt-block notranslate language-editable" data-gt-block=""><strong>スタンバイ</strong>   - アクティブにできるストリーム（スタティクエントリポイントのみ）</li>
+		<li class="gt-block notranslate language-editable" data-gt-block=""><strong>停止</strong>  - ライブストリームを停止し、VODを作成しています</li>
+		<li class="gt-block notranslate language-editable" data-gt-block=""><strong>完了</strong>  - ライブストリームが完了しました</li>
+		<li class="gt-block notranslate language-editable" data-gt-block=""><strong>キャンセル中</strong>  - ライブストリームは停止しており、保留中のVOD出力は処理されません</li>
+		<li class="gt-block language-editable" data-gt-block=""><strong>キャンセル</strong>  - ライブストリームがキャンセルされました</li>
+		<li class="gt-block notranslate language-editable" data-gt-block=""><strong>切断</strong>   - エンコーダとの接続が切断されました</li>
+		<li class="gt-block notranslate language-editable" data-gt-block=""><strong>待機中</strong>   -  RTMPストリームの待機中（エンコーダの開始待ちです）</li>
+		<li class="gt-block notranslate language-editable" data-gt-block=""><strong>失敗</strong>   - システムエラーの結果としてジョブが停止しました</li>
+	</ul></li>
+	<li class="gt-block language-editable" data-gt-block=""><strong>現在の視聴者</strong>  - 現在の視聴者の数。 これは単なる見積もりであり、観客の視聴者数が少ないイベントでは正確ではないことにご注意ください。</li>
+	<li class="gt-block notranslate language-editable" data-gt-block=""><strong>経過時間 -</strong>ストリームの<strong>開始</strong>からのストリーム経過時間（作成時ではない）</li>
+	<li class="gt-block language-editable" data-gt-block=""><strong>現在の時刻 - </strong>現在のUTC時間</li>
+</ul></div>
+
+<div data-gt-block="" class="gt-block">
+<h3 id="eventinfo" data-gt-block="">イベント情報</h3>
+
+<p data-gt-block="">[イベント情報]セクションには、次の情報が表示されます。</p>
+
+<ul><li class="gt-block notranslate language-editable" data-gt-block=""><strong>名前</strong>   - イベントの名前</li>
+	<li class="gt-block notranslate language-editable" data-gt-block=""><strong>ジョブID</strong>   - インターナルジョブID</li>
+	<li class="gt-block language-editable" data-gt-block=""><strong>動画ID</strong></li>
+	<li class="gt-block language-editable" data-gt-block=""><strong>短い説明</strong></li>
+	<li class="gt-block language-editable" data-gt-block=""><strong>タグ</strong></li>
+	<li class="gt-block language-editable" data-gt-block=""><strong>参照ID</strong></li>
+	<li class="gt-block notranslate language-editable" data-gt-block=""><strong>ソーシャルメディアにストリーミング</strong>  - <strong>許可された</strong>ライブイベントは、予定されているソーシャルイベントに割り当てることができます。</li>
+	<li class="gt-block language-editable" data-gt-block=""><strong>ストリーミングエンドポイント（RTMP URL</strong>） - エンコーダによって使用されるストリーミングエンドポイント</li>
+	<li class="gt-block language-editable" data-gt-block=""><strong>ストリーム名</strong> - エンコーダによって使用されるストリーム名</li>
+	<li class="gt-block notranslate language-editable" data-gt-block=""><strong></strong>   - ストリーミング地域</li>
+	<li class="gt-block notranslate language-editable" data-gt-block=""><strong>プレイバックURL</strong>  - ライブストリームをBrightcove Player以外でも表示するために使用できるURL</li>
+</ul></div>
+
+<div data-gt-block="" class="gt-block">
+<h3 id="clips" data-gt-block="">クリップ</h3>
+
+<p data-gt-block="" class="gt-block gt-block notranslate">[クリップ]セクションには、ライブストリームから作成されたすべてのクリップが表示されます。 クリップ名をクリックすると、メディアモジュールのクリップが開きます。クリップを作成する方法については、 <a class="nturl" href="..//support.brightcove.com/ja/ja/creating-video-clip-using-live-module/index.html" data-no-instant="">Liveモジュールを使用してビデオクリップを作成する</a>をご参照ください。</p>
+</div>
+
+<div data-gt-block="" class="gt-block">
+<h3 id="renditions" data-gt-block="">レンディション</h3>
+
+<p data-gt-block="">[レンディション]セクションには、作成されたレンディションに関する詳細が表示されます。 レンディションリンクをクリックすると、レンディションのエンコード設定が表示されます。</p>
+</div>
+
+<div data-gt-block="" class="gt-block">
+<h3 id="rtmp" data-gt-block="">RTMP</h3>
+
+<p data-gt-block="">RTMPセクションを使用してRTMP出力を追加できます。 これにより、ライブストリームを他のRTMPエントリポイントに送信できます。 これを使って、例えばFacebookやYouTubeにストリーミング配信することができます。</p>
+
+<div data-gt-block="" class="gt-block"><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node18470-rtmp.png"></div>
+
+<p data-gt-block="" class="gt-block gt-block notranslate"><strong>RTMP出力URL</strong>と送信する<strong>レンディション</strong>を入力してください。出力URLの形式は、RTMPストリームが使用されている場所によって変わる可能性があることに注意してください。 詳細については、<a class="nturl" href="..//support.brightcove.com/ja/ja/using-live-rtmp-outputs-stream-facebook-and-youtube/index.html" data-no-instant="">FacebookおよびYouTubeにストリーミングするためにのライブRTMP出力</a>をご参照ください。</p>
+</div>
+
+<div data-gt-block="" class="gt-block">
+<h3 id="social_event" data-gt-block="">Social イベント</h3>
+
+<p data-gt-block="" class="gt-block gt-block notranslate">Socialイベントセクションには、ライブストリームに割り当てれている場合、<a class="nturl" href="#social/index.html" data-no-instant="">予定されたSocialイベント</a>に関する情報が表示されます。 </p>
+
+<div data-gt-block="" class="gt-block"><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node18470-social-event.png"></div>
+</div>
+</section><section class="bcls-section"><h2 id="monitor" data-gt-block="">イベントをモニターする</h2>
+
+<p data-gt-block="" class="gt-block gt-block notranslate">モニター情報を確認するためには、プレビュープレーヤーの下の<strong>モニター</strong>タブをクリックしてください。モニター情報は、イベントの進行中およびイベント終了後最大１時間使用可能です。</p>
+
+<p class="BCL-aside" data-gt-block="">注：デフォルトで、モニターモジュールは出力および入力ドリフトグラフのみを表示します。 拡張バージョンのモニターが必要な場合は、Brightcoveアカウント担当者までお問い合わせください。</p>
+
+<p data-gt-block="" class="gt-block gt-block notranslate">左側のナビゲーションで<strong>レポート作成</strong>をクリックし、<a class="nturl" href="..//support.brightcove.com/ja/ja/reviewing-live-analytics/index.html" data-no-instant="">ライブアナリティクス</a>を確認する。</p>
+
+<div data-gt-block="" class="gt-block"><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node18470-monitoring.png"></div>
+
+<p data-gt-block="" class="gt-block gt-block notranslate"><strong>グラフを選択</strong>をクリックし、どのグラフを表示するか、および各グラフに含まれる内容の説明を選択します。</p>
+</section><section class="bcls-section"><h2 id="duplicate" data-gt-block="">イベントの複製</h2>
+
+<p data-gt-block="">イベントを複製すると、以前のライブイベントを作成するのに使用されたのと同じ設定の別のイベントを簡単に作成することができます。イベントを複製するには、以下の手順を実行します。</p>
+
+<ol class="bcls-tasklist"><li class="language-editable" data-gt-block="">イベントをクリックしてコントロールルームページを開きます。</li>
+	<li class="gt-block notranslate language-editable" data-gt-block="">ページ上部にある<strong>重複イベント</strong>をクリックします。以前のライブイベントの設定を使用した新しいライブイベントが作成されます。必要に応じてイベントのプロパティを変更します。</li>
+	<li class="gt-block notranslate language-editable" data-gt-block=""><strong>イベントの作成</strong>をクリックします。</li>
+</ol></section><section class="bcls-section"><h2 id="publish" data-gt-block="">ライブイベントの埋め込みコードの作成</h2>
+
+<p data-gt-block="" class="gt-block gt-block notranslate">イベントの埋め込みコードを作成するためには、左側のナビゲーションの<strong>公開と埋め込み&gt;プレーヤーの設定</strong>をクリックします。2種類の埋め込みコードがご利用できます。</p>
+
+<ul><li class="gt-block notranslate language-editable" data-gt-block=""><strong>スタンダード</strong>   -  iframe埋め込みコード。 ほとんどの場合に推奨されます。このタイプは、プレーヤーを&lt;iframe&gt;タグ内に置きます。</li>
+	<li class="gt-block language-editable" data-gt-block=""><strong>高度な</strong>  - ページはめ込みコード。 プレーヤがiframeではなくHTMLページに直接存在することを許可します。 これにより、プレイヤーや関連するプロパティやイベントに簡単にアクセスできるという利点が開発者に提供されます。</li>
+</ul><p data-gt-block="">また、公開されたプレーヤーにURLを取得する機能もあります。 これは、ブラウザでイベントを表示するのに便利です。</p>
+
+<p data-gt-block="">ライブイベントの埋め込みコードを生成するには、次の手順を実行します。</p>
+
+<ol class="bcls-tasklist"><li class="language-editable" data-gt-block="">イベントをクリックしてコントロールルームページを開きます。</li>
+	<li class="gt-block language-editable" data-gt-block="">ナビゲーションヘッダーの<strong> 公開と埋め込み&gt;プレーヤーの設定</strong> 左側のナビゲーションで。</li>
+	<li class="gt-block language-editable" data-gt-block="">ドロップダウンリストから <strong>プレーヤー</strong>.
+	
+	<p data-gt-block="">注：イベントがサーバー側の広告（SSAI）、DVRまたはマルチCDNを有効にするように設定されている場合は、 Brightcove Player バージョン6.18.3以上を使用する必要があります。 6.18.3以上のプレイヤーのみがドロップダウンリストに表示されます。</p>
+	</li>
+	<li class="gt-block language-editable" data-gt-block="">ブドウやコーヒーチェリーのような甘い果実の発酵過程において、野生酵母は糖類を用いてアルコール発酵します。 アルコールは酢酸菌によって更に<i> 酢酸</i>（お酢）に転化します。 <strong>DVRを許可</strong> がチェックされていると、プレーヤーはライブマニフェストの代わりにDVRマニフェストを要求します。 このオプションは、イベントが <strong>クラウドDVRを作成する</strong> オプションが選択されています。 イベントがを使用して公開されている場合 Brightcove Player 6.33.0より前のバージョン <a class="nturl" href="..//support.brightcove.com/ja/live-dvrux-plugin/index.html">Live DVRUXプラグイン</a> 必要とされている。
+	<aside class="gt-block bcls-aside bcls-aside--information" data-gt-block=""> 
+	<ul><li class="language-editable" data-gt-block="">「DVRを許可する」機能は、現時点ではギャラリーモジュールと互換性がありません。</li>
+		<li class="gt-block language-editable" data-gt-block="">「DVRを許可する」オプションを選択すると、その値は次のように変更されます。 <strong>adConfigId = live</strong>.</li>
+	</ul></aside></li>
+	<li class="gt-block language-editable" data-gt-block="">ストリーミングを停止する場合は上部の <strong>プレーヤーの URL</strong> ブラウザでイベントをプレビューするか、適切な埋め込みコードをコピーして使用します。
+	<div data-gt-block="" class="gt-block"><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node18470-publish-event.png"></div>
+
+	<p data-gt-block="">プレビューする別のオプション Live ストリーミングはAPIを介して行われます。</p>
+
+	<p data-gt-block="" class="gt-block gt-block">コピー <strong>playing_url</strong> 作成から返された値 Live を使用して仕事 Live API、Safariブラウザに貼り付けます。 このブラウザはネイティブHLS再生をサポートしているため、ライブストリームが表示されます。</p>
+
+	<div data-gt-block="" class="gt-block"><img class="bcls-image--no-border" alt="" width="800" height="500" src="https://learning-services-media.brightcove.com/doc-assets/node/18470-creating-and-managing-live-events-using-live-module/0.png"></div>
+
+	<p data-gt-block="">また、URLをコピーして、 Brightcove Player 参照アプリはこちら：</p>
+
+	<p data-gt-block="" class="gt-block gt-block"><a class="nturl" href="https://players.brightcove.net/3303963094001/player-reference-app/index.html">https://players.brightcove.net/3303963094001/player-reference-app/index.html </a></p>
+
+	<div data-gt-block="" class="gt-block"><img class="bcls-image--no-border" alt="" width="800" height="500" src="https://learning-services-media.brightcove.com/doc-assets/node/18470-creating-and-managing-live-events-using-live-module/1.png"></div>
+	</li>
+</ol></section><section class="bcls-section"><h2 id="social" data-gt-block="">ソーシャルメディアへの接続</h2>
+
+<p data-gt-block="" class="gt-block gt-block">ライブイベントをその日に予定されていた社交イベントに結び付けることは可能です。 Social モジュール。 ライブイベントをソーシャルイベントに結び付ける前に、 <a class="nturl" href="..//support.brightcove.com/ja/publishing-live-event-facebook/index.html">にライブイベントを作成する Social モジュール</a>。 で作成されたイベントのみ <strong>ストリーミング Social 언론방송</strong> 設定は <strong>許可された</strong> スケジュールされたイベントに割り当てることができます。</p>
+
+<p data-gt-block="">ライブイベントをソーシャルイベントに関連付けるには、次の手順に従います。</p>
+
+<ol class="bcls-tasklist"><li class="gt-block language-editable" data-gt-block=""><a class="nturl" href="..//support.brightcove.com/ja/publishing-live-event-facebook/index.html">でライブイベントを作成する Social モジュール</a>.</li>
+	<li class="language-editable" data-gt-block="">イベントをクリックしてコントロールルームページを開きます。</li>
+	<li class="gt-block language-editable" data-gt-block="">ナビゲーションヘッダーの <strong>公開して埋め込む&gt;接続する Social 언론방송 </strong>左側のナビゲーション 予定されている社交イベントのリストが表示されます。 イベントが表示されない場合は、スケジュールされたイベントはありません。</li>
+	<li class="gt-block language-editable" data-gt-block="">予定されているイベントをクリックしてから、をクリックします。 <strong>SNS</strong>.
+	
+	<div data-gt-block="" class="gt-block"><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node18470-select-social-event.png"></div>
+	</li>
+</ol><p data-gt-block="">Once イベントは Live モジュール、に戻る Social イベントをプレビューし、ソーシャルプラットフォームへのストリーミングプロセスを開始するモジュール。</p>
+</section><section class="bcls-section"><h2 id="clip" data-gt-block="">クリップの作成</h2>
+
+<p data-gt-block="" class="gt-block gt-block">クリップは、イベントの進行中またはイベントの終了後に作成できます。 クリップを作成できない場合は、カーソルを合わせるとメッセージが表示されます。 <strong>クリップの作成</strong> 左側のナビゲーション クリップの作成については、を参照してください。 <a class="nturl" href="..//support.brightcove.com/ja/creating-video-clip-using-live-module/index.html">Live モジュールを使用してビデオクリップを作成する</a>.</p>
+
+<aside class="gt-block bcls-aside bcls-aside--information" data-gt-block=""> 
+<ul><li class="gt-block language-editable" data-gt-block="">
+	<p data-gt-block="">ライブイベントが終了してから7日間は、ストリームをクリッピングに使用できます。</p>
+	</li>
+	<li class="gt-block language-editable" data-gt-block="">
+	<p data-gt-block="">静的エントリポイント（繰り返し）ストリームの場合：ストリーム後の7日の間に、ストリームが2ndストリームで再アクティブ化された場合、クリッピングは2ndストリームのコンテンツでのみ使用できます。 1stストリームはその時点でクリアされ、ストリームが非アクティブ化されてから7日未満であっても、それからクリップを作成する方法はありません。</p>
+	</li>
+</ul></aside></section><section class="bcls-section"><h2 id="ad" data-gt-block="">広告をリクエストする</h2>
+
+<p data-gt-block="" class="gt-block gt-block">もし <strong>サーバーサイド広告挿入（SSAI）を有効にする</strong> イベントが作成されたときにオプションが選択された場合、コントロールルームページには <strong>広告に行く</strong> ボタン。 クリックすると、広告ブレークの長さを選択できます。</p>
+
+<div data-gt-block="" class="gt-block"><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node18470-goto-ad.png"></div>
+
+<p data-gt-block="" class="gt-block gt-block">ナビゲーションヘッダーの <strong>インセット</strong> ライブストリームに広告ブレークを挿入します。 広告が広告の中断時間全体を埋めていない場合は、塗りつぶしの状態が表示されます。 でサーバーサイド広告を操作する方法については、 Live モジュール、参照してください <a class="nturl" href="..//support.brightcove.com/ja/implementing-server-side-ads-live-module/index.html">サーバーサイド広告の実装 Live モジュール</a>.</p>
+</section><section class="bcls-section"><h2 id="captions" data-gt-block="">キャプション</h2>
+
+<p data-gt-block="">Brightcove Live 現在、バンド内の608キャプション（h.264ヘッダー内）をサポートしています。 キャプションがh.264入力信号（user_dataパケットに正しくシグナリングされている）の中にある場合、それらはh.264出力に渡されます。</p>
+
+<p data-gt-block="">ブロードキャストElementalライブエンコーダを使用している場合、SDI（EIA-608 / CEA-608）または他のソース（SCTE-20、SCC、テレテキスト、DVB-Sub、補助、ARIB、TTML、SCTE-27、 STL、SRT、SMI）に送信し、あなたが私たちに送るh.264ストリームに入れてください。 他の放送グレードのエンコーダでも同じことが可能ですが、正式にテストしていません。</p>
+
+<p data-gt-block="" class="gt-block gt-block">WebVTTのキャプションは <strong>Studio上ではサポートされていません。</strong> サポートされている Live ストリーム。</p>
+
+<p data-gt-block="">挽き目 Brightcove Player インバンドキャプションをサポートしています。</p>
+</section><section class="bcls-section"><h2 id="trouble" data-gt-block="">ライブストリームの問題のトラブルシューティング</h2>
+
+<p data-gt-block="" class="gt-block gt-block">ライブイベントを成功させるためにさらに支援が必要な場合は、 <a class="nturl" href="../ja/en/contact/create/index.html">当社までご連絡ください。</a>確実に最速の応答を得るために、以下は問題を解決するためにサポートが必要な項目の一覧です。</p>
+
+<ul><li class="language-editable" data-gt-block="">該当のストリームに起こっている特定の症状。たとえば、まったく再生されないか、部分的に短いループを繰り返すのか、フリーズするのか</li>
+	<li class="language-editable" data-gt-block="">該当のストリームが過去に正しく機能していたかどうか</li>
+	<li class="language-editable" data-gt-block="">エンコーダーで使用しているエントリーポイントの URL</li>
+	<li class="language-editable" data-gt-block="">あなたが使っているエンコーディングソフトウェアとハ​​ードウェア</li>
+	<li class="language-editable" data-gt-block="">ライブイベントを公開したプレーヤーへの URL</li>
+	<li class="language-editable" data-gt-block="">Video Cloud Studio のライブアセットの動画 ID</li>
+	<li class="language-editable" data-gt-block="">エンコーダーから公開ポイントホストへのトレースルートの結果</li>
+</ul></section><!-- End of Drupal content --></div>
+      
+</div>
+
+</div>
+
+
+<section class="views-element-container block block-views block-views-blockrelated-content-by-field-block-1 clearfix" id="block-views-block-related-content-by-field-block-1">
+  
+    
+
+      <div class="gt-block form-group" data-gt-block=""><div class="gt-block view view-related-content-by-field view-id-related_content_by_field view-display-id-block_1 js-view-dom-id-4fb5bec89b08a1f266b825f142721043da986ed385a6c9fb2e087625ee08d5d7" data-gt-block="">
+  
+    
+      <div class="gt-block view-header" data-gt-block="">
+      <h2 data-gt-block="" id="bc-ipnav-17">関連コンテンツ</h2>
+    </div>
+      
+      <div class="gt-block view-content" data-gt-block="">
+      <div class="gt-block item-list" data-gt-block="">
+  
+  <ul>
+
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/creating-video-clip-using-live-module/index.html" hreflang="en">Live モジュールを使用してビデオクリップを作成する</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/using-live-rtmp-outputs-stream-facebook-and-youtube/index.html" hreflang="en">使い方 Live FacebookおよびYouTubeにストリーミングするRTMP出力</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/managing-live-settings/index.html" hreflang="en">管理する Live 設定</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/publishing-live-event-facebook/index.html" hreflang="en">公開する Live Facebookへのイベント</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/step-step-using-live-module-telestream-wirecast/index.html" hreflang="en">ステップバイステップ： Live Telestream Wirecastモジュール</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/step-step-using-live-module-open-broadcaster-software-obs/index.html" hreflang="en">ステップバイステップ： Live オープンブロードキャスタソフトウェア（OBS）を備えたモジュール</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/configuring-server-side-ad-settings/index.html" hreflang="en">サーバー側の広告設定の構成</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/implementing-server-side-ads-live-module/index.html" hreflang="en">サーバーサイド広告の実装 Live モジュール</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/reviewing-live-analytics/index.html" hreflang="en">検討する Live アナリティクス</a></span></span></div></li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </section>
+
+
+  </div>
+
+              </section>
+
+                </div>
+  </div>
+
+      <footer class="footer container" role="contentinfo">
+              <div class="gt-block row" data-gt-block="">
+            <div class="gt-block region region-footer-top-left col-md-9" style="margin-bottom: 1em;" data-gt-block="">
+    <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">Brightcove サポート</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="https://status.brightcove.com">システムステータス</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/contact-support/index.html" data-drupal-link-system-path="node/18632">サポート - Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="../ja/en/contact/create/index.html">サポート - Zencoder</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-documentation-menu" id="block-documentation" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">オンラインマニュアル</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/index.html" data-drupal-link-system-path="<front>">ホーム</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">トレーニング（講習会）</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/online-training-courses/index.html" data-drupal-link-system-path="node/18286">オンラインコース</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/register-training/index.html" data-drupal-link-system-path="node/18270">コー​​スに登録</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-brightcove-menu" id="block-brightcove" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">Brightcove</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="https://www.brightcove.com">Brightcove.COM</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+            <div class="gt-block region region-footer-top-right col-md-3" data-gt-block="">
+    <section id="block-footerlegaltext" class="block block-block-content block-block-content4507d09c-a528-4947-b91d-36ec6671822b clearfix">
+  
+    
+
+      
+            <div class="gt-block field field--name-field-body field--type-text-long field--label-hidden field--item" data-gt-block=""><p data-gt-block="">Brightcove Inc.（ナスダック：BCOV）は、接続されたデバイス間でビデオを配信および収益化するための強力なクラウドソリューションを提供する世界有数のプロバイダです。</p>
+</div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+                    <div class="gt-block row" data-gt-block="">
+            <div class="gt-block region region-footer-bottom-left col-md-8" data-gt-block="">
+    <section id="block-footercopyrightlinewithlinks" class="block block-block-content block-block-content3a164ef9-02d8-42c4-bcc6-3ab435f670b3 clearfix">
+  
+    
+
+      <div class="gt-block block-content block-content--type-copyright-block-with-links block-content--view-mode-full ds-1col clearfix" data-gt-block="">
+
+  
+
+  
+            <div class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" data-gt-block="">2020</div>
+      
+            <div class="field field--name-field-copyright-text field--type-string-long field--label-hidden field--item" data-gt-block="">Brightcove Inc.すべての権利を保有します。</div>
+      
+      <div class="gt-block field field--name-field-legal-links field--type-link field--label-hidden field--items" data-gt-block="">
+              <div class="gt-block field--item" data-gt-block=""><a class="nturl" href="https://www.brightcove.com/en/privacy">プライバシーポリシー</a></div>
+              <div class="gt-block field--item" data-gt-block=""><a class="nturl" href="https://www.brightcove.com/en/terms-and-conditions">利用規約</a></div>
+          </div>
+  
+
+</div>
+
+
+  </section>
+
+
+  </div>
+
+            <div class="gt-block region region-footer-bottom-right col-md-4" data-gt-block="">
+    <section id="block-footersocialblock" class="block block-block-content block-block-content4fc23afd-8d37-420e-ab28-73b2ba24e836 clearfix">
+  
+    
+
+      
+      <div class="gt-block field field--name-field-social-icon field--type-entity-reference-revisions field--label-hidden field--items" data-gt-block="">
+              <div class="gt-block field--item" data-gt-block="">
+
+<a class="icon" icon__social--link="" href="https://www.linkedin.com/company/brightcove" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--linkedin">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--linkedin"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="gt-block field--item" data-gt-block="">
+
+<a class="icon" icon__social--link="" href="https://twitter.com/brightcove" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--twitter">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--twitter"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="gt-block field--item" data-gt-block="">
+
+<a class="icon" icon__social--link="" href="https://www.facebook.com/Brightcove" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--facebook">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--facebook"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="gt-block field--item" data-gt-block="" style="display:none;color:white">
+
+<a class="icon" icon__social--link="" href="https://plus.google.com/100830370440271567091" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--google-plus">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--google-plus"></use>
+  </svg>
+</a>
+
+</div>
+          </div>
+  
+
+
+  </section>
+
+<section id="block-scripts" class="block block-block-content block-block-content42e4bd63-d879-470d-a6de-d5e4529a01be clearfix">
+  
+    
+
+      
+            <div class="gt-block field field--name-field-body field--type-text-long field--label-hidden field--item" data-gt-block=""><script src="https://learning-services-media.brightcove.com/doc-assets/js/gtrans.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/js/support-feedback.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-support.js"></script>
+<script src="https://learning-services-media.brightcove.com/doc-assets/js/hide-google-plus.js"></script></div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+          </footer>
+  
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/18470","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click"},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"user":{"uid":0,"permissionsHash":"3b7fdb4927baca3ee2939edeb777485b3e2c2d36cf8c80e0d8f49c6dc5e2eeca"}}</script>
+<script src="https://support.brightcove.com/sites/default/files/js/js_8fmTAXGyuAUNVu11XoXJaeM8QBDFuAvX7ADwOnigrhc.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+<script src="https://support.brightcove.com/sites/default/files/js/js_L8Eb1bSFk-jGvnjMNZB7VvDJt-7nSbeXfaBlCzWjDbc.js"></script><div id="surveyDiv" style="visibility:hidden"><iframe id="CSAT" src="https://learning-services-media.brightcove.com/doc-assets/general/surveylink.html" style="display:none;"></iframe></div>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e78a80aa93","applicationID":"129613202","transactionName":"YwBUZkcFVktUWhJQX1pKd1FBDVdWGkkHXlVrBldRXQE=","queueTime":0,"applicationTime":28,"atts":"T0dXEA8fRUU=","errorBeacon":"bam.nr-data.net","agent":""}</script><script data-cfasync="false" src="https://tdns5.gtranslate.net/tdn-bin/queue.js"></script><!-- Yandex.Metrika counter for GTranslate --><script data-cfasync="false">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter36618640 = new Ya.Metrika({ id:36618640, clickmap:false, trackLinks:true, accurateTrackBounce:true, ut:"noindex" }); } catch(e) { } }); var n = d.getElementsByTagNam

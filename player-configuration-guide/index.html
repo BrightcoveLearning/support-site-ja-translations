@@ -1,0 +1,1834 @@
+<html lang="ja" dir="ltr" class=" js"><head>
+    <meta charset="utf-8"><script type="text/javascript" src="https://bam.nr-data.net/1/e78a80aa93?a=129613202&amp;v=1167.2a4546b&amp;to=YwBUZkcFVktUWhJQX1pKY0BcSxdRW10DQR5EDUY%3D&amp;rst=9290&amp;ref=https://support.brightcove.com/ja/player-configuration-guide&amp;ap=2113&amp;be=3682&amp;fe=9072&amp;dc=6057&amp;perf=%7B%22timing%22:%7B%22of%22:1588779371947,%22n%22:0,%22f%22:0,%22dn%22:0,%22dne%22:0,%22c%22:0,%22ce%22:509,%22rq%22:509,%22rp%22:2676,%22rpe%22:3690,%22dl%22:3636,%22di%22:6058,%22ds%22:6058,%22de%22:6251,%22dc%22:9073,%22l%22:9073,%22le%22:9082%7D,%22navigation%22:%7B%7D%7D&amp;at=T0dXEA8fRUU%3D&amp;jsonp=NREUM.setToken"></script><script src="https://js-agent.newrelic.com/nr-1167.min.js"></script><script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script><script type="text/javascript" async="" src="//cdn.feedbackify.com/f.js"></script><script async="" src="https://fullstory.com/s/fs.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e78a80aa93",applicationID:"129613202"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e78a80aa93",applicationID:"129613202"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-2728311-17", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)">
+<meta name="MobileOptimized" content="width">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="https://support.brightcove.com/sites/default/files/favicon-64.png" type="image/png">
+<link rel="alternate" hreflang="en" href="https://support.brightcove.com/player-configuration-guide">
+<link rel="canonical" href="https://support.brightcove.com/ja/player-configuration-guide">
+<link rel="shortlink" href="https://support.brightcove.com/ja/node/18262">
+<link rel="revision" href="https://support.brightcove.com/player-configuration-guide">
+
+    <title>プレーヤー設定ガイド| Brightcove 学習</title>
+    <link rel="stylesheet" media="all" href="https://support.brightcove.com/sites/default/files/css/css_d7PoQ20hWbRiei75VgExP_tm8C1ylIRfzB3zIYLc5Cw.css?q23msc">
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.min.css">
+<link rel="stylesheet" media="all" href="https://support.brightcove.com/sites/default/files/css/css_fr7ugR_m15spMT57voAomC2Aklj0ATM7MmH6hvb3pp4.css?q23msc">
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+    <meta name="uri-translation" content="on">
+    <script>
+window['_fs_debug'] = false; window['_fs_host'] = 'fullstory.com';
+window['_fs_org'] = 'BX3Q1';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+g.consent=function(a){g("consent",!arguments.length||a)};
+g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+g.clearUserCookie=function(){};
+})(window,document,window['_fs_namespace'],'script','user');
+    </script>
+  <style type="text/css">html{_background:url(//about:blank) fixed;}.fby-on select {visibility:hidden!important;}.fby-on .fby-hide-iframe {visibility:hidden!important;}.fby-hide-embed embed {visibility:hidden!important;}.fby-hide-object object {visibility:hidden!important;}@media not screen {.fby-tab {display: none;}}#feedbackify *{box-sizing:content-box!important;-moz-box-sizing:content-box!important;-webkit-box-sizing:content-box!important;}#feedbackify input{box-sizing:border-box!important;-moz-box-sizing:border-box!important;-webkit-box-sizing:border-box!important;max-width:none!important;}#feedbackify *:before{content:none!important;}#feedbackify *:after{content:none!important;}#feedbackify ,#feedbackify div,#feedbackify span,#feedbackify textarea,#feedbackify input,#feedbackify table,#feedbackify tbody,#feedbackify tr,#feedbackify td,#feedbackify img,#feedbackify p,#feedbackify a{border:0!important;outline:none!important;width:auto;height:auto;text-align:left!important;text-indent:0!important;float:none!important;padding:0!important;margin:0!important;font:12px arial,helvetica,sans-serif!important;overflow:visible!important;color:#000!important;line-height:1.2!important;background:0 none!important;position:static!important;vertical-align:baseline!important;box-shadow:none!important;}#feedbackify table{border-collapse:collapse!important;border-spacing:0!important;max-width:inherit!important;width:auto!important;}#feedbackify td{word-break:normal!important;}#feedbackify {z-index:2147483646!important;position:static!important;top:0;left:0;}#feedbackify .fby-screen{z-index:2147483646!important;position:fixed!important;top:0;left:0;width:0;height:100%;_position:absolute!important;_top:expression(eval(document.body.scrollTop||document.documentElement.scrollTop))!important;_left:expression(eval(document.body.scrollLeft||document.documentElement.scrollLeft))!important;_width:0!important;_height:expression(document.documentElement.clientHeight||document.body.clientHeight+"px")!important;}#feedbackify .fby-mask{display:none!important;position:fixed!important;top:0;left:0;width:100%;height:100%;background-color:#000!important;opacity:0.2;filter:alpha(opacity=20);_position:absolute!important;_width:expression(document.documentElement.clientWidth||document.body.clientWidth+"px")!important;_height:expression(this.parentNode.style.height)!important;}#feedbackify .fby-show{display:block!important;visibility:visible!important;}#feedbackify .fby-hide{display:none!important;visibility:hidden!important;}</style><style type="text/css">#feedbackify .fby-tab{position:fixed!important;width:36px;height:100px;overflow:hidden!important;_position:absolute!important;}#feedbackify .fby-tab a{display:block!important;position:absolute!important;width:36px;height:100px;background-color:#000000!important;cursor:pointer!important;background:url(https://cdn.feedbackify.com/img/classic/tab.png)!important;_background:none!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/tab.png)!important;}#feedbackify .fby-tab-l{top:50%;left:0;margin-top:-50px!important;_top:expression((parseInt(this.parentNode.style.height)-this.clientHeight)/2+"px")!important;_margin-top:0!important;}#feedbackify .fby-tab-l a{margin-left:-5px!important;}#feedbackify .fby-tab-l a:hover{margin-left:-2px!important;}#feedbackify .fby-tab-r{top:50%;right:0px!important;margin-top:-50px!important;_top:expression((parseInt(this.parentNode.style.height)-this.clientHeight)/2+"px")!important;_left:expression((document.documentElement.clientWidth||document.body.clientWidth)-this.clientWidth+"px")!important;_margin-top:0!important;}#feedbackify .fby-tab-r a{margin-left:5px!important;}#feedbackify .fby-tab-r a:hover{margin-left:2px!important;}#feedbackify .fby-tab-t{top:0;margin-top:0px!important;}#feedbackify .fby-tab-b{top:auto;bottom:0!important;_top:expression(parseInt(this.parentNode.style.height)-this.clientHeight+"px")!important;}</style><style type="text/css">#feedbackify grammarly-ghost{display:none!important;}#feedbackify grammarly-btn{display:none!important;}#feedbackify #fby-form{z-index:2147483646!important;width:618px!important;position:absolute!important;}#feedbackify .fby-d-main{width:600px;height:50px;vertical-align:top!important;background-color:#FFFFFF!important;position:relative!important;}#feedbackify .fby-d{background:url(https://cdn.feedbackify.com/img/classic/dlg_shad_sprite.png)!important;_background:none!important;}#feedbackify .fby-d-h{height:9px;background:url(https://cdn.feedbackify.com/img/classic/dlg_shad_sprite_h.png)!important;_background:none!important;}#feedbackify .fby-d-h2{height:9px;background-color:#FFFFFF!important;}#feedbackify .fby-d-tl{background-position:-18px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_tl.png)!important;}#feedbackify .fby-d-t{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_t.png,sizingMethod=scale)!important;}#feedbackify .fby-d-tr{background-position:-36px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_tr.png)!important;}#feedbackify .fby-d-l{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_l.png,sizingMethod=scale)!important;}#feedbackify .fby-d-r{background-position:-9px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_r.png,sizingMethod=scale)!important;}#feedbackify .fby-d-bl{background-position:-54px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_bl.png)!important;}#feedbackify .fby-d-br{background-position:-72px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_br.png)!important;}#feedbackify .fby-d-b{background-position:0px -9px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_b.png,sizingMethod=scale)!important;}#feedbackify .fby-d-load{position:relative!important;}#feedbackify .fby-d-load img{position:absolute!important;left:8px;}#feedbackify .fby-d-load div{position:absolute!important;padding:4px 18px!important;font-size:16px!important;font-weight:bold!important;color:#333!important;}</style></head>
+  <body class="path-node page-node-type-support-doc has-glyphicons">
+    <a class="visually-hidden" focusable="" skip-link="" href="#main-content/index.html">
+      メインコンテンツへスキップ
+    </a>
+    
+      <div class="gt-block dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="" data-gt-block="">
+              <header class="navbar navbar-default container" id="navbar" role="banner">
+      <div class="gt-block navigation-secondary clearfix" data-gt-block="">
+          <div class="gt-block region region-navigation-secondary" data-gt-block="">
+    <section id="block-styles" class="block block-block-content block-block-contentfbb71e48-a6cd-4d2b-8239-43f18db69e60 clearfix">
+  
+    
+
+      
+            <div class="gt-block field field--name-field-body field--type-text-long field--label-hidden field--item" data-gt-block=""><link rel="stylesheet" media="all" href="https://learning-services-media.brightcove.com/doc-assets/css/drupal-fix.css"></div>
+      
+  </section>
+
+<nav role="navigation" aria-labelledby="block-secondarynavigation-menu" id="block-secondarynavigation">
+            
+  <h2 class="visually-hidden" id="block-secondarynavigation-menu" data-gt-block="">セカンダリナビゲーション</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/contact-support/index.html" title="サポートリクエストを作成する" data-drupal-link-system-path="node/18632">サポートリクエスト</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://status.brightcove.com/">システムステータス</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://university.brightcove.com/">Brightcove 大学</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<section id="block-gtranslate" class="block block-gtranslate block-gtranslate-block clearfix">
+  
+    
+
+      
+<div class="gt-block gtranslate" data-gt-block="">
+<script type="text/javascript">/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;var lang=lang_pair.split('|')[1];var plang=location.pathname.split('/')[1];if(plang.length !=2 && plang != 'zh-CN' && plang != 'zh-TW')plang='en';if(lang == 'en')location.pathname=location.pathname.replace('/'+plang+'/', '/');else location.pathname='/'+lang+location.pathname.replace('/'+plang+'/', '/');}
+/* ]]> */
+</script><select onchange="doGTranslate(this);"><option value="">言語の選択</option><option value="en|en" style="font-weight:bold;background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -0px;padding-left:18px;">英語</option><option value="en|fr" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -160px;padding-left:18px;">フランス語</option><option value="en|de" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -176px;padding-left:18px;">ドイツ語</option><option value="en|ja" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -240px;padding-left:18px;">日本語</option><option value="en|ko" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -256px;padding-left:18px;">韓国語</option><option value="en|es" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -352px;padding-left:18px;">スペイン語</option></select>
+</div>
+<div class="gtranslate__credits" data-gt-block="">
+  本ドキュメントはGoogle翻訳によって機械翻訳したものとなります
+</div>
+
+  </section>
+
+
+  </div>
+
+      </div>
+      <div class="gt-block navbar-header col-md-3" data-gt-block="">
+                  <a class="logo" navbar-btn="" pull-left="" href="../ja/index.html" title="ホーム" rel="home">
+            <img src="https://support.brightcove.com/themes/custom/bcdocs/images/brightcove.png" alt="ホーム">
+          </a>
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">トグルナビゲーション</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+                    <div class="gt-block navbar-collapse collapse" data-gt-block="">
+            <div class="gt-block region region-navigation-collapsible" data-gt-block="">
+    <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation">
+            <h2 class="sr-only" id="block-mainnavigation-menu" data-gt-block="">メインナビゲーション</h2>
+
+      
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-learning-home/index.html" title="ホームページ" data-drupal-link-system-path="node/18643">ホーム</a>
+                  </li>
+                                            <li class="expanded dropdown">
+        <a class="dropdown-toggle" href="" data-toggle="dropdown">
+          製品紹介
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/video-cloud/index.html" data-drupal-link-system-path="node/18332">Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://gallery.support.brightcove.com">ギャラリー</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-player/index.html" data-drupal-link-system-path="node/18283">Brightcove Player</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/live/index.html" data-drupal-link-system-path="node/18642">Live</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/social/index.html" data-drupal-link-system-path="node/18444">Social</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/audience/index.html" data-drupal-link-system-path="node/18445">Audience</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://zencoder.support.brightcove.com">Zencoder</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/ssai/index.html" data-drupal-link-system-path="node/18650">SSAI</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://support.ottflow.com">OTT Flow</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a class="dropdown-toggle" href="" data-toggle="dropdown">
+          Links
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/analytics-api/index.html" data-drupal-link-system-path="node/18370">Analytics API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/audience-api/index.html" data-drupal-link-system-path="node/18371">Audience API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/cms-api/index.html" data-drupal-link-system-path="node/18372">CMS API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/cms-connectors-video-cloud/index.html" data-drupal-link-system-path="node/18662">CMSコネクタ用 Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/data-collection-api/index.html" data-drupal-link-system-path="node/18876">Data Collection API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/delivery-system-api/index.html" data-drupal-link-system-path="node/18387">Delivery System API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/developer-tools-and-concepts/index.html" data-drupal-link-system-path="node/18430">開発者ツールと概念</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/native-player-sdks/index.html" data-drupal-link-system-path="node/18367">Device SDK</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/dynamic-ingest-api/index.html" data-drupal-link-system-path="node/18373">Dynamic Ingest API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/getting-started-brightcove-apis-0/index.html" data-drupal-link-system-path="node/18711">入門 - Brightcove API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/page-experience-api/index.html" data-drupal-link-system-path="node/18616">In-Page Experience APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/ingest-profiles-api/index.html" data-drupal-link-system-path="node/18374">Ingest Profiles API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/live/index.html" data-drupal-link-system-path="node/18642">Live API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/oauth-api/index.html" data-drupal-link-system-path="node/18376">OAuth API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/platform-api-code-samples/index.html" data-drupal-link-system-path="node/18675">プラットフォームAPIコードサンプル</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/playback-api/index.html" data-drupal-link-system-path="node/18380">Playback API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-player-code-samples/index.html" data-drupal-link-system-path="node/18630">プレーヤーコードサンプル</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-player-developer/index.html" data-drupal-link-system-path="node/18362">プレーヤー開発者</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/player-management-api/index.html" data-drupal-link-system-path="node/18378">Player Management API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/policy-api/index.html" data-drupal-link-system-path="node/18381">Policy API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/release-notes/index.html" data-drupal-link-system-path="node/18687">リリースに関して</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a class="dropdown-toggle" href="" data-toggle="dropdown">
+          トレーニング（講習会）
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a class="nturl" href="https://university.brightcove.com">オンラインコース</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/register-training/index.html" data-drupal-link-system-path="node/18270">コース登録</a>
+                  </li>
+        </ul>
+  
+            </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-support-documentation-announcements/index.html" title="の新機能を見る Brightcove オンラインマニュアル" data-drupal-link-system-path="node/18896">新着情報</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+        </div>
+          </header>
+  
+    <div class="gt-block full-width-headline" data-gt-block="">
+    <div class="gt-block container" data-gt-block="">
+      <div class="gt-block row" data-gt-block="">
+        <div class="gt-block col-sm-12" role="heading" data-gt-block="">
+            <div class="gt-block region region-header" data-gt-block="">
+          <section id="block-brightcoveheadlineblock" class="block block-bc-general block-bc-general-headline-block clearfix">
+  
+    
+
+      オンラインマニュアル
+  </section>
+
+
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      <div role="main" class="gt-block main-container container  js-quickedit-main-content" data-gt-block="">
+    <div class="gt-block row" data-gt-block="">
+
+                              <aside class="gt-block col-sm-3" role="complementary" data-gt-block="">
+              <div class="gt-block region region-sidebar-first" data-gt-block="">
+    <section class="bc-search-fixes-search-block-form block block-bc-search-fixes block-bc-search-fixes-search-block clearfix" data-drupal-selector="bc-search-fixes-search-block-form" id="block-brightcovesearchblock">
+  
+    
+
+      <form action="/ja/player-configuration-guide" method="post" id="bc-search-fixes-search-block-form" accept-charset="UTF-8">
+  <div class="gt-block form-item js-form-item form-type-textfield js-form-type-textfield form-item-search js-form-item-search form-no-label form-group" data-gt-block="">
+      <label for="edit-search" class="control-label sr-only">サイト内検索</label>
+  
+  
+  <input data-drupal-selector="edit-search" class="form-text form-control" type="text" id="edit-search" name="search" value="" size="15" maxlength="128" placeholder="サイト内検索">
+
+  
+  
+  </div>
+<input autocomplete="off" data-drupal-selector="form-g8knknekbhy-i19ep1w8-wk8qh2chp3if2qxaocaibe" type="hidden" name="form_build_id" value="form-g8KnknekBHy_I19Ep1W8-wk8qH2CHP3IF2QXaocaIBE"><input data-drupal-selector="edit-bc-search-fixes-search-block-form" type="hidden" name="form_id" value="bc_search_fixes_search_block_form"><div data-drupal-selector="edit-actions" class="gt-block form-actions form-group js-form-wrapper form-wrapper" id="edit-actions" data-gt-block=""><button data-drupal-selector="edit-submit" class="button js-form-submit form-submit btn-primary btn icon-only" type="submit" id="edit-submit" name="op" value="Search"><span class="sr-only">サイト内検索</span><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button></div>
+
+</form>
+
+  </section>
+
+<section id="block-inpagenavigationblock" class="hidden-xs block block-bc-ipnav block-bc-ipnav-block clearfix" style="width: 476px;">
+  
+      <h2 class="block-title" data-gt-block="">このページ</h2>
+    
+
+      <p><button id="vc" class="bcls-button__version" style="background-color:#dd712e;">Video Cloud Version</button><br><button id="bp" class="bcls-button__version">Brightcove Player Version</button><br><a style="font-size:smaller;" href="../versions-brightcove-player-documentation/index.html">(What's the difference?)</a></p><hr><div class="bc-ipnav-block" data-gt-block=""><ul><li><a href="#introduction/index.html">概要</a></li><li><a href="#View_configuration/index.html">設定を表示</a></li><li><a href="#Set_name/index.html">名前/説明の設定</a></li><li><a href="#settingvalues/index.html">設定値</a></li><li><a href="#configproperties/index.html">プロパティの設定</a></li><li><a href="#bc-ipnav-5/index.html">関連コンテンツ</a></li></ul></div>
+  </section>
+
+
+  </div>
+
+          </aside>
+              
+                  <section class="col-sm-9">
+
+                                      <div class="gt-block highlighted" data-gt-block="">  <div class="gt-block region region-highlighted" data-gt-block="">
+    <div data-drupal-messages-fallback="" class="hidden" data-gt-block=""></div>
+
+  </div>
+</div>
+                  
+                
+                
+                
+                          <a class="nturl" id="main-content"></a>
+            <div class="gt-block region region-content" data-gt-block="">
+        <h1 class="page-header"><span>プレーヤー設定ガイド</span>
+</h1>
+
+  
+<div class="gt-block node node--type-support-doc node--view-mode-full bcdocs-four-rows clearfix" data-gt-block="">
+
+  
+
+  <div class="group-first-row" data-gt-block="">
+      </div>
+
+  <div class="gt-block group-second-row" data-gt-block="">
+  
+  <div class="gt-block field field--name-field-products field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">製品（複数可）</div>
+          <div class="gt-block field__items taxonomy__tags" data-gt-block="">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item" data-gt-block="">Video Cloud</div>
+              </div>
+      </div>
+
+  <div class="gt-block field field--name-field-roles field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">役割</div>
+          <div class="gt-block field__items taxonomy__tags" data-gt-block="">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item" data-gt-block="">API開発者</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="gt-block group-third-row taxonomy__tags" data-gt-block="">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="gt-block field field--name-field-tasks field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">タスク</div>
+          <div class="gt-block field--items" data-gt-block="">
+              <div class="field--item" data-gt-block="">プレーヤーの作成と設定</div>
+              </div>
+      </div>
+
+  <div class="gt-block field field--name-field-apis field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">API</div>
+          <div class="gt-block field--items" data-gt-block="">
+              <div class="field--item" data-gt-block="">Player Management API</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="gt-block group-fourth-row" data-gt-block="">
+  
+            <div class="gt-block field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item" data-gt-block=""><p data-gt-block="">このトピックでは、プレーヤーの設定を表示および変更する方法について説明します。 JSONの構文も文書化されています。</p>
+                <article class="bcls-article"><section class="bcls-section"><h2 id="introduction" data-gt-block="">概要</h2>
+
+<p data-gt-block="" class="gt-block gt-block">プレーヤーの設定で設定できるプロパティは、以下で詳しく説明します（左のナビゲーションにリストされています）。 <a class="nturl" href="#account_id/index.html">アカウントID</a>。 また、この文書には、プロパティー値の表示および構成方法に関する情報も含まれています。</p>
+
+<aside class="gt-block bcls-aside bcls-aside--warning" data-gt-block="">あなたは使用しないでください <code class="notranslate notranslate">data-setup</code> 　 Brightcove Player。 あなたは <code class="notranslate notranslate">data-setup</code> APIドキュメントでは、これは、ドキュメンテーションがVideo.jsプレーヤーのソースコードから直接生成され、その属性を <code class="notranslate notranslate">video</code> タグを付けてください。 この属性は設定情報をプレーヤーに送信しますが、 Brightcove Player 別の方法を使用してこのタスクを実行します。 <code class="notranslate notranslate">data-setup</code> 信頼できない。</aside></section><section class="bcls-section"><h2 id="View_configuration" data-gt-block="">設定を表示</h2>
+
+<p data-gt-block="">このセクションでは、プレーヤーの設定を表示するさまざまな方法があります。</p>
+
+<h3 data-gt-block="">Studioの使用</h3>
+
+<p data-gt-block="">Studioを使用して、プレーヤーのJSON設定を表示できます。 次の手順は、プロセスの詳細です。</p>
+
+<ol class="bcls-tasklist"><li>Video Cloud Studioで <strong>プレイヤー</strong> モジュールを開き、構成を表示するプレーヤーを探します。</li>
+	<li>プレーヤーのリンクをクリックしてプレーヤーのプロパティを開きます。</li>
+	<li>ナビゲーションヘッダーの <strong>JSONエディタ</strong> 左側のナビゲーションメニュー。</li>
+	<li>次のようなプレーヤーの設定を表示できます。
+	<figure class="bcls-figure"><img class="bcls-image" alt="JSONエディタ" src="http://learning-services-media.brightcove.com/doc-assets/video-cloud-apis/player-management-api/guides/player-configuration/json-editor.png"></figure></li>
+</ol><aside class="bcls-aside bcls-aside--warning" data-gt-block="">変更を行って設定を保存する場合は、非常に注意してください。</aside><h3 data-gt-block="" class="gt-block">を使用したブラウジング <code class="notranslate">config.json</code></h3>
+
+<p data-gt-block="">新しい Brightcove プレーヤーの設定はJSONファイルに保存されます。 このJSONファイル、またはその一部をいくつかの方法で見ることができます。</p>
+
+<p data-gt-block="" class="gt-block">プレーヤーの設定を表示する1つの方法は、プレーヤーのURLを <code class="notranslate notranslate">index.html</code> 〜へ <code class="notranslate notranslate">config.json</code>。 例えば：</p>
+
+<pre class="notranslate language-http"><code class=" notranslate notranslate language-http"><span class="token header-name keyword">http:</span>//players.brightcove.net/1507807800001/HJyMlHiuZ_default/config.json</code></pre>
+
+<p data-gt-block="">プレーヤー設定のプロパティの中には、次のものがあります。</p>
+
+<ul><li>プレーヤーの名前とバージョン</li>
+	<li>プレーヤーが再生するビデオ</li>
+	<li>プレーヤーが所属するアカウント</li>
+	<li>プレーヤーのID</li>
+	<li>プレイヤーが使用できるすべてのプラグイン、およびプラグインコードの場所のURL</li>
+	<li class="player-only" style="display:none">ビデオ再生の前に表示するポスター</li>
+</ul><p data-gt-block="">Step-by-Step：Player Managementのプレーヤー用のプレーヤー構成ファイルの例は次のとおりです。</p>
+
+<pre class="line-numbers player-only notranslate language-json" style="display:none"><code class=" notranslate notranslate language-json"><span class="token punctuation">{</span>
+    <span class="token property">"player"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"template"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"version"</span><span class="token operator">:</span> <span class="token string">"0.9.5"</span><span class="token punctuation">,</span>
+        <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"single-video-template"</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"media"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"poster"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"highres"</span><span class="token operator">:</span> <span class="token string">"http://solutions.brightcove.com/bcls/assets/images/Tiger.jpg"</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">"sources"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+        <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"application/x-mpegURL"</span><span class="token punctuation">,</span>
+        <span class="token property">"src"</span><span class="token operator">:</span> <span class="token string">"http://solutions.brightcove.com/bcls/assets/videos/Tiger.m3u8"</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"video/mp4"</span><span class="token punctuation">,</span>
+        <span class="token property">"src"</span><span class="token operator">:</span> <span class="token string">"http://solutions.brightcove.com/bcls/assets/videos/Tiger.mp4"</span>
+      <span class="token punctuation">}</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">"http://solutions.brightcove.com/bcls/video-js/new-player/first-plugin.js"</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"stylesheets"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">"http://solutions.brightcove.com/bcls/video-js/new-player/first-plugin.css"</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"plugins"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+      <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"firstPlugin"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"account_id"</span><span class="token operator">:</span> <span class="token string">"1507807800001"</span><span class="token punctuation">,</span>
+    <span class="token property">"player_id"</span><span class="token operator">:</span> <span class="token string">"54ade2f3-3b51-4a6b-bc87-32b9a0b81384"</span><span class="token punctuation">,</span>
+    <span class="token property">"embed_id"</span><span class="token operator">:</span> <span class="token string">"default"</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<!-- <p class="player-only"><code data-gist-id="9629223" data-gist-hide-footer="true" data-gist-line="1-32"></code></p> -->
+
+<pre class="line-numbers video-cloud-only notranslate language-json" style="display:block;"><code class=" notranslate notranslate language-json"><span class="token punctuation">{</span>
+    <span class="token property">"media"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"poster"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"highres"</span><span class="token operator">:</span> <span class="token string">"http://solutions.brightcove.com/bcls/assets/images/Tiger.jpg"</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">"sources"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+        <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"application/x-mpegURL"</span><span class="token punctuation">,</span>
+        <span class="token property">"src"</span><span class="token operator">:</span> <span class="token string">"http://solutions.brightcove.com/bcls/assets/videos/Tiger.m3u8"</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"video/mp4"</span><span class="token punctuation">,</span>
+        <span class="token property">"src"</span><span class="token operator">:</span> <span class="token string">"http://solutions.brightcove.com/bcls/assets/videos/Tiger.mp4"</span>
+      <span class="token punctuation">}</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"video_cloud"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"video"</span><span class="token operator">:</span> <span class="token string">"4093372393001"</span><span class="token punctuation">,</span>
+      <span class="token property">"policy_key"</span><span class="token operator">:</span> <span class="token string">"BCpkADawqM2FnBS3InxzDxU4bd4otJdHKvexlXfhs_XgSj3jmBHAsV2xANIvSPd4KiakMbiQM5oYJPopOcJD7vNnPWGPGsnXCO3_ZGdjPmur53WV_a4JUPWHCLt5oiyekN44i24jZzHMB6hT"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"player"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"template"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"single-video-template"</span><span class="token punctuation">,</span>
+        <span class="token property">"version"</span><span class="token operator">:</span> <span class="token string">"6.5.0"</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"http://solutions.brightcove.com/bcls/video-js/new-player/first-plugin.js"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"stylesheets"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"http://solutions.brightcove.com/bcls/video-js/new-player/first-plugin.css"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"plugins"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+      <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"firstPlugin"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<aside class="gt-block bcls-aside bcls-aside--warning" data-gt-block="">注：この文書では、curlステートメントを使用して、 Player Management API。 curlステートメントでは、次の値が表示されます。 <strong>$ EMAIL</strong>,  <strong>$ ACCOUNT_ID</strong> や <strong>$ PLAYER_ID</strong>。 これらの名前で環境変数を作成し、対応する値を割り当てるか、変数のリテラル値を指定する必要があります。</aside><h3 data-gt-block="" class="gt-block">と近づきになります <code class="notranslate notranslate">$PLAYER_ID/configuration</code> 終点</h3>
+
+<p data-gt-block="" class="gt-block gt-block">ちょうど表示された同じ情報をHTTPを使用して取得できます <code class="notranslate notranslate">GET</code> 方法。 使用 <code class="notranslate notranslate">GET</code>   <code class="notranslate notranslate">/$PLAYER_ID/configuration</code> エンドポイントを取得することができます <em>公開されたプレイヤー</em> 構成情報。 curlステートメントの例を示します。取得されたJSONがここに表示されます。</p>
+
+<pre class="line-numbers notranslate language-bash"><code class=" notranslate notranslate language-bash">curl \
+--header <span class="token string">"Content-Type: application/json"</span> \
+--user <span class="token variable">$EMAIL</span> \
+--request GET \
+https://players.api.brightcove.com/v2/accounts/<span class="token variable">$ACCOUNT_ID</span>/players/<span class="token variable">$PLAYER_ID</span>/configuration<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers player-only notranslate language-json" style="display:none"><code class=" notranslate notranslate language-json"><span class="token punctuation">{</span>
+    <span class="token property">"player"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"template"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"version"</span><span class="token operator">:</span> <span class="token string">"0.9.5"</span><span class="token punctuation">,</span>
+        <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"single-video-template"</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"media"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"poster"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"highres"</span><span class="token operator">:</span> <span class="token string">"http://solutions.brightcove.com/bcls/assets/images/Tiger.jpg"</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">"sources"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+        <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"application/x-mpegURL"</span><span class="token punctuation">,</span>
+        <span class="token property">"src"</span><span class="token operator">:</span> <span class="token string">"http://solutions.brightcove.com/bcls/assets/videos/Tiger.m3u8"</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"video/mp4"</span><span class="token punctuation">,</span>
+        <span class="token property">"src"</span><span class="token operator">:</span> <span class="token string">"http://solutions.brightcove.com/bcls/assets/videos/Tiger.mp4"</span>
+      <span class="token punctuation">}</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"http://solutions.brightcove.com/bcls/video-js/new-player/first-plugin.js"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"stylesheets"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"http://solutions.brightcove.com/bcls/video-js/new-player/first-plugin.css"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"plugins"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+      <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"firstPlugin"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers notranslate language-json"><code class=" notranslate notranslate language-json"><span class="token punctuation">{</span>
+    <span class="token property">"media"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"poster"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"highres"</span><span class="token operator">:</span> <span class="token string">"http://solutions.brightcove.com/bcls/assets/images/Tiger.jpg"</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">"sources"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+        <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"application/x-mpegURL"</span><span class="token punctuation">,</span>
+        <span class="token property">"src"</span><span class="token operator">:</span> <span class="token string">"http://solutions.brightcove.com/bcls/assets/videos/Tiger.m3u8"</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"video/mp4"</span><span class="token punctuation">,</span>
+        <span class="token property">"src"</span><span class="token operator">:</span> <span class="token string">"http://solutions.brightcove.com/bcls/assets/videos/Tiger.mp4"</span>
+      <span class="token punctuation">}</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"video_cloud"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"video"</span><span class="token operator">:</span> <span class="token string">"4093372393001"</span><span class="token punctuation">,</span>
+      <span class="token property">"policy_key"</span><span class="token operator">:</span> <span class="token string">"BCpkADawqM2FnBS3InxzDxU4bd4otJdHKvexlXfhs_XgSj3jmBHAsV2xANIvSPd4KiakMbiQM5oYJPopOcJD7vNnPWGPGsnXCO3_ZGdjPmur53WV_a4JUPWHCLt5oiyekN44i24jZzHMB6hT"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"player"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"template"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"single-video-template"</span><span class="token punctuation">,</span>
+        <span class="token property">"version"</span><span class="token operator">:</span> <span class="token string">"6.5.0"</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"http://solutions.brightcove.com/bcls/video-js/new-player/first-plugin.js"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"stylesheets"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"http://solutions.brightcove.com/bcls/video-js/new-player/first-plugin.css"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"plugins"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+      <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"firstPlugin"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 data-gt-block="" class="gt-block">GETメソッド <code class="notranslate notranslate">$PLAYER_ID</code> 終点</h3>
+
+<p data-gt-block="" class="gt-block">HTTP <code class="notranslate notranslate">GET</code> 使用されるメソッド <code class="notranslate notranslate">/$PLAYER_ID</code> エンドポイントは完全なプレーヤー情報を取得する方法です。 このアプローチはあなたが今見たプレイヤー構成のスーパーセットを提供します。 このエンドポイントを考えると、構成情報が「1レベル上に」表示され、プレビューバージョンと公開プレイヤーバージョンの両方の現在の構成情報が含まれます。 curlステートメントの例を示します。取得されたJSONがここに表示されます。</p>
+
+<pre class="line-numbers notranslate language-bash"><code class=" notranslate notranslate language-bash">curl \
+--header <span class="token string">"Content-Type: application/json"</span> \
+--user <span class="token variable">$EMAIL</span> \
+--request GET \
+https://players.api.brightcove.com/v2/accounts/<span class="token variable">$ACCOUNT_ID</span>/players/<span class="token variable">$PLAYER_ID</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<!-- <p><code data-gist-id="9629223" data-gist-hide-footer="true" data-gist-line="57-61"></code></p> -->
+
+<pre class="line-numbers player-only notranslate language-json" style="display:none"><code class=" notranslate notranslate language-json"><span class="token punctuation">{</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"HJyMlHiuZ"</span><span class="token punctuation">,</span>
+    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"Video Cloud CURL 10 March"</span><span class="token punctuation">,</span>
+    <span class="token property">"branches"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"preview"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"configuration"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token property">"plugins"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+            <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"firstPlugin"</span>
+          <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token property">"stylesheets"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"http://solutions.brightcove.com/bcls/video-js/new-player/first-plugin.css"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"http://solutions.brightcove.com/bcls/video-js/new-player/first-plugin.js"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token property">"player"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">"template"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+              <span class="token property">"version"</span><span class="token operator">:</span> <span class="token string">"6.5.0"</span><span class="token punctuation">,</span>
+              <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"single-video-template"</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">"video_cloud"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">"policy_key"</span><span class="token operator">:</span> <span class="token string">"BCpkADawqM2FnBS3InxzDxU4bd4otJdHKvexlXfhs_XgSj3jmBHAsV2xANIvSPd4KiakMbiQM5oYJPopOcJD7vNnPWGPGsnXCO3_ZGdjPmur53WV_a4JUPWHCLt5oiyekN44i24jZzHMB6hT"</span><span class="token punctuation">,</span>
+            <span class="token property">"video"</span><span class="token operator">:</span> <span class="token string">"4093372393001"</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">"media"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">"sources"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+              <span class="token property">"src"</span><span class="token operator">:</span> <span class="token string">"http://solutions.brightcove.com/bcls/assets/videos/Tiger.m3u8"</span><span class="token punctuation">,</span>
+              <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"application/x-mpegURL"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+              <span class="token property">"src"</span><span class="token operator">:</span> <span class="token string">"http://solutions.brightcove.com/bcls/assets/videos/Tiger.mp4"</span><span class="token punctuation">,</span>
+              <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"video/mp4"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+            <span class="token property">"poster"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+              <span class="token property">"highres"</span><span class="token operator">:</span> <span class="token string">"http://solutions.brightcove.com/bcls/assets/images/Tiger.jpg"</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">"video_cloud"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token property">"aspect_ratio_height"</span><span class="token operator">:</span> <span class="token string">"9"</span><span class="token punctuation">,</span>
+          <span class="token property">"aspect_ratio_width"</span><span class="token operator">:</span> <span class="token string">"16"</span><span class="token punctuation">,</span>
+          <span class="token property">"video_id"</span><span class="token operator">:</span> <span class="token string">"4093372393001"</span><span class="token punctuation">,</span>
+          <span class="token property">"poster_image_url"</span><span class="token operator">:</span> <span class="token string">"http://brightcove.vo.llnwd.net/e1/pd/1507807800001/1507807800001_4093546643001_7c09c5bb-7643-414d-81da-847a7e5e3654-AWSAccessKeyId-AKIAJWBBMGHEBQ6SISMA-Expires-1425580379-Signature-h4xCk8Zf9xH-2Be779r9ltwGI7Jzg-3D-vs.jpg?pubId=1507807800001&amp;videoId=4093372393001"</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">"updated_at"</span><span class="token operator">:</span> <span class="token string">"2017-08-23T18:09:52.590Z"</span><span class="token punctuation">,</span>
+        <span class="token property">"template_updated_at"</span><span class="token operator">:</span> <span class="token string">"2017-08-23T17:48:55.615Z"</span><span class="token punctuation">,</span>
+        <span class="token property">"preview_url"</span><span class="token operator">:</span> <span class="token string">"http://preview-players.brightcove.net/v1/accounts/1507807800001/players/HJyMlHiuZ/preview/embeds/default/master/index.html"</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">"master"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"configuration"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token property">"media"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">"poster"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+              <span class="token property">"highres"</span><span class="token operator">:</span> <span class="token string">"http://solutions.brightcove.com/bcls/assets/images/Tiger.jpg"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token property">"sources"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+              <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"application/x-mpegURL"</span><span class="token punctuation">,</span>
+              <span class="token property">"src"</span><span class="token operator">:</span> <span class="token string">"http://solutions.brightcove.com/bcls/assets/videos/Tiger.m3u8"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+              <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"video/mp4"</span><span class="token punctuation">,</span>
+              <span class="token property">"src"</span><span class="token operator">:</span> <span class="token string">"http://solutions.brightcove.com/bcls/assets/videos/Tiger.mp4"</span>
+            <span class="token punctuation">}</span><span class="token punctuation">]</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">"video_cloud"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">"video"</span><span class="token operator">:</span> <span class="token string">"4093372393001"</span><span class="token punctuation">,</span>
+            <span class="token property">"policy_key"</span><span class="token operator">:</span> <span class="token string">"BCpkADawqM2FnBS3InxzDxU4bd4otJdHKvexlXfhs_XgSj3jmBHAsV2xANIvSPd4KiakMbiQM5oYJPopOcJD7vNnPWGPGsnXCO3_ZGdjPmur53WV_a4JUPWHCLt5oiyekN44i24jZzHMB6hT"</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">"player"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">"template"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+              <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"single-video-template"</span><span class="token punctuation">,</span>
+              <span class="token property">"version"</span><span class="token operator">:</span> <span class="token string">"6.5.0"</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"http://solutions.brightcove.com/bcls/video-js/new-player/first-plugin.js"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token property">"stylesheets"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"http://solutions.brightcove.com/bcls/video-js/new-player/first-plugin.css"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token property">"plugins"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+            <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"firstPlugin"</span>
+          <span class="token punctuation">}</span><span class="token punctuation">]</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">"video_cloud"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token property">"poster_image_url"</span><span class="token operator">:</span> <span class="token string">"http://brightcove.vo.llnwd.net/e1/pd/1507807800001/1507807800001_4093546643001_7c09c5bb-7643-414d-81da-847a7e5e3654-AWSAccessKeyId-AKIAJWBBMGHEBQ6SISMA-Expires-1425580379-Signature-h4xCk8Zf9xH-2Be779r9ltwGI7Jzg-3D-vs.jpg?pubId=1507807800001&amp;videoId=4093372393001"</span><span class="token punctuation">,</span>
+          <span class="token property">"video_id"</span><span class="token operator">:</span> <span class="token string">"4093372393001"</span><span class="token punctuation">,</span>
+          <span class="token property">"aspect_ratio_width"</span><span class="token operator">:</span> <span class="token string">"16"</span><span class="token punctuation">,</span>
+          <span class="token property">"aspect_ratio_height"</span><span class="token operator">:</span> <span class="token string">"9"</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">"updated_at"</span><span class="token operator">:</span> <span class="token string">"2017-08-23T18:10:11.843Z"</span><span class="token punctuation">,</span>
+        <span class="token property">"template_updated_at"</span><span class="token operator">:</span> <span class="token string">"2017-08-23T17:48:55.622Z"</span><span class="token punctuation">,</span>
+        <span class="token property">"preview_url"</span><span class="token operator">:</span> <span class="token string">"http://preview-players.brightcove.net/v1/accounts/1507807800001/players/HJyMlHiuZ/master/embeds/default/master/index.html"</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"created_at"</span><span class="token operator">:</span> <span class="token string">"2017-08-23T17:48:55.615Z"</span><span class="token punctuation">,</span>
+    <span class="token property">"accountId"</span><span class="token operator">:</span> <span class="token string">"1507807800001"</span><span class="token punctuation">,</span>
+    <span class="token property">"embed_count"</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"http://players.brightcove.net/1507807800001/HJyMlHiuZ_default/index.html"</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers notranslate language-json"><code class=" notranslate notranslate language-json"><span class="token punctuation">{</span>
+    <span class="token property">"account_id"</span><span class="token operator">:</span> <span class="token string">"1507807800001"</span><span class="token punctuation">,</span>
+    <span class="token property">"branches"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"preview"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"configuration"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token property">"plugins"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+            <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"firstPlugin"</span>
+          <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token property">"stylesheets"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"http://solutions.brightcove.com/bcls/video-js/new-player/first-plugin.css"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"http://solutions.brightcove.com/bcls/video-js/new-player/first-plugin.js"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token property">"player"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">"template"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+              <span class="token property">"version"</span><span class="token operator">:</span> <span class="token string">"1.5.0"</span><span class="token punctuation">,</span>
+              <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"single-video-template"</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">"video_cloud"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">"policy_key"</span><span class="token operator">:</span> <span class="token string">"BCpkADawqM3ClR-sni6Tc0sFppBHaE91MRyLjE8kUwQjOkXjmK-b2R9fN3IuOnRf_4uuV2LSFwT3eeKUxgYU75eT0c20JEnUKpKU6L-oyjn81zE_P1NF0HJBZiyXyqtHcAdvTpTb29d4S-BH"</span><span class="token punctuation">,</span>
+            <span class="token property">"video"</span><span class="token operator">:</span> <span class="token string">"3495887198001"</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">"video_cloud"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token property">"aspect_ratio_height"</span><span class="token operator">:</span> <span class="token string">"14"</span><span class="token punctuation">,</span>
+          <span class="token property">"aspect_ratio_width"</span><span class="token operator">:</span> <span class="token string">"25"</span><span class="token punctuation">,</span>
+          <span class="token property">"video_id"</span><span class="token operator">:</span> <span class="token string">"3495887198001"</span><span class="token punctuation">,</span>
+          <span class="token property">"poster_image_url"</span><span class="token operator">:</span> <span class="token string">"http://brightcove.vo.llnwd.net/e1/pd/1507807800001/1507807800001_3495968128001_humbles-scrappy-statue2-vs.jpg?pubId=1507807800001"</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">"updated_at"</span><span class="token operator">:</span> <span class="token string">"2014-10-23T14:33:21.107Z"</span><span class="token punctuation">,</span>
+        <span class="token property">"preview_url"</span><span class="token operator">:</span> <span class="token string">"http://preview-players.brightcove.net/v1/accounts/1507807800001/players/a90a8479-9831-46f6-9eab-90efc7fb9c6b/preview/embeds/default/master/index.html"</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">"master"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"configuration"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token property">"video_cloud"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">"video"</span><span class="token operator">:</span> <span class="token string">"3495887198001"</span><span class="token punctuation">,</span>
+            <span class="token property">"policy_key"</span><span class="token operator">:</span> <span class="token string">"BCpkADawqM3ClR-sni6Tc0sFppBHaE91MRyLjE8kUwQjOkXjmK-b2R9fN3IuOnRf_4uuV2LSFwT3eeKUxgYU75eT0c20JEnUKpKU6L-oyjn81zE_P1NF0HJBZiyXyqtHcAdvTpTb29d4S-BH"</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">"player"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">"template"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+              <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"single-video-template"</span><span class="token punctuation">,</span>
+              <span class="token property">"version"</span><span class="token operator">:</span> <span class="token string">"1.5.0"</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">"scripts"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"http://solutions.brightcove.com/bcls/video-js/new-player/first-plugin.js"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token property">"stylesheets"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"http://solutions.brightcove.com/bcls/video-js/new-player/first-plugin.css"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token property">"plugins"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+            <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"firstPlugin"</span>
+          <span class="token punctuation">}</span><span class="token punctuation">]</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">"video_cloud"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token property">"poster_image_url"</span><span class="token operator">:</span> <span class="token string">"http://brightcove.vo.llnwd.net/e1/pd/1507807800001/1507807800001_3495968128001_humbles-scrappy-statue2-vs.jpg?pubId=1507807800001"</span><span class="token punctuation">,</span>
+          <span class="token property">"video_id"</span><span class="token operator">:</span> <span class="token string">"3495887198001"</span><span class="token punctuation">,</span>
+          <span class="token property">"aspect_ratio_width"</span><span class="token operator">:</span> <span class="token string">"25"</span><span class="token punctuation">,</span>
+          <span class="token property">"aspect_ratio_height"</span><span class="token operator">:</span> <span class="token string">"14"</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">"updated_at"</span><span class="token operator">:</span> <span class="token string">"2014-10-23T14:33:41.201Z"</span><span class="token punctuation">,</span>
+        <span class="token property">"preview_url"</span><span class="token operator">:</span> <span class="token string">"http://preview-players.brightcove.net/v1/accounts/1507807800001/players/a90a8479-9831-46f6-9eab-90efc7fb9c6b/master/embeds/default/master/index.html"</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"a90a8479-9831-46f6-9eab-90efc7fb9c6b"</span><span class="token punctuation">,</span>
+    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"1031+on+Oct+23"</span><span class="token punctuation">,</span>
+    <span class="token property">"created_at"</span><span class="token operator">:</span> <span class="token string">"2014-10-23T14:32:21.384Z"</span><span class="token punctuation">,</span>
+    <span class="token property">"embed_count"</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token property">"url"</span><span class="token operator">:</span> <span class="token string">"http://players.brightcove.net/1507807800001/a90a8479-9831-46f6-9eab-90efc7fb9c6b_default/index.html"</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</section><section class="bcls-section"><h2 id="Set_name" data-gt-block="">名前/説明の設定</h2>
+
+<p data-gt-block="" class="gt-block">プレーヤーの設定を変更するには、 <code class="notranslate notranslate">/$ACCOUNT_ID/players/$PLAYER_ID/configuration</code> それはこの文書の重点である。 ただし、2つのプロパティを変更するだけで <code class="notranslate notranslate">/$ACCOUNT_ID/players/$PLAYER_ID</code> 終点。 これらの2つの特性は <code class="notranslate notranslate">name</code> や <code class="notranslate notranslate">description</code>.</p>
+
+<p data-gt-block="" class="gt-block">注： <code class="notranslate notranslate">name</code> あなたが入力したプレイヤーは <code class="notranslate notranslate">player_name</code> あなたが置くことによって構成を得るとき <code class="notranslate notranslate">config.json</code> プレーヤーのプレビューURLの最後に表示されます（ <code class="notranslate notranslate">name</code> あなたが Player Management API。 しかし、あなたは <code class="notranslate notranslate">name</code> プレーヤーを作成または更新するときに使用します。</p>
+
+<p data-gt-block="" class="gt-block">最初のコードブロックは、プレーヤーの <code class="notranslate notranslate">name</code> や <code class="notranslate notranslate">description</code>。 JSONレスポンスには、PATCHメソッドによって生成されたプレビューバージョンのプレーヤが表示されるため、最適化バージョンを取得するためにプレーヤを公開する必要があります。</p>
+
+<pre class="line-numbers notranslate language-bash"><code class=" notranslate notranslate language-bash">curl \
+--header <span class="token string">"Content-Type: application/json"</span> \
+--user <span class="token variable">$EMAIL</span> \
+--request PATCH \
+--data <span class="token string">'{
+  "name": "My New Player Name",
+  "description": "My new player description"
+}'</span> \
+https://players.api.brightcove.com/v2/accounts/<span class="token variable">$ACCOUNT_ID</span>/players/<span class="token variable">$PLAYER_ID</span>/configuration<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers player-only notranslate language-json" style="display:none"><code class=" notranslate notranslate language-json"><span class="token punctuation">{</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"62da9b4d-b8aa-45d5-ba46-f77eac9c9059"</span><span class="token punctuation">,</span>
+    <span class="token property">"preview_url"</span><span class="token operator">:</span> <span class="token string">"http://preview-players.brightcove.net/v1/accounts/1507807800001/players/62da9b4d-b8aa-45d5-ba46-f77eac9c9059/preview/embeds/default/master/index.html"</span><span class="token punctuation">,</span>
+    <span class="token property">"preview_embed_code"</span><span class="token operator">:</span> <span class="token string">"&lt;iframe src='//preview-players.brightcove.net/v1/accounts/1507807800001/players/62da9b4d-b8aa-45d5-ba46-f77eac9c9059/preview/embeds/default/master/index.html' allowfullscreen webkitallowfullscreen mozallowfullscreen&gt;&lt;/iframe&gt;"</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</section><section class="bcls-section"><h2 id="settingvalues" data-gt-block="">設定値</h2>
+
+<p data-gt-block="" class="gt-block gt-block">HTTPメソッド呼び出しを発行する任意のツールを使用するか、またはを使用してプレーヤー設定値を設定できます。 <strong>JSONエディタ</strong> これはStudioの一部です <strong>プレイヤー</strong> モジュール。 カールツールを使用することができます。 <a class="nturl" href="..//support.brightcove.com/ja/step-step-player-management/index.html">ステップバイステップ：プレイヤー管理</a> およびAJAXの使用については、 <a class="nturl" href="..//support.brightcove.com/ja/search?search=XMLHttprequest/index.html">Brightcove Player 例</a>.</p>
+
+<p data-gt-block="" class="gt-block gt-block">を使用した変更例 <strong>JSONエディタ</strong> ここに示されています：</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="JSONエディタ Brightcove Player ブランド設定" src="http://learning-services-media.brightcove.com/doc-assets/player-development/playback/player-info-modal/json-editor-no-bc-branding.png"></figure><p data-gt-block="">プレーヤーのJSON設定を編集したら、必ず変更を保存してください。</p>
+</section><section class="bcls-section"><h2 id="configproperties" data-gt-block="">プロパティの設定</h2>
+
+<p data-gt-block="">一部の設定プロパティはPlayer管理サービスによって設定され、変更できません。 それらは：</p>
+
+<ul><li>アカウントID</li>
+	<li>player_id</li>
+	<li>埋め込みID</li>
+</ul><p data-gt-block="">以下に詳述する他のすべてのプロパティは変更可能です。</p>
+
+<p data-gt-block="">プロパティの詳細は以下のとおりです。 特定のプロパティにすばやくアクセスするには、以下のリストを使用します。</p>
+
+<ul style="display:inline-block;vertical-align:top;margin-left:1em;"><li><a class="nturl" href="#account_id/index.html">アカウントID</a></li>
+	<li><a class="nturl" href="#ad_config_id/index.html">ad_config_id</a></li>
+	<li><a class="nturl" href="#ad_failover/index.html">ad_failover</a></li>
+	<li><a class="nturl" href="#application_id/index.html">アプリケーションID</a></li>
+	<li><a class="nturl" href="#autoadvance/index.html">オートアドバンス</a></li>
+	<li><a class="nturl" href="#autoplay/index.html">自動再生</a></li>
+	<li><a class="nturl" href="#base_url/index.html">base_url</a></li>
+	<li><a class="nturl" href="#breakpoints/index.html">ブレークポイント</a></li>
+	<li><a class="nturl" href="#crossorigin/index.html">クロスオリジン</a></li>
+	<li><a class="nturl" href="#css/index.html">CSS</a></li>
+	<li><a class="nturl" href="#debugger/index.html">デバッガ</a></li>
+	<li><a class="nturl" href="#dock/index.html">ドック</a></li>
+	<li><a class="nturl" href="#embed_id/index.html">埋め込みID</a></li>
+	<li><a class="nturl" href="#errors/index.html">エラー</a></li>
+	<li><a class="nturl" href="#flash/index.html">フラッシュ</a></li>
+</ul><ul style="display:inline-block;vertical-align:top;margin-left:1em;"><li><a class="nturl" href="#fullscreenControl/index.html">フルスクリーンコントロール</a></li>
+	<li><a class="nturl" href="#hls/index.html">hls</a></li>
+	<li><a class="nturl" href="#inactive/index.html">非アクティブな</a></li>
+	<li><a class="nturl" href="#language/index.html">言語</a></li>
+	<li><a class="nturl" href="#languages/index.html">言語</a></li>
+	<li><a class="nturl" href="#loop/index.html">ループ</a></li>
+	<li><a class="nturl" href="#media/index.html">メディア</a></li>
+	<li><a class="nturl" href="#muted/index.html">ミュート</a></li>
+	<li><a class="nturl" href="#picture_in_picture_control/index.html">picture_in_picture_control</a></li>
+	<li><a class="nturl" href="#playback_rates/index.html">playback_rates</a></li>
+	<li><a class="nturl" href="#player/index.html">プレイヤー</a></li>
+	<li><a class="nturl" href="#play_button/index.html">play_button</a></li>
+	<li><a class="nturl" href="#player_id/index.html">player_id</a></li>
+	<li><a class="nturl" href="#player_name/index.html">プレーヤの名前</a></li>
+	<li><a class="nturl" href="#playsinline/index.html">playsinline</a></li>
+</ul><ul style="display:inline-block;vertical-align:top;margin-left:1em;"><li><a class="nturl" href="#playlists/index.html">プレイリスト</a></li>
+	<li><a class="nturl" href="#plugins/index.html">プラグイン</a></li>
+	<li><a class="nturl" href="#preload/index.html">プリロード</a></li>
+	<li><a class="nturl" href="#query_string_to_window/index.html">query_string_to_window</a></li>
+	<li><a class="nturl" href="#repeat/index.html">繰り返す</a></li>
+	<li><a class="nturl" href="#responsive/index.html">反応する</a></li>
+	<li><a class="nturl" href="#scripts/index.html">スクリプト</a></li>
+	<li><a class="nturl" href="#skin/index.html">皮膚</a></li>
+	<li><a class="nturl" href="#stylesheets/index.html">スタイルシート</a></li>
+	<li><a class="nturl" href="#techOrder/index.html">techOrder</a></li>
+	<li><a class="nturl" href="#version/index.html">バージョン</a></li>
+	<li><a class="nturl" href="#video_cloud/index.html">video_cloud</a></li>
+	<li><a class="nturl" href="#volume_orientation/index.html">volume_orientation</a></li>
+	<li><a class="nturl" href="#vttjs/index.html">vttjs</a></li>
+	<li><a class="nturl" href="#wait_for_ad_block_detect/index.html">wait_for_ad_block_detect</a></li>
+</ul><section class="bcls-section"><h3 id="account_id" data-gt-block="">アカウントID</h3>
+
+<p data-gt-block="" class="gt-block gt-block">挽き目 Video Cloud プレーヤーに関連付けられたアカウントID。 この値 <strong>変更することはできません</strong>.</p>
+</section><section class="bcls-section"><h3 id="ad_config_id" data-gt-block="">ad_config_id</h3>
+
+<p data-gt-block="" class="gt-block"><code class="notranslate notranslate">ad_config_id</code> 情報：</p>
+
+<ul><li>データ型：文字列</li>
+	<li>デフォルト： <code class="notranslate notranslate">undefined</code></li>
+	<li>ダイナミックデリバリーSSAI広告構成ID。 プレーヤの設定に加えて、iframeプレーヤの場合はadConfigIdクエリ文字列パラメータ、ページはプレーヤの場合はdata-ad-config-id属性を使用して、実行時に設定できます。 いずれの場合も、プレーヤー設定の値は無効になります。</li>
+</ul></section><section class="bcls-section"><h3 id="ad_failover" data-gt-block="">ad_failover</h3>
+
+<p data-gt-block="" class="gt-block"><code class="notranslate notranslate">ad_failover</code> 情報：</p>
+
+<ul><li>データ型：boolean</li>
+	<li>デフォルト： <code class="notranslate notranslate">undefined</code></li>
+	<li>に設定され true 広告フェイルオーバー動作を有効にします。 これは以下に依存するマルチパート構成です。
+	<ul><li>IMA3プラグインとSSAIプラグインの両方をプレーヤーで設定する必要があります。</li>
+		<li>An  <code class="notranslate notranslate">ad_config_id</code> SSAI広告は利用できません。</li>
+	</ul></li>
+</ul></section><section class="bcls-section"><h3 id="application_id" data-gt-block="">アプリケーションID</h3>
+
+<p data-gt-block="" class="gt-block"><code class="notranslate notranslate">application_id</code> 情報：</p>
+
+<ul><li>データ型：文字列</li>
+	<li>デフォルト： <code class="notranslate notranslate">undefined</code></li>
+	<li>アプリケーションIDは、メトリックの単一のプレーヤーの複数の用途を区別するために使用されます。 それはユーザーには見えません。</li>
+</ul></section><section class="bcls-section"><h3 id="autoadvance" data-gt-block="">オートアドバンス</h3>
+
+<p data-gt-block="" class="gt-block"><code class="notranslate notranslate">autoadvance</code> 情報：</p>
+
+<ul><li>データ型：文字列</li>
+	<li>デフォルト：最初は有効になっていません</li>
+	<li>プレイリストとともに使用され、プレイリストの自動補足動作を設定します。</li>
+</ul><p data-gt-block="" class="gt-block gt-block">詳細については参照してください <a class="nturl" href="#playlists/index.html">プレイリスト</a> 下のセクション、および <a class="nturl" href="..//support.brightcove.com/ja/guide-playlist-api#bc-ipnav-2/index.html">プレイリストAPI</a> の資料をご参照ください。</p>
+</section><section class="bcls-section"><h3 id="autoplay" data-gt-block="">自動再生</h3>
+
+<p data-gt-block="" class="gt-block"><code class="notranslate notranslate">autoplay</code> 情報：</p>
+
+<ul><li>データ型：ブール値または文字列</li>
+	<li>デフォルト： <code class="notranslate notranslate">false</code></li>
+	<li>これが許可されているプラ​​ットフォームでプレーヤがすぐに再生を開始する必要があることを示します。</li>
+</ul><p data-gt-block="" class="gt-block">If  <code class="notranslate notranslate">autoplay</code> ブラウザのネイティブ自動再生動作が使用されるブール値に設定されます。 次の3つの有効な文字列値のいずれかに設定されていると、次のことが起こります。</p>
+
+<ul><li><code class="notranslate notranslate">play</code>：プレーヤーは手動で電話をかけようとします。</li>
+	<li><code class="notranslate notranslate">muted</code>：プレイヤーは手動でプレイヤーをミュートし、プレイを再生します。</li>
+	<li><code class="notranslate notranslate">any</code>：プレイヤーはまずプレイを呼び出そうとします。 それでも失敗した場合は、プレーヤーをミュートして再生してください。</li>
+</ul><p data-gt-block="">上記のいずれかが失敗した場合、自動再生がに設定されているかのように、プレーヤーは "Big Play Button"を表示します。 false.</p>
+
+<p data-gt-block="" class="gt-block">次の例は、 <code class="notranslate notranslate">autoplay</code> 値：</p>
+
+<h4 data-gt-block="">ブール値を使用する例</h4>
+
+<pre class="line-numbers notranslate language-bash"><code class=" notranslate notranslate language-bash">curl \
+  --header <span class="token string">"Content-Type: application/json"</span> \
+  --user <span class="token variable">$EMAIL</span> \
+  --request PATCH \
+  --data <span class="token string">'{
+    "autoplay": true
+    }'</span> \
+https://players.api.brightcove.com/v2/accounts/<span class="token variable">$ACCOUNT_ID</span>/players/<span class="token variable">$PLAYER_ID</span>/configuration<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 data-gt-block="">文字列値を使用する例</h4>
+
+<pre class="line-numbers notranslate language-bash"><code class=" notranslate notranslate language-bash">curl \
+  --header <span class="token string">"Content-Type: application/json"</span> \
+  --user <span class="token variable">$EMAIL</span> \
+  --request PATCH \
+  --data <span class="token string">'{
+    "autoplay": "muted"
+    }'</span> \
+https://players.api.brightcove.com/v2/accounts/<span class="token variable">$ACCOUNT_ID</span>/players/<span class="token variable">$PLAYER_ID</span>/configuration<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p data-gt-block="" class="gt-block gt-block">動画を自動再生することは複雑な状況になります。 を参照してください <a class="nturl" href="..//support.brightcove.com/ja/autoplay-considerations/index.html">自動再生に関する考慮事項</a> ドキュメントを参照してください。</p>
+
+<aside class="gt-block bcls-aside bcls-aside--information" data-gt-block="">注：AndroidでChromeを使用していて、 <a class="nturl" href="https://support.google.com/chrome/answer/2392284?co=GENIE.Platform%3DAndroid&hl=en-GB">Chromeのデータセーバー</a>、自動再生は正しく機能しません。</aside></section><section class="bcls-section"><h3 id="base_url" data-gt-block="">base_url（IP制限の問題の場合）</h3>
+
+<p data-gt-block="" class="gt-block gt-block">IP制限を使用すると問題が発生する可能性があります。 Brightcove Player北アメリカ以外で使用されています。 とき Brightcove Player から動画を読み込むように求められます Video Cloud アカウントでは、このアドレスのカタログに接続します<strong>https://edge.api.brightcove.com/playback/v1/</strong>.</p>
+
+<p data-gt-block="">そのEdgeエンドポイントは、IP制限の問題を引き起こすような動作をします。</p>
+
+<ul><li>Edge In北米からEdgeを押すと、Edgeに直接アクセスし、EdgeはユーザーのIPアドレスを表示します。 IP制限ホワイトリストに従ってカタログへのアクセスを許可または拒否できます。 これは望ましい機能です。</li>
+	<li>OUTSIDE北米からEdgeを打つと、ロードバランシング/ローカルキャッシュCDNの理由でCloudfrontを経由します。 Cloudfrontをホワイトリストに載せていないので、Cloudfrontを使用している人は誰でもアクセスできるため、EdgeはユーザーのIPの代わりにCloudfront IPを見て、誰もを拒否するため、重要です。</li>
+</ul><p data-gt-block="" class="gt-block gt-block">この問題を解決するには、別のエッジエンドポイントを使用するようにプレーヤを設定し、 <strong>edge-elb.api.brightcove.com</strong>。 この変更は、北アメリカ以外からのIP制限アカウントにアクセスする必要があるすべてのプレーヤーに行われなければなりません。</p>
+
+<aside class="bcls-aside bcls-aside--information" data-gt-block="">このアプローチには欠点があります。 カタログリクエストは、Cloudfrontのローカルサーバーとのグローバルネットワークではなく、Virginiaに送信されるため、米国以外からのキャッシュされたコンテンツの取得はごくわずかです。 これはほとんど気にならないでしょう。</aside><p data-gt-block="" class="gt-block">実際の構成変更には、 Video Cloud <code class="notranslate notranslate">base_url</code>。 IP制限を使用する場合にのみ変更してください。 Brightcove Player北アメリカの外にある。 既存のプレーヤーの場合、次のcurlコマンドを使用します。 <code class="notranslate notranslate">PATCH</code> HTTPメソッド（環境変数の代わりにデータを使用する必要があります <code class="notranslate notranslate">$EMAIL</code>,  <code class="notranslate notranslate">$ACCOUNT_ID</code> や <code class="notranslate notranslate">$PLAYER_ID</code>):</p>
+
+<pre class="line-numbers notranslate language-bash"><code class=" notranslate notranslate language-bash">curl
+--header <span class="token string">"Content-Type: application/json"</span>
+--user <span class="token variable">$EMAIL</span>
+--request PATCH
+--data <span class="token string">'{
+    "video_cloud": {
+  "base_url": "https://edge-elb.api.brightcove.com/playback/v1/"
+    }
+  }'</span>
+https://players.api.brightcove.com/v2/accounts/<span class="token variable">$ACCOUNT_ID</span>/players/<span class="token variable">$PLAYER_ID</span>/configuration<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p data-gt-block="">カールするのが初めての方は、次の文書を参考にしてください。</p>
+
+<ul><li><a class="nturl" href="..//support.brightcove.com/ja/step-step-player-management/index.html">ステップバイステップ：プレイヤー管理</a></li>
+	<li><a class="nturl" href="..//support.brightcove.com/ja/concepts-set-curl/index.html">cURLを設定する</a></li>
+	<li><a class="nturl" href="..//support.brightcove.com/ja/use-postman-api-requests/index.html">Linuxを使う Postman HTTPリクエストの場合</a></li>
+</ul></section><section class="bcls-section"><h3 id="breakpoints" data-gt-block="">ブレークポイント</h3>
+
+<p data-gt-block="" class="gt-block"><code class="notranslate notranslate">breakpoints</code> 情報：</p>
+
+<ul><li>データ型：オブジェクト</li>
+	<li>デフォルト：デフォルトのブレークポイントは次のとおりです。</li>
+	<li>と一緒に使用する場合 <a class="nturl" href="#responsive/index.html">反応する</a> オプションは、プレーヤーの寸法に基づいてUIを調整するためにプレーヤー上でクラス名がどのように切り替えられるかを設定するブレークポイントを設定します。
+	<table class="bcls-table"><thead class="bcls-table__head"><tr><th>クラス名</th>
+				<th>幅の範囲</th>
+			</tr></thead><tbody class="bcls-table__body"><tr><td>vjs-layout-tiny</td>
+				<td>0-210</td>
+			</tr><tr><td>vjs-layout-x-small</td>
+				<td>211-320</td>
+			</tr><tr><td>vjs-layout-small</td>
+				<td>321-425</td>
+			</tr><tr><td>vjs-layout-medium</td>
+				<td>426-768</td>
+			</tr><tr><td>vjs-layout-large</td>
+				<td>769-1440</td>
+			</tr><tr><td>vjs-layout-x-large</td>
+				<td>1441-2560</td>
+			</tr><tr><td>vjs-layout-huge</td>
+				<td>2561歳以上</td>
+			</tr></tbody></table></li>
+</ul><p data-gt-block="">クラス名は変更できませんが、幅の範囲は次のようなオブジェクトで設定できます。</p>
+
+<pre class="line-numbers notranslate language-javascript"><code class=" notranslate language-javascript">breakpoints<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+  tiny<span class="token punctuation">:</span> <span class="token number">300</span><span class="token punctuation">,</span>
+  xsmall<span class="token punctuation">:</span> <span class="token number">400</span><span class="token punctuation">,</span>
+  small<span class="token punctuation">:</span> <span class="token number">500</span><span class="token punctuation">,</span>
+  medium<span class="token punctuation">:</span> <span class="token number">600</span><span class="token punctuation">,</span>
+  large<span class="token punctuation">:</span> <span class="token number">700</span><span class="token punctuation">,</span>
+  xlarge<span class="token punctuation">:</span> <span class="token number">800</span><span class="token punctuation">,</span>
+  huge<span class="token punctuation">:</span> <span class="token number">900</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<ul><li>ブレークポイントオブジェクトのキーは、関連するクラス名から、 <code class="notranslate">vjs-layout-</code> 接頭辞とany <code class="notranslate">-</code> 文字。</li>
+	<li>ブレークポイントオブジェクトの値は、範囲の最大幅を定義します。</li>
+	<li>すべてのキーを定義する必要はありません。 1つのキーと値のペアを持つオブジェクトを渡すことで、単一のブレークポイントを簡単にオーバーライドできます。 カスタマイズされたブレークポイントは、プレーヤーが作成されたときにデフォルトのブレークポイントとマージされます。</li>
+</ul><p data-gt-block="">プレーヤーのサイズが変わると、マージされたブレークポイントは、一致するブレークポイントが見つかるまでサイズ順に検査されます。 そのブレークポイントに関連付けられているクラス名は、プレーヤのクラスとして追加されます。 前のブレークポイントのクラスは削除されます。</p>
+</section><section class="bcls-section"><h3 id="crossorigin" data-gt-block="">クロスオリジン</h3>
+
+<p data-gt-block="" class="gt-block"><code class="notranslate notranslate">crossorigin</code> 情報：</p>
+
+<ul><li>データ型：boolean</li>
+	<li>デフォルト： false</li>
+	<li>If  <strong>true</strong>、根底にある <strong>の&lt;video&gt;</strong> 要素は <strong>crossorigin = "anonymous"</strong>。 これは、プレーヤーに引き込まれたビデオやテキストトラックにはCORSヘッダーが必要であることを意味します。
+	<aside class="bcls-aside bcls-aside--information" data-gt-block="">注：この機能は、すべてのコンテンツ（ビデオおよびテキストトラック）にCORSヘッダーが適用されていることがわかっている場合にのみ使用してください。</aside></li>
+</ul></section><section class="bcls-section"><h3 id="css" data-gt-block="">CSSの色のオーバーライド</h3>
+
+<p data-gt-block="">プレーヤーの色を無効にするために使用できる3つのプロパティがあります。 彼らです：</p>
+
+<ul><li><code class="notranslate notranslate">controlColor</code>：ボタンとテキストの色（再生ヘッドの位置とビデオの持続時間など）</li>
+	<li><code class="notranslate notranslate">controlBarColor</code>：コントロールバーの背景色と大きい再生ボタン</li>
+	<li><code class="notranslate notranslate">progressColor</code>：プログレスバーの色</li>
+</ul><p data-gt-block="">これらのプロパティには、有効なCSSカラー（16進数など）が使用できます。</p>
+
+<p data-gt-block="">次の3つのCSSプロパティをすべて緑色に設定し、結果を表示するスクリーンショットを設定するcurlステートメントを示します。</p>
+
+<pre class="line-numbers notranslate language-bash"><code class=" notranslate notranslate language-bash">curl \
+--header <span class="token string">"Content-Type: application/json"</span> \
+--user <span class="token variable">$EMAIL</span> \
+--request PATCH \
+<span class="bcls-highlight">--data <span class="token string">'{
+    "css": {
+      "controlColor": "green",
+      "controlBarColor": "green",
+      "progressColor": "green"
+    }
+}'</span> \</span>
+https://players.api.brightcove.com/v2/accounts/<span class="token variable">$ACCOUNT_ID</span>/players/<span class="token variable">$PLAYER_ID</span>/configuration<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="CSSオーバーライドを持つプレーヤー" src="http://learning-services-media.brightcove.com/doc-assets/video-cloud-apis/player-management-api/guides/player-configuration/config-css-green.png"><figcaption class="bcls-caption--image">CSSオーバーライドを持つプレーヤー</figcaption></figure></section><section class="bcls-section"><h3 id="debugger" data-gt-block="">デバッガ</h3>
+
+<p data-gt-block="" class="gt-block gt-block">デバッガは、プレーヤ情報をモーダルウィンドウに表示します。 を参照してください <a class="nturl" href="..//support.brightcove.com/ja/brightcove-player-information-modal/index.html">プレーヤー情報モーダル</a> 完全な情報については文書を参照してください。</p>
+</section><section class="bcls-section"><h3 id="dock" data-gt-block="">ドック</h3>
+
+<p data-gt-block="" class="gt-block"><code class="notranslate notranslate">dock</code> 情報：</p>
+
+<ul><li>データ型：boolean</li>
+	<li>デフォルト： true</li>
+	<li>明示的に <code class="notranslate notranslate">false</code>、プレイヤーはいわゆる <strong>ドック</strong> ビデオのタイトルと説明を表示することができます。</li>
+</ul></section><section class="bcls-section"><h3 id="embed_id" data-gt-block="">埋め込みID</h3>
+
+<p data-gt-block="" class="gt-block"><code class="notranslate notranslate">embed_id</code> 情報：</p>
+
+<ul><li>データ型：文字列</li>
+	<li>デフォルト： <code class="notranslate notranslate">undefined</code></li>
+	<li>挽き目 Video Cloud このプレーヤーに関連付けられた埋め込みID。 値が <code class="notranslate notranslate">default</code> それはプレーヤーが子供のプレーヤーではないことを意味します。 値がそうでない場合 <code class="notranslate notranslate">default</code>、それはプレーヤーの親を表す値です。</li>
+</ul></section><section class="bcls-section"><h3 id="errors" data-gt-block="">エラー</h3>
+
+<p data-gt-block="" class="gt-block"><code class="notranslate notranslate">errors</code> 情報：</p>
+
+<ul><li>データ型：オブジェクトまたはブール値</li>
+	<li>デフォルト： true</li>
+	<li>明示的に設定する <code class="notranslate notranslate">false</code> プレーヤーが含まれないようにします <strong>videojs-errors</strong>これはエラーメッセージプラグインです。 この値を作る false エラーが発生した場合、プレーヤーは視聴者に詳細なエラーメッセージを表示しません。 再生を妨げるエラーは依然としてWeb開発者コンソールに表示されます。</li>
+</ul></section><section class="bcls-section"><h3 id="flash" data-gt-block="">フラッシュ</h3>
+
+<p data-gt-block="" class="gt-block"><code class="notranslate notranslate">flash</code> 情報：</p>
+
+<ul><li>データ型：オブジェクト</li>
+	<li>デフォルト： <code class="notranslate notranslate">undefined</code></li>
+	<li>カスタムFlashオプションを提供するために使用できます <strong>Video.js</strong>.</li>
+</ul></section><section class="bcls-section"><h3 id="fullscreenControl" data-gt-block="">フルスクリーンコントロール</h3>
+
+<p data-gt-block="" class="gt-block"><code class="notranslate notranslate">fullscreenControl</code> 情報：</p>
+
+<ul><li>データ型：boolean</li>
+	<li>デフォルト： true</li>
+	<li>コントロールバーにフルスクリーンコントロールを表示するかどうかを示します。</li>
+</ul><p data-gt-block="" class="gt-block">次の例は、 <code class="notranslate notranslate">fullscreenControl</code> 値：</p>
+
+<pre class="line-numbers notranslate language-bash"><code class=" notranslate notranslate language-bash">curl \
+--header <span class="token string">"Content-Type: application/json"</span> \
+--user <span class="token variable">$EMAIL</span> \
+--request PATCH \
+--data <span class="token string">'{
+  "autoplay": true,
+  "fullscreenControl": false
+  }'</span> \
+https://players.api.brightcove.com/v2/accounts/<span class="token variable">$ACCOUNT_ID</span>/players/<span class="token variable">$PLAYER_ID</span>/configuration<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<!-- <p><code data-gist-id="9629223" data-gist-hide-footer="true" data-gist-line="171-179" data-gist-highlight-line="177"></code></p> -->
+
+<p data-gt-block="">次の2つのスクリーンショットは、フルスクリーンコントロールを使用しているプレーヤーと使用していないプレーヤーを示しています。</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="フルスクリーンコントロールのプレーヤー" src="http://learning-services-media.brightcove.com/doc-assets/video-cloud-apis/player-management-api/guides/player-configuration/config-with-fullscreencontrol.png"><figcaption class="bcls-caption--image">フルスクリーンコントロールのプレーヤー</figcaption></figure><figure class="bcls-figure"><img class="bcls-image" alt="フルスクリーンコントロールなしのプレーヤー" src="http://learning-services-media.brightcove.com/doc-assets/video-cloud-apis/player-management-api/guides/player-configuration/config-no-fullscreencontrol.png"><figcaption class="bcls-caption--image">フルスクリーンコントロールなしのプレーヤー</figcaption></figure></section><section class="bcls-section"><h3 id="hls" data-gt-block="">hls</h3>
+
+<p data-gt-block="" class="gt-block"><code class="notranslate notranslate">hls</code> 情報：</p>
+
+<ul><li>データ型：オブジェクトまたはブール値</li>
+	<li>デフォルト： <code class="notranslate notranslate">{}</code></li>
+	<li>If  <code class="notranslate notranslate">false</code>、プレーヤーには含まれません <strong>videojs-http-streaming</strong>。 さもなければ、オブジェクトはのためのオプションとして渡されます <strong>videojs-http-streaming</strong>.</li>
+</ul></section><section class="bcls-section"><h3 id="inactive" data-gt-block="">非アクティブプレーヤー</h3>
+
+<p data-gt-block="">プレーヤーを非アクティブにすることは可能です。 プレイヤーにコンテンツの配信を停止させ、削除したプレーヤーを閲覧すると404エラーは表示されないようにすることができます。</p>
+
+<p data-gt-block="" class="gt-block">プレーヤーを無効にするには、 <code class="notranslate notranslate">player</code> フィールドの <code class="notranslate notranslate">inactive</code> プロパティへ <code class="notranslate notranslate">true</code>、 次のように：</p>
+
+<pre class="line-numbers notranslate language-bash"><code class=" notranslate notranslate language-bash">curl \
+--header <span class="token string">"Content-Type: application/json"</span> \
+--user <span class="token variable">$EMAIL</span> \
+--request PATCH \
+--data <span class="token string">'{
+  <span class="bcls-highlight">"player": {
+      "inactive": true
+  }</span>
+}'</span> \
+https://players.api.brightcove.com/v2/accounts/<span class="token variable">$ACCOUNT_ID</span>/players/<span class="token variable">$PLAYER_ID</span>/configuration<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p data-gt-block="" class="gt-block">もちろん、プレイヤーをアクティブにしたい場合は、 <code class="notranslate notranslate">inactive</code> プロパティへ <code class="notranslate notranslate">false</code>.</p>
+
+<p data-gt-block="">Once プレーヤーが無効になっている場合、ユーザーがプレーヤーを閲覧すると、次のメッセージが表示されます。</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="非アクティブ化されたプレーヤー" src="http://learning-services-media.brightcove.com/doc-assets/video-cloud-apis/player-management-api/guides/player-configuration/deactivated.png"><figcaption class="bcls-caption--image">非アクティブ化されたプレーヤー</figcaption></figure><aside class="bcls-aside bcls-aside--information" data-gt-block="">これは非アクティブプレーヤーのスクリーンショットです。 エラーを表示しているはずです。</aside></section><section class="bcls-section"><h3 id="language" data-gt-block="">言語</h3>
+
+<p data-gt-block="" class="gt-block"><code class="notranslate notranslate">language</code> 情報：</p>
+
+<ul><li>データ型：文字列</li>
+	<li>デフォルト： <code class="notranslate notranslate">undefined</code></li>
+	<li>設定するために提供することができます <code class="notranslate notranslate">lang</code> の属性 <code class="notranslate notranslate">&lt;html&gt;</code> 要素。</li>
+</ul></section><section class="bcls-section"><h3 id="languages" data-gt-block="">言語</h3>
+
+<p data-gt-block="" class="gt-block"><code class="notranslate notranslate">languages</code> 情報：</p>
+
+<ul><li>データ型：文字列の配列</li>
+	<li>デフォルト： <code class="notranslate notranslate">undefined</code></li>
+	<li>指定された言語がプレーヤーに含まれるようにする文字列の配列にすることができます。 有効な唯一の言語はVideo.jsに含まれているものです。 を参照してください <a class="nturl" href="..//support.brightcove.com/ja/programmatically-localizing-brightcove-player/index.html">ローカライズ Brightcove Player</a> 詳細はドキュメント。</li>
+</ul></section><section class="bcls-section"><h3 id="loop" data-gt-block="">ループ</h3>
+
+<p data-gt-block="" class="gt-block"><code class="notranslate notranslate">loop</code> 情報：</p>
+
+<ul><li>終了するとすぐにビデオを開始させます。</li>
+</ul></section><section class="bcls-section"><h3 id="media" data-gt-block="">メディア</h3>
+
+<p data-gt-block="" class="gt-block">挽き目 <code class="notranslate notranslate">media</code> プロパティには、次の表に示すような子プロパティがあります。</p>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th>プロパティ</th>
+			<th>データ型</th>
+			<th>説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td>SRC</td>
+			<td>文字列</td>
+			<td>
+			<ul><li>プレーヤーに読み込むビデオファイルのURL</li>
+			</ul></td>
+		</tr><tr><td>ソース</td>
+			<td>オブジェクトの配列</td>
+			<td>
+			<ul><li>優先順位の高いソースオブジェクトの配列</li>
+				<li>この配列の要素は、 <code class="notranslate notranslate">source</code> 要素は</li>
+				<li>A  <em>source</em> オブジェクトには2つのプロパティが必要です。 <code class="notranslate notranslate">src</code> や <code class="notranslate notranslate">type</code></li>
+				<li>挽き目 <code class="notranslate notranslate">type</code> 属性は、HTML5標準で指定されているように、ビデオのMIMEタイプです</li>
+			</ul></td>
+		</tr><tr><td>タイトル</td>
+			<td>文字列</td>
+			<td>
+			<ul><li>の内容 <code class="notranslate notranslate">&lt;title&gt;</code> ページの要素</li>
+			</ul></td>
+		</tr><tr><td>poster.highres</td>
+			<td>文字列</td>
+			<td>
+			<ul><li>スキンのルートディレクトリを基準にした、ポスター画像へのファイルパス</li>
+			</ul></td>
+		</tr><tr><td>高さ</td>
+			<td>文字列</td>
+			<td>
+			<ul><li>ビデオの高さ</li>
+				<li>デフォルト値は幅に比例し、2：1アスペクト比のビデオに適しています</li>
+			</ul></td>
+		</tr><tr><td>幅</td>
+			<td>文字列</td>
+			<td>
+			<ul><li>ビデオの幅</li>
+				<li>デフォルト値は高さに関連しており、2：1アスペクト比のビデオに適しています</li>
+			</ul></td>
+		</tr><tr><td>トラック</td>
+			<td>配列</td>
+			<td>
+			<ul><li>トラックオブジェクトの配列</li>
+				<li>デフォルト値は未定義です</li>
+				<li>この配列の要素は、 <a class="nturl" href="http://www.html5rocks.com/en/tutorials/track/basics/">トラック要素</a>。 見る <a class="nturl" href="http://node/18076">ビデオにキャプションを追加する</a> トラックを使用する例のドキュメント Brightcove Player.</li>
+			</ul></td>
+		</tr></tbody></table><p data-gt-block="" class="gt-block">次のJSONでは、 <code class="notranslate notranslate">media</code> 以下を含むプロパティ：</p>
+
+<ul><li>A  <em>poster.highres</em> 財産</li>
+	<li>A  <em>ソース</em> 2つのソースオブジェクトを含むプロパティ.1つはHLSビデオ用、もう1つはMP4ビデオ用</li>
+</ul><pre class="line-numbers notranslate language-json"><code class=" notranslate notranslate language-json"><span class="token property">"media"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token property">"poster"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">"highres"</span><span class="token operator">:</span> <span class="token string">"http://solutions.brightcove.com/bcls/assets/images/Tiger.jpg"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">"sources"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"application/x-mpegURL"</span><span class="token punctuation">,</span>
+    <span class="token property">"src"</span><span class="token operator">:</span> <span class="token string">"http://solutions.brightcove.com/bcls/assets/videos/Tiger.m3u8"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token property">"type"</span><span class="token operator">:</span> <span class="token string">"video/mp4"</span><span class="token punctuation">,</span>
+    <span class="token property">"src"</span><span class="token operator">:</span> <span class="token string">"http://solutions.brightcove.com/bcls/assets/videos/Tiger.mp4"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<!-- <p><code data-gist-id="9629223" data-gist-hide-footer="true" data-gist-line="8-19"></code></p> -->
+
+<p data-gt-block="">再生用に選択されたソースは、設定したビデオオーダーと、プレーヤーがロードされているブラウザーとデバイスの機能によって決まります。 デフォルトを変更しておらず、HLSがネイティブでサポートされている場合、プレーヤーはHLSビデオを指すソースがあるかどうかをチェックし、見つかったものを最初に選択します。 HLSがネイティブでサポートされていない場合、またはHLSビデオソースが指定されていない場合、次にHTML再生が試行されます。 以前のように、最初に再生可能なソースが選択されます。 最初の2回のビデオ再生が失敗すると、フラッシュフォールバックが試行されます。</p>
+
+<p data-gt-block="">要約すると、プレイオーダーはあなたの好みの再生メディアを指定し、各設定されたオプションは利用可能なすべてのソースを試し、再生方法を知っている最初のものを使います。</p>
+
+<p data-gt-block="" class="gt-block">どのソースが再生中であるかは、 <code class="notranslate notranslate">currentSrc()</code> 関数。 次のスクリーンショットは、ブラウザコンソールでこの機能を使用する方法を示しています。</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="電流源" src="http://learning-services-media.brightcove.com/doc-assets/video-cloud-apis/player-management-api/guides/player-configuration/player-config-currentsrc.png"><figcaption class="bcls-caption--image">電流源</figcaption></figure><aside class="bcls-aside bcls-aside--information" data-gt-block="">ソースの選択はレンディションの選択とは異なります。 レンディションの選択は、ビデオが再生可能な複数のフォーマットまたは品質レベルで利用可能な場合、ビデオの特定の変形を選択するプロセスです。 ソースの選択はそれほどスマートではなく、プレーヤーと互換性のある最初のビデオの使用を開始するだけです。 ザ Brightcove プレイヤーが再生中にレンディションの選択を行い、プレイヤーが検出した帯域幅情報に基づいて自動的に品質レベルを調整します。 ただし、HLSソース内でのみ実行されます。 たとえば、複数のビットレートのMP4ファイル間のレンディション選択をサポートしていません。</aside></section><section class="bcls-section"><h3 id="muted" data-gt-block="">ミュート</h3>
+
+<p data-gt-block="" class="gt-block"><code class="notranslate notranslate">muted</code> 情報：</p>
+
+<ul><li>データ型：boolean</li>
+	<li>デフォルト： false</li>
+	<li>プレーヤーの読み込み時にサウンドがミュートされるかどうかを指定します。</li>
+</ul></section><section class="bcls-section"><h3 id="picture_in_picture_control" data-gt-block="">picture_in_picture_control</h3>
+
+<p data-gt-block="" class="gt-block"><code class="notranslate notranslate">picture_in_picture_control</code> 情報：</p>
+
+<ul><li>データ型：boolean</li>
+	<li>デフォルト： true</li>
+	<li>組み込みのピクチャーインピクチャーコントロールをコントロールバーに表示するかどうかを示します。</li>
+</ul></section><section class="bcls-section"><h3 id="playback_rates" data-gt-block="">playback_rates</h3>
+
+<p data-gt-block="" class="gt-block"><code class="notranslate notranslate">playback_rates</code> 情報：</p>
+
+<ul><li>データ型：配列</li>
+	<li>デフォルト：なし</li>
+	<li>再生レートコントロールに表示する再生レートの配列。</li>
+</ul><p data-gt-block="">値は読み取られてから、プレーヤーのコントロールバーの再生レートコントロールに表示されます。</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="再生レート" src="http://learning-services-media.brightcove.com/doc-assets/video-cloud-apis/player-management-api/guides/player-configuration/playback-rates-ui.png"></figure><p data-gt-block="">プロパティの値を変更するには、Studioまたはcurlを使用できます。</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="再生レートjs​​onエディタ" src="http://learning-services-media.brightcove.com/doc-assets/video-cloud-apis/player-management-api/guides/player-configuration/playback-rates-json-editor.png"></figure><pre class="line-numbers notranslate language-bash"><code class=" notranslate language-bash">curl \
+  --header <span class="token string">"Content-Type: application/json"</span> \
+  --user <span class="token variable">$EMAIL</span> \
+  --request PATCH \
+  --data <span class="token string">'{
+      "playback_rates": [0.1,1,2.5,6]
+     }'</span> \
+  https://players.api.brightcove.com/v2/accounts/<span class="token variable">$ACCOUNT_ID</span>/players/<span class="token variable">$PLAYER_ID</span>/configuration<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</section><section class="bcls-section"><h3 id="player" data-gt-block="">プレイヤー</h3>
+
+<p data-gt-block="" class="gt-block"><code class="notranslate notranslate">player</code> 情報：</p>
+
+<ul><li>データ型：オブジェクト</li>
+	<li>デフォルト：プレーヤー固有の情報を入力します</li>
+	<li>このプレーヤーに関するさまざまなメタデータが含まれています <code class="notranslate notranslate">inactive</code> や <code class="notranslate notranslate">template.version</code>.</li>
+</ul></section><section class="bcls-section"><h3 id="play_button" data-gt-block="">play_button</h3>
+
+<p data-gt-block="" class="gt-block"><code class="notranslate notranslate">play_button</code> 情報：</p>
+
+<ul><li>データ型：オブジェクト</li>
+	<li>プレーヤーの設定による変更には、以下のプロパティが使用できます。
+	<table class="bcls-table"><thead class="bcls-table__head"><tr><th>プロパティ</th>
+				<th>種類</th>
+				<th>効果</th>
+			</tr></thead><tbody class="bcls-table__body"><tr><td>ホバー</td>
+				<td>文字列</td>
+				<td><code class="notranslate notranslate">glow</code>  or  <code class="notranslate notranslate">darken</code>; デフォルトはピンク/プログレスカラーです</td>
+			</tr><tr><td>形状</td>
+				<td>文字列</td>
+				<td><code class="notranslate notranslate">square</code>  or  <code class="notranslate notranslate">rectangle</code>; デフォルトは円です</td>
+			</tr><tr><td>位置</td>
+				<td>文字列</td>
+				<td><code class="notranslate notranslate">topLeft</code>  or  <code class="notranslate notranslate">topRight</code>; デフォルトは中央です</td>
+			</tr></tbody></table></li>
+</ul></section><section class="bcls-section"><h3 id="player_id" data-gt-block="">player_id</h3>
+
+<p data-gt-block="" class="gt-block"><code class="notranslate notranslate">player_id</code> 情報：</p>
+
+<ul><li>データ型：文字列</li>
+	<li>挽き目 Video Cloud プレーヤーID</li>
+</ul></section><section class="bcls-section"><h3 id="player_name" data-gt-block="">プレーヤの名前</h3>
+
+<p data-gt-block="" class="gt-block"><code class="notranslate notranslate">player_name</code> 情報：</p>
+
+<ul><li>データ型：文字列</li>
+	<li>挽き目 Video Cloud プレーヤーに関連付けられたプレーヤー名 - 注： <code class="notranslate notranslate">name</code> あなたが入力したプレイヤーは <code class="notranslate notranslate">player_name</code> あなたが置くことによって構成を得るとき <code class="notranslate notranslate">config.json</code> プレーヤーのプレビューURLの最後に表示されます（ <code class="notranslate notranslate">name</code> あなたが Player Management API。 しかし、あなたは <code class="notranslate notranslate">name</code> プレーヤーを作成または更新するときに使用します。</li>
+</ul></section><section class="bcls-section"><h3 id="playsinline" data-gt-block="">playsinline</h3>
+
+<p data-gt-block="" class="gt-block"><code class="notranslate notranslate">playsinline</code> 情報：</p>
+
+<ul><li>データ型：boolean</li>
+	<li>デフォルト： false</li>
+	<li>プレーヤーをインライン再生できるようにします（一部のデバイスで再生する場合に必要です）。</li>
+</ul></section><section class="bcls-section"><h3 id="playlists" data-gt-block="">プレイリスト</h3>
+
+<p data-gt-block="" class="gt-block gt-block">現在、2つの異なる再生リストの実装があります <a class="nturl" href="..//support.brightcove.com/ja/implementing-playlists/index.html">プレイリストの使用</a> 資料。 デフォルトはバージョン3です。 両方のバージョンを設定するための情報はここで詳しく説明します。</p>
+
+<p data-gt-block="">どちらの設定でも、次の設定方法が示されます：</p>
+
+<ul><li><code class="notranslate notranslate">autoadvance</code>：プレイリスト内の次のビデオをロードするまでに遅延する秒数を整数で指定します。 の価値 <code class="notranslate notranslate">0</code> 割り当てられた場合、ビデオ間の待機は発生しません。 の価値 <code class="notranslate notranslate">null</code> 自動割り当ては行われません。</li>
+	<li><code class="notranslate notranslate">playOnSelect</code>：割り当て済み <code class="notranslate notranslate">true</code> プレイリストメニューから項目をクリックすると、プレーヤーの前の動画が一時停止されていても、動画が読み込まれると再生されます。</li>
+</ul><h3 data-gt-block="">プレイリストバージョン3（デフォルト）</h3>
+
+<p data-gt-block="">バージョン3プラグインを使用してプレイリストを設定するには、プラグインレジストリを使用します。 Playlistバージョン3プラグインの使用を設定するcurlステートメントを以下に示します。</p>
+
+<pre class="line-numbers notranslate language-bash"><code class=" notranslate notranslate language-bash">curl \
+  --header <span class="token string">"Content-Type: application/json"</span> \
+  --user <span class="token variable">$EMAIL</span> \
+  --request POST \
+  --data <span class="token string">'{
+      "name": "Plugin Registry Test Player",
+      "configuration": {
+        "video_cloud": {
+          "video": "4093372393001"
+        },
+        "plugins": [
+          {
+            "registry_id": "@brightcove/videojs-bc-playlist-ui",
+            "version": "3.x"
+          }
+        ]
+      }
+  }'</span> \
+  https://players.api.brightcove.com/v2/accounts/<span class="token variable">$ACCOUNT_ID</span>/players<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p data-gt-block="" class="gt-block gt-block">見ます <a class="nturl" href="..//support.brightcove.com/ja/plugin-registry/index.html">プラグインレジストリ</a> その使用法と利点についての情報が必要です。</p>
+
+<p data-gt-block="" class="gt-block">設定するには <code class="notranslate notranslate">playOnSelect</code> や <code class="notranslate notranslate">autoadvance</code> プレーヤーを作成するときのオプションは次のとおりです：</p>
+
+<pre class="line-numbers notranslate language-bash"><code class=" notranslate notranslate language-bash">curl \
+  --header <span class="token string">"Content-Type: application/json"</span> \
+  --user <span class="token variable">$EMAIL</span> \
+  --request POST \
+  --data <span class="token string">'{
+      "name": "Plugin Registry Test Player",
+      "configuration": {
+        "video_cloud": {
+          "video": "4093372393001"
+        },
+        "plugins": [
+          {
+            "registry_id": "@brightcove/videojs-bc-playlist-ui",
+            "version": "3.x",
+            <span class="bcls-highlight">"options": {
+              "playOnSelect": true
+            }</span>
+          }
+        ],
+        <span class="bcls-highlight">"autoadvance": 2</span>
+      }
+  }'</span> \
+  https://players.api.brightcove.com/v2/accounts/<span class="token variable">$ACCOUNT_ID</span>/players<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 data-gt-block="">プレイリストバージョン1（レガシー）</h3>
+
+<p data-gt-block="" class="gt-block">に加えて <code class="notranslate notranslate">autoadvance</code> や <code class="notranslate notranslate">playOnSelect</code> プレイリストバージョン1の使用を設定するために使用される2つのプロパティ。 彼らです：</p>
+
+<ul><li><code class="notranslate notranslate">playlist</code>：割り当て済み <code class="notranslate notranslate">true</code> プレーヤーにプレイリストを使用させる。</li>
+	<li><code class="notranslate notranslate">adjusted</code>：割り当て済み <code class="notranslate notranslate">true</code> プレイヤーにプレイリストのプレイヤーディメンションを調整させる。</li>
+</ul><p data-gt-block="">プレイリストに関連する3つのプロパティを設定するためのcurlステートメントを次に示します。</p>
+
+<pre class="line-numbers notranslate language-bash"><code class=" notranslate notranslate language-bash">curl \
+--header <span class="token string">"Content-Type: application/json"</span> \
+--user <span class="token variable">$EMAIL</span> \
+--request PATCH \
+<span class="bcls-highlight">--data <span class="token string">'{
+  "playlist": true,
+  "autoadvance": 2,
+  "studio_configuration": {
+    "player": {
+      "adjusted": true,
+      "height": "",
+      "width": ""
+    }
+  }
+}'</span> \</span>
+https://players.api.brightcove.com/v2/accounts/<span class="token variable">$ACCOUNT_ID</span>/players/<span class="token variable">$PLAYER_ID</span>/configuration<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<aside class="gt-block bcls-aside bcls-aside--information" data-gt-block="">時 <code class="notranslate notranslate">height</code> や <code class="notranslate notranslate">width</code> 値が割り当てられていない場合、プレイヤーとプレイリストのサイズは自動的に調整されます。</aside><p data-gt-block="" class="gt-block">設定するには <code class="notranslate notranslate">playOnSelect</code> プレイリストのバージョン1では、次のcurlステートメントを使用します。</p>
+
+<pre class="line-numbers notranslate language-bash"><code class=" notranslate notranslate language-bash">curl \
+  --header <span class="token string">"Content-Type: application/json"</span> \
+  --user <span class="token variable">$EMAIL</span> \
+  --request PATCH \
+  --data <span class="token string">'{
+       <span class="bcls-highlight">{"playOnSelect": true}</span>
+  }'</span> \
+  https://players.api.brightcove.com/v2/accounts/<span class="token variable">$ACCOUNT_ID</span>/players/<span class="token variable">$PLAYER_ID</span>/configuration<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<!-- <p><code data-gist-id="9629223" data-gist-hide-footer="true" data-gist-line="248-263" data-gist-highlight-line="252-262"></code></p> -->
+
+<h3 data-gt-block="">プレーヤーにプレイリストが含まれているかどうかをプログラムで判断する</h3>
+
+<p data-gt-block="">プレーヤーが含まれているページでJavaScriptを使用していて、プレイリストプラグインが使用されているかどうかを確認するには、</p>
+
+<pre class="line-numbers notranslate language-javascript"><code class=" notranslate language-javascript">player<span class="token punctuation">.</span><span class="token function">hasPlugin</span><span class="token punctuation">(</span><span class="token string">'playlist'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p data-gt-block="" class="gt-block gt-block">プレイヤープラグインが存在するかどうかをチェックしていて、プレイヤーがいるページではない場合（たとえば、プレイヤーのリストをコネクターで使用するためにチェックする場合など）は、もう少し複雑なプロセスを使用する必要があります。 あなたはプレーヤーの設定を読んでから、 <strong>プラグイン</strong> プレーヤーのJSONセクションに <strong>"name"： "bcPlaylistUi"</strong>。 そのタスクの1つの解決策は次のとおりです。</p>
+
+<aside class="gt-block bcls-aside bcls-aside--information" data-gt-block="">注： <code class="notranslate notranslate">the JSON String</code> 変数には、プレーヤーのJSON設定の縮小バージョンが含まれています。</aside><pre class="line-numbers notranslate language-javascript"><code class=" notranslate language-javascript"><span class="token keyword">var</span> theJSON <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  pluginAra <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  ifFound <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  theJSONString <span class="token operator">=</span>
+  '<span class="token punctuation">{</span><span class="token string">"account_id"</span><span class="token punctuation">:</span><span class="token string">"1507807800001"</span><span class="token punctuation">,</span><span class="token string">"autoadvance"</span><span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token string">"autoplay"</span><span class="token punctuation">:</span><span class="token boolean">false</span><span class="token punctuation">,</span><span class="token string">"embed_id"</span><span class="token punctuation">:</span><span class="token string">"default"</span><span class="token punctuation">,</span><span class="token string">"fullscreenControl"</span><span class="token punctuation">:</span><span class="token boolean">true</span><span class="token punctuation">,</span><span class="token string">"id"</span><span class="token punctuation">:</span><span class="token string">"r1fbqySRZ"</span><span class="token punctuation">,</span><span class="token string">"player"</span><span class="token punctuation">:</span><span class="token punctuation">{</span><span class="token string">"inactive"</span><span class="token punctuation">:</span><span class="token boolean">false</span><span class="token punctuation">,</span><span class="token string">"template"</span><span class="token punctuation">:</span><span class="token punctuation">{</span><span class="token string">"locked"</span><span class="token punctuation">:</span><span class="token boolean">false</span><span class="token punctuation">,</span><span class="token string">"name"</span><span class="token punctuation">:</span><span class="token string">"single-video-template"</span><span class="token punctuation">,</span><span class="token string">"version"</span><span class="token punctuation">:</span><span class="token string">"6.8.3"</span><span class="token punctuation">,</span><span class="token string">"version_alias"</span><span class="token punctuation">:</span><span class="token keyword">null</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token string">"player_id"</span><span class="token punctuation">:</span><span class="token string">"r1fbqySRZ"</span><span class="token punctuation">,</span><span class="token string">"player_name"</span><span class="token punctuation">:</span><span class="token string">"playlist v2 junk"</span><span class="token punctuation">,</span><span class="token string">"playlist"</span><span class="token punctuation">:</span><span class="token boolean">true</span><span class="token punctuation">,</span><span class="token string">"plugins"</span><span class="token punctuation">:</span><span class="token punctuation">[</span><span class="token punctuation">{</span><span class="token string">"injected_version"</span><span class="token punctuation">:</span><span class="token string">"2.1.2"</span><span class="token punctuation">,</span><span class="token string">"name"</span><span class="token punctuation">:</span><span class="token string">"bcPlaylistUi"</span><span class="token punctuation">,</span><span class="token string">"options"</span><span class="token punctuation">:</span><span class="token punctuation">{</span><span class="token string">"playOnSelect"</span><span class="token punctuation">:</span><span class="token boolean">true</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token string">"registry_id"</span><span class="token punctuation">:</span><span class="token string">"@brightcove/videojs-bc-playlist-ui"</span><span class="token punctuation">,</span><span class="token string">"version"</span><span class="token punctuation">:</span><span class="token string">"2.x"</span><span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token string">"preload"</span><span class="token punctuation">:</span><span class="token string">"metadata"</span><span class="token punctuation">,</span><span class="token string">"scripts"</span><span class="token punctuation">:</span><span class="token punctuation">[</span><span class="token string">"//players.brightcove.net/videojs-bc-playlist-ui/2.1.2/videojs-bc-playlist-ui.min.js"</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token string">"studio_configuration"</span><span class="token punctuation">:</span><span class="token punctuation">{</span><span class="token string">"player"</span><span class="token punctuation">:</span><span class="token punctuation">{</span><span class="token string">"adjusted"</span><span class="token punctuation">:</span><span class="token boolean">true</span><span class="token punctuation">,</span><span class="token string">"height"</span><span class="token punctuation">:</span><span class="token number">150</span><span class="token punctuation">,</span><span class="token string">"width"</span><span class="token punctuation">:</span><span class="token number">300</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token string">"stylesheets"</span><span class="token punctuation">:</span><span class="token punctuation">[</span><span class="token string">"//players.brightcove.net/videojs-bc-playlist-ui/2.1.2/videojs-bc-playlist-ui.css"</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token string">"updated_at"</span><span class="token punctuation">:</span><span class="token string">"2017-10-30T18:06:07.800Z"</span><span class="token punctuation">,</span><span class="token string">"video_cloud"</span><span class="token punctuation">:</span><span class="token punctuation">{</span><span class="token string">"policy_key"</span><span class="token punctuation">:</span><span class="token string">"BCpkADawqM2_X3Xxh3xln23EqlR3BETHrfycIPT-a7kqhBi6q8g3XOmTr3tEJiFoi_YmI7vfbJzS4mY0Un5RACc3jC8cLVqyvmfWFLI-tG5oJYGXNUrvOwRJYQEt2eVpMZnBd0FH22i7Mtk3"</span><span class="token punctuation">,</span><span class="token string">"video"</span><span class="token punctuation">:</span><span class="token keyword">null</span><span class="token punctuation">}</span><span class="token punctuation">}</span>'<span class="token punctuation">;</span>
+
+theJSON <span class="token operator">=</span> JSON<span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>theJSONString<span class="token punctuation">)</span><span class="token punctuation">;</span>
+pluginAra <span class="token operator">=</span> theJSON<span class="token punctuation">.</span>plugins<span class="token punctuation">;</span>
+ifFound <span class="token operator">=</span> pluginAra<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>pluginAra<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> pluginAra<span class="token punctuation">.</span>name <span class="token operator">===</span> <span class="token string">"bcPlaylistUi"</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>ifFound<span class="token punctuation">.</span>length <span class="token operator">===</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'Contains playlist plugin'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'No playlist'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<aside class="gt-block bcls-aside bcls-aside--warning" data-gt-block="">あなたは以前にプレーヤーの設定を確認しているかもしれません <code class="notranslate notranslate">“playlist”: true</code> プレーヤーがプレイリストを有効にしているかどうかを判断します。 これは一貫して正しく動作しません。</aside></section><section class="bcls-section"><h3 id="plugins" data-gt-block="">プラグイン</h3>
+
+<p data-gt-block="" class="gt-block">挽き目 <code class="notranslate notranslate">plugins</code> プロパティは、video.jsプラグインを初期化する順序と、それらに適用するカスタマイズされた設定を指定します。 プラグインは対応する <code class="notranslate notranslate">scripts</code> プロパティのURL入力、必要に応じてサポート <code class="notranslate notranslate">stylesheets</code> URL。 それぞれの要素は <code class="notranslate notranslate">plugins</code> 配列は、 <code class="notranslate notranslate">name</code> プロパティを持ち、オプションの <code class="notranslate notranslate">options</code> プロパティ：</p>
+
+<ul><li><code class="notranslate notranslate">name</code>：サポートしているJavaScriptコードから取得したvideo.jsプラグインの名前</li>
+	<li><code class="notranslate notranslate">options</code>：設定のオブジェクトハッシュは、初期化時にプラグインに提供するためにオーバーライドされます</li>
+</ul><h3 data-gt-block="">オプションの子</h3>
+
+<p data-gt-block="" class="gt-block">この中の <code class="notranslate notranslate">options</code> 初期化時に利用するデータを渡します。 次のJSONは、 <code class="notranslate notranslate">options</code>.</p>
+
+<pre class="line-numbers notranslate language-json"><code class=" notranslate notranslate language-json"><span class="token property">"plugins"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+  <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"navigateOnVideoEnd"</span><span class="token punctuation">,</span>
+  <span class="token property">"options"</span> <span class="token operator">:</span> <span class="token punctuation">{</span><span class="token property">"redirectURL"</span><span class="token operator">:</span> <span class="token string">"http://docs.brightcove.com"</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p data-gt-block="" class="gt-block">これにより、プレーヤの設定を介してプラグインにデータを渡すことができます。 たとえば、 <code class="notranslate notranslate">redirectURL</code> 上記のオブジェクトの場合は、プラグイン自体で次の操作を行います。</p>
+
+<pre class="line-numbers notranslate language-javascript"><code class=" notranslate language-javascript">videojs<span class="token punctuation">.</span><span class="token function">registerPlugin</span><span class="token punctuation">(</span><span class="token string">'navigateOnVideoEnd'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><strong>options</strong><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> myPlayer <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+  myPlayer<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">"ended"</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    window<span class="token punctuation">.</span>location<span class="token punctuation">.</span>href <span class="token operator">=</span> <strong>options<span class="token punctuation">.</span>redirectURL</strong><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p data-gt-block="" class="gt-block">注：標準のプラグイン実装を使用しますが、 <code class="notranslate notranslate">options</code> 無名関数のパラメータとして使用します。 値を使用してアクセスすることができます <code class="notranslate notranslate">options.propertyName</code> 表記</p>
+
+<aside class="gt-block bcls-aside bcls-aside--information" data-gt-block="">挽き目 <em>オプション</em> propertyは、オブジェクトの配列など、必要な任意のデータ構造にすることができます。 オブジェクトの配列を渡す場合は、オブジェクトの配列としてデータにアクセスする必要があります。</aside><p data-gt-block="" class="gt-block gt-block">一部 Brightcove 提供されるプラグインはプラグインのレジストリを使用し、設定はここに示すものとは異なります。 を参照してください <a class="nturl" href="..//support.brightcove.com/ja/plugin-registry/index.html">概要：プラグインレジストリ</a> 詳細な情報については、</p>
+</section><section class="bcls-section"><h3 id="preload" data-gt-block="">プリロード</h3>
+
+<p data-gt-block="" class="gt-block"><code class="notranslate notranslate">preload</code> 情報：</p>
+
+<aside class="gt-block bcls-aside bcls-aside--warning" data-gt-block="">注：プリロード設定は実際にはHTML5仕様の推奨事項であり、その結果、さまざまなブラウザで異なる動作が発生する可能性があります。 値をに設定する <strong>オート</strong> 帯域幅消費に重大な影響を与える可能性があります。</aside><ul><li>データ型：文字列</li>
+	<li>デフォルト： <code class="notranslate notranslate">none</code></li>
+	<li>プリロード属性は、ビデオタグがロードされるとすぐにビデオデータのダウンロードを開始するかどうかをブラウザに通知します。 オプションは次のとおりです。 <strong>オート</strong>,  <strong>メタデータ</strong>および <strong>なし</strong>.</li>
+</ul><ul><li>
+	<p data-gt-block="" class="gt-block gt-block"><strong>オート</strong>：ユーザーが最終的にビデオを見ない場合でも、ビデオファイル全体をダウンロードできることを示します。 肯定的な側面では、視聴者がビデオを再生すると、すぐに再生を開始することができます。 負の面では、視聴者がビデオを再生しなくてもプリロード/ロードが発生するため、このオプションは帯域幅消費を増加させます。</p>
+	</li>
+	<li>
+	<p data-gt-block="" class="gt-block gt-block"><strong>メタデータ</strong> （デフォルト）：ビデオのメタデータを読み込みます。メタデータには、ビデオの長さやサイズなどの情報が含まれています。 この設定では、数秒のビデオデータも読み込まれます。</p>
+	</li>
+	<li>
+	<p data-gt-block="" class="gt-block gt-block"><strong>なし</strong>：ビデオデータをプリロードしないでください。 これは、ユーザーが再生をクリックしてダウンロードを開始するまで待機します。</p>
+	</li>
+</ul><pre class="line-numbers notranslate language-html"><code class=" notranslate language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>video-js</span> <span class="token attr-name">preload</span> <span class="token attr-name">...</span><span class="token punctuation">&gt;</span></span>
+or
+{ "preload": "auto" }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<aside class="gt-block bcls-aside bcls-aside--information" data-gt-block="">注：サーバーサイド広告挿入（SSAI）を使用している場合は、 Brightcove 設定を推奨します <code class="notranslate">preload=none</code>。 場合 <code class="notranslate">preload</code> に設定されています <code class="notranslate">auto</code>  or  <code class="notranslate">metadata</code>つまり、ビデオストリームの最初のフレームが要求され、ユーザーが再生を開始しなくても広告は配信されたものとしてカウントされます。</aside></section><section class="bcls-section"><h3 id="query_string_to_window" data-gt-block="">query_string_to_window</h3>
+
+<p data-gt-block="" class="gt-block"><code class="notranslate notranslate">query_string_to_window</code> 情報：</p>
+
+<aside class="bcls-aside bcls-aside--information" data-gt-block="">標準（iframe）プレーヤーの実装のみをサポートします。</aside>
+クエリ文字列パラメータからグローバル名前空間（ウィンドウ）の母集団を制御するために使用します。 これは、特にGoogleのAMPコンポーネントやFacebook Instant Articlesなどの組み込みプレーヤーの場合に便利です。 クエリ文字列の解析は、 <a class="nturl" href="..//nodejs.org/api/querystring.html#querystring_querystring_parse_str_sep_eq_options">Node.jsクエリ文字列モジュール</a>。 この構成オブジェクトを使用するには、以下のサブプロパティの少なくとも1つが必要です。 どちらも同時に使用できます。
+
+<ol class="bcls-tasklist"><li>
+	<ul><li>名前： <code class="notranslate notranslate">query_string_to_window.target</code></li>
+		<li>データ型：文字列</li>
+		<li>説明：ウィンドウに作成する宛先オブジェクト。解析されたクエリ文字列全体が入力されます。 例えば、 <code class="notranslate notranslate">query_string_to_window.target</code> プレーヤーの設定では次のようになります。
+		<pre class="line-numbers notranslate language-json"><code class=" notranslate notranslate language-json"><span class="token punctuation">{</span>
+<span class="token property">"query_string_to_window"</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token property">"target"</span><span class="token operator">:</span> <span class="token string">"queryStringParams"</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+		次のクエリ文字列を指定します。
+
+		<pre class="line-numbers notranslate language-html"><code class=" notranslate language-html">?foo=bar&amp;nums=1&amp;nums=2<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+		次のようになる <code class="notranslate notranslate">window.queryStringParams</code> プレイヤーとプラグインはグローバルオブジェクトを利用できます：
+
+		<pre class="line-numbers notranslate language-json"><code class=" notranslate notranslate language-json"><span class="token punctuation">{</span>
+foo<span class="token operator">:</span> 'bar'<span class="token punctuation">,</span>
+nums<span class="token operator">:</span> <span class="token punctuation">[</span>'<span class="token number">1</span>'<span class="token punctuation">,</span> '<span class="token number">2</span>'<span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+		</li>
+	</ul></li>
+	<li>
+	<ul><li>名前： <code class="notranslate notranslate">query_string_to_window.globals</code></li>
+		<li>データ型：配列</li>
+		<li>説明：ウィンドウオブジェクトのプロパティ名の配列。クエリ文字列にある値から読み込まれます。 既に存在する一致するプロパティ <code class="notranslate notranslate">window</code> オブジェクトまたはそのプロトタイプチェーンは設定されません。 例えば、 <code class="notranslate notranslate">query_string_to_window.globals</code> プレーヤーの設定では次のようになります。
+		<pre class="line-numbers notranslate language-json"><code class=" notranslate notranslate language-json"><span class="token punctuation">{</span>
+<span class="token property">"query_string_to_window"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token property">"globals"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">"foo"</span><span class="token punctuation">,</span>
+    <span class="token string">"nums"</span><span class="token punctuation">,</span>
+    <span class="token string">"self"</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+		次のクエリ文字列を指定します。
+
+		<pre class="line-numbers notranslate language-html"><code class=" notranslate language-html">?foo=bar&amp;nums=1&amp;nums=2&amp;self=not-allowed<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+		次のようになる <code class="notranslate notranslate">window</code> 次のプロパティが追加されたグローバルオブジェクト
+
+		<pre class="line-numbers notranslate language-javascript"><code class=" notranslate language-javascript">window<span class="token punctuation">.</span>foo<span class="token punctuation">;</span> <span class="token comment">// 'bar'</span>
+window<span class="token punctuation">.</span>nums<span class="token punctuation">;</span> <span class="token comment">// ['1', '2']</span>
+
+<span class="token comment">// Because `self` already exists on the `window` object, it will not be set</span>
+<span class="token comment">// and a warning will be logged to the browser console.</span>
+window<span class="token punctuation">.</span>self<span class="token punctuation">;</span> <span class="token comment">// window</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+		</li>
+	</ul></li>
+</ol></section><section class="bcls-section"><h3 id="repeat" data-gt-block="">繰り返す</h3>
+
+<p data-gt-block="" class="gt-block"><code class="notranslate notranslate">repeat</code> 情報：</p>
+
+<ul><li>データ型は <code class="notranslate notranslate">boolean</code></li>
+	<li>プレイリストがプレイリストプレーヤーの場合、プレイリストの再生が繰り返されます。 プレーヤー設定の最上位レベルに設定します。</li>
+</ul></section><section class="bcls-section"><h3 id="responsive" data-gt-block="">反応する</h3>
+
+<p data-gt-block="" class="gt-block"><code class="notranslate notranslate">responsive</code> 情報：</p>
+
+<ul><li>データ型：boolean</li>
+	<li>デフォルト： <code class="notranslate">true</code></li>
+	<li>このオプションをに設定する <code class="notranslate">true</code> レスポンシブブレークポイントに基づいてプレイヤーが自分自身をカスタマイズするようにします（参照： <a class="nturl" href="#breakpoints/index.html">ブレークポイント</a> オプション）。</li>
+</ul><p data-gt-block="" class="gt-block gt-block">この機能が有効になっていることの詳細については、次のリリースノートを参照してください。 <a class="nturl" href="..//support.brightcove.com/ja/brightcove-player-release-notes-v1#6.29.2">Brightcove Player 6.29.2</a>.</p>
+</section><section class="bcls-section"><h3 id="scripts" data-gt-block="">スクリプト</h3>
+
+<p data-gt-block="" class="gt-block"><code class="notranslate notranslate">scripts</code> 情報：</p>
+
+<ul><li>データ型は、プレーヤに含まれるJavaScriptファイルを参照する文字列の配列です</li>
+	<li>デフォルト値なし</li>
+	<li>プレーヤーがビルドされた時点で、これらのファイルはダウンロードされ、出力結果にインライン展開されるため、実行時に後でフェッチする必要はありません</li>
+	<li>スクリプトは指定された順序でインライン展開されるので、お互いに依存するスクリプトを安全に含めることができます</li>
+</ul></section><section class="bcls-section"><h3 id="skin" data-gt-block="">皮膚</h3>
+
+<p data-gt-block="" class="gt-block"><code class="notranslate notranslate">skin</code> 情報：</p>
+
+<ul><li>データ型：ブール値または文字列</li>
+	<li>デフォルト：未定義</li>
+	<li>プレーヤーが使用するビジュアルスタイルのバリエーションを決定します。 この値はグローバルにアクセス可能なものにも反映されます。 <code class="notranslate">bc.SKIN</code> ブラウザのプロパティ。 以下の値を認識します。
+	<table class="bcls-table"><thead class="bcls-table__head"><tr><th>値</th>
+				<th>bc.SKIN</th>
+				<th>説明</th>
+			</tr></thead><tbody class="bcls-table__body"><tr><td>"黒鉛"</td>
+				<td>"黒鉛"</td>
+				<td>古いを使用します Brightcove Player いくつかの互換性ハックと同様にスタイル。</td>
+			</tr><tr><td>false</td>
+				<td>"なし"</td>
+				<td>すべて無効にします Brightcove Player スタイリング。 これは一から高度にカスタマイズされたUIに使用するオプションです。</td>
+				<td> </td>
+			</tr><tr><td>未定義</td>
+				<td>「ルナ」</td>
+				<td>これを残す <code class="notranslate">undefined</code> プレイヤーにデフォルトのスキン（別名Luna）を使用させます。</td>
+				<td> </td>
+			</tr></tbody></table></li>
+</ul></section><section class="bcls-section"><h3 id="stylesheets" data-gt-block="">スタイルシート</h3>
+
+<p data-gt-block="" class="gt-block"><code class="notranslate notranslate">stylesheets</code> 情報：</p>
+
+<ul><li>プレーヤに含めるべきCSSファイルを参照するURL文字列の配列</li>
+	<li>プレーヤーがビルドされた時点で、追加のスタイルシートがダウンロードされ、プレーヤにインライン展開されるため、実行時にフェッチする必要はありません</li>
+	<li>スタイルシートは指定した順序で含まれています</li>
+</ul><aside class="gt-block bcls-aside bcls-aside--warning" data-gt-block="">CSSを使用しないでください <code class="notranslate">@import</code> プレーヤーのスタイルシートのルール。 解析の問題はプレーヤーのビルドで発生し、プレーヤーを正常に公開できません。</aside></section><section class="bcls-section"><h3 id="techOrder" data-gt-block="">techOrder</h3>
+
+<p data-gt-block="" class="gt-block"><code class="notranslate notranslate">techOrder</code> 情報：</p>
+
+<ul><li>データ型：配列</li>
+	<li>デフォルト：['html5'、 'flash']</li>
+	<li>デフォルトでは Brightcove Player 実行する <strong>ハイテクファースト</strong> 動画を再生するためのソース/技術の組み合わせを検索する際に注文します。 これは、2つのソースと2つの技術がある場合、プレーヤーは各ビデオを最初の技術で再生しようとします <code class="notranslate notranslate">techOrder</code> 次の再生技術を試すために移動する前に、 を参照してください <a class="nturl" href="..//support.brightcove.com/ja/guide-playback-technology/index.html">ガイド：再生技術</a> 詳細はドキュメント。</li>
+</ul><p data-gt-block="" class="gt-block">次のcurlステートメントを使用して、 <code class="notranslate notranslate">techOrder</code> デフォルトからの <code class="notranslate notranslate">['html5','flash']</code> 〜へ <code class="notranslate notranslate">['flash','html5']</code>:</p>
+
+<pre class="line-numbers notranslate language-bash"><code class=" notranslate notranslate language-bash">curl \
+  --header <span class="token string">"Content-Type: application/json"</span> \
+  --user <span class="token variable">$EMAIL</span> \
+  --request PATCH \
+  --data <span class="token string">'{
+      "techOrder": "['</span>flash<span class="token string">','</span>html<span class="token string">']"
+     }'</span> \
+  https://players.api.brightcove.com/v2/accounts/<span class="token variable">$ACCOUNT_ID</span>/players/<span class="token variable">$PLAYER_ID</span>/configuration<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</section><section class="bcls-section"><h3 id="version" data-gt-block="">バージョン</h3>
+
+<p data-gt-block="" class="gt-block gt-block">あなたは手動でプレイヤーのバージョンを設定することができます。 <strong>プレイヤー</strong> モジュール <strong>JSONエディタ</strong>.</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="バージョン" src="http://learning-services-media.brightcove.com/doc-assets/video-cloud-apis/player-management-api/guides/player-configuration/version.png"></figure><p data-gt-block="" class="gt-block gt-block">見ます <a class="nturl" href="..//support.brightcove.com/ja/manually-setting-player-version/index.html">プレーヤーのバージョンを手動で設定する</a> 詳細については、ドキュメントを参照してください。</p>
+</section><section class="bcls-section video-cloud-only" style="display:block;"><h3 id="video_cloud" data-gt-block="">video_cloud</h3>
+
+<p data-gt-block="">このプロパティを使用すると、あなたの Video Cloud としょうかん。 以下のカールステートメントは、 Video Cloud 動画のID。</p>
+
+<pre class="line-numbers notranslate language-bash"><code class=" notranslate notranslate language-bash">curl \
+--header <span class="token string">"Content-Type: application/json"</span> \
+--user <span class="token variable">$EMAIL</span> \
+--request POST \
+<span class="bcls-highlight">--data <span class="token string">'{
+    "name": "Video Cloud CURL 10 March",
+    "configuration": {
+      "video_cloud": {
+        "video": "4093372393001"
+      }
+    }
+  }'</span> \</span>
+  https://players.api.brightcove.com/v2/accounts/<span class="token variable">$ACCOUNT_ID</span>/players<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<!-- <p><code data-gist-id="8759542" data-gist-hide-footer="true" data-gist-line="240-252" data-gist-highlight-line="247-249"></code></p> -->
+
+<p data-gt-block="" class="gt-block gt-block">要求本体オブジェクトでは、 <code class="notranslate notranslate">name</code> や <code class="notranslate notranslate">description</code> トップレベルのプロパティであり、その他のプロパティはすべてトップレベルのプロパティです。 <code class="notranslate notranslate">configuration</code> オブジェクト。 いずれかの <a class="nturl" href="#configproperties/index.html">構成プロパティ</a> は、 <code class="notranslate notranslate">configuration</code> あなたがプレーヤーを作成するとき。</p>
+
+<aside class="gt-block bcls-aside bcls-aside--information" data-gt-block="">注：IDを使用する代わりに、動画の参照IDを構文で使用することができます <code class="notranslate notranslate">"video": "ref:1234refid"</code>.</aside></section><section class="bcls-section"><h3 id="volume_orientation" data-gt-block="">volume_orientation</h3>
+
+<p data-gt-block="" class="gt-block"><code class="notranslate notranslate">volume_orientation</code> 情報：</p>
+
+<aside class="bcls-aside bcls-aside--information language-editable" data-gt-block="">この機能は Brightcove Player 6.32.0 +。</aside><ul><li>データ型：文字列</li>
+	<li>デフォルト：横</li>
+	<li>挽き目 <code class="notranslate">volume_orientation</code> プロパティは、音量レベルスライダが水平方向か垂直方向かを決定します。
+	<figure class="bcls-figure"><img class="bcls-image" alt="水平ボリューム" src="http://learning-services-media.brightcove.com/doc-assets/video-cloud-apis/player-management-api/guides/player-configuration/volume-horizontal.png"></figure><figure class="bcls-figure"><img class="bcls-image" alt="垂直ボリューム" src="http://learning-services-media.brightcove.com/doc-assets/video-cloud-apis/player-management-api/guides/player-configuration/volume-vertical.png"></figure></li>
+</ul><p data-gt-block="">プロパティの値を変更するには、Studioまたはcurlを使用できます。</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="ボリュームの向きを設定する" src="http://learning-services-media.brightcove.com/doc-assets/video-cloud-apis/player-management-api/guides/player-configuration/set-volume-orientation.png"></figure><pre class="line-numbers notranslate language-bash"><code class=" notranslate notranslate language-bash">curl \
+  --header <span class="token string">"Content-Type: application/json"</span> \
+  --user <span class="token variable">$EMAIL</span> \
+  --request PATCH \
+  --data <span class="token string">'{
+      "volume_orientation": "vertical"
+     }'</span> \
+  https://players.api.brightcove.com/v2/accounts/<span class="token variable">$ACCOUNT_ID</span>/players/<span class="token variable">$PLAYER_ID</span>/configuration<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</section><section class="bcls-section"><h3 id="vttjs" data-gt-block="">vttjs</h3>
+
+<p data-gt-block="" class="gt-block"><code class="notranslate notranslate">vttjs</code> 情報：</p>
+
+<ul><li>データ型：文字列</li>
+	<li>デフォルト：vjs.zencdn.net CDN</li>
+	<li>ロード元のURLを設定します <strong>vtt.js</strong>。 これは標準のVideo.jsオプションと同じです <code class="notranslate">vtt.js</code>Brightcove Player 使用されます <code class="notranslate">vttjs</code> 代わりにドット付きプロパティ名を使用することはできません。 Player Management API、そして他の場所で問題があるかもしれません。 オプションは <code class="notranslate">data-vttjs</code> 属性、 <code class="notranslate">vttjs</code> iframeクエリパラメータ、 <code class="notranslate">vttjs</code> セットアップオプションまたは <code class="notranslate">vttjs</code> プレーヤーの設定で。</li>
+</ul></section><section class="bcls-section"><h3 id="wait_for_ad_block_detect" data-gt-block="">wait_for_ad_block_detect</h3>
+
+<p data-gt-block="" class="gt-block"><code class="notranslate notranslate">wait_for_ad_block_detect</code> 情報：</p>
+
+<ul><li>データ型：boolean</li>
+	<li>デフォルト：未定義</li>
+	<li>に設定されている場合 <code class="notranslate">true</code>つまり、プレーヤは、広告ブロック検出が決定した後まで自動初期化プロセスを遅らせるでしょう。 これは、プレーヤーの初期化を最大100ミリ秒程度遅らせることができます。 これをに設定する必要はありません。 <code class="notranslate">true</code> 使用している場合 <code class="notranslate">ad_failover</code> どちらの場合も遅延動作が発生します。</li>
+</ul></section></section></article></div>
+      
+</div>
+
+</div>
+
+
+<section class="views-element-container block block-views block-views-blockrelated-content-block-1 clearfix" id="block-views-block-related-content-block-1">
+  
+    
+
+      <div class="gt-block form-group" data-gt-block=""><div class="gt-block view view-related-content view-id-related_content view-display-id-block_1 js-view-dom-id-19f9b11dad66a57a228bd7c01cc51192a1483002466fd1ca11b6d108f5856e24" data-gt-block="">
+  
+    
+      <div class="gt-block view-header" data-gt-block="">
+      <h2 data-gt-block="" id="bc-ipnav-5">関連コンテンツ</h2>
+    </div>
+      
+      <div class="gt-block view-content" data-gt-block="">
+      <div class="gt-block item-list" data-gt-block="">
+  
+  <ul>
+
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/opting-out-automatic-player-updates/index.html" hreflang="en">自動プレーヤー更新のオプトアウト</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/oauth-guide/index.html" hreflang="en">OAuthガイド</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/setup-player-management-samples/index.html" hreflang="en">プレーヤー管理サンプルのセットアップ</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/player-repositories/index.html" hreflang="en">プレーヤーリポジトリ</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/guide-embed-apis/index.html" hreflang="en">ガイド：埋め込みAPI</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/player-management-api-sample-delete-players/index.html" hreflang="en">Player Management API サンプル：プレイヤーを削除する</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/player-management-api-sample-display-players/index.html" hreflang="en">Player Management API サンプル：ディスプレイプレーヤー</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/plugin-registry/index.html" hreflang="en">プラグインレジストリ</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/player-management-api-sample-create-player/index.html" hreflang="en">Player Management API サンプル：プレーヤーを作成する</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/step-step-player-management/index.html" hreflang="en">ステップバイステップ：プレイヤー管理</a></span></span></div></li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </section>
+
+
+  </div>
+
+              </section>
+
+                </div>
+  </div>
+
+      <footer class="footer container" role="contentinfo">
+              <div class="gt-block row" data-gt-block="">
+            <div class="gt-block region region-footer-top-left col-md-9" style="margin-bottom: 1em;" data-gt-block="">
+    <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">Brightcove サポート</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="https://status.brightcove.com">システムステータス</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/contact-support/index.html" data-drupal-link-system-path="node/18632">サポート - Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="../ja/en/contact/create/index.html">サポート - Zencoder</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-documentation-menu" id="block-documentation" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">オンラインマニュアル</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/index.html" data-drupal-link-system-path="<front>">ホーム</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">トレーニング（講習会）</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/online-training-courses/index.html" data-drupal-link-system-path="node/18286">オンラインコース</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/register-training/index.html" data-drupal-link-system-path="node/18270">コー​​スに登録</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-brightcove-menu" id="block-brightcove" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">Brightcove</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="https://www.brightcove.com">Brightcove.COM</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+            <div class="gt-block region region-footer-top-right col-md-3" data-gt-block="">
+    <section id="block-footerlegaltext" class="block block-block-content block-block-content4507d09c-a528-4947-b91d-36ec6671822b clearfix">
+  
+    
+
+      
+            <div class="gt-block field field--name-field-body field--type-text-long field--label-hidden field--item" data-gt-block=""><p data-gt-block="">Brightcove Inc.（ナスダック：BCOV）は、接続されたデバイス間でビデオを配信および収益化するための強力なクラウドソリューションを提供する世界有数のプロバイダです。</p>
+</div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+                    <div class="gt-block row" data-gt-block="">
+            <div class="gt-block region region-footer-bottom-left col-md-8" data-gt-block="">
+    <section id="block-footercopyrightlinewithlinks" class="block block-block-content block-block-content3a164ef9-02d8-42c4-bcc6-3ab435f670b3 clearfix">
+  
+    
+
+      <div class="gt-block block-content block-content--type-copyright-block-with-links block-content--view-mode-full ds-1col clearfix" data-gt-block="">
+
+  
+
+  
+            <div class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" data-gt-block="">2020</div>
+      
+            <div class="field field--name-field-copyright-text field--type-string-long field--label-hidden field--item" data-gt-block="">Brightcove Inc.すべての権利を保有します。</div>
+      
+      <div class="gt-block field field--name-field-legal-links field--type-link field--label-hidden field--items" data-gt-block="">
+              <div class="gt-block field--item" data-gt-block=""><a class="nturl" href="https://www.brightcove.com/en/privacy">プライバシーポリシー</a></div>
+              <div class="gt-block field--item" data-gt-block=""><a class="nturl" href="https://www.brightcove.com/en/terms-and-conditions">利用規約</a></div>
+          </div>
+  
+
+</div>
+
+
+  </section>
+
+
+  </div>
+
+            <div class="gt-block region region-footer-bottom-right col-md-4" data-gt-block="">
+    <section id="block-footersocialblock" class="block block-block-content block-block-content4fc23afd-8d37-420e-ab28-73b2ba24e836 clearfix">
+  
+    
+
+      
+      <div class="gt-block field field--name-field-social-icon field--type-entity-reference-revisions field--label-hidden field--items" data-gt-block="">
+              <div class="gt-block field--item" data-gt-block="">
+
+<a class="icon" icon__social--link="" href="https://www.linkedin.com/company/brightcove" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--linkedin">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--linkedin"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="gt-block field--item" data-gt-block="">
+
+<a class="icon" icon__social--link="" href="https://twitter.com/brightcove" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--twitter">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--twitter"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="gt-block field--item" data-gt-block="">
+
+<a class="icon" icon__social--link="" href="https://www.facebook.com/Brightcove" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--facebook">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--facebook"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="gt-block field--item" data-gt-block="" style="display:none;color:white">
+
+<a class="icon" icon__social--link="" href="https://plus.google.com/100830370440271567091" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--google-plus">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--google-plus"></use>
+  </svg>
+</a>
+
+</div>
+          </div>
+  
+
+
+  </section>
+
+<section id="block-scripts" class="block block-block-content block-block-content42e4bd63-d879-470d-a6de-d5e4529a01be clearfix">
+  
+    
+
+      
+            <div class="gt-block field field--name-field-body field--type-text-long field--label-hidden field--item" data-gt-block=""><script src="https://learning-services-media.brightcove.com/doc-assets/js/gtrans.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/js/support-feedback.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-support.js"></script>
+<script src="https://learning-services-media.brightcove.com/doc-assets/js/hide-google-plus.js"></script></div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+          </footer>
+  
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/18262","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click"},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"user":{"uid":0,"permissionsHash":"3b7fdb4927baca3ee2939edeb777485b3e2c2d36cf8c80e0d8f49c6dc5e2eeca"}}</script>
+<script src="https://support.brightcove.com/sites/default/files/js/js_8fmTAXGyuAUNVu11XoXJaeM8QBDFuAvX7ADwOnigrhc.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+<script src="https://support.brightcove.com/sites/default/files/js/js_L8Eb1bSFk-jGvnjMNZB7VvDJt-7nSbeXfaBlCzWjDbc.js"></script><div id="surveyDiv" style="visibility:hidden"><iframe id="CSAT" src="https://learning-services-media.brightcove.com/doc-assets/general/surveylink.html" style="display:none;"></iframe></div>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e78a80aa93","applicationID":"129613202","transactionName":"YwBUZkcFVktUWhJQX1pKd1FBDVdWGkkHXlVrBldRXQE=","queueTime":0,"applicationTime":20,"atts":"T0dXEA8fRUU=","errorBeacon":"bam.nr-data.net","agent":""}</script><script data-cfasync="false" src="https://tdns5.gtranslate.net/tdn-bin/queue.js"></script><!-- Yandex.Metrika counter for GTranslate --><script data-cfasyn

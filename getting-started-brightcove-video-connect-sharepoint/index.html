@@ -1,0 +1,1268 @@
+<html lang="ja" dir="ltr" class=" js"><head>
+    <meta charset="utf-8"><script type="text/javascript" src="https://bam.nr-data.net/1/e78a80aa93?a=129613202&amp;v=1167.2a4546b&amp;to=YwBUZkcFVktUWhJQX1pKY0BcSxdRW10DQR5EDUY%3D&amp;rst=14266&amp;ref=https://support.brightcove.com/ja/getting-started-brightcove-video-connect-sharepoint&amp;ap=2943&amp;be=3790&amp;fe=13903&amp;dc=10753&amp;perf=%7B%22timing%22:%7B%22of%22:1588779730043,%22n%22:0,%22f%22:0,%22dn%22:0,%22dne%22:0,%22c%22:0,%22ce%22:0,%22rq%22:8,%22rp%22:3007,%22rpe%22:3800,%22dl%22:3785,%22di%22:10754,%22ds%22:10754,%22de%22:10764,%22dc%22:13904,%22l%22:13904,%22le%22:13906%7D,%22navigation%22:%7B%7D%7D&amp;at=T0dXEA8fRUU%3D&amp;jsonp=NREUM.setToken"></script><script src="https://js-agent.newrelic.com/nr-1167.min.js"></script><script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script><script type="text/javascript" async="" src="//cdn.feedbackify.com/f.js"></script><script async="" src="https://fullstory.com/s/fs.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e78a80aa93",applicationID:"129613202"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e78a80aa93",applicationID:"129613202"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-2728311-17", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)">
+<meta name="MobileOptimized" content="width">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="https://support.brightcove.com/sites/default/files/favicon-64.png" type="image/png">
+<link rel="alternate" hreflang="en" href="https://support.brightcove.com/getting-started-brightcove-video-connect-sharepoint">
+<link rel="canonical" href="https://support.brightcove.com/ja/getting-started-brightcove-video-connect-sharepoint">
+<link rel="shortlink" href="https://support.brightcove.com/ja/node/16612">
+<link rel="revision" href="https://support.brightcove.com/getting-started-brightcove-video-connect-sharepoint">
+
+    <title>はじめに Brightcove ビデオConnect for SharePoint | Brightcove 学習</title>
+    <link rel="stylesheet" media="all" href="https://support.brightcove.com/sites/default/files/css/css_d7PoQ20hWbRiei75VgExP_tm8C1ylIRfzB3zIYLc5Cw.css?q23msc">
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.min.css">
+<link rel="stylesheet" media="all" href="https://support.brightcove.com/sites/default/files/css/css_fr7ugR_m15spMT57voAomC2Aklj0ATM7MmH6hvb3pp4.css?q23msc">
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+    <meta name="uri-translation" content="on">
+    <script>
+window['_fs_debug'] = false; window['_fs_host'] = 'fullstory.com';
+window['_fs_org'] = 'BX3Q1';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+g.consent=function(a){g("consent",!arguments.length||a)};
+g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+g.clearUserCookie=function(){};
+})(window,document,window['_fs_namespace'],'script','user');
+    </script>
+  <style type="text/css">html{_background:url(//about:blank) fixed;}.fby-on select {visibility:hidden!important;}.fby-on .fby-hide-iframe {visibility:hidden!important;}.fby-hide-embed embed {visibility:hidden!important;}.fby-hide-object object {visibility:hidden!important;}@media not screen {.fby-tab {display: none;}}#feedbackify *{box-sizing:content-box!important;-moz-box-sizing:content-box!important;-webkit-box-sizing:content-box!important;}#feedbackify input{box-sizing:border-box!important;-moz-box-sizing:border-box!important;-webkit-box-sizing:border-box!important;max-width:none!important;}#feedbackify *:before{content:none!important;}#feedbackify *:after{content:none!important;}#feedbackify ,#feedbackify div,#feedbackify span,#feedbackify textarea,#feedbackify input,#feedbackify table,#feedbackify tbody,#feedbackify tr,#feedbackify td,#feedbackify img,#feedbackify p,#feedbackify a{border:0!important;outline:none!important;width:auto;height:auto;text-align:left!important;text-indent:0!important;float:none!important;padding:0!important;margin:0!important;font:12px arial,helvetica,sans-serif!important;overflow:visible!important;color:#000!important;line-height:1.2!important;background:0 none!important;position:static!important;vertical-align:baseline!important;box-shadow:none!important;}#feedbackify table{border-collapse:collapse!important;border-spacing:0!important;max-width:inherit!important;width:auto!important;}#feedbackify td{word-break:normal!important;}#feedbackify {z-index:2147483646!important;position:static!important;top:0;left:0;}#feedbackify .fby-screen{z-index:2147483646!important;position:fixed!important;top:0;left:0;width:0;height:100%;_position:absolute!important;_top:expression(eval(document.body.scrollTop||document.documentElement.scrollTop))!important;_left:expression(eval(document.body.scrollLeft||document.documentElement.scrollLeft))!important;_width:0!important;_height:expression(document.documentElement.clientHeight||document.body.clientHeight+"px")!important;}#feedbackify .fby-mask{display:none!important;position:fixed!important;top:0;left:0;width:100%;height:100%;background-color:#000!important;opacity:0.2;filter:alpha(opacity=20);_position:absolute!important;_width:expression(document.documentElement.clientWidth||document.body.clientWidth+"px")!important;_height:expression(this.parentNode.style.height)!important;}#feedbackify .fby-show{display:block!important;visibility:visible!important;}#feedbackify .fby-hide{display:none!important;visibility:hidden!important;}</style><style type="text/css">#feedbackify .fby-tab{position:fixed!important;width:36px;height:100px;overflow:hidden!important;_position:absolute!important;}#feedbackify .fby-tab a{display:block!important;position:absolute!important;width:36px;height:100px;background-color:#000000!important;cursor:pointer!important;background:url(https://cdn.feedbackify.com/img/classic/tab.png)!important;_background:none!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/tab.png)!important;}#feedbackify .fby-tab-l{top:50%;left:0;margin-top:-50px!important;_top:expression((parseInt(this.parentNode.style.height)-this.clientHeight)/2+"px")!important;_margin-top:0!important;}#feedbackify .fby-tab-l a{margin-left:-5px!important;}#feedbackify .fby-tab-l a:hover{margin-left:-2px!important;}#feedbackify .fby-tab-r{top:50%;right:0px!important;margin-top:-50px!important;_top:expression((parseInt(this.parentNode.style.height)-this.clientHeight)/2+"px")!important;_left:expression((document.documentElement.clientWidth||document.body.clientWidth)-this.clientWidth+"px")!important;_margin-top:0!important;}#feedbackify .fby-tab-r a{margin-left:5px!important;}#feedbackify .fby-tab-r a:hover{margin-left:2px!important;}#feedbackify .fby-tab-t{top:0;margin-top:0px!important;}#feedbackify .fby-tab-b{top:auto;bottom:0!important;_top:expression(parseInt(this.parentNode.style.height)-this.clientHeight+"px")!important;}</style><style type="text/css">#feedbackify grammarly-ghost{display:none!important;}#feedbackify grammarly-btn{display:none!important;}#feedbackify #fby-form{z-index:2147483646!important;width:618px!important;position:absolute!important;}#feedbackify .fby-d-main{width:600px;height:50px;vertical-align:top!important;background-color:#FFFFFF!important;position:relative!important;}#feedbackify .fby-d{background:url(https://cdn.feedbackify.com/img/classic/dlg_shad_sprite.png)!important;_background:none!important;}#feedbackify .fby-d-h{height:9px;background:url(https://cdn.feedbackify.com/img/classic/dlg_shad_sprite_h.png)!important;_background:none!important;}#feedbackify .fby-d-h2{height:9px;background-color:#FFFFFF!important;}#feedbackify .fby-d-tl{background-position:-18px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_tl.png)!important;}#feedbackify .fby-d-t{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_t.png,sizingMethod=scale)!important;}#feedbackify .fby-d-tr{background-position:-36px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_tr.png)!important;}#feedbackify .fby-d-l{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_l.png,sizingMethod=scale)!important;}#feedbackify .fby-d-r{background-position:-9px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_r.png,sizingMethod=scale)!important;}#feedbackify .fby-d-bl{background-position:-54px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_bl.png)!important;}#feedbackify .fby-d-br{background-position:-72px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_br.png)!important;}#feedbackify .fby-d-b{background-position:0px -9px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_b.png,sizingMethod=scale)!important;}#feedbackify .fby-d-load{position:relative!important;}#feedbackify .fby-d-load img{position:absolute!important;left:8px;}#feedbackify .fby-d-load div{position:absolute!important;padding:4px 18px!important;font-size:16px!important;font-weight:bold!important;color:#333!important;}</style></head>
+  <body class="path-node page-node-type-support-doc has-glyphicons">
+    <a class="visually-hidden" focusable="" skip-link="" href="#main-content/index.html">
+      メインコンテンツへスキップ
+    </a>
+    
+      <div class="gt-block dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="" data-gt-block="">
+              <header class="navbar navbar-default container" id="navbar" role="banner">
+      <div class="gt-block navigation-secondary clearfix" data-gt-block="">
+          <div class="gt-block region region-navigation-secondary" data-gt-block="">
+    <section id="block-styles" class="block block-block-content block-block-contentfbb71e48-a6cd-4d2b-8239-43f18db69e60 clearfix">
+  
+    
+
+      
+            <div class="gt-block field field--name-field-body field--type-text-long field--label-hidden field--item" data-gt-block=""><link rel="stylesheet" media="all" href="https://learning-services-media.brightcove.com/doc-assets/css/drupal-fix.css"></div>
+      
+  </section>
+
+<nav role="navigation" aria-labelledby="block-secondarynavigation-menu" id="block-secondarynavigation">
+            
+  <h2 class="visually-hidden" id="block-secondarynavigation-menu" data-gt-block="">セカンダリナビゲーション</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/contact-support/index.html" title="サポートリクエストを作成する" data-drupal-link-system-path="node/18632">サポートリクエスト</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://status.brightcove.com/">システムステータス</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://university.brightcove.com/">Brightcove 大学</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<section id="block-gtranslate" class="block block-gtranslate block-gtranslate-block clearfix">
+  
+    
+
+      
+<div class="gt-block gtranslate" data-gt-block="">
+<script type="text/javascript">/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;var lang=lang_pair.split('|')[1];var plang=location.pathname.split('/')[1];if(plang.length !=2 && plang != 'zh-CN' && plang != 'zh-TW')plang='en';if(lang == 'en')location.pathname=location.pathname.replace('/'+plang+'/', '/');else location.pathname='/'+lang+location.pathname.replace('/'+plang+'/', '/');}
+/* ]]> */
+</script><select onchange="doGTranslate(this);"><option value="">言語の選択</option><option value="en|en" style="font-weight:bold;background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -0px;padding-left:18px;">英語</option><option value="en|fr" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -160px;padding-left:18px;">フランス語</option><option value="en|de" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -176px;padding-left:18px;">ドイツ語</option><option value="en|ja" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -240px;padding-left:18px;">日本語</option><option value="en|ko" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -256px;padding-left:18px;">韓国語</option><option value="en|es" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -352px;padding-left:18px;">スペイン語</option></select>
+</div>
+<div class="gtranslate__credits" data-gt-block="">
+  本ドキュメントはGoogle翻訳によって機械翻訳したものとなります
+</div>
+
+  </section>
+
+
+  </div>
+
+      </div>
+      <div class="gt-block navbar-header col-md-3" data-gt-block="">
+                  <a class="logo" navbar-btn="" pull-left="" href="../ja/index.html" title="ホーム" rel="home">
+            <img src="https://support.brightcove.com/themes/custom/bcdocs/images/brightcove.png" alt="ホーム">
+          </a>
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">トグルナビゲーション</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+                    <div class="gt-block navbar-collapse collapse" data-gt-block="">
+            <div class="gt-block region region-navigation-collapsible" data-gt-block="">
+    <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation">
+            <h2 class="sr-only" id="block-mainnavigation-menu" data-gt-block="">メインナビゲーション</h2>
+
+      
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-learning-home/index.html" title="ホームページ" data-drupal-link-system-path="node/18643">ホーム</a>
+                  </li>
+                                            <li class="expanded dropdown">
+        <a class="dropdown-toggle" href="" data-toggle="dropdown">
+          製品紹介
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/video-cloud/index.html" data-drupal-link-system-path="node/18332">Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://gallery.support.brightcove.com">ギャラリー</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-player/index.html" data-drupal-link-system-path="node/18283">Brightcove Player</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/live/index.html" data-drupal-link-system-path="node/18642">Live</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/social/index.html" data-drupal-link-system-path="node/18444">Social</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/audience/index.html" data-drupal-link-system-path="node/18445">Audience</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://zencoder.support.brightcove.com">Zencoder</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/ssai/index.html" data-drupal-link-system-path="node/18650">SSAI</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://support.ottflow.com">OTT Flow</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a class="dropdown-toggle" href="" data-toggle="dropdown">
+          Links
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/analytics-api/index.html" data-drupal-link-system-path="node/18370">Analytics API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/audience-api/index.html" data-drupal-link-system-path="node/18371">Audience API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/cms-api/index.html" data-drupal-link-system-path="node/18372">CMS API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/cms-connectors-video-cloud/index.html" data-drupal-link-system-path="node/18662">CMSコネクタ用 Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/data-collection-api/index.html" data-drupal-link-system-path="node/18876">Data Collection API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/delivery-system-api/index.html" data-drupal-link-system-path="node/18387">Delivery System API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/developer-tools-and-concepts/index.html" data-drupal-link-system-path="node/18430">開発者ツールと概念</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/native-player-sdks/index.html" data-drupal-link-system-path="node/18367">Device SDK</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/dynamic-ingest-api/index.html" data-drupal-link-system-path="node/18373">Dynamic Ingest API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/getting-started-brightcove-apis-0/index.html" data-drupal-link-system-path="node/18711">入門 - Brightcove API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/page-experience-api/index.html" data-drupal-link-system-path="node/18616">In-Page Experience APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/ingest-profiles-api/index.html" data-drupal-link-system-path="node/18374">Ingest Profiles API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/live/index.html" data-drupal-link-system-path="node/18642">Live API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/oauth-api/index.html" data-drupal-link-system-path="node/18376">OAuth API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/platform-api-code-samples/index.html" data-drupal-link-system-path="node/18675">プラットフォームAPIコードサンプル</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/playback-api/index.html" data-drupal-link-system-path="node/18380">Playback API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-player-code-samples/index.html" data-drupal-link-system-path="node/18630">プレーヤーコードサンプル</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-player-developer/index.html" data-drupal-link-system-path="node/18362">プレーヤー開発者</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/player-management-api/index.html" data-drupal-link-system-path="node/18378">Player Management API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/policy-api/index.html" data-drupal-link-system-path="node/18381">Policy API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/release-notes/index.html" data-drupal-link-system-path="node/18687">リリースに関して</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a class="dropdown-toggle" href="" data-toggle="dropdown">
+          トレーニング（講習会）
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a class="nturl" href="https://university.brightcove.com">オンラインコース</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/register-training/index.html" data-drupal-link-system-path="node/18270">コース登録</a>
+                  </li>
+        </ul>
+  
+            </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-support-documentation-announcements/index.html" title="の新機能を見る Brightcove オンラインマニュアル" data-drupal-link-system-path="node/18896">新着情報</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+        </div>
+          </header>
+  
+    <div class="gt-block full-width-headline" data-gt-block="">
+    <div class="gt-block container" data-gt-block="">
+      <div class="gt-block row" data-gt-block="">
+        <div class="gt-block col-sm-12" role="heading" data-gt-block="">
+            <div class="gt-block region region-header" data-gt-block="">
+          <section id="block-brightcoveheadlineblock" class="block block-bc-general block-bc-general-headline-block clearfix">
+  
+    
+
+      オンラインマニュアル
+  </section>
+
+
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      <div role="main" class="gt-block main-container container  js-quickedit-main-content" data-gt-block="">
+    <div class="gt-block row" data-gt-block="">
+
+                              <aside class="gt-block col-sm-3" role="complementary" data-gt-block="">
+              <div class="gt-block region region-sidebar-first" data-gt-block="">
+    <section class="bc-search-fixes-search-block-form block block-bc-search-fixes block-bc-search-fixes-search-block clearfix" data-drupal-selector="bc-search-fixes-search-block-form" id="block-brightcovesearchblock">
+  
+    
+
+      <form action="/ja/getting-started-brightcove-video-connect-sharepoint" method="post" id="bc-search-fixes-search-block-form" accept-charset="UTF-8">
+  <div class="gt-block form-item js-form-item form-type-textfield js-form-type-textfield form-item-search js-form-item-search form-no-label form-group" data-gt-block="">
+      <label for="edit-search" class="control-label sr-only">サイト内検索</label>
+  
+  
+  <input data-drupal-selector="edit-search" class="form-text form-control" type="text" id="edit-search" name="search" value="" size="15" maxlength="128" placeholder="サイト内検索">
+
+  
+  
+  </div>
+<input autocomplete="off" data-drupal-selector="form-tblobu45xrgbacpqajun4clxgjpxmz6lfu2qjsodfus" type="hidden" name="form_build_id" value="form-tBloBu45XrGBAcPQajUN4ClXgjPXMz6lfu2QJsODFus"><input data-drupal-selector="edit-bc-search-fixes-search-block-form" type="hidden" name="form_id" value="bc_search_fixes_search_block_form"><div data-drupal-selector="edit-actions" class="gt-block form-actions form-group js-form-wrapper form-wrapper" id="edit-actions" data-gt-block=""><button data-drupal-selector="edit-submit" class="button js-form-submit form-submit btn-primary btn icon-only" type="submit" id="edit-submit" name="op" value="Search"><span class="sr-only">サイト内検索</span><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button></div>
+
+</form>
+
+  </section>
+
+<section id="block-inpagenavigationblock" class="hidden-xs block block-bc-ipnav block-bc-ipnav-block clearfix" style="width: 476px;">
+  
+      <h2 class="block-title" data-gt-block="">このページ</h2>
+    
+
+      <div class="bc-ipnav-block" data-gt-block=""><ul><li><a href="#introduction/index.html">概要</a></li><li><a href="#contents/index.html">Contents [show]
+
+</a></li><li><a href="#installing/index.html">装着 Brightcove Video Connect for SharePoint</a></li><li><a href="#bc-ipnav-3/index.html">SharePoint Online用Player Solution Packageのインストール</a></li><li><a href="#Installing_Player_Web_Part_For_SharePoint_On-Premise/index.html">SharePoint On-Premise用Player Webパーツのインストール</a></li><li><a href="#installingproxy/index.html">そのためのProxy Serverのインストール Brightcove API通信</a></li><li><a href="#launching/index.html">発射 Brightcove Video Connect for SharePoint</a></li><li><a href="#linking/index.html">リンク先 Video Cloud アカウント</a></li><li><a href="#dropboxs3/index.html">一時アップロードストレージ用のDropboxまたはAWS S3へのリンク</a></li><li><a href="#permissions/index.html">SharePoint権限の設定</a></li><li><a href="#videos/index.html">ビデオの追加、インポート、および削除</a></li><li><a href="#search/index.html">動画の検索</a></li><li><a href="#playlists/index.html">プレイリストの追加、インポート、および削除</a></li><li><a href="#embedding/index.html">SharePointサイトにビデオを追加する</a></li><li><a href="#bc-ipnav-14/index.html">関連コンテンツ</a></li></ul></div>
+  </section>
+
+
+  </div>
+
+          </aside>
+              
+                  <section class="col-sm-9">
+
+                                      <div class="gt-block highlighted" data-gt-block="">  <div class="gt-block region region-highlighted" data-gt-block="">
+    <div data-drupal-messages-fallback="" class="hidden" data-gt-block=""></div>
+
+  </div>
+</div>
+                  
+                
+                
+                
+                          <a class="nturl" id="main-content"></a>
+            <div class="gt-block region region-content" data-gt-block="">
+        <h1 class="page-header"><span>はじめに Brightcove Video Connect for SharePoint</span>
+</h1>
+
+  
+<div class="gt-block node node--type-support-doc node--view-mode-full bcdocs-four-rows clearfix" data-gt-block="">
+
+  
+
+  <div class="group-first-row" data-gt-block="">
+      </div>
+
+  <div class="gt-block group-second-row" data-gt-block="">
+  
+  <div class="gt-block field field--name-field-products field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">製品（複数可）</div>
+          <div class="gt-block field__items taxonomy__tags" data-gt-block="">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item" data-gt-block="">Video Cloud</div>
+              </div>
+      </div>
+
+  <div class="gt-block field field--name-field-roles field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">役割</div>
+          <div class="gt-block field__items taxonomy__tags" data-gt-block="">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item" data-gt-block="">Studioユーザー</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="gt-block group-third-row taxonomy__tags" data-gt-block="">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="gt-block field field--name-field-topics field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">トピック）</div>
+          <div class="gt-block field--items" data-gt-block="">
+              <div class="field--item" data-gt-block="">CMSの統合</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="gt-block group-fourth-row" data-gt-block="">
+  
+            <div class="gt-block field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item" data-gt-block=""><p class="BCL-objective" data-gt-block="">このトピックでは、 Brightcove ビデオConnect for SharePoint。</p><section class="bcls-section"><h2 id="introduction" data-gt-block="">概要</h2>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th scope="col">バージョン</th>
+			<th scope="col">オンラインマニュアル</th>
+			<th scope="col">ダウンロード</th>
+			<th scope="col">互換性に関する注意事項</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td>4.1.2.0</td>
+			<td><a class="nturl" href="../ja/sharepoint-brightcove-connector-4041-using-connector/index.html">オンラインマニュアル</a></td>
+			<td><a class="nturl" href="https://github.com/BrightcoveOS/SharePoint-Connector/releases/tag/4.1.2.0">プラグインとソース</a>  *</td>
+			<td>
+			<p data-gt-block="">SharePoint 2016 / 2019オンプレミス、SharePoint 2016 / 2019 Online（Office 365）、 Brightcove CMS＆DI APIの、 Brightcove HTML5 Player</p>
+
+			<ul><li>修正：特定の状況でのエクスペリエンスの問題。</li>
+			</ul></td>
+		</tr><tr><td>4.0.1.0</td>
+			<td><a class="nturl" href="..//support.brightcove.com/ja/sharepoint-brightcove-connector-4041-using-connector/index.html">オンラインマニュアル</a></td>
+			<td><a class="nturl" href="https://github.com/BrightcoveOS/SharePoint-Connector/releases/tag/v4.0.1.0">プラグインとソース</a>  *</td>
+			<td>
+			<p data-gt-block="">SharePoint 2013 / 2016オンプレミス、SharePoint 2016 Online（Office 365）、 Brightcove CMS＆DI APIの、 Brightcove HTML5 Player</p>
+
+			<ul><li>埋め込みに使用できる新しいAppPart Brightcove 動画、再生リスト、ページはめ込みエクスペリエンス。 埋め込みに使用できます Brightcove ネイティブの埋め込みアイコンを使用する代わりに、Modern Experienceページのプレイヤー。</li>
+				<li>のプロキシサーバー Brightcove APIが不要になり、セットアッププロセスが簡単になりました。</li>
+			</ul></td>
+		</tr><tr><td>3.0.2.0</td>
+			<td>4.0.xxリリースにスキップ</td>
+			<td>EOL</td>
+			<td>
+			<p data-gt-block="">SharePoint 2013 / 2016オンプレミス、SharePoint 2016 Online（Office 365）、 Brightcove CMS＆DI APIの、 Brightcove HTML5 Player</p>
+
+			<ul><li>公開のサポート <a class="nturl" rel="nofollow" href="https://www.brightcove.com/en/blog/2017/05/think-outside-box-brightcoves-new-page-experiences-video">インページエクスペリエンス</a> ビデオポータル</li>
+				<li>プッシュベースのダイナミックインジェストを使用します。 ファイアウォールの背後にあるSharePointサーバーからのビデオのアップロードをサポート</li>
+				<li>デフォルトのインジェストプロファイルを Brightcove ハードコーディングされたプロファイルの代わりに</li>
+				<li>UXの改善</li>
+				<li>簡略化されたインストールプロセス</li>
+			</ul></td>
+		</tr><tr><td>2.0.2.66</td>
+			<td><a class="nturl" href="#contents/index.html">トレーニング文書</a></td>
+			<td>EOL</td>
+			<td>SharePoint 2013 / 2016オンプレミス、SharePoint 2016 Online（Office 365）、 Brightcove CMS＆DI APIの、 Brightcove HTML5 Player</td>
+		</tr><tr><td>1.1.2.8</td>
+			<td><a class="nturl" href="https://files.brightcove.com/bc-sharepoint-training.pdf">トレーニング文書</a></td>
+			<td>EOL</td>
+			<td>SharePoint 2013オンプレミスのみ、 Brightcove メディアAPI、 Brightcove レガシーFlash SmartPlayer </td>
+		</tr></tbody></table><div data-gt-block="" class="gt-block">
+<p data-gt-block="">*©2019 Brightcove</p>
+
+<p data-gt-block="" class="gt-block gt-block">Apacheライセンス、バージョン2.0（以下「ライセンス」）の下で使用許諾されます。 ライセンスに従わない限り、このファイルを使用することはできません。 あなたはライセンスのコピーを <a class="nturl" style="box-sizing: border-box; background-color: transparent; color: rgb(3, 102, 214);" href="https://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a>。 適用法または書面による合意が必要な場合を除き、本ライセンスに基づいて配布されるソフトウェアは、明示的または黙示的にいかなる種類の保証または条件もなく「現状有姿」で配布されます。 ライセンスに基づいて許可および制限を規定する特定の言語については、ライセンスを参照してください。</p>
+</div>
+
+<p data-gt-block="" class="gt-block gt-block">このコネクタのサポートについては、こちらをご記入ください <a class="nturl" href="https://files.brightcove.com/BrightcoveConnectforSharePointSupportWorksheet.docx">ワークシート</a> サポートチケットを付ける <a class="nturl" href="../ja/en/contact/create/index.html">Brightcove 顧客サポート</a>.</p>
+</section><section class="bcls-section"><h2 id="contents" data-gt-block="">Contents [show]
+
+</h2>
+
+<ul><li><a class="nturl" href="#installing/index.html">装着 Brightcove Video Connect for SharePoint</a></li>
+	<li><a class="nturl" href="#launching/index.html">発射 Brightcove ビデオ接続</a></li>
+	<li><a class="nturl" href="#linking/index.html">リンク先 Video Cloud アカウント</a></li>
+	<li><a class="nturl" href="#players/index.html">定義 Video Cloud Players の作成と管理</a></li>
+	<li><a class="nturl" href="#custfields/index.html">カスタムフィールドの定義</a></li>
+	<li><a class="nturl" href="#dropboxs3/index.html">一時アップロードストレージ用のDropboxまたはAWS S3へのリンク</a></li>
+	<li><a class="nturl" href="#permissions/index.html">SharePoint権限の設定</a></li>
+	<li><a class="nturl" href="#videos/index.html">ビデオの追加、インポート、編集、および削除</a></li>
+	<li><a class="nturl" href="#search/index.html">動画の検索</a></li>
+	<li><a class="nturl" href="#playlists/index.html">プレイリストの追加、インポート、および削除</a></li>
+	<li><a class="nturl" href="#embedding/index.html">SharePointサイトにビデオを追加する</a></li>
+</ul></section><section class="bcls-section"><h2 id="installing" data-gt-block="">装着 Brightcove Video Connect for SharePoint</h2>
+
+<p data-gt-block="">インストールを開始する前に、前提条件とアクセス許可に関する次の情報を確認してください。</p>
+
+<ul><li>ユーザーがSharePoint用のアプリケーションを追加する前に、Farm Administratorsグループのメンバーは、SharePoint用のアプリケーションをサポートする環境を構成する必要があります。 詳細は、次を参照してください。 <a class="nturl" href="https://technet.microsoft.com/en-us/library/fp161236(v=office.15).aspx">SharePoint 2013用のアプリケーションの環境を設定する</a>  or  <a class="nturl" href="https://technet.microsoft.com/en-us/library/fp161236(v=office.16).aspx">SharePointの2016</a>  or  <a class="nturl" href="https://technet.microsoft.com/en-us/library/fp161236(v=office.16).aspx">SharePointの2019</a>.</li>
+	<li>ユーザーは、 <strong>Webサイトの管理</strong> や <strong>サブサイトの作成</strong> SharePoint用のアプリケーションを追加する権限 既定では、これらのアクセス許可は、フルコントロールのアクセス許可レベルまたはサイト所有者のグループに所属するユーザーのみが使用できます。</li>
+	<li>ユーザーがSharePoint用のアプリケーションを追加すると、アプリケーションは機能する必要があるアクセス権を要求します（たとえば、検索にアクセスする、またはリストを作成するなど）。 これらの権限を持たないユーザーには、十分な権限がないことが通知され、アプリケーションを追加できません。 ユーザーは、サイト管理者またはファーム管理者に連絡して、管理者がアプリを追加できるかどうかを確認できます。</li>
+	<li>システムアカウントとしてサイトにログインしたユーザーは、アプリをインストールできません。 システムアカウントはアプリのライセンスをインポートできません。これは、パフォーマンスの問題が発生する可能性があるためです。</li>
+</ul><h3 data-gt-block="">を追加する Brightcove ビデオをApp Catalogに接続する</h3>
+
+<div data-gt-block="" class="gt-block"><!--
+            <iframe class="training-video-player" src="//players.brightcove.net/20318290001/E16-WGGOe_default/index.html?videoId=5026949771001" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" height="360" width="640"></iframe>
+            --></div>
+
+<h4 data-gt-block="">アプリカタログを設定する</h4>
+
+<p data-gt-block="">インストールするには Brightcove 最初のステップは、SharePointでApp Catalogを設定することです。 この手順を完了するには、以下の参照を使用してください。</p>
+
+<ul><li><a class="nturl" href="https://technet.microsoft.com/en-us/library/fp161234(v=office.15).aspx">SharePoint 2013のアプリケーションカタログを管理する</a></li>
+	<li><a class="nturl" href="https://technet.microsoft.com/en-us/library/fp161234(v=office.16).aspx">SharePoint 2016のアプリケーションカタログを管理する</a></li>
+	<li><a class="nturl" href="https://docs.microsoft.com/en-us/SharePoint/administration/manage-the-app-catalog">SharePoint 2019のアプリケーションカタログを管理する</a></li>
+</ul><h4 data-gt-block="">を追加する Brightcove ビデオをカタログに接続する</h4>
+
+<p data-gt-block="">Once App Catalogが設定されている場合は、以下の手順に従います。</p>
+
+<ol class="bcls-tasklist"><li>この手順を実行しているユーザーアカウントが、App Catalogの[サイト所有者]または[デザイナー]グループのメンバーであることを確認します。</li>
+	<li>アプリケーションカタログサイトで、 <strong>Apps for SharePoint</strong> リスト。</li>
+	<li>上の <strong>Apps for SharePoint</strong> ページ、クリック <strong>新商品</strong>.</li>
+	<li>の中に <strong>ファイルを選択する</strong> ボックスをクリックします。 <strong>ブラウズ</strong>、そしてそのフォルダを含むフォルダを探します <i>BrightcoveConnectorApp</i> ファイル。</li>
+	<li>アプリケーションを選択し、をクリックします。 <strong>開いた</strong>.</li>
+	<li>ナビゲーションヘッダーの <strong>OK</strong> アプリケーションをアップロードする。</li>
+	<li>アイテムの詳細ボックスに、アプリケーションの名前、タイトル、簡単な説明、アイコンURL、およびその他の設定を入力します。 必ず <strong>使用可能</strong> チェックボックスがオンになっているため、ユーザーは自分のサイトのアプリケーションを見ることができます。 [おすすめ]チェックボックスをオンにすると、 <strong>おすすめ</strong> App Catalogのコンテンツビュー。</li>
+	<li>ナビゲーションヘッダーの <strong>保存</strong>.</li>
+</ol><h4 data-gt-block="">インストール Brightcove サイト内のビデオ接続アプリケーション</h4>
+
+<div data-gt-block="" class="gt-block"><!--
+            <iframe class="training-video-player" src="//players.brightcove.net/20318290001/E16-WGGOe_default/index.html?videoId=5026949771001" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" height="360" width="640"></iframe>
+            --></div>
+
+<p data-gt-block="">以下の手順に従って、 Brightcove サイト内のコネクタ：</p>
+
+<ol class="bcls-tasklist"><li>この手順を実行しているユーザーアカウントがSite Ownersグループのメンバーであることを確認します。</li>
+	<li>アプリケーションをサイトに追加するには、次の2つの方法があります。
+	<ol class="bcls-tasklist"><li>どのページでも、 <strong>設定</strong> メニュー選択 <strong>アプリを追加する</strong> オプションを選択します。<br><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-install-app-add-an-app.png"></li>
+		<li>XNUMXサーバ当たり年間 <strong>サイトの内容</strong>   <strong>アプリを追加する</strong> オプションを選択します。<br><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-install-app-add-an-app-icon.png"></li>
+	</ol></li>
+	<li>次に、「あなたの組織から」をクリックしてから、 <strong>Brightcoveコネクタ</strong> アプリ名<br><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-install-app-brightcove-connector-icon.png"></li>
+	<li>[許可の許可]ダイアログボックスで、[信頼する]をクリックします。<br><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-install-app-trust-it.png"></li>
+	<li>この時点で、 <strong>Brightcoveコネクタ</strong> App for SharePointが追加され、[サイトのコンテンツ]リストの[アプリケーション]セクションに表示されます。 現在、サイトで使用できるようになりました。</li>
+</ol><br><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-install-app-complete.png"><h4 data-gt-block="">そのためのデフォルトリストのプロビジョニング Brightcove ビデオ接続アプリケーション</h4>
+
+<p data-gt-block="">使用する前に Brightcove いくつかの必須リストは、以下の手順に従ってプロビジョニングする必要があります。</p>
+
+<ul><li>アプリケーションが最初にインスタンス化されたとき、またはリストがローカルサイトに存在しないときは、3までのオプションが提示され、サイト内のリストのプロビジョニングが可能になります。<br><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-install-lists-create.png"></li>
+	<br><li>クリックすると、各ボタンに効果のメッセージが表示されます。<br><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-install-lists-message.png"></li>
+	<li>「設定リストの作成」をクリックすると、 Brightcove 設定リストでは、このリストを編集するプロンプトが表示され、 Brightcove APIサポートが設定されています。<br><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-install-lists-videos.png"></li>
+	<li>このリンクをクリックすると、 Brightcove プロキシサーバーのアクセス情報を即座に編集するための設定リスト。 タイトルは「プロキシ」に設定する必要があります。 ProxyURLは、プロキシサーバーにアクセスするために使用するプロキシサーバーの場所に固有のものです Brightcove API。 見る <a class="nturl" href="#installingproxy/index.html">のためのプロキシサーバの使用 Brightcove API通信</a> プロキシサーバーの使用方法の詳細については、<br><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-install-lists-settings-proxy.png"></li>
+	<li>リストのプロビジョニングを完了すると、サイトに次のリストが作成されます。
+	<ul><li>Accounts  -  Accountオブジェクトを表すカスタムリスト。</li>
+		<li>ビデオ - ビデオオブジェクトを表すカスタムリスト。</li>
+		<li>設定 - プロキシサーバーの詳細を格納するリスト。</li>
+	</ul><br><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-install-lists-complete.png"></li>
+</ul><h3 id="sharepointpermissions" data-gt-block="">SharePoint権限の設定</h3>
+
+<p data-gt-block="">ConnectorをSharePointに直接統合することの利点は、そのパーミッションモデルを活用できることです。 SharePoint管理者は、コネクタのさまざまな機能にアクセスできるユーザーを制御できます。 以下は、コネクターがコネクターのセクションへのアクセスを制御するために使用するデフォルトのグループ・セットです。</p>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th> </th>
+			<th><strong>BCAdmin</strong></th>
+			<th><strong>BCVideoAdd</strong></th>
+			<th><strong>どちらのグループのユーザーでもない</strong></th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td>ホーム</td>
+			<td>X</td>
+			<td>X</td>
+			<td>X</td>
+		</tr><tr><td>アカウント管理</td>
+			<td>X</td>
+			<td> </td>
+			<td> </td>
+		</tr><tr><td>ビデオの追加/編集</td>
+			<td>X</td>
+			<td>X</td>
+			<td> </td>
+		</tr><tr><td>動画を管理する</td>
+			<td>X</td>
+			<td>X</td>
+			<td>X</td>
+		</tr><tr><td>プレイリストを管理する</td>
+			<td>X</td>
+			<td>X</td>
+			<td>X</td>
+		</tr></tbody></table><p data-gt-block="">注意</p>
+
+<ul><li>グループはSharePoint管理者によってセットアップされる必要があり、インストール時にConnectorによって自動的に作成されることはありません。</li>
+	<li>ユーザーは、アプリケーションにアクセスするために、コネクタがインストールされているサイトへの訪問者アクセス権が必要です。 アプリケーションがインストールされているサイトにアクセスすると、ユーザーはコネクタのホーム、ビデオの管理、プレイリストの管理の各セクションを見ることができます。</li>
+	<li>以下のグループに加えて、各アカウントは、後で説明する作成者と表示グループを使用してセットアップされます。</li>
+</ul></section><section class="bcls-section"><h2 data-gt-block="" id="bc-ipnav-3">SharePoint Online用Player Solution Packageのインストール</h2>
+
+<p data-gt-block="">挽き目 Brightcove Player ソリューションパッケージは、 Brightcove Video Connectパッケージを使用すると、ユーザーは埋め込みできます Brightcove SharePointサイトページのビデオプレーヤー。 ザ Brightcove Player ソリューションパッケージは、SharePoint OnlineとSharePoint Serverの両方と互換性のある、すぐに使用できるSharePointコントロールを使用するため、両方で使用できます。 ビデオを埋め込むためのプレーヤーWebパーツサンドボックスソリューションは、 Brightcove Video Connectパッケージを使用することはできますが、SharePoint Onlineとして使用することはできますが、SharePoint Onlineとして使用することはできますが、MicrosoftによってホストされるSharePoint Serverにはセキュリティ制限によりサンドボックスソリューションが禁止されています。 このソリューションについては、次のセクションで説明します。</p>
+
+<p data-gt-block="">埋め込む Brightcove SharePoint Onlineのプレーヤーでは、ここで説明されているソリューションパッケージを使用してビデオプレーヤーまたはプレイリストプレーヤーを選択し、ユーザーがSharePoint埋め込みコードダイアログボックスにコピー/ペーストするプレーヤー埋め込みコードが生成されます。</p>
+
+<p data-gt-block="">注 - このセクションでは、 BrightcovePlayer.wspソリューションファイル。</p>
+
+<ol class="bcls-tasklist"><li>サイトコレクションのルートサイトには、 Brightcove アプリケーションがインストールされている場合は、サイト設定 - &gt;サイトコレクションの管理 - &gt; HTMLフィールドセキュリティに移動します。<br><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-embed-player-html-field-security.png"></li>
+	<li>許可されたiframeドメインとしてplayers.brightcove.netを追加する<br><img class="bcls-image--no-border" alt="" width="800" src="https://img.brightcove.com/node16612-embed-player-add-domain.png"></li>
+	<li>サイトコレクションのルートサイトには、 Brightcove アプリケーションがインストールされている場合は、サイト設定 - &gt; Web Designerギャラリー - &gt;ソリューションに移動します。<br><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-embed-player-solution-gallery.png"></li>
+	<li>アップロードする "BrightcovePlayer.wsp "ファイルをソリューションギャラリーに追加し、ファイルを有効にします。<br><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-embed-player-brightcoveplayer-wsp.png"></li>
+	<li>サイト設定 - &gt;サイトアクション - &gt;サイト機能の管理にナビゲートします。<br><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-embed-player-manage-site-features.png"></li>
+	<li>"Brightcove Player"機能。<br><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-embed-player-activate-brightcove-player.png"></li>
+	<li>その BrightcoveConnectorResourcesドキュメントライブラリはインストール中に作成されました。<br><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-embed-player-check-brightcoveconnectorresources.png"></li>
+	<li>そうでなければ、新しいDocument Libraryを作成します。 BrightcoveConnectorResources<br><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-embed-player-add-brightcoveconnectorresources.png"></li>
+	<li>アップロード BrightcovePlayer.cssと BrightcovePlayer.jsをそのドキュメントライブラリに追加します。<br><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-embed-player-copy-brightcoveconnectorresources.png"></li>
+</ol></section><section class="bcls-section"><h2 id="Installing_Player_Web_Part_For_SharePoint_On-Premise" data-gt-block="">SharePoint On-Premise用Player Webパーツのインストール</h2>
+
+<p data-gt-block="">社内にSharePoint Serverをインストールしたコネクタを使用している場合は、前のセクションの説明に従ってPlayer Solution Packageをインストールするか、このセクションで説明するPlayer Web Part Sandbox Solutionをインストールします。 このサンドボックスソリューションは、セキュリティの制約により、MicrosoftがホストするSharePoint OnlineまたはSharePoint Serverでは動作しません。 プレーヤーWebパーツは、ユーザーが埋め込みコードをコピー/ペーストする必要がないため、プレーヤーをSharePointサイトに追加するためのやや簡素な方法を提供します。</p>
+
+<p data-gt-block="">注 - このセクションでは、 BrightcoveVideoCloudPlayer.wspソリューションファイル。</p>
+
+<ol bcls-tasklist=""><li>次のように入力して、コマンドラインからSharePointにソリューションを追加します。
+	<pre class="notranslate">        stsadm -o addsolution -filename BrightcoveVideoCloudPlayer.wsp</pre>
+	</li>
+	<li>ブラウザを使用して、「サーバーの全体管理 - &gt;システム設定 - &gt;ファーム管理 - &gt;ファームソリューションの管理」に移動して、ソリューションを展開します。<br><img class="bcls-image--no-border" alt="" width="800" src="https://img.brightcove.com/node16612-embed-player-webpart-system-settings.png"></li>
+	<li>あなたは今見るべきです BrightcoveVideoCloudPlayer.wspをファームのソリューションストアに保存します。 クリック "BrightcoveVideoCloudPlayer.wsp "を選択し、次に[Deploy Solution]をクリックしてソリューションを展開します。<br><img class="bcls-image--no-border" alt="" width="800" src="https://img.brightcove.com/node16612-embed-player-webpart-solution-properties.png"></li>
+	<br><li>[サイト操作/サイト設定 - &gt;サイトコレクション管理 - &gt;サイトコレクション機能]をクリックして機能を有効にします。<br><img class="bcls-image--no-border" alt="" width="800" src="https://img.brightcove.com/node16612-embed-player-webpart-site-settings.png"></li>
+	<br><li>「AE一部のWebパーツ」機能を有効にします。<br><img class="bcls-image--no-border" alt="" width="200" src="https://img.brightcove.com/node16612-embed-player-webpart-activate.png"></li>
+</ol></section><p data-gt-block="">&lt;class = "bcls-section"&gt;</p>
+
+<h2 id="installingproxy" data-gt-block="">そのためのProxy Serverのインストール Brightcove API通信</h2>
+
+<div data-gt-block="" class="gt-block"><!--
+    <iframe class="training-video-player" src="//players.brightcove.net/20318290001/E16-WGGOe_default/index.html?videoId=5026949771001" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" height="360" width="640"></iframe>
+  --></div>
+
+<p data-gt-block="" class="gt-block gt-block">コネクターはクライアント側のJavaScriptアプリケーションなので、認証された通信を Brightcove API。 詳しい情報は、 <a class="nturl" href="..//support.brightcove.com/ja/overview-oauth-api-v4/index.html">Brightcove APIドキュメント。</a></p>
+
+<p data-gt-block="" class="gt-block gt-block">.netプロキシアプリケーションは、 Brightcove ビデオ接続パッケージ。 プロキシサーバーは、Microsoft AzureなどのWebアクセス可能な場所に展開する必要があります。 セキュリティ上の理由から、プロキシは、プロキシと共にインストールされたweb.configファイルに含まれるWebサイトからの接続のみを許可するように設計されています。 web.configファイルのbrightcove：originsキーには、 <strong>Brightcoveコネクタ</strong> アプリケーションとサイトのウェブサイトのURL <strong>Brightcoveプレーヤー</strong> コンポーネントが実行されます。 以下の例を参照してください。</p>
+
+<p data-gt-block="" class="gt-block"><code class="notranslate notranslate">&lt;add key="brightcove:origins" value="https://brightcovecms-a3da847a1c9e33.sharepoint.com, https://brightcovecms.sharepoint.com" /&gt; </code></p>
+
+<p data-gt-block="">複数のサイトはコンマ区切りの文字列として表示できます。</p>
+
+<section class="bcls-section"><h2 id="launching" data-gt-block="">発射 Brightcove Video Connect for SharePoint</h2>
+<!--
+            <iframe class="training-video-player" src="//players.brightcove.net/20318290001/E16-WGGOe_default/index.html?videoId=5026949771001" allowfullscreen="" webkitallowfullscreen="" mozallowfullscreen="" height="360" width="640"></iframe>
+            -->
+
+<p data-gt-block="" class="gt-block gt-block">アプリケーションを起動するには、ユーザーが <strong>Brightcoveコネクタ</strong> SharePointの管理者によって構成されている場合は、[サイトのコンテンツ]リスト内のアプリケーションをクリックするか、メニューリンクをクリックします。</p>
+
+<p data-gt-block="">どちらの場合でも、ユーザーはConnector Appのホームページに移動します。 このページには、企業固有のメッセージや追加のリンクなどを追加するよう、クライアントによってさらに設定することができます。インストールセクションで説明したように、ユーザーのグループメンバーに応じて、アカウント管理とビデオの追加タブが表示される場合と表示されない場合があります。</p>
+
+<p data-gt-block="" class="gt-block gt-block">コネクタの左側の列にあるメインナビゲーションは常に表示され、ユーザーはアクセス可能なすべてのセクションをナビゲートできます（上記のセクションを参照してください）。 <a class="nturl" href="#sharepointpermissions/index.html">パーミッション</a>）。 以下に、コネクタの各コンポーネントの目的を簡単に説明します。</p>
+
+<ul><li><strong>ホーム</strong> - 最初にコネクタに入るときのランディングページ。</li>
+	<li><strong>アカウント管理</strong> - 入力するためのインターフェイスを提供します。 Brightcove Video Cloud アカウント情報をSharePointに追加します。</li>
+	<li><strong>ビデオを追加する</strong> - 新しい動画をアップロードする Video Cloud。 ビデオオブジェクトもSharePointで作成されます（実際のビデオファイルを除く）。</li>
+	<li><strong>動画を管理する</strong> - 既存のビデオの参照と編集、およびビデオのインポート Video Cloud SharePointにインポートします。</li>
+	<li><strong>プレイリストを管理する</strong> - 新しいプレイリストを作成するだけでなく、既存のプレイリストをブラウズして管理する。</li>
+</ul><figure><img class="bcls-image--no-border" alt="" style="width:400px;" src="https://img.brightcove.com/node16612-launch-main-menu.png"></figure><p data-gt-block="" class="gt-block gt-block">もあります <strong>ビデオを追加する Brightcove</strong> や <strong>編集ビデオ</strong> これらの操作を実行するときにメインナビゲーションに表示されるコンポーネント。</p>
+
+<table><tbody><tr><td><img class="bcls-image--no-border" alt="" style="width:400px;" src="https://img.brightcove.com/node16612-launch-main-menu-add.png"></td>
+			<td><img class="bcls-image--no-border" alt="" style="width:400px;" src="https://img.brightcove.com/node16612-launch-main-menu-edit.png"></td>
+		</tr></tbody></table></section><section class="bcls-section"><h2 id="linking" data-gt-block="">リンク先 Video Cloud アカウント</h2>
+
+<p data-gt-block="" class="gt-block gt-block">コネクタの[アカウント管理]セクションは、リンクされているそれぞれの情報を入力するために使用されます Brightcove Video Cloud サイトでアクセスされるアカウント。 <strong>Brightcove SharePointからアカウントを作成することはできません。 Video Cloud 最初。</strong> 挽き目 Brightcove アカウント情報は、SharePointにアクセスする際に使用されるため、SharePointに入力する必要があります Brightcove 通信するAPI Video Cloud。 また、アカウント固有のアクセス権を割り当てる手段も提供します。 複数のアカウントを持つエンタープライズクライアントの場合、各アカウントにアクセスできるユーザーと、ビデオを参照またはアップロードできるかどうかを制御できます。</p>
+
+<div data-gt-block="" class="gt-block"><!--
+            <iframe class="training-video-player " src="//players.brightcove.net/20318290001/E16-WGGOe_default/index.html?videoId=5026949771001 " allowfullscreen=" " webkitallowfullscreen=" " mozallowfullscreen=" " height="360 " width="640 "></iframe>
+            --></div>
+
+<h3 data-gt-block="">アカウント管理のランディングページ</h3>
+
+<p data-gt-block="">アカウント管理のランディングページには、設定済みのアカウントの現在のリストが、作成者と閲覧者に割り当てられたグループとともに表示されます。</p>
+<img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-account-mgmt-landing-page.png"><ol><li><strong>アカウントのタイトル</strong> - 現在設定されている（または少なくとも作成された）アカウント。</li>
+	<li><strong>AuthorsGroup</strong> - アカウントの "作成者"権限が割り当てられたSharePointグループ。</li>
+	<li><strong>ViewersGroup</strong> - アカウントのSharePointグループに "Viewer"権限が割り当てられている。</li>
+	<li><strong>新しいアカウントを追加</strong> - アカウント作成画面を開いて新しいアカウントを設定します。</li>
+</ol><h3 data-gt-block="">アカウントの作成/編集</h3>
+
+<p data-gt-block="">新しいアカウントを作成する場合でも既存のアカウントを編集する場合も、プロセスとオプションは同じです。 すべてのアカウントプロパティ（[作成者]グループと[ビューア]グループを除く）は、 Video Cloud 最初にアカウントを作成します。 以下は、各アカウントに必要なプロパティです。</p>
+
+<figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-account-mgmt-creating-account.png"></figure><ol class="bcls-tasklist"><li><strong>アカウント名</strong> - アカウントの名前。 この名前はSharePointでのみ使用されるため、 Video Cloud.</li>
+	<li><strong>DefaultVideoPlayerId</strong> - ビデオのデフォルトのプレーヤーを設定します。</li>
+	<li><strong>DefaultPlaylistPlayerId</strong> - デフォルトのプレイリストプレーヤーを設定します。</li>
+	<li><strong>アカウントID</strong> -  Brightcove からのアカウントID Video Cloud.</li>
+	<li><strong>クライアントID</strong> -  Brightcove API認証クライアントID。</li>
+	<li><strong>クライアントシークレット</strong> -  Brightcove API認証クライアントの秘密。</li>
+	<li><strong>一時的な保管場所</strong> - ビデオとテキストトラックのアップロード中に使用される一時保存場所 Video Cloud。 ドロップダウンにより、Amazon Web Services（AWS）またはDropboxのいずれかを選択できます。</li>
+	<li><strong>AWSアクセスキーID</strong> -  AWSを使用している場合、ここにアクセスキーIDが入力されます。</li>
+	<li><strong>AWSシークレットアクセスキー</strong> -  AWSを使用している場合は、シークレットアクセスキーがここに入力されます。</li>
+	<li><strong>AWSバケット名</strong> -  AWSを使用している場合は、AWSバケット名がここに入力されます。</li>
+	<li><strong>DropboxアカウントID</strong> -  Dropboxを使用している場合、ここにDropbox Account IDが入力されます。</li>
+	<li><strong>Dropboxアクセストークン</strong> -  Dropboxを使用している場合、Dropboxアクセストークンがここに入力されます。</li>
+	<li><strong>カスタムフィールド</strong> - で作成されたカスタムフィールドをマップするために使用されます Video Cloud このアカウントの為に。 セクションを参照 <a class="nturl" href="#custfields/index.html">カスタムフィールドマッピング</a> 詳細については。</li>
+	<li><strong>作成者グループ、ビューアグループ</strong> - アカウントのSharePoint側の権限の定義グループ。
+	<ol type="a"><li>作成者グループ（この場合SharePoint "所有者"グループ）のメンバは、ビデオの追加、既存のビデオの編集と更新、プレイリストの作成/編集などの書き込みトークンを必要とするアカウント内の機能を実行する能力を持っていますブラウジングやビデオやプレイリストの検索など、すべての読み込みタイプの機能を実行することもできます。</li>
+		<li>ビューアのグループ（この場合はSharePointの "Visitors"グループ）のメンバーは、ビデオやプレイリストの参照や検索などの読み取りタイプの機能に対してのみ許可されています。</li>
+	</ol></li>
+</ol><p data-gt-block="">上記のアカウントリストのいずれかのプロパティを編集するには、プロパティ名またはその値（存在する場合）をクリックして、プロパティポップアップダイアログボックスを開きます。</p>
+
+<h4 data-gt-block="">からアカウントクレデンシャルを入力 Brightcove SharePointへ</h4>
+
+<p data-gt-block="">SharePointが接続するために Brightcove Video Cloud、からのアカウント資格情報 Brightcove SharePointに追加する必要があります。 このセクションでは、アカウント資格情報を次の場所に配置する方法について説明します。 Brightcove。 次のセクションでは、これらの資格情報をSharePointコネクタに追加する方法について説明します。</p>
+
+<ol class="bcls-tasklist"><li>ログイン時に Brightcove Video Cloud。 パブリッシャーIDの値に注意してください。<br><img class="bcls-image--no-border" alt="" width="900" src="https://img.brightcove.com/node16612-accounts-publisher-id.png"></li>
+	<li>管理者に移動します。<br><img class="bcls-image--no-border" alt="" width="900" src="https://img.brightcove.com/node16612-accounts-admin.png"></li>
+	<li>API認証に移動します。<br><img class="bcls-image--no-border" alt="" width="900" src="https://img.brightcove.com/node16612-accounts-admin-api-authentication.png"></li>
+	<li>新しいアプリケーションを登録します。<br><img class="bcls-image--no-border" alt="" width="900" src="https://img.brightcove.com/node16612-accounts-admin-register-button.png"></li>
+	<li>アプリケーションに名前を付け、アカウントアクセスを設定し、APIを有効にします。<br><img class="bcls-image--no-border" alt="" width="900" src="https://img.brightcove.com/node16612-accounts-admin-auth-form.png"></li>
+	<li>クライアントIDとクライアント秘密に注意してください。 次のセクションでSharePointに入力する必要があります。<br><img class="bcls-image--no-border" alt="" width="500" src="https://img.brightcove.com/node16612-accounts-admin-auth-credentials.png"></li>
+</ol><p data-gt-block="">設定するには Brightcove アカウントID、[アカウントID]ボタンを選択し、 Brightcove 次のモーダルで前の手順で保存したパブリッシャーID：</p>
+
+<figure><img class="bcls-image--no-border" alt="" width="623" src="https://img.brightcove.com/node16612-account-mgmt-account-id.png"></figure><p data-gt-block="">設定するには Brightcove クライアントID]を選択し、[クライアントID]ボタンをクリックし、前の手順で保存したクライアントIDを次のモーダルに入力します。</p>
+
+<figure><img class="bcls-image--no-border" alt="" width="623" src="https://img.brightcove.com/node16612-account-mgmt-client-id.png"></figure><p data-gt-block="">設定するには Brightcove Client Secret]を選択し、[Client Secret]ボタンをクリックして、前の手順で保存したClient Secretを次のモーダルに入力します。</p>
+
+<figure><img class="bcls-image--no-border" alt="" width="623" src="https://img.brightcove.com/node16612-account-mgmt-client-secret.png"></figure><ol class="bcls-tasklist"><li><strong>値</strong> - プロパティの値を入力します。 値は、カットアンドペーストを使用して入力できます。 Video Cloud 利用可能であれば、データ。</li>
+	<li><strong>閉じる</strong> - 変更を加えずにプロパティダイアログボックスを閉じます。</li>
+	<li><strong>OK</strong> - プロパティーリストに値を記録し、ダイアログを閉じます。</li>
+</ol></section><section class="bcls-section"><h3 id="players" data-gt-block="">定義 Video Cloud Players の作成と管理</h3>
+
+<div data-gt-block="" class="gt-block"><!--
+            <iframe class="training-video-player " src="//players.brightcove.net/20318290001/E16-WGGOe_default/index.html?videoId=5026949771001 " allowfullscreen=" " webkitallowfullscreen=" " mozallowfullscreen=" " height="360 " width="640 "></iframe>
+            --></div>
+
+<p data-gt-block="">SharePointでデフォルトのシングルビデオプレーヤーとして使用するプレーヤーIDを設定するには、 "DefaultVideoPlayerId"ボタンを選択します。 Brightcove 次のモーダル：</p>
+
+<figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-account-mgmt-player-id.png"></figure><ol class="bcls-section"><li><strong>値</strong> - プロパティの値を入力します。 値は、カットアンドペーストを使用して入力できます。 Video Cloud 可能であればデータ。</li>
+	<li><strong>閉じる</strong> - 変更を加えずにプロパティダイアログボックスを閉じます。</li>
+	<li><strong>OK</strong> - プロパティーリストに値を記録し、ダイアログを閉じます。</li>
+</ol><p data-gt-block="">SharePointで既定のプレイリストビデオプレーヤーとして使用するプレーヤーIDを設定するには、[DefaultPlaylistPlayerId]ボタンを選択し、次の場所からプレーヤーIDを入力します。 Brightcove.</p>
+</section><section class="bcls-section"><h3 id="custfields" data-gt-block="">カスタムフィールドの定義</h3>
+
+<div data-gt-block="" class="gt-block"><!--
+            <iframe class="training-video-player " src="//players.brightcove.net/20318290001/E16-WGGOe_default/index.html?videoId=5026949771001 " allowfullscreen=" " webkitallowfullscreen=" " mozallowfullscreen=" " height="360 " width="640 "></iframe>
+            --></div>
+
+<p data-gt-block="">アカウントを設定するときに Brightcove コネクタ、で作成されたカスタムフィールド Video Cloud コネクタのアカウントプロファイルに追加して、[ビデオの追加]および[ビデオの管理]領域に表示され、その値をSharePoint for Searchに保存することができます。 カスタムフィールドがマップされると、それらは必須フィールドであるかどうかとともに、[アカウント管理]画面の[カスタムフィールド]セクションに表示されます。</p>
+
+<figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-account-mgmt-custom-field-mapping.png"></figure><p data-gt-block="" class="gt-block gt-block">カスタムフィールドを追加、削除、または編集するには、「カスタムフィールドの編集」ボタンを選択します。 次のモーダルウィンドウが表示されます <u>すべて</u> アカウントで使用可能なカスタムフィールドの 注 - このリストは、新しいアカウントが初めて保存されたときにのみ利用可能になります。</p>
+
+<figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-account-mgmt-edit-custom-fields.png"></figure><ol class="bcls-tasklist"><li><strong>Video Cloud カスタムフィールド</strong> - で定義されたすべてのカスタムフィールドの名前 Video Cloud 選択したアカウントの</li>
+	<li><strong>種類</strong> - カスタムフィールドのタイプ（テキストまたはリスト）。</li>
+	<li><strong>必須</strong> - カスタムフィールドが必要かどうかを示します。 この定義は、 Video Cloud コネクタ内から変更することはできません。</li>
+	<li><strong>含める</strong> - カスタムフィールドをConnectorのアカウントの一部にして、ビデオの追加、編集、または管理時に表示されるようにします。</li>
+</ol></section><section class="bcls-section"><h2 id="dropboxs3" data-gt-block="">一時アップロードストレージ用のDropboxまたはAWS S3へのリンク</h2>
+
+<div data-gt-block="" class="gt-block"><!--
+            <iframe class="training-video-player " src="//players.brightcove.net/20318290001/E16-WGGOe_default/index.html?videoId=5026949771001 " allowfullscreen=" " webkitallowfullscreen=" " mozallowfullscreen=" " height="360 " width="640 "></iframe>
+            --></div>
+
+<p data-gt-block="">挽き目 Brightcove APIでは、すべてのファイル（動画ファイル、テキストトラックファイル）を Video Cloud 両方の場所からアクセスできる中間の場所にアップロードする必要があります Brightcove コネクタだけでなく Video Cloud。 AWS S3とDropboxは、次の2つの推奨サービスです。 Brightcove コネクタ。</p>
+
+<p data-gt-block="">これらのサービスを設定して、アカウントの設定セクションで必要な情報を生成するためのガイダンス Brightcove コネクタは次のリンクを使用して見つけることができます：</p>
+
+<ul><li><a class="nturl" href="..//support.brightcove.com/ja/overview-dynamic-ingest-api-legacy-ingest/index.html">概要： Dynamic Ingest API</a><br><a class="nturl" href="..//support.brightcove.com/ja/using-dynamic-ingest-s3/index.html">ダイナミックインジェストをS3で使用する</a><br><a class="nturl" href="https://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html">http://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html</a><br><a class="nturl" href="https://www.dropbox.com/developers">https://www.dropbox.com/developers</a></li>
+</ul><p data-gt-block="">注 -  AWS S3またはDropboxにアップロードされたファイルは自動的に削除されません。 一定期間後に自動的にファイルを削除するように、これらのサービスにポリシーを設定することをお勧めします。</p>
+
+<h4 data-gt-block="">一時的な記憶場所のポップアップ</h4>
+
+<p data-gt-block="">ファイルのアップロードに使用する一時保存場所を設定するには、[一時保存場所]ボタンを選択し、プルダウンから保存オプションの1つを選択します。</p>
+
+<figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-account-mgmt-temp-storage.png"></figure><ol class="bcls-tasklist"><li><strong>値</strong> - 一時保管場所としてAmazon Web ServicesまたはDropboxを選択します。</li>
+	<li><strong>OK</strong> - プロパティーリストに値を記録し、ダイアログを閉じます。</li>
+</ol><p data-gt-block="">選択した保管場所に応じて、AWS S3に必要な設定データを入力するには、「AWS Access Key ID」、「AWS Secret Access Key」、および「AWS Bucket Name」ボタンを選択するか、「Dropbox Account Id」および「Dropbox Access Token "ボタンを押して、Dropboxの必要な設定データを入力します。</p>
+</section><section class="bcls-section"><h2 id="permissions" data-gt-block="">SharePoint権限の設定</h2>
+
+<p data-gt-block="">作成者グループとして承認されるSharePointグループを設定するには、[作成者グループ]ボタンを選択し、次のモーダルで示すようにプルダウンからグループを選択します。</p>
+
+<h4 data-gt-block="">グループプロパティポップアップ</h4>
+
+<figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-account-mgmt-group-property.png"></figure><ol class="bcls-tasklist"><li><strong>グループを選択</strong> - コネクタがインストールされているサイトで使用可能なすべてのSharePointグループを表示します。</li>
+	<li><strong>OK</strong> - プロパティーリストに値を記録し、ダイアログを閉じます。</li>
+</ol><p data-gt-block="">ビューアのグループとして承認されるSharePointグループを設定するには、[ビューアのグループ]ボタンを選択し、プルダウンからグループを選択します。</p>
+
+<p data-gt-block="" class="gt-block gt-block"><strong>重要 - アカウントの値は、アカウントの[保存]ボタンをクリックするまで保存されません。 プロパティダイアログボックスに値を入力しても、すぐにアカウントに値が保存されるわけではありません。</strong></p>
+
+<figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-account-mgmt-save-delete.png"></figure><ol><li><strong>アカウントを保存</strong> - アカウントプロパティに設定されているすべての値をSharePointにコミットします。</li>
+	<li><strong>アカウントを削除する</strong> -  SharePointからアカウントを削除します。 警告 - この操作を実行すると、アカウントでSharePointにインポートされたすべての動画は、SharePointからアクセスできなくなります。 ただし、動画を削除しても Video Cloud.</li>
+	<li><strong>キャンセル</strong> - 変更を記録せずにアカウント設定ウィンドウを閉じます。</li>
+</ol></section><section class="bcls-section"><h2 id="videos" data-gt-block="">ビデオの追加、インポート、および削除</h2>
+
+<p data-gt-block="">SharePointコネクタを使用すると、コンテンツ作成者はローカルマシンからビデオをアップロードし、ビデオのメタデータを編集できます。</p>
+
+<div data-gt-block="" class="gt-block"><!--
+            <iframe class="training-video-player " src="//players.brightcove.net/20318290001/E16-WGGOe_default/index.html?videoId=5028605017001 " allowfullscreen=" " webkitallowfullscreen=" " mozallowfullscreen=" " height="360 " width="640 "></iframe>
+   --></div>
+
+<h3 data-gt-block="">ビデオを追加する</h3>
+
+<p data-gt-block="">コネクタの[ビデオの追加]セクションは、新しいビデオを Video Cloud。 アップロード先のすべてのデータ Video Cloud ただし、ビデオファイル自体はSharePointにも格納されているため、Connector機能とSharePoint検索結果で使用できるようになります。 また、SharePoint管理者とユーザーにログインすることなくデータへのネイティブアクセスを提供します Video Cloud.</p>
+
+<p data-gt-block="">動画の追加は、1つの動画と複数の動画（一括アップロード）の両方をサポートします。 ユーザーが[Add Videos]にアクセスすると（許可する場合）、次のフィールドが表示され、そこで送信されるメタデータを入力できます Video Cloud:</p>
+
+<h4 data-gt-block="">「シングルビデオの追加」のランディングページ</h4>
+
+<figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-videos-add-single.png"></figure><ol class="bcls-tasklist"><li><strong>アカウントを選択</strong> （必須） - このドロップダウンリストには、ユーザーが動画の追加を許可されているすべてのアカウントが入力されます。 これは勘定グループ割当によって有効になります。 アップロードを有効にするには、ユーザーがアカウントを選択する必要があります。</li>
+	<li><strong>氏名</strong> （必須） - アップロードされたビデオの名前。</li>
+	<li><strong>短い説明</strong> - ビデオの簡単な説明。</li>
+	<li><strong>長い説明</strong> - ビデオの長い説明。</li>
+	<li><strong>アクティブです</strong> （必須） - ドロップダウンのオプションは、アクティブ、非アクティブ、保留中、削除済みです。 注 - ビデオが非アクティブの状態でアップロードされている場合、未処理のSharePointは今後の編集のためにビデオ情報にアクセスできなくなります。 これは、 Brightcove APIです。</li>
+	<li><strong>関連リンクURL、関連リンクテキスト</strong> - 関連付けられたハイパーリンクとビデオのためにプレーヤーに表示されるテキスト。</li>
+	<li><strong>開始日、終了日</strong>  - ビデオの可用性の日付を定義します。 定義されている場合、動画はこの日付範囲外で再生されません。</li>
+	<li><strong>経済</strong> - オプションは無料と広告がサポートされています。</li>
+	<li><strong>Brightcove タグ</strong> - データに保存されるデータタグ Video Cloud SharePointに保存されるだけでなく、タグ情報も表示されます。 これらは、SharePointメタデータタグとは別のもので、一部のクライアントはこのインターフェイスに追加したいもので、SharePointにのみ保存されます（転送されません）。 Video Cloud).</li>
+	<li><strong>カスタムフィールド</strong> - 選択したアカウントのコネクタに追加されたカスタムフィールドが表示されます。 で定義された説明テキスト Video Cloud カスタムフィールドのフィールドがフィールドの下に表示されます。</li>
+	<li><strong>テキストトラックファイル</strong>  - 最初のアップロード時またはその後のアップデート時に、アップロードされた各動画にテキストトラックを追加できます。 見る <a class="nturl" href="#addingtexttracks/index.html">テキストトラックを追加する。</a></li>
+	<li><strong>画像の詳細</strong> - 動画のサムネイルと静止画像は、 Video Cloud APIを介してSharePointコネクタに返されます。 動画の管理で動画にアクセスしたときに表示されます。</li>
+	<li><strong>ビデオファイル</strong> （必須） -  "Browse"ボタンをクリックするとローカルファイルシステムエクスプローラが開き、アップロードするビデオファイルを選択します。</li>
+</ol><p data-gt-block="">Once ユーザが「保存」ボタンをクリックすると、必要なフィールドがすべて完了し、データが正しいフォーマットであることを確認するための検証チェックが実行される。 検証が失敗した場合は、必要なフィールドを入力するか無効なデータを修正するかどうかを確認するメッセージが表示されます。 例えば：</p>
+
+<figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-videos-error-dialog.png"></figure><p data-gt-block="">検証エラーがなければ、アップロードが開始されます。 アップロード中に、以下のステータスモーダルが表示され、アップロードの進行状況に関するフィードバックが提供されます。</p>
+
+<figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-videos-success-upload-dialog.png"></figure><p data-gt-block="">Once プロセスが完了すると、ユーザーはステータスダイアログを閉じることができ、次のメッセージがサイトに表示されます。</p>
+
+<figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-videos-success-upload-connector-menu.png"></figure><p data-gt-block="">データは Video Cloud 指定されたアカウントとビデオ名でSharePointに保存されます。 アップロードされたビデオごとに、SharePoint内で固有のIDが生成されます。 このID（参照IDと呼ばれる）は、ビデオと共に転送されます Video Cloud 動画の追加タグとして使用します。</p>
+
+<h4 data-gt-block="">「複数の動画を追加する」ランディングページ</h4>
+
+<p data-gt-block="">「複数の動画を追加する」オプションを選択すると、一度に複数の動画をアップロードできます。 これを選択すると、すべてのビデオで共有されるフィールドだけが表示されます。 複数のビデオアップロードの場合、 Video Cloud 自動的にビデオファイル名をビデオの名前として割り当てます。</p>
+
+<figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-videos-add-multiple.png"></figure><ol class="bcls-tasklist"><li><strong>アカウントを選択</strong> （必須） - このドロップダウンリストには、ユーザーが動画の追加を許可されているすべてのアカウントが入力されます。 これは勘定グループ割当によって有効になります。 アップロードを有効にするには、ユーザーがアカウントを選択する必要があります。</li>
+	<li><strong>関連リンクURL、関連リンクテキスト</strong> - 関連するハイパーリンクとビデオのためにプレーヤーに表示されるテキスト</li>
+	<li><strong>開始日、終了日</strong> - ビデオの可用性の日付を定義します。</li>
+	<li><strong>経済</strong> - オプションは無料と広告がサポートされています。</li>
+	<li><strong>Brightcove タグ</strong> - データに保存されるデータタグ Video Cloud SharePointに保存されるだけでなく、タグ情報も表示されます。 これらは、SharePointメタデータタグとは別のもので、一部のクライアントはこのインターフェイスに追加したいもので、SharePointにのみ保存されます（転送されません）。 Video Cloud).</li>
+	<li><strong>カスタムフィールド</strong> - 選択したアカウントのコネクタに追加されたカスタムフィールドが表示されます。 で定義された説明テキスト Video Cloud カスタムフィールドのフィールドがフィールドの下に表示されます。</li>
+	<li><strong>ビデオファイル</strong> （必須） -  "Choose File"ボタンをクリックすると、ローカルファイルシステムエクスプローラが開き、アップロードするビデオファイルを選択します。 複数のファイルを追加するには、[別のファイルを追加]ボタンをクリックして、別のファイル選択オプションを追加します。 選択したファイルをリストから削除するには、そのファイルの下の[削除]ボタンをクリックするか、別のファイルを選択して置き換えます。 [保存]をクリックするとアップロードが開始され、アップロードダイアログボックスが表示され、ステータスが表示されます。 Once アップロードが完了すると、ダイアログが閉じられ、成功のメッセージが表示されます。</li>
+</ol><p data-gt-block="">[保存]をクリックするとアップロードが開始され、アップロードダイアログボックスが表示され、ステータスが表示されます。 Once アップロードが完了すると、ダイアログが閉じられ、成功のメッセージが表示されます。</p>
+
+<h3 id="addingtexttracks" data-gt-block="">テキストトラックを追加する</h3>
+
+<p data-gt-block="">テキストトラックは、最初のアップロード時またはその後の更新時に、任意のビデオに追加できます。 ビデオには、1つまたは複数のテキストトラックを関連付けることができます。 ユーザーは、ビデオに追加するテキストトラックの種類（ファイルアップロード、URLアップロード、またはリモートURL）を選択できます。 「なし」を選択した場合、セクションにはフィールドは表示されません。</p>
+
+<p data-gt-block="" class="gt-block gt-block"><strong>重要：単一のビデオは、ファイルアップロード、URLアップロード、またはリモートURLの組み合わせをサポートしません。 1つのタイプのテキストトラックのみを各ビデオに関連付けることができます。</strong></p>
+
+<h4 data-gt-block="">ファイルのアップロード</h4>
+
+<p data-gt-block="">テキストトラックファイルで「ファイルアップロード」を選択すると、次のフィールドが表示されます。</p>
+
+<figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-text-tracks-file-upload.png"></figure><ol class="bcls-tasklist"><li><strong>テキストトラックのタイプを選択</strong> - ファイルアップロード、URLアップロード、またはリモートURLの選択が可能です。</li>
+	<li><strong>ファイルセレクタ</strong> - テキストトラックファイルの選択。</li>
+	<li><strong>テキストトラックのプロパティ</strong>  - テキストトラックに関連付けられたプロパティを設定します。 「追加」をクリックすると、次回のアップロード/更新時にビデオトラックにテキストトラックが追加されます。
+	<ol type="a"><li><strong>Language</strong> - テキストトラックの言語の2文字コード（有効なBCP 47言語タグ）。たとえば、英語の場合は "en"です。</li>
+		<li><strong>ラベル</strong> - 字幕で使用可能なさまざまな言語を一覧表示するメニューなど、ユーザーに表示されるトラックのラベル。</li>
+		<li><strong>種類</strong> - サポートされている5つのトラックタイプの1つ</li>
+	</ol></li>
+	<li><strong>追加/キューに入れられたテキストトラックのリスト</strong>  - 次の保存時にアップロードするためにキューに入れられている既存のテキストトラックと新しいテキストトラックのリストを表示します。 テキストトラックは、[削除]リンクをクリックして動画を保存することで削除できます。</li>
+</ol><h4 data-gt-block="">URLアップロード、リモートURLアップロード</h4>
+
+<p data-gt-block="">これらのオプションのいずれかを選択すると、「ファイルアップロード」アップロードが、テキストトラックファイルに完全修飾URLパスを入れるためのテキストフィールドに置き換えられます。</p>
+
+<ul><li>URLアップロード - テキストトラックファイルが置かれているパブリックURLを入力し、[アップロード]をクリックします。 ファイルがアップロードされます Video Cloud.</li>
+	<li>リモートURL  - テキストトラックファイルが存在するパブリックURLを入力します。 URLは250文字未満でなければなりません。 キャプションはリモートURLからロードされます。</li>
+</ul><figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-text-tracks-url-upload.png"></figure><ol class="bcls-tasklist"><li><strong>テキストトラックのタイプを選択</strong> - ファイルアップロード、URLアップロード、またはリモートURLの選択が可能です。</li>
+	<li><strong>URLを追加</strong> - テキストトラックファイルへの完全修飾URLパスを入力するフィールド。</li>
+	<li><strong>テキストトラックのプロパティ</strong>  - テキストトラックに関連付けられたプロパティの設定を許可します。 「追加」をクリックすると、次回のアップロード/更新時にビデオトラックにテキストトラックが追加されます。
+	<ol type="a"><li><strong>Language</strong> - テキストトラックの言語の2文字コード（有効なBCP 47言語タグ）。たとえば、英語の場合は "en"です。</li>
+		<li><strong>ラベル</strong> - ユーザーに表示されるトラックのラベル（字幕に使用できるさまざまな言語を一覧表示するメニューなど）。</li>
+		<li><strong>種類</strong> - サポートされている5つのトラックタイプの1つがリストされています。</li>
+	</ol></li>
+	<li><strong>追加/キューに入れられたテキストトラックのリスト</strong>  - 次の保存時にアップロードするためにキューに入れられている既存のテキストトラックと新しいテキストトラックのリストを表示します。 テキストトラックは、[削除]リンクをクリックして動画を保存することで削除できます。</li>
+</ol><h3 data-gt-block="">動画を管理する</h3>
+
+<p data-gt-block="">コネクタの[ビデオの管理]セクションは、既存のビデオの参照と管理に使用されます。 これには、必要に応じて既存のビデオの編集や更新が含まれます。 検索機能は、検索名、説明、およびタグ情報によってビデオを検索するために使用されます。</p>
+
+<h4 data-gt-block="">動画のリンク先ページの管理</h4>
+
+<p data-gt-block="">[動画の管理]ページには、利用可能なアカウントの動画を参照または検索するために使用できるフィールドのリストが表示されます。</p>
+
+<figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-videos-manage.png"></figure><ol class="bcls-tasklist"><li><strong>アカウントを選択</strong>  - このドロップダウンリストには、ユーザーがアクセス権限を持つすべてのアカウントが入力されます。 これは勘定グループ割当によって有効になります。 ユーザーは、動画リストを表示するにはアカウントを選択する必要があります。</li>
+	<li><strong>サイト内検索</strong>  - ビデオの結果を、その用語を含むものにフィルタリングします。 名前、タグ、説明情報、およびSharePointメタデータフィールドが定義されている場合は、これらのフィールドが検索されます。 一度に1つのアカウントでしか検索することはできません。 クロスアカウント検索はサポートされていません。</li>
+	<li><strong>SharePointのみを表示するか、 Video Cloud のみ</strong> -  SharePointに記録されているもの、または Video Cloud データをSharePointにインポートすることはありませんでした。</li>
+	<li><strong>フィルタの並べ替え/並べ替え</strong> - リストされたパラメータで結果をソートして並べ替えると、ビデオをより迅速に見つけるのに役立ちます。</li>
+</ol><h4 data-gt-block="">アカウント内のビデオリストの表示</h4>
+
+<p data-gt-block="">Once アカウントが選択されると、そのアカウントの利用可能な動画のリストが表示されます。</p>
+
+<figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-videos-manage-sharepoint-listing.png"></figure><ol class="bcls-tasklist"><li><strong>アカウントを選択</strong>  - このドロップダウンリストには、ユーザーがアクセス権限を持つすべてのアカウントが入力され、アカウントグループの割り当てによって有効になります。 ユーザーは、動画リストを表示するにはアカウントを選択する必要があります。</li>
+	<li><strong>SharePointのみを表示するか、 Video Cloud のみ</strong> - このオプションの目的は、SharePointに記録されているもの、またはSharePointに記録されているものだけにビデオをフィルタリングすることです Video Cloud データをSharePointにインポートすることはありませんでした。</li>
+	<li><strong>フィルタの並べ替え/並べ替え</strong> - リストされたパラメータで結果をソートして並べ替えると、ビデオをより迅速に見つけるのに役立ちます。</li>
+	<li><strong>ページングコントロール</strong>  - 各ページには5の動画リストが表示されます。 5以上が存在すると、ページングコントロールが表示されます。</li>
+	<li><strong>動画リスト</strong> - 各動画リストには次のものが含まれます：
+	<ol type="a"><li>ビデオ名 - 名前をクリックすると、そのビデオの編集用のビデオが開きます。</li>
+		<li>短い説明</li>
+		<li>動画に関連付けられたタグのリスト（参照IDは保存されていてもリストされません） Video Cloud タグとして）。</li>
+		<li>"Edit Video"リンク。 このリンク（または名前をクリック）は、現在のユーザーに許可がある場合に編集用のビデオを開くために使用されます。</li>
+		<li>動画ID：これは Video Cloud ビデオID。 このIDは、動画が編集された後も（変更がなくても）一覧に表示され、アップロード後初めて保存されます。</li>
+	</ol></li>
+</ol><h4 data-gt-block="">aをインポートする Video Cloud SharePointへのビデオのみ</h4>
+
+<p data-gt-block="">に直接アップロードされたビデオがある場合 Video Cloud コネクタ経由ではなく、そのビデオのデータをSharePointに「インポート」して、SharePointで管理できるようにすることが可能です。 これを行うには、まず "Video Cloud （1）：</p>
+
+<figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-videos-manage-videocloud-listing.png"></figure><p data-gt-block="">次に、ビデオ名またはビデオ編集リンクをクリックして、次のセクションで説明するように編集モードでビデオを開きます。 Once ビデオは編集モードで保存され、データはSharePointにも保存され、ビデオは「SharePointのみ」セクションに表示されます。</p>
+
+<p data-gt-block="" class="gt-block gt-block"><strong>重要 -  SharePointコネクタは、SharePointからのデータのみを同期します Video Cloud そうではない Video Cloud SharePointへ。 これは、 Video Cloud SharePointへのメタデータの変更はSharePointで行う必要があります。 Video Cloud SharePointで更新されず、次にSharePointでそのビデオが編集されるときに上書きされます。</strong></p>
+
+<h4 data-gt-block="">既存の動画をアカウントで編集する</h4>
+
+<p data-gt-block="">データフィールドを更新するために既存の動画を編集するには、動画リストの名前（1）または動画の編集リンク（2）をクリックします。</p>
+
+<figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-videos-manage-edit-listing.png"></figure><p data-gt-block="">Edit Video画面が表示され、選択したビデオのデータが編集用に表示されます。</p>
+
+<figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-videos-manage-edit.png"></figure><ol class="bcls-tasklist"><li>左側のメインナビゲーションには、「ビデオを編集」が表示され、通常は「ビデオを追加」が表示されます。 これは、既存のビデオであるため、同じページフォームを異なるモードで使用するためです。 これにより、ユーザーは必要に応じて簡単にビデオの管理セクションに戻ることができます。</li>
+	<li>このプロセス中に編集/更新できないフィールドがあります。
+	<ul><li>動画が関連付けられているアカウントは、動画を転送できないため変更できません Video Cloud アカウント。</li>
+		<li>参照ID（ Video Cloud ビデオID）は変更できません。</li>
+		<li>SharePoint IDは変更できません。</li>
+	</ul></li>
+</ol><p data-gt-block="">他の表示されているフィールドはすべて、自動生成された画像は除きます。 Video Cloudビデオが初めてアップロードされたときと同じように、更新可能です。 Once 変更が行われると、ユーザは「保存」ボタンをクリックして変更をコミットする。 [動画の追加]アップロードで実行されるのと同じ検証もここで実行されます。</p>
+
+<h4 data-gt-block="">動画を削除する</h4>
+
+<p data-gt-block="">SharePointからのビデオの削除は、コネクタの外部で実行されます。 SharePointでビデオを削除するには、サイトコンテンツ - &gt;ビデオに移動し、ビデオを検索して削除します。</p>
+
+<p data-gt-block="" class="gt-block gt-block"><strong>重要 -  SharePointに記録されたビデオを削除しても、そのビデオは削除されません Video Cloud ビデオを Video Cloud ビデオをSharePointにリンクするために使用されたタグがいくつかあります。 今後もビデオをSharePointに再度インポートする場合は、「bcsp-」で始まるタグを削除する必要があります。</strong></p>
+</section><section class="bcls-section"><h2 id="search" data-gt-block="">動画の検索</h2>
+
+<p data-gt-block="">[動画の管理]の下で、ユーザーは検索語句を入力して、検索語句に一致する名前、説明、またはタグ情報を持つ選択したアカウントの動画を検索できます。 Once 結果一覧が表示され、並べ替えと並べ替えのすべてのフィルタを適用できます。</p>
+
+<div data-gt-block="" class="gt-block"><!--
+                <iframe class="training-video-player " src="//players.brightcove.net/20318290001/E16-WGGOe_default/index.html?videoId=5078428048001 " allowfullscreen=" " webkitallowfullscreen=" " mozallowfullscreen=" " height="360 " width="640 "></iframe>
+--></div>
+
+<figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-search-listing.png"></figure><ol class="bcls-tasklist"><li><strong>検索フィールド</strong> - ユーザーはここに検索語を入力し、虫眼鏡（またはヒットリターン）をクリックして検索を実行することができます。</li>
+	<li><strong>SharePointのみを表示するか、 Video Cloud のみ</strong> -  SharePointに記録されているもの、または Video Cloud データをSharePointにインポートすることはありませんでした。</li>
+	<li><strong>フィルタの並べ替え/並べ替え</strong> - リストされたパラメータで結果をソートして並べ替えると、ビデオをより迅速に見つけるのに役立ちます。</li>
+</ol></section><section class="bcls-section"><h2 id="playlists" data-gt-block="">プレイリストの追加、インポート、および削除</h2>
+
+<p data-gt-block="">コネクターの[プレイリストの管理]セクションは、新しいプレイリストの作成と、編集や更新を含む既存のプレイリストの参照と管理に使用されます。 ビデオとは異なり、プレイリスト情報はSharePointに格納されず、 Video Cloud このセクションでアカウントを閲覧するたびに このため、APIを使用したプレイリストデータの利用には、次のセクションで説明するいくつかの遅延があります。</p>
+
+<div data-gt-block="" class="gt-block"><!--
+                <iframe class="training-video-player " src="//players.brightcove.net/20318290001/E16-WGGOe_default/index.html?videoId=5078707813001 " allowfullscreen=" " webkitallowfullscreen=" " mozallowfullscreen=" " height="360 " width="640 "></iframe>
+--></div>
+
+<h3 data-gt-block="">プレイリストのリンク先ページを管理する</h3>
+
+<p data-gt-block="">[プレイリストの管理]ページには、再生リストをブラウズしたり、使用可能なアカウントで新しいリストを作成したりするために使用できるフィールドのリストが表示されます。</p>
+
+<figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-playlist-manage.png"></figure><ol class="bcls-tasklist"><li><strong>アカウントを選択</strong>  - このドロップダウンリストには、ユーザーがアクセス権限を持つすべてのアカウントが入力されます。 これは勘定グループ割当によって有効になります。 ユーザーはプレイリストの一覧を表示するには、アカウントを選択する必要があります。</li>
+	<li><strong>プレイリスト表示列</strong>  - プレイリストデータがこれらの列に表示されます。 結果は、列ヘッダーをクリックして任意の列でソートできます。</li>
+	<li><strong>新しいプレイリストを追加</strong> - このボタンをクリックすると、選択したアカウントに新しいプレイリストが作成されます。</li>
+</ol><p data-gt-block="">Once アカウントが選択されると、そのアカウントのすべてのプレイリストが表示されます。</p>
+
+<figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-playlist-manage-list.png"></figure><ol class="bcls-tasklist"><li><strong>アカウントを選択</strong>  - このドロップダウンリストには、ユーザーがアクセス権限を持つすべてのアカウントが入力されます。 これは勘定グループ割当によって有効になります。 ユーザーはプレイリストの一覧を表示するには、アカウントを選択する必要があります。</li>
+	<li><strong>プレイリスト表示列</strong>  - 列の見出しをクリックすると、列を並べ替えることができます。 リスティングが長くなると、プレイリストを見つけるのに役立ちます。</li>
+	<li><strong>プレイリストのリスト</strong> - 各プレイリストのリストには、次のものが含まれます。
+	<ol type="a"><li>プレイリスト名 - 名前をクリックすると、そのデータの編集用のプレイリストが開きます。</li>
+		<li>プレイリストでアクティブな動画IDのリスト。</li>
+		<li>簡単な説明。</li>
+		<li>プレイリストの種類 -  <a class="nturl" href="..//support.brightcove.com/ja/introduction-playlists/index.html">手動またはスマートプレイリスト</a>.</li>
+		<li>プレイリストのID（Video Cloud プレイリストID）。</li>
+		<li>"Edit Playlist"リンク。 このリンク（または名前をクリック）は、編集またはその詳細を表示するためにプレイリストを開くために使用されます。</li>
+	</ol></li>
+	<li><strong>新しいプレイリストを追加</strong> - このボタンをクリックすると、選択したアカウントに新しいプレイリストが作成されます。</li>
+</ol><h3 data-gt-block="">新しいプレイリストを追加する</h3>
+
+<p data-gt-block="">アカウントに新しいプレイリストを追加するには、ユーザーが[新しいプレイリストを追加]ボタンをクリックします。 プレイリストの追加フォームが開きます：</p>
+
+<figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-playlist-manage-add.png"></figure>
+ 
+
+<figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-playlist-manage-current-videos.png"></figure><p data-gt-block="">ビデオは、移動するビデオを選択し、[ビデオを移動]オプションを有効にして[上/下]ボタンを使用することで、プレイリスト内で上下に移動できます。 一度に複数の動画を移動することができます。</p>
+
+<ol class="bcls-tasklist"><li><strong>氏名</strong> - 新しいプレイリストの名前。</li>
+	<li><strong>説明</strong> - プレイリストの簡単な説明。</li>
+	<li><strong>種類</strong> - プレイリストのタイプ -  <a class="nturl" href="..//support.brightcove.com/ja/introduction-playlists/index.html">手動またはスマート</a>。 この例では、手動プレイリストを示しています。 「プレイリストの編集」の例では、スマートプレイリストのオプションを示しています。</li>
+	<li><strong>利用可能な動画</strong>  - 手動再生リストの場合は、検索ボックスとアカウントで使用可能な動画のリストを表示します。 これにより、プレイリストに追加するビデオの選択肢を絞り込むことができます。</li>
+	<li><strong>利用可能な動画リスト</strong>  - 検索用語に基づいて、アカウントまたはフィルタで利用可能な動画を一覧表示します。 動画をクリックすると1つ以上の動画を選択できます。 選択したビデオは緑色で強調表示されます。 ビデオの選択を解除するには、ユーザーがビデオを再度クリックします。 これにより、1つのアクションで複数の動画をプレイリストに移動できます。</li>
+	<li><strong>アクション矢印</strong> - 選択したビデオをプレイリストの内外に移動する。</li>
+	<li><strong>この再生リストの動画</strong> - プレイリストの現在の動画がここに表示されます。</li>
+	<li><strong>保存</strong> - 変更を確定し、新しいプレイリストを作成するプロセスを開始する Video Cloud。 注 - プレイリストはSharePointに保存されません。</li>
+</ol><h3 data-gt-block="">既存のプレイリストを編集する</h3>
+
+<p data-gt-block="">既存のプレイリストを編集するには、名前をクリックするか、プレイリストリストの[編集]リンクをクリックします。 これにより、以下のビューが開き、プレイリストオプションが編集されます。 この例では、スマートプレイリストのオプションを示しています。 プレイリストIDとアカウントを除いて、いずれかのフィールドを編集するときは、次のように変更できます。</p>
+
+<figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-playlist-manage-edit.png"></figure><ol bcls-tasklist=""><li><strong>氏名</strong> - プレイリストの名前。</li>
+	<li><strong>説明</strong> - プレイリストの簡単な説明。</li>
+	<li><strong>種類</strong> - プレイリストのタイプ -  <a class="nturl" href="..//support.brightcove.com/ja/introduction-playlists/index.html">手動またはスマート</a>。 この例では、スマートプレイリストのオプションについて説明します。</li>
+	<li><strong>タグ</strong> - スマートプレイリストの場合、このフィールドでは、プレイリストに動的に含まれるビデオを識別するために使用する基準とタグを指定することができます。
+	<ul><li>条件ドロップダウンには、「1つ以上含む」または「すべてを含む」が含まれます。</li>
+	</ul></li>
+	<li><strong>注文</strong>  - これにより、一致する動画の順序がどのように設定されるかを指定することができます。 選択肢には以下が含まれます：
+	<ul><li>アルファベット順</li>
+		<li>有効期限（最新のもの）</li>
+		<li>有効日（最も古いもの）</li>
+		<li>総演劇</li>
+		<li>後続週の演劇</li>
+		<li>開始日（最も古いもの）</li>
+		<li>開始日（最新のもの）</li>
+	</ul></li>
+	<li><strong>制限する</strong> - 選択した基準に基づいてプレイリストに含めるビデオの最大数を設定します。</li>
+	<li><strong>プレビュー</strong> - 条件に一致する動画をリストし、[この再生リストの動画]ウィンドウに表示します。</li>
+	<li><strong>保存</strong> - 変更内容を確定し、再生リストを更新するプロセスを開始する Video Cloud。 注 - プレイリストはSharePointに保存されません。</li>
+	<li><strong>プレイリストを削除</strong> - このオプションを選択すると、再生リストが Video Cloud。 プレイリストはコネクタプレイリストの一覧に表示されなくなります。</li>
+</ol></section><section class="bcls-section"><h2 id="embedding" data-gt-block="">SharePointサイトにビデオを追加する</h2>
+
+<p data-gt-block="">SharePointコネクタを使用すると、コンテンツ作成者はさまざまな方法でサイトにメディアを挿入できます。 この章では、使用可能なオプションについて説明します。</p>
+
+<h3 data-gt-block="">Brightcove Player SharePoint On-PremiseのWebパーツ</h3>
+
+<p data-gt-block="">挽き目 Brightcove Player Web Part Sandbox Solutionは、内部または外部Webサイトのサイトページに配置されたWebパーツを生成し、 Brightcove ビデオ。 SharePointオンラインでは、ユーザーがカスタムWebパーツを追加する機能が制限されているため、ビデオを挿入するこのメカニズムは社内のSharePointインストールでのみ使用できます。</p>
+
+<p data-gt-block="">Webパーツには、アカウント選択や高度な検索（並べ替えと並べ替え）など、管理コンソールの機能と同じ機能が追加され、ビデオやプレイリストをすばやく見つけることができます。</p>
+
+<figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-embed-player-sharepoint-page.png"></figure><p data-gt-block="">Player Webパーツのオプションを表示するには、SharePointページを「編集」モード（1）にする必要があります。このモードでは、Webパーツ（2）を編集するオプションが公開されます。 Webパーツ固有のオプションは、Brightcove Webパーツエディタの「構成」セクション（3）を参照してください。</p>
+
+<p data-gt-block="">拡大 Brightcove 設定セクションでは、Player Web Part Sandbox Solutionの更新された機能が明らかになります。</p>
+
+<h4 data-gt-block="">Webパーツで再生するビデオの選択</h4>
+
+<figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-embed-player-video-chooser.png"></figure><ol class="bcls-tasklist"><li><strong>Brightcove 設定</strong> -  Webパーツエディターのこのセクションでは、Webパーツを構成し、再生するビデオ/プレイリストを選択するためのパラメーターにアクセスできます。</li>
+	<li><strong>プレーヤーの幅、プレーヤーの高さ</strong> - プレーヤーの寸法を設定します。</li>
+	<li><strong>プレーヤーID</strong> - 使用するプレーヤーのIDを指定します。 選択したプレーヤーがマルチアカウント環境の場合、選択したビデオと同じアカウントから選択することが重要です。 プレーヤーの「選択」はないので、IDは Video Cloud 手動で入力する必要があります。</li>
+	<li><strong>動画ID</strong>  - ビデオIDフィールドには、ビデオチューザーを使用して入力します。 ユーザーがフィールドの右側の省略記号ボックスをクリックすると、「セレクタ」ウィンドウが表示されます。</li>
+	<li><strong>セレクタウィンドウ</strong>
+	<ul><li><strong>アカウントを選択</strong> - 現在のユーザーがアクセス権を持つアカウントを表示します。</li>
+		<li><strong>利用可能な動画</strong>  - ビデオの結果を、その用語を含むものにフィルタリングします。 名前、タグ、説明情報、およびSharePointメタデータフィールドが定義されている場合は、これらのフィールドが検索されます。 一度に1つのアカウントでしか検索することはできません。 クロスアカウント検索はサポートされていません。</li>
+		<li><strong>並べ替え順と並び順</strong></li>
+		<li><strong>動画リストウィンドウ</strong>  - ビデオをクリックすると、再生用に選択されます。 このリスティングは30ビデオの表示に限定されているため、最初にアカウントを選択したときにアカウントのすべての動画が表示されるわけではありません。 検索機能を使用すると、リストを細分化して、目的のビデオを見つけることができます。</li>
+		<li><strong>[OK]ボタン</strong> - 選択を確定し、ビデオIDフィールドに適切なID値を入力します。</li>
+	</ul></li>
+</ol><p data-gt-block="">Once プレーヤーIDとビデオIDが設定されている場合、Webパーツは設定され、再生準備ができています！</p>
+
+<h4 data-gt-block="">Webパーツで再生するプレイリストの選択</h4>
+
+<p data-gt-block="">再生するプレイリストを選択するプロセスは、ビデオの選択とほぼ同じです。</p>
+
+<figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-embed-player-playlist-chooser.png"></figure><ol class="bcls-tasklist"><li><strong>Brightcove 設定</strong> -  Webパーツエディターのこのセクションでは、Webパーツを構成し、再生するビデオ/プレイリストを選択するためのパラメーターにアクセスできます。</li>
+	<li><strong>プレーヤーの幅、プレーヤーの高さ</strong> - プレーヤーの寸法を設定します。</li>
+	<li><strong>プレーヤーID</strong> - 使用するプレイリストプレーヤーのIDを指定します。 マルチアカウント環境でプレイリストを表示するように設定されている場合、選択したプレイヤーは選択したビデオと同じアカウントからのものであることが重要です。 プレーヤーの「選択」はないので、IDは Video Cloud 手動で入力する必要があります。</li>
+	<li><strong>プレイリストID</strong>  - ビデオチューザーを使用してビデオIDが入力されます。 ユーザーがフィールドの右側の省略記号ボックスをクリックすると、「セレクタ」ウィンドウが表示されます。</li>
+	<li><strong>セレクタウィンドウ</strong>
+	<ul><li><strong>アカウントを選択</strong> - 現在のユーザーがアクセス権を持つアカウントを表示します。</li>
+		<li><strong>並べ替え順と並び順</strong></li>
+		<li><strong>プレイリストの一覧画面</strong>  - プレイリストをクリックすると、プレイリストが選択されます。 リスティングは30プレイリストの表示に限定されているため、最初にアカウントを選択したときに、アカウント内のすべてのプレイリストが表示されることはありません。 検索機能を使用することで、リストを絞り込んで目的のプレイリストを見つけることができます。</li>
+		<li><strong>[OK]ボタン</strong> - 選択を確定し、プレイリストIDフィールドに適切なID値を入力します。</li>
+	</ul></li>
+</ol><p data-gt-block="">Once プレイリストIDとビデオIDが設定されている場合、Webパーツは設定され、再生準備ができています！</p>
+
+<h3 data-gt-block="">Brightcove Player SharePoint OnlineまたはSharePoint On-Premiseのソリューションパッケージ</h3>
+
+<p data-gt-block="">挽き目 Brightcove Player ソリューションパッケージは、プレーヤーの埋め込みを生成します。 Brightcove 埋め込みコードを[埋め込みコード]ダイアログボックスにコピー/ペーストするページに埋め込まれたビデオです。 このパッケージは、SharePoint OnlineまたはSharePoint On-premiseの両方で使用できます。</p>
+
+<h4 data-gt-block="">使用法</h4>
+<em>SharePointボタン</em>
+
+<p data-gt-block="">SharePointサイトのページを編集する場合、Brightcoveアクショングループがリボンに表示されます：</p>
+<img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-embed-player-brightcove-action-group.png"><p data-gt-block="">いずれかを選択 Brightcove ビデオまたは Brightcove プレイリストオプション。</p>
+<em>選択ダイアログ</em>
+
+<p data-gt-block="">選択ダイアログでは、ユーザーはビデオまたはプレイリストを選択できます（リボンで選択されたオプションによって異なります）。 ダイアログで検索することができます Video Cloud ビデオ、プレイリストを作成し、結果をグリッドに表示します。</p>
+
+<figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-embed-player-selection-dialog.png"></figure><p data-gt-block="">ビデオまたはプレイリストを選択すると、ユーザは任意選択でプレーヤー、高さおよび幅を変更することができる。 "OK"をクリックすると、brightcoveプレーヤー用のスクリプトが生成され、ダイアログの下部にあるテキストエリアに配置されます。</p>
+
+<figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-embed-player-brightcove-snippet.png"></figure><p data-gt-block="">このスクリプトは、2のさまざまな方法でSharePointページに追加できます。</p>
+
+<ul><li>パブリッシングゾーンに直接</li>
+	<li>スクリプトエディタWebパーツを使用して、Webパーツのみを許可するページ</li>
+</ul><p data-gt-block="">注 - このスクリプトは自動的にユーザーのクリップボードにコピーされます。</p>
+<em>SharePointページへのスクリプトの追加</em>
+
+<p class="BCL-aside" data-gt-block="">注：以下で説明する手順は、公開ゾーンの場合です。 Webパーツのみを許可するページの場合、スクリプトエディタWebパーツがページ上に表示されると、手順は同じになります。</p>
+
+<p data-gt-block="">ページにスクリプトを追加するには、選択ダイアログから生成されたスクリプトを取得した後、パブリッシングゾーンをクリックします。 [挿入]タブの[コードを埋め込む]ボタンを探します。</p>
+
+<figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-embed-player-embed-code.png"></figure><p data-gt-block="">表示されるダイアログで、プレーヤー埋め込みスクリプトを貼り付けます。 [OK]をクリックします。 スクリプトエディタがページに挿入されます：</p>
+
+<figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-embed-player-script-editor.png"></figure><p data-gt-block="">ページが保存されると、そのスクリプトエディタは Brightcove プレーヤー：</p>
+
+<figure><img class="bcls-image--no-border" alt="" src="https://img.brightcove.com/node16612-embed-player-rendered-player.png"></figure></section><p data-gt-block="" class="gt-block gt-block"><br><b><a class="nturl" href="mailto:tbaldwin@brightcove.com?subject=Comment%20about%20https://support.brightcove.com/ja/getting-started-brightcove-video-connect-sharepoint">コメントや提案？</a> </b></p>
+</div>
+      
+</div>
+
+</div>
+
+
+<section class="views-element-container block block-views block-views-blockrelated-content-by-field-block-1 clearfix" id="block-views-block-related-content-by-field-block-1">
+  
+    
+
+      <div class="gt-block form-group" data-gt-block=""><div class="gt-block view view-related-content-by-field view-id-related_content_by_field view-display-id-block_1 js-view-dom-id-5512ef379c567fc66a80837f7ee76f8d9d990634450b37d150a9bc8a8e211595" data-gt-block="">
+  
+    
+      <div class="gt-block view-header" data-gt-block="">
+      <h2 data-gt-block="" id="bc-ipnav-14">関連コンテンツ</h2>
+    </div>
+      
+      <div class="gt-block view-content" data-gt-block="">
+      <div class="gt-block item-list" data-gt-block="">
+  
+  <ul>
+
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/getting-started-brightcove-video-connect-wordpress-cms/index.html" hreflang="en">はじめに Brightcove WordPress CMSのビデオ接続</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/getting-started-brightcove-video-connect-drupal-cms/index.html" hreflang="en">はじめに Brightcove Drupal CMSのビデオ接続</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/getting-started-brightcove-video-connect-sitecore-experience-platform/index.html" hreflang="en">はじめに Brightcove Sitecoreエクスペリエンスプラットフォームのビデオ接続</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/getting-started-brightcove-video-connect-adobe-experience-manager/index.html" hreflang="en">はじめに Brightcove Adobe Experience Managerのビデオ接続</a></span></span></div></li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </section>
+
+
+  </div>
+
+              </section>
+
+                </div>
+  </div>
+
+      <footer class="footer container" role="contentinfo">
+              <div class="gt-block row" data-gt-block="">
+            <div class="gt-block region region-footer-top-left col-md-9" style="margin-bottom: 1em;" data-gt-block="">
+    <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">Brightcove サポート</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="https://status.brightcove.com">システムステータス</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/contact-support/index.html" data-drupal-link-system-path="node/18632">サポート - Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="../ja/en/contact/create/index.html">サポート - Zencoder</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-documentation-menu" id="block-documentation" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">オンラインマニュアル</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/index.html" data-drupal-link-system-path="<front>">ホーム</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">トレーニング（講習会）</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/online-training-courses/index.html" data-drupal-link-system-path="node/18286">オンラインコース</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/register-training/index.html" data-drupal-link-system-path="node/18270">コー​​スに登録</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-brightcove-menu" id="block-brightcove" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">Brightcove</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="https://www.brightcove.com">Brightcove.COM</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+            <div class="gt-block region region-footer-top-right col-md-3" data-gt-block="">
+    <section id="block-footerlegaltext" class="block block-block-content block-block-content4507d09c-a528-4947-b91d-36ec6671822b clearfix">
+  
+    
+
+      
+            <div class="gt-block field field--name-field-body field--type-text-long field--label-hidden field--item" data-gt-block=""><p data-gt-block="">Brightcove Inc.（ナスダック：BCOV）は、接続されたデバイス間でビデオを配信および収益化するための強力なクラウドソリューションを提供する世界有数のプロバイダです。</p>
+</div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+                    <div class="gt-block row" data-gt-block="">
+            <div class="gt-block region region-footer-bottom-left col-md-8" data-gt-block="">
+    <section id="block-footercopyrightlinewithlinks" class="block block-block-content block-block-content3a164ef9-02d8-42c4-bcc6-3ab435f670b3 clearfix">
+  
+    
+
+      <div class="gt-block block-content block-content--type-copyright-block-with-links block-content--view-mode-full ds-1col clearfix" data-gt-block="">
+
+  
+
+  
+            <div class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" data-gt-block="">2020</div>
+      
+            <div class="field field--name-field-copyright-text field--type-string-long field--label-hidden field--item" data-gt-block="">Brightcove Inc.すべての権利を保有します。</div>
+      
+      <div class="gt-block field field--name-field-legal-links field--type-link field--label-hidden field--items" data-gt-block="">
+              <div class="gt-block field--item" data-gt-block=""><a class="nturl" href="https://www.brightcove.com/en/privacy">プライバシーポリシー</a></div>
+              <div class="gt-block field--item" data-gt-block=""><a class="nturl" href="https://www.brightcove.com/en/terms-and-conditions">利用規約</a></div>
+          </div>
+  
+
+</div>
+
+
+  </section>
+
+
+  </div>
+
+            <div class="gt-block region region-footer-bottom-right col-md-4" data-gt-block="">
+    <section id="block-footersocialblock" class="block block-block-content block-block-content4fc23afd-8d37-420e-ab28-73b2ba24e836 clearfix">
+  
+    
+
+      
+      <div class="gt-block field field--name-field-social-icon field--type-entity-reference-revisions field--label-hidden field--items" data-gt-block="">
+              <div class="gt-block field--item" data-gt-block="">
+
+<a class="icon" icon__social--link="" href="https://www.linkedin.com/company/brightcove" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--linkedin">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--linkedin"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="gt-block field--item" data-gt-block="">
+
+<a class="icon" icon__social--link="" href="https://twitter.com/brightcove" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--twitter">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--twitter"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="gt-block field--item" data-gt-block="">
+
+<a class="icon" icon__social--link="" href="https://www.facebook.com/Brightcove" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--facebook">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--facebook"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="gt-block field--item" data-gt-block="" style="display:none;color:white">
+
+<a class="icon" icon__social--link="" href="https://plus.google.com/100830370440271567091" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--google-plus">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--google-plus"></use>
+  </svg>
+</a>
+
+</div>
+          </div>
+  
+
+
+  </section>
+
+<section id="block-scripts" class="block block-block-content block-block-content42e4bd63-d879-470d-a6de-d5e4529a01be clearfix">
+  
+    
+
+      
+            <div class="gt-block field field--name-field-body field--type-text-long field--label-hidden field--item" data-gt-block=""><script src="https://learning-services-media.brightcove.com/doc-assets/js/gtrans.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/js/support-feedback.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-support.js"></script>
+<script src="https://learning-services-media.brightcove.com/doc-assets/js/hide-google-plus.js"></script></div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+          </footer>
+  
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/16612","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click"},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"user":{"uid":0,"permissionsHash":"3b7fdb4927baca3ee2939edeb777485b3e2c2d36cf8c80e0d8f49c6dc5e2eeca"}}</script>
+<script src="https://support.brightcove.com/sites/default/files/js/js_8fmTAXGyuAUNVu11XoXJaeM8QBDFuAvX7ADwOnigrhc.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+<script src="https://support.brightcove.com/sites/default/files/js/js_L8Eb1bSFk-jGvnjMNZB7VvDJt-7nSbeXfaBlCzWjDbc.js"></script><div id="surveyDiv" style="visibility:hidden"><iframe id="CSAT" src="https://learning-services-media.brightcove.com/doc-assets/general/surveylink.html" style="display:none;"></iframe></div>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e78a80aa93","applicationID":"129613202","transactionName":"YwBUZkcFVktUWhJQX1pKd1FBDVdWGkkHXlVrBldRXQE=","queueTime":0,"applicationTime":13,"atts":"T0dXEA8fRUU=","errorBeacon":"bam.nr-data.net","agent":""}</script><script data-cfasync="false" src="https://tdns5.gtranslate.net/tdn-bin/queue.js"></script><!-- Yandex.Metrika counter for GTranslate --><script data-cfasync="false">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter36618640 = new Ya.Metrika({ id:36618640, clickmap:false, trackLinks:true, accurateTrackBounce:true, ut:"noindex" }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal

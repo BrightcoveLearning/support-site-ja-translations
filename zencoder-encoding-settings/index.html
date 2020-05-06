@@ -1,0 +1,1583 @@
+<html lang="ja" dir="ltr" class=" js"><head>
+    <meta charset="utf-8"><script type="text/javascript" src="https://bam.nr-data.net/1/e78a80aa93?a=129613202&amp;v=1167.2a4546b&amp;to=YwBUZkcFVktUWhJQX1pKY0BcSxdRW10DQR5EDUY%3D&amp;rst=7520&amp;ref=https://support.brightcove.com/ja/zencoder-encoding-settings&amp;ap=2282&amp;be=2697&amp;fe=7251&amp;dc=5261&amp;perf=%7B%22timing%22:%7B%22of%22:1588779534509,%22n%22:0,%22f%22:0,%22dn%22:0,%22dne%22:0,%22c%22:0,%22ce%22:56,%22rq%22:58,%22rp%22:2395,%22rpe%22:2705,%22dl%22:2669,%22di%22:5262,%22ds%22:5262,%22de%22:5427,%22dc%22:7251,%22l%22:7251,%22le%22:7253%7D,%22navigation%22:%7B%7D%7D&amp;at=T0dXEA8fRUU%3D&amp;jsonp=NREUM.setToken"></script><script src="https://js-agent.newrelic.com/nr-1167.min.js"></script><script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script><script type="text/javascript" async="" src="//cdn.feedbackify.com/f.js"></script><script async="" src="https://fullstory.com/s/fs.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e78a80aa93",applicationID:"129613202"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-2728311-17", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)">
+<meta name="MobileOptimized" content="width">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="https://support.brightcove.com/sites/default/files/favicon-64.png" type="image/png">
+<link rel="alternate" hreflang="en" href="https://support.brightcove.com/zencoder-encoding-settings">
+<link rel="canonical" href="https://support.brightcove.com/ja/zencoder-encoding-settings">
+<link rel="shortlink" href="https://support.brightcove.com/ja/node/17877">
+<link rel="revision" href="https://support.brightcove.com/zencoder-encoding-settings">
+
+    <title>Zencoder エンコーディング設定| Brightcove 学習</title>
+    <link rel="stylesheet" media="all" href="https://support.brightcove.com/sites/default/files/css/css_d7PoQ20hWbRiei75VgExP_tm8C1ylIRfzB3zIYLc5Cw.css?q23msc">
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.min.css">
+<link rel="stylesheet" media="all" href="https://support.brightcove.com/sites/default/files/css/css_fr7ugR_m15spMT57voAomC2Aklj0ATM7MmH6hvb3pp4.css?q23msc">
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+    <meta name="uri-translation" content="on">
+    <script>
+window['_fs_debug'] = false; window['_fs_host'] = 'fullstory.com';
+window['_fs_org'] = 'BX3Q1';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+g.consent=function(a){g("consent",!arguments.length||a)};
+g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+g.clearUserCookie=function(){};
+})(window,document,window['_fs_namespace'],'script','user');
+    </script>
+  <style type="text/css">html{_background:url(//about:blank) fixed;}.fby-on select {visibility:hidden!important;}.fby-on .fby-hide-iframe {visibility:hidden!important;}.fby-hide-embed embed {visibility:hidden!important;}.fby-hide-object object {visibility:hidden!important;}@media not screen {.fby-tab {display: none;}}#feedbackify *{box-sizing:content-box!important;-moz-box-sizing:content-box!important;-webkit-box-sizing:content-box!important;}#feedbackify input{box-sizing:border-box!important;-moz-box-sizing:border-box!important;-webkit-box-sizing:border-box!important;max-width:none!important;}#feedbackify *:before{content:none!important;}#feedbackify *:after{content:none!important;}#feedbackify ,#feedbackify div,#feedbackify span,#feedbackify textarea,#feedbackify input,#feedbackify table,#feedbackify tbody,#feedbackify tr,#feedbackify td,#feedbackify img,#feedbackify p,#feedbackify a{border:0!important;outline:none!important;width:auto;height:auto;text-align:left!important;text-indent:0!important;float:none!important;padding:0!important;margin:0!important;font:12px arial,helvetica,sans-serif!important;overflow:visible!important;color:#000!important;line-height:1.2!important;background:0 none!important;position:static!important;vertical-align:baseline!important;box-shadow:none!important;}#feedbackify table{border-collapse:collapse!important;border-spacing:0!important;max-width:inherit!important;width:auto!important;}#feedbackify td{word-break:normal!important;}#feedbackify {z-index:2147483646!important;position:static!important;top:0;left:0;}#feedbackify .fby-screen{z-index:2147483646!important;position:fixed!important;top:0;left:0;width:0;height:100%;_position:absolute!important;_top:expression(eval(document.body.scrollTop||document.documentElement.scrollTop))!important;_left:expression(eval(document.body.scrollLeft||document.documentElement.scrollLeft))!important;_width:0!important;_height:expression(document.documentElement.clientHeight||document.body.clientHeight+"px")!important;}#feedbackify .fby-mask{display:none!important;position:fixed!important;top:0;left:0;width:100%;height:100%;background-color:#000!important;opacity:0.2;filter:alpha(opacity=20);_position:absolute!important;_width:expression(document.documentElement.clientWidth||document.body.clientWidth+"px")!important;_height:expression(this.parentNode.style.height)!important;}#feedbackify .fby-show{display:block!important;visibility:visible!important;}#feedbackify .fby-hide{display:none!important;visibility:hidden!important;}</style><style type="text/css">#feedbackify .fby-tab{position:fixed!important;width:36px;height:100px;overflow:hidden!important;_position:absolute!important;}#feedbackify .fby-tab a{display:block!important;position:absolute!important;width:36px;height:100px;background-color:#000000!important;cursor:pointer!important;background:url(https://cdn.feedbackify.com/img/classic/tab.png)!important;_background:none!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/tab.png)!important;}#feedbackify .fby-tab-l{top:50%;left:0;margin-top:-50px!important;_top:expression((parseInt(this.parentNode.style.height)-this.clientHeight)/2+"px")!important;_margin-top:0!important;}#feedbackify .fby-tab-l a{margin-left:-5px!important;}#feedbackify .fby-tab-l a:hover{margin-left:-2px!important;}#feedbackify .fby-tab-r{top:50%;right:0px!important;margin-top:-50px!important;_top:expression((parseInt(this.parentNode.style.height)-this.clientHeight)/2+"px")!important;_left:expression((document.documentElement.clientWidth||document.body.clientWidth)-this.clientWidth+"px")!important;_margin-top:0!important;}#feedbackify .fby-tab-r a{margin-left:5px!important;}#feedbackify .fby-tab-r a:hover{margin-left:2px!important;}#feedbackify .fby-tab-t{top:0;margin-top:0px!important;}#feedbackify .fby-tab-b{top:auto;bottom:0!important;_top:expression(parseInt(this.parentNode.style.height)-this.clientHeight+"px")!important;}</style><style type="text/css">#feedbackify grammarly-ghost{display:none!important;}#feedbackify grammarly-btn{display:none!important;}#feedbackify #fby-form{z-index:2147483646!important;width:618px!important;position:absolute!important;}#feedbackify .fby-d-main{width:600px;height:50px;vertical-align:top!important;background-color:#FFFFFF!important;position:relative!important;}#feedbackify .fby-d{background:url(https://cdn.feedbackify.com/img/classic/dlg_shad_sprite.png)!important;_background:none!important;}#feedbackify .fby-d-h{height:9px;background:url(https://cdn.feedbackify.com/img/classic/dlg_shad_sprite_h.png)!important;_background:none!important;}#feedbackify .fby-d-h2{height:9px;background-color:#FFFFFF!important;}#feedbackify .fby-d-tl{background-position:-18px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_tl.png)!important;}#feedbackify .fby-d-t{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_t.png,sizingMethod=scale)!important;}#feedbackify .fby-d-tr{background-position:-36px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_tr.png)!important;}#feedbackify .fby-d-l{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_l.png,sizingMethod=scale)!important;}#feedbackify .fby-d-r{background-position:-9px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_r.png,sizingMethod=scale)!important;}#feedbackify .fby-d-bl{background-position:-54px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_bl.png)!important;}#feedbackify .fby-d-br{background-position:-72px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_br.png)!important;}#feedbackify .fby-d-b{background-position:0px -9px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_b.png,sizingMethod=scale)!important;}#feedbackify .fby-d-load{position:relative!important;}#feedbackify .fby-d-load img{position:absolute!important;left:8px;}#feedbackify .fby-d-load div{position:absolute!important;padding:4px 18px!important;font-size:16px!important;font-weight:bold!important;color:#333!important;}</style></head>
+  <body class="path-node page-node-type-support-doc has-glyphicons">
+    <a class="visually-hidden" focusable="" skip-link="" href="#main-content/index.html">
+      メインコンテンツへスキップ
+    </a>
+    
+      <div class="gt-block dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="" data-gt-block="">
+              <header class="navbar navbar-default container" id="navbar" role="banner">
+      <div class="gt-block navigation-secondary clearfix" data-gt-block="">
+          <div class="gt-block region region-navigation-secondary" data-gt-block="">
+    <section id="block-styles" class="block block-block-content block-block-contentfbb71e48-a6cd-4d2b-8239-43f18db69e60 clearfix">
+  
+    
+
+      
+            <div class="gt-block field field--name-field-body field--type-text-long field--label-hidden field--item" data-gt-block=""><link rel="stylesheet" media="all" href="https://learning-services-media.brightcove.com/doc-assets/css/drupal-fix.css"></div>
+      
+  </section>
+
+<nav role="navigation" aria-labelledby="block-secondarynavigation-menu" id="block-secondarynavigation">
+            
+  <h2 class="visually-hidden" id="block-secondarynavigation-menu" data-gt-block="">セカンダリナビゲーション</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/contact-support/index.html" title="サポートリクエストを作成する" data-drupal-link-system-path="node/18632">サポートリクエスト</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://status.brightcove.com/">システムステータス</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://university.brightcove.com/">Brightcove 大学</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<section id="block-gtranslate" class="block block-gtranslate block-gtranslate-block clearfix">
+  
+    
+
+      
+<div class="gt-block gtranslate" data-gt-block="">
+<script type="text/javascript">/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;var lang=lang_pair.split('|')[1];var plang=location.pathname.split('/')[1];if(plang.length !=2 && plang != 'zh-CN' && plang != 'zh-TW')plang='en';if(lang == 'en')location.pathname=location.pathname.replace('/'+plang+'/', '/');else location.pathname='/'+lang+location.pathname.replace('/'+plang+'/', '/');}
+/* ]]> */
+</script><select onchange="doGTranslate(this);"><option value="">言語の選択</option><option value="en|en" style="font-weight:bold;background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -0px;padding-left:18px;">英語</option><option value="en|fr" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -160px;padding-left:18px;">フランス語</option><option value="en|de" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -176px;padding-left:18px;">ドイツ語</option><option value="en|ja" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -240px;padding-left:18px;">日本語</option><option value="en|ko" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -256px;padding-left:18px;">韓国語</option><option value="en|es" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -352px;padding-left:18px;">スペイン語</option></select>
+</div>
+<div class="gtranslate__credits" data-gt-block="">
+  本ドキュメントはGoogle翻訳によって機械翻訳したものとなります
+</div>
+
+  </section>
+
+
+  </div>
+
+      </div>
+      <div class="gt-block navbar-header col-md-3" data-gt-block="">
+                  <a class="logo" navbar-btn="" pull-left="" href="../ja/index.html" title="ホーム" rel="home">
+            <img src="https://support.brightcove.com/themes/custom/bcdocs/images/brightcove.png" alt="ホーム">
+          </a>
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">トグルナビゲーション</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+                    <div class="gt-block navbar-collapse collapse" data-gt-block="">
+            <div class="gt-block region region-navigation-collapsible" data-gt-block="">
+    <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation">
+            <h2 class="sr-only" id="block-mainnavigation-menu" data-gt-block="">メインナビゲーション</h2>
+
+      
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-learning-home/index.html" title="ホームページ" data-drupal-link-system-path="node/18643">ホーム</a>
+                  </li>
+                                            <li class="expanded dropdown">
+        <a class="dropdown-toggle" href="" data-toggle="dropdown">
+          製品紹介
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/video-cloud/index.html" data-drupal-link-system-path="node/18332">Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://gallery.support.brightcove.com">ギャラリー</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-player/index.html" data-drupal-link-system-path="node/18283">Brightcove Player</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/live/index.html" data-drupal-link-system-path="node/18642">Live</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/social/index.html" data-drupal-link-system-path="node/18444">Social</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/audience/index.html" data-drupal-link-system-path="node/18445">Audience</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://zencoder.support.brightcove.com">Zencoder</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/ssai/index.html" data-drupal-link-system-path="node/18650">SSAI</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://support.ottflow.com">OTT Flow</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a class="dropdown-toggle" href="" data-toggle="dropdown">
+          Links
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/analytics-api/index.html" data-drupal-link-system-path="node/18370">Analytics API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/audience-api/index.html" data-drupal-link-system-path="node/18371">Audience API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/cms-api/index.html" data-drupal-link-system-path="node/18372">CMS API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/cms-connectors-video-cloud/index.html" data-drupal-link-system-path="node/18662">CMSコネクタ用 Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/data-collection-api/index.html" data-drupal-link-system-path="node/18876">Data Collection API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/delivery-system-api/index.html" data-drupal-link-system-path="node/18387">Delivery System API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/developer-tools-and-concepts/index.html" data-drupal-link-system-path="node/18430">開発者ツールと概念</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/native-player-sdks/index.html" data-drupal-link-system-path="node/18367">Device SDK</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/dynamic-ingest-api/index.html" data-drupal-link-system-path="node/18373">Dynamic Ingest API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/getting-started-brightcove-apis-0/index.html" data-drupal-link-system-path="node/18711">入門 - Brightcove API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/page-experience-api/index.html" data-drupal-link-system-path="node/18616">In-Page Experience APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/ingest-profiles-api/index.html" data-drupal-link-system-path="node/18374">Ingest Profiles API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/live/index.html" data-drupal-link-system-path="node/18642">Live API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/oauth-api/index.html" data-drupal-link-system-path="node/18376">OAuth API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/platform-api-code-samples/index.html" data-drupal-link-system-path="node/18675">プラットフォームAPIコードサンプル</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/playback-api/index.html" data-drupal-link-system-path="node/18380">Playback API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-player-code-samples/index.html" data-drupal-link-system-path="node/18630">プレーヤーコードサンプル</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-player-developer/index.html" data-drupal-link-system-path="node/18362">プレーヤー開発者</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/player-management-api/index.html" data-drupal-link-system-path="node/18378">Player Management API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/policy-api/index.html" data-drupal-link-system-path="node/18381">Policy API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/release-notes/index.html" data-drupal-link-system-path="node/18687">リリースに関して</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a class="dropdown-toggle" href="" data-toggle="dropdown">
+          トレーニング（講習会）
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a class="nturl" href="https://university.brightcove.com">オンラインコース</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/register-training/index.html" data-drupal-link-system-path="node/18270">コース登録</a>
+                  </li>
+        </ul>
+  
+            </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-support-documentation-announcements/index.html" title="の新機能を見る Brightcove オンラインマニュアル" data-drupal-link-system-path="node/18896">新着情報</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+        </div>
+          </header>
+  
+    <div class="gt-block full-width-headline" data-gt-block="">
+    <div class="gt-block container" data-gt-block="">
+      <div class="gt-block row" data-gt-block="">
+        <div class="gt-block col-sm-12" role="heading" data-gt-block="">
+            <div class="gt-block region region-header" data-gt-block="">
+          <section id="block-brightcoveheadlineblock" class="block block-bc-general block-bc-general-headline-block clearfix">
+  
+    
+
+      オンラインマニュアル
+  </section>
+
+
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      <div role="main" class="gt-block main-container container  js-quickedit-main-content" data-gt-block="">
+    <div class="gt-block row" data-gt-block="">
+
+                              <aside class="gt-block col-sm-3" role="complementary" data-gt-block="">
+              <div class="gt-block region region-sidebar-first" data-gt-block="">
+    <section class="bc-search-fixes-search-block-form block block-bc-search-fixes block-bc-search-fixes-search-block clearfix" data-drupal-selector="bc-search-fixes-search-block-form" id="block-brightcovesearchblock">
+  
+    
+
+      <form action="/ja/zencoder-encoding-settings" method="post" id="bc-search-fixes-search-block-form" accept-charset="UTF-8">
+  <div class="gt-block form-item js-form-item form-type-textfield js-form-type-textfield form-item-search js-form-item-search form-no-label form-group" data-gt-block="">
+      <label for="edit-search" class="control-label sr-only">サイト内検索</label>
+  
+  
+  <input data-drupal-selector="edit-search" class="form-text form-control" type="text" id="edit-search" name="search" value="" size="15" maxlength="128" placeholder="サイト内検索">
+
+  
+  
+  </div>
+<input autocomplete="off" data-drupal-selector="form-8taunq21ihiuih4ycrccj1z4cxmebb-erib22v5zqik" type="hidden" name="form_build_id" value="form-8TaUnQ21IhIUiH4YCRCcJ1z4cXMebB-Erib22V5ZQIk"><input data-drupal-selector="edit-bc-search-fixes-search-block-form" type="hidden" name="form_id" value="bc_search_fixes_search_block_form"><div data-drupal-selector="edit-actions" class="gt-block form-actions form-group js-form-wrapper form-wrapper" id="edit-actions" data-gt-block=""><button data-drupal-selector="edit-submit" class="button js-form-submit form-submit btn-primary btn icon-only" type="submit" id="edit-submit" name="op" value="Search"><span class="sr-only">サイト内検索</span><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button></div>
+
+</form>
+
+  </section>
+
+<section id="block-inpagenavigationblock" class="hidden-xs block block-bc-ipnav block-bc-ipnav-block clearfix" style="width: 476px;">
+  
+      <h2 class="block-title" data-gt-block="">このページ</h2>
+    
+
+      <div class="bc-ipnav-block" data-gt-block=""><ul><li><a href="#job/index.html">ジョブ</a></li><li><a href="#general-output-settings/index.html">一般的な出力設定</a></li><li><a href="#cae-settings/index.html">CAEの設定</a></li><li><a href="#Format_and_Codecs/index.html">フォーマットとコーデック</a></li><li><a href="#resolution/index.html">分解能</a></li><li><a href="#Rate_Control/index.html">レート制御</a></li><li><a href="#Frame_Rate/index.html">フレームレート</a></li><li><a href="#Video/index.html">動画</a></li><li><a href="#Audio/index.html">オーディオ</a></li><li><a href="#Thumbnails/index.html">サムネイル</a></li><li><a href="#Watermarks/index.html">透かし</a></li><li><a href="#Captions/index.html">キャプション</a></li><li><a href="#Video_Processing/index.html">ビデオ処理</a></li><li><a href="#Audio_Processing/index.html">オーディオ処理</a></li><li><a href="#Clips/index.html">クリップ</a></li><li><a href="#S3_Settings/index.html">S3の設定</a></li><li><a href="#Notifications/index.html">お知らせ</a></li><li><a href="#Conditional_Outputs/index.html">条件付き出力</a></li><li><a href="#Segmented_Streaming/index.html">セグメント化されたストリーミング</a></li><li><a href="#Encryption/index.html">暗号化</a></li><li><a href="#Decryption/index.html">復号化</a></li><li><a href="#DRM/index.html">DRM</a></li><li><a href="#H264/index.html">H.264</a></li><li><a href="#HDR10/index.html">HDR10</a></li><li><a href="#FLV/index.html">FLV</a></li><li><a href="#VP6/index.html">VP6</a></li><li><a href="#MP4/index.html">MP4</a></li><li><a href="#AAC/index.html">AAC</a></li><li><a href="#Broadcast/index.html">放送</a></li><li><a href="#Aspera/index.html">アスペラ</a></li><li><a href="#Transmuxing/index.html">トランスミューシング</a></li><li><a href="#bc-ipnav-31/index.html">関連コンテンツ</a></li></ul></div>
+  </section>
+
+
+  </div>
+
+          </aside>
+              
+                  <section class="col-sm-9">
+
+                                      <div class="gt-block highlighted" data-gt-block="">  <div class="gt-block region region-highlighted" data-gt-block="">
+    <div data-drupal-messages-fallback="" class="hidden" data-gt-block=""></div>
+
+  </div>
+</div>
+                  
+                
+                
+                
+                          <a class="nturl" id="main-content"></a>
+            <div class="gt-block region region-content" data-gt-block="">
+        <h1 class="page-header"><span> Zencoder エンコーディング設定 </span>
+</h1>
+
+  
+<div class="gt-block node node--type-support-doc node--view-mode-full bcdocs-four-rows clearfix" data-gt-block="">
+
+  
+
+  <div class="group-first-row" data-gt-block="">
+      </div>
+
+  <div class="gt-block group-second-row" data-gt-block="">
+  
+  <div class="gt-block field field--name-field-products field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">製品（複数可）</div>
+          <div class="gt-block field__items taxonomy__tags" data-gt-block="">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item" data-gt-block="">Zencoder</div>
+              </div>
+      </div>
+
+  <div class="gt-block field field--name-field-roles field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">役割</div>
+          <div class="gt-block field__items taxonomy__tags" data-gt-block="">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item" data-gt-block="">API開発者</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="gt-block group-third-row taxonomy__tags" data-gt-block="">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="gt-block field field--name-field-topics field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">トピック）</div>
+          <div class="gt-block field--items" data-gt-block="">
+              <div class="field--item" data-gt-block="">エンコーディング設定</div>
+              </div>
+      </div>
+
+  <div class="gt-block field field--name-field-apis field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">API</div>
+          <div class="gt-block field--items" data-gt-block="">
+              <div class="field--item" data-gt-block="">Zencoder API</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="gt-block group-fourth-row" data-gt-block="">
+  
+            <div class="gt-block field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item" data-gt-block=""><p data-gt-block="">このトピックでは、すべてのエンコーディング設定の表と、各設定の詳細なガイドへのリンクを示します。</p>
+            <article class="bcls-article"><section class="bcls-section"><aside class="gt-block bcls-aside bcls-aside--warning language-editable" data-gt-block=""><strong>Zencoder より焦点を絞ったサイトを提供するためにドキュメントが移動しました。 新しい場所は <a class="nturl" href="https://zencoder.support.brightcove.com">https://zencoder.support.brightcove.com</a>。 新しいサイトを使用して、ブックマークを更新してください！ これらの古いドキュメントはまもなく削除されます。</strong></aside><h2 id="job" data-gt-block="">ジョブ</h2>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th>設定</th>
+			<th>デフォルト</th>
+			<th>説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-job#api_key/index.html"><code class="notranslate">api_key </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>あなたのためのAPIキー Zencoder アカウント。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-job#dynamic_profile_options/index.html"><code class="notranslate">dynamic_profile_options </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>CAEでは、このような出力の数とパラメータが、入力ファイルごとに動的に変更されることがあります。 dynamic_profile_options設定は、レンディションを作成する方法を定義します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-job#generate_dynamic_profile/index.html"><code class="notranslate">generate_dynamic_profile </code></a></td>
+			<td>false</td>
+			<td>CAEでは、このような出力の数とパラメータが、入力ファイルごとに動的に変更されることがあります。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-job#input/index.html"><code class="notranslate">input </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>HTTP、S3、クラウドファイル、GCS、FTP、FTPS、SFTP、Azure、またはAsperaのURLで、ファイルをダウンロードしてトランスコードすることができます。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-job#outputs/index.html"><code class="notranslate">outputs </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>出力設定の配列またはハッシュ。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-job#region/index.html"><code class="notranslate">region </code></a></td>
+			<td>us</td>
+			<td>ファイルが処理される地域：米国、ヨーロッパ、アジア、またはオーストラリア。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-job#test/index.html"><code class="notranslate">test </code></a></td>
+			<td>false</td>
+			<td>ジョブのテストモード（「統合モード」）を有効にします。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-job#private/index.html"><code class="notranslate">private </code></a></td>
+			<td>false</td>
+			<td>ジョブのプライバシーモードを有効にする。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-job#download_connections/index.html"><code class="notranslate">download_connections </code></a></td>
+			<td>5</td>
+			<td>ダウンロード加速のために複数の同時接続を利用することがあります（状況によっては）。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-job#pass_through/index.html"><code class="notranslate">pass_through </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>このジョブの横に保存するオプションの情報。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-job#mock/index.html"><code class="notranslate">mock </code></a></td>
+			<td>false</td>
+			<td>嘲笑された仕事の依頼を送る。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-job#grouping/index.html"><code class="notranslate">grouping </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>このジョブのグループ化されたレポート。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-job#aspera_transfer_policy/index.html"><code class="notranslate">aspera_transfer_policy </code></a></td>
+			<td>フェア</td>
+			<td>Asperaファイル転送に使用可能な帯域幅を割り当てる方法。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-job#transfer_minimum_rate/index.html"><code class="notranslate">transfer_minimum_rate </code></a></td>
+			<td>1000</td>
+			<td>データ転送の最低速度の目標速度（Kbps）。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-job#transfer_maximum_rate/index.html"><code class="notranslate">transfer_maximum_rate </code></a></td>
+			<td>250000</td>
+			<td>データ転送最大レートの目標レート（Kbps）。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-job#expected_md5_checksum/index.html"><code class="notranslate">expected_md5_checksum </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>入力ファイルの予想されるチェックサム。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-job#credentials/index.html"><code class="notranslate">credentials </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>ニックネームで保存された資格情報を参照します。</td>
+		</tr></tbody></table></section><section class="bcls-section"><h2 id="general-output-settings" data-gt-block="">一般的な出力設定</h2>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th>設定</th>
+			<th>デフォルト</th>
+			<th>説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-general-output-settings#type/index.html"><code class="notranslate">type </code></a></td>
+			<td>標準</td>
+			<td>出力するファイルのタイプ。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-general-output-settings#label/index.html"><code class="notranslate">label </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>この出力のオプションのラベル。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-general-output-settings#dynamic_profile_rendition/index.html"><code class="notranslate">dynamic_profile_rendition </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>dynamic_profile_renditionの設定では、このOutputが動的に生成されるCAEプロファイルの設定を使用するように指定します。具体的には、設定を使用するプロファイルのレンディションです。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-general-output-settings#url/index.html"><code class="notranslate">url </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>S3、クラウドファイル、GCS、FTP、FTPS、SFTP、Aspera、Azure、HTTP、またはRTMP URLを使用して、トランスコードされたファイルを配置します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-general-output-settings#secondary_url/index.html"><code class="notranslate">secondary_url </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>S3、クラウドファイル、GCS、FTP、FTPS、SFTP、HTTP、RTMP、Aspera、またはAzureのURLで、トランスコードされたファイルを配置します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-general-output-settings#base_url/index.html"><code class="notranslate">base_url </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>S3、クラウドファイル、GCS、FTP、FTPS、SFTP、Azure、またはAsperaのディレクトリURL。トランスコードされたファイルをファイル名なしで配置します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-general-output-settings#filename/index.html"><code class="notranslate">filename </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>完成したファイルのファイル名。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-general-output-settings#package_filename/index.html"><code class="notranslate">package_filename </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>パッケージ化された出力のファイル名。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-general-output-settings#package_format/index.html"><code class="notranslate">package_format </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>出力ファイルに使用するZip / Packaging形式。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-general-output-settings#device_profile/index.html"><code class="notranslate">device_profile </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>モバイルデバイスとの互換性に使用するデバイスプロファイル。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-general-output-settings#strict/index.html"><code class="notranslate">strict </code></a></td>
+			<td>false</td>
+			<td>厳密モードを有効にします。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-general-output-settings#skip_video/index.html"><code class="notranslate">skip_video </code></a></td>
+			<td>false</td>
+			<td>ビデオトラックを出力しない。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-general-output-settings#skip_audio/index.html"><code class="notranslate">skip_audio </code></a></td>
+			<td>false</td>
+			<td>オーディオトラックを出力しないでください。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-general-output-settings#source/index.html"><code class="notranslate">source </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>別のジョブのラベルを参照し、入力ファイルの代わりにその出力によって作成されたビデオを処理に使用します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-general-output-settings#credentials/index.html"><code class="notranslate">credentials </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>ニックネームで保存された資格情報を参照します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-general-output-settings#generate_md5_checksum/index.html"><code class="notranslate">generate_md5_checksum </code></a></td>
+			<td>false</td>
+			<td>出力ファイルのMD5チェックサムを生成します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-general-output-settings#parallel_upload_limit/index.html"><code class="notranslate">parallel_upload_limit </code></a></td>
+			<td>S30の3、他のすべての宛先の10。</td>
+			<td>試行する同時アップロードの最大数。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-general-output-settings#headers/index.html"><code class="notranslate">headers </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>ファイルをアップロードするときにファイルとともに送信するHTTPヘッダー。</td>
+		</tr><!-- <tr>
+				<td><a class=nturl href="/ja/node/17852#rtmp_keep_alive"><code>rtmp_keep_alive </code></a></td>
+				<td>false</td>
+				<td>Send empty script packets in an RTMP output when no data is being received.</td>
+			</tr> --></tbody></table></section><section class="bcls-section"><h2 id="cae-settings" data-gt-block="">CAEの設定</h2>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th>設定</th>
+			<th>デフォルト</th>
+			<th>説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-cae-settings#min_renditions/index.html"><code class="notranslate">min_renditions </code></a></td>
+			<td>1</td>
+			<td>生成するレンディションの最小数。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-cae-settings#The minium number of renditions to generate/index.html"><code class="notranslate">The minium number of renditions to generate </code></a></td>
+			<td>8</td>
+			<td>生成するレンディションの最大数。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-cae-settings#min_resolution/index.html"><code class="notranslate">min_resolution </code></a></td>
+			<td>192 x 108</td>
+			<td>ラダーの最小分解能。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-cae-settings#max_resolution/index.html"><code class="notranslate">max_resolution </code></a></td>
+			<td>ソース解像度</td>
+			<td>ラダーに考慮する最大分解能。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-cae-settings#max_frame_rate/index.html"><code class="notranslate">max_frame_rate </code></a></td>
+			<td>30</td>
+			<td>使用可能な最大フレームレート。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-cae-settings#keyframe_rate/index.html"><code class="notranslate">keyframe_rate </code></a></td>
+			<td>0.5</td>
+			<td>キーフレームレート。 この値は、0.5または1のいずれかです。 SSAI対応コンテンツの場合、この値は1である必要があります。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-cae-settings#fixed_frame_rate/index.html"><code class="notranslate">fixed_frame_rate </code></a></td>
+			<td>true</td>
+			<td>すべてのレンディションで同じフレームレートを使用するようジェネレータに指示します。 もし false、ＸＮＵＭＸｐ未満の解像度でのＨ．ＸＮＵＭＸベースラインプロファイル表現は、半分のフレームレートが割り当てられる。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-cae-settings#min_bitrate/index.html"><code class="notranslate">min_bitrate </code></a></td>
+			<td>200</td>
+			<td>使用可能な最小ビットレート[kbps]。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-cae-settings#max_bitrate/index.html"><code class="notranslate">max_bitrate </code></a></td>
+			<td>15000</td>
+			<td>使用可能な最大ビットレート[kbps]。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-cae-settings#max_first_rendition_bitrate/index.html"><code class="notranslate">max_first_rendition_bitrate </code></a></td>
+			<td>400</td>
+			<td>最初の演奏に使用できる最大ビットレート[kbps]。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-cae-settings#min_granularity/index.html"><code class="notranslate">min_granularity </code></a></td>
+			<td>30</td>
+			<td>レンディション間のビットレートの最小相対変化。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-cae-settings#max_granularity/index.html"><code class="notranslate">max_granularity </code></a></td>
+			<td>90</td>
+			<td>レンディション間のビットレートの最大相対変化。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-cae-settings#video_codec/index.html"><code class="notranslate">video_codec </code></a></td>
+			<td>h264</td>
+			<td>使用するビデオコーデック。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-cae-settings#bitrate_cap_to_bitrate_ratio/index.html"><code class="notranslate">bitrate_cap_to_bitrate_ratio </code></a></td>
+			<td>1.3</td>
+			<td>VBR符号化に使用される平均ビットレートに対する最大ビットレートの比率。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-cae-settings#buffer_size_to_bitrate_ratio/index.html"><code class="notranslate">buffer_size_to_bitrate_ratio </code></a></td>
+			<td>2.0</td>
+			<td>VBR符号化に使用される平均ビットレートに対するデコーダバッファサイズの比率。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-cae-settings#bitrate_cap_offset/index.html"><code class="notranslate">bitrate_cap_offset </code></a></td>
+			<td>64</td>
+			<td>最大ビットレートを計算するときに定数が追加されます。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-cae-settings#buffer_size_offset/index.html"><code class="notranslate">buffer_size_offset </code></a></td>
+			<td>85</td>
+			<td>VBVバッファサイズを計算するときに加算される定数です。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-cae-settings#rtmp_keep_alive/index.html"><code class="notranslate">quality_rate_tune </code></a></td>
+			<td>0</td>
+			<td>品質対速度調整パラメータ。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-cae-settings#select_baseline_profile_configuration/index.html"><code class="notranslate">select_baseline_profile_configuration </code></a></td>
+			<td>true</td>
+			<td>プロファイルで使用される少なくとも1つのレンディションがベースラインプロファイルになります。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-cae-settings#video_configurations/index.html"><code class="notranslate">video_configurations </code></a></td>
+			<td><apan class="none">なし </apan></td>
+			<td>CAEエンコーディングの一部として優先的にまたは強制的に生成されるべき解像度、フレームレート、および関連するコーデック設定を記述する構造体の配列。</td>
+		</tr></tbody></table></section><section class="bcls-section"><h2 id="Format_and_Codecs" data-gt-block="">フォーマットとコーデック</h2>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th>設定</th>
+			<th>デフォルト</th>
+			<th>説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-format-and-codecs#format/index.html"><code class="notranslate">format </code></a></td>
+			<td>出力ファイル名とビデオまたはオーディオコーデックによって決定されます。 それ以外の場合：mp4（標準出力の場合）; ts（セグメント化された出力用）。</td>
+			<td>使用する出力形式。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-format-and-codecs#video_codec/index.html"><code class="notranslate">video_codec </code></a></td>
+			<td>フォーマット、プロファイル、または <a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-format-and-codecs#audio_codec/index.html"> <code class="notranslate">audio_codec </code></a>。 存在しない場合はh264。</td>
+			<td>使用するビデオコーデック。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-format-and-codecs#audio_codec/index.html"><code class="notranslate">audio_codec </code></a></td>
+			<td>フォーマット、プロファイル、または <a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-format-and-codecs#video_codec/index.html"> <code class="notranslate">video_codec </code></a>。 何も提供されていなければaac。</td>
+			<td>使用するオーディオコーデック。</td>
+		</tr></tbody></table></section><section class="bcls-section"><h2 id="resolution" data-gt-block="">分解能</h2>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th>設定</th>
+			<th>デフォルト</th>
+			<th>説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-resolution#size/index.html"><code class="notranslate">size </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>出力ビデオの解像度（WxH、ピクセル単位）。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-resolution#width/index.html"><code class="notranslate">width </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>出力ビデオの最大幅（ピクセル単位）。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-resolution#height/index.html"><code class="notranslate">height </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>出力ビデオの最大高さ（ピクセル単位）。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-resolution#upscale/index.html"><code class="notranslate">upscale </code></a></td>
+			<td>false</td>
+			<td>入力が目標出力解像度よりも小さい場合は、出力をアップスケールします。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-resolution#aspect_mode/index.html"><code class="notranslate">aspect_mode </code></a></td>
+			<td>保存する</td>
+			<td>入力ファイルのアスペクト比が目標の幅/高さアスペクト比と一致しない場合の対処方法</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-resolution#sample_aspect_ratio/index.html"><code class="notranslate">sample_aspect_ratio </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>出力ビデオに使用されるサンプル（ピクセル）アスペクト比。 サイズ、幅、高さ、および <code class="notranslate">aspect_mode </code> モードオプションは、すべて、ディスプレイの寸法ではなく、エンコードされたピクセル寸法を参照します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-resolution#force_interlace_headers/index.html"><code class="notranslate">force_interlace_headers </code></a></td>
+			<td><span class="none">false</span></td>
+			<td>一部のデコーダはインターレースされたコンテンツを要求しますが、プログレッシブコンテンツは正常に再生します。 この設定では、プログレッシブコンテンツのメタデータに「インターレース」ヘッダーが追加され、実際にインターレースされているように見えます。</td>
+		</tr></tbody></table></section><section class="bcls-section"><h2 id="Rate_Control" data-gt-block="">レート制御</h2>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th>設定</th>
+			<th>デフォルト</th>
+			<th>説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-rate-control#quality/index.html"><code class="notranslate">quality </code></a></td>
+			<td>3</td>
+			<td>最適なビデオビットレートを自動的に選択して、目標のビジュアル品質に合わせます。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-rate-control#video_bitrate/index.html"><code class="notranslate">video_bitrate </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>目標ビデオビットレート（kbps）。 特定のビットレートをターゲットにしない限り、品質設定を選択する必要はありません。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-rate-control#audio_quality/index.html"><code class="notranslate">audio_quality </code></a></td>
+			<td>3</td>
+			<td>最適なオーディオビットレートを自動的に選択して、目的の音質に合わせます。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-rate-control#audio_bitrate/index.html"><code class="notranslate">audio_bitrate </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>目標オーディオビットレート（kbps）。 あなたが <code class="notranslate">audio_quality </code> あなたが特定のビットレートを目標としない限り、設定します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-rate-control#max_video_bitrate/index.html"><code class="notranslate">max_video_bitrate </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>最大平均ビットレート。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-rate-control#speed/index.html"><code class="notranslate">speed </code></a></td>
+			<td>3</td>
+			<td>ターゲットのトランスコード速度。 通常、エンコードが遅いほど、より高度な圧縮が可能になります。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-rate-control#decoder_bitrate_cap/index.html"><code class="notranslate">decoder_bitrate_cap </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>最大ビットレートがデコーダバッファに供給される。 通常、ストリーミングや特定のデバイスをターゲットとするためのビデオに使用されます（例： <span class="”notranslate”">Blu-Ray</span>).</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-rate-control#decoder_buffer_size/index.html"><code class="notranslate">decoder_buffer_size </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>デコーダバッファのサイズ。 <code class="notranslate">bitrate_cap </code>.</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-rate-control#one_pass/index.html"><code class="notranslate">one_pass </code></a></td>
+			<td>false</td>
+			<td>ワンパスエンコーディングを強制します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-rate-control#audio_constant_bitrate/index.html"><code class="notranslate">audio_constant_bitrate </code></a></td>
+			<td>false</td>
+			<td>可能であれば、音声の固定ビットレートモードを有効にします。</td>
+		</tr></tbody></table></section><section class="bcls-section"><h2 id="Frame_Rate" data-gt-block="">フレームレート</h2>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th>設定</th>
+			<th>デフォルト</th>
+			<th>説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-frame-rate#frame_rate/index.html"><code class="notranslate">frame_rate </code></a></td>
+			<td>元の（入力）フレームレート。</td>
+			<td>使用するフレームレート。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-frame-rate#max_frame_rate/index.html"><code class="notranslate">max_frame_rate </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>使用する最大フレームレート。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-frame-rate#decimate/index.html"><code class="notranslate">decimate </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>除数で入力フレームレートを下げます。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-frame-rate#keyframe_interval/index.html"><code class="notranslate">keyframe_interval </code></a></td>
+			<td>250</td>
+			<td>各キーフレーム間の最大フレーム数。 H.264ビデオの場合、キーフレームはIDRフレームです。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-frame-rate#keyframe_rate/index.html"><code class="notranslate">keyframe_rate </code></a></td>
+			<td><code class="notranslate">keyframe_interval </code> 250の</td>
+			<td>1秒あたりのキーフレームの数。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-frame-rate#fixed_keyframe_interval/index.html"><code class="notranslate">fixed_keyframe_interval </code></a></td>
+			<td>false</td>
+			<td>固定キーフレーム間隔モードを有効にする（VP6、VP8、VP9、およびH.264のみ）。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-frame-rate#forced_keyframe_interval/index.html"><code class="notranslate">forced_keyframe_interval </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>指定した間隔で強制的にキーフレームを適用します（H.264のみ）。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-frame-rate#forced_keyframe_rate/index.html"><code class="notranslate">forced_keyframe_rate </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>フレームレートを考慮して、1秒あたりのキーフレーム数を指定します（H.264のみ）。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-frame-rate#generate_frame_index/index.html"><code class="notranslate">generate_frame_index </code></a></td>
+			<td>false</td>
+			<td>ビデオフレームインデックスファイルを生成します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-frame-rate#frame_index_filename/index.html"><code class="notranslate">frame_index_filename </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>フレームインデックスのデフォルトのファイル名を上書きする <a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-frame-rate#generate_frame_index/index.html"> <code class="notranslate">generate_frame_index </code></a> 有効になっています。</td>
+		</tr></tbody></table></section><section class="bcls-section"><h2 id="Video" data-gt-block="">動画</h2>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th>設定</th>
+			<th>デフォルト</th>
+			<th>説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-video#video_reference_frames/index.html"><code class="notranslate">video_reference_frames </code></a></td>
+			<td>3</td>
+			<td>使用する多数の参照フレーム（H.264、HEVC）。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-video#video_codec_profile/index.html"><code class="notranslate">video_codec_profile </code></a></td>
+			<td>H.264：ベースライン、HEVC：メイン、VP9：0</td>
+			<td>使用するビデオコーデックプロファイル（H.264、HEVC、VP9）。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-video#video_codec_level/index.html"><code class="notranslate">video_codec_level </code></a></td>
+			<td>出力ビデオに基づくレベルチャートを使用して自動的に計算されます。 見る <a class="nturl" href="http://en.wikipedia.org/wiki/H.264#Levels"><span class="”notranslate”">H.264-levels</span></a>,  <a class="nturl" href="http://en.wikipedia.org/wiki/High_Efficiency_Video_Coding#Tiers_and_levels"><span class="”notranslate”">HEVC-levels</span></a></td>
+			<td>使用するビデオコーデックレベル（H.264、HEVC）。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-video#video_bframes/index.html"><code class="notranslate">video_bframes </code></a></td>
+			<td>0</td>
+			<td>連続するBフレームの最大数（H.264、HEVC）</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-video#color_metadata/index.html"><code class="notranslate">color_metadata </code></a></td>
+			<td>保存する</td>
+			<td>出力ビデオの入力からカラーメタデータ情報を保持または破棄します。</td>
+		</tr></tbody></table></section><section class="bcls-section"><h2 id="Audio" data-gt-block="">オーディオ</h2>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th>設定</th>
+			<th>デフォルト</th>
+			<th>説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-audio#audio_sample_rate/index.html"><code class="notranslate">audio_sample_rate </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>オーディオサンプルレート（Hz）。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-audio#max_audio_sample_rate/index.html"><code class="notranslate">max_audio_sample_rate </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>最大オーディオサンプルレート（Hz）。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-audio#audio_channels/index.html"><code class="notranslate">audio_channels </code></a></td>
+			<td>元のファイルがモノであれば1。 そうでなければ、2。</td>
+			<td>オーディオチャンネルの数：1または2。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-audio#audio_bit_depth/index.html"><code class="notranslate">audio_bit_depth </code></a></td>
+			<td>16</td>
+			<td>サンプルあたりのビット数：16、24、32。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-audio#audio_language/index.html"><code class="notranslate">audio_language </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>オーディオトラックの言語を記述します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-audio#input_audio_channels/index.html"><code class="notranslate">input_audio_channels </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>入力オーディオトラック間のレイアウトを設定します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-audio#output_audio_channels/index.html"><code class="notranslate">output_audio_channels </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>出力オーディオチャンネルのレイアウトを設定します。</td>
+		</tr></tbody></table></section><section class="bcls-section"><h2 id="Thumbnails" data-gt-block="">サムネイル</h2>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th>設定</th>
+			<th>デフォルト</th>
+			<th>説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-thumbnails#thumbnails/index.html"><code class="notranslate">thumbnails </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>特定のビデオのサムネイルをキャプチャします。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-thumbnails#label/index.html"><code class="notranslate">label </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>サムネイルグループの各セットを識別するラベル。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-thumbnails#format/index.html"><code class="notranslate">format </code></a></td>
+			<td>PNG</td>
+			<td>サムネイル画像のフォーマット。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-thumbnails#number/index.html"><code class="notranslate">number </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>均等に配置された多数のサムネイル。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-thumbnails#start_at_first_frame/index.html"><code class="notranslate">start_at_first_frame </code></a></td>
+			<td>false</td>
+			<td>最初のフレームからサムネイルの生成を開始します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-thumbnails#interval/index.html"><code class="notranslate">interval </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>均等な間隔で秒単位でサムネイルを撮ります。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-thumbnails#interval_in_frames/index.html"><code class="notranslate">interval_in_frames </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>フレーム内の均等な間隔でサムネイルを取ります。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-thumbnails#times/index.html"><code class="notranslate">times </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>サムネイルを取得する時間の配列（秒単位）。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-thumbnails#aspect_mode/index.html"><code class="notranslate">aspect_mode </code></a></td>
+			<td>保存する</td>
+			<td>入力ファイルの縦横比とは異なるサムネイルの幅/高さを扱う方法。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-thumbnails#size/index.html"><code class="notranslate">size </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>サムネイル解像度を <code class="notranslate">WxH </code>.</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-thumbnails#width/index.html"><code class="notranslate">width </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>サムネイルの最大幅（ピクセル単位）。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-thumbnails#height/index.html"><code class="notranslate">height </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>サムネイルの最大高さ（ピクセル単位）。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-thumbnails#base_url/index.html"><code class="notranslate">base_url </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>ファイル名なしでサムネイルを配置するベースS3、クラウドファイル、GCS、FTP、FTPS、またはSFTPディレクトリURL。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-thumbnails#prefix/index.html"><code class="notranslate">prefix </code></a></td>
+			<td>フレーム</td>
+			<td>サムネイルのファイル名のプレフィックス。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-thumbnails#filename/index.html"><code class="notranslate">filename </code></a></td>
+			<td>フレーム</td>
+			<td>補間されたサムネイルファイル名。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-thumbnails#public/index.html"><code class="notranslate">public </code></a></td>
+			<td>false</td>
+			<td>出力をS3で一般に読めるようにします。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-thumbnails#access_control/index.html"><code class="notranslate">access_control </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>S3に送信されるファイルのファイングレイン・アクセス制御ルール。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-thumbnails#grantee/index.html"><code class="notranslate">grantee </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>きめ細かいS3アクセス制御、アクセス権の付与者が設定します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-thumbnails#permission/index.html"><code class="notranslate">permission </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>ファイングレイン・アクセス・コントロールを使用した場合、権限受領の権限を設定します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-thumbnails#rss/index.html"><code class="notranslate">rrs </code></a></td>
+			<td>false</td>
+			<td>アマゾンS3の削減冗長化ストレージ。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-thumbnails#headers/index.html"><code class="notranslate">headers </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td><code class="notranslate">HTTP headers </code> 我々はそれらをアップロードするとき、あなたのサムネイルを送信します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-thumbnails#credentials/index.html"><code class="notranslate">credentials </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>ニックネームで保存された資格情報を参照します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-thumbnails#parallel_upload_limit/index.html"><code class="notranslate">parallel_upload_limit </code></a></td>
+			<td>S30の3、他のすべての宛先の10。</td>
+			<td>試行する同時アップロードの最大数。</td>
+		</tr></tbody></table></section><section class="bcls-section"><h2 id="Watermarks" data-gt-block="">透かし</h2>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th>設定</th>
+			<th>デフォルト</th>
+			<th>説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-watermarks#watermarks/index.html"><code class="notranslate">watermarks </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>出力ビデオへの1つ以上の透かしを追加します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-watermarks#url/index.html"><code class="notranslate">url </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>透かしとして使用するために、リモートの画像ファイルのURL。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-watermarks#x/index.html"><code class="notranslate">x </code></a></td>
+			<td>-10</td>
+			<td>ここで、x軸に、ウォーターマークを配置します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-watermarks#y/index.html"><code class="notranslate">y </code></a></td>
+			<td>-10</td>
+			<td>ここで、y軸に、ウォーターマークを配置します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-watermarks#width/index.html"><code class="notranslate">width </code></a></td>
+			<td>スケールする <a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-watermarks#height/index.html">高さ</a>、または元の画像の幅。</td>
+			<td>透かしのスケール幅。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-watermarks#height/index.html"><code class="notranslate">height </code></a></td>
+			<td>スケールする <a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-watermarks#width/index.html">幅</a>、または元の画像の高さ。</td>
+			<td>透かしのスケールの高さ。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-watermarks#origin/index.html"><code class="notranslate">origin </code></a></td>
+			<td>コンテンツ</td>
+			<td>上のウォーターマークの位置を基準とするため、出力のどの部分。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-watermarks#opacity/index.html"><code class="notranslate">opacity </code></a></td>
+			<td>1.0</td>
+			<td>透かしを透明にします。</td>
+		</tr></tbody></table></section><section class="bcls-section"><h2 id="Captions" data-gt-block="">キャプション</h2>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th>設定</th>
+			<th>デフォルト</th>
+			<th>説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-captions#caption_url/index.html"><code class="notranslate">caption_url </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>SCC、DFXP、またはSAMIキャプションファイルへのURLを出力に含めます。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-captions#skip_captions/index.html"><code class="notranslate">skip_captions </code></a></td>
+			<td>false</td>
+			<td>キャプションを出力ファイルに追加したり、出力ファイルに渡したりしないでください。</td>
+		</tr></tbody></table></section><section class="bcls-section"><h2 id="Video_Processing" data-gt-block="">ビデオ処理</h2>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th>設定</th>
+			<th>デフォルト</th>
+			<th>説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-video-processing#rotate/index.html"><code class="notranslate">rotate </code></a></td>
+			<td>自動的に検出</td>
+			<td>動画を回転させます。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-video-processing#deinterlace/index.html"><code class="notranslate">deinterlace </code></a></td>
+			<td>検出</td>
+			<td>入力された映像をデインタレース。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-video-processing#sharpen/index.html"><code class="notranslate">sharpen </code></a></td>
+			<td>false</td>
+			<td>シャープフィルタを適用します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-video-processing#denoise/index.html"><code class="notranslate">denoise </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>ノイズ除去フィルタを適用します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-video-processing#autolevel/index.html"><code class="notranslate">autolevel </code></a></td>
+			<td>false</td>
+			<td>色オートレベルのフィルタを適用します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-video-processing#deblock/index.html"><code class="notranslate">deblock </code></a></td>
+			<td>false</td>
+			<td>デブロックフィルタを適用します。</td>
+		</tr></tbody></table></section><section class="bcls-section"><h2 id="Audio_Processing" data-gt-block="">オーディオ処理</h2>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th>設定</th>
+			<th>デフォルト</th>
+			<th>説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-audio-processing#audio_gain/index.html"><code class="notranslate">audio_gain </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>dBで、オーディオにゲイン量を適用します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-audio-processing#audio_normalize/index.html"><code class="notranslate">audio_normalize </code></a></td>
+			<td>false</td>
+			<td>0dBへのオーディオ正規化します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-audio-processing#audio_pre_normalize/index.html"><code class="notranslate">audio_pre_normalize </code></a></td>
+			<td>false</td>
+			<td>拡張または圧縮効果を適用する前にオーディオをノーマライズ。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-audio-processing#audio_post_normalize/index.html"><code class="notranslate">audio_post_normalize </code></a></td>
+			<td>false</td>
+			<td>拡張または圧縮効果を適用した後にオーディオをノーマライズ。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-audio-processing#audio_bass/index.html"><code class="notranslate">audio_bass </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>オーディオに低音の量を増加または減少させます。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-audio-processing#audio_treble/index.html"><code class="notranslate">audio_treble </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>オーディオで高音の量を増加または減少させます。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-audio-processing#audio_highpass/index.html"><code class="notranslate">audio_highpass </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>オーディオにハイパスフィルタを適用します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-audio-processing#audio_lowpass/index.html"><code class="notranslate">audio_lowpass </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>オーディオにローパスフィルタを適用します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-audio-processing#audio_compression_ratio/index.html"><code class="notranslate">audio_compression_ratio </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>オーディオのダイナミックレンジを圧縮します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-audio-processing#audio_compression_threshold/index.html"><code class="notranslate">audio_compression_threshold </code></a></td>
+			<td>-20</td>
+			<td>オーディオのダイナミックレンジを圧縮します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-audio-processing#audio-expansion-ratio/index.html"><code class="notranslate">audio_expansion_ratio </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>オーディオのダイナミックレンジを展開します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-audio-processing#audio_expansion_threshold/index.html"><code class="notranslate">audio_expansion_threshold </code></a></td>
+			<td>-35</td>
+			<td>オーディオのダイナミックレンジを展開します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-audio-processing#audio_fade/index.html"><code class="notranslate">audio_fade </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>オーディオをフェードイン、フェードアウト効果を適用します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-audio-processing#audio_fade_in/index.html"><code class="notranslate">audio_fade_in </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>オーディオをフェードイン効果を適用します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-audio-processing#audio_loudness_level/index.html"><code class="notranslate">audio_loudness_level </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>オーディオの音量レベルを調整します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-audio-processing#audio_karaoke_mode/index.html"><code class="notranslate">audio_karaoke_mode </code></a></td>
+			<td>false</td>
+			<td>オーディオにカラオケ効果を適用します。</td>
+		</tr></tbody></table></section><section class="bcls-section"><h2 id="Clips" data-gt-block="">クリップ</h2>
+</section><table class="bcls-table"><thead class="bcls-table__head"><tr><th>設定</th>
+			<th>デフォルト</th>
+			<th>説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-clips#start_clip/index.html"><code class="notranslate">start_clip </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>カスタムの開始時間を設定することで、入力ファイルの一部だけをエンコードします。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-clips#clip_length/index.html"><code class="notranslate">clip_length </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>カスタムクリップの長さを設定することで、入力ファイルの一部だけをエンコードします。</td>
+		</tr></tbody></table><section class="bcls-section"><h2 id="S3_Settings" data-gt-block="">S3の設定</h2>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th>設定</th>
+			<th>デフォルト</th>
+			<th>説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-s3-settings#public/index.html"><code class="notranslate">public </code></a></td>
+			<td>false</td>
+			<td>出力をS3で一般に読めるようにします。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-s3-settings#rrs/index.html"><code class="notranslate">rrs </code></a></td>
+			<td>false</td>
+			<td>アマゾンS3の削減冗長化ストレージ。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-s3-settings#access_control/index.html"><code class="notranslate">access_control </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>S3に送信されるファイルのファイングレイン・アクセス制御ルール。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-s3-settings#grantee/index.html"><code class="notranslate">grantee </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>きめの細かいS3のACCESS_CONTROL権限付与者のために設定してください。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-s3-settings#permission/index.html"><code class="notranslate">permission </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>きめ細かいACCESS_CONTROLを使用した場合、権限受領の権限を設定します。</td>
+		</tr></tbody></table></section><section class="bcls-section"><h2 id="Notifications" data-gt-block="">お知らせ</h2>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th>設定</th>
+			<th>デフォルト</th>
+			<th>説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-notifications#notifications/index.html"><code class="notranslate">notifications </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>ジョブまたは出力が完了したときに通知されます。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-notifications#url/index.html"><code class="notranslate">url </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>ジョブまたは出力が完了したときに通知されます。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-notifications#format/index.html"><code class="notranslate">format </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>通知の形式と内容のタイプ。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-notifications#headers/index.html"><code class="notranslate">headers </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>HTTP通知に沿って渡すためのヘッダ。</td>
+		</tr><!-- <tr>
+				<td><a class=nturl href="/ja/node/17881#event"><code>event </code></a></td>
+				<td><span class="none">none</span></td>
+				<td>The event that triggers a notification. Used for Live HLS outputs.</td>
+			</tr> --></tbody></table></section><section class="bcls-section"><h2 id="Conditional_Outputs" data-gt-block="">条件付き出力</h2>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th>設定</th>
+			<th>デフォルト</th>
+			<th>説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-conditional-outputs#min_size/index.html"><code class="notranslate">min_size </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>ソースの寸法が所定の寸法よりも小さい場合の出力をスキップします。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-conditional-outputs#max_size/index.html"><code class="notranslate">max_size </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>ソースの寸法が所定の寸法よりも大きい場合、出力をスキップします。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-conditional-outputs#min_duration/index.html"><code class="notranslate">min_duration </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>ソース時間は秒単位で、指定した時間よりも短い場合、出力をスキップします。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-conditional-outputs#max_duration/index.html"><code class="notranslate">max_duration </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>ソース期間が指定された期間（秒）より長い場合、出力をスキップします。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-conditional-outputs#min_audio_bitrate/index.html"><code class="notranslate">min_audio_bitrate </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>ソースのオーディオビットレートが指定されたビットレート（kbps単位）よりも小さい場合、出力をスキップします。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-conditional-outputs#max_audio_bitrate/index.html"><code class="notranslate">max_audio_bitrate </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>ソースのオーディオビットレートが指定されたビットレート（kbps単位）より大きい場合、出力をスキップします。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-conditional-outputs#min_video_bitrate/index.html"><code class="notranslate">min_video_bitrate </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>ソースビデオのビットレートが指定されたビットレート（kbps）未満の場合、出力をスキップします。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-conditional-outputs#max_video_bitrate/index.html"><code class="notranslate">max_video_bitrate </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>ソースビデオのビットレートが指定されたビットレート（kbps単位）より大きい場合、出力をスキップします。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-conditional-outputs#require_audio/index.html"><code class="notranslate">require_audio </code></a></td>
+			<td>false</td>
+			<td>ソースファイルにオーディオトラックが含まれていない場合は、出力をスキップします。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-conditional-outputs#require_video/index.html"><code class="notranslate">require_video </code></a></td>
+			<td>false</td>
+			<td>ソースファイルにビデオトラックが含まれていない場合は、出力をスキップします。</td>
+		</tr></tbody></table></section><section class="bcls-section"><h2 id="Segmented_Streaming" data-gt-block="">セグメント化されたストリーミング</h2>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th>設定</th>
+			<th>デフォルト</th>
+			<th>説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-segmented-streaming#streaming_delivery_format/index.html"><code class="notranslate">streaming_delivery_format </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>ストリーム可能な出力のフォーマット/プロトコル設定を設定します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-segmented-streaming#streaming_delivery_profile/index.html"><code class="notranslate">streaming_delivery_profile </code></a></td>
+			<td>ライブ</td>
+			<td>ストリーミング配信フォーマットの特定のプロファイルを設定します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-segmented-streaming#playlist_format/index.html"><code class="notranslate">playlist_format </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>プレイリスト出力のフォーマットを設定します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-segmented-streaming#segment_seconds/index.html"><code class="notranslate">segment_seconds </code></a></td>
+			<td>10</td>
+			<td>セグメント化された出力の各セグメントの最大継続時間を設定します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-segmented-streaming#alternate_audio/index.html"><code class="notranslate">alternate_audio </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>HLSプレイリスト用の一連の代替オーディオストリームを提供します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-segmented-streaming#streams/index.html"><code class="notranslate">streams </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>再生リストとして再フォーマットされるストリーム情報のリストを提供する</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-segmented-streaming#path/index.html"><code class="notranslate">path </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>ストリームマニフェストファイルへのパスを指定します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-segmented-streaming#bandwidth/index.html"><code class="notranslate">bandwidth </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>プレイリストストリームの帯域幅を指定します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-segmented-streaming#resolution/index.html"><code class="notranslate">resolution </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>プレイリストストリームの解像度を指定します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-segmented-streaming#codecs/index.html"><code class="notranslate">codecs </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>プレイリストストリームで使用されるコーデックを指定します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-segmented-streaming#audio/index.html"><code class="notranslate">audio </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>プレイリストの代替オーディオトラックを指定します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-segmented-streaming#segment_image_url/index.html"><code class="notranslate">segment_image_url </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>音声のみのセグメントに表示する画像</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-segmented-streaming#segment_video_snapshots/index.html"><code class="notranslate">segment_video_snapshots </code></a></td>
+			<td>false</td>
+			<td>ビデオファイルをオーディオ専用セグメントにセグメント化する場合は、各セグメントのサムネイルとしてビデオのスナップショットを作成します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-segmented-streaming#source/index.html"><code class="notranslate">source </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>プレイリストストリームのソースメディアを指定します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-segmented-streaming#max_hls_protocol_version/index.html"><code class="notranslate">max_hls_protocol_version </code></a></td>
+			<td>用3 Live サンプルAES暗号化のための5を出力する。 そうでなければ、2。</td>
+			<td>使用する最大HLSプロトコル。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-segmented-streaming#hls_optimized_ts/index.html"><code class="notranslate">hls_optimized_ts </code></a></td>
+			<td>true</td>
+			<td>TSセグメントファイルをHTTP用に最適化する Live iOS上でのストリーミング。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-segmented-streaming#prepare_for_segmenting/index.html"><code class="notranslate">prepare_for_segmenting </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>セグメント化にはキャプションとキーフレームのタイミングを含めます。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-segmented-streaming#smil-base-url/index.html"><code class="notranslate">smil_base_url </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>&lt;meta base = "smil_base_url_value" /&gt;をSMILプレイリストの&lt;head&gt;セクションに追加します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-segmented-streaming#byte_range_segmenting/index.html"><code class="notranslate">byte_range_segmenting </code></a></td>
+			<td>false</td>
+			<td>セグメントごとに1つのファイルではなく、単一の出力ファイルを生成するようにHLSセグメント化を設定します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-segmented-streaming#generate_keyframe_manifest/index.html"><code class="notranslate">generate_keyframe_manifest </code></a></td>
+			<td>false</td>
+			<td>早送りと巻き戻し再生に必要なHLSキーフレーム（Iフレーム）マニフェストを生成します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-segmented-streaming#keyframe_manifest_filename/index.html"><code class="notranslate">keyframe_manifest_filename </code></a></td>
+			<td>iframe_index.m3u8</td>
+			<td>HLSキーフレームマニフェストのデフォルトファイル名を上書きします。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-segmented-streaming#allow_skipped_sources/index.html"><code class="notranslate">allow_skipped_sources </code></a></td>
+			<td>false</td>
+			<td>ソースは無視してください <a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-conditional-outputs/index.html">条件付き出力</a> それらはスキップされている。</td>
+		</tr></tbody></table></section><section class="bcls-section"><h2 id="Encryption" data-gt-block="">暗号化</h2>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th>設定</th>
+			<th>デフォルト</th>
+			<th>説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-encryption#encryption_method/index.html"><code class="notranslate">encryption_method </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>暗号化に使用する暗号化方式を設定します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-encryption#encryption_key/index.html"><code class="notranslate">encryption_key </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>1つの暗号化キーを設定する Zencoder 1を生成する</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-encryption#encryption_key_url/index.html"><code class="notranslate">encryption_key_url </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>1つの暗号化キーにURLを設定する Zencoder 1を生成する</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-encryption#encryption_key_rotation_period/index.html"><code class="notranslate">encryption_key_rotation_period </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>複数のセグメントの後に新しい暗号化キーにローテーションする</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-encryption#encryption_key_url_prefix/index.html"><code class="notranslate">encryption_key_url_prefix </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>渡された文字列をキーURLの先頭に追加する</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-encryption#encryption_iv/index.html"><code class="notranslate">encryption_iv </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>暗号化の際に使用する初期化ベクトルを設定する</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-encryption#encryption_password/index.html"><code class="notranslate">encryption_password </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>初期化ベクトルの生成に使用するパスワードを設定します。</td>
+		</tr></tbody></table></section><section class="bcls-section"><h2 id="Decryption" data-gt-block="">復号化</h2>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th>設定</th>
+			<th>デフォルト</th>
+			<th>説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-decryption#decryption_method/index.html"><code class="notranslate">decryption_method </code></a></td>
+			<td>aes-128-cbc（if <a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-decryption#decryption_key/index.html"> <code class="notranslate">decryption_key </code></a>  or  <a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-decryption#decryption_key_url/index.html"> <code class="notranslate">decryption_key_url </code></a> 設定されています）</td>
+			<td>使用する解読アルゴリズムを設定します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-decryption#decryption_key/index.html"><code class="notranslate">decryption_key </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>使用する復号鍵を設定します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-decryption#decryption_key_url/index.html"><code class="notranslate">decryption_key_url </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>使用する復号鍵ファイルのURL。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-decryption#decryption_password/index.html"><code class="notranslate">decryption_password </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>入力ファイルを復号するためにキーと組み合わせて使用​​されるパスワード。</td>
+		</tr></tbody></table></section><section class="bcls-section"><h2 id="DRM" data-gt-block="">DRM</h2>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th>設定</th>
+			<th>デフォルト</th>
+			<th>説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-drm#drm/index.html"><code class="notranslate">drm </code></a></td>
+			<td>{}</td>
+			<td>DRMオプションのハッシュ</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-drm#method/index.html"><code class="notranslate">method </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>コンテンツを保護するために使用されるデジタル権利管理（DRM）方法。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-drm#provider/index.html"><code class="notranslate">provider </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>デジタル権利管理（DRM）プロバイダが使用されました。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-drm#key_id/index.html"><code class="notranslate">key_id </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>使用する鍵の識別子。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-drm#key_guid/index.html"><code class="notranslate">key_guid </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>使用する鍵の識別子。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-drm#user_key/index.html"><code class="notranslate">user_key </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>DRMプロバイダのユーザーキー。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-drm#server_key/index.html"><code class="notranslate">server_key </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>DRMプロバイダのサーバーキー。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-drm#media_id/index.html"><code class="notranslate">media_id </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>メディアの一意の識別子。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-drm#content_id/index.html"><code class="notranslate">content_id </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>コンテンツの一意の識別子。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-drm#content_key/index.html"><code class="notranslate">content_key </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>コンテンツの一意の識別子。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-drm#schemas/index.html"><code class="notranslate">schemas </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>共通暗号化を使用する場合のDRMプロバイダに関する情報</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-drm#type/index.html"><code class="notranslate">type </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>このDRMスキーマのプロバイダタイプ。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-drm#license_acquisition_url/index.html"><code class="notranslate">license_acquisition_url </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>のライセンス取得URL <span class="”notranslate”">Playready CENC DRM</span> スキーマ</td>
+		</tr></tbody></table></section><section class="bcls-section"><h2 id="H264" data-gt-block="">H.264</h2>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th>設定</th>
+			<th>デフォルト</th>
+			<th>説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-h264#h264_reference_frames/index.html"><code class="notranslate">h264_reference_frames </code></a></td>
+			<td>3</td>
+			<td>H.264ビデオで使用する多数の参照フレーム。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-h264#h264_profile/index.html">h264_profile</a></td>
+			<td>ベースライン&gt;</td>
+			<td>使用するH.264プロファイル。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-h264#h264_level/index.html"><code class="notranslate">h264_level </code></a></td>
+			<td>を使用して自動的に計算されます <a class="nturl" href="http://en.wikipedia.org/wiki/H.264#Levels">H.264レベルチャート</a> 出力ビデオに基づいて決定する。</td>
+			<td>使用するH.264レベル。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-h264#h264_bframes/index.html"><code class="notranslate">h264_bframes </code></a></td>
+			<td>0</td>
+			<td>連続するBフレームの最大数。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-h264#tuning/index.html"><code class="notranslate">tuning </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>特定のコンテンツタイプの出力ビデオをチューニングします。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-h264#crf/index.html"><code class="notranslate">crf </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>ビットレートコントロールの設定。</td>
+		</tr></tbody></table></section><section class="bcls-section"><h2 id="HDR10" data-gt-block="">HDR10</h2>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th>設定</th>
+			<th>デフォルト</th>
+			<th>説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-hdr10#master_display_red_x/index.html"><code class="notranslate">master_display.red.x </code></a></td>
+			<td>なし</td>
+			<td>赤の色のボリュームxの設定。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-hdr10#master_display_red_y/index.html"><code class="notranslate">master_display.red.y </code></a></td>
+			<td>なし</td>
+			<td>赤色のカラーボリュームの設定。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-hdr10#master_display_green_x/index.html"><code class="notranslate">master_display.green.x </code></a></td>
+			<td>なし。</td>
+			<td>色のボリュームx緑の設定。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-hdr10#master_display_green_y/index.html"><code class="notranslate">master_display.green.y </code></a></td>
+			<td>なし。</td>
+			<td>緑の色のボリュームyの設定。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-hdr10#master_display_blue_x/index.html"><code class="notranslate">master_display.blue.x </code></a></td>
+			<td>なし。</td>
+			<td>色のボリュームxは青の設定です。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-hdr10#master_display_blue_y/index.html"><code class="notranslate">master_display.blue.y </code></a></td>
+			<td>なし。</td>
+			<td>青色のカラーボリュームの設定。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-hdr10#master_display_white_point_x/index.html"><code class="notranslate">master_display.white_point.x </code></a></td>
+			<td>なし。</td>
+			<td>ホワイトポイントのカラーボリュームxの設定。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-hdr10#master_display_white_point_y/index.html"><code class="notranslate">master_display.white_point.y </code></a></td>
+			<td>なし。</td>
+			<td>ホワイトポイントのカラーボリュームの設定。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-hdr10#master_display_luminance_min/index.html"><code class="notranslate">master_display.luminance.min </code></a></td>
+			<td>なし。</td>
+			<td>ニットでの最低輝度または平方メートル当たりのカンデラ（cd / m2）。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-hdr10#master_display_luminance_max/index.html"><code class="notranslate">master_display.luminance.max </code></a></td>
+			<td>なし。</td>
+			<td>ニットまたはカンデラ/平方メートルあたりの最大輝度（cd / m2）。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-hdr10#max_content_light_level/index.html"><code class="notranslate">max_content_light_level </code></a></td>
+			<td>なし。</td>
+			<td>コンテンツ全体の最大光度、1平方メートルあたりのカンデラ（cd / m2） - 整数値。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-hdr10#max_frame_average_light_level/index.html"><code class="notranslate">max_frame_average_light_level </code></a></td>
+			<td>なし。</td>
+			<td>コンテンツフレームニットの最大平均光レベルまたは1平方メートル当りのカンデラ（cd / m2） - 整数値。 10000までの値は許可されていますが、100-200の範囲内の値は一般的に最良の結果をもたらします。</td>
+		</tr></tbody></table></section><section class="bcls-section"><h2 id="FLV" data-gt-block="">FLV</h2>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th>設定</th>
+			<th>デフォルト</th>
+			<th>説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-flv#cue_points/index.html"><code class="notranslate">cue_points </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>イベントまたはナビゲーションキューポイントをFLVビデオに追加します。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-flv#type/index.html"><code class="notranslate">type </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>キューポイントタイプ。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-flv#time/index.html"><code class="notranslate">time </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>キューポイント時間（秒）。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-flv#name/index.html"><code class="notranslate">name </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>キューポイント名。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-flv#data/index.html"><code class="notranslate">data </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>キューポイントデータ。</td>
+		</tr></tbody></table></section><section class="bcls-section"><h2 id="VP6" data-gt-block="">VP6</h2>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th>設定</th>
+			<th>デフォルト</th>
+			<th>説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-vp6#vp6_temporal_down_watermark/index.html"><code class="notranslate">vp6_temporal_down_watermark </code></a></td>
+			<td>20</td>
+			<td>VP6一時的な透かしの割合。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-vp6#vp6_temporal_resampling/index.html"><code class="notranslate">vp6_temporal_resampling </code></a></td>
+			<td>1ピクセルあたりのビット数を少なくしてエンコードする場合はtrueです。 さもないと、 false.</td>
+			<td>VP6時間リサンプリングを有効または無効にします。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-vp6#vp6_undershoot_pct/index.html"><code class="notranslate">vp6_undershoot_pct </code></a></td>
+			<td>90</td>
+			<td>わずかに低いデータレートを対象にしてください。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-vp6#vp6_profile/index.html"><code class="notranslate">vp6_profile </code></a></td>
+			<td>vp6e</td>
+			<td>VP6プロファイル：vp6sまたはvp6e。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-vp6#vp6_compression_mode/index.html"><code class="notranslate">vp6_compression_mode </code></a></td>
+			<td>良い</td>
+			<td>VP6圧縮モード： <code class="notranslate">good </code>  or  <code class="notranslate">best </code>.</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-vp6#vp6_2pass_min_section/index.html"><code class="notranslate">vp6_2pass_min_section </code></a></td>
+			<td>40</td>
+			<td>2パスVBRエンコーディングの場合、エンコーダが許可する最低のデータレートです。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-vp6#vp6_2pass_max_section/index.html"><code class="notranslate">vp6_2pass_max_section </code></a></td>
+			<td>400</td>
+			<td>2パスVBRエンコーディングの場合、エンコーダが許可する最高のデータレートです。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-vp6#vp6_stream_prebuffer/index.html"><code class="notranslate">vp6_stream_prebuffer </code></a></td>
+			<td>6</td>
+			<td>再生を開始する前に必要なプリロード秒数。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-vp6#vp6_stream_max_buffer/index.html"><code class="notranslate">vp6_stream_max_buffer </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>最大デコーダバッファサイズ</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-vp6#vp6_deinterlace_mode/index.html"><code class="notranslate">vp6_deinterlace_mode </code></a></td>
+			<td>適応</td>
+			<td>VP6のデインターレースモード</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-vp6#vp6_denoise_level/index.html"><code class="notranslate">vp6_denoise_level </code></a></td>
+			<td>0</td>
+			<td>VP6のノイズレベル</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-vp6#alpha_transparency/index.html"><code class="notranslate">alpha_transparency </code></a></td>
+			<td>false</td>
+			<td>アルファ透明度を有効にします。 現在、VP6のみがサポートしています。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-vp6#constant_bitrate/index.html"><code class="notranslate">constant_bitrate </code></a></td>
+			<td>false</td>
+			<td>固定ビットレート（CBR）符号化を使用します。</td>
+		</tr></tbody></table></section><section class="bcls-section"><h2 id="MP4" data-gt-block="">MP4</h2>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th>設定</th>
+			<th>デフォルト</th>
+			<th>説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-mp4#hint/index.html"><code class="notranslate">hint </code></a></td>
+			<td>false</td>
+			<td>RTP / RTSP用のMP4ファイルのヒントを有効にする。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-mp4#mtu_size/index.html"><code class="notranslate">mtu_size </code></a></td>
+			<td>1450</td>
+			<td>MP4ヒントのMTUサイズを設定します。</td>
+		</tr></tbody></table></section><section class="bcls-section"><h2 id="AAC" data-gt-block="">AAC</h2>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th>設定</th>
+			<th>デフォルト</th>
+			<th>説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-aac#max_aac_profile/index.html"><code class="notranslate">max_aac_profile </code></a></td>
+			<td>HE-AAC</td>
+			<td>許可する最も高度な（圧縮された）AACプロファイルは何ですか？</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-aac#force_aac_profile/index.html"><code class="notranslate">force_aac_profile </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>特定のAACプロファイルを強制的に使用するのではなく、 Zencoder ビットレートに最適なプロファイルを選択します。</td>
+		</tr></tbody></table></section><section class="bcls-section"><h2 id="Broadcast" data-gt-block="">放送</h2>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th>設定</th>
+			<th>デフォルト</th>
+			<th>説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-broadcast#video_codec_preset/index.html"><code class="notranslate">video_codec_preset </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>特定の業界標準との互換性を可能にするためのビデオエンコーディングプリセット。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-broadcast#format_preset/index.html"><code class="notranslate">format_preset </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>特定の業界標準との互換性を可能にするようにプリセットされたフォーマット。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-broadcast#ts_muxrate/index.html"><code class="notranslate">ts_muxrate </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>トランスポートストリームを多重化できる最大レート（kbps）。 ts 形式でのみ使用されます。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-broadcast#ts_pmt_pid/index.html"><code class="notranslate">ts_pmt_pid </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>プログラムマップテーブルのパケットIDを上書きする。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-broadcast#ts-video-pid/index.html"><code class="notranslate">ts_video_pid </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>ビデオデータのパケットIDを上書きする。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-broadcast#ts_audio_pid/index.html"><code class="notranslate">ts_audio_pid </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>オーディオデータのパケットIDをオーバーライドします。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-broadcast#ts_pcr_pid/index.html"><code class="notranslate">ts_pcr_pid </code></a></td>
+			<td><span class="none">なし</span></td>
+			<td>プログラムクロックリファレンスのパケットIDを上書きする。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-broadcast#ts_cbr/index.html"><code class="notranslate">ts_cbr </code></a></td>
+			<td>false</td>
+			<td>トランスポートストリームレイヤでパケットをスタッフィングしてCBR出力を作成する</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-broadcast#lossless_video/index.html"><code class="notranslate">lossless_video </code></a></td>
+			<td>false</td>
+			<td>ビデオコーデックでサポートされている場合、ロスレスビデオエンコードを有効にします。</td>
+		</tr></tbody></table></section><section class="bcls-section"><h2 id="Aspera" data-gt-block="">アスペラ</h2>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th>設定</th>
+			<th>デフォルト</th>
+			<th>説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-aspera#aspera_transfer_policy/index.html"><code class="notranslate">aspera_transfer_policy </code></a></td>
+			<td>フェア</td>
+			<td>Asperaファイル転送に使用可能な帯域幅を割り当てる方法。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-aspera#transfer_minimum_rate/index.html"><code class="notranslate">transfer_minimum_rate </code></a></td>
+			<td>1000</td>
+			<td>データ転送の最低速度の目標速度（Kbps）。</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-aspera#transfer_maximum_rate/index.html"><code class="notranslate">transfer_maximum_rate </code></a></td>
+			<td>250000</td>
+			<td>データ転送最大レートの目標レート（Kbps）。</td>
+		</tr></tbody></table></section><section class="bcls-section"><h2 id="Transmuxing" data-gt-block="">トランスミューシング</h2>
+
+<table class="bcls-table"><thead class="bcls-table__head"><tr><th>設定</th>
+			<th>デフォルト</th>
+			<th>説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-transmuxing#copy_video/index.html"><code class="notranslate">copy_video </code></a></td>
+			<td>false</td>
+			<td>入力ファイルのビデオトラックをコピーする</td>
+		</tr><tr><td><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-transmuxing#copy_audio/index.html"><code class="notranslate">copy_audio </code></a></td>
+			<td>false</td>
+			<td>入力ファイルのオーディオトラックをコピーする</td>
+		</tr></tbody></table></section></article></div>
+      
+</div>
+
+</div>
+
+
+<section class="views-element-container block block-views block-views-blockrelated-content-by-field-block-1 clearfix" id="block-views-block-related-content-by-field-block-1">
+  
+    
+
+      <div class="gt-block form-group" data-gt-block=""><div class="gt-block view view-related-content-by-field view-id-related_content_by_field view-display-id-block_1 js-view-dom-id-89ec27a360361a717e35ade8fa1ed49d258f564e3ce8c76fbd413fa9fcc42663" data-gt-block="">
+  
+    
+      <div class="gt-block view-header" data-gt-block="">
+      <h2 data-gt-block="" id="bc-ipnav-31">関連コンテンツ</h2>
+    </div>
+      
+      <div class="gt-block view-content" data-gt-block="">
+      <div class="gt-block item-list" data-gt-block="">
+  
+  <ul>
+
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-general-output-settings/index.html" hreflang="en">Zencoder エンコーディング設定：一般的な出力設定</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-job/index.html" hreflang="en">Zencoder エンコーディング設定：ジョブ</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/zencoder-encoding-settings-format-and-codecs/index.html" hreflang="en">Zencoder エンコーディング設定：フォーマットとコーデック</a></span></span></div></li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </section>
+
+
+  </div>
+
+              </section>
+
+                </div>
+  </div>
+
+      <footer class="footer container" role="contentinfo">
+              <div class="gt-block row" data-gt-block="">
+            <div class="gt-block region region-footer-top-left col-md-9" style="margin-bottom: 1em;" data-gt-block="">
+    <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">Brightcove サポート</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="https://status.brightcove.com">システムステータス</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/contact-support/index.html" data-drupal-link-system-path="node/18632">サポート - Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="../ja/en/contact/create/index.html">サポート - Zencoder</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-documentation-menu" id="block-documentation" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">オンラインマニュアル</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/index.html" data-drupal-link-system-path="<front>">ホーム</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">トレーニング（講習会）</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/online-training-courses/index.html" data-drupal-link-system-path="node/18286">オンラインコース</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/register-training/index.html" data-drupal-link-system-path="node/18270">コー​​スに登録</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-brightcove-menu" id="block-brightcove" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">Brightcove</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="https://www.brightcove.com">Brightcove.COM</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+            <div class="gt-block region region-footer-top-right col-md-3" data-gt-block="">
+    <section id="block-footerlegaltext" class="block block-block-content block-block-content4507d09c-a528-4947-b91d-36ec6671822b clearfix">
+  
+    
+
+      
+            <div class="gt-block field field--name-field-body field--type-text-long field--label-hidden field--item" data-gt-block=""><p data-gt-block="">Brightcove Inc.（ナスダック：BCOV）は、接続されたデバイス間でビデオを配信および収益化するための強力なクラウドソリューションを提供する世界有数のプロバイダです。</p>
+</div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+                    <div class="gt-block row" data-gt-block="">
+            <div class="gt-block region region-footer-bottom-left col-md-8" data-gt-block="">
+    <section id="block-footercopyrightlinewithlinks" class="block block-block-content block-block-content3a164ef9-02d8-42c4-bcc6-3ab435f670b3 clearfix">
+  
+    
+
+      <div class="gt-block block-content block-content--type-copyright-block-with-links block-content--view-mode-full ds-1col clearfix" data-gt-block="">
+
+  
+
+  
+            <div class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" data-gt-block="">2020</div>
+      
+            <div class="field field--name-field-copyright-text field--type-string-long field--label-hidden field--item" data-gt-block="">Brightcove Inc.すべての権利を保有します。</div>
+      
+      <div class="gt-block field field--name-field-legal-links field--type-link field--label-hidden field--items" data-gt-block="">
+              <div class="gt-block field--item" data-gt-block=""><a class="nturl" href="https://www.brightcove.com/en/privacy">プライバシーポリシー</a></div>
+              <div class="gt-block field--item" data-gt-block=""><a class="nturl" href="https://www.brightcove.com/en/terms-and-conditions">利用規約</a></div>
+          </div>
+  
+
+</div>
+
+
+  </section>
+
+
+  </div>
+
+            <div class="gt-block region region-footer-bottom-right col-md-4" data-gt-block="">
+    <section id="block-footersocialblock" class="block block-block-content block-block-content4fc23afd-8d37-420e-ab28-73b2ba24e836 clearfix">
+  
+    
+
+      
+      <div class="gt-block field field--name-field-social-icon field--type-entity-reference-revisions field--label-hidden field--items" data-gt-block="">
+              <div class="gt-block field--item" data-gt-block="">
+
+<a class="icon" icon__social--link="" href="https://www.linkedin.com/company/brightcove" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--linkedin">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--linkedin"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="gt-block field--item" data-gt-block="">
+
+<a class="icon" icon__social--link="" href="https://twitter.com/brightcove" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--twitter">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--twitter"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="gt-block field--item" data-gt-block="">
+
+<a class="icon" icon__social--link="" href="https://www.facebook.com/Brightcove" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--facebook">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--facebook"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="gt-block field--item" data-gt-block="" style="display:none;color:white">
+
+<a class="icon" icon__social--link="" href="https://plus.google.com/100830370440271567091" title="">
+  <svg viewBox="0 0 100 1

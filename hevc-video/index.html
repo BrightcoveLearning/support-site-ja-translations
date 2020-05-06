@@ -1,0 +1,1302 @@
+<html lang="ja" dir="ltr" class=" js"><head>
+    <meta charset="utf-8"><script type="text/javascript" src="https://bam.nr-data.net/1/e78a80aa93?a=129613202&amp;v=1167.2a4546b&amp;to=YwBUZkcFVktUWhJQX1pKY0BcSxdRW10DQR5EDUY%3D&amp;rst=5781&amp;ref=https://support.brightcove.com/ja/hevc-video&amp;ap=1785&amp;be=2926&amp;fe=5706&amp;dc=3947&amp;perf=%7B%22timing%22:%7B%22of%22:1588779788902,%22n%22:0,%22f%22:0,%22dn%22:0,%22dne%22:0,%22c%22:0,%22s%22:16,%22ce%22:589,%22rq%22:589,%22rp%22:2618,%22rpe%22:2933,%22dl%22:2923,%22di%22:3947,%22ds%22:3947,%22de%22:4015,%22dc%22:5706,%22l%22:5706,%22le%22:5708%7D,%22navigation%22:%7B%7D%7D&amp;at=T0dXEA8fRUU%3D&amp;jsonp=NREUM.setToken"></script><script src="https://js-agent.newrelic.com/nr-1167.min.js"></script><script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script><script type="text/javascript" async="" src="//cdn.feedbackify.com/f.js"></script><script async="" src="https://fullstory.com/s/fs.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e78a80aa93",applicationID:"129613202"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e78a80aa93",applicationID:"129613202"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-2728311-17", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)">
+<meta name="MobileOptimized" content="width">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="https://support.brightcove.com/sites/default/files/favicon-64.png" type="image/png">
+<link rel="alternate" hreflang="en" href="https://support.brightcove.com/hevc-video">
+<link rel="canonical" href="https://support.brightcove.com/ja/hevc-video">
+<link rel="shortlink" href="https://support.brightcove.com/ja/node/18965">
+<link rel="revision" href="https://support.brightcove.com/hevc-video">
+
+    <title>HEVCビデオ| Brightcove 学習</title>
+    <link rel="stylesheet" media="all" href="https://support.brightcove.com/sites/default/files/css/css_d7PoQ20hWbRiei75VgExP_tm8C1ylIRfzB3zIYLc5Cw.css?q23msc">
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.min.css">
+<link rel="stylesheet" media="all" href="https://support.brightcove.com/sites/default/files/css/css_fr7ugR_m15spMT57voAomC2Aklj0ATM7MmH6hvb3pp4.css?q23msc">
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+    <meta name="uri-translation" content="on">
+    <script>
+window['_fs_debug'] = false; window['_fs_host'] = 'fullstory.com';
+window['_fs_org'] = 'BX3Q1';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+g.consent=function(a){g("consent",!arguments.length||a)};
+g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+g.clearUserCookie=function(){};
+})(window,document,window['_fs_namespace'],'script','user');
+    </script>
+  <style type="text/css">html{_background:url(//about:blank) fixed;}.fby-on select {visibility:hidden!important;}.fby-on .fby-hide-iframe {visibility:hidden!important;}.fby-hide-embed embed {visibility:hidden!important;}.fby-hide-object object {visibility:hidden!important;}@media not screen {.fby-tab {display: none;}}#feedbackify *{box-sizing:content-box!important;-moz-box-sizing:content-box!important;-webkit-box-sizing:content-box!important;}#feedbackify input{box-sizing:border-box!important;-moz-box-sizing:border-box!important;-webkit-box-sizing:border-box!important;max-width:none!important;}#feedbackify *:before{content:none!important;}#feedbackify *:after{content:none!important;}#feedbackify ,#feedbackify div,#feedbackify span,#feedbackify textarea,#feedbackify input,#feedbackify table,#feedbackify tbody,#feedbackify tr,#feedbackify td,#feedbackify img,#feedbackify p,#feedbackify a{border:0!important;outline:none!important;width:auto;height:auto;text-align:left!important;text-indent:0!important;float:none!important;padding:0!important;margin:0!important;font:12px arial,helvetica,sans-serif!important;overflow:visible!important;color:#000!important;line-height:1.2!important;background:0 none!important;position:static!important;vertical-align:baseline!important;box-shadow:none!important;}#feedbackify table{border-collapse:collapse!important;border-spacing:0!important;max-width:inherit!important;width:auto!important;}#feedbackify td{word-break:normal!important;}#feedbackify {z-index:2147483646!important;position:static!important;top:0;left:0;}#feedbackify .fby-screen{z-index:2147483646!important;position:fixed!important;top:0;left:0;width:0;height:100%;_position:absolute!important;_top:expression(eval(document.body.scrollTop||document.documentElement.scrollTop))!important;_left:expression(eval(document.body.scrollLeft||document.documentElement.scrollLeft))!important;_width:0!important;_height:expression(document.documentElement.clientHeight||document.body.clientHeight+"px")!important;}#feedbackify .fby-mask{display:none!important;position:fixed!important;top:0;left:0;width:100%;height:100%;background-color:#000!important;opacity:0.2;filter:alpha(opacity=20);_position:absolute!important;_width:expression(document.documentElement.clientWidth||document.body.clientWidth+"px")!important;_height:expression(this.parentNode.style.height)!important;}#feedbackify .fby-show{display:block!important;visibility:visible!important;}#feedbackify .fby-hide{display:none!important;visibility:hidden!important;}</style><style type="text/css">#feedbackify .fby-tab{position:fixed!important;width:36px;height:100px;overflow:hidden!important;_position:absolute!important;}#feedbackify .fby-tab a{display:block!important;position:absolute!important;width:36px;height:100px;background-color:#000000!important;cursor:pointer!important;background:url(https://cdn.feedbackify.com/img/classic/tab.png)!important;_background:none!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/tab.png)!important;}#feedbackify .fby-tab-l{top:50%;left:0;margin-top:-50px!important;_top:expression((parseInt(this.parentNode.style.height)-this.clientHeight)/2+"px")!important;_margin-top:0!important;}#feedbackify .fby-tab-l a{margin-left:-5px!important;}#feedbackify .fby-tab-l a:hover{margin-left:-2px!important;}#feedbackify .fby-tab-r{top:50%;right:0px!important;margin-top:-50px!important;_top:expression((parseInt(this.parentNode.style.height)-this.clientHeight)/2+"px")!important;_left:expression((document.documentElement.clientWidth||document.body.clientWidth)-this.clientWidth+"px")!important;_margin-top:0!important;}#feedbackify .fby-tab-r a{margin-left:5px!important;}#feedbackify .fby-tab-r a:hover{margin-left:2px!important;}#feedbackify .fby-tab-t{top:0;margin-top:0px!important;}#feedbackify .fby-tab-b{top:auto;bottom:0!important;_top:expression(parseInt(this.parentNode.style.height)-this.clientHeight+"px")!important;}</style><style type="text/css">#feedbackify grammarly-ghost{display:none!important;}#feedbackify grammarly-btn{display:none!important;}#feedbackify #fby-form{z-index:2147483646!important;width:618px!important;position:absolute!important;}#feedbackify .fby-d-main{width:600px;height:50px;vertical-align:top!important;background-color:#FFFFFF!important;position:relative!important;}#feedbackify .fby-d{background:url(https://cdn.feedbackify.com/img/classic/dlg_shad_sprite.png)!important;_background:none!important;}#feedbackify .fby-d-h{height:9px;background:url(https://cdn.feedbackify.com/img/classic/dlg_shad_sprite_h.png)!important;_background:none!important;}#feedbackify .fby-d-h2{height:9px;background-color:#FFFFFF!important;}#feedbackify .fby-d-tl{background-position:-18px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_tl.png)!important;}#feedbackify .fby-d-t{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_t.png,sizingMethod=scale)!important;}#feedbackify .fby-d-tr{background-position:-36px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_tr.png)!important;}#feedbackify .fby-d-l{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_l.png,sizingMethod=scale)!important;}#feedbackify .fby-d-r{background-position:-9px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_r.png,sizingMethod=scale)!important;}#feedbackify .fby-d-bl{background-position:-54px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_bl.png)!important;}#feedbackify .fby-d-br{background-position:-72px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_br.png)!important;}#feedbackify .fby-d-b{background-position:0px -9px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_b.png,sizingMethod=scale)!important;}#feedbackify .fby-d-load{position:relative!important;}#feedbackify .fby-d-load img{position:absolute!important;left:8px;}#feedbackify .fby-d-load div{position:absolute!important;padding:4px 18px!important;font-size:16px!important;font-weight:bold!important;color:#333!important;}</style></head>
+  <body class="path-node page-node-type-support-doc has-glyphicons">
+    <a class="visually-hidden" focusable="" skip-link="" href="#main-content/index.html">
+      メインコンテンツへスキップ
+    </a>
+    
+      <div class="gt-block dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="" data-gt-block="">
+              <header class="navbar navbar-default container" id="navbar" role="banner">
+      <div class="gt-block navigation-secondary clearfix" data-gt-block="">
+          <div class="gt-block region region-navigation-secondary" data-gt-block="">
+    <section id="block-styles" class="block block-block-content block-block-contentfbb71e48-a6cd-4d2b-8239-43f18db69e60 clearfix">
+  
+    
+
+      
+            <div class="gt-block field field--name-field-body field--type-text-long field--label-hidden field--item" data-gt-block=""><link rel="stylesheet" media="all" href="https://learning-services-media.brightcove.com/doc-assets/css/drupal-fix.css"></div>
+      
+  </section>
+
+<nav role="navigation" aria-labelledby="block-secondarynavigation-menu" id="block-secondarynavigation">
+            
+  <h2 class="visually-hidden" id="block-secondarynavigation-menu" data-gt-block="">セカンダリナビゲーション</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/contact-support/index.html" title="サポートリクエストを作成する" data-drupal-link-system-path="node/18632">サポートリクエスト</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://status.brightcove.com/">システムステータス</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://university.brightcove.com/">Brightcove 大学</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<section id="block-gtranslate" class="block block-gtranslate block-gtranslate-block clearfix">
+  
+    
+
+      
+<div class="gt-block gtranslate" data-gt-block="">
+<script type="text/javascript">/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;var lang=lang_pair.split('|')[1];var plang=location.pathname.split('/')[1];if(plang.length !=2 && plang != 'zh-CN' && plang != 'zh-TW')plang='en';if(lang == 'en')location.pathname=location.pathname.replace('/'+plang+'/', '/');else location.pathname='/'+lang+location.pathname.replace('/'+plang+'/', '/');}
+/* ]]> */
+</script><select onchange="doGTranslate(this);"><option value="">言語の選択</option><option value="en|en" style="font-weight:bold;background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -0px;padding-left:18px;">英語</option><option value="en|fr" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -160px;padding-left:18px;">フランス語</option><option value="en|de" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -176px;padding-left:18px;">ドイツ語</option><option value="en|ja" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -240px;padding-left:18px;">日本語</option><option value="en|ko" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -256px;padding-left:18px;">韓国語</option><option value="en|es" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -352px;padding-left:18px;">スペイン語</option></select>
+</div>
+<div class="gtranslate__credits" data-gt-block="">
+  本ドキュメントはGoogle翻訳によって機械翻訳したものとなります
+</div>
+
+  </section>
+
+
+  </div>
+
+      </div>
+      <div class="gt-block navbar-header col-md-3" data-gt-block="">
+                  <a class="logo" navbar-btn="" pull-left="" href="../ja/index.html" title="ホーム" rel="home">
+            <img src="https://support.brightcove.com/themes/custom/bcdocs/images/brightcove.png" alt="ホーム">
+          </a>
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">トグルナビゲーション</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+                    <div class="gt-block navbar-collapse collapse" data-gt-block="">
+            <div class="gt-block region region-navigation-collapsible" data-gt-block="">
+    <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation">
+            <h2 class="sr-only" id="block-mainnavigation-menu" data-gt-block="">メインナビゲーション</h2>
+
+      
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-learning-home/index.html" title="ホームページ" data-drupal-link-system-path="node/18643">ホーム</a>
+                  </li>
+                                            <li class="expanded dropdown">
+        <a class="dropdown-toggle" href="" data-toggle="dropdown">
+          製品紹介
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/video-cloud/index.html" data-drupal-link-system-path="node/18332">Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://gallery.support.brightcove.com">ギャラリー</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-player/index.html" data-drupal-link-system-path="node/18283">Brightcove Player</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/live/index.html" data-drupal-link-system-path="node/18642">Live</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/social/index.html" data-drupal-link-system-path="node/18444">Social</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/audience/index.html" data-drupal-link-system-path="node/18445">Audience</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://zencoder.support.brightcove.com">Zencoder</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/ssai/index.html" data-drupal-link-system-path="node/18650">SSAI</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://support.ottflow.com">OTT Flow</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a class="dropdown-toggle" href="" data-toggle="dropdown">
+          Links
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/analytics-api/index.html" data-drupal-link-system-path="node/18370">Analytics API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/audience-api/index.html" data-drupal-link-system-path="node/18371">Audience API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/cms-api/index.html" data-drupal-link-system-path="node/18372">CMS API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/cms-connectors-video-cloud/index.html" data-drupal-link-system-path="node/18662">CMSコネクタ用 Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/data-collection-api/index.html" data-drupal-link-system-path="node/18876">Data Collection API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/delivery-system-api/index.html" data-drupal-link-system-path="node/18387">Delivery System API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/developer-tools-and-concepts/index.html" data-drupal-link-system-path="node/18430">開発者ツールと概念</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/native-player-sdks/index.html" data-drupal-link-system-path="node/18367">Device SDK</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/dynamic-ingest-api/index.html" data-drupal-link-system-path="node/18373">Dynamic Ingest API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/getting-started-brightcove-apis-0/index.html" data-drupal-link-system-path="node/18711">入門 - Brightcove API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/page-experience-api/index.html" data-drupal-link-system-path="node/18616">In-Page Experience APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/ingest-profiles-api/index.html" data-drupal-link-system-path="node/18374">Ingest Profiles API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/live/index.html" data-drupal-link-system-path="node/18642">Live API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/oauth-api/index.html" data-drupal-link-system-path="node/18376">OAuth API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/platform-api-code-samples/index.html" data-drupal-link-system-path="node/18675">プラットフォームAPIコードサンプル</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/playback-api/index.html" data-drupal-link-system-path="node/18380">Playback API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-player-code-samples/index.html" data-drupal-link-system-path="node/18630">プレーヤーコードサンプル</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-player-developer/index.html" data-drupal-link-system-path="node/18362">プレーヤー開発者</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/player-management-api/index.html" data-drupal-link-system-path="node/18378">Player Management API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/policy-api/index.html" data-drupal-link-system-path="node/18381">Policy API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/release-notes/index.html" data-drupal-link-system-path="node/18687">リリースに関して</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a class="dropdown-toggle" href="" data-toggle="dropdown">
+          トレーニング（講習会）
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a class="nturl" href="https://university.brightcove.com">オンラインコース</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/register-training/index.html" data-drupal-link-system-path="node/18270">コース登録</a>
+                  </li>
+        </ul>
+  
+            </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-support-documentation-announcements/index.html" title="の新機能を見る Brightcove オンラインマニュアル" data-drupal-link-system-path="node/18896">新着情報</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+        </div>
+          </header>
+  
+    <div class="gt-block full-width-headline" data-gt-block="">
+    <div class="gt-block container" data-gt-block="">
+      <div class="gt-block row" data-gt-block="">
+        <div class="gt-block col-sm-12" role="heading" data-gt-block="">
+            <div class="gt-block region region-header" data-gt-block="">
+          <section id="block-brightcoveheadlineblock" class="block block-bc-general block-bc-general-headline-block clearfix">
+  
+    
+
+      オンラインマニュアル
+  </section>
+
+
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      <div role="main" class="gt-block main-container container  js-quickedit-main-content" data-gt-block="">
+    <div class="gt-block row" data-gt-block="">
+
+                              <aside class="gt-block col-sm-3" role="complementary" data-gt-block="">
+              <div class="gt-block region region-sidebar-first" data-gt-block="">
+    <section class="bc-search-fixes-search-block-form block block-bc-search-fixes block-bc-search-fixes-search-block clearfix" data-drupal-selector="bc-search-fixes-search-block-form" id="block-brightcovesearchblock">
+  
+    
+
+      <form action="/ja/hevc-video" method="post" id="bc-search-fixes-search-block-form" accept-charset="UTF-8">
+  <div class="gt-block form-item js-form-item form-type-textfield js-form-type-textfield form-item-search js-form-item-search form-no-label form-group" data-gt-block="">
+      <label for="edit-search" class="control-label sr-only">サイト内検索</label>
+  
+  
+  <input data-drupal-selector="edit-search" class="form-text form-control" type="text" id="edit-search" name="search" value="" size="15" maxlength="128" placeholder="サイト内検索">
+
+  
+  
+  </div>
+<input autocomplete="off" data-drupal-selector="form-qx4kojnyvbwqauo6hn7vo87ztv-wzdmxhwwien42cl0" type="hidden" name="form_build_id" value="form-Qx4kOjNyVBWqaUo6hn7Vo87ztV-wzDMXhWWIEN42cL0"><input data-drupal-selector="edit-bc-search-fixes-search-block-form" type="hidden" name="form_id" value="bc_search_fixes_search_block_form"><div data-drupal-selector="edit-actions" class="gt-block form-actions form-group js-form-wrapper form-wrapper" id="edit-actions" data-gt-block=""><button data-drupal-selector="edit-submit" class="button js-form-submit form-submit btn-primary btn icon-only" type="submit" id="edit-submit" name="op" value="Search"><span class="sr-only">サイト内検索</span><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button></div>
+
+</form>
+
+  </section>
+
+<section id="block-inpagenavigationblock" class="hidden-xs block block-bc-ipnav block-bc-ipnav-block clearfix" style="width: 476px;">
+  
+      <h2 class="block-title" data-gt-block="">このページ</h2>
+    
+
+      <div class="bc-ipnav-block" data-gt-block=""><ul><li><a href="#Introduction/index.html">概要</a></li><li><a href="#Brightcove_HEVC_solution/index.html">BrightcoveのHEVCソリューション</a></li><li><a href="#Supported_clients/index.html">サポートされるクライアント</a></li><li><a href="#HEVC_ingest_profiles/index.html">HEVC取り込みプロファイル</a></li><li><a href="#limitations/index.html">制限事項</a></li><li><a href="#appendix_profiles/index.html">付録1：HEVC取り込みプロファイル</a></li><li><a href="#appendix_renditions/index.html">付録2：HEVC動的配信レンディション</a></li><li><a href="#bc-ipnav-7/index.html">関連コンテンツ</a></li></ul></div>
+  </section>
+
+
+  </div>
+
+          </aside>
+              
+                  <section class="col-sm-9">
+
+                                      <div class="gt-block highlighted" data-gt-block="">  <div class="gt-block region region-highlighted" data-gt-block="">
+    <div data-drupal-messages-fallback="" class="hidden" data-gt-block=""></div>
+
+  </div>
+</div>
+                  
+                
+                
+                
+                          <a class="nturl" id="main-content"></a>
+            <div class="gt-block region region-content" data-gt-block="">
+        <h1 class="page-header"><span>HEVCビデオ</span>
+</h1>
+
+  
+<div class="gt-block node node--type-support-doc node--view-mode-full bcdocs-four-rows clearfix" data-gt-block="">
+
+  
+
+  <div class="group-first-row" data-gt-block="">
+      </div>
+
+  <div class="gt-block group-second-row" data-gt-block="">
+  
+  <div class="gt-block field field--name-field-products field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">製品（複数可）</div>
+          <div class="gt-block field__items taxonomy__tags" data-gt-block="">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item" data-gt-block="">Video Cloud</div>
+              </div>
+      </div>
+
+  <div class="gt-block field field--name-field-roles field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">役割</div>
+          <div class="gt-block field__items taxonomy__tags" data-gt-block="">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item" data-gt-block="">Studioユーザー</div>
+          <div class="field--item" data-gt-block="">プレーヤー開発者</div>
+          <div class="field--item" data-gt-block="">API開発者</div>
+          <div class="field--item" data-gt-block="">デバイスSDK開発者</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="gt-block group-third-row taxonomy__tags" data-gt-block="">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="gt-block field field--name-field-topics field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">トピック）</div>
+          <div class="gt-block field--items" data-gt-block="">
+              <div class="field--item" data-gt-block="">トランスコードプロファイル</div>
+              </div>
+      </div>
+
+  <div class="gt-block field field--name-field-apis field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">API</div>
+          <div class="gt-block field--items" data-gt-block="">
+              <div class="field--item" data-gt-block="">Ingest Profiles API</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="gt-block group-fourth-row" data-gt-block="">
+  
+            <div class="gt-block field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item" data-gt-block=""><summary>このトピックでは、 Video Cloud HEVCビデオのサポート。</summary><section class="bcls-section">
+<h2 id="Introduction" data-gt-block="">概要</h2>
+
+<h3 data-gt-block="">HEVCの利点</h3>
+
+<p data-gt-block="">H.265としても知られる高効率ビデオコーディング（HEVC）は、広く使用されているAdvanced Video Coding（AVC / H.264）の後継として設計されたビデオ圧縮規格です。 AVCと比較して、HEVCは同じレベルのビデオ品質で25％〜50％優れたデータ圧縮、または同じビットレートで大幅に改善されたビデオ品質を提供します。</p>
+
+<p data-gt-block="">この改善された圧縮の利点には、帯域幅の使用、低いビットレートでのより高いビデオ品質の実現、最初のフレームまでの時間の短縮（TTFF）などがあり、エンドビューアの満足度が向上します。</p>
+
+<h3 data-gt-block="">デメリット</h3>
+
+<p data-gt-block="">欠点はXNUMXつだけです。HEVCビデオは新しいテクノロジーであるため、クライアント（デバイス+ OS +ブラウザー/アプリ）でまだ広くサポートされていません。 さらに、再生中にHEVCセグメントとAVCセグメントを切り替えることができるクライアントもあれば、そうでないクライアントもあります。</p>
+
+<h3 data-gt-block="">公開設定</h3>
+
+<p data-gt-block="" class="gt-block gt-block">HEVCサポートは <strong>有料アドオン</strong> for Video Cloud。 HEVCサポートに関心がある場合は、アカウントマネージャーにお問い合わせください。</p>
+</section>
+
+<section class="bcls-section">
+<h2 id="Brightcove_HEVC_solution" data-gt-block="">BrightcoveのHEVCソリューション</h2>
+
+<p data-gt-block="">HEVCの利点を提供しながら、それをサポートしないテクノロジーを使用する視聴者を許可するには、 Brightcove は、古い非HEVCクライアントをサポートし、帯域幅の使用を最適化するハイブリッドソリューションを開発しました。 このソリューションには複数の部分があります。</p>
+
+<ul>
+	<li>トランスコーディング中にHEVCとAVCの両方でエンコードされたセグメントを作成（オプションでプログレッシブダウンロード用のMP4を作成）</li>
+	<li>すべてのレンディションのHEVCリンクとAVCリンクの両方を含むマニフェストの生成：
+	<ul>
+		<li>HLS：混合バリアントストリーム（ビットレート順）</li>
+		<li>DASH：HEVCとH.264の個別のアダプテーションセット、およびそれらを切り替え可能として宣言する補足プロパティ</li>
+	</ul>
+	</li>
+	<li>ビューアクライアントタイプに基づくフィルタリングロジック：
+	<aside class="bcls-aside bcls-aside--information language-editable" data-gt-block="">フィルタリングには動的配信ルールが必要です（詳細は後のリリースで発表されます）。</aside>
+
+	<ul>
+		<li>リクエストしているデバイスがレガシーのHEVC非対応デバイスである場合、マニフェストからHEVCストリームを削除します</li>
+		<li>HEVC対応の切り替え不可能なデバイスに向かうマニフェストからH.264​​XNUMXストリームを削除します</li>
+		<li>デバイスが両方のコーデックをデコードしてそれらを切り替えることができる場合、HEVCストリームとH.264ストリームの両方を残す</li>
+	</ul>
+	</li>
+</ul>
+</section>
+
+<section class="bcls-section">
+<h2 id="Supported_clients" data-gt-block="">サポートされるクライアント</h2>
+
+<p data-gt-block="">現在、HEVCは以下を使用するクライアントでエンドツーエンドでサポートされています。 Brightcove Webまたはネイティブデバイスプレーヤー：</p>
+
+<table class="bcls-table">
+	<caption class="bcls-caption--table">HEVCでサポートされているWebクライアント</caption>
+	<thead class="bcls-table__head">
+		<tr>
+			<th colspan="2" style="text-align: center;">Brightcove ウェブプレーヤー</th>
+		</tr>
+		<tr>
+			<th>OS</th>
+			<th>ブラウザ</th>
+		</tr>
+	</thead>
+	<tbody class="bcls-table__body">
+		<tr>
+			<td>MacOS 10.13以降</td>
+			<td>サファリ</td>
+		</tr>
+		<tr>
+			<td>iOS 11 +</td>
+			<td>サファリ</td>
+		</tr>
+		<tr>
+			<td>Apple TVの</td>
+			<td>Airplay経由</td>
+		</tr>
+		<tr>
+			<td>Windowsの10</td>
+			<td>Edge（レガシーバージョン <strong>プラグイン付き</strong>)</td>
+		</tr>
+	</tbody>
+</table>
+
+<table class="bcls-table">
+	<caption class="bcls-caption--table">HEVCでサポートされるデバイス</caption>
+	<thead class="bcls-table__head">
+		<tr>
+			<th colspan="2" style="text-align: center;">Brightcove ネイティブデバイスSDKプレーヤー</th>
+		</tr>
+		<tr>
+			<th>SDK</th>
+			<th>OS</th>
+		</tr>
+	</thead>
+	<tbody class="bcls-table__body">
+		<tr>
+			<td>iOS SDK</td>
+			<td>iOS 11 +</td>
+		</tr>
+		<tr>
+			<td>tvOS SDK</td>
+			<td>tvOS</td>
+		</tr>
+        <tr>
+            <td>AndroidのSDK</td>
+            <td>Android APIレベル21（Lollipopバージョン5.0）以降 <sup><strong><a class="nturl" href="#1-1/index.html">[1-1]</a></strong></sup></td>
+        </tr>
+    </tbody>
+</table>
+<h3 data-gt-block="">ノート</h3>
+<ul>
+  <li id="1-1"><sup><strong>[1-1]</strong></sup> 詳細は、 <a class="nturl" href="../ja/hevc-selection-native-sdk-android/index.html">Android向けネイティブSDKを使用したHEVCの選択</a></li>
+</ul>
+</section>
+
+<section class="bcls-section">
+<h2 id="HEVC_ingest_profiles" data-gt-block="">HEVC取り込みプロファイル</h2>
+
+<p data-gt-block="">アカウントでHEVCが有効になっている場合、再生用のHEVCレンディションを取得するには、アップロードモジュールまたは Dynamic Ingest API:</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="HEVC取り込みプロファイル" src="https://general.support.brightcove.com/assets/images/shared-content/general/hevc-profiles.png">
+<figcaption class="bcls-caption--image">HEVC取り込みプロファイル</figcaption>
+</figure>
+
+<p data-gt-block=""> </p>
+
+<p data-gt-block="" class="gt-block gt-block">これらのプロファイルの完全なJSON詳細が含まれています <a class="nturl" href="#appendix_profiles/index.html">以下</a>。 CAE（Context Aware Encoding）プロファイルを使用して、ソースに最適なレンディションセットを作成し、ストレージを最適化することをお勧めします。 CAEはソースを検査するためにいくらか長い処理時間を必要とするため、公開可能なレンディションをできるだけ早く取得することが優先事項である場合は、カスタムの取り込みプロファイルを <a class="nturl" href="https://apis.support.brightcove.com/ingest-profiles/guides/cae-fast-publish.html">高速公開</a> オプションを選択します。</p>
+
+<p data-gt-block="" class="gt-block gt-block">高速パブリッシュオプションまたはその他の理由により、カスタムHEVCプロファイルを作成する必要がある場合は、 <a class="nturl" href="https://studio.support.brightcove.com/admin/creating-ingest-profiles-context-aware-encoding.html#using_the_advanced_editor">高度なエディタ</a> Studio管理ページ、または <a class="nturl" href="https://apis.support.brightcove.com/ingest-profiles/">Ingest Profiles API</a>。 HEVCレンディションは、スタジオのシンプルエディターには表示されません。 利用可能なDynamic Deliveryレンディションが見つかります <a class="nturl" href="#appendix_renditions/index.html">以下</a>.</p>
+</section>
+
+<section class="bcls-section">
+<h2 id="limitations" data-gt-block="">制限事項</h2>
+
+<p data-gt-block="">HEVCサポートの現在の制限は以下のとおりです-拡張を行うと、これらは変更されることに注意してください。</p>
+
+<ul>
+	<li>CAE取り込みプロファイルには現在HEVCレンディションが含まれています-これらはHEVC対応デバイスにのみビデオを配信することがわかっている場合にのみ使用してください。 今後のリリースでは、HEVCレンディションとAVCレンディションの両方を含むプロファイルが追加される予定です。</li>
+	<li>初期リリースでは、Android SDKを使用して構築されたアプリはサポートされていません。 これは将来のリリースで追加される予定です。</li>
+	<li>AACオーディオのみがサポートされ、HEVCでのEAC3またはAC3オーディオコーデックはサポートされません。</li>
+	<li>HDRおよび10ビットビデオはサポートされていません。</li>
+	<li>Media UIは現在すべてのレンディションを表示し、各レンディションの横にコーデック情報を表示していません。</li>
+	<li>Studioの請求UIには、HEVCトランスコーディングの使用は表示されません。 ただし、バックエンドシステムはHEVC GBを個別に追跡しており、通常のプロセスの一部として請求書を送信します。 課金UIは今後のリリースで更新されます。</li>
+</ul>
+</section>
+
+<section class="bcls-section">
+<h2 id="appendix_profiles" data-gt-block="">付録1：HEVC取り込みプロファイル</h2>
+
+<p data-gt-block="">以下は、JSONのHEVCプロファイルの完全なプロパティです。</p>
+
+<ul>
+	<li><a class="nturl" href="#multi-platform-extended-dynamic-hevc/index.html">マルチプラットフォーム拡張HEVC（CAE）</a></li>
+	<li><a class="nturl" href="#multi-platform-extended-dynamic-hevc-with-mp4/index.html">マルチプラットフォーム拡張HEVC（CAE）とMP4</a></li>
+	<li><a class="nturl" href="#multi-platform-extended-static-mixed-codec/index.html">マルチプラットフォーム拡張静的H.264 + HEVC</a></li>
+	<li><a class="nturl" href="#multi-platform-extended-static-mixed-codec-with-mp4/index.html">マルチプラットフォーム拡張静的H.264 + MP4付きHEVC</a></li>
+	<li><a class="nturl" href="#multi-platform-extended-static-hevc-with-mp4/index.html">MP4を備えたマルチプラットフォーム拡張HEVC</a></li>
+</ul>
+
+<h3 data-gt-block="">Context Aware Encoding（CAE）プロファイル</h3>
+
+<h4 id="multi-platform-extended-dynamic-hevc" data-gt-block="">マルチプラットフォーム拡張HEVC（CAE）</h4>
+
+<pre class="line-numbers notranslate language-json"><code class=" notranslate language-json">  <span class="token punctuation">{</span>
+    <span class="token property">"version"</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"multi-platform-extended-dynamic-hevc"</span><span class="token punctuation">,</span>
+    <span class="token property">"display_name"</span><span class="token operator">:</span> <span class="token string">"Multiplatform Extended HEVC (CAE)"</span><span class="token punctuation">,</span>
+    <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"Deliver high quality content for a wide range content types and screen sizes including mobile, desktop and large screens."</span><span class="token punctuation">,</span>
+    <span class="token property">"account_id"</span><span class="token operator">:</span> -<span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token property">"brightcove_standard"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">"date_created"</span><span class="token operator">:</span> <span class="token number">1581706195164</span><span class="token punctuation">,</span>
+    <span class="token property">"date_last_modified"</span><span class="token operator">:</span> <span class="token number">1581706195164</span><span class="token punctuation">,</span>
+    <span class="token property">"digital_master"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"rendition"</span><span class="token operator">:</span> <span class="token string">"passthrough"</span><span class="token punctuation">,</span>
+      <span class="token property">"distribute"</span><span class="token operator">:</span> <span class="token boolean">false</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"renditions"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"packages"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"dynamic_origin"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"renditions"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">"default/audio64"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/audio128"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/audio96"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/audio192"</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">"images"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"label"</span><span class="token operator">:</span> <span class="token string">"thumbnail"</span><span class="token punctuation">,</span>
+          <span class="token property">"height"</span><span class="token operator">:</span> <span class="token number">90</span><span class="token punctuation">,</span>
+          <span class="token property">"width"</span><span class="token operator">:</span> <span class="token number">160</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"label"</span><span class="token operator">:</span> <span class="token string">"poster"</span><span class="token punctuation">,</span>
+          <span class="token property">"height"</span><span class="token operator">:</span> <span class="token number">720</span><span class="token punctuation">,</span>
+          <span class="token property">"width"</span><span class="token operator">:</span> <span class="token number">1280</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">"dynamic_profile_options"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"min_renditions"</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+        <span class="token property">"max_renditions"</span><span class="token operator">:</span> <span class="token number">8</span><span class="token punctuation">,</span>
+        <span class="token property">"min_resolution"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token property">"width"</span><span class="token operator">:</span> <span class="token number">320</span><span class="token punctuation">,</span>
+          <span class="token property">"height"</span><span class="token operator">:</span> <span class="token number">180</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">"max_resolution"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token property">"width"</span><span class="token operator">:</span> <span class="token number">1920</span><span class="token punctuation">,</span>
+          <span class="token property">"height"</span><span class="token operator">:</span> <span class="token number">1080</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">"max_frame_rate"</span><span class="token operator">:</span> <span class="token number">30</span><span class="token punctuation">,</span>
+        <span class="token property">"max_bitrate"</span><span class="token operator">:</span> <span class="token number">4200</span><span class="token punctuation">,</span>
+        <span class="token property">"max_first_rendition_bitrate"</span><span class="token operator">:</span> <span class="token number">250</span><span class="token punctuation">,</span>
+        <span class="token property">"video_codec"</span><span class="token operator">:</span> <span class="token string">"hevc"</span><span class="token punctuation">,</span>
+        <span class="token property">"fixed_frame_rate"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token property">"bitrate_cap_to_bitrate_ratio"</span><span class="token operator">:</span> <span class="token number">1.5</span><span class="token punctuation">,</span>
+        <span class="token property">"buffer_size_to_bitrate_ratio"</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+        <span class="token property">"bitrate_cap_offset"</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token property">"buffer_size_offset"</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token property">"sample_aspect_ratio"</span><span class="token operator">:</span> <span class="token string">"1:1"</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">"hevc"</span><span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"5e470e014b23617ad079c486"</span>
+  <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="multi-platform-extended-dynamic-hevc-with-mp4" data-gt-block="">マルチプラットフォーム拡張HEVC（CAE）とMP4</h4>
+
+<pre class="line-numbers notranslate language-json"><code class=" notranslate language-json"><span class="token punctuation">{</span>
+    <span class="token property">"version"</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"multi-platform-extended-dynamic-hevc-with-mp4"</span><span class="token punctuation">,</span>
+    <span class="token property">"display_name"</span><span class="token operator">:</span> <span class="token string">"Multiplatform Extended HEVC (CAE) with MP4"</span><span class="token punctuation">,</span>
+    <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"Deliver high quality content for a wide range content types and screen sizes including mobile, desktop, large screens, and syndication."</span><span class="token punctuation">,</span>
+    <span class="token property">"account_id"</span><span class="token operator">:</span> -<span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token property">"brightcove_standard"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">"date_created"</span><span class="token operator">:</span> <span class="token number">1581706195164</span><span class="token punctuation">,</span>
+    <span class="token property">"date_last_modified"</span><span class="token operator">:</span> <span class="token number">1581706195164</span><span class="token punctuation">,</span>
+    <span class="token property">"digital_master"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"rendition"</span><span class="token operator">:</span> <span class="token string">"passthrough"</span><span class="token punctuation">,</span>
+      <span class="token property">"distribute"</span><span class="token operator">:</span> <span class="token boolean">false</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"renditions"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"packages"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"dynamic_origin"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"renditions"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">"default/audio64"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/audio128"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/progressive2000"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/audio96"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/audio192"</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">"images"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"label"</span><span class="token operator">:</span> <span class="token string">"thumbnail"</span><span class="token punctuation">,</span>
+          <span class="token property">"height"</span><span class="token operator">:</span> <span class="token number">90</span><span class="token punctuation">,</span>
+          <span class="token property">"width"</span><span class="token operator">:</span> <span class="token number">160</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"label"</span><span class="token operator">:</span> <span class="token string">"poster"</span><span class="token punctuation">,</span>
+          <span class="token property">"height"</span><span class="token operator">:</span> <span class="token number">720</span><span class="token punctuation">,</span>
+          <span class="token property">"width"</span><span class="token operator">:</span> <span class="token number">1280</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">"dynamic_profile_options"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"min_renditions"</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+        <span class="token property">"max_renditions"</span><span class="token operator">:</span> <span class="token number">8</span><span class="token punctuation">,</span>
+        <span class="token property">"min_resolution"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token property">"width"</span><span class="token operator">:</span> <span class="token number">320</span><span class="token punctuation">,</span>
+          <span class="token property">"height"</span><span class="token operator">:</span> <span class="token number">180</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">"max_resolution"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token property">"width"</span><span class="token operator">:</span> <span class="token number">1920</span><span class="token punctuation">,</span>
+          <span class="token property">"height"</span><span class="token operator">:</span> <span class="token number">1080</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">"max_frame_rate"</span><span class="token operator">:</span> <span class="token number">30</span><span class="token punctuation">,</span>
+        <span class="token property">"max_bitrate"</span><span class="token operator">:</span> <span class="token number">4200</span><span class="token punctuation">,</span>
+        <span class="token property">"max_first_rendition_bitrate"</span><span class="token operator">:</span> <span class="token number">250</span><span class="token punctuation">,</span>
+        <span class="token property">"video_codec"</span><span class="token operator">:</span> <span class="token string">"hevc"</span><span class="token punctuation">,</span>
+        <span class="token property">"fixed_frame_rate"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token property">"bitrate_cap_to_bitrate_ratio"</span><span class="token operator">:</span> <span class="token number">1.5</span><span class="token punctuation">,</span>
+        <span class="token property">"buffer_size_to_bitrate_ratio"</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+        <span class="token property">"bitrate_cap_offset"</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token property">"buffer_size_offset"</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        <span class="token property">"sample_aspect_ratio"</span><span class="token operator">:</span> <span class="token string">"1:1"</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">"hevc"</span><span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"5e470e0c4c881c16fffdb88d"</span>
+  <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 data-gt-block="">ダイナミック配信プロファイル</h3>
+
+<h4 id="multi-platform-extended-static-mixed-codec" data-gt-block="">マルチプラットフォーム拡張静的H.264 + HEVC</h4>
+
+<pre class="line-numbers notranslate language-json"><code class=" notranslate language-json"><span class="token punctuation">{</span>
+    <span class="token property">"version"</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"multi-platform-extended-static-mixed-codec"</span><span class="token punctuation">,</span>
+    <span class="token property">"display_name"</span><span class="token operator">:</span> <span class="token string">"Multiplatform Extended Static H.264 + HEVC"</span><span class="token punctuation">,</span>
+    <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"Deliver high quality content for a wide range content types and screen sizes including mobile, desktop and large screens."</span><span class="token punctuation">,</span>
+    <span class="token property">"account_id"</span><span class="token operator">:</span> -<span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token property">"brightcove_standard"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">"date_created"</span><span class="token operator">:</span> <span class="token number">1581706195164</span><span class="token punctuation">,</span>
+    <span class="token property">"date_last_modified"</span><span class="token operator">:</span> <span class="token number">1581706195164</span><span class="token punctuation">,</span>
+    <span class="token property">"digital_master"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"rendition"</span><span class="token operator">:</span> <span class="token string">"passthrough"</span><span class="token punctuation">,</span>
+      <span class="token property">"distribute"</span><span class="token operator">:</span> <span class="token boolean">false</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"renditions"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"packages"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"dynamic_origin"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"renditions"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">"default/video1600hevc"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/audio128"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/video550hevc"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/video1000hevc"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/video300hevc"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/video700"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/video3500"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/video2000"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/video2500"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/video2850hevc"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/video450"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/video900"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/audio64"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/video3800"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/audio96"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/video1200"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/video1300hevc"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/audio192"</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">"images"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"label"</span><span class="token operator">:</span> <span class="token string">"thumbnail"</span><span class="token punctuation">,</span>
+          <span class="token property">"height"</span><span class="token operator">:</span> <span class="token number">90</span><span class="token punctuation">,</span>
+          <span class="token property">"width"</span><span class="token operator">:</span> <span class="token number">160</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"label"</span><span class="token operator">:</span> <span class="token string">"poster"</span><span class="token punctuation">,</span>
+          <span class="token property">"height"</span><span class="token operator">:</span> <span class="token number">720</span><span class="token punctuation">,</span>
+          <span class="token property">"width"</span><span class="token operator">:</span> <span class="token number">1280</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">"hevc"</span><span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"5e46e57f305eb2517f27a543"</span>
+  <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="multi-platform-extended-static-mixed-codec-with-mp4" data-gt-block="">マルチプラットフォーム拡張静的H.264 + MP4付きHEVC</h4>
+
+<pre class="line-numbers notranslate language-json"><code class=" notranslate language-json"><span class="token punctuation">{</span>
+    <span class="token property">"version"</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"multi-platform-extended-static-mixed-codec-with-mp4"</span><span class="token punctuation">,</span>
+    <span class="token property">"display_name"</span><span class="token operator">:</span> <span class="token string">"Multiplatform Extended Static H.264 + HEVC with MP4"</span><span class="token punctuation">,</span>
+    <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"Deliver high quality content for a wide range content types and screen sizes including mobile, desktop and large screens, and syndication."</span><span class="token punctuation">,</span>
+    <span class="token property">"account_id"</span><span class="token operator">:</span> -<span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token property">"brightcove_standard"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">"date_created"</span><span class="token operator">:</span> <span class="token number">1581706195164</span><span class="token punctuation">,</span>
+    <span class="token property">"date_last_modified"</span><span class="token operator">:</span> <span class="token number">1581706195164</span><span class="token punctuation">,</span>
+    <span class="token property">"digital_master"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"rendition"</span><span class="token operator">:</span> <span class="token string">"passthrough"</span><span class="token punctuation">,</span>
+      <span class="token property">"distribute"</span><span class="token operator">:</span> <span class="token boolean">false</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"renditions"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"packages"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"dynamic_origin"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"renditions"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">"default/video1600hevc"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/audio128"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/video550hevc"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/video1000hevc"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/video300hevc"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/video700"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/progressive2000"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/video3500"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/video2000"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/video2500"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/video2850hevc"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/video450"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/video900"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/audio64"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/video3800"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/audio96"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/video1200"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/video1300hevc"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/audio192"</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">"images"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"label"</span><span class="token operator">:</span> <span class="token string">"thumbnail"</span><span class="token punctuation">,</span>
+          <span class="token property">"height"</span><span class="token operator">:</span> <span class="token number">90</span><span class="token punctuation">,</span>
+          <span class="token property">"width"</span><span class="token operator">:</span> <span class="token number">160</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"label"</span><span class="token operator">:</span> <span class="token string">"poster"</span><span class="token punctuation">,</span>
+          <span class="token property">"height"</span><span class="token operator">:</span> <span class="token number">720</span><span class="token punctuation">,</span>
+          <span class="token property">"width"</span><span class="token operator">:</span> <span class="token number">1280</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">"hevc"</span><span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"5e46e59b135b6662f386559d"</span>
+  <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="multi-platform-extended-static-hevc-with-mp4" data-gt-block="">MP4を備えたマルチプラットフォーム拡張HEVC</h4>
+
+<pre class="line-numbers notranslate language-json"><code class=" notranslate language-json"><span class="token punctuation">{</span>
+    <span class="token property">"version"</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"multi-platform-extended-static-hevc-with-mp4"</span><span class="token punctuation">,</span>
+    <span class="token property">"display_name"</span><span class="token operator">:</span> <span class="token string">"Multiplatform Extended HEVC with MP4"</span><span class="token punctuation">,</span>
+    <span class="token property">"description"</span><span class="token operator">:</span> <span class="token string">"Deliver high quality content for a wide range content types and screen sizes including mobile, desktop, large screens, and syndication."</span><span class="token punctuation">,</span>
+    <span class="token property">"account_id"</span><span class="token operator">:</span> -<span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token property">"brightcove_standard"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">"date_created"</span><span class="token operator">:</span> <span class="token number">1581706195164</span><span class="token punctuation">,</span>
+    <span class="token property">"date_last_modified"</span><span class="token operator">:</span> <span class="token number">1581706195164</span><span class="token punctuation">,</span>
+    <span class="token property">"digital_master"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"rendition"</span><span class="token operator">:</span> <span class="token string">"passthrough"</span><span class="token punctuation">,</span>
+      <span class="token property">"distribute"</span><span class="token operator">:</span> <span class="token boolean">false</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"renditions"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"packages"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"dynamic_origin"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"renditions"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">"default/audio64"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/video1600hevc"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/audio128"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/video550hevc"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/video1000hevc"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/video300hevc"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/progressive2000"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/video2850hevc"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/audio96"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/video1300hevc"</span><span class="token punctuation">,</span>
+        <span class="token string">"default/audio192"</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">"images"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"label"</span><span class="token operator">:</span> <span class="token string">"thumbnail"</span><span class="token punctuation">,</span>
+          <span class="token property">"height"</span><span class="token operator">:</span> <span class="token number">90</span><span class="token punctuation">,</span>
+          <span class="token property">"width"</span><span class="token operator">:</span> <span class="token number">160</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">"label"</span><span class="token operator">:</span> <span class="token string">"poster"</span><span class="token punctuation">,</span>
+          <span class="token property">"height"</span><span class="token operator">:</span> <span class="token number">720</span><span class="token punctuation">,</span>
+          <span class="token property">"width"</span><span class="token operator">:</span> <span class="token number">1280</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token property">"hevc"</span><span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"5e46e57e708a441e00a7ba1a"</span>
+  <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</section>
+
+<section class="bcls-section">
+<h2 id="appendix_renditions" data-gt-block="">付録2：HEVC動的配信レンディション</h2>
+
+<p data-gt-block="">以下は、JSONのHEVCレンディションの完全なプロパティです。</p>
+
+<ul>
+	<li><a class="nturl" href="#video300hevc/index.html">デフォルトのHEVC 300</a></li>
+	<li><a class="nturl" href="#video550hevc/index.html">デフォルトのHEVC 550</a></li>
+	<li><a class="nturl" href="#video1000hevc/index.html">デフォルトのHEVC 1000</a></li>
+	<li><a class="nturl" href="#video1300hevc/index.html">デフォルトのHEVC 1300</a></li>
+	<li><a class="nturl" href="#video1600hevc/index.html">デフォルトのHEVC 1600</a></li>
+	<li><a class="nturl" href="#video2850hevc/index.html">デフォルトのHEVC 2850</a></li>
+	<li> </li>
+</ul>
+
+<h3 id="video300hevc" data-gt-block="">デフォルトのHEVC 300</h3>
+
+<pre class="line-numbers notranslate language-json"><code class=" notranslate language-json"><span class="token punctuation">{</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"default/video300hevc"</span><span class="token punctuation">,</span>
+    <span class="token property">"version"</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"Default HEVC 300"</span><span class="token punctuation">,</span>
+    <span class="token property">"kind"</span><span class="token operator">:</span> <span class="token string">"video"</span><span class="token punctuation">,</span>
+    <span class="token property">"account_id"</span><span class="token operator">:</span> <span class="token string">"default"</span><span class="token punctuation">,</span>
+    <span class="token property">"created_at"</span><span class="token operator">:</span> <span class="token string">"2020-02-20T17:57:49.622898302Z"</span><span class="token punctuation">,</span>
+    <span class="token property">"updated_at"</span><span class="token operator">:</span> <span class="token string">"2020-02-20T17:57:49.622898302Z"</span><span class="token punctuation">,</span>
+    <span class="token property">"encoding_settings"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"aspect_mode"</span><span class="token operator">:</span> <span class="token string">"preserve"</span><span class="token punctuation">,</span>
+      <span class="token property">"decoder_bitrate_cap"</span><span class="token operator">:</span> <span class="token number">450</span><span class="token punctuation">,</span>
+      <span class="token property">"decoder_buffer_size"</span><span class="token operator">:</span> <span class="token number">600</span><span class="token punctuation">,</span>
+      <span class="token property">"fixed_keyframe_interval"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token property">"fragment_duration"</span><span class="token operator">:</span> <span class="token number">2000</span><span class="token punctuation">,</span>
+      <span class="token property">"height"</span><span class="token operator">:</span> <span class="token number">270</span><span class="token punctuation">,</span>
+      <span class="token property">"keyframe_rate"</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      <span class="token property">"segment_seconds"</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+      <span class="token property">"speed"</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+      <span class="token property">"video_bframes"</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+      <span class="token property">"video_bitrate"</span><span class="token operator">:</span> <span class="token number">300</span><span class="token punctuation">,</span>
+      <span class="token property">"video_codec"</span><span class="token operator">:</span> <span class="token string">"hevc"</span><span class="token punctuation">,</span>
+      <span class="token property">"video_codec_profile"</span><span class="token operator">:</span> <span class="token string">"main"</span><span class="token punctuation">,</span>
+      <span class="token property">"video_reference_frames"</span><span class="token operator">:</span> <span class="token number">6</span><span class="token punctuation">,</span>
+      <span class="token property">"width"</span><span class="token operator">:</span> <span class="token number">480</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="video550hevc" data-gt-block="">デフォルトのHEVC 550</h3>
+
+<pre class="line-numbers notranslate language-json"><code class=" notranslate language-json"><span class="token punctuation">{</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"default/video550hevc"</span><span class="token punctuation">,</span>
+    <span class="token property">"version"</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"Default HEVC 550"</span><span class="token punctuation">,</span>
+    <span class="token property">"kind"</span><span class="token operator">:</span> <span class="token string">"video"</span><span class="token punctuation">,</span>
+    <span class="token property">"account_id"</span><span class="token operator">:</span> <span class="token string">"default"</span><span class="token punctuation">,</span>
+    <span class="token property">"created_at"</span><span class="token operator">:</span> <span class="token string">"2020-02-20T17:58:08.602132077Z"</span><span class="token punctuation">,</span>
+    <span class="token property">"updated_at"</span><span class="token operator">:</span> <span class="token string">"2020-02-20T17:58:08.602132077Z"</span><span class="token punctuation">,</span>
+    <span class="token property">"encoding_settings"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"aspect_mode"</span><span class="token operator">:</span> <span class="token string">"preserve"</span><span class="token punctuation">,</span>
+      <span class="token property">"decoder_bitrate_cap"</span><span class="token operator">:</span> <span class="token number">825</span><span class="token punctuation">,</span>
+      <span class="token property">"decoder_buffer_size"</span><span class="token operator">:</span> <span class="token number">1100</span><span class="token punctuation">,</span>
+      <span class="token property">"fixed_keyframe_interval"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token property">"fragment_duration"</span><span class="token operator">:</span> <span class="token number">2000</span><span class="token punctuation">,</span>
+      <span class="token property">"height"</span><span class="token operator">:</span> <span class="token number">360</span><span class="token punctuation">,</span>
+      <span class="token property">"keyframe_rate"</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      <span class="token property">"segment_seconds"</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+      <span class="token property">"speed"</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+      <span class="token property">"video_bframes"</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+      <span class="token property">"video_bitrate"</span><span class="token operator">:</span> <span class="token number">550</span><span class="token punctuation">,</span>
+      <span class="token property">"video_codec"</span><span class="token operator">:</span> <span class="token string">"hevc"</span><span class="token punctuation">,</span>
+      <span class="token property">"video_codec_profile"</span><span class="token operator">:</span> <span class="token string">"main"</span><span class="token punctuation">,</span>
+      <span class="token property">"video_reference_frames"</span><span class="token operator">:</span> <span class="token number">6</span><span class="token punctuation">,</span>
+      <span class="token property">"width"</span><span class="token operator">:</span> <span class="token number">640</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="video1000hevc" data-gt-block="">デフォルトのHEVC 1000</h3>
+
+<pre class="line-numbers notranslate language-json"><code class=" notranslate language-json"><span class="token punctuation">{</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"default/video1000hevc"</span><span class="token punctuation">,</span>
+    <span class="token property">"version"</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"Default HEVC 1000"</span><span class="token punctuation">,</span>
+    <span class="token property">"kind"</span><span class="token operator">:</span> <span class="token string">"video"</span><span class="token punctuation">,</span>
+    <span class="token property">"account_id"</span><span class="token operator">:</span> <span class="token string">"default"</span><span class="token punctuation">,</span>
+    <span class="token property">"created_at"</span><span class="token operator">:</span> <span class="token string">"2020-02-20T17:58:24.768036423Z"</span><span class="token punctuation">,</span>
+    <span class="token property">"updated_at"</span><span class="token operator">:</span> <span class="token string">"2020-02-20T17:58:24.768036423Z"</span><span class="token punctuation">,</span>
+    <span class="token property">"encoding_settings"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"aspect_mode"</span><span class="token operator">:</span> <span class="token string">"preserve"</span><span class="token punctuation">,</span>
+      <span class="token property">"decoder_bitrate_cap"</span><span class="token operator">:</span> <span class="token number">1500</span><span class="token punctuation">,</span>
+      <span class="token property">"decoder_buffer_size"</span><span class="token operator">:</span> <span class="token number">2000</span><span class="token punctuation">,</span>
+      <span class="token property">"fixed_keyframe_interval"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token property">"fragment_duration"</span><span class="token operator">:</span> <span class="token number">2000</span><span class="token punctuation">,</span>
+      <span class="token property">"height"</span><span class="token operator">:</span> <span class="token number">432</span><span class="token punctuation">,</span>
+      <span class="token property">"keyframe_rate"</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      <span class="token property">"segment_seconds"</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+      <span class="token property">"speed"</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+      <span class="token property">"video_bframes"</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+      <span class="token property">"video_bitrate"</span><span class="token operator">:</span> <span class="token number">1000</span><span class="token punctuation">,</span>
+      <span class="token property">"video_codec"</span><span class="token operator">:</span> <span class="token string">"hevc"</span><span class="token punctuation">,</span>
+      <span class="token property">"video_codec_profile"</span><span class="token operator">:</span> <span class="token string">"main"</span><span class="token punctuation">,</span>
+      <span class="token property">"video_reference_frames"</span><span class="token operator">:</span> <span class="token number">6</span><span class="token punctuation">,</span>
+      <span class="token property">"width"</span><span class="token operator">:</span> <span class="token number">768</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="video1300hevc" data-gt-block="">デフォルトのHEVC 1300</h3>
+
+<pre class="line-numbers notranslate language-json"><code class=" notranslate language-json"><span class="token punctuation">{</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"default/video1300hevc"</span><span class="token punctuation">,</span>
+    <span class="token property">"version"</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"Default HEVC 1300"</span><span class="token punctuation">,</span>
+    <span class="token property">"kind"</span><span class="token operator">:</span> <span class="token string">"video"</span><span class="token punctuation">,</span>
+    <span class="token property">"account_id"</span><span class="token operator">:</span> <span class="token string">"default"</span><span class="token punctuation">,</span>
+    <span class="token property">"created_at"</span><span class="token operator">:</span> <span class="token string">"2020-02-20T17:58:51.222403657Z"</span><span class="token punctuation">,</span>
+    <span class="token property">"updated_at"</span><span class="token operator">:</span> <span class="token string">"2020-02-20T17:58:51.222403657Z"</span><span class="token punctuation">,</span>
+    <span class="token property">"encoding_settings"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"aspect_mode"</span><span class="token operator">:</span> <span class="token string">"preserve"</span><span class="token punctuation">,</span>
+      <span class="token property">"decoder_bitrate_cap"</span><span class="token operator">:</span> <span class="token number">1950</span><span class="token punctuation">,</span>
+      <span class="token property">"decoder_buffer_size"</span><span class="token operator">:</span> <span class="token number">2600</span><span class="token punctuation">,</span>
+      <span class="token property">"fixed_keyframe_interval"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token property">"fragment_duration"</span><span class="token operator">:</span> <span class="token number">2000</span><span class="token punctuation">,</span>
+      <span class="token property">"height"</span><span class="token operator">:</span> <span class="token number">576</span><span class="token punctuation">,</span>
+      <span class="token property">"keyframe_rate"</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      <span class="token property">"segment_seconds"</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+      <span class="token property">"speed"</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+      <span class="token property">"video_bframes"</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+      <span class="token property">"video_bitrate"</span><span class="token operator">:</span> <span class="token number">1300</span><span class="token punctuation">,</span>
+      <span class="token property">"video_codec"</span><span class="token operator">:</span> <span class="token string">"hevc"</span><span class="token punctuation">,</span>
+      <span class="token property">"video_codec_profile"</span><span class="token operator">:</span> <span class="token string">"main"</span><span class="token punctuation">,</span>
+      <span class="token property">"video_reference_frames"</span><span class="token operator">:</span> <span class="token number">6</span><span class="token punctuation">,</span>
+      <span class="token property">"width"</span><span class="token operator">:</span> <span class="token number">1024</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="video1600hevc" data-gt-block="">デフォルトのHEVC 1600</h3>
+
+<pre class="line-numbers notranslate language-json"><code class=" notranslate language-json"><span class="token punctuation">{</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"default/video1600hevc"</span><span class="token punctuation">,</span>
+    <span class="token property">"version"</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"Default HEVC 1600"</span><span class="token punctuation">,</span>
+    <span class="token property">"kind"</span><span class="token operator">:</span> <span class="token string">"video"</span><span class="token punctuation">,</span>
+    <span class="token property">"account_id"</span><span class="token operator">:</span> <span class="token string">"default"</span><span class="token punctuation">,</span>
+    <span class="token property">"created_at"</span><span class="token operator">:</span> <span class="token string">"2020-02-20T18:00:00.347383018Z"</span><span class="token punctuation">,</span>
+    <span class="token property">"updated_at"</span><span class="token operator">:</span> <span class="token string">"2020-02-20T18:00:00.347383018Z"</span><span class="token punctuation">,</span>
+    <span class="token property">"encoding_settings"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"aspect_mode"</span><span class="token operator">:</span> <span class="token string">"preserve"</span><span class="token punctuation">,</span>
+      <span class="token property">"decoder_bitrate_cap"</span><span class="token operator">:</span> <span class="token number">2400</span><span class="token punctuation">,</span>
+      <span class="token property">"decoder_buffer_size"</span><span class="token operator">:</span> <span class="token number">3200</span><span class="token punctuation">,</span>
+      <span class="token property">"fixed_keyframe_interval"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token property">"fragment_duration"</span><span class="token operator">:</span> <span class="token number">2000</span><span class="token punctuation">,</span>
+      <span class="token property">"height"</span><span class="token operator">:</span> <span class="token number">720</span><span class="token punctuation">,</span>
+      <span class="token property">"keyframe_rate"</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      <span class="token property">"segment_seconds"</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+      <span class="token property">"speed"</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+      <span class="token property">"video_bframes"</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+      <span class="token property">"video_bitrate"</span><span class="token operator">:</span> <span class="token number">1600</span><span class="token punctuation">,</span>
+      <span class="token property">"video_codec"</span><span class="token operator">:</span> <span class="token string">"hevc"</span><span class="token punctuation">,</span>
+      <span class="token property">"video_codec_profile"</span><span class="token operator">:</span> <span class="token string">"main"</span><span class="token punctuation">,</span>
+      <span class="token property">"video_reference_frames"</span><span class="token operator">:</span> <span class="token number">6</span><span class="token punctuation">,</span>
+      <span class="token property">"width"</span><span class="token operator">:</span> <span class="token number">1280</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="video2850hevc" data-gt-block="">デフォルトのHEVC 2850</h3>
+
+<pre class="line-numbers notranslate language-json"><code class=" notranslate language-json"><span class="token punctuation">{</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"default/video2850hevc"</span><span class="token punctuation">,</span>
+    <span class="token property">"version"</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"Default HEVC 2850"</span><span class="token punctuation">,</span>
+    <span class="token property">"kind"</span><span class="token operator">:</span> <span class="token string">"video"</span><span class="token punctuation">,</span>
+    <span class="token property">"account_id"</span><span class="token operator">:</span> <span class="token string">"default"</span><span class="token punctuation">,</span>
+    <span class="token property">"created_at"</span><span class="token operator">:</span> <span class="token string">"2020-02-20T18:00:42.036123319Z"</span><span class="token punctuation">,</span>
+    <span class="token property">"updated_at"</span><span class="token operator">:</span> <span class="token string">"2020-02-20T18:00:42.036123319Z"</span><span class="token punctuation">,</span>
+    <span class="token property">"encoding_settings"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"aspect_mode"</span><span class="token operator">:</span> <span class="token string">"preserve"</span><span class="token punctuation">,</span>
+      <span class="token property">"decoder_bitrate_cap"</span><span class="token operator">:</span> <span class="token number">4275</span><span class="token punctuation">,</span>
+      <span class="token property">"decoder_buffer_size"</span><span class="token operator">:</span> <span class="token number">5700</span><span class="token punctuation">,</span>
+      <span class="token property">"fixed_keyframe_interval"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token property">"fragment_duration"</span><span class="token operator">:</span> <span class="token number">2000</span><span class="token punctuation">,</span>
+      <span class="token property">"height"</span><span class="token operator">:</span> <span class="token number">1080</span><span class="token punctuation">,</span>
+      <span class="token property">"keyframe_rate"</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+      <span class="token property">"segment_seconds"</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+      <span class="token property">"speed"</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+      <span class="token property">"video_bframes"</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+      <span class="token property">"video_bitrate"</span><span class="token operator">:</span> <span class="token number">2850</span><span class="token punctuation">,</span>
+      <span class="token property">"video_codec"</span><span class="token operator">:</span> <span class="token string">"hevc"</span><span class="token punctuation">,</span>
+      <span class="token property">"video_codec_profile"</span><span class="token operator">:</span> <span class="token string">"main"</span><span class="token punctuation">,</span>
+      <span class="token property">"video_reference_frames"</span><span class="token operator">:</span> <span class="token number">6</span><span class="token punctuation">,</span>
+      <span class="token property">"width"</span><span class="token operator">:</span> <span class="token number">1920</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</section>
+</div>
+      
+</div>
+
+</div>
+
+
+<section class="views-element-container block block-views block-views-blockrelated-content-block-1 clearfix" id="block-views-block-related-content-block-1">
+  
+    
+
+      <div class="gt-block form-group" data-gt-block=""><div class="gt-block view view-related-content view-id-related_content view-display-id-block_1 js-view-dom-id-fb534463960c4f4549fbe7c5390e1dbd55a6e77b065b9fd96b51f2256116cff5" data-gt-block="">
+  
+    
+      <div class="gt-block view-header" data-gt-block="">
+      <h2 data-gt-block="" id="bc-ipnav-7">関連コンテンツ</h2>
+    </div>
+      
+      <div class="gt-block view-content" data-gt-block="">
+      <div class="gt-block item-list" data-gt-block="">
+  
+  <ul>
+
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/creating-audio-only-renditions-low-bandwidth-delivery/index.html" hreflang="en">低帯域幅配信用のオーディオ専用レンディションの作成</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/archiving-masters/index.html" hreflang="en">アーカイブマスター</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/ingest-profiles-api-sample-set-default-profile-dynamic-delivery/index.html" hreflang="en">Ingest Profiles API サンプル：デフォルトプロファイルの設定（動的配信）</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/drm-output-protection-settings/index.html" hreflang="en">DRM出力の保護設定</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/ingest-profiles-api-sample-create-custom-context-aware-encoding-profile/index.html" hreflang="en">Ingest Profiles APIサンプル：Context Aware Encoding プロファイルの作成</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/backlot-and-video-cloud-video-and-playlist-fields/index.html" hreflang="en">バックロットと Video Cloud：ビデオとプレイリストのフィールド</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/context-aware-encoding/index.html" hreflang="en">コンテキスト認識エンコーディング</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/standard-ingest-profiles-dynamic-delivery-and-context-aware-encoding/index.html" hreflang="en">ダイナミックデリバリーと Context Aware Encoding の標準入力プロファイル</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/overview-dynamic-delivery/index.html" hreflang="en"> ダイナミックデリバリーの概要</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/dynamic-delivery-change-sources-returned/index.html" hreflang="en">動的納入：返品元への変更</a></span></span></div></li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </section>
+
+
+  </div>
+
+              </section>
+
+                </div>
+  </div>
+
+      <footer class="footer container" role="contentinfo">
+              <div class="gt-block row" data-gt-block="">
+            <div class="gt-block region region-footer-top-left col-md-9" style="margin-bottom: 1em;" data-gt-block="">
+    <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">Brightcove サポート</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="https://status.brightcove.com">システムステータス</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/contact-support/index.html" data-drupal-link-system-path="node/18632">サポート - Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="../ja/en/contact/create/index.html">サポート - Zencoder</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-documentation-menu" id="block-documentation" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">オンラインマニュアル</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/index.html" data-drupal-link-system-path="<front>">ホーム</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">トレーニング（講習会）</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/online-training-courses/index.html" data-drupal-link-system-path="node/18286">オンラインコース</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/register-training/index.html" data-drupal-link-system-path="node/18270">コー​​スに登録</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-brightcove-menu" id="block-brightcove" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">Brightcove</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="https://www.brightcove.com">Brightcove.COM</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+            <div class="gt-block region region-footer-top-right col-md-3" data-gt-block="">
+    <section id="block-footerlegaltext" class="block block-block-content block-block-content4507d09c-a528-4947-b91d-36ec6671822b clearfix">
+  
+    
+
+      
+            <div class="gt-block field field--name-field-body field--type-text-long field--label-hidden field--item" data-gt-block=""><p data-gt-block="">Brightcove Inc.（ナスダック：BCOV）は、接続されたデバイス間でビデオを配信および収益化するための強力なクラウドソリューションを提供する世界有数のプロバイダです。</p>
+</div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+                    <div class="gt-block row" data-gt-block="">
+            <div class="gt-block region region-footer-bottom-left col-md-8" data-gt-block="">
+    <section id="block-footercopyrightlinewithlinks" class="block block-block-content block-block-content3a164ef9-02d8-42c4-bcc6-3ab435f670b3 clearfix">
+  
+    
+
+      <div class="gt-block block-content block-content--type-copyright-block-with-links block-content--view-mode-full ds-1col clearfix" data-gt-block="">
+
+  
+
+  
+            <div class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" data-gt-block="">2020</div>
+      
+            <div class="field field--name-field-copyright-text field--type-string-long field--label-hidden field--item" data-gt-block="">Brightcove Inc.すべての権利を保有します。</div>
+      
+      <div class="gt-block field field--name-field-legal-links field--type-link field--label-hidden field--items" data-gt-block="">
+              <div class="gt-block field--item" data-gt-block=""><a class="nturl" href="https://www.brightcove.com/en/privacy">プライバシーポリシー</a></div>
+              <div class="gt-block field--item" data-gt-block=""><a class="nturl" href="https://www.brightcove.com/en/terms-and-conditions">利用規約</a></div>
+          </div>
+  
+
+</div>
+
+
+  </section>
+
+
+  </div>
+
+            <div class="gt-block region region-footer-bottom-right col-md-4" data-gt-block="">
+    <section id="block-footersocialblock" class="block block-block-content block-block-content4fc23afd-8d37-420e-ab28-73b2ba24e836 clearfix">
+  
+    
+
+      
+      <div class="gt-block field field--name-field-social-icon field--type-entity-reference-revisions field--label-hidden field--items" data-gt-block="">
+              <div class="gt-block field--item" data-gt-block="">
+
+<a class="icon" icon__social--link="" href="https://www.linkedin.com/company/brightcove" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--linkedin">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--linkedin"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="gt-block field--item" data-gt-block="">
+
+<a class="icon" icon__social--link="" href="https://twitter.com/brightcove" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--twitter">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--twitter"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="gt-block field--item" data-gt-block="">
+
+<a class="icon" icon__social--link="" href="https://www.facebook.com/Brightcove" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--facebook">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--facebook"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="gt-block field--item" data-gt-block="" style="display:none;color:white">
+
+<a class="icon" icon__social--link="" href="https://plus.google.com/100830370440271567091" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--google-plus">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--google-plus"></use>
+  </svg>
+</a>
+
+</div>
+          </div>
+  
+
+
+  </section>
+
+<section id="block-scripts" class="block block-block-content block-block-content42e4bd63-d879-470d-a6de-d5e4529a01be clearfix">
+  
+    
+
+      
+            <div class="gt-block field field--name-field-body field--type-text-long field--label-hidden field--item" data-gt-block=""><script src="https://learning-services-media.brightcove.com/doc-assets/js/gtrans.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/js/support-feedback.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-support.js"></script>
+<script src="https://learning-services-media.brightcove.com/doc-assets/js/hide-google-plus.js"></script></div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+          </footer>
+  
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/18965","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click"},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"user":{"uid":0,"permissionsHash":"3b7fdb4927baca3ee2939edeb777485b3e2c2d36cf8c80e0d8f49c6dc5e2eeca"}}</script>
+<script src="https://support.brightcove.com/sites/default/files/js/js_8fmTAXGyuAUNVu11XoXJaeM8QBDFuAvX7ADwOnigrhc.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+<script src="https://support.brightcove.com/sites/default/files/js/js_L8Eb1bSFk-jGvnjMNZB7VvDJt-7nSbeXfaBlCzWjDbc.js"></script><div id="surveyDiv" style="visibility:hidden"><iframe id="CSAT" src="https://learning-services-media.brightcove.com/doc-assets/general/surveylink.html" style="display:none;"></iframe></div>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e78a80aa93","applicationID":"129613202","transactionName":"YwBUZkcFVktUWhJQX1pKd1FBDVdWGkkHXlVrBldRXQE=","queueTime":0,"applicationTime":15,"atts":"T0dXEA8fRUU=","errorBeacon":"bam.nr-data.net","agent":""}</script><script data-cfasync="false" src="https://tdns5.gtranslate.net/tdn-bin/queue.js"></script><!-- Yandex.Metrika counter for GTranslate --><script data-cfasync="false">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter36618640 = new Ya.Metrika({ id:36618640, clickmap:false, trackLinks:true, accurateTrackBounce:true, ut:"noindex" }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript>&lt;

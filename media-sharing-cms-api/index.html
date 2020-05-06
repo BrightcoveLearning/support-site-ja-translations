@@ -1,0 +1,1444 @@
+<html lang="ja" dir="ltr" class=" js"><head>
+    <meta charset="utf-8"><script type="text/javascript" src="https://bam.nr-data.net/1/e78a80aa93?a=129613202&amp;v=1167.2a4546b&amp;to=YwBUZkcFVktUWhJQX1pKY0BcSxdRW10DQR5EDUY%3D&amp;rst=8164&amp;ref=https://support.brightcove.com/ja/media-sharing-cms-api&amp;ap=1756&amp;be=2566&amp;fe=7571&amp;dc=5655&amp;perf=%7B%22timing%22:%7B%22of%22:1588779426875,%22n%22:0,%22f%22:0,%22dn%22:0,%22dne%22:0,%22c%22:0,%22s%22:10,%22ce%22:409,%22rq%22:409,%22rp%22:2232,%22rpe%22:2546,%22dl%22:2546,%22di%22:5655,%22ds%22:5655,%22de%22:5709,%22dc%22:7571,%22l%22:7571,%22le%22:7573%7D,%22navigation%22:%7B%7D%7D&amp;at=T0dXEA8fRUU%3D&amp;jsonp=NREUM.setToken"></script><script src="https://js-agent.newrelic.com/nr-1167.min.js"></script><script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script><script type="text/javascript" async="" src="//cdn.feedbackify.com/f.js"></script><script async="" src="https://fullstory.com/s/fs.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e78a80aa93",applicationID:"129613202"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e78a80aa93",applicationID:"129613202"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-2728311-17", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)">
+<meta name="MobileOptimized" content="width">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="https://support.brightcove.com/sites/default/files/favicon-64.png" type="image/png">
+<link rel="alternate" hreflang="en" href="https://support.brightcove.com/media-sharing-cms-api">
+<link rel="canonical" href="https://support.brightcove.com/ja/media-sharing-cms-api">
+<link rel="shortlink" href="https://support.brightcove.com/ja/node/18325">
+<link rel="revision" href="https://support.brightcove.com/media-sharing-cms-api">
+
+    <title>メディアとの共有 CMS API  |  Brightcove 学習</title>
+    <link rel="stylesheet" media="all" href="https://support.brightcove.com/sites/default/files/css/css_d7PoQ20hWbRiei75VgExP_tm8C1ylIRfzB3zIYLc5Cw.css?q23msc">
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.min.css">
+<link rel="stylesheet" media="all" href="https://support.brightcove.com/sites/default/files/css/css_fr7ugR_m15spMT57voAomC2Aklj0ATM7MmH6hvb3pp4.css?q23msc">
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+
+    <meta name="uri-translation" content="on">
+    <script>
+window['_fs_debug'] = false; window['_fs_host'] = 'fullstory.com';
+window['_fs_org'] = 'BX3Q1';
+window['_fs_namespace'] = 'FS';
+(function(m,n,e,t,l,o,g,y){
+if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+g=m[e]=function(a,b){g.q?g.q.push([a,b]):g._api(a,b);};g.q=[];
+o=n.createElement(t);o.async=1;o.src='https://'+_fs_host+'/s/fs.js';
+y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+g.identify=function(i,v){g(l,{uid:i});if(v)g(l,v)};g.setUserVars=function(v){g(l,v)};
+g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+g.consent=function(a){g("consent",!arguments.length||a)};
+g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+g.clearUserCookie=function(){};
+})(window,document,window['_fs_namespace'],'script','user');
+    </script>
+  <style type="text/css">html{_background:url(//about:blank) fixed;}.fby-on select {visibility:hidden!important;}.fby-on .fby-hide-iframe {visibility:hidden!important;}.fby-hide-embed embed {visibility:hidden!important;}.fby-hide-object object {visibility:hidden!important;}@media not screen {.fby-tab {display: none;}}#feedbackify *{box-sizing:content-box!important;-moz-box-sizing:content-box!important;-webkit-box-sizing:content-box!important;}#feedbackify input{box-sizing:border-box!important;-moz-box-sizing:border-box!important;-webkit-box-sizing:border-box!important;max-width:none!important;}#feedbackify *:before{content:none!important;}#feedbackify *:after{content:none!important;}#feedbackify ,#feedbackify div,#feedbackify span,#feedbackify textarea,#feedbackify input,#feedbackify table,#feedbackify tbody,#feedbackify tr,#feedbackify td,#feedbackify img,#feedbackify p,#feedbackify a{border:0!important;outline:none!important;width:auto;height:auto;text-align:left!important;text-indent:0!important;float:none!important;padding:0!important;margin:0!important;font:12px arial,helvetica,sans-serif!important;overflow:visible!important;color:#000!important;line-height:1.2!important;background:0 none!important;position:static!important;vertical-align:baseline!important;box-shadow:none!important;}#feedbackify table{border-collapse:collapse!important;border-spacing:0!important;max-width:inherit!important;width:auto!important;}#feedbackify td{word-break:normal!important;}#feedbackify {z-index:2147483646!important;position:static!important;top:0;left:0;}#feedbackify .fby-screen{z-index:2147483646!important;position:fixed!important;top:0;left:0;width:0;height:100%;_position:absolute!important;_top:expression(eval(document.body.scrollTop||document.documentElement.scrollTop))!important;_left:expression(eval(document.body.scrollLeft||document.documentElement.scrollLeft))!important;_width:0!important;_height:expression(document.documentElement.clientHeight||document.body.clientHeight+"px")!important;}#feedbackify .fby-mask{display:none!important;position:fixed!important;top:0;left:0;width:100%;height:100%;background-color:#000!important;opacity:0.2;filter:alpha(opacity=20);_position:absolute!important;_width:expression(document.documentElement.clientWidth||document.body.clientWidth+"px")!important;_height:expression(this.parentNode.style.height)!important;}#feedbackify .fby-show{display:block!important;visibility:visible!important;}#feedbackify .fby-hide{display:none!important;visibility:hidden!important;}</style><style type="text/css">#feedbackify .fby-tab{position:fixed!important;width:36px;height:100px;overflow:hidden!important;_position:absolute!important;}#feedbackify .fby-tab a{display:block!important;position:absolute!important;width:36px;height:100px;background-color:#000000!important;cursor:pointer!important;background:url(https://cdn.feedbackify.com/img/classic/tab.png)!important;_background:none!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/tab.png)!important;}#feedbackify .fby-tab-l{top:50%;left:0;margin-top:-50px!important;_top:expression((parseInt(this.parentNode.style.height)-this.clientHeight)/2+"px")!important;_margin-top:0!important;}#feedbackify .fby-tab-l a{margin-left:-5px!important;}#feedbackify .fby-tab-l a:hover{margin-left:-2px!important;}#feedbackify .fby-tab-r{top:50%;right:0px!important;margin-top:-50px!important;_top:expression((parseInt(this.parentNode.style.height)-this.clientHeight)/2+"px")!important;_left:expression((document.documentElement.clientWidth||document.body.clientWidth)-this.clientWidth+"px")!important;_margin-top:0!important;}#feedbackify .fby-tab-r a{margin-left:5px!important;}#feedbackify .fby-tab-r a:hover{margin-left:2px!important;}#feedbackify .fby-tab-t{top:0;margin-top:0px!important;}#feedbackify .fby-tab-b{top:auto;bottom:0!important;_top:expression(parseInt(this.parentNode.style.height)-this.clientHeight+"px")!important;}</style><style type="text/css">#feedbackify grammarly-ghost{display:none!important;}#feedbackify grammarly-btn{display:none!important;}#feedbackify #fby-form{z-index:2147483646!important;width:618px!important;position:absolute!important;}#feedbackify .fby-d-main{width:600px;height:50px;vertical-align:top!important;background-color:#FFFFFF!important;position:relative!important;}#feedbackify .fby-d{background:url(https://cdn.feedbackify.com/img/classic/dlg_shad_sprite.png)!important;_background:none!important;}#feedbackify .fby-d-h{height:9px;background:url(https://cdn.feedbackify.com/img/classic/dlg_shad_sprite_h.png)!important;_background:none!important;}#feedbackify .fby-d-h2{height:9px;background-color:#FFFFFF!important;}#feedbackify .fby-d-tl{background-position:-18px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_tl.png)!important;}#feedbackify .fby-d-t{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_t.png,sizingMethod=scale)!important;}#feedbackify .fby-d-tr{background-position:-36px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_tr.png)!important;}#feedbackify .fby-d-l{_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_l.png,sizingMethod=scale)!important;}#feedbackify .fby-d-r{background-position:-9px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_r.png,sizingMethod=scale)!important;}#feedbackify .fby-d-bl{background-position:-54px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_bl.png)!important;}#feedbackify .fby-d-br{background-position:-72px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_br.png)!important;}#feedbackify .fby-d-b{background-position:0px -9px!important;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=https://cdn.feedbackify.com/img/classic/dlg_shad_b.png,sizingMethod=scale)!important;}#feedbackify .fby-d-load{position:relative!important;}#feedbackify .fby-d-load img{position:absolute!important;left:8px;}#feedbackify .fby-d-load div{position:absolute!important;padding:4px 18px!important;font-size:16px!important;font-weight:bold!important;color:#333!important;}</style></head>
+  <body class="path-node page-node-type-support-doc has-glyphicons">
+    <a class="visually-hidden" focusable="" skip-link="" href="#main-content/index.html">
+      メインコンテンツへスキップ
+    </a>
+    
+      <div class="gt-block dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="" data-gt-block="">
+              <header class="navbar navbar-default container" id="navbar" role="banner">
+      <div class="gt-block navigation-secondary clearfix" data-gt-block="">
+          <div class="gt-block region region-navigation-secondary" data-gt-block="">
+    <section id="block-styles" class="block block-block-content block-block-contentfbb71e48-a6cd-4d2b-8239-43f18db69e60 clearfix">
+  
+    
+
+      
+            <div class="gt-block field field--name-field-body field--type-text-long field--label-hidden field--item" data-gt-block=""><link rel="stylesheet" media="all" href="https://learning-services-media.brightcove.com/doc-assets/css/drupal-fix.css"></div>
+      
+  </section>
+
+<nav role="navigation" aria-labelledby="block-secondarynavigation-menu" id="block-secondarynavigation">
+            
+  <h2 class="visually-hidden" id="block-secondarynavigation-menu" data-gt-block="">セカンダリナビゲーション</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/contact-support/index.html" title="サポートリクエストを作成する" data-drupal-link-system-path="node/18632">サポートリクエスト</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://status.brightcove.com/">システムステータス</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://university.brightcove.com/">Brightcove 大学</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<section id="block-gtranslate" class="block block-gtranslate block-gtranslate-block clearfix">
+  
+    
+
+      
+<div class="gt-block gtranslate" data-gt-block="">
+<script type="text/javascript">/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;var lang=lang_pair.split('|')[1];var plang=location.pathname.split('/')[1];if(plang.length !=2 && plang != 'zh-CN' && plang != 'zh-TW')plang='en';if(lang == 'en')location.pathname=location.pathname.replace('/'+plang+'/', '/');else location.pathname='/'+lang+location.pathname.replace('/'+plang+'/', '/');}
+/* ]]> */
+</script><select onchange="doGTranslate(this);"><option value="">言語の選択</option><option value="en|en" style="font-weight:bold;background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -0px;padding-left:18px;">英語</option><option value="en|fr" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -160px;padding-left:18px;">フランス語</option><option value="en|de" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -176px;padding-left:18px;">ドイツ語</option><option value="en|ja" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -240px;padding-left:18px;">日本語</option><option value="en|ko" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -256px;padding-left:18px;">韓国語</option><option value="en|es" style="background:url('/modules/contrib/gtranslate/gtranslate-files/16l.png') no-repeat scroll 0 -352px;padding-left:18px;">スペイン語</option></select>
+</div>
+<div class="gtranslate__credits" data-gt-block="">
+  本ドキュメントはGoogle翻訳によって機械翻訳したものとなります
+</div>
+
+  </section>
+
+
+  </div>
+
+      </div>
+      <div class="gt-block navbar-header col-md-3" data-gt-block="">
+                  <a class="logo" navbar-btn="" pull-left="" href="../ja/index.html" title="ホーム" rel="home">
+            <img src="https://support.brightcove.com/themes/custom/bcdocs/images/brightcove.png" alt="ホーム">
+          </a>
+                
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">トグルナビゲーション</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+                    <div class="gt-block navbar-collapse collapse" data-gt-block="">
+            <div class="gt-block region region-navigation-collapsible" data-gt-block="">
+    <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation">
+            <h2 class="sr-only" id="block-mainnavigation-menu" data-gt-block="">メインナビゲーション</h2>
+
+      
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-learning-home/index.html" title="ホームページ" data-drupal-link-system-path="node/18643">ホーム</a>
+                  </li>
+                                            <li class="expanded dropdown">
+        <a class="dropdown-toggle" href="" data-toggle="dropdown">
+          製品紹介
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/video-cloud/index.html" data-drupal-link-system-path="node/18332">Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://gallery.support.brightcove.com">ギャラリー</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-player/index.html" data-drupal-link-system-path="node/18283">Brightcove Player</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/live/index.html" data-drupal-link-system-path="node/18642">Live</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/social/index.html" data-drupal-link-system-path="node/18444">Social</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/audience/index.html" data-drupal-link-system-path="node/18445">Audience</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://zencoder.support.brightcove.com">Zencoder</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/ssai/index.html" data-drupal-link-system-path="node/18650">SSAI</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="https://support.ottflow.com">OTT Flow</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a class="dropdown-toggle" href="" data-toggle="dropdown">
+          Links
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/analytics-api/index.html" data-drupal-link-system-path="node/18370">Analytics API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/audience-api/index.html" data-drupal-link-system-path="node/18371">Audience API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/cms-api/index.html" data-drupal-link-system-path="node/18372">CMS API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/cms-connectors-video-cloud/index.html" data-drupal-link-system-path="node/18662">CMSコネクタ用 Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/data-collection-api/index.html" data-drupal-link-system-path="node/18876">Data Collection API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/delivery-system-api/index.html" data-drupal-link-system-path="node/18387">Delivery System API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/developer-tools-and-concepts/index.html" data-drupal-link-system-path="node/18430">開発者ツールと概念</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/native-player-sdks/index.html" data-drupal-link-system-path="node/18367">Device SDK</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/dynamic-ingest-api/index.html" data-drupal-link-system-path="node/18373">Dynamic Ingest API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/getting-started-brightcove-apis-0/index.html" data-drupal-link-system-path="node/18711">入門 - Brightcove API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/page-experience-api/index.html" data-drupal-link-system-path="node/18616">In-Page Experience APIs</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/ingest-profiles-api/index.html" data-drupal-link-system-path="node/18374">Ingest Profiles API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/live/index.html" data-drupal-link-system-path="node/18642">Live API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/oauth-api/index.html" data-drupal-link-system-path="node/18376">OAuth API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/platform-api-code-samples/index.html" data-drupal-link-system-path="node/18675">プラットフォームAPIコードサンプル</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/playback-api/index.html" data-drupal-link-system-path="node/18380">Playback API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-player-code-samples/index.html" data-drupal-link-system-path="node/18630">プレーヤーコードサンプル</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-player-developer/index.html" data-drupal-link-system-path="node/18362">プレーヤー開発者</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/player-management-api/index.html" data-drupal-link-system-path="node/18378">Player Management API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/policy-api/index.html" data-drupal-link-system-path="node/18381">Policy API</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/release-notes/index.html" data-drupal-link-system-path="node/18687">リリースに関して</a>
+                  </li>
+        </ul>
+  
+            </li>
+                                            <li class="expanded dropdown">
+        <a class="dropdown-toggle" href="" data-toggle="dropdown">
+          トレーニング（講習会）
+          <svg class="icon__chevron--down" viewBox="0 0 100 100">
+            <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__chevron--down"></use>
+          </svg>
+        </a>
+                                  <ul class="menu dropdown-menu">
+                                  <li class="expanded">
+        <a class="nturl" href="https://university.brightcove.com">オンラインコース</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/register-training/index.html" data-drupal-link-system-path="node/18270">コース登録</a>
+                  </li>
+        </ul>
+  
+            </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/brightcove-support-documentation-announcements/index.html" title="の新機能を見る Brightcove オンラインマニュアル" data-drupal-link-system-path="node/18896">新着情報</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+        </div>
+          </header>
+  
+    <div class="gt-block full-width-headline" data-gt-block="">
+    <div class="gt-block container" data-gt-block="">
+      <div class="gt-block row" data-gt-block="">
+        <div class="gt-block col-sm-12" role="heading" data-gt-block="">
+            <div class="gt-block region region-header" data-gt-block="">
+          <section id="block-brightcoveheadlineblock" class="block block-bc-general block-bc-general-headline-block clearfix">
+  
+    
+
+      オンラインマニュアル
+  </section>
+
+
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      <div role="main" class="gt-block main-container container  js-quickedit-main-content" data-gt-block="">
+    <div class="gt-block row" data-gt-block="">
+
+                              <aside class="gt-block col-sm-3" role="complementary" data-gt-block="">
+              <div class="gt-block region region-sidebar-first" data-gt-block="">
+    <section class="bc-search-fixes-search-block-form block block-bc-search-fixes block-bc-search-fixes-search-block clearfix" data-drupal-selector="bc-search-fixes-search-block-form" id="block-brightcovesearchblock">
+  
+    
+
+      <form action="/ja/media-sharing-cms-api" method="post" id="bc-search-fixes-search-block-form" accept-charset="UTF-8">
+  <div class="gt-block form-item js-form-item form-type-textfield js-form-type-textfield form-item-search js-form-item-search form-no-label form-group" data-gt-block="">
+      <label for="edit-search" class="control-label sr-only">サイト内検索</label>
+  
+  
+  <input data-drupal-selector="edit-search" class="form-text form-control" type="text" id="edit-search" name="search" value="" size="15" maxlength="128" placeholder="サイト内検索">
+
+  
+  
+  </div>
+<input autocomplete="off" data-drupal-selector="form-tmwl7by7t7xjcel-73rfug2i6o0encymfts0ygkjmno" type="hidden" name="form_build_id" value="form-tMwL7bY7t7xJCEL-73rFug2I6O0enCYmFts0yGKJMNo"><input data-drupal-selector="edit-bc-search-fixes-search-block-form" type="hidden" name="form_id" value="bc_search_fixes_search_block_form"><div data-drupal-selector="edit-actions" class="gt-block form-actions form-group js-form-wrapper form-wrapper" id="edit-actions" data-gt-block=""><button data-drupal-selector="edit-submit" class="button js-form-submit form-submit btn-primary btn icon-only" type="submit" id="edit-submit" name="op" value="Search"><span class="sr-only">サイト内検索</span><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button></div>
+
+</form>
+
+  </section>
+
+<section id="block-inpagenavigationblock" class="hidden-xs block block-bc-ipnav block-bc-ipnav-block clearfix" style="width: 476px;">
+  
+      <h2 class="block-title" data-gt-block="">このページ</h2>
+    
+
+      <div class="bc-ipnav-block" data-gt-block=""><ul><li><a href="#Introduction/index.html">概要</a></li><li><a href="#billing/index.html">メディアと請求の共有</a></li><li><a href="#Terminology/index.html">用語</a></li><li><a href="#base_URL/index.html">ベースURL</a></li><li><a href="#authentication/index.html">認証</a></li><li><a href="#restrictions_on_sharing/index.html">共有に関する制限</a></li><li><a href="#what_is_shared/index.html">共有されるもの</a></li><li><a href="#overview_media_sharing_steps/index.html">メディア共有手順の概要</a></li><li><a href="#CMS_API_operations/index.html">CMS API リクエスト - 設定</a></li><li><a href="#cms_operations_sharing/index.html">CMS API リクエスト - 共有</a></li><li><a href="#Errors/index.html">エラー</a></li><li><a href="#Limitations/index.html">制限事項</a></li><li><a href="#bc-ipnav-12/index.html">関連コンテンツ</a></li></ul></div>
+  </section>
+
+
+  </div>
+
+          </aside>
+              
+                  <section class="col-sm-9">
+
+                                      <div class="gt-block highlighted" data-gt-block="">  <div class="gt-block region region-highlighted" data-gt-block="">
+    <div data-drupal-messages-fallback="" class="hidden" data-gt-block=""></div>
+
+  </div>
+</div>
+                  
+                
+                
+                
+                          <a class="nturl" id="main-content"></a>
+            <div class="gt-block region region-content" data-gt-block="">
+        <h1 class="page-header"><span>メディアとの共有 CMS API</span>
+</h1>
+
+  
+<div class="gt-block node node--type-support-doc node--view-mode-full bcdocs-four-rows clearfix" data-gt-block="">
+
+  
+
+  <div class="group-first-row" data-gt-block="">
+      </div>
+
+  <div class="gt-block group-second-row" data-gt-block="">
+  
+  <div class="gt-block field field--name-field-products field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">製品（複数可）</div>
+          <div class="gt-block field__items taxonomy__tags" data-gt-block="">
+        <svg class="icon--product" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--product"></use>
+        </svg>
+              <div class="field--item" data-gt-block="">Video Cloud</div>
+              </div>
+      </div>
+
+  <div class="gt-block field field--name-field-roles field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">役割</div>
+          <div class="gt-block field__items taxonomy__tags" data-gt-block="">
+        <svg class="icon--roles" viewBox="0 0 100 100">
+          <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--roles"></use>
+        </svg>
+              <div class="field--item" data-gt-block="">API開発者</div>
+              </div>
+      </div>
+
+</div>
+
+  
+<div class="gt-block group-third-row taxonomy__tags" data-gt-block="">
+      <svg class="icon--label" viewBox="0 0 100 100">
+      <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon--label"></use>
+    </svg>
+    
+  <div class="gt-block field field--name-field-tasks field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">タスク</div>
+          <div class="gt-block field--items" data-gt-block="">
+              <div class="field--item" data-gt-block="">動画/アセットを追加する</div>
+          <div class="field--item" data-gt-block="">動画を管理する</div>
+              </div>
+      </div>
+
+  <div class="gt-block field field--name-field-topics field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">トピック）</div>
+          <div class="gt-block field--items" data-gt-block="">
+              <div class="field--item" data-gt-block="">メディアの共有</div>
+              </div>
+      </div>
+
+  <div class="gt-block field field--name-field-apis field--type-entity-reference field--label-visually_hidden" data-gt-block="">
+    <div class="field--label sr-only" data-gt-block="">API</div>
+          <div class="gt-block field--items" data-gt-block="">
+              <div class="field--item" data-gt-block="">CMS API</div>
+              </div>
+      </div>
+
+</div>
+
+  <div class="gt-block group-fourth-row" data-gt-block="">
+  
+            <div class="gt-block field field--name-field-support-doc-body field--type-text-with-summary field--label-hidden field--item" data-gt-block=""><p data-gt-block="">このトピックでは、1つのビデオからビデオを共有する方法を学習します Video Cloud を使用して別のアカウントに CMS API.</p><article class="bcls-article"><section class="bcls-section"><h2 id="Introduction" data-gt-block="">概要</h2>
+
+<p data-gt-block="">メディアの共有は、 Video Cloud サイト運営者が他のサイト運営者と動画を共有できるため、複数のアカウントにまたがる動画を簡単に管理できます。 たとえば、サイト運営者はビデオコンテンツのマスターアカウントを保持し、ビデオを他の部門や組織の子会社に共有することができます。</p>
+
+<p data-gt-block="" class="gt-block gt-block">すべてのメディア共有操作はStudioでも実行できます。 見る <a class="nturl" href="..//support.brightcove.com/ja/managing-media-sharing-settings/index.html">メディア共有設定の管理</a>.</p>
+
+<aside class="gt-block bcls-aside bcls-aside--information" data-gt-block=""><strong>メディアの共有は、 Video Cloud 複数のアカウントを持つエンタープライズおよびプロの顧客</strong> あなたのアップグレードに興味があるなら Video Cloud アカウントに連絡してください Brightcove 詳細については。</aside><aside class="gt-block bcls-aside bcls-aside--information" data-gt-block="">CMS API マスタおよび各アフィリエイトアカウントに対してメディア共有操作を有効にする必要があります。 <a class="nturl" href="https://help.brightcove.com/en/contact">Brightcove  カスタマーサポート</a> 共有を有効にする必要がある場合</aside></section><section class="bcls-section"><h2 id="billing" data-gt-block="">メディアと請求の共有</h2>
+
+<p data-gt-block="" class="gt-block gt-block">共有メディアの課金の仕組みについては、以下を参照してください。 <a class="nturl" href="..//support.brightcove.com/ja/media-sharing-using-media-module#billing/index.html">メディアモジュールを使用したメディア共有</a>.</p>
+</section><section class="bcls-section"><h2 id="Terminology" data-gt-block="">用語</h2>
+
+<p data-gt-block="">メディア共有では、マスターアカウント（動画を共有）と1つ以上のアフィリエイトアカウント（共有ビデオを受け取る）との間には関係があります。</p>
+<!-- table 1 -->
+
+<table class="bcls-table"><caption class="bcls-caption--table">メディア共有の用語</caption>
+	<thead class="bcls-table__head"><tr><th>アカウント</th>
+			<th>説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td>マスター</td>
+			<td>元の動画を作成したアカウント。
+			<p data-gt-block="">マスターはコンテンツを所有しており、アフィリエイトにコンテンツを設定、管理、提供する責任があります。</p>
+			</td>
+		</tr><tr><td>アフィリエイト</td>
+			<td>動画を受信して​​いるアカウント。
+			<p data-gt-block="">アフィリエイトは、マスターから共有されたコンテンツを受け入れることができます。</p>
+			</td>
+		</tr><tr><td>チャネル</td>
+			<td>コンテンツがマスターから任意の数のアフィリエイトに共有されるパイプライン。 メディア共有が有効になっている場合 <code class="notranslate">default</code> チャンネルがあなたのアカウントに作成されます。</td>
+		</tr><tr><td>関係</td>
+			<td>マスターとアフィリエイトの相互作用について説明します。
+			<p data-gt-block="">関係は、コンテンツを共有するマスター、コンテンツを共有するチャネル、コンテンツを受け入れる契約、コンテンツを受け取るアフィリエイトから構成されます。</p>
+			</td>
+		</tr><tr><td>契約</td>
+			<td>マスターとアフィリエイトの間の共有関係について説明します。
+			<p data-gt-block="">契約はマスターによって作成され、共有を有効にするために受け入れなければなりません。 アフィリエイトは、共有ビデオを自動的に受け入れるか、1つずつ承認する必要があるかを指定することもできます。</p>
+			</td>
+		</tr></tbody></table></section><section class="bcls-section"><h2 id="base_URL" data-gt-block="">ベースURL</h2>
+
+<p data-gt-block="">すべてについて CMS API 以下に説明する操作の基本URLは次のとおりです。</p>
+
+<pre class="notranslate language-http">  <code class=" notranslate language-http"><span class="token header-name keyword">https:</span>//cms.api.brightcove.com/v1</code></pre>
+
+<p data-gt-block="">以下で説明するすべてのエンドポイントは、要求を行うときにベースURLに追加されます。</p>
+</section><section class="bcls-section"><h2 id="authentication" data-gt-block="">認証</h2>
+
+<p data-gt-block="">要求の認証にはAuthorizationヘッダーが必要です。</p>
+
+<pre class="line-numbers notranslate language-http">      <code class=" notranslate language-http"><span class="token header-name keyword">Authorization:</span> Bearer {access_token}<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p data-gt-block="" class="gt-block gt-block">挽き目 <code class="notranslate">access_token</code> は、一時的なOAuth2アクセストークンです。 Brightcove OAuthサービス。 クライアントの資格情報を取得してアクセストークンを取得する方法の詳細については、 <a class="nturl" href="..//support.brightcove.com/ja/overview-oauth-api-v4/index.html">Brightcove OAuth の概要</a>.</p>
+
+<p data-gt-block="" class="gt-block gt-block">周囲のすべての操作 <strong>の関係</strong> 新しい権限が必要です：</p>
+
+<pre class="notranslate">  <code class="notranslate">video-cloud/video/all
+  video-cloud/sharing-relationships/read
+  video-cloud/sharing-relationships/create
+  video-cloud/sharing-relationships/update
+  video-cloud/sharing-relationships/delete</code></pre>
+
+<p data-gt-block="">代わりに、あなたはちょうど使用することができます：</p>
+
+<pre class="notranslate language-json">  <code class=" notranslate language-json">video-cloud/sharing-relationships/all</code></pre>
+
+<p data-gt-block="">Studio API認証管理ページには、2つの権限が表示されます。</p>
+
+<ul><li><strong>読書の共有</strong> （に相当します <code class="notranslate">video-cloud/sharing-relationships/read</code>)</li>
+	<li><strong>共有の読み取り/書き込み</strong> （に相当します <code class="notranslate">video-cloud/sharing-relationships/all</code>)</li>
+</ul></section><section class="bcls-section"><h2 id="restrictions_on_sharing" data-gt-block="">共有に関する制限</h2>
+
+<p data-gt-block="">デフォルトでは、すべてのビデオを共有できます。 ただし、次の場合は共有を防ぐことができます。</p>
+
+<ul><li>アフィリエイトアカウントには、マスターアカウントの動画に値が設定されているカスタムフィールドはありません</li>
+	<li>マスターアカウントにはジオフィルタリが有効になっていますが、アフィリエイトアカウントには</li>
+</ul><h3 data-gt-block="">カスタムフィールドマッチング</h3>
+
+<p data-gt-block="" class="gt-block gt-block">チャンネルのカスタムフィールドマッチングを強制することができます。これは、ビデオ共有が失敗することを意味します <strong>動画にアフィリエイトアカウントに存在しないカスタムフィールドの値がある場合</strong>。 動画に一致しないカスタムフィールドの値がない場合、動画は引き続き正常に共有されます</p>
+
+<p data-gt-block="" class="gt-block gt-block">デフォルトでは、カスタムフィールドマッチングは <strong>Studio上ではサポートされていません。</strong> 強制される。</p>
+
+<p data-gt-block="">ビデオシェアがあるため、一致しないカスタムフィールドを失敗した場合は、応答して、このようなエラーが表示されます。</p>
+
+<pre class="line-numbers notranslate language-json">  <code class=" notranslate language-json"><span class="token punctuation">{</span>
+    <span class="token property">"video_id"</span><span class="token operator">:</span> <span class="token string">"5691312273001"</span><span class="token punctuation">,</span>
+    <span class="token property">"affiliate_id"</span><span class="token operator">:</span> <span class="token string">"47509719001"</span><span class="token punctuation">,</span>
+    <span class="token property">"affiliate_video_id"</span><span class="token operator">:</span> <span class="token null">null</span><span class="token punctuation">,</span>
+    <span class="token property">"status"</span><span class="token operator">:</span> <span class="token string">"PROCESSING"</span><span class="token punctuation">,</span>
+    <span class="token property"></span><span class="bcls-highlight"><span class="token property">"error_message"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span><span class="token property">"error_code"</span><span class="token operator">:</span><span class="token string">"MISSING_CUSTOM_FIELDS"</span><span class="token punctuation">,</span><span class="token property">"error_message"</span><span class="token operator">:</span><span class="token string">"Affiliate account is missing custom fields: [subject]"</span><span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span></span><span class="token punctuation"></span>
+    <span class="token property">"shared_at"</span><span class="token operator">:</span> <span class="token string">"2018-01-03T16:29:19.080Z"</span><span class="token punctuation">,</span>
+    <span class="token property">"updated_at"</span><span class="token operator">:</span> <span class="token string">"2018-01-03T16:29:19.080Z"</span>
+  <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 data-gt-block="">ジオフィルタリングマッチング</h3>
+
+<p data-gt-block="">ジオフィルタリングの一致がチャネルで有効になっている場合、マスターアカウントでジオフィルタリングが有効になっていて、アフィリエイトアカウントではない場合は、ビデオを共有できません。</p>
+
+<p data-gt-block="" class="gt-block gt-block">デフォルトでは、ジオフィルタリングのマッチング <strong>is</strong> 強制される。</p>
+
+<p data-gt-block="">エラーは次のようになります。</p>
+
+<pre class="line-numbers notranslate language-json">  <code class=" notranslate language-json"><span class="token punctuation">{</span>
+    <span class="token property">"video_id"</span><span class="token operator">:</span> <span class="token string">"5691312273001"</span><span class="token punctuation">,</span>
+    <span class="token property">"affiliate_id"</span><span class="token operator">:</span> <span class="token string">"47509719001"</span><span class="token punctuation">,</span>
+    <span class="token property">"affiliate_video_id"</span><span class="token operator">:</span> <span class="token null">null</span><span class="token punctuation">,</span>
+    <span class="token property">"status"</span><span class="token operator">:</span> <span class="token string">"PROCESSING"</span><span class="token punctuation">,</span>
+    <span class="token property"></span><span class="bcls-highlight"><span class="token property">"error_message"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span><span class="token property">"error_code"</span><span class="token operator">:</span><span class="token string">"CONFLICT"</span><span class="token punctuation">,</span><span class="token property">"error_message"</span><span class="token operator">:</span><span class="token string">"Affiliate account is not configured for geo restriction."</span><span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span></span><span class="token punctuation"></span>
+    <span class="token property">"shared_at"</span><span class="token operator">:</span> <span class="token string">"2018-01-03T16:29:19.080Z"</span><span class="token punctuation">,</span>
+    <span class="token property">"updated_at"</span><span class="token operator">:</span> <span class="token string">"2018-01-03T16:29:19.080Z"</span>
+  
+  <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p data-gt-block="" class="gt-block gt-block">見る <a class="nturl" href="#update_channel/index.html">チャンネルを更新する</a> カスタムフィールドおよび/またはジオフィルタリングマッチングを適用するためにチャネルを更新する方法をご覧ください。</p>
+</section><section class="bcls-section"><h2 id="what_is_shared" data-gt-block="">共有されるもの</h2>
+
+<p data-gt-block="">このセクションでは、何が共有されるのか、それに続くビデオへの変更がどのように処理されるのかについて説明します。</p>
+
+<h3 data-gt-block="">ビデオが共有されているとき</h3>
+
+<p data-gt-block="">ほとんどのビデオメタデータフィールドは、ビデオが共有されるときにマスターからアフィリエイトアカウントにコピーされます。 注目すべき例外は次のとおりです。</p>
+
+<ul><li><code class="notranslate">id</code>  - 動画はアフィリエイトアカウントに固有のIDを持ちます</li>
+	<li>日付フィールド <code class="notranslate">created_at</code> や <code class="notranslate">updated_at</code></li>
+</ul><p data-gt-block="">すべての動画アセット（レンディション、画像、テキスト_トラックなど）は、アフィリエイトアカウントによって再生用に使用されます。</p>
+<!-- <aside class="bcls-aside bcls-aside--information">Note that billing will still be based on the account that the video is played back from, not the account where the assets reside.</aside> -->
+
+<h3 data-gt-block="">ビデオが共有された後</h3>
+
+<p data-gt-block="">動画が共有された後、マスターアカウントの動画の一部の変更はアフィリエイトアカウントによって自動的に継承されますが、一部は変更されません。</p>
+
+<h4 data-gt-block="">動画アセット</h4>
+
+<p data-gt-block="" class="gt-block gt-block"><strong>画像を除く</strong>、マスターの動画アセットの変更は <strong>常に</strong> アフィリエイトによって継承されます。 アフィリエイト <strong>資産を変更することはできません</strong> マニフェスト、テキストトラック、またはデジタルマスターなどの、さまざまな機能を使用できます。</p>
+
+<p data-gt-block="" class="gt-block gt-block">マスターによる画像の変更はアフィリエイトによって継承されます <strong>アフィリエイトが画像を置き換えた場合を除き、</strong>.  Once アフィリエイトが画像を変更すると、その画像はマスターから継承されなくなります。</p>
+
+<h4 data-gt-block="">動画メタデータ</h4>
+
+<p data-gt-block="" class="gt-block gt-block">アフィリエイトは、動画のメタデータ（名前、説明、参照IDなど）を変更することができ、マスタービデオの変更は <strong>Studio上ではサポートされていません。</strong> アフィリエイトによって継承されます。</p>
+
+<h5 id="Resharing_videos" data-gt-block="">ビデオの再共有</h5>
+
+<p data-gt-block="" class="gt-block gt-block">ただし、マスター <strong>再分配</strong> ビデオ（これは CMS API、スタジオではなく）、すべてのアセットとメタデータ（データ/時間欄を除く）はアフィリエイトに共有されますが、 <strong>アフィリエイトが行った変更を上書きする</strong>.</p>
+
+<aside class="gt-block bcls-aside bcls-aside--information" data-gt-block="">異なる結果をもたらす、再共有するには2つの方法があることに注意してください。
+<dl><dt>マスター <em>解約</em> その後 <em>再分配</em> ビデオ</dt>
+	<dd>この場合、以前に共有されたビデオは、共有されていないすべてのアフィリエイトアカウントから削除されます。 マスターがビデオを再び共有すると、 <em>新しい</em> ビデオを <em>新しい</em> 各アフィリエイトアカウントに一意のIDが追加され、Masterアカウントのメタデータとアセットが元のシェアと同じ状態になります。</dd>
+	<dt>マスター <em>再分配</em> ビデオ <strong>無し</strong> それを共有しない</dt>
+	<dd>この場合、ビデオのマスターコピーからのすべてのメタデータと画像はアフィリエイトバージョンにプッシュされ、アフィリエイトの変更は上書きされますが、アフィリエイトビデオIDは <strong>Studio上ではサポートされていません。</strong> 変更します。</dd>
+</dl></aside><aside class="bcls-aside bcls-aside--warning" data-gt-block="">ビデオを再共有する前に、これがあなたがしたいことであること、そしてあなたのアフィリエイトが何が起こるかを知っていることを確認してください！</aside></section><section class="bcls-section"><h2 id="overview_media_sharing_steps" data-gt-block="">メディア共有手順の概要</h2>
+
+<h3 data-gt-block="">関係を設定する</h3>
+<!-- <p>Here is the logical flow for setting up a sharing relationship:</p>
+      <figure class="bcls-figure">
+          <img class="bcls-image" src="//learning-services-media.brightcove.com/doc-assets/node/18325-media-sharing-cms-api/18325-admin-flow-v2.svg" alt="Set Up Sharing">
+          <figcaption class="bcls-caption--image">Set Up Sharing</figcaption>
+      </figure> -->
+
+<p data-gt-block="">下記の関係を設定する（詳細は、操作名をクリックしてください）操作の概要は次のとおりです。</p>
+<!-- table 2 -->
+
+<table class="bcls-table"><caption class="bcls-caption--table">セットアップ操作</caption>
+	<thead class="bcls-table__head"><tr><th colspan="3">マスター操作</th>
+		</tr><tr><th>操作</th>
+			<th>メソッド/エンドポイント</th>
+			<th>説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><a class="nturl" href="#list_channels/index.html">チャンネルを一覧表示する</a></td>
+			<td><code class="notranslate">GET</code> <code class="notranslate">/accounts/ <span class="bcls-input">master_account_id</span>/channels</code></td>
+			<td>アカウントのチャンネルのリストを取得する</td>
+		</tr><tr><td><a class="nturl" href="#Get_channel_details/index.html">チャンネルの詳細を取得する</a></td>
+			<td><code class="notranslate">GET</code> <code class="notranslate">/accounts/ <span class="bcls-input">master_account_id</span>/channels/ <span class="bcls-input">channel_name</span> </code> <sup><strong> <a class="nturl" href="#note2-1/index.html">[2-1]</a> </strong> </sup></td>
+			<td>チャンネルの詳細を取得する</td>
+		</tr><!-- <tr>
+                  <td><a class=nturl href="#create_channel">Create channel</a></td>
+                  <td>POST <code>/accounts/<span class="bcls-input">master_account_id</span>/channels/<span class="bcls-input">channel_name</span></code></td>
+                  <td>Creates a new channel for the account</td>
+              </tr> --><tr><td><a class="nturl" href="#update_channel/index.html">チャンネルを更新する</a></td>
+			<td><code class="notranslate">POST</code> <code class="notranslate">/accounts/ <span class="bcls-input">master_account_id</span>/channels/ <span class="bcls-input">channel_name</span> </code></td>
+			<td>チャンネル設定を更新する</td>
+		</tr><!-- <tr>
+                  <td><a class=nturl href="#Remove_channel">Remove channel</a></td>
+                  <td>DELETE <code>/accounts/<span class="bcls-input">master_account_id</span>/channels</code>/<span class="bcls-input">channel_name</span></td>
+                  <td>Removes channel from the account</td>
+              </tr> --><tr><td><a class="nturl" href="#List_channel_affiliates/index.html">チャンネルの関連会社を一覧表示する</a></td>
+			<td><code class="notranslate">GET</code> <code class="notranslate">/accounts/ <span class="bcls-input">master_account_id</span>/channels/default/members</code></td>
+			<td>チャンネルのアフィリエイトを取得する</td>
+		</tr><tr><td><a class="nturl" href="#Add_affiliates/index.html">アフィリエイトを追加</a></td>
+			<td><code class="notranslate">PUT</code> <code class="notranslate">/accounts/ <span class="bcls-input">master_account_id</span>/channels/default/members</code></td>
+			<td>チャネルにアフィリエイトを追加する</td>
+		</tr><tr><td><a class="nturl" href="#Remove_affiliate/index.html">アフィリエイトを削除</a></td>
+			<td><code class="notranslate">DELETE</code> <code class="notranslate">/accounts/ <span class="bcls-input">master_account_id</span>/channels/default/members/ <span class="bcls-input">affiliate_account_id</span> </code></td>
+			<td>チャンネルからアフィリエイトを削除する</td>
+		</tr></tbody><thead class="bcls-table__head"><tr><th colspan="3">アフィリエイト事業</th>
+		</tr><tr><th>操作</th>
+			<th>メソッド/エンドポイント</th>
+			<th>説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><a class="nturl" href="#List_available_contracts/index.html">利用可能な契約を一覧表示する</a></td>
+			<td><code class="notranslate">GET</code> <code class="notranslate">/accounts/ <span class="bcls-input">affiliate_account_id</span>/contracts</code></td>
+			<td>アカウントで利用可能なすべての契約を取得します。</td>
+		</tr><tr><td><a class="nturl" href="#Get_specific_contract/index.html">特定のアカウントの契約を取得する</a></td>
+			<td><code class="notranslate">GET</code> <code class="notranslate">/accounts/ <span class="bcls-input">affiliate_account_id</span>/contracts/ <span class="bcls-input">master_account_id</span> </code></td>
+			<td>特定のアカウントから契約があればそれを取得する</td>
+		</tr><tr><td><a class="nturl" href="#Accept_contract/index.html">契約を承認する</a></td>
+			<td><code class="notranslate">PATCH</code> <code class="notranslate">/accounts/ <span class="bcls-input">affiliate_account_id</span>/contracts/ <span class="bcls-input">master_account_id</span> </code></td>
+			<td>契約の受諾条件を受け入れて設定する</td>
+		</tr></tbody></table><h4 data-gt-block="">ノート</h4>
+
+<ul><li id="note2-1"><sup><strong>[2-1]</strong> </sup> 現在、名前が付けられたチャンネルは1つだけです <code class="notranslate">default</code></li>
+</ul><h3 data-gt-block="">動画の共有</h3>
+
+<p data-gt-block="" class="gt-block gt-block">ビデオ共有操作は、マスターアカウントによって実行されます。 アフィリエイトアカウントは、シェアを受け入れることができます（if <code class="notranslate">auto_accept</code> に設定されています <code class="notranslate">false</code>）、標準を使用して共有ビデオのメタデータと画像を更新できます <a class="nturl" href="https://docs.brightcove.com/cms-api/v1/doc/index.html#api-videoGroup-Update_Video">ビデオを更新する</a> 操作。</p>
+
+<p data-gt-block="">リレーションシップが設定されると、実行できる共有操作を以下に示します（詳細については、操作名をクリックしてください）。</p>
+<!-- table 3 -->
+
+<table class="bcls-table"><caption class="bcls-caption--table">共有操作</caption>
+	<thead class="bcls-table__head"><tr><th colspan="3">マスター操作</th>
+		</tr><tr><th>操作</th>
+			<th>メソッド/エンドポイント</th>
+			<th>説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><a class="nturl" href="#List_shares/index.html">既存の株式を一覧表示する</a></td>
+			<td><code class="notranslate">GET</code> <code class="notranslate">/accounts/ <span class="bcls-input">master_account_id</span>/videos/ <span class="bcls-input">video_id</span>/shares</code></td>
+			<td>動画の既存の共有リストを取得する - これは <strong>重要</strong> の結果のために <a class="nturl" href="#Share_video/index.html">ビデオを再共有する</a> 既に共有されている場合</td>
+		</tr><tr><td><a class="nturl" href="#Share_video/index.html">動画を共有する</a></td>
+			<td><code class="notranslate">POST</code> <code class="notranslate">/accounts/ <span class="bcls-input">master_account_id</span>/videos/ <span class="bcls-input">video_id</span>/shares</code></td>
+			<td>1つ以上のアフィリエイトに動画を共有する - 動画が既に共有されている場合、この操作は <a class="nturl" href="#Share_video/index.html">それを再共有する</a>  - それはおそらく <strong>Studio上ではサポートされていません。</strong> あなたがしたいこと</td>
+		</tr><tr><td><a class="nturl" href="#Unshare_video_affiliate/index.html">アフィリエイトの動画の共有を解除する</a></td>
+			<td><code class="notranslate">DELETE</code> <code class="notranslate">/accounts/ <span class="bcls-input">master_account_id</span>/videos/ <span class="bcls-input">video_id</span>/shares</code></td>
+			<td>特定のアフィリエイトの動画を共有解除する - 共有を解除して再共有すると、アフィリエイトアカウントに新しい動画IDを持つ共有動画が作成されます</td>
+		</tr><!-- <tr>
+                  <td><a class=nturl href="#Unshare_video">Un-share a video for all Affiliates</a></td>
+                  <td>DELETE <code>/accounts/<span class="bcls-input">master_account_id</span>/videos/<span class="bcls-input">video_id</span>/shares</code></td>
+                  <td>Un-shares a video for all Affiliates - note that un-sharing and re-sharing will result in the shared video having a new video id in the Affiliate account</td>
+              </tr> --></tbody><thead class="bcls-table__head"><tr><th colspan="3">アフィリエイト事業</th>
+		</tr><tr><th>操作</th>
+			<th>メソッド/エンドポイント</th>
+			<th>説明</th>
+		</tr></thead><tbody class="bcls-table__body"><tr><td><a class="nturl" href="#Accept_share/index.html">共有ビデオを受け入れる</a></td>
+			<td><code class="notranslate">PATCH</code> <code class="notranslate">/accounts/ <span class="bcls-input">affiliate_account_id</span>/videos/ <span class="bcls-input">video_id</span> </code></td>
+			<td>共有ビデオを受け入れる（if <code class="notranslate">auto_accept</code> オフ）</td>
+		</tr></tbody></table></section><section class="bcls-section"><h2 id="CMS_API_operations" data-gt-block="">CMS API リクエスト - 設定</h2>
+
+<p data-gt-block="">このセクションでは、 CMS API メディア共有の設定に関係する操作</p>
+
+<h3 data-gt-block="">マスター操作</h3>
+
+<h4 id="list_channels" data-gt-block="">チャネルを一覧表示する</h4>
+<!-- table 4 -->
+
+<table class="bcls-table"><caption class="bcls-caption--table">リストチャネル</caption>
+	<tbody class="bcls-table__body"><tr><th>方法</th>
+			<td><code class="notranslate">GET</code></td>
+		</tr><tr><th>エンドポイント</th>
+			<td><code class="notranslate">/accounts/ <span class="bcls-input">master_account_id</span>/channels</code></td>
+		</tr><tr><th>ボディをリクエストする</th>
+			<td> </td>
+		</tr><tr><th>サンプルレスポンス</th>
+			<td>
+			<pre class="line-numbers notranslate language-json">  <code class=" notranslate language-json"><span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"account_id"</span><span class="token operator">:</span> <span class="token string">"57838016001"</span><span class="token punctuation">,</span>
+      <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"default"</span><span class="token punctuation">,</span>
+      <span class="token property">"enforce_custom_fields"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token property">"enforce_geo"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token property">"account_name"</span><span class="token operator">:</span> <span class="token string">"BrightcoveLearning"</span><span class="token punctuation">,</span>
+      <span class="token property">"created_at"</span><span class="token operator">:</span> <span class="token string">"2017-08-23T17:11:18.474Z"</span><span class="token punctuation">,</span>
+      <span class="token property">"updated_at"</span><span class="token operator">:</span> <span class="token string">"2017-08-23T17:11:18.474Z"</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+			</td>
+		</tr></tbody></table><h4 id="Get_channel_details" data-gt-block="">チャンネルの詳細を取得する</h4>
+<!-- table 5 -->
+
+<table class="bcls-table"><caption class="bcls-caption--table">チャンネルの詳細を取得する</caption>
+	<tbody class="bcls-table__body"><tr><th>方法</th>
+			<td><code class="notranslate">GET</code></td>
+		</tr><tr><th>エンドポイント</th>
+			<td><code class="notranslate">https://cms.api.brightcove.com/v1/accounts/ <span class="bcls-input">master_account_id</span>/channels/ <span class="bcls-input">channel_name</span> <sup><strong> <a class="nturl" href="#note5-1/index.html">[5-1]</a> </strong> </sup></code></td>
+		</tr><tr><th>ボディをリクエストする</th>
+			<td> </td>
+		</tr><tr><th>サンプルレスポンス</th>
+			<td>
+			<pre class="line-numbers notranslate language-json">  <code class=" notranslate language-json"><span class="token punctuation">{</span>
+    <span class="token property">"account_id"</span><span class="token operator">:</span> <span class="token string">"57838016001"</span><span class="token punctuation">,</span>
+    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"default"</span><span class="token punctuation">,</span>
+    <span class="token property">"enforce_custom_fields"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token property">"enforce_geo"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token property">"account_name"</span><span class="token operator">:</span> <span class="token string">"BrightcoveLearning"</span><span class="token punctuation">,</span>
+    <span class="token property">"created_at"</span><span class="token operator">:</span> <span class="token string">"2017-08-23T17:11:18.474Z"</span><span class="token punctuation">,</span>
+    <span class="token property">"updated_at"</span><span class="token operator">:</span> <span class="token string">"2017-08-23T17:11:18.474Z"</span>
+  <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+			</td>
+		</tr></tbody></table><h5 data-gt-block="">ノート</h5>
+
+<ul><li id="note5-1"><sup><strong>[5-1]</strong> </sup> 現在、名前が付けられたチャンネルは1つだけです <code class="notranslate">default</code></li>
+</ul><!-- table 6 --><!-- <h4 id="create_channel">Create channel</h4>
+  <table class="bcls-table">
+      <caption class="bcls-caption--table">Create Channel</caption>
+      <tbody class="bcls-table__body">
+          <tr>
+              <th>Method</th>
+              <td>PUT</td>
+          </tr>
+          <tr>
+              <th>Endpoint</th>
+              <td>/accounts/<span class="bcls-input">master_account_id</span>/channels/<span class="bcls-input">channel_name</span></td>
+          </tr>
+          <tr>
+              <th>Request body</th>
+              <td>
+  <pre class="line-numbers"><code class="language-json">{
+    "account_id": "57838016001",
+    "name": "<span class="bcls-input">channel_name</span>"
+  }</code></pre>
+              </td>
+          </tr>
+          <tr>
+              <th>Sample response</th>
+              <td>
+  <pre class="line-numbers"><code class="language-json">{
+    "account_id": "57838016001",
+    "name": "channel_name",
+    "updated_at": "2017-08-23T19:12:24.139Z",
+    "created_at": "2017-08-23T19:12:24.139Z"
+  }</code></pre>
+              </td>
+          </tr>
+      </tbody>
+  </table> --><h4 id="update_channel" data-gt-block="">チャンネルを更新する</h4>
+<!-- table 7 -->
+
+<table class="bcls-table"><caption class="bcls-caption--table">チャンネルを作成する</caption>
+	<tbody class="bcls-table__body"><tr><th>方法</th>
+			<td><code class="notranslate">PATCH</code></td>
+		</tr><tr><th>エンドポイント</th>
+			<td><code class="notranslate">/accounts/ <span class="bcls-input">master_account_id</span>/channels/ <span class="bcls-input">channel_name</span> </code> <sup><strong> <a class="nturl" href="#note6-1/index.html">[6-1]</a> </strong> </sup></td>
+		</tr><tr><th>ボディをリクエストする</th>
+			<td>
+			<pre class="line-numbers notranslate language-json">  <code class=" notranslate language-json"><span class="token punctuation">{</span>
+    <span class="token property">"enforce_custom_fields"</span> <span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">"enforce_geo"</span> <span class="token operator">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+			</td>
+		</tr><tr><th>サンプルレスポンス</th>
+			<td>
+			<pre class="line-numbers notranslate language-json">  <code class=" notranslate language-json"><span class="token punctuation">{</span>
+    <span class="token property">"account_id"</span><span class="token operator">:</span> <span class="token string">"57838016001"</span><span class="token punctuation">,</span>
+    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"default"</span><span class="token punctuation">,</span>
+    <span class="token property">"enforce_custom_fields"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">"enforce_geo"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">"account_name"</span><span class="token operator">:</span> <span class="token string">"BrightcoveLearning"</span><span class="token punctuation">,</span>
+    <span class="token property">"created_at"</span><span class="token operator">:</span> <span class="token string">"2017-08-23T17:11:18.474Z"</span><span class="token punctuation">,</span>
+    <span class="token property">"updated_at"</span><span class="token operator">:</span> <span class="token string">"2017-12-30T15:06:27.015Z"</span>
+  <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+			</td>
+		</tr></tbody></table><h5 data-gt-block="">ノート</h5>
+
+<ul><li id="note6-1"><sup><strong>[6-1]</strong> </sup> 現在、名前が付けられたチャンネルは1つだけです <code class="notranslate">default</code></li>
+</ul><!-- table 8 --><!-- <h4 id="Remove_channel">Remove channel</h4>
+  <table class="bcls-table">
+      <caption class="bcls-caption--table">Remove Channel</caption>
+      <tbody class="bcls-table__body">
+          <tr>
+              <th>Method</th>
+              <td>DELETE</td>
+          </tr>
+          <tr>
+              <th>Endpoint</th>
+              <td>/accounts/<span class="bcls-input">master_account_id</span>/channels/<span class="bcls-input">channel_name</span></td>
+          </tr>
+          <tr>
+              <th>Request body</th>
+              <td>
+  <pre class="line-numbers"><code class="language-json">{
+    "account_id": "57838016001",
+    "name": "<span class="bcls-input">channel_name</span>"
+  }</code></pre>
+              </td>
+          </tr>
+          <tr>
+              <th>Sample response</th>
+              <td>204 NO_CONTENT (empty response body)</td>
+          </tr>
+      </tbody>
+  </table>
+  <aside class="bcls-aside bcls-aside--warning">Note that this operation will fail if all affiliates have <strong>not</strong> been removed from the channel.</aside> --><h4 id="List_channel_affiliates" data-gt-block="">チャンネルのアフィリエイトを一覧表示する</h4>
+<!-- table 9 -->
+
+<table class="bcls-table"><caption class="bcls-caption--table">リストチャネルのアフィリエイト</caption>
+	<tbody class="bcls-table__body"><tr><th>方法</th>
+			<td><code class="notranslate">GET</code></td>
+		</tr><tr><th>エンドポイント</th>
+			<td><code class="notranslate">/accounts/ <span class="bcls-input">master_account_id</span>/channels/default/members</code></td>
+		</tr><tr><th>ボディをリクエストする</th>
+			<td> </td>
+		</tr><tr><th>サンプルレスポンス</th>
+			<td>
+			<pre class="line-numbers notranslate language-json">  <code class=" notranslate language-json"><span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"account_id"</span><span class="token operator">:</span> <span class="token string">"20318290001"</span><span class="token punctuation">,</span>
+      <span class="token property"></span><span class="bcls-highlight"><span class="token property">"approved"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span></span><span class="token punctuation"></span>
+      <span class="token property">"account_name"</span><span class="token operator">:</span> <span class="token string">"Brightcove Training"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"account_id"</span><span class="token operator">:</span> <span class="token string">"1485884786001"</span><span class="token punctuation">,</span>
+      <span class="token property"></span><span class="bcls-highlight"><span class="token property">"approved"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span></span><span class="token punctuation"></span>
+      <span class="token property">"account_name"</span><span class="token operator">:</span> <span class="token string">"Brightcove Learning Doc Samples"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"account_id"</span><span class="token operator">:</span> <span class="token string">"1752604059001"</span><span class="token punctuation">,</span>
+      <span class="token property">"approved"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token property">"account_name"</span><span class="token operator">:</span> <span class="token string">"BC Training Videos"</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+			</td>
+		</tr></tbody></table><p data-gt-block="" class="gt-block">の値 <code class="notranslate">approved</code> アフィリエイトが契約を承認したかどうかを示します。</p>
+
+<h4 id="Add_affiliates" data-gt-block="">チャネルにアフィリエイトを追加する</h4>
+<!-- table 10 -->
+
+<table class="bcls-table"><caption class="bcls-caption--table">アフィリエイトを追加</caption>
+	<tbody class="bcls-table__body"><tr><th>方法</th>
+			<td><code class="notranslate">PUT</code></td>
+		</tr><tr><th>エンドポイント</th>
+			<td><code class="notranslate">/accounts/ <span class="bcls-input">master_account_id</span>/channels/default/members/ <span class="bcls-input">affiliate_account_id</span> </code></td>
+		</tr><tr><th>ボディをリクエストする</th>
+			<td>
+			<pre class="line-numbers notranslate language-json">  <code class=" notranslate language-json"><span class="token punctuation">{</span>
+    <span class="token property">"account_id"</span><span class="token operator">:</span><span class="token string">"<span class="bcls-input">affiliate_account_id</span>"</span>
+  <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+			</td>
+		</tr><tr><th>サンプルレスポンス</th>
+			<td>
+			<pre class="line-numbers notranslate language-json">  <code class=" notranslate language-json"><span class="token punctuation">{</span>
+    <span class="token property">"account_id"</span><span class="token operator">:</span> <span class="token string">"1485884786001"</span>
+  <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+			</td>
+		</tr></tbody></table><h4 id="Remove_affiliate" data-gt-block="">チャネルからアフィリエイトを削除する</h4>
+<!-- table 11 -->
+
+<table class="bcls-table"><caption class="bcls-caption--table">アフィリエイトを削除する</caption>
+	<tbody class="bcls-table__body"><tr><th>方法</th>
+			<td><code class="notranslate">DELETE</code></td>
+		</tr><tr><th>エンドポイント</th>
+			<td><code class="notranslate">/accounts/ <span class="bcls-input">master_account_id</span>/channels/default/members/ <span class="bcls-input">affiliate_account_id</span> </code></td>
+		</tr><tr><th>ボディをリクエストする</th>
+			<td> </td>
+		</tr><tr><th>サンプルレスポンス</th>
+			<td><code class="notranslate">204 NO CONTENT</code> （空の応答本体）</td>
+		</tr></tbody></table><h3 data-gt-block="">アフィリエイト事業</h3>
+
+<h3 id="List_available_contracts" data-gt-block="">利用可能な契約を一覧表示する</h3>
+<!-- table 12 -->
+
+<table class="bcls-table"><caption class="bcls-caption--table">契約を一覧表示する</caption>
+	<tbody class="bcls-table__body"><tr><th>方法</th>
+			<td><code class="notranslate">GET</code></td>
+		</tr><tr><th>エンドポイント</th>
+			<td><code class="notranslate">/accounts/ <span class="bcls-input">affiliate_account_id</span>/contracts</code></td>
+		</tr><tr><th>ボディをリクエストする</th>
+			<td> </td>
+		</tr><tr><th>サンプルレスポンス</th>
+			<td>
+			<pre class="line-numbers notranslate language-json">  <code class=" notranslate language-json"><span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"account_id"</span><span class="token operator">:</span> <span class="token string">"1485884786001"</span><span class="token punctuation">,</span>
+      <span class="token property">"channel"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"account_id"</span><span class="token operator">:</span> <span class="token string">"57838016001"</span><span class="token punctuation">,</span>
+        <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"default"</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property"></span><span class="bcls-highlight"><span class="token property">"approved"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span></span><span class="token punctuation"></span>
+      <span class="token property"></span><span class="bcls-highlight"><span class="token property">"auto_accept"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span></span><span class="token punctuation"></span>
+      <span class="token property">"approved_at"</span><span class="token operator">:</span> <span class="token null">null</span><span class="token punctuation">,</span>
+      <span class="token property">"updated_at"</span><span class="token operator">:</span> <span class="token string">"2017-08-23T17:45:41.556Z"</span><span class="token punctuation">,</span>
+      <span class="token property">"created_at"</span><span class="token operator">:</span> <span class="token string">"2017-08-23T17:45:41.556Z"</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+			</td>
+		</tr></tbody></table><p data-gt-block="">応答の2つの必須フィールドは次のとおりです。</p>
+
+<ul><li><code class="notranslate">approved</code> - に設定した場合 true、契約はアフィリエイトによって受け入れられます</li>
+	<li><code class="notranslate">auto-accept</code> - に設定した場合 trueこの契約を通じて共有された動画は、アフィリエイトによって自動的に承認されます。 そうでなければ、それらは一つずつ承認されなければなりません</li>
+</ul><p data-gt-block="">以下で契約を更新する方法を見ていきます。</p>
+
+<h4 id="Get_specific_contract" data-gt-block="">特定のアカウントの契約を取得する</h4>
+<!-- table 13 -->
+
+<table class="bcls-table"><caption class="bcls-caption--table">契約を結ぶ</caption>
+	<tbody class="bcls-table__body"><tr><th>方法</th>
+			<td><code class="notranslate">GET</code></td>
+		</tr><tr><th>エンドポイント</th>
+			<td><code class="notranslate">/accounts/ <span class="bcls-input">affiliate_account_id</span>/contracts/ <span class="bcls-input">master_account_id</span> </code></td>
+		</tr><tr><th>ボディをリクエストする</th>
+			<td> </td>
+		</tr><tr><th>サンプルレスポンス</th>
+			<td>
+			<pre class="line-numbers notranslate language-json">  <code class=" notranslate language-json"><span class="token punctuation">{</span>
+    <span class="token property">"account_id"</span><span class="token operator">:</span> <span class="token string">"1485884786001"</span><span class="token punctuation">,</span>
+    <span class="token property">"channel"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"account_id"</span><span class="token operator">:</span> <span class="token string">"57838016001"</span><span class="token punctuation">,</span>
+      <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"default"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property"></span><span class="bcls-highlight"><span class="token property">"approved"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span></span><span class="token punctuation"></span>
+    <span class="token property"></span><span class="bcls-highlight"><span class="token property">"auto_accept"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span></span><span class="token punctuation"></span>
+    <span class="token property">"approved_at"</span><span class="token operator">:</span> <span class="token null">null</span><span class="token punctuation">,</span>
+    <span class="token property">"created_at"</span><span class="token operator">:</span> <span class="token string">"2017-08-23T17:45:41.556Z"</span><span class="token punctuation">,</span>
+    <span class="token property">"updated_at"</span><span class="token operator">:</span> <span class="token string">"2017-08-23T17:45:41.556Z"</span>
+  <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+			</td>
+		</tr></tbody></table><h4 id="Accept_contract" data-gt-block="">契約を承認する</h4>
+<!-- table 14 -->
+
+<table class="bcls-table"><caption class="bcls-caption--table">契約を承認する</caption>
+	<tbody class="bcls-table__body"><tr><th>方法</th>
+			<td><code class="notranslate">PATCH</code></td>
+		</tr><tr><th>エンドポイント</th>
+			<td><code class="notranslate">/accounts/ <span class="bcls-input">affiliate_account_id</span>/contracts/ <span class="bcls-input">master_account_id</span> </code></td>
+		</tr><tr><th>ボディをリクエストする</th>
+			<td>
+			<pre class="line-numbers notranslate language-json">  <code class=" notranslate language-json"><span class="token punctuation">{</span>
+    <span class="token property">"approved"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">"auto_accept"</span><span class="token operator">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+			</td>
+		</tr><tr><th>サンプルレスポンス</th>
+			<td>
+			<pre class="line-numbers notranslate language-json">  <code class=" notranslate language-json"><span class="token punctuation">{</span>
+    <span class="token property">"account_id"</span><span class="token operator">:</span> <span class="token string">"1485884786001"</span><span class="token punctuation">,</span>
+    <span class="token property">"channel"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"account_id"</span><span class="token operator">:</span> <span class="token string">"57838016001"</span><span class="token punctuation">,</span>
+      <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"default"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property"></span><span class="bcls-highlight"><span class="token property">"approved"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span></span><span class="token punctuation"></span>
+    <span class="token property"></span><span class="bcls-highlight"><span class="token property">"auto_accept"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span></span><span class="token punctuation"></span>
+    <span class="token property">"approved_at"</span><span class="token operator">:</span> <span class="token string">"2017-08-27T12:27:21.582Z"</span><span class="token punctuation">,</span>
+    <span class="token property">"created_at"</span><span class="token operator">:</span> <span class="token string">"2017-08-23T17:45:41.556Z"</span><span class="token punctuation">,</span>
+    <span class="token property">"updated_at"</span><span class="token operator">:</span> <span class="token string">"2017-08-27T12:27:21.582Z"</span>
+  <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+			</td>
+		</tr></tbody></table><p data-gt-block="" class="gt-block">あなたが含まれている場合 <code class="notranslate">"approved":true</code>各動画は個別に承認される必要があります。</p>
+</section><section class="bcls-section"><h2 id="cms_operations_sharing" data-gt-block="">CMS API リクエスト - 共有</h2>
+
+<p data-gt-block="" class="gt-block">このセクションでは、 CMS API 動画の共有に使用されるリクエスト メディア共有操作は、マスターアカウントによって実行されます。 アフィリエイトアカウントは、 <code class="notranslate">auto_accept</code> オフになります。</p>
+
+<h3 data-gt-block="">マスター操作</h3>
+
+<h4 id="List_shares" data-gt-block="">既存の株式を一覧表示する</h4>
+
+<p data-gt-block="">動画が他のアカウントと既に共有されているかどうかを確認するには、以下のリクエストを使用します。</p>
+
+<aside class="gt-block bcls-aside bcls-aside--information" data-gt-block="">すでに共有しているアカウントに動画を共有することは重要です <strong>再共有</strong> アフィリエイトが作成したメタデータの変更を上書きします。</aside><!-- table 15 --><table class="bcls-table"><caption class="bcls-caption--table">リストの共有</caption>
+	<tbody class="bcls-table__body"><tr><th>方法</th>
+			<td><code class="notranslate">GET</code></td>
+		</tr><tr><th>エンドポイント</th>
+			<td><code class="notranslate">/accounts/ <span class="bcls-input">master_account_id</span>/videos/ <span class="bcls-input">video_id</span>/shares</code></td>
+		</tr><tr><th>ボディをリクエストする</th>
+			<td> </td>
+		</tr><tr><th>サンプルレスポンス</th>
+			<td>
+			<pre class="line-numbers notranslate language-json">  <code class=" notranslate language-json"><span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"video_id"</span><span class="token operator">:</span> <span class="token string">"5553744346001"</span><span class="token punctuation">,</span>
+      <span class="token property">"affiliate_id"</span><span class="token operator">:</span> <span class="token string">"1752604059001"</span><span class="token punctuation">,</span>
+      <span class="token property">"affiliate_video_id"</span><span class="token operator">:</span> <span class="token string">"5553754248001"</span><span class="token punctuation">,</span>
+      <span class="token property">"status"</span><span class="token operator">:</span> <span class="token string">"COMPLETE"</span><span class="token punctuation">,</span>
+      <span class="token property">"shared_at"</span><span class="token operator">:</span> <span class="token string">"2017-08-27T14:35:01.890Z"</span><span class="token punctuation">,</span>
+      <span class="token property">"updated_at"</span><span class="token operator">:</span> <span class="token string">"2017-08-27T14:35:25.630Z"</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"video_id"</span><span class="token operator">:</span> <span class="token string">"5553744346001"</span><span class="token punctuation">,</span>
+      <span class="token property">"affiliate_id"</span><span class="token operator">:</span> <span class="token string">"1485884786001"</span><span class="token punctuation">,</span>
+      <span class="token property">"affiliate_video_id"</span><span class="token operator">:</span> <span class="token string">"5553758415001"</span><span class="token punctuation">,</span>
+      <span class="token property">"status"</span><span class="token operator">:</span> <span class="token string">"COMPLETE"</span><span class="token punctuation">,</span>
+      <span class="token property">"shared_at"</span><span class="token operator">:</span> <span class="token string">"2017-08-27T14:34:34.919Z"</span><span class="token punctuation">,</span>
+      <span class="token property">"updated_at"</span><span class="token operator">:</span> <span class="token string">"2017-08-27T14:35:25.212Z"</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+			</td>
+		</tr></tbody></table><h4 id="Share_video" data-gt-block="">動画の共有（または再共有）</h4>
+
+<p data-gt-block="">下記のリクエストは、1つ以上のアフィリエイトアカウントとビデオを共有します。</p>
+
+<aside class="gt-block bcls-aside bcls-aside--information" data-gt-block="">動画が既にアフィリエイトに共有されている場合、このリクエストは <strong>再共有</strong> アフィリエイトがビデオメタデータに対して行った変更を上書きします。</aside><!-- table 16 --><table class="bcls-table"><caption class="bcls-caption--table">動画をシェアする</caption>
+	<tbody class="bcls-table__body"><tr><th>方法</th>
+			<td><code class="notranslate">POST</code></td>
+		</tr><tr><th>エンドポイント</th>
+			<td><code class="notranslate">/accounts/ <span class="bcls-input">master_account_id</span>/videos/ <span class="bcls-input">video_id</span>/shares</code></td>
+		</tr><tr><th>ボディをリクエストする</th>
+			<td>
+			<pre class="line-numbers notranslate language-json">  <code class=" notranslate language-json"><span class="token punctuation">[</span>
+    <span class="token punctuation">{</span> <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"<span class="bcls-input">affiliate_account_id_1</span>"</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span> <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"<span class="bcls-input">affiliate_account_id_2</span>"</span> <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+			</td>
+		</tr><tr><th>サンプルレスポンス</th>
+			<td>
+			<p data-gt-block="">成功応答</p>
+
+			<pre class="line-numbers notranslate language-json">  <code class=" notranslate language-json"><span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"video_id"</span><span class="token operator">:</span> <span class="token string">"5553744346001"</span><span class="token punctuation">,</span>
+      <span class="token property">"affiliate_id"</span><span class="token operator">:</span> <span class="token string">"1485884786001"</span><span class="token punctuation">,</span>
+      <span class="token property">"affiliate_video_id"</span><span class="token operator">:</span> <span class="token null">null</span><span class="token punctuation">,</span>
+      <span class="token property">"status"</span><span class="token operator">:</span> <span class="token string">"PROCESSING"</span><span class="token punctuation">,</span>
+      <span class="token property">"shared_at"</span><span class="token operator">:</span> <span class="token string">"2017-08-27T14:25:55.710Z"</span><span class="token punctuation">,</span>
+      <span class="token property">"updated_at"</span><span class="token operator">:</span> <span class="token string">"2017-08-27T14:25:55.710Z"</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+			<p data-gt-block="">失敗応答</p>
+
+			<pre class="line-numbers notranslate language-json">  <code class=" notranslate language-json"><span class="token punctuation">{</span>
+  <span class="token property">"video_id"</span><span class="token operator">:</span> <span class="token string">"5553744346001"</span><span class="token punctuation">,</span>
+  <span class="token property">"affiliate_id"</span><span class="token operator">:</span> <span class="token string">"1485884786001"</span><span class="token punctuation">,</span>
+  <span class="token property">"affiliate_video_id"</span><span class="token operator">:</span> <span class="token null">null</span><span class="token punctuation">,</span>
+  <span class="token property">"status"</span><span class="token operator">:</span> <span class="token string">"ERROR"</span><span class="token punctuation">,</span>
+  <span class="token property">"error_message"</span><span class="token operator">:</span> <span class="token string">"[{\"error_code\":\"MISSING_CUSTOM_FIELDS\",\"error_message\":\"Affiliate account is missing custom fields: [myfieldname]\"}]"</span><span class="token punctuation">,</span>
+  <span class="token property">"shared_at"</span><span class="token operator">:</span> <span class="token string">"2017-10-23T15:21:38.541Z"</span><span class="token punctuation">,</span>
+  <span class="token property">"updated_at"</span><span class="token operator">:</span> <span class="token string">"2017-10-23T15:22:58.519Z"</span>
+  <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+			</td>
+		</tr></tbody></table><p data-gt-block="" class="gt-block gt-block">共有すると、アフィリエイトのアカウントに新しい動画が作成されます。 ザ <code class="notranslate">state</code> のビデオ共有の <code class="notranslate">PROCESSING</code> シェアが完了するまで <strong>や</strong> ビデオはアフィリエイトアカウントで作成されます。 アフィリエイトはまだビデオを受け入れる必要があります（if <code class="notranslate">auto_accept</code> に設定されています <code class="notranslate">false</code> アフィリエイトによる契約については、以前の共有設定のセクションを参照してください）。</p>
+
+<aside class="gt-block bcls-aside bcls-aside--information" data-gt-block="">A  <code class="notranslate">GET</code> マスターアカウントによる共有リクエストは、共有ステータスが <code class="notranslate">COMPLETE</code>.</aside><aside class="gt-block bcls-aside bcls-aside--warning" data-gt-block=""><p data-gt-block="">重要な注意事項：</p>
+
+<ul><li>この操作は、既にアフィリエイトと共有されている場合はビデオを再共有します - 必ず読んでください <a class="nturl" href="#Resharing_videos/index.html">ビデオの再共有</a> それをする前に！</li>
+	<li>
+	<p data-gt-block="" class="gt-block">もし <code class="notranslate">reference_id</code> マスタービデオが既にアフィリエイトアカウントで使用されているため、共有は失敗します。 マスターとアフィリエイトは、問題を解決する必要があります。 <code class="notranslate">reference_id</code> いずれかのアカウントにログインしてから、共有を再試行してください。</p>
+
+	<p data-gt-block="">共有は非同期操作であるため、共有要求でエラーは返されません。 ただし、GETの共有要求（上記を参照）は、アカウントのエラーを表示します。</p>
+	</li>
+</ul></aside><h4 id="Unshare_video_affiliate" data-gt-block="">アフィリエイトの動画の共有を解除する</h4>
+<!-- table 17 -->
+
+<table class="bcls-table"><caption class="bcls-caption--table">ビデオの共有を解除する</caption>
+	<tbody class="bcls-table__body"><tr><th>方法</th>
+			<td><code class="notranslate">DELETE</code></td>
+		</tr><tr><th>エンドポイント</th>
+			<td><code class="notranslate">/accounts/ <span class="bcls-input">master_account_id</span>/videos/ <span class="bcls-input">video_id</span>/shares/ <span class="bcls-input">affiliate_account_id</span> </code></td>
+		</tr><tr><th>ボディをリクエストする</th>
+			<td> </td>
+		</tr><tr><th>サンプルレスポンス</th>
+			<td><code class="notranslate">202 ACCEPTED</code> （空の応答本体） - 応答は、要求が処理のために受け入れられたことを示しますが、操作は2〜3分間完了することはできません</td>
+		</tr></tbody></table><aside class="bcls-aside bcls-aside--warning" data-gt-block="">動画の共有を解除して再共有すると、共有動画のアフィリエイトアカウントの動画IDが異なる可能性があります。</aside><!-- table 18 --><!-- <h4 id="Unshare_video">Unsharing a video for all Affiliates</h4>
+      <table class="bcls-table">
+      <caption class="bcls-caption--table">Unshare Video</caption>
+      <tbody class="bcls-table__body">
+          <tr>
+              <th>Method</th>
+              <td>DELETE</td>
+          </tr>
+          <tr>
+              <th>Endpoint</th>
+              <td>/accounts/<span class="bcls-input">master_account_id</span>/videos/<span class="bcls-input">video_id</span>/shares</td>
+          </tr>
+          <tr>
+              <th>Request body</th>
+              <td>
+              </td>
+          </tr>
+          <tr>
+              <th>Sample response</th>
+              <td>202 ACCEPTED (empty response body) - the response indicates that the request has been accepted for processing, but the operation may not be completed for a couple of minutes</td>
+          </tr>
+      </tbody>
+  </table>
+  <aside class="bcls-aside bcls-aside--warning">Note that un-sharing and re-sharing a video will result in the shared video having a different video id in the Affiliate account.</aside> --><h3 data-gt-block="">アフィリエイト事業</h3>
+
+<h4 id="Accept_share" data-gt-block="">共有ビデオを受け入れる</h4>
+
+<p data-gt-block="" class="gt-block">共有ビデオを承認するには、アフィリエイトは共有ビデオを更新し、 <code class="notranslate">state</code> 〜へ <code class="notranslate">ACTIVE</code>。 （ <code class="notranslate">state</code> 〜へ <code class="notranslate">INACTIVE</code> 共有を拒否します。）</p>
+<!-- table 19 -->
+
+<table class="bcls-table"><caption class="bcls-caption--table">共有ビデオを受け入れる</caption>
+	<tbody class="bcls-table__body"><tr><th>方法</th>
+			<td><code class="notranslate">PATCH</code></td>
+		</tr><tr><th>エンドポイント</th>
+			<td><code class="notranslate">/accounts/ <span class="bcls-input">affiliate_account_id</span>/videos/ <span class="bcls-input">affiliate_video_id</span> </code></td>
+		</tr><tr><th>ボディをリクエストする</th>
+			<td>
+			<pre class="line-numbers notranslate language-json">  <code class=" notranslate language-json">
+    <span class="token punctuation">{</span>
+      <span class="token property">"state"</span><span class="token operator">:</span> <span class="token string">"ACTIVE"</span>
+    <span class="token punctuation">}</span>
+  <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+			</td>
+		</tr><tr><th>サンプルレスポンス</th>
+			<td>
+			<pre class="line-numbers notranslate language-json">  <code class=" notranslate language-json"><span class="token punctuation">{</span>
+    <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"5557656136001"</span><span class="token punctuation">,</span>
+    <span class="token property">"account_id"</span><span class="token operator">:</span> <span class="token string">"1485884786001"</span><span class="token punctuation">,</span>
+    <span class="token property">"ad_keys"</span><span class="token operator">:</span> <span class="token null">null</span><span class="token punctuation">,</span>
+    <span class="token property">"clip_source_video_id"</span><span class="token operator">:</span> <span class="token null">null</span><span class="token punctuation">,</span>
+    <span class="token property">"complete"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">"created_at"</span><span class="token operator">:</span> <span class="token string">"2017-08-30T13:35:51.796Z"</span><span class="token punctuation">,</span>
+    <span class="token property">"cue_points"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"custom_fields"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"delivery_type"</span><span class="token operator">:</span> <span class="token string">"dynamic_origin"</span><span class="token punctuation">,</span>
+    <span class="token property">"description"</span><span class="token operator">:</span> <span class="token null">null</span><span class="token punctuation">,</span>
+    <span class="token property">"digital_master_id"</span><span class="token operator">:</span> <span class="token string">"4728546275001"</span><span class="token punctuation">,</span>
+    <span class="token property">"duration"</span><span class="token operator">:</span> <span class="token number">11111</span><span class="token punctuation">,</span>
+    <span class="token property">"economics"</span><span class="token operator">:</span> <span class="token string">"AD_SUPPORTED"</span><span class="token punctuation">,</span>
+    <span class="token property">"folder_id"</span><span class="token operator">:</span> <span class="token null">null</span><span class="token punctuation">,</span>
+    <span class="token property">"geo"</span><span class="token operator">:</span> <span class="token null">null</span><span class="token punctuation">,</span>
+    <span class="token property">"has_digital_master"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">"images"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"thumbnail"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"asset_id"</span><span class="token operator">:</span> <span class="token string">"5473683978001"</span><span class="token punctuation">,</span>
+        <span class="token property">"remote"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        <span class="token property">"src"</span><span class="token operator">:</span> <span class="token string">"http://brightcove.vo.llnwd.net/e1/pd/57838016001/57838016001_5473683978001_4728519374001-th.jpg?pubId=1485884786001&amp;videoId=5557656136001"</span><span class="token punctuation">,</span>
+        <span class="token property">"sources"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            <span class="token property">"src"</span><span class="token operator">:</span> <span class="token string">"http://brightcove.vo.llnwd.net/e1/pd/57838016001/57838016001_5473683978001_4728519374001-th.jpg?pubId=1485884786001&amp;videoId=5557656136001"</span><span class="token punctuation">,</span>
+            <span class="token property">"height"</span><span class="token operator">:</span> <span class="token number">90</span><span class="token punctuation">,</span>
+            <span class="token property">"width"</span><span class="token operator">:</span> <span class="token number">160</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token property">"src"</span><span class="token operator">:</span> <span class="token string">"https://brightcove.hs.llnwd.net/e1/pd/57838016001/57838016001_5473683978001_4728519374001-th.jpg?pubId=1485884786001&amp;videoId=5557656136001"</span><span class="token punctuation">,</span>
+            <span class="token property">"height"</span><span class="token operator">:</span> <span class="token number">90</span><span class="token punctuation">,</span>
+            <span class="token property">"width"</span><span class="token operator">:</span> <span class="token number">160</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">"poster"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">"asset_id"</span><span class="token operator">:</span> <span class="token string">"5473684427001"</span><span class="token punctuation">,</span>
+        <span class="token property">"remote"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+        <span class="token property">"src"</span><span class="token operator">:</span> <span class="token string">"http://brightcove.vo.llnwd.net/e1/pd/57838016001/57838016001_5473684427001_4728519374001-vs.jpg?pubId=1485884786001&amp;videoId=5557656136001"</span><span class="token punctuation">,</span>
+        <span class="token property">"sources"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+            <span class="token property">"src"</span><span class="token operator">:</span> <span class="token string">"http://brightcove.vo.llnwd.net/e1/pd/57838016001/57838016001_5473684427001_4728519374001-vs.jpg?pubId=1485884786001&amp;videoId=5557656136001"</span><span class="token punctuation">,</span>
+            <span class="token property">"height"</span><span class="token operator">:</span> <span class="token number">720</span><span class="token punctuation">,</span>
+            <span class="token property">"width"</span><span class="token operator">:</span> <span class="token number">1280</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token punctuation">{</span>
+            <span class="token property">"src"</span><span class="token operator">:</span> <span class="token string">"https://brightcove.hs.llnwd.net/e1/pd/57838016001/57838016001_5473684427001_4728519374001-vs.jpg?pubId=1485884786001&amp;videoId=5557656136001"</span><span class="token punctuation">,</span>
+            <span class="token property">"height"</span><span class="token operator">:</span> <span class="token number">720</span><span class="token punctuation">,</span>
+            <span class="token property">"width"</span><span class="token operator">:</span> <span class="token number">1280</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"link"</span><span class="token operator">:</span> <span class="token null">null</span><span class="token punctuation">,</span>
+    <span class="token property">"long_description"</span><span class="token operator">:</span> <span class="token null">null</span><span class="token punctuation">,</span>
+    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"oystercatcher.mp4"</span><span class="token punctuation">,</span>
+    <span class="token property">"original_filename"</span><span class="token operator">:</span> <span class="token string">"57838016001_4728546275001_4728519374001.mp4"</span><span class="token punctuation">,</span>
+    <span class="token property">"projection"</span><span class="token operator">:</span> <span class="token null">null</span><span class="token punctuation">,</span>
+    <span class="token property">"published_at"</span><span class="token operator">:</span> <span class="token string">"2017-08-30T13:41:13.974Z"</span><span class="token punctuation">,</span>
+    <span class="token property">"reference_id"</span><span class="token operator">:</span> <span class="token string">"2016-01-29T21:41:33.225Z-screencast-1280"</span><span class="token punctuation">,</span>
+    <span class="token property">"schedule"</span><span class="token operator">:</span> <span class="token null">null</span><span class="token punctuation">,</span>
+    <span class="token property">"sharing"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">"by_external_acct"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token property">"by_id"</span><span class="token operator">:</span> <span class="token string">"57838016001"</span><span class="token punctuation">,</span>
+      <span class="token property">"source_id"</span><span class="token operator">:</span> <span class="token string">"4728519374001"</span><span class="token punctuation">,</span>
+      <span class="token property">"to_external_acct"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token property">"by_reference"</span><span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">"state"</span><span class="token operator">:</span> <span class="token string">"ACTIVE"</span><span class="token punctuation">,</span>
+    <span class="token property">"tags"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">"newtag"</span><span class="token punctuation">,</span>
+      <span class="token string">"foo"</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"text_tracks"</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token property">"updated_at"</span><span class="token operator">:</span> <span class="token string">"2017-08-30T13:41:14.075Z"</span>
+  <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+			</td>
+		</tr></tbody></table><p data-gt-block="" class="gt-block">をセットする <code class="notranslate">state</code> 〜へ <code class="notranslate">INACTIVE</code> シェアを拒否する。</p>
+
+<p data-gt-block="" class="gt-block gt-block">動画がアカウントに共有されていることを示す特別な通知はありません。 ただし、 <a class="nturl" href="..//support.brightcove.com/ja/cmsplayback-api-videos-search/index.html">動画を検索</a> for <code class="notranslate">state:pending</code>これには、受け入れられない株式が含まれています。 または、Studio Mediaモジュールの[共有の保留中]リストを使用して、保留中の共有を表示して受け入れ/拒否することもできます。</p>
+
+<figure class="bcls-figure"><img class="bcls-image" alt="保留中の株式" src="http://learning-services-media.brightcove.com/doc-assets/node/18325-media-sharing-cms-api/18325-pending-share.png"><figcaption class="bcls-caption--image">保留中の株式</figcaption></figure></section><section class="bcls-section"><h2 id="Errors" data-gt-block="">エラー</h2>
+
+<p data-gt-block="" class="gt-block">メディア共有エラーは、APIリクエストに対する個別のエラーレスポンスとして返されるのではなく、 <code class="notranslate">error_message</code> 通常の応答のフィールド：</p>
+
+<pre class="line-numbers notranslate language-json">  <code class=" notranslate language-json"><span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">"video_id"</span> <span class="token operator">:</span> <span class="token string">"1239817239128"</span><span class="token punctuation">,</span>
+      <span class="token property">"affiliate_id"</span> <span class="token operator">:</span> <span class="token string">"32871239"</span><span class="token punctuation">,</span>
+      <span class="token property">"affiliate_video_id"</span> <span class="token operator">:</span> <span class="token string">"30308254055202"</span><span class="token punctuation">,</span>
+      <span class="token property">"status"</span> <span class="token operator">:</span> <span class="token string">"COMPLETE"</span><span class="token punctuation">,</span>
+      <span class="token property">"shared_at"</span> <span class="token operator">:</span> <span class="token string">"2017-12-11T17:57:45.530Z"</span><span class="token punctuation">,</span>
+      <span class="token property">"updated_at"</span> <span class="token operator">:</span> <span class="token string">"2017-12-11T18:03:32.789Z"</span><span class="token punctuation">,</span>
+      <span class="token property">"error_message"</span> <span class="token operator">:</span> <span class="token string"></span><span class="bcls-highlight"><span class="token string">"[{"</span>error_code<span class="token string">":"</span>MISSING_CUSTOM_FIELDS<span class="token string">","</span>error_message<span class="token string">":"</span>Affiliate account is missing custom fields<span class="token operator">:</span> <span class="token punctuation">[</span>whisky<span class="token punctuation">]</span><span class="token string">"}]"</span></span><span class="token string"></span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p data-gt-block="" class="gt-block gt-block">見る <a class="nturl" href="..//support.brightcove.com/ja/cms-api-error-message-reference#Media_sharing_errors/index.html">インクルード CMS API エラーリファレンス</a> 詳細はこちら</p>
+</section><section class="bcls-section"><h2 id="Limitations" data-gt-block="">制限事項</h2>
+
+<p data-gt-block="">現在、メディアの共有には次の制限があります。</p>
+
+<ul><li>DRM：メディア共有 CMS API DRM対応アカウントでは現在サポートされていません。 DRMが有効になっていないアカウントからDRMが有効になっているアカウントへの動画の共有はサポートされていますが、共有動画は <strong>Studio上ではサポートされていません。</strong> DRM用にパッケージ化する。</li>
+	<li>
+	<p data-gt-block="" class="gt-block">マスターアカウントによって定義されたチャネルが設定されている場合 <code class="notranslate">enforce_custom_fields</code> 〜へ <code class="notranslate">true</code>アフィリエイトアカウントで許可されていない値のカスタムフィールドを持つビデオを共有すると、その共有の試行は失敗します。 共有ステータスは、次のようなエラーメッセージで更新されます。</p>
+
+	<pre class="line-numbers notranslate language-json">  <code class=" notranslate language-json"><span class="token punctuation">[</span><span class="token punctuation">{</span><span class="token property">"error_code"</span><span class="token operator">:</span> <span class="token string">"ILLEGAL_CUSTOM_FIELD_VALUE"</span><span class="token punctuation">,</span> <span class="token property">"error_message"</span><span class="token operator">:</span> <span class="token string">"Illegal value for custom fields: [topic]"</span><span class="token punctuation">}</span><span class="token punctuation">]</span>
+  <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+	<p data-gt-block="" class="gt-block">マスターアカウントによって定義されたチャネルが設定されている場合 <code class="notranslate">enforce_custom_fields</code> 〜へ <code class="notranslate">false</code>その後、アフィリエイトアカウントで許可されていない値のカスタムフィールドを持つビデオを共有すると、共有の試みは機能しますが、値の悪いフィールドはビデオのアフィリエイトコピーには含まれません。</p>
+	</li>
+</ul></section></article></div>
+      
+</div>
+
+</div>
+
+
+<section class="views-element-container block block-views block-views-blockrelated-content-by-field-block-1 clearfix" id="block-views-block-related-content-by-field-block-1">
+  
+    
+
+      <div class="gt-block form-group" data-gt-block=""><div class="gt-block view view-related-content-by-field view-id-related_content_by_field view-display-id-block_1 js-view-dom-id-a14684dc6a9284804b881f3662b8299fa0e7ec17243c5994afff5bdb58dd398b" data-gt-block="">
+  
+    
+      <div class="gt-block view-header" data-gt-block="">
+      <h2 data-gt-block="" id="bc-ipnav-12">関連コンテンツ</h2>
+    </div>
+      
+      <div class="gt-block view-content" data-gt-block="">
+      <div class="gt-block item-list" data-gt-block="">
+  
+  <ul>
+
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/overview-cms-api/index.html" hreflang="en">概要： CMS API</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/cms-api-error-message-reference/index.html" hreflang="en">CMS API エラーメッセージリファレンス</a></span></span></div></li>
+          <li><div class="gt-block views-field views-field-title" data-gt-block=""><span class="field-content"><span class="content-type-support_doc"><a class="nturl" href="..//support.brightcove.com/ja/dynamic-ingest-media-sharing/index.html" hreflang="en">メディア共有による動的インジェスト</a></span></span></div></li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+          </div>
+</div>
+
+  </section>
+
+
+  </div>
+
+              </section>
+
+                </div>
+  </div>
+
+      <footer class="footer container" role="contentinfo">
+              <div class="gt-block row" data-gt-block="">
+            <div class="gt-block region region-footer-top-left col-md-9" style="margin-bottom: 1em;" data-gt-block="">
+    <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">Brightcove サポート</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="https://status.brightcove.com">システムステータス</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/contact-support/index.html" data-drupal-link-system-path="node/18632">サポート - Video Cloud</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="../ja/en/contact/create/index.html">サポート - Zencoder</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-documentation-menu" id="block-documentation" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">オンラインマニュアル</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/index.html" data-drupal-link-system-path="<front>">ホーム</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">トレーニング（講習会）</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/online-training-courses/index.html" data-drupal-link-system-path="node/18286">オンラインコース</a>
+                  </li>
+                              <li class="expanded">
+        <a class="nturl" href="..//support.brightcove.com/ja/register-training/index.html" data-drupal-link-system-path="node/18270">コー​​スに登録</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+<nav role="navigation" aria-labelledby="block-brightcove-menu" id="block-brightcove" class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+      
+  <h2 data-gt-block="">Brightcove</h2>
+  
+
+        
+              <ul class="menu nav">
+                                  <li class="expanded">
+        <a class="nturl" href="https://www.brightcove.com">Brightcove.COM</a>
+                  </li>
+        </ul>
+  
+
+
+  </nav>
+
+  </div>
+
+            <div class="gt-block region region-footer-top-right col-md-3" data-gt-block="">
+    <section id="block-footerlegaltext" class="block block-block-content block-block-content4507d09c-a528-4947-b91d-36ec6671822b clearfix">
+  
+    
+
+      
+            <div class="gt-block field field--name-field-body field--type-text-long field--label-hidden field--item" data-gt-block=""><p data-gt-block="">Brightcove Inc.（ナスダック：BCOV）は、接続されたデバイス間でビデオを配信および収益化するための強力なクラウドソリューションを提供する世界有数のプロバイダです。</p>
+</div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+                    <div class="gt-block row" data-gt-block="">
+            <div class="gt-block region region-footer-bottom-left col-md-8" data-gt-block="">
+    <section id="block-footercopyrightlinewithlinks" class="block block-block-content block-block-content3a164ef9-02d8-42c4-bcc6-3ab435f670b3 clearfix">
+  
+    
+
+      <div class="gt-block block-content block-content--type-copyright-block-with-links block-content--view-mode-full ds-1col clearfix" data-gt-block="">
+
+  
+
+  
+            <div class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" data-gt-block="">2020</div>
+      
+            <div class="field field--name-field-copyright-text field--type-string-long field--label-hidden field--item" data-gt-block="">Brightcove Inc.すべての権利を保有します。</div>
+      
+      <div class="gt-block field field--name-field-legal-links field--type-link field--label-hidden field--items" data-gt-block="">
+              <div class="gt-block field--item" data-gt-block=""><a class="nturl" href="https://www.brightcove.com/en/privacy">プライバシーポリシー</a></div>
+              <div class="gt-block field--item" data-gt-block=""><a class="nturl" href="https://www.brightcove.com/en/terms-and-conditions">利用規約</a></div>
+          </div>
+  
+
+</div>
+
+
+  </section>
+
+
+  </div>
+
+            <div class="gt-block region region-footer-bottom-right col-md-4" data-gt-block="">
+    <section id="block-footersocialblock" class="block block-block-content block-block-content4fc23afd-8d37-420e-ab28-73b2ba24e836 clearfix">
+  
+    
+
+      
+      <div class="gt-block field field--name-field-social-icon field--type-entity-reference-revisions field--label-hidden field--items" data-gt-block="">
+              <div class="gt-block field--item" data-gt-block="">
+
+<a class="icon" icon__social--link="" href="https://www.linkedin.com/company/brightcove" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--linkedin">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--linkedin"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="gt-block field--item" data-gt-block="">
+
+<a class="icon" icon__social--link="" href="https://twitter.com/brightcove" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--twitter">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--twitter"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="gt-block field--item" data-gt-block="">
+
+<a class="icon" icon__social--link="" href="https://www.facebook.com/Brightcove" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--facebook">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--facebook"></use>
+  </svg>
+</a>
+
+</div>
+              <div class="gt-block field--item" data-gt-block="" style="display:none;color:white">
+
+<a class="icon" icon__social--link="" href="https://plus.google.com/100830370440271567091" title="">
+  <svg viewBox="0 0 100 100" class="icon__social--google-plus">
+    <use xlink:href="//support.brightcove.com/themes/custom/bcdocs/images/icons.svg#icon__social--google-plus"></use>
+  </svg>
+</a>
+
+</div>
+          </div>
+  
+
+
+  </section>
+
+<section id="block-scripts" class="block block-block-content block-block-content42e4bd63-d879-470d-a6de-d5e4529a01be clearfix">
+  
+    
+
+      
+            <div class="gt-block field field--name-field-body field--type-text-long field--label-hidden field--item" data-gt-block=""><script src="https://learning-services-media.brightcove.com/doc-assets/js/gtrans.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/js/support-feedback.js"></script><script src="https://learning-services-media.brightcove.com/doc-assets/site-assets/js/site/feedback-support.js"></script>
+<script src="https://learning-services-media.brightcove.com/doc-assets/js/hide-google-plus.js"></script></div>
+      
+  </section>
+
+
+  </div>
+
+        </div>
+          </footer>
+  
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/18325","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click"},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"user":{"uid":0,"permissionsHash":"3b7fdb4927baca3ee2939edeb777485b3e2c2d36cf8c80e0d8f49c6dc5e2eeca"}}</script>
+<script src="https://support.brightcove.com/sites/default/files/js/js_8fmTAXGyuAUNVu11XoXJaeM8QBDFuAvX7ADwOnigrhc.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+<script src="https://support.brightcove.com/sites/default/files/js/js_L8Eb1bSFk-jGvnjMNZB7VvDJt-7nSbeXfaBlCzWjDbc.js"></script><div id="surveyDiv" style="visibility:hidden"><iframe id="CSAT" src="https://learning-services-media.brightcove.com/doc-assets/general/surveylink.html" style="display:none;"></iframe></div>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e78a80aa93","applicationID":"129613202","transactionName":"YwBUZkcFVktUWhJQX1pKd1FBDVdWGkkHXlVrBldRXQE=","queueTime":0,"applicationTime":26,"atts":"T0dXEA8fRUU=","errorBeacon":"bam.nr-data.net","agent":""}</script><script data-cfasync="false" src="https://tdns5.gtranslate.net/tdn-bin/queue.js"></script><!-- Yandex.Metrika counter for GTranslate --><script data-cfasync="false">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter36618640 = new Ya.Metrika({ id:36618640, clickmap:false, trackLinks:true, accurateTrackBounce:true, ut:"noindex" }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOM
